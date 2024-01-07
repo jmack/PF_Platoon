@@ -1,0 +1,4 @@
+/vars.ps1
+/dist/addons/*.pbo
+/dist/addons/*.bisign
+/temp/
