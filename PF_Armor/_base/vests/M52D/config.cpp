@@ -103,4 +103,56 @@ class CfgWeapons
       };
     };
   };
+
+  class PF_Armor_Vests_M52D_Bard : PF_Armor_Vests_M52D_Pathfinder
+  {
+    displayName = "[PF] M52D (Bard)";
+    hiddenSelectionsTextures[] =
+    {
+      "PF_Armor\_base\vests\M52D\_textures\bard\black\vest.paa",
+      "PF_Armor\_base\vests\M52D\_textures\bard\black\armor.paa",
+      "PF_Armor\_base\vests\M52D\_textures\bard\black\legs.paa",
+      "",
+      "PF_Armor\_base\vests\M52D\_textures\bard\black\odst.paa",
+    };
+  };
+  
+  class PF_Armor_Vests_M52D_Cleric : PF_Armor_Vests_M52D_Pathfinder
+  {
+    displayName = "[PF] M52D (Cleric)";
+    hiddenSelectionsTextures[] =
+    {
+      "PF_Armor\_base\vests\M52D\_textures\cleric\black\vest.paa",
+      "PF_Armor\_base\vests\M52D\_textures\cleric\black\armor.paa",
+      "PF_Armor\_base\vests\M52D\_textures\cleric\black\legs.paa",
+      "",
+      "PF_Armor\_base\vests\M52D\_textures\cleric\black\odst.paa",
+    };
+  };
+  
+  class PF_Armor_Vests_M52D_Druid : PF_Armor_Vests_M52D_Pathfinder
+  {
+    displayName = "[PF] M52D (Druid)";
+    hiddenSelectionsTextures[] =
+    {
+      "PF_Armor\_base\vests\M52D\_textures\druid\black\vest.paa",
+      "PF_Armor\_base\vests\M52D\_textures\druid\black\armor.paa",
+      "PF_Armor\_base\vests\M52D\_textures\druid\black\legs.paa",
+      "",
+      "PF_Armor\_base\vests\M52D\_textures\druid\black\odst.paa",
+    };
+  };
+  
+  class PF_Armor_Vests_M52D_Wizard : PF_Armor_Vests_M52D_Pathfinder
+  {
+    displayName = "[PF] M52D (Wizard)";
+    hiddenSelectionsTextures[] =
+    {
+      "PF_Armor\_base\vests\M52D\_textures\wizard\black\vest.paa",
+      "PF_Armor\_base\vests\M52D\_textures\wizard\black\armor.paa",
+      "PF_Armor\_base\vests\M52D\_textures\wizard\black\legs.paa",
+      "",
+      "PF_Armor\_base\vests\M52D\_textures\wizard\black\odst.paa",
+    };
+  };
 };
