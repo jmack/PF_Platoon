@@ -27,11 +27,11 @@ class CfgWeapons
 
     hiddenSelectionsTextures[] =
     {
-      "PF_Armor\_base\vests\M52D\_textures\pathfinder\vest.paa",
-      "PF_Armor\_base\vests\M52D\_textures\pathfinder\armor.paa",
-      "PF_Armor\_base\vests\M52D\_textures\pathfinder\legs.paa",
+      "PF_Armor\_base\vests\M52D\_textures\pathfinder\black\vest.paa",
+      "PF_Armor\_base\vests\M52D\_textures\pathfinder\black\armor.paa",
+      "PF_Armor\_base\vests\M52D\_textures\pathfinder\black\legs.paa",
       "",
-      "PF_Armor\_base\vests\M52D\_textures\pathfinder\odst.paa",
+      "PF_Armor\_base\vests\M52D\_textures\pathfinder\black\odst.paa",
     };
 
     class ItemInfo: ItemInfo
