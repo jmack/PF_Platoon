@@ -53,10 +53,16 @@ class XtdGearModels
         values[] =
         {
             "stock",
+            "oneill",
         };
         class stock
         {
             label = "Stock";
+        };
+        class oneill
+        {
+          label = "O'Neill";
+          description = "Missed me!";
         };
       };
       class camouflage
@@ -316,6 +322,14 @@ class XtdGearInfos
       model = "PF_Armor_Metaitems_Vests_Pathfinder";
       type = "m52d";
       customization = "stock";
+      camouflage = "black";
+    };
+    // Custom
+    class PF_Armor_Vests_ONeill_Pathfinder
+    {
+      model = "PF_Armor_Metaitems_Vests_Pathfinder";
+      type = "m52d";
+      customization = "oneill";
       camouflage = "black";
     };
 

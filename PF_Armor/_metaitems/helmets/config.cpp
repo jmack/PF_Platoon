@@ -66,10 +66,16 @@ class XtdGearModels
         values[] =
         {
           "stock",
+          "oneill",
         };
         class stock
         {
           label = "Stock";
+        };
+        class oneill
+        {
+          label = "O'Neill";
+          description = "Missed me!";
         };
       };
       class camouflage
@@ -535,6 +541,15 @@ class XtdGearInfos
       camouflage = "snow";
     };
     class PF_Armor_Helmets_CH252D_Pathfinder_Snow_dp : PF_Armor_Helmets_CH252D_Pathfinder_Snow
+    {
+      polarization = "off";
+    };
+    // Customs
+    class PF_Armor_Helmets_ONeill : PF_Armor_Helmets_CH252D_Pathfinder
+    {
+      customization = "oneill";
+    };
+    class PF_Armor_Helmets_ONeill_dp : PF_Armor_Helmets_ONeill
     {
       polarization = "off";
     };
