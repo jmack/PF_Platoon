@@ -103,7 +103,82 @@ class CfgWeapons
   };
 
   /* 1-1 Druid */
+  class PF_Armor_Helmets_CH252D_Druid_dp : PF_Armor_Helmets_CH252D_Pathfinder_dp
+  {
+    displayName = "[PF] CH252D Depolarized (Druid)";
+    hiddenSelectionsTextures[] =
+    {
+      "PF_Armor\_base\helmets\CH252D\_textures\druid\black.paa",
+      "PF_Armor\_base\helmets\CH252D\_textures\visr_clear.paa",
+    };
+  };
+  class PF_Armor_Helmets_CH252D_Druid : PF_Armor_Helmets_CH252D_Druid_dp
+  {
+    displayName = "[PF] CH252D (Druid)";
+    hiddenSelectionsTextures[] =
+    {
+      "PF_Armor\_base\helmets\CH252D\_textures\druid\black.paa",
+      "PF_Armor\_base\helmets\CH252D\_textures\visr_standard.paa",
+    };
+  };
+
   /* 1-2 Wizard */
+  class PF_Armor_Helmets_CH252D_Wizard_dp : PF_Armor_Helmets_CH252D_Pathfinder_dp
+  {
+    displayName = "[PF] CH252D Depolarized (Wizard)";
+    hiddenSelectionsTextures[] =
+    {
+      "PF_Armor\_base\helmets\CH252D\_textures\wizard\black.paa",
+      "PF_Armor\_base\helmets\CH252D\_textures\visr_clear.paa",
+    };
+  };
+  class PF_Armor_Helmets_CH252D_Wizard : PF_Armor_Helmets_CH252D_Wizard_dp
+  {
+    displayName = "[PF] CH252D (Wizard)";
+    hiddenSelectionsTextures[] =
+    {
+      "PF_Armor\_base\helmets\CH252D\_textures\wizard\black.paa",
+      "PF_Armor\_base\helmets\CH252D\_textures\visr_standard.paa",
+    };
+  };
+
   /* 1-3 Cleric */
+  class PF_Armor_Helmets_CH252D_Cleric_dp : PF_Armor_Helmets_CH252D_Pathfinder_dp
+  {
+    displayName = "[PF] CH252D Depolarized (Cleric)";
+    hiddenSelectionsTextures[] =
+    {
+      "PF_Armor\_base\helmets\CH252D\_textures\cleric\black.paa",
+      "PF_Armor\_base\helmets\CH252D\_textures\visr_clear.paa",
+    };
+  };
+  class PF_Armor_Helmets_CH252D_Cleric : PF_Armor_Helmets_CH252D_Cleric_dp
+  {
+    displayName = "[PF] CH252D (Cleric)";
+    hiddenSelectionsTextures[] =
+    {
+      "PF_Armor\_base\helmets\CH252D\_textures\cleric\black.paa",
+      "PF_Armor\_base\helmets\CH252D\_textures\visr_standard.paa",
+    };
+  };
+
   /* 1-4 Bard */
+  class PF_Armor_Helmets_CH252D_Bard_dp : PF_Armor_Helmets_CH252D_Pathfinder_dp
+  {
+    displayName = "[PF] CH252D Depolarized (Bard)";
+    hiddenSelectionsTextures[] =
+    {
+      "PF_Armor\_base\helmets\CH252D\_textures\bard\black.paa",
+      "PF_Armor\_base\helmets\CH252D\_textures\visr_clear.paa",
+    };
+  };
+  class PF_Armor_Helmets_CH252D_Bard : PF_Armor_Helmets_CH252D_Bard_dp
+  {
+    displayName = "[PF] CH252D (Bard)";
+    hiddenSelectionsTextures[] =
+    {
+      "PF_Armor\_base\helmets\CH252D\_textures\Bard\black.paa",
+      "PF_Armor\_base\helmets\CH252D\_textures\visr_standard.paa",
+    };
+  };
 };
