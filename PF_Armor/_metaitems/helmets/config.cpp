@@ -270,10 +270,16 @@ class XtdGearModels
         values[] =
         {
           "stock",
+          "reid",
         };
         class stock
         {
           label = "Stock";
+        };
+        class reid
+        {
+          label = "Reid";
+          description = "Bing Bang Boom";
         };
       };
       class camouflage
@@ -596,6 +602,15 @@ class XtdGearInfos
       camouflage = "snow";
     };
     class PF_Armor_Helmets_CH252D_Wizard_Snow_dp : PF_Armor_Helmets_CH252D_Wizard_Snow
+    {
+      polarization = "off";
+    };
+    // Customs
+    class PF_Armor_Helmets_Reid : PF_Armor_Helmets_CH252D_Wizard
+    {
+      customization = "reid";
+    };
+    class PF_Armor_Helmets_Reid_dp : PF_Armor_Helmets_Reid
     {
       polarization = "off";
     };

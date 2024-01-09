@@ -173,10 +173,16 @@ class XtdGearModels
         values[] =
         {
             "stock",
+            "reid",
         };
         class stock
         {
             label = "Stock";
+        };
+        class reid
+        {
+          label = "Reid";
+          description = "Bing Bang Boom";
         };
       };
       class camouflage
@@ -350,6 +356,14 @@ class XtdGearInfos
       model = "PF_Armor_Metaitems_Vests_Wizard";
       type = "m52d";
       customization = "stock";
+      camouflage = "black";
+    };
+    // Custom
+    class PF_Armor_Vests_Reid_Wizard
+    {
+      model = "PF_Armor_Metaitems_Vests_Wizard";
+      type = "m52d";
+      customization = "reid";
       camouflage = "black";
     };
 
