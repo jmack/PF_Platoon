@@ -270,11 +270,16 @@ class XtdGearModels
         values[] =
         {
           "stock",
+          "baird",
           "reid",
         };
         class stock
         {
           label = "Stock";
+        };
+        class baird
+        {
+          label = "Baird";
         };
         class reid
         {
@@ -606,6 +611,14 @@ class XtdGearInfos
       polarization = "off";
     };
     // Customs
+    class PF_Armor_Helmets_Baird : PF_Armor_Helmets_CH252D_Wizard
+    {
+      customization = "baird";
+    };
+    class PF_Armor_Helmets_Baird_dp : PF_Armor_Helmets_Baird
+    {
+      polarization = "off";
+    };
     class PF_Armor_Helmets_Reid : PF_Armor_Helmets_CH252D_Wizard
     {
       customization = "reid";
