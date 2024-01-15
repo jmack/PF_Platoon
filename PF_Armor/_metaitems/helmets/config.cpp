@@ -271,6 +271,7 @@ class XtdGearModels
         {
           "stock",
           "baird",
+          "bridges",
           "dukova",
           "reid",
         };
@@ -281,6 +282,10 @@ class XtdGearModels
         class baird
         {
           label = "Baird";
+        };
+        class bridges
+        {
+          label = "Bridges";
         };
         class dukova
         {
@@ -621,6 +626,14 @@ class XtdGearInfos
       customization = "baird";
     };
     class PF_Armor_Helmets_Baird_dp : PF_Armor_Helmets_Baird
+    {
+      polarization = "off";
+    };
+    class PF_Armor_Helmets_Bridges : PF_Armor_Helmets_CH252D_Wizard
+    {
+      customization = "bridges";
+    };
+    class PF_Armor_Helmets_Bridges_dp : PF_Armor_Helmets_Bridges
     {
       polarization = "off";
     };
