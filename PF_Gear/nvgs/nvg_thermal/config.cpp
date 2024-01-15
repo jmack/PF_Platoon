@@ -190,10 +190,17 @@ class CfgWeapons
       "TI",
     };
     thermalMode[] = {0};
+     class ItemInfo
+    {
+      type=616;
+      uniformModel = "\OPTRE_UNSC_Units\Army\NVGs\MVI\V_MVI_OFF";
+      modelOff = "\OPTRE_UNSC_Units\Army\NVGs\MVI\V_MVI_OFF";
+      mass = 2;
+    };
   };
   class PF_Gear_Nvg_Thermal_Marksman_Orange_OFF : PF_Gear_Nvg_Thermal_Marksman_White_OFF
   {
-    thermalmode[] = {6};
+    thermalMode[] = {6};
   };
   // class PF_Gear_Nvg_Thermal_Marksman_White_ON : MEU_OPTRE_NVG_MVI_ON
   // {
@@ -212,4 +219,29 @@ class CfgWeapons
   // {
   //   thermalMode[] = {6};
   // };
+  class PF_Gear_Nvg_Thermal_Gungnir_White : OPTRE_NVGT_C
+  {
+    dlc = "PF_Plt";
+    author = "OriUnder";
+    displayName = "[PF] Thermal Gungnir Blastshield";
+    visionMode[] =
+    {
+    "Normal",
+    "NVG",
+    "TI",
+    };
+    thermalMode[] = {0};
+    model = "\TCF_EQUIPMENT\Helmets\Gungnir\BattleshieldBaseplate.p3d";
+    class ItemInfo
+    {
+      type = 616;
+      uniformModel = "\TCF_EQUIPMENT\Helmets\Gungnir\BattleshieldBaseplate.p3d";
+      modelOff = "\TCF_EQUIPMENT\Helmets\Gungnir\BattleshieldBaseplate.p3d";
+      mass = 2;
+    };
+  };
+  class PF_Gear_Nvg_Thermal_Gungnir_Orange : PF_Gear_Nvg_Thermal_Gungnir_White
+  {
+    thermalMode[] = {6};
+  };
 };
