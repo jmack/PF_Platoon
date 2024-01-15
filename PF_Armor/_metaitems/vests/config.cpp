@@ -173,11 +173,16 @@ class XtdGearModels
         values[] =
         {
             "stock",
+            "baird",
             "reid",
         };
         class stock
         {
             label = "Stock";
+        };
+        class baird
+        {
+          label = "Baird";
         };
         class reid
         {
@@ -359,6 +364,13 @@ class XtdGearInfos
       camouflage = "black";
     };
     // Custom
+    class PF_Armor_Vests_Baird_Wizard
+    {
+      model = "PF_Armor_Metaitems_Vests_Wizard";
+      type = "m52d";
+      customization = "baird";
+      camouflage = "black";
+    };
     class PF_Armor_Vests_Reid_Wizard
     {
       model = "PF_Armor_Metaitems_Vests_Wizard";
