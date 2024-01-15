@@ -27,7 +27,7 @@ class XtdGearModels
         "type",
         "mode",
         "camo",
-      //  "visor",
+        // "visor",
       };
       class type
       {
@@ -163,6 +163,7 @@ class XtdGearInfos
 
 class CfgWeapons
 {
+  // Implants
   class OPTRE_NVGT_C;
   class PF_Gear_Nvg_Thermal_Implant_White: OPTRE_NVGT_C
   {
@@ -175,7 +176,7 @@ class CfgWeapons
   {
     thermalMode[] = {6};
   };
-
+  // Marksman NVG
   class MEU_OPTRE_NVG_MVI_OFF;
   class MEU_OPTRE_NVG_MVI_ON;
   class PF_Gear_Nvg_Thermal_Marksman_White_OFF : MEU_OPTRE_NVG_MVI_OFF
@@ -219,6 +220,8 @@ class CfgWeapons
   // {
   //   thermalMode[] = {6};
   // };
+
+  // Gungnir NVG
   class PF_Gear_Nvg_Thermal_Gungnir_White : OPTRE_NVGT_C
   {
     dlc = "PF_Plt";
@@ -226,9 +229,9 @@ class CfgWeapons
     displayName = "[PF] Thermal Gungnir Blastshield";
     visionMode[] =
     {
-    "Normal",
-    "NVG",
-    "TI",
+      "Normal",
+      "NVG",
+      "TI",
     };
     thermalMode[] = {0};
     model = "\TCF_EQUIPMENT\Helmets\Gungnir\BattleshieldBaseplate.p3d";
