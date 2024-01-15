@@ -271,6 +271,7 @@ class XtdGearModels
         {
           "stock",
           "baird",
+          "dukova",
           "reid",
         };
         class stock
@@ -280,6 +281,10 @@ class XtdGearModels
         class baird
         {
           label = "Baird";
+        };
+        class dukova
+        {
+          label = "Dukova";
         };
         class reid
         {
@@ -616,6 +621,14 @@ class XtdGearInfos
       customization = "baird";
     };
     class PF_Armor_Helmets_Baird_dp : PF_Armor_Helmets_Baird
+    {
+      polarization = "off";
+    };
+    class PF_Armor_Helmets_Dukova : PF_Armor_Helmets_CH252D_Wizard
+    {
+      customization = "dukova";
+    };
+    class PF_Armor_Helmets_Dukova_dp : PF_Armor_Helmets_Dukova
     {
       polarization = "off";
     };
