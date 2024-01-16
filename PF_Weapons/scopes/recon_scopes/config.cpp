@@ -36,8 +36,8 @@ class asdg_OpticRail1913: asdg_OpticRail
   };
 };
 
-// The actual DMR scope
 class MEU_REC_HOLO_DMR;
+// The actual DMR scope
 class ItemInfo;
 class CfgWeapons
 {
