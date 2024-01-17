@@ -41,7 +41,7 @@ class MEU_REC_HOLO_DMR;
 class ItemInfo;
 class CfgWeapons
 {
-  class PF_Holo_DM : MEU_REC_HOLO_DMR
+  class PF_Holo_DMR : MEU_REC_HOLO_DMR
   {
     displayName="[PF] x1-x8 DMR Sight (Blue)";
     picture="\a3\Weapons_F_Mark\Data\UI\icon_optic_AMS_ca.paa";

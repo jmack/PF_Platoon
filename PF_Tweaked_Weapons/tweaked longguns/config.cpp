@@ -79,7 +79,7 @@ class CfgWeapons
     class Single;
   };
   class OPTRE_M393S_DMR;
-  
+  //my shit agagin
   class MEU_OPTRE_M393_DMR: OPTRE_M393_DMR
   {
     baseWeapon="MEU_OPTRE_M393_DMR";
@@ -87,7 +87,7 @@ class CfgWeapons
     canShootInWater=1;
     magazines[]+=
     {
-     "Commando_20Rnd_65_Mag",
+     "PF_15Rnd_65_Creedmoor_DMR_Mag",
     };
     magazineWell[]+=
     {
@@ -100,7 +100,7 @@ class CfgWeapons
       {
         compatibleitems[]+=
         {
-          "PF_Holo_DM",
+          "PF_Holo_DMR",
           "PF_Nightstalker",
         };
       };
