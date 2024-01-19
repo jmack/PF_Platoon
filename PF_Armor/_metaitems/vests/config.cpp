@@ -174,6 +174,7 @@ class XtdGearModels
         {
             "stock",
             "baird",
+            "barnes",
             "reid",
         };
         class stock
@@ -183,6 +184,11 @@ class XtdGearModels
         class baird
         {
           label = "Baird";
+        };
+        class barnes
+        {
+          label = "Barnes";
+          description = "Big Boom?";
         };
         class reid
         {
@@ -369,6 +375,13 @@ class XtdGearInfos
       model = "PF_Armor_Metaitems_Vests_Wizard";
       type = "m52d";
       customization = "baird";
+      camouflage = "black";
+    };
+    class PF_Armor_Vests_Barnes_Wizard
+    {
+      model = "PF_Armor_Metaitems_Vests_Wizard";
+      type = "m52d";
+      customization = "barnes";
       camouflage = "black";
     };
     class PF_Armor_Vests_Reid_Wizard
