@@ -72,11 +72,17 @@ class XtdGearModels
         values[] =
         {
           "stock",
+          "cherry",
           "oneill",
         };
         class stock
         {
           label = "Stock";
+        };
+        class cherry
+        {
+          label = "Cherry";
+          description = "Thanks for flying Air Dullahan";
         };
         class oneill
         {
