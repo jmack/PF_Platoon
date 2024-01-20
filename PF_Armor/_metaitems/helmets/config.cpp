@@ -238,6 +238,7 @@ class XtdGearModels
         {
             "ch252d",
             "m52d",
+            "m56g",
             "m56r",
             "m56s",
             "custom",
@@ -249,6 +250,10 @@ class XtdGearModels
         class m52d
         {
           label = "M52D";
+        };
+        class m56g
+        {
+          label = "M56G";
         };
         class m56r
         {
@@ -271,6 +276,7 @@ class XtdGearModels
         {
           "stock",
           "baird",
+          "barnes",
           "bridges",
           "dukova",
           "reid",
@@ -282,6 +288,11 @@ class XtdGearModels
         class baird
         {
           label = "Baird";
+        };
+        class barnes
+        {
+          label = "Barnes";
+          description = "Big Boom?";
         };
         class bridges
         {
