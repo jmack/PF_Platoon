@@ -36,6 +36,7 @@ class XtdGearModels
             "m52d",
             "m56r",
             "m56s",
+            "recon",
             "custom",
         };
         class ch252d
@@ -53,6 +54,11 @@ class XtdGearModels
         class m56s
         {
           label = "M56S";
+        };
+        class recon
+        {
+          label = "R/B5";
+          description = " /!\ For Authorized ONI Personnel Only /!\ ";
         };
         class custom
         {
