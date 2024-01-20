@@ -175,6 +175,7 @@ class XtdGearModels
             "stock",
             "baird",
             "barnes",
+            "dukova",
             "reid",
         };
         class stock
@@ -189,6 +190,10 @@ class XtdGearModels
         {
           label = "Barnes";
           description = "Big Boom?";
+        };
+        class dukova
+        {
+          label = "Dukova";
         };
         class reid
         {
