@@ -98,84 +98,19 @@ class XtdGearModels
   };
 };
 
-class XtdGearInfos
+class CfgVehicles
 {
-  class CfgVehicles
+  class MA_M56S_Rucksack;
+  class PF_Gear_Backpacks_ODSTHardcases_Light_Basic : MA_M56S_Rucksack
   {
-    class PF_Gear_Backpacks_ODSTHardcases_Light_Basic
+    class XtdGearInfo
     {
       model = "PF_Gear_Backpacks_ODSTHardcases";
       type = "light";
       role = "basic";
       camouflage = "black";
     };
-    class PF_Gear_Backpacks_ODSTHardcases_Light_Basic_Snow : PF_Gear_Backpacks_ODSTHardcases_Light_Basic
-    {
-      camouflage = "snow";
-    };
-    class PF_Gear_Backpacks_ODSTHardcases_Padded_Basic
-    {
-      model = "PF_Gear_Backpacks_ODSTHardcases";
-      type = "padded";
-      role = "basic";
-      camouflage = "black";
-    };
-    class PF_Gear_Backpacks_ODSTHardcases_Padded_Basic_Snow : PF_Gear_Backpacks_ODSTHardcases_Padded_Basic
-    {
-      camouflage = "snow";
-    };
-    class PF_Gear_Backpacks_ODSTHardcases_Heavy_Basic
-    {
-      model = "PF_Gear_Backpacks_ODSTHardcases";
-      type = "heavy";
-      role = "basic";
-      camouflage = "black";
-    };
-    class PF_Gear_Backpacks_ODSTHardcases_Heavy_Basic_Snow : PF_Gear_Backpacks_ODSTHardcases_Heavy_Basic
-    {
-      camouflage = "snow";
-    };
-    class PF_Gear_Backpacks_ODSTHardcases_Padded_Medical
-    {
-      model = "PF_Gear_Backpacks_ODSTHardcases";
-      type = "padded";
-      role = "medical";
-      camouflage = "black";
-    };
-    class PF_Gear_Backpacks_ODSTHardcases_Padded_Medical_Snow : PF_Gear_Backpacks_ODSTHardcases_Padded_Medical
-    {
-      camouflage = "snow";
-    };
-    class PF_Gear_Backpacks_ODSTHardcases_Heavy_Medical
-    {
-      model = "PF_Gear_Backpacks_ODSTHardcases";
-      type = "heavy";
-      role = "medical";
-      camouflage = "black";
-    };
-    class PF_Gear_Backpacks_ODSTHardcases_Heavy_Medical_Snow : PF_Gear_Backpacks_ODSTHardcases_Heavy_Medical
-    {
-      camouflage = "snow";
-    }
-    class PF_Gear_Backpacks_ODSTHardcases_Longbow_Basic
-    {
-      model = "PF_Gear_Backpacks_ODSTHardcases";
-      type = "longbow";
-      role = "basic";
-      camouflage = "black";
-    };
-    class PF_Gear_Backpacks_ODSTHardcases_Longbow_Basic_Snow : PF_Gear_Backpacks_ODSTHardcases_Longbow_Basic
-    {
-      camouflage = "snow";
-    };
-  };
-};
 
-class CfgVehicles
-{
-  class MA_M56S_Rucksack;
-  class PF_Gear_Backpacks_ODSTHardcases_Light_Basic : MA_M56S_Rucksack
-  {
     displayName = "[PF] ODST Light Hardcase";
     author = "wlan0";
     hiddenSelectionsTextures[] = {
@@ -185,6 +120,14 @@ class CfgVehicles
   };
   class PF_Gear_Backpacks_ODSTHardcases_Light_Basic_Snow : PF_Gear_Backpacks_ODSTHardcases_Light_Basic
   {
+    class XtdGearInfo
+    {
+      model = "PF_Gear_Backpacks_ODSTHardcases";
+      type = "light";
+      role = "basic";
+      camouflage = "snow";
+    };
+
     hiddenSelectionsTextures[] = {
       "PF_Gear\backpacks\odst_hardcase\_textures\MA_Ruck\ruck_snow.paa",
       "PF_Gear\backpacks\odst_hardcase\_textures\MA_Ruck\backpack_radio_green.paa",
@@ -206,6 +149,14 @@ class CfgVehicles
   };
   class PF_Gear_Backpacks_ODSTHardcases_Padded_Basic : PF_Gear_Backpacks_ODSTHardcases_Main
   {
+    class XtdGearInfo
+    {
+      model = "PF_Gear_Backpacks_ODSTHardcases";
+      type = "padded";
+      role = "basic";
+      camouflage = "black";
+    };
+
     displayName = "[PF] ODST Padded Hardcase";
     hiddenSelections[] = {
       "camo1",
@@ -215,6 +166,14 @@ class CfgVehicles
   };
   class PF_Gear_Backpacks_ODSTHardcases_Heavy_Basic : PF_Gear_Backpacks_ODSTHardcases_Main
   {
+    class XtdGearInfo
+    {
+      model = "PF_Gear_Backpacks_ODSTHardcases";
+      type = "heavy";
+      role = "basic";
+      camouflage = "black";
+    };
+
     displayName = "[PF] ODST Heavy Hardcase";
     hiddenSelections[] = {
       "camo1",
@@ -224,6 +183,14 @@ class CfgVehicles
   };
   class PF_Gear_Backpacks_ODSTHardcases_Padded_Medical : PF_Gear_Backpacks_ODSTHardcases_Main
   {
+    class XtdGearInfo
+    {
+      model = "PF_Gear_Backpacks_ODSTHardcases";
+      type = "padded";
+      role = "medical";
+      camouflage = "black";
+    };
+
     displayName = "[PF] ODST Padded Medical Hardcase";
     hiddenSelections[] = {
       "camo1",
@@ -233,6 +200,14 @@ class CfgVehicles
   };
   class PF_Gear_Backpacks_ODSTHardcases_Heavy_Medical : PF_Gear_Backpacks_ODSTHardcases_Main
   {
+    class XtdGearInfo
+    {
+      model = "PF_Gear_Backpacks_ODSTHardcases";
+      type = "heavy";
+      role = "medical";
+      camouflage = "black";
+    };
+
     displayName = "[PF] ODST Heavy Medical Hardcase";
     hiddenSelections[] = {
       "camo1",
@@ -248,6 +223,14 @@ class CfgVehicles
   };
   class PF_Gear_Backpacks_ODSTHardcases_Padded_Basic_Snow : PF_Gear_Backpacks_ODSTHardcases_Main_Snow
   {
+    class XtdGearInfo
+    {
+      model = "PF_Gear_Backpacks_ODSTHardcases";
+      type = "padded";
+      role = "basic";
+      camouflage = "snow";
+    };
+
     displayName = "[PF] ODST Padded Hardcase";
     hiddenSelections[] = {
       "camo1",
@@ -257,6 +240,14 @@ class CfgVehicles
   };
   class PF_Gear_Backpacks_ODSTHardcases_Heavy_Basic_Snow : PF_Gear_Backpacks_ODSTHardcases_Main_Snow
   {
+    class XtdGearInfo
+    {
+      model = "PF_Gear_Backpacks_ODSTHardcases";
+      type = "heavy";
+      role = "basic";
+      camouflage = "snow";
+    };
+
     displayName = "[PF] ODST Heavy Hardcase";
     hiddenSelections[] = {
       "camo1",
@@ -266,6 +257,14 @@ class CfgVehicles
   };
   class PF_Gear_Backpacks_ODSTHardcases_Padded_Medical_Snow : PF_Gear_Backpacks_ODSTHardcases_Main_Snow
   {
+    class XtdGearInfo
+    {
+      model = "PF_Gear_Backpacks_ODSTHardcases";
+      type = "padded";
+      role = "medical";
+      camouflage = "snow";
+    };
+
     displayName = "[PF] ODST Padded Medical Hardcase";
     hiddenSelections[] = {
       "camo1",
@@ -275,6 +274,14 @@ class CfgVehicles
   };
   class PF_Gear_Backpacks_ODSTHardcases_Heavy_Medical_Snow : PF_Gear_Backpacks_ODSTHardcases_Main_Snow
   {
+    class XtdGearInfo
+    {
+      model = "PF_Gear_Backpacks_ODSTHardcases";
+      type = "heavy";
+      role = "medical";
+      camouflage = "snow";
+    };
+
     displayName = "[PF] ODST Heavy Medical Hardcase";
     hiddenSelections[] = {
       "camo1",
@@ -286,6 +293,14 @@ class CfgVehicles
   class OPTRE_ANPRC_521_green;
   class PF_Gear_Backpacks_ODSTHardcases_Longbow_Basic : OPTRE_ANPRC_521_green
   {
+    class XtdGearInfo
+    {
+      model = "PF_Gear_Backpacks_ODSTHardcases";
+      type = "longbow";
+      role = "basic";
+      camouflage = "black";
+    };
+
     displayName = "[PF] AN/PRC-497 Longbow";
     author = "wlan0";
     descriptionShort = "AN/PRC-487 Longbow<br>UNSC Long Range Radio<br>25km Effective Range";
@@ -306,6 +321,14 @@ class CfgVehicles
   };
   class PF_Gear_Backpacks_ODSTHardcases_Longbow_Basic_Snow : PF_Gear_Backpacks_ODSTHardcases_Longbow_Basic
   {
+    class XtdGearInfo
+    {
+      model = "PF_Gear_Backpacks_ODSTHardcases";
+      type = "longbow";
+      role = "basic";
+      camouflage = "snow";
+    };
+
     hiddenSelectionsTextures[] = {
       "PF_Gear\backpacks\odst_hardcase\_textures\Longbow\longbow_base_snow.paa",
       "PF_Gear\backpacks\odst_hardcase\_textures\Longbow\longbow_main_snow.paa",
