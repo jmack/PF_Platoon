@@ -21,6 +21,14 @@ class CfgWeapons
   class PF_Armor_Vests_Base;
   class PF_Armor_Vests_M52D_Pathfinder : PF_Armor_Vests_Base
   {
+    class XtdGearInfo
+    {
+      model = "PF_Armor_Metaitems_Vests_Pathfinder";
+      type = "m52d";
+      customization = "stock";
+      camouflage = "black";
+    };
+
     scope = 2;
     scopeArsenal = 2;
     displayName = "[PF] M52D (Pathfinder)";
@@ -106,6 +114,14 @@ class CfgWeapons
 
   class PF_Armor_Vests_M52D_Bard : PF_Armor_Vests_M52D_Pathfinder
   {
+    class XtdGearInfo
+    {
+      model = "PF_Armor_Metaitems_Vests_Bard";
+      type = "m52d";
+      customization = "stock";
+      camouflage = "black";
+    };
+
     displayName = "[PF] M52D (Bard)";
     hiddenSelectionsTextures[] =
     {
@@ -119,6 +135,14 @@ class CfgWeapons
   
   class PF_Armor_Vests_M52D_Cleric : PF_Armor_Vests_M52D_Pathfinder
   {
+    class XtdGearInfo
+    {
+      model = "PF_Armor_Metaitems_Vests_Cleric";
+      type = "m52d";
+      customization = "stock";
+      camouflage = "black";
+    };
+
     displayName = "[PF] M52D (Cleric)";
     hiddenSelectionsTextures[] =
     {
@@ -132,6 +156,14 @@ class CfgWeapons
   
   class PF_Armor_Vests_M52D_Druid : PF_Armor_Vests_M52D_Pathfinder
   {
+    class XtdGearInfo
+    {
+      model = "PF_Armor_Metaitems_Vests_Druid";
+      type = "m52d";
+      customization = "stock";
+      camouflage = "black";
+    };
+
     displayName = "[PF] M52D (Druid)";
     hiddenSelectionsTextures[] =
     {
@@ -145,6 +177,14 @@ class CfgWeapons
   
   class PF_Armor_Vests_M52D_Wizard : PF_Armor_Vests_M52D_Pathfinder
   {
+    class XtdGearInfo
+    {
+      model = "PF_Armor_Metaitems_Vests_Wizard";
+      type = "m52d";
+      customization = "stock";
+      camouflage = "black";
+    };
+
     displayName = "[PF] M52D (Wizard)";
     hiddenSelectionsTextures[] =
     {

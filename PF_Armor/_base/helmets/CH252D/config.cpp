@@ -38,6 +38,15 @@ class CfgWeapons
   /* 1. Pathfinder */
   class PF_Armor_Helmets_CH252D_Pathfinder_dp : VES_CH252D_dp
   {
+    class XtdGearInfo
+    {
+      model = "PF_Armor_Metaitems_Helmets_Pathfinder";
+      type = "ch252d";
+      customization = "stock";
+      camouflage = "black";
+      polarization = "off";
+    };
+
     author = "wlan0";
     scope = 2;
     scopeArsenal = 2;
@@ -94,6 +103,15 @@ class CfgWeapons
 
   class PF_Armor_Helmets_CH252D_Pathfinder : PF_Armor_Helmets_CH252D_Pathfinder_dp
   {
+    class XtdGearInfo
+    {
+      model = "PF_Armor_Metaitems_Helmets_Pathfinder";
+      type = "ch252d";
+      customization = "stock";
+      camouflage = "black";
+      polarization = "on";
+    };
+
     displayName = "[PF] CH252D (Pathfinder)";
     hiddenSelectionsTextures[] =
     {
@@ -105,6 +123,15 @@ class CfgWeapons
   /* 1-1 Druid */
   class PF_Armor_Helmets_CH252D_Druid_dp : PF_Armor_Helmets_CH252D_Pathfinder_dp
   {
+    class XtdGearInfo
+    {
+      model = "PF_Armor_Metaitems_Helmets_Druid";
+      type = "ch252d";
+      customization = "stock";
+      camouflage = "black";
+      polarization = "off";
+    };
+
     displayName = "[PF] CH252D Depolarized (Druid)";
     hiddenSelectionsTextures[] =
     {
@@ -114,6 +141,15 @@ class CfgWeapons
   };
   class PF_Armor_Helmets_CH252D_Druid : PF_Armor_Helmets_CH252D_Druid_dp
   {
+    class XtdGearInfo
+    {
+      model = "PF_Armor_Metaitems_Helmets_Druid";
+      type = "ch252d";
+      customization = "stock";
+      camouflage = "black";
+      polarization = "on";
+    };
+
     displayName = "[PF] CH252D (Druid)";
     hiddenSelectionsTextures[] =
     {
@@ -125,6 +161,15 @@ class CfgWeapons
   /* 1-2 Wizard */
   class PF_Armor_Helmets_CH252D_Wizard_dp : PF_Armor_Helmets_CH252D_Pathfinder_dp
   {
+    class XtdGearInfo
+    {
+      model = "PF_Armor_Metaitems_Helmets_Wizard";
+      type = "ch252d";
+      customization = "stock";
+      camouflage = "black";
+      polarization = "off";
+    };
+
     displayName = "[PF] CH252D Depolarized (Wizard)";
     hiddenSelectionsTextures[] =
     {
@@ -134,6 +179,15 @@ class CfgWeapons
   };
   class PF_Armor_Helmets_CH252D_Wizard : PF_Armor_Helmets_CH252D_Wizard_dp
   {
+    class XtdGearInfo
+    {
+      model = "PF_Armor_Metaitems_Helmets_Wizard";
+      type = "ch252d";
+      customization = "stock";
+      camouflage = "black";
+      polarization = "on";
+    };
+
     displayName = "[PF] CH252D (Wizard)";
     hiddenSelectionsTextures[] =
     {
@@ -145,6 +199,15 @@ class CfgWeapons
   /* 1-3 Cleric */
   class PF_Armor_Helmets_CH252D_Cleric_dp : PF_Armor_Helmets_CH252D_Pathfinder_dp
   {
+    class XtdGearInfo
+    {
+      model = "PF_Armor_Metaitems_Helmets_Cleric";
+      type = "ch252d";
+      customization = "stock";
+      camouflage = "black";
+      polarization = "off";
+    };
+
     displayName = "[PF] CH252D Depolarized (Cleric)";
     hiddenSelectionsTextures[] =
     {
@@ -154,6 +217,15 @@ class CfgWeapons
   };
   class PF_Armor_Helmets_CH252D_Cleric : PF_Armor_Helmets_CH252D_Cleric_dp
   {
+    class XtdGearInfo
+    {
+      model = "PF_Armor_Metaitems_Helmets_Cleric";
+      type = "ch252d";
+      customization = "stock";
+      camouflage = "black";
+      polarization = "on";
+    };
+
     displayName = "[PF] CH252D (Cleric)";
     hiddenSelectionsTextures[] =
     {
@@ -165,6 +237,15 @@ class CfgWeapons
   /* 1-4 Bard */
   class PF_Armor_Helmets_CH252D_Bard_dp : PF_Armor_Helmets_CH252D_Pathfinder_dp
   {
+    class XtdGearInfo
+    {
+      model = "PF_Armor_Metaitems_Helmets_Bard";
+      type = "ch252d";
+      customization = "stock";
+      camouflage = "black";
+      polarization = "off";
+    };
+
     displayName = "[PF] CH252D Depolarized (Bard)";
     hiddenSelectionsTextures[] =
     {
@@ -174,6 +255,15 @@ class CfgWeapons
   };
   class PF_Armor_Helmets_CH252D_Bard : PF_Armor_Helmets_CH252D_Bard_dp
   {
+    class XtdGearInfo
+    {
+      model = "PF_Armor_Metaitems_Helmets_Bard";
+      type = "ch252d";
+      customization = "stock";
+      camouflage = "black";
+      polarization = "on";
+    };
+
     displayName = "[PF] CH252D (Bard)";
     hiddenSelectionsTextures[] =
     {

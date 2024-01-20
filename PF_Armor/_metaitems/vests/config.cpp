@@ -175,6 +175,7 @@ class XtdGearModels
             "stock",
             "baird",
             "barnes",
+            "dukova",
             "reid",
         };
         class stock
@@ -189,6 +190,10 @@ class XtdGearModels
         {
           label = "Barnes";
           description = "Big Boom?";
+        };
+        class dukova
+        {
+          label = "Dukova";
         };
         class reid
         {
@@ -324,85 +329,6 @@ class XtdGearModels
             image = "#(rgb,8,8,3)color(0,0,0,1)";
         };
       };
-    };
-  };
-};
-
-class XtdGearInfos
-{
-  class CfgWeapons
-  {
-    /* Pathfinder Platoon */
-    // Stocks
-    class PF_Armor_Vests_M52D_Pathfinder
-    {
-      model = "PF_Armor_Metaitems_Vests_Pathfinder";
-      type = "m52d";
-      customization = "stock";
-      camouflage = "black";
-    };
-    // Custom
-    class PF_Armor_Vests_ONeill_Pathfinder
-    {
-      model = "PF_Armor_Metaitems_Vests_Pathfinder";
-      type = "m52d";
-      customization = "oneill";
-      camouflage = "black";
-    };
-
-    /* 1-1 Druid */
-    // Stocks
-    class PF_Armor_Vests_M52D_Druid
-    {
-      model = "PF_Armor_Metaitems_Vests_Druid";
-      type = "m52d";
-      customization = "stock";
-      camouflage = "black";
-    };
-
-    /* 1-2 Wizard */
-    // Stocks
-    class PF_Armor_Vests_M52D_Wizard
-    {
-      model = "PF_Armor_Metaitems_Vests_Wizard";
-      type = "m52d";
-      customization = "stock";
-      camouflage = "black";
-    };
-    // Custom
-    class PF_Armor_Vests_Baird_Wizard
-    {
-      model = "PF_Armor_Metaitems_Vests_Wizard";
-      type = "m52d";
-      customization = "baird";
-      camouflage = "black";
-    };
-    class PF_Armor_Vests_Reid_Wizard
-    {
-      model = "PF_Armor_Metaitems_Vests_Wizard";
-      type = "m52d";
-      customization = "reid";
-      camouflage = "black";
-    };
-
-    /* 1-3 Cleric */
-    // Stocks
-    class PF_Armor_Vests_M52D_Cleric
-    {
-      model = "PF_Armor_Metaitems_Vests_Cleric";
-      type = "m52d";
-      customization = "stock";
-      camouflage = "black";
-    };
-
-    /* 1-4 Bard */
-    // Stocks
-    class PF_Armor_Vests_M52D_Bard
-    {
-      model = "PF_Armor_Metaitems_Vests_Bard";
-      type = "m52d";
-      customization = "stock";
-      camouflage = "black";
     };
   };
 };
