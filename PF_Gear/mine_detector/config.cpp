@@ -7,10 +7,7 @@ class CfgPatches
     units[] = {};
     weapons[] = {};
     requiredVersion = 0.1;
-    requiredAddons[] =
-    {
-      "OPTRE_Core",
-    };
+    requiredAddons[] = {};
   };
 };
 
