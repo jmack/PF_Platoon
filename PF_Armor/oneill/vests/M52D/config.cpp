@@ -20,6 +20,14 @@ class CfgWeapons
   class PF_Armor_Vests_M52D_Pathfinder;
   class PF_Armor_Vests_ONeill_Pathfinder : PF_Armor_Vests_M52D_Pathfinder
   {
+    class XtdGearInfo
+    {
+      model = "PF_Armor_Metaitems_Vests_Pathfinder";
+      type = "m52d";
+      customization = "oneill";
+      camouflage = "black";
+    };
+
     displayName = "[PF] M52D (O'Neill)";
     hiddenSelectionsTextures[] =
     {
