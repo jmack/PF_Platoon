@@ -377,13 +377,6 @@ class XtdGearInfos
       customization = "baird";
       camouflage = "black";
     };
-    class PF_Armor_Vests_Barnes_Wizard
-    {
-      model = "PF_Armor_Metaitems_Vests_Wizard";
-      type = "m52d";
-      customization = "barnes";
-      camouflage = "black";
-    };
     class PF_Armor_Vests_Reid_Wizard
     {
       model = "PF_Armor_Metaitems_Vests_Wizard";

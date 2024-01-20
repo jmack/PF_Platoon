@@ -20,6 +20,14 @@ class CfgWeapons
   class PF_Armor_Vests_M52D_Wizard;
   class PF_Armor_Vests_Barnes_Wizard : PF_Armor_Vests_M52D_Wizard
   {
+    class XtdGearInfo
+    {
+      model = "PF_Armor_Metaitems_Vests_Wizard";
+      type = "m52d";
+      customization = "barnes";
+      camouflage = "black";
+    };
+
     displayName = "[PF] M52D (Barnes)";
     hiddenSelectionsTextures[] =
     {
