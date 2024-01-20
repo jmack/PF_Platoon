@@ -174,6 +174,7 @@ class XtdGearModels
         {
             "stock",
             "baird",
+            "barnes",
             "reid",
         };
         class stock
@@ -183,6 +184,11 @@ class XtdGearModels
         class baird
         {
           label = "Baird";
+        };
+        class barnes
+        {
+          label = "Barnes";
+          description = "Big Boom?";
         };
         class reid
         {
