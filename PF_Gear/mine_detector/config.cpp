@@ -14,7 +14,6 @@ class CfgPatches
   };
 };
 
-
 // detector
 class MineDetector;
 class CfgWeapons
@@ -23,8 +22,8 @@ class CfgWeapons
   {
     label = "[PF] Mine Detector";
     author = "OriUnder";
-    displayName="[PF] Mine Detedctor";
-		descriptionshort="[PF] Mine Detector";
+    displayName = "[PF] Mine Detedctor";
+    descriptionshort = "[PF] Mine Detector";
     detectRange = 25;
   };
 };
