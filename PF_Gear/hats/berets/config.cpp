@@ -74,58 +74,17 @@ class XtdGearModels
   };
 };
 
-class XtdGearInfos
-{
-  class CfgWeapons
-  {
-    class PF_Gear_Hats_Beret_UNSC
-    {
-      model = "PF_Gear_Hats_Berets";
-      style = "unsc";
-    };
-    class PF_Gear_Hats_Beret_ODST
-    {
-      model = "PF_Gear_Hats_Berets";
-      style = "odst";
-    };
-    class PF_Gear_Hats_Beret_ONI
-    {
-      model = "PF_Gear_Hats_Berets";
-      style = "oni";
-    };
-    class PF_Gear_Hats_Beret_Pathfinder
-    {
-      model = "PF_Gear_Hats_Berets";
-      style = "pathfinder";
-    };
-    class PF_Gear_Hats_Beret_Druid
-    {
-      model = "PF_Gear_Hats_Berets";
-      style = "druid";
-    };
-    class PF_Gear_Hats_Beret_Wizard
-    {
-      model = "PF_Gear_Hats_Berets";
-      style = "wizard";
-    };
-    class PF_Gear_Hats_Beret_Cleric
-    {
-      model = "PF_Gear_Hats_Berets";
-      style = "cleric";
-    };
-    class PF_Gear_Hats_Beret_Bard
-    {
-      model = "PF_Gear_Hats_Berets";
-      style = "bard";
-    };
-  };
-};
-
 class CfgWeapons
 {
   class H_Beret_02;
   class PF_Gear_Hats_Beret_UNSC : H_Beret_02
   {
+    class XtdGearInfo
+    {
+      model = "PF_Gear_Hats_Berets";
+      style = "unsc";
+    };
+
     displayName = "[PF] UNSC Beret";
     author = "wlan0";
     hiddenSelectionsTextures[] = { "PF_Gear\hats\berets\_textures\unsc.paa" };
@@ -133,6 +92,12 @@ class CfgWeapons
 
   class PF_Gear_Hats_Beret_ODST : H_Beret_02
   {
+    class XtdGearInfo
+    {
+      model = "PF_Gear_Hats_Berets";
+      style = "odst";
+    };
+
     displayName = "[PF] ODST Beret";
     author = "wlan0";
     hiddenSelectionsTextures[] = { "PF_Gear\hats\berets\_textures\odst.paa" };
@@ -140,6 +105,12 @@ class CfgWeapons
 
   class PF_Gear_Hats_Beret_ONI : H_Beret_02
   {
+    class XtdGearInfo
+    {
+      model = "PF_Gear_Hats_Berets";
+      style = "oni";
+    };
+
     displayName = "[PF] ONI Beret";
     author = "wlan0";
     hiddenSelectionsTextures[] = { "PF_Gear\hats\berets\_textures\oni.paa" };
@@ -147,6 +118,12 @@ class CfgWeapons
 
   class PF_Gear_Hats_Beret_Pathfinder : H_Beret_02
   {
+    class XtdGearInfo
+    {
+      model = "PF_Gear_Hats_Berets";
+      style = "pathfinder";
+    };
+
     displayName = "[PF] Pathfinder Platoon Beret";
     author = "wlan0";
     hiddenSelectionsTextures[] = { "PF_Gear\hats\berets\_textures\pathfinder.paa" };
@@ -154,6 +131,12 @@ class CfgWeapons
 
   class PF_Gear_Hats_Beret_Druid : H_Beret_02
   {
+    class XtdGearInfo
+    {
+      model = "PF_Gear_Hats_Berets";
+      style = "druid";
+    };
+
     displayName = "[PF] Druid Squad Beret";
     author = "wlan0";
     hiddenSelectionsTextures[] = { "PF_Gear\hats\berets\_textures\druid.paa" };
@@ -161,6 +144,12 @@ class CfgWeapons
 
   class PF_Gear_Hats_Beret_Wizard : H_Beret_02
   {
+    class XtdGearInfo
+    {
+      model = "PF_Gear_Hats_Berets";
+      style = "wizard";
+    };
+
     displayName = "[PF] Wizard Squad Beret";
     author = "wlan0";
     hiddenSelectionsTextures[] = { "PF_Gear\hats\berets\_textures\wizard.paa" };
@@ -168,6 +157,12 @@ class CfgWeapons
 
   class PF_Gear_Hats_Beret_Cleric : H_Beret_02
   {
+    class XtdGearInfo
+    {
+      model = "PF_Gear_Hats_Berets";
+      style = "cleric";
+    };
+
     displayName = "[PF] Cleric Squad Beret";
     author = "wlan0";
     hiddenSelectionsTextures[] = { "PF_Gear\hats\berets\_textures\cleric.paa" };
@@ -175,6 +170,12 @@ class CfgWeapons
 
   class PF_Gear_Hats_Beret_Bard : H_Beret_02
   {
+    class XtdGearInfo
+    {
+      model = "PF_Gear_Hats_Berets";
+      style = "bard";
+    };
+
     displayName = "[PF] Bard Squad Beret";
     author = "wlan0";
     hiddenSelectionsTextures[] = { "PF_Gear\hats\berets\_textures\bard.paa" };
