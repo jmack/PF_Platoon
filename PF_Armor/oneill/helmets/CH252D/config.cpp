@@ -18,6 +18,15 @@ class CfgWeapons
 
   class PF_Armor_Helmets_ONeill : PF_Armor_Helmets_CH252D_Pathfinder
   {
+    class XtdGearInfo
+    {
+      model = "PF_Armor_Metaitems_Helmets_Pathfinder";
+      type = "ch252d";
+      customization = "oneill";
+      camouflage = "black";
+      polarization = "on";
+    };
+
     displayName = "[PF] CH252D (O'Neill)";
     hiddenSelectionsTextures[] =
     {
@@ -27,6 +36,15 @@ class CfgWeapons
   };
   class PF_Armor_Helmets_ONeill_dp : PF_Armor_Helmets_CH252D_Pathfinder_dp
   {
+    class XtdGearInfo
+    {
+      model = "PF_Armor_Metaitems_Helmets_Pathfinder";
+      type = "ch252d";
+      customization = "oneill";
+      camouflage = "black";
+      polarization = "off";
+    };
+
     displayName = "[PF] CH252D Depolarized (O'Neill)";
     hiddenSelectionsTextures[] =
     {

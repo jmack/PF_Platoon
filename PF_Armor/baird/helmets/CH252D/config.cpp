@@ -18,6 +18,15 @@ class CfgWeapons
 
   class PF_Armor_Helmets_Baird : PF_Armor_Helmets_CH252D_Wizard
   {
+    class XtdGearInfo
+    {
+      model = "PF_Armor_Metaitems_Helmets_Wizard";
+      type = "ch252d";
+      customization = "baird";
+      camouflage = "black";
+      polarization = "on";
+    };
+
     displayName = "[PF] CH252D (Baird)";
     hiddenSelectionsTextures[] =
     {
@@ -27,6 +36,15 @@ class CfgWeapons
   };
   class PF_Armor_Helmets_Baird_dp : PF_Armor_Helmets_CH252D_Wizard_dp
   {
+    class XtdGearInfo
+    {
+      model = "PF_Armor_Metaitems_Helmets_Wizard";
+      type = "ch252d";
+      customization = "baird";
+      camouflage = "black";
+      polarization = "off";
+    };
+
     displayName = "[PF] CH252D Depolarized (Baird)";
     hiddenSelectionsTextures[] =
     {

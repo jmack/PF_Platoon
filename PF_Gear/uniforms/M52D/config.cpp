@@ -82,41 +82,20 @@ class XtdGearModels
   };
 };
 
-class XtdGearInfos
-{
-  class CfgWeapons
-  {
-    class PF_Gear_Uniforms_M52D_Masc
-    {
-      model = "PF_Gear_Uniforms_M52D_BDUs";
-      bodytype = "masc";
-      customization = "stock";
-      camouflage = "black";
-    };
-    class PF_Gear_Uniforms_M52D_Masc_Snow : PF_Gear_Uniforms_M52D_Masc
-    {
-      camouflage = "snow";
-    };
-    class PF_Gear_Uniforms_M52D_Femme
-    {
-      model = "PF_Gear_Uniforms_M52D_BDUs";
-      bodytype = "femme";
-      customization = "stock";
-      camouflage = "black";
-    };
-    class PF_Gear_Uniforms_M52D_Femme_Snow : PF_Gear_Uniforms_M52D_Femme
-    {
-      camouflage = "snow";
-    };
-  };
-};
-
 class CfgWeapons
 {
   class ItemInfo;
   class PF_Gear_Uniforms_BaseBDU;
   class PF_Gear_Uniforms_M52D_Masc : PF_Gear_Uniforms_BaseBDU
   {
+    class XtdGearInfo
+    {
+      model = "PF_Gear_Uniforms_M52D_BDUs";
+      bodytype = "masc";
+      customization = "stock";
+      camouflage = "black";
+    };
+
     scope = 2;
     scopeCurator = 2;
     scopeArsenal = 2;
@@ -129,6 +108,14 @@ class CfgWeapons
   };
   class PF_Gear_Uniforms_M52D_Masc_Snow : PF_Gear_Uniforms_M52D_Masc
   {
+    class XtdGearInfo
+    {
+      model = "PF_Gear_Uniforms_M52D_BDUs";
+      bodytype = "masc";
+      customization = "stock";
+      camouflage = "snow";
+    };
+
     displayName = "[PF] M52D BDU (Snow)";
     class ItemInfo: ItemInfo
     {
@@ -138,6 +125,14 @@ class CfgWeapons
   };
   class PF_Gear_Uniforms_M52D_Femme : PF_Gear_Uniforms_M52D_Masc
   {
+    class XtdGearInfo
+    {
+      model = "PF_Gear_Uniforms_M52D_BDUs";
+      bodytype = "femme";
+      customization = "stock";
+      camouflage = "black";
+    };
+
     class ItemInfo: ItemInfo
     {
       uniformClass = "PF_Gear_Uniforms_M52D_Femme";
@@ -146,6 +141,14 @@ class CfgWeapons
   };
   class PF_Gear_Uniforms_M52D_Femme_Snow : PF_Gear_Uniforms_M52D_Femme
   {
+    class XtdGearInfo
+    {
+      model = "PF_Gear_Uniforms_M52D_BDUs";
+      bodytype = "femme";
+      customization = "stock";
+      camouflage = "snow";
+    };
+
     displayName = "[PF] M52D BDU (Snow)";
     class ItemInfo: ItemInfo
     {
