@@ -57,6 +57,8 @@ class CfgPatches
 // my shit
 class PF_Nightstalker;
 class PF_Recon_Scopes;
+class PF_Holo;
+class PF_Holo_DMR;
 
 //their shit
 class WeaponSlotsInfo;
@@ -102,6 +104,7 @@ class CfgWeapons
         {
           "PF_Holo_DMR",
           "PF_Nightstalker",
+          "PF_Holo",
         };
       };
     };
