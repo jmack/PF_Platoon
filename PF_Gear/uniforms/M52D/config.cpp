@@ -52,10 +52,16 @@ class XtdGearModels
         values[] =
         {
           "stock",
+          "cherry",
         };
         class stock
         {
           label = "Stock";
+        };
+        class cherry
+        {
+          label = "Cherry";
+          description = "Thanks for flying Air Dullahan";
         };
       };
       class camouflage
@@ -156,6 +162,22 @@ class CfgWeapons
       uniformType = "Neopren";
     };
   };
+  class PF_Gear_Uniforms_M52D_Cherry : PF_Gear_Uniforms_M52D_Masc
+  {
+    class XtdGearInfo
+    {
+      model = "PF_Gear_Uniforms_M52D_BDUs";
+      customization = "cherry";
+      camouflage = "black";
+    };
+
+    displayName = "[PF] M52D BDU";
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "PF_Gear_Uniforms_M52D_Cherry";
+      uniformType = "Neopren";
+    };
+  };
 };
 
 class CfgVehicles
@@ -210,6 +232,16 @@ class CfgVehicles
     hiddenSelectionsTextures[] =
     {
       "PF_Gear\uniforms\M52D\_textures\femme_snow.paa",
+    };
+  };
+
+  class PF_Gear_Uniforms_M52D_Cherry : PF_Gear_Uniforms_M52D_Masc
+  {
+    uniformClass = "PF_Gear_Uniforms_M52D_Cherry";
+    hiddenSelectionsTextures[]=
+    {
+        "PF_Gear\uniforms\M52D\_textures\cherry_black_top.paa",
+        "PF_Gear\uniforms\M52D\_textures\cherry_urban_legs.paa",
     };
   };
 };
