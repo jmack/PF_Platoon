@@ -2,16 +2,16 @@ class CfgPatches
 {
   class 1st_MEU_patch_weapons_meu_rework_longguns
   {
-    author="1st MEU Mod Team";
-    addonRootClass="1st_MEU_patch_weapons_meu_rework";
-    requiredAddons[]=
+    author = "1st MEU Mod Team";
+    addonRootClass = "1st_MEU_patch_weapons_meu_rework";
+    requiredAddons[] =
     {
       "1st_MEU_patch_weapons_meu_rework",
       "1st_MEU_patch_weapons_generic_ammo",
     };
     requiredVersion=0.1;
-    units[]={};
-    weapons[]=
+    units[] = {};
+    weapons[] =
     {
       "MEU_OPTRE_M392_DMR",
       "MEU_OPTRE_M393_DMR",
@@ -26,7 +26,7 @@ class CfgPatches
       "MEU_OPTRE_SRS99_Scope",
       "MEU_OPTRE_SRS99C_Scope"
     };
-    magazines[]=
+    magazines[] =
     {
       "OPTRE_15Rnd_DMR_762x51_Mag_AP",
       "OPTRE_15Rnd_DMR_762x51_Mag_APT",
@@ -37,7 +37,7 @@ class CfgPatches
       "OPTRE_15Rnd_DMR_762x51_Mag_FS",
       "OPTRE_15Rnd_DMR_762x51_Mag_FST"
     };
-    ammo[]=
+    ammo[] =
     {
       "TEST_762x51_Ball_Baseline",
       "TEST_762x51_Ball_Caliber50",
@@ -82,25 +82,25 @@ class CfgWeapons
   };
   class OPTRE_M393S_DMR;
   //my shit agagin
-  class MEU_OPTRE_M393_DMR: OPTRE_M393_DMR
+  class MEU_OPTRE_M393_DMR : OPTRE_M393_DMR
   {
-    baseWeapon="MEU_OPTRE_M393_DMR";
-    displayName="[1st MEU] M393X DMR";
-    canShootInWater=1;
-    magazines[]+=
+    baseWeapon = "MEU_OPTRE_M393_DMR";
+    displayName = "[1st MEU] M393X DMR";
+    canShootInWater = 1;
+    magazines[] +=
     {
      "PF_15Rnd_65_Creedmoor_DMR_Mag",
     };
-    magazineWell[]+=
+    magazineWell[] +=
     {
       "MEU_marksmen_uw",
       "MEU_86x70",
     };
-    class WeaponSlotsInfo: WeaponSlotsInfo
+    class WeaponSlotsInfo : WeaponSlotsInfo
     {
-      class CowsSlot: CowsSlot
+      class CowsSlot : CowsSlot
       {
-        compatibleitems[]+=
+        compatibleitems[] +=
         {
           "PF_Holo_DMR",
           "PF_Nightstalker",
