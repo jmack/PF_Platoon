@@ -82,10 +82,145 @@ class CfgWeapons
   };
   class OPTRE_M393S_DMR;
   //my shit agagin
+  class MEU_OPTRE_M295_BMR : OPTRE_M295_BMR
+  {
+    baseWeapon = "MEU_OPTRE_M295_BMR";
+    displayName = "[1st MEU] M295X DMR";
+    canShootInWater = 1;
+    magazines[] +=
+    {
+     "PF_15Rnd_65_Creedmoor_DMR_Mag",
+    };
+    magazineWell[] +=
+    {
+      "MEU_marksmen_uw",
+      "MEU_86x70",
+    };
+    class WeaponSlotsInfo : WeaponSlotsInfo
+    {
+      class CowsSlot : CowsSlot
+      {
+        compatibleitems[] +=
+        {
+          "PF_Holo_DMR",
+          "PF_Nightstalker",
+          "PF_Holo",
+        };
+      };
+    };
+  };
+  class MEU_OPTRE_M295_BMR_Desert : MEU_OPTRE_M295_BMR
+  {
+    baseWeapon = "MEU_OPTRE_M295_BMR_Desert";
+    displayName = "[1st MEU] M295X DMR (Desert)";
+    canShootInWater = 1;
+    hiddenSelections[] =
+    {
+      "camo"
+    };
+    hiddenSelectionsTextures[] =
+    {
+      "OPTRE_Weapons\br\data\BMRDesert_co.paa"
+    };
+    hiddenSelectionMaterials[] =
+    {
+      "OPTRE_Weapons\br\data\BMRDesert.rvmat"
+    };
+  };
+  class MEU_OPTRE_M295_BMR_Snow : MEU_OPTRE_M295_BMR
+  {
+    baseWeapon = "MEU_OPTRE_M295_BMR_Snow";
+    displayName = "[1st MEU] M295X DMR (Snow)";
+    canShootInWater = 1;
+    hiddenSelections[] =
+    {
+      "camo"
+    };
+    hiddenSelectionsTextures[] =
+    {
+      "OPTRE_Weapons\br\data\BMRSnow_co.paa"
+    };
+    hiddenSelectionMaterials[] =
+    {
+      "OPTRE_Weapons\br\data\BMRSnow.rvmat"
+    };
+  };
+  class MEU_OPTRE_M295_BMR_Woodland : MEU_OPTRE_M295_BMR
+  {
+    baseWeapon = "MEU_OPTRE_M295_BMR_Woodland";
+    displayName = "[1st MEU] M295X DMR (Woodland)";
+    canShootInWater = 1;
+    hiddenSelections[] =
+    {
+      "camo"
+    };
+    hiddenSelectionsTextures[] =
+    {
+      "OPTRE_Weapons\br\data\BMRWood_co.paa"
+    };
+    hiddenSelectionMaterials[] =
+    {
+      "OPTRE_Weapons\br\data\BMRWood.rvmat"
+    };
+  };
+  class MEU_OPTRE_M392_DMR : OPTRE_M392_DMR
+  {
+    baseWeapon = "MEU_OPTRE_M392_DMR";
+    displayName = "[1st MEU] M392X DMR";
+    canShootInWater = 1;
+    magazines[] +=
+    {
+     "PF_15Rnd_65_Creedmoor_DMR_Mag",
+    };
+    magazineWell[] +=
+    {
+      "MEU_marksmen_uw",
+      "MEU_86x70",
+    };
+    class WeaponSlotsInfo : WeaponSlotsInfo
+    {
+      class CowsSlot : CowsSlot
+      {
+        compatibleitems[] +=
+        {
+          "PF_Holo_DMR",
+          "PF_Nightstalker",
+          "PF_Holo",
+        };
+      };
+    };
+  };
   class MEU_OPTRE_M393_DMR : OPTRE_M393_DMR
   {
     baseWeapon = "MEU_OPTRE_M393_DMR";
     displayName = "[1st MEU] M393X DMR";
+    canShootInWater = 1;
+    magazines[] +=
+    {
+     "PF_15Rnd_65_Creedmoor_DMR_Mag",
+    };
+    magazineWell[] +=
+    {
+      "MEU_marksmen_uw",
+      "MEU_86x70",
+    };
+    class WeaponSlotsInfo : WeaponSlotsInfo
+    {
+      class CowsSlot : CowsSlot
+      {
+        compatibleitems[] +=
+        {
+          "PF_Holo_DMR",
+          "PF_Nightstalker",
+          "PF_Holo",
+        };
+      };
+    };
+  };
+  class MEU_OPTRE_M393S_DMR : OPTRE_M393S_DMR
+  {
+    baseWeapon = "MEU_OPTRE_M393S_DMR";
+    displayName = "[1st MEU] M393X/S DMR";
     canShootInWater = 1;
     magazines[] +=
     {
