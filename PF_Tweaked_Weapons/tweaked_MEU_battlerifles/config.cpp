@@ -2,17 +2,17 @@ class CfgPatches
 {
   class 1st_MEU_patch_weapons_meu_rework_br
   {
-    author = "1st MEU Mod Team";
-    addonRootClass = "1st_MEU_patch_weapons_meu_rework";
-    requiredAddons[] =
+    author="1st MEU Mod Team";
+    addonRootClass="1st_MEU_patch_weapons_meu_rework";
+    requiredAddons[]=
     {
       "1st_MEU_patch_weapons_meu_rework"
     };
-    requiredVersion = 0.1;
-    units[] = {};
-    weapons[] = {};
-    magazines[] = {};
-    ammo[] = {};
+    requiredVersion=0.1;
+    units[]={};
+    weapons[]={};
+    magazines[]={};
+    ammo[]={};
   };
 };
 class WeaponSlotsInfo;
@@ -33,98 +33,463 @@ class CfgWeapons
   class OPTRE_Commando_Red;
   class OPTRE_Commando_Snow;
   class OPTRE_Commando_Tan;
-  class OPTRE_BR55HB;
-  
-    class MEU_BR37 : OPTRE_BR37
+  class MEU_BR37: OPTRE_BR37
   {
-    displayName = "[1st MEU] BR37 Battle Rifle";
-    baseWeapon = "MEU_BR37";
-    canShootInWater = 1;
-    magazineWell[] =
+    displayName="[1st MEU] BR37 Battle Rifle";
+    baseWeapon="MEU_BR37";
+    canShootInWater=1;
+    magazineWell[]=
     {
       "MEU_rifle_uw",
       "MEU_86x70"
     };
-    class WeaponSlotsInfo : WeaponSlotsInfo
+    magazines[]=
+    {
+      "OPTRE_10Rnd_86x70_Mag"
+    };
+    class WeaponSlotsInfo: WeaponSlotsInfo
     {
       mass=29;
-      class CowsSlot : CowsSlot
+      class CowsSlot: CowsSlot
       {
-        compatibleitems[] +=
+        compatibleitems[]=
         {
+          "MEU_REC_HOLO",
+          "MEU_REC_HOLO_Red",
+          "MEU_REC_HOLO_Gre",
+          "MEU_REC_HOLO_Desert",
+          "MEU_REC_HOLO_UNSC",
+          "MEU_REC_HOLO_Snow",
+          "MEU_REC_HOLO_MEU",
+          "optic_Yorris",
+          "optic_DMS",
+          "optic_DMS_ghex_F",
+          "optic_ERCO_blk_F",
+          "optic_ERCO_khk_F",
+          "optic_ERCO_snd_F",
+          "optic_MRCO",
+          "optic_Arco",
+          "optic_Arco_ghex_F",
+          "optic_Arco_blk_F",
+          "optic_aco",
+          "optic_ACO_grn",
+          "optic_aco_smg",
+          "optic_ACO_grn_smg",
+          "optic_hamr",
+          "optic_Hamr_khk_F",
+          "optic_Holosight",
+          "optic_Holosight_smg",
+          "optic_Holosight_blk_F",
+          "optic_Holosight_khk_F",
+          "optic_Holosight_smg_blk_F",
+          "optic_Holosight_smg_khk_F",
+          "OPTRE_M392_Scope",
+          "OPTRE_BR55HB_Scope",
+          "OPTRE_M7_Sight",
+          "OPTRE_M393_Scope",
+          "OPTRE_M393_ACOG",
+          "OPTRE_M393_EOTECH",
+          "OPTRE_M73_SmartLink",
+          "OPTRE_MA5_SmartLink",
+          "OPTRE_MA5_SmartLink_v2",
+          "OPTRE_MA5C_SmartLink_v2",
+          "OPTRE_MA5_SmartLink_legacy",
+          "OPTRE_MA5C_SmartLink_legacy",
+          "OPTRE_M12_Optic",
+          "OPTRE_M12_Optic_Red",
+          "OPTRE_M12_Optic_Green",
+          "optic_ico_01_black_f",
+          "OPTRE_BR45_Scope",
           "PF_Holo_DMR",
           "PF_Nightstalker",
           "PF_Holo",
         };
       };
+      class MuzzleSlot: MuzzleSlot
+      {
+        compatibleitems[]=
+        {
+          "muzzle_snds_h_mg_blk_f",
+          "muzzle_snds_l",
+          "optre_ma5suppressor",
+          "optre_m7_silencer",
+          "optre_m6_silencer",
+          "ace_muzzle_mzls_b",
+          "muzzle_snds_b",
+          "OPTRE_MA37KSuppressor",
+          "muzzle_snds_65_TI_blk_F",
+          "OPTRE_srs99d_suppressor"
+        };
+      };
+      class PointerSlot: PointerSlot
+      {
+        compatibleitems[]=
+        {
+          "OPTRE_M7_Flashlight",
+          "OPTRE_M7_Laser",
+          "OPTRE_M7_Vis_Red_Laser",
+          "OPTRE_BMR_Laser",
+          "OPTRE_BMR_MEQ_Flashlight",
+          "OPTRE_BMR_Vis_Red_Laser",
+          "optre_m12_laser",
+          "OPTRE_M12_Vis_Red_Laser",
+          "OPTRE_M12_Flashlight",
+          "optre_m45_flashlight",
+          "optre_m45_flashlight_red",
+          "OPTRE_M6C_Laser",
+          "OPTRE_M6C_Vis_Red_Laser",
+          "OPTRE_M6C_Flashlight",
+          "OPTRE_M6G_Laser",
+          "OPTRE_M6G_Vis_Red_Laser",
+          "OPTRE_M6G_Flashlight",
+          "acc_pointer_ir",
+          "acc_flashlight",
+          "ace_acc_pointer_green",
+          "acc_pointer_vis_red",
+          "MEU_M12_Vis_Laser",
+          "MEU_BMR_Vis_Laser",
+          "MEU_M7_Vis_Laser",
+          "MEU_M6G_Laser"
+        };
+      };
+      class UnderBarrelSlot_rail: UnderBarrelSlot_rail
+      {
+        compatibleitems[]=
+        {
+          "bipod_01_f_blk",
+          "bipod_02_f_blk",
+          "bipod_03_f_blk",
+          "OPTRE_BR45Grip",
+          "bipod_01_F_khk",
+          "bipod_01_F_mtp",
+          "bipod_01_F_snd",
+          "bipod_02_F_arid",
+          "bipod_02_F_hex",
+          "bipod_02_F_lush",
+          "bipod_02_F_tan",
+          "bipod_03_F_oli"
+        };
+      };
     };
   };
-  class MEU_OPTRE_BR45 : OPTRE_BR45
+  class MEU_OPTRE_BR45: OPTRE_BR45
   {
-    baseWeapon = "MEU_OPTRE_BR45";
-    canShootInWater = 1;
-    magazineWell[] +=
+    baseWeapon="MEU_OPTRE_BR45";
+    canShootInWater=1;
+    magazineWell[]+=
     {
       "MEU_rifle_uw"
     };
-    class WeaponSlotsInfo : WeaponSlotsInfo
+    magazines[]=
+    {
+      "OPTRE_36Rnd_95x40_Mag",
+      "OPTRE_36Rnd_95x40_Mag_Tracer",
+      "OPTRE_36Rnd_95x40_Mag_Tracer_Yellow",
+      "OPTRE_36Rnd_95x40_Mag_JHP",
+      "OPTRE_36Rnd_95x40_Mag_JHPT",
+      "OPTRE_36Rnd_95x40_Mag_HPSAP",
+      "OPTRE_36Rnd_95x40_Mag_HPSAPT",
+      "OPTRE_36Rnd_95x40_Mag_SS"
+    };
+    displayName="[1st MEU] BR45B Battle Rifle";
+    reloadMagazineSound[]=
+    {
+      "A3\Sounds_F_Enoch\Assets\Arsenal\Msbs65_01\Msbs65_01_Reload_01",
+      1.77828,
+      1,
+      10
+    };
+    class WeaponSlotsInfo: WeaponSlotsInfo
     {
       class CowsSlot: CowsSlot
       {
-        compatibleitems[] +=
+        compatibleitems[]=
         {
+          "MEU_REC_HOLO",
+          "MEU_REC_HOLO_Red",
+          "MEU_REC_HOLO_Gre",
+          "MEU_REC_HOLO_Desert",
+          "MEU_REC_HOLO_UNSC",
+          "MEU_REC_HOLO_Snow",
+          "MEU_REC_HOLO_MEU",
+          "optic_Yorris",
+          "optic_DMS",
+          "optic_DMS_ghex_F",
+          "optic_ERCO_blk_F",
+          "optic_ERCO_khk_F",
+          "optic_ERCO_snd_F",
+          "optic_MRCO",
+          "optic_Arco",
+          "optic_Arco_ghex_F",
+          "optic_Arco_blk_F",
+          "optic_aco",
+          "optic_ACO_grn",
+          "optic_aco_smg",
+          "optic_ACO_grn_smg",
+          "optic_hamr",
+          "optic_Hamr_khk_F",
+          "optic_Holosight",
+          "optic_Holosight_smg",
+          "optic_Holosight_blk_F",
+          "optic_Holosight_khk_F",
+          "optic_Holosight_smg_blk_F",
+          "optic_Holosight_smg_khk_F",
+          "OPTRE_M392_Scope",
+          "OPTRE_BR55HB_Scope",
+          "OPTRE_M7_Sight",
+          "OPTRE_M393_Scope",
+          "OPTRE_M393_ACOG",
+          "OPTRE_M393_EOTECH",
+          "OPTRE_M73_SmartLink",
+          "OPTRE_MA5_SmartLink",
+          "OPTRE_MA5_SmartLink_v2",
+          "OPTRE_MA5C_SmartLink_v2",
+          "OPTRE_MA5_SmartLink_legacy",
+          "OPTRE_MA5C_SmartLink_legacy",
+          "OPTRE_M12_Optic",
+          "OPTRE_M12_Optic_Red",
+          "OPTRE_M12_Optic_Green",
+          "optic_ico_01_black_f",
+          "OPTRE_BR45_Scope",
           "PF_Holo_DMR",
           "PF_Nightstalker",
           "PF_Holo",
         };
       };
+      class MuzzleSlot: MuzzleSlot
+      {
+        compatibleitems[]=
+        {
+          "muzzle_snds_h_mg_blk_f",
+          "muzzle_snds_l",
+          "optre_ma5suppressor",
+          "optre_m7_silencer",
+          "optre_m6_silencer",
+          "ace_muzzle_mzls_b",
+          "muzzle_snds_b",
+          "OPTRE_MA37KSuppressor",
+          "muzzle_snds_65_TI_blk_F",
+          "OPTRE_srs99d_suppressor"
+        };
+      };
+      class PointerSlot: PointerSlot
+      {
+        compatibleitems[]=
+        {
+          "OPTRE_M7_Flashlight",
+          "OPTRE_M7_Laser",
+          "OPTRE_M7_Vis_Red_Laser",
+          "OPTRE_BMR_Laser",
+          "OPTRE_BMR_MEQ_Flashlight",
+          "OPTRE_BMR_Vis_Red_Laser",
+          "optre_m12_laser",
+          "OPTRE_M12_Vis_Red_Laser",
+          "OPTRE_M12_Flashlight",
+          "optre_m45_flashlight",
+          "optre_m45_flashlight_red",
+          "OPTRE_M6C_Laser",
+          "OPTRE_M6C_Vis_Red_Laser",
+          "OPTRE_M6C_Flashlight",
+          "OPTRE_M6G_Laser",
+          "OPTRE_M6G_Vis_Red_Laser",
+          "OPTRE_M6G_Flashlight",
+          "acc_pointer_ir",
+          "acc_flashlight",
+          "ace_acc_pointer_green",
+          "acc_pointer_vis_red",
+          "MEU_M12_Vis_Laser",
+          "MEU_BMR_Vis_Laser",
+          "MEU_M7_Vis_Laser",
+          "MEU_M6G_Laser"
+        };
+      };
+      class UnderBarrelSlot_rail: UnderBarrelSlot_rail
+      {
+        compatibleitems[]=
+        {
+          "bipod_01_f_blk",
+          "bipod_02_f_blk",
+          "bipod_03_f_blk",
+          "OPTRE_BR45Grip",
+          "bipod_01_F_khk",
+          "bipod_01_F_mtp",
+          "bipod_01_F_snd",
+          "bipod_02_F_arid",
+          "bipod_02_F_hex",
+          "bipod_02_F_lush",
+          "bipod_02_F_tan",
+          "bipod_03_F_oli"
+        };
+      };
     };
   };
-  class MEU_OPTRE_BR45_Red : MEU_OPTRE_BR45
+  class MEU_OPTRE_BR45_Red: MEU_OPTRE_BR45
   {
-    baseWeapon = "MEU_OPTRE_BR45_Red";
-    hiddenSelections[] =
+    baseWeapon="MEU_OPTRE_BR45_Red";
+    hiddenSelections[]=
     {
       "camo",
       "camo_details"
     };
-    hiddenSelectionsTextures[] =
+    hiddenSelectionsTextures[]=
     {
       "\1st_meu_weapons\_textures\br45\MEU\br45_co.paa",
       "\1st_meu_weapons\_textures\br45\MEU\BR45decals_ca.paa"
     };
   };
-  class MEU_OPTRE_BR55 : OPTRE_BR55
+  class MEU_OPTRE_BR55: OPTRE_BR55
   {
-    baseWeapon = "MEU_OPTRE_BR55";
-    canShootInWater = 1;
-    magazineWell[] +=
+    baseWeapon="MEU_OPTRE_BR55";
+    canShootInWater=1;
+    magazineWell[]+=
     {
       "MEU_rifle_uw"
     };
-    displayName = "[1st MEU] BR55 Battle Rifle";
-    class WeaponSlotsInfo : WeaponSlotsInfo
+    magazines[]=
     {
-      class CowsSlot : CowsSlot
+      "OPTRE_36Rnd_95x40_Mag",
+      "OPTRE_36Rnd_95x40_Mag_Tracer",
+      "OPTRE_36Rnd_95x40_Mag_Tracer_Yellow",
+      "OPTRE_36Rnd_95x40_Mag_JHP",
+      "OPTRE_36Rnd_95x40_Mag_JHPT",
+      "OPTRE_36Rnd_95x40_Mag_HPSAP",
+      "OPTRE_36Rnd_95x40_Mag_HPSAPT",
+      "OPTRE_36Rnd_95x40_Mag_SS"
+    };
+    displayName="[1st MEU] BR55 Battle Rifle";
+    class WeaponSlotsInfo: WeaponSlotsInfo
+    {
+      class CowsSlot: CowsSlot
       {
-        compatibleitems[] +=
+        compatibleitems[]=
         {
+          "MEU_REC_HOLO",
+          "MEU_REC_HOLO_Red",
+          "MEU_REC_HOLO_Gre",
+          "MEU_REC_HOLO_Desert",
+          "MEU_REC_HOLO_UNSC",
+          "MEU_REC_HOLO_Snow",
+          "MEU_REC_HOLO_MEU",
+          "optic_Yorris",
+          "optic_DMS",
+          "optic_DMS_ghex_F",
+          "optic_ERCO_blk_F",
+          "optic_ERCO_khk_F",
+          "optic_ERCO_snd_F",
+          "optic_MRCO",
+          "optic_Arco",
+          "optic_Arco_ghex_F",
+          "optic_Arco_blk_F",
+          "optic_aco",
+          "optic_ACO_grn",
+          "optic_aco_smg",
+          "optic_ACO_grn_smg",
+          "optic_hamr",
+          "optic_Hamr_khk_F",
+          "optic_Holosight",
+          "optic_Holosight_smg",
+          "optic_Holosight_blk_F",
+          "optic_Holosight_khk_F",
+          "optic_Holosight_smg_blk_F",
+          "optic_Holosight_smg_khk_F",
+          "OPTRE_M392_Scope",
+          "OPTRE_BR55HB_Scope",
+          "OPTRE_M7_Sight",
+          "OPTRE_M393_Scope",
+          "OPTRE_M393_ACOG",
+          "OPTRE_M393_EOTECH",
+          "OPTRE_M73_SmartLink",
+          "OPTRE_MA5_SmartLink",
+          "OPTRE_MA5_SmartLink_v2",
+          "OPTRE_MA5C_SmartLink_v2",
+          "OPTRE_MA5_SmartLink_legacy",
+          "OPTRE_MA5C_SmartLink_legacy",
+          "OPTRE_M12_Optic",
+          "OPTRE_M12_Optic_Red",
+          "OPTRE_M12_Optic_Green",
+          "optic_ico_01_black_f",
+          "OPTRE_BR45_Scope",
           "PF_Holo_DMR",
           "PF_Nightstalker",
           "PF_Holo",
+        };
+      };
+      class MuzzleSlot: MuzzleSlot
+      {
+        compatibleitems[]=
+        {
+          "muzzle_snds_h_mg_blk_f",
+          "muzzle_snds_l",
+          "optre_ma5suppressor",
+          "optre_m7_silencer",
+          "optre_m6_silencer",
+          "ace_muzzle_mzls_b",
+          "muzzle_snds_b",
+          "OPTRE_MA37KSuppressor",
+          "muzzle_snds_65_TI_blk_F",
+          "OPTRE_srs99d_suppressor"
+        };
+      };
+      class PointerSlot: PointerSlot
+      {
+        compatibleitems[]=
+        {
+          "OPTRE_M7_Flashlight",
+          "OPTRE_M7_Laser",
+          "OPTRE_M7_Vis_Red_Laser",
+          "OPTRE_BMR_Laser",
+          "OPTRE_BMR_MEQ_Flashlight",
+          "OPTRE_BMR_Vis_Red_Laser",
+          "optre_m12_laser",
+          "OPTRE_M12_Vis_Red_Laser",
+          "OPTRE_M12_Flashlight",
+          "optre_m45_flashlight",
+          "optre_m45_flashlight_red",
+          "OPTRE_M6C_Laser",
+          "OPTRE_M6C_Vis_Red_Laser",
+          "OPTRE_M6C_Flashlight",
+          "OPTRE_M6G_Laser",
+          "OPTRE_M6G_Vis_Red_Laser",
+          "OPTRE_M6G_Flashlight",
+          "acc_pointer_ir",
+          "acc_flashlight",
+          "ace_acc_pointer_green",
+          "acc_pointer_vis_red",
+          "MEU_M12_Vis_Laser",
+          "MEU_BMR_Vis_Laser",
+          "MEU_M7_Vis_Laser",
+          "MEU_M6G_Laser"
+        };
+      };
+      class UnderBarrelSlot_rail: UnderBarrelSlot_rail
+      {
+        compatibleitems[]=
+        {
+          "bipod_01_f_blk",
+          "bipod_02_f_blk",
+          "bipod_03_f_blk",
+          "OPTRE_BR45Grip",
+          "bipod_01_F_khk",
+          "bipod_01_F_mtp",
+          "bipod_01_F_snd",
+          "bipod_02_F_arid",
+          "bipod_02_F_hex",
+          "bipod_02_F_lush",
+          "bipod_02_F_tan",
+          "bipod_03_F_oli"
         };
       };
     };
   };
   class MEU_OPTRE_BR55_Red: MEU_OPTRE_BR55
   {
-    baseWeapon = "MEU_OPTRE_BR55_Red";
-    hiddenSelections[] =
+    baseWeapon="MEU_OPTRE_BR55_Red";
+    hiddenSelections[]=
     {
       "camo1",
       "camo2"
     };
-    hiddenSelectionsTextures[] =
+    hiddenSelectionsTextures[]=
     {
       "\1st_meu_weapons\_textures\br55\MEU\br55_1_co.paa",
       "\1st_meu_weapons\_textures\br55\MEU\br55_2_co.paa"
@@ -132,37 +497,411 @@ class CfgWeapons
   };
   class MEU_OPTRE_BR55HB: OPTRE_BR55HB
   {
-    baseWeapon = "MEU_OPTRE_BR55HB";
-    canShootInWater = 1;
-    magazineWell[] +=
+    baseWeapon="MEU_OPTRE_BR55HB";
+    canShootInWater=1;
+    magazineWell[]+=
     {
       "MEU_rifle_uw"
+    };
+    magazines[]=
+    {
+      "OPTRE_36Rnd_95x40_Mag",
+      "OPTRE_36Rnd_95x40_Mag_Tracer",
+      "OPTRE_36Rnd_95x40_Mag_Tracer_Yellow",
+      "OPTRE_36Rnd_95x40_Mag_JHP",
+      "OPTRE_36Rnd_95x40_Mag_JHPT",
+      "OPTRE_36Rnd_95x40_Mag_HPSAP",
+      "OPTRE_36Rnd_95x40_Mag_HPSAPT",
+      "OPTRE_36Rnd_95x40_Mag_SS"
+    };
+    displayName="[1st MEU] BR55HB Battle Rifle";
+    reloadMagazineSound[]=
+    {
+      "A3\Sounds_F_Enoch\Assets\Arsenal\Msbs65_01\Msbs65_01_Reload_01",
+      1.77828,
+      1,
+      10
     };
     class WeaponSlotsInfo: WeaponSlotsInfo
     {
       class CowsSlot: CowsSlot
       {
-        compatibleitems[] +=
+        compatibleitems[]=
         {
+          "MEU_REC_HOLO",
+          "MEU_REC_HOLO_Red",
+          "MEU_REC_HOLO_Gre",
+          "MEU_REC_HOLO_Desert",
+          "MEU_REC_HOLO_UNSC",
+          "MEU_REC_HOLO_Snow",
+          "MEU_REC_HOLO_MEU",
+          "optic_Yorris",
+          "optic_DMS",
+          "optic_DMS_ghex_F",
+          "optic_ERCO_blk_F",
+          "optic_ERCO_khk_F",
+          "optic_ERCO_snd_F",
+          "optic_MRCO",
+          "optic_Arco",
+          "optic_Arco_ghex_F",
+          "optic_Arco_blk_F",
+          "optic_aco",
+          "optic_ACO_grn",
+          "optic_aco_smg",
+          "optic_ACO_grn_smg",
+          "optic_hamr",
+          "optic_Hamr_khk_F",
+          "optic_Holosight",
+          "optic_Holosight_smg",
+          "optic_Holosight_blk_F",
+          "optic_Holosight_khk_F",
+          "optic_Holosight_smg_blk_F",
+          "optic_Holosight_smg_khk_F",
+          "OPTRE_M392_Scope",
+          "OPTRE_BR55HB_Scope",
+          "OPTRE_M7_Sight",
+          "OPTRE_M393_Scope",
+          "OPTRE_M393_ACOG",
+          "OPTRE_M393_EOTECH",
+          "OPTRE_M73_SmartLink",
+          "OPTRE_MA5_SmartLink",
+          "OPTRE_MA5_SmartLink_v2",
+          "OPTRE_MA5C_SmartLink_v2",
+          "OPTRE_MA5_SmartLink_legacy",
+          "OPTRE_MA5C_SmartLink_legacy",
+          "OPTRE_M12_Optic",
+          "OPTRE_M12_Optic_Red",
+          "OPTRE_M12_Optic_Green",
+          "optic_ico_01_black_f",
+          "OPTRE_BR45_Scope",
           "PF_Holo_DMR",
           "PF_Nightstalker",
           "PF_Holo",
         };
       };
+      class MuzzleSlot: MuzzleSlot
+      {
+        compatibleitems[]=
+        {
+          "muzzle_snds_h_mg_blk_f",
+          "muzzle_snds_l",
+          "optre_ma5suppressor",
+          "optre_m7_silencer",
+          "optre_m6_silencer",
+          "ace_muzzle_mzls_b",
+          "muzzle_snds_b",
+          "OPTRE_MA37KSuppressor",
+          "muzzle_snds_65_TI_blk_F",
+          "OPTRE_srs99d_suppressor"
+        };
+      };
+      class PointerSlot: PointerSlot
+      {
+        compatibleitems[]=
+        {
+          "OPTRE_M7_Flashlight",
+          "OPTRE_M7_Laser",
+          "OPTRE_M7_Vis_Red_Laser",
+          "OPTRE_BMR_Laser",
+          "OPTRE_BMR_MEQ_Flashlight",
+          "OPTRE_BMR_Vis_Red_Laser",
+          "optre_m12_laser",
+          "OPTRE_M12_Vis_Red_Laser",
+          "OPTRE_M12_Flashlight",
+          "optre_m45_flashlight",
+          "optre_m45_flashlight_red",
+          "OPTRE_M6C_Laser",
+          "OPTRE_M6C_Vis_Red_Laser",
+          "OPTRE_M6C_Flashlight",
+          "OPTRE_M6G_Laser",
+          "OPTRE_M6G_Vis_Red_Laser",
+          "OPTRE_M6G_Flashlight",
+          "acc_pointer_ir",
+          "acc_flashlight",
+          "ace_acc_pointer_green",
+          "acc_pointer_vis_red",
+          "MEU_M12_Vis_Laser",
+          "MEU_BMR_Vis_Laser",
+          "MEU_M7_Vis_Laser",
+          "MEU_M6G_Laser"
+        };
+      };
+      class UnderBarrelSlot_rail: UnderBarrelSlot_rail
+      {
+        compatibleitems[]=
+        {
+          "bipod_01_f_blk",
+          "bipod_02_f_blk",
+          "bipod_03_f_blk",
+          "OPTRE_BR45Grip",
+          "bipod_01_F_khk",
+          "bipod_01_F_mtp",
+          "bipod_01_F_snd",
+          "bipod_02_F_arid",
+          "bipod_02_F_hex",
+          "bipod_02_F_lush",
+          "bipod_02_F_tan",
+          "bipod_03_F_oli"
+        };
+      };
     };
   };
-  class MEU_OPTRE_BR55HB_Red : MEU_OPTRE_BR55HB
+  class MEU_OPTRE_BR55HB_Red: MEU_OPTRE_BR55HB
   {
-    baseWeapon = "MEU_OPTRE_BR55HB_Red";
-    hiddenSelections[] =
+    baseWeapon="MEU_OPTRE_BR55HB_Red";
+    hiddenSelections[]=
     {
       "camo1",
       "camo2"
     };
-    hiddenSelectionsTextures[] =
+    hiddenSelectionsTextures[]=
     {
       "\1st_meu_weapons\_textures\br55\MEU\br55_1_co.paa",
       "\1st_meu_weapons\_textures\br55\MEU\br55_2_co.paa"
+    };
+  };
+  class MEU_OPTRE_Commando: OPTRE_Commando
+  {
+    baseWeapon="MEU_OPTRE_Commando";
+    canShootInWater=1;
+    magazineWell[]=
+    {
+      "MEU_rifle_uw",
+      "MEU_86x70"
+    };
+    magazines[]=
+    {
+      "Commando_20Rnd_65_Mag",
+      "Commando_20Rnd_65_TracerY_Mag",
+      "Command_20Rnd_65_TracerR_Mag",
+      "Commando_20Rnd_65_ReloadY_Mag",
+      "Commando_20Rnd_65_ReloadR_Mag"
+    };
+    displayName="[1st MEU] VK78 Commando";
+    class WeaponSlotsInfo: WeaponSlotsInfo
+    {
+      class CowsSlot: CowsSlot
+      {
+        compatibleitems[]=
+        {
+          "MEU_REC_HOLO",
+          "MEU_REC_HOLO_Red",
+          "MEU_REC_HOLO_Gre",
+          "MEU_REC_HOLO_Desert",
+          "MEU_REC_HOLO_UNSC",
+          "MEU_REC_HOLO_Snow",
+          "MEU_REC_HOLO_MEU",
+          "optic_Yorris",
+          "optic_DMS",
+          "optic_DMS_ghex_F",
+          "optic_ERCO_blk_F",
+          "optic_ERCO_khk_F",
+          "optic_ERCO_snd_F",
+          "optic_MRCO",
+          "optic_Arco",
+          "optic_Arco_ghex_F",
+          "optic_Arco_blk_F",
+          "optic_aco",
+          "optic_ACO_grn",
+          "optic_aco_smg",
+          "optic_ACO_grn_smg",
+          "optic_hamr",
+          "optic_Hamr_khk_F",
+          "optic_Holosight",
+          "optic_Holosight_smg",
+          "optic_Holosight_blk_F",
+          "optic_Holosight_khk_F",
+          "optic_Holosight_smg_blk_F",
+          "optic_Holosight_smg_khk_F",
+          "OPTRE_M392_Scope",
+          "OPTRE_BR55HB_Scope",
+          "OPTRE_M7_Sight",
+          "OPTRE_M393_Scope",
+          "OPTRE_M393_ACOG",
+          "OPTRE_M393_EOTECH",
+          "OPTRE_M73_SmartLink",
+          "OPTRE_MA5_SmartLink",
+          "OPTRE_MA5_SmartLink_v2",
+          "OPTRE_MA5C_SmartLink_v2",
+          "OPTRE_MA5_SmartLink_legacy",
+          "OPTRE_MA5C_SmartLink_legacy",
+          "OPTRE_M12_Optic",
+          "OPTRE_M12_Optic_Red",
+          "OPTRE_M12_Optic_Green",
+          "optic_ico_01_black_f",
+          "OPTRE_BR45_Scope",
+          "PF_Holo_DMR",
+          "PF_Nightstalker",
+          "PF_Holo",
+        };
+      };
+      class MuzzleSlot: MuzzleSlot
+      {
+        compatibleitems[]=
+        {
+          "muzzle_snds_h_mg_blk_f",
+          "muzzle_snds_l",
+          "optre_ma5suppressor",
+          "optre_m7_silencer",
+          "optre_m6_silencer",
+          "ace_muzzle_mzls_b",
+          "muzzle_snds_b",
+          "OPTRE_MA37KSuppressor",
+          "muzzle_snds_65_TI_blk_F",
+          "OPTRE_srs99d_suppressor"
+        };
+      };
+      class PointerSlot: PointerSlot
+      {
+        compatibleitems[]=
+        {
+          "OPTRE_M7_Flashlight",
+          "OPTRE_M7_Laser",
+          "OPTRE_M7_Vis_Red_Laser",
+          "OPTRE_BMR_Laser",
+          "OPTRE_BMR_MEQ_Flashlight",
+          "OPTRE_BMR_Vis_Red_Laser",
+          "optre_m12_laser",
+          "OPTRE_M12_Vis_Red_Laser",
+          "OPTRE_M12_Flashlight",
+          "optre_m45_flashlight",
+          "optre_m45_flashlight_red",
+          "OPTRE_M6C_Laser",
+          "OPTRE_M6C_Vis_Red_Laser",
+          "OPTRE_M6C_Flashlight",
+          "OPTRE_M6G_Laser",
+          "OPTRE_M6G_Vis_Red_Laser",
+          "OPTRE_M6G_Flashlight",
+          "acc_pointer_ir",
+          "acc_flashlight",
+          "ace_acc_pointer_green",
+          "acc_pointer_vis_red",
+          "MEU_M12_Vis_Laser",
+          "MEU_BMR_Vis_Laser",
+          "MEU_M7_Vis_Laser",
+          "MEU_M6G_Laser"
+        };
+      };
+      class UnderBarrelSlot_rail: UnderBarrelSlot_rail
+      {
+        compatibleitems[]=
+        {
+          "bipod_01_f_blk",
+          "bipod_02_f_blk",
+          "bipod_03_f_blk",
+          "OPTRE_BR45Grip",
+          "bipod_01_F_khk",
+          "bipod_01_F_mtp",
+          "bipod_01_F_snd",
+          "bipod_02_F_arid",
+          "bipod_02_F_hex",
+          "bipod_02_F_lush",
+          "bipod_02_F_tan",
+          "bipod_03_F_oli"
+        };
+      };
+    };
+  };
+  class MEU_OPTRE_Commando_Black: MEU_OPTRE_Commando
+  {
+    baseWeapon="MEU_OPTRE_Commando_Black";
+    displayName="[1st MEU] VK78 Commando (Black)";
+    canShootInWater=1;
+    magazineWell[]=
+    {
+      "MEU_rifle_uw",
+      "MEU_86x70",
+      "MEU_rifle_uw"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "OPTRE_Weapons\Commando\data\commando_black_co.paa",
+      "OPTRE_Weapons\Commando\data\commando2_black_co.paa"
+    };
+  };
+  class MEU_OPTRE_Commando_Police: MEU_OPTRE_Commando
+  {
+    baseWeapon="MEU_OPTRE_Commando_Police";
+    displayName="[1st MEU] VK78 Commando (Police)";
+    canShootInWater=1;
+    magazineWell[]=
+    {
+      "MEU_rifle_uw",
+      "MEU_86x70",
+      "MEU_rifle_uw"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "OPTRE_Weapons\Commando\data\commando_police_co.paa",
+      "OPTRE_Weapons\Commando\data\commando2_police_co.paa"
+    };
+  };
+  class MEU_OPTRE_Commando_Red: MEU_OPTRE_Commando
+  {
+    baseWeapon="MEU_OPTRE_Commando_Red";
+    displayName="[1st MEU] VK78 Commando (Red)";
+    canShootInWater=1;
+    magazineWell[]=
+    {
+      "MEU_rifle_uw",
+      "MEU_86x70",
+      "MEU_rifle_uw"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "OPTRE_Weapons\Commando\data\commando_red_co.paa",
+      "OPTRE_Weapons\Commando\data\commando2_red_co.paa"
+    };
+  };
+  class MEU_OPTRE_Commando_Snow: MEU_OPTRE_Commando
+  {
+    baseWeapon="MEU_OPTRE_Commando_Snow";
+    displayName="[1st MEU] VK78 Commando (Snow)";
+    canShootInWater=1;
+    magazineWell[]=
+    {
+      "MEU_rifle_uw",
+      "MEU_86x70",
+      "MEU_rifle_uw"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "OPTRE_Weapons\Commando\data\commando_snow_co.paa",
+      "OPTRE_Weapons\Commando\data\commando2_snow_co.paa"
+    };
+  };
+  class MEU_OPTRE_Commando_Tan: MEU_OPTRE_Commando
+  {
+    baseWeapon="MEU_OPTRE_Commando_Tan";
+    displayName="[1st MEU] VK78 Commando (Tan)";
+    canShootInWater=1;
+    magazineWell[]=
+    {
+      "MEU_rifle_uw",
+      "MEU_86x70",
+      "MEU_rifle_uw"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "OPTRE_Weapons\Commando\data\commando_tan_co.paa",
+      "OPTRE_Weapons\Commando\data\commando2_tan_co.paa"
+    };
+  };
+  class MEU_OPTRE_Commando_MEU: MEU_OPTRE_Commando
+  {
+    baseWeapon="MEU_OPTRE_Commando_MEU";
+    displayName="[1st MEU] VK78 Commando (MEU)";
+    canShootInWater=1;
+    magazineWell[]=
+    {
+      "MEU_rifle_uw",
+      "MEU_86x70",
+      "MEU_rifle_uw"
+    };
+    hiddenSelectionsTextures[]=
+    {
+      "\1st_meu_weapons\_textures\kommando\meu\CommandoBase.paa",
+      "OPTRE_Weapons\Commando\data\commando2_black_co.paa"
     };
   };
 };
