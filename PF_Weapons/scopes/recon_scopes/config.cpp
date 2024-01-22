@@ -7,7 +7,8 @@ class CfgPatches
     units[] = {};
     weapons[] = 
     {
-      "PF_Holo_DMR", "PF_Holo"
+      "PF_Holo_DMR", 
+      "PF_Holo",
     };
     requiredVersion = 0.1;
     requiredAddons[] =
