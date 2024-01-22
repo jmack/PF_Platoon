@@ -44,6 +44,7 @@ class CfgWeapons
 {
   class PF_Holo_DMR : MEU_REC_HOLO_DMR
   {
+    author = "OriUnder";
     displayName = "[PF] x2-x10 DMR Sight";
     picture = "\a3\Weapons_F_Mark\Data\UI\icon_optic_AMS_ca.paa";
     class ItemInfo : ItemInfo
@@ -102,6 +103,7 @@ class CfgWeapons
   };
   class PF_Holo : Optre_Recon_Sight
   {
+    author = "OriUnder";
     displayName = "[PF] x2-x6 Holo Sight";
     picture = "\a3\Weapons_F_Mark\Data\UI\icon_optic_AMS_ca.paa";
     class ItemInfo : ItemInfo
