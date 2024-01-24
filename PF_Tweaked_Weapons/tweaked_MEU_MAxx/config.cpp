@@ -745,6 +745,7 @@ class CfgWeapons
           "PF_Holo",
         };
       };
+    };
     class LinkedItems
     {
       class LinkedItemsOptic
