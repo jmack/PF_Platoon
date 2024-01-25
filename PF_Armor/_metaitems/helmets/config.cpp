@@ -292,6 +292,7 @@ class XtdGearModels
           "bridges",
           "dukova",
           "reid",
+          "winter",
         };
         class stock
         {
@@ -318,6 +319,10 @@ class XtdGearModels
         {
           label = "Reid";
           description = "Bing Bang Boom";
+        };
+        class winter
+        {
+          label = "Winter";
         };
       };
       class camouflage
