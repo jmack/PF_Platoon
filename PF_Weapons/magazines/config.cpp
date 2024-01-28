@@ -47,7 +47,7 @@ class CfgMagazines
   {
     dlc = "OPTRE";
     model = "\OPTRE_Weapons\Commando\Commando_Mag.p3d";
-    displayname = "15Rnd 6.5 Creedmoor Magazine"
+    displayname = "15Rnd 6.5 Creedmoor Magazine";
     displaynameshort = "6.5 Creedmoor";
     ammo = "OPTRE_65_Creedmoor";
     count = 15;
