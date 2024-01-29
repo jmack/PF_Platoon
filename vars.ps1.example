@@ -1,0 +1,3 @@
+$addonBuilder = "<path to your arma 3 tools addonbuilder.exe"; # Path to your Arma 3 Tools AddonBuilder.exe
+$destination = "dist\addons"  | Resolve-Path;                  # Destination path for build addons (leave this as is unless there are special circumstances)
+$privKey = "<path to your generated private key>";             # Create a new priv/pub keypair using Arma 3 Tools > DSUtils. Used for automatically signing pbofiles
