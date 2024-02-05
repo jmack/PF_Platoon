@@ -38,6 +38,7 @@ class XtdGearModels
           "implant",
           "marksman",
           "gungnir",
+          "vacseal",
         };
         class implant
         {
@@ -50,6 +51,10 @@ class XtdGearModels
         class gungnir
         {
           label = "Gungnir";
+        };
+        class vacseal
+        {
+          label = "Vacuum Collar"
         };
       };
       class mode
@@ -238,6 +243,43 @@ class CfgWeapons
     {
       model = "PF_Thermal_NVGs";
       type = "gungnir";
+      mode = "orange";
+      camo = "black";
+    };
+
+    thermalMode[] = {6};
+  };
+
+  // Vacuum Seal
+  class VES_NVG_Collar_VAC;
+  class PF_Gear_Nvg_Thermal_Vacseal_White : VES_NVG_Collar_VAC
+  {
+    class XtdGearInfo
+    {
+      model = "PF_Thermal_NVGs";
+      type = "vacseal";
+      mode = "white";
+      camo = "black";
+    };
+
+    dlc = "PF_Plt";
+    author = "wlan0";
+    displayName = "[PF] Vacuum Seal Collar";
+    visionMode[] =
+    {
+      "Normal",
+      "NVG",
+      "TI",
+    };
+    thermalMode[] = {0};
+    ace_nightvision_generation = 4;
+  };
+  class PF_Gear_Nvg_Thermal_Vacseal_Orange : PF_Gear_Nvg_Thermal_Vacseal_White
+  {
+    class XtdGearInfo
+    {
+      model = "PF_Thermal_NVGs";
+      type = "vacseal";
       mode = "orange";
       camo = "black";
     };
