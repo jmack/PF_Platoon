@@ -216,7 +216,7 @@ class CfgVehicles
   class PF_Gear_Uniforms_M52D_Femme : PF_Gear_Uniforms_M52D_Masc
   {
     uniformClass = "PF_Gear_Uniforms_M52D_Femme";
-    model = "\HSim\Characters_H\Woman\Uniforms\b_soldier_01_woman.p3d";
+    model = "TCGM_Girls\model\TCGM_CombatFatigues_Stealth.p3d";
     hiddenSelections[] =
     {
       "camo",
