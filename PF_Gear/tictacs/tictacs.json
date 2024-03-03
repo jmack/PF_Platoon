@@ -1,0 +1,44 @@
+{
+  "tictacs": [
+    {
+      "name": "Medical",
+      "texture": "PF_Gear\\tictacs\\_textures\\pods\\medical.paa",
+      "preview": "PF_Gear\\tictacs\\_textures\\previews\\medical.jpg",
+      "contents": [
+        { "class": "ACE_adenosine",       "type": "item", "count": 16 },
+        { "class": "ACE_morphine",        "type": "item", "count": 16 },
+        { "class": "ACE_epinephrine",     "type": "item", "count": 16 },
+        { "class": "MEU_Medigel_Light",   "type": "item", "count": 150 },
+        { "class": "ACE_elasticBandage",  "type": "item", "count": 20 },
+        { "class": "OPTRE_Biofoam",       "type": "item", "count": 10 },
+        { "class": "ACE_salineIV",        "type": "item", "count": 5 },
+        { "class": "ACE_salineIV_500",    "type": "item", "count": 10 },
+        { "class": "ACE_salineIV_250",    "type": "item", "count": 20 },
+        { "class": "ACE_tourniquet",      "type": "item", "count": 16 },
+        { "class": "ACE_splint",          "type": "item", "count": 10 },
+        { "class": "adv_aceCPR_AED",      "type": "item", "count": 1 },
+        { "class": "ACE_surgicalKit",     "type": "item", "count": 2 }
+      ]
+    },
+    {
+      "name": "Autorifle",
+      "texture": "PF_Gear\\tictacs\\_textures\\pods\\m73.paa",
+      "preview": "PF_Gear\\tictacs\\_textures\\previews\\lmg.jpg",
+      "contents": [
+        { "class": "MEU_400Rnd_762x51_AP_HV_Box", "type": "magazine", "count": 6 }
+      ]
+    },
+    {
+      "name": "Combat Engineer",
+      "texture": "PF_Gear\\tictacs\\_textures\\pods\\empty.paa",
+      "preview": "PF_Gear\\tictacs\\_textures\\previews\\empty.jpg",
+      "contents": [
+        { "class": "C7_Remote_Mag",                        "type": "magazine", "count": 10 },
+        { "class": "OPTRE_c7_remote_throwable_sticky_mag", "type": "magazine", "count": 5 },
+        { "class": "MEU_Deployable_Bubbleshield_mag",      "type": "magazine", "count": 5 },
+        { "class": "C12_Remote_Mag",                       "type": "magazine", "count": 2 },
+        { "class": "M168_Remote_Mag",                      "type": "magazine", "count": 1 }
+      ]
+    }
+  ]
+}
