@@ -1,0 +1,184 @@
+{
+  "tictacs": [
+    {
+      "name": "Medical",
+      "texture": "PF_Gear\\tictacs\\_textures\\pods\\medical.paa",
+      "preview": "PF_Gear\\tictacs\\_textures\\previews\\medical.jpg",
+      "contents": [
+        { "class": "ACE_adenosine",       "type": "item", "count": 16 },
+        { "class": "ACE_morphine",        "type": "item", "count": 16 },
+        { "class": "ACE_epinephrine",     "type": "item", "count": 16 },
+        { "class": "MEU_Medigel_Light",   "type": "item", "count": 150 },
+        { "class": "ACE_elasticBandage",  "type": "item", "count": 20 },
+        { "class": "OPTRE_Biofoam",       "type": "item", "count": 10 },
+        { "class": "ACE_salineIV",        "type": "item", "count": 5 },
+        { "class": "ACE_salineIV_500",    "type": "item", "count": 10 },
+        { "class": "ACE_salineIV_250",    "type": "item", "count": 20 },
+        { "class": "ACE_tourniquet",      "type": "item", "count": 16 },
+        { "class": "ACE_splint",          "type": "item", "count": 10 },
+        { "class": "adv_aceCPR_AED",      "type": "item", "count": 1 },
+        { "class": "ACE_surgicalKit",     "type": "item", "count": 2 }
+      ]
+    },
+    {
+      "name": "Autorifle",
+      "texture": "PF_Gear\\tictacs\\_textures\\pods\\autorifle.paa",
+      "preview": "PF_Gear\\tictacs\\_textures\\previews\\autorifle.jpg",
+      "contents": [
+        { "class": "MEU_XM247",                   "type": "weapon",   "count": 1 },
+        { "class": "MEU_M75",                     "type": "weapon",   "count": 1 },
+        { "class": "MEU_REC_HOLO",                "type": "item",     "count": 2 },
+        { "class": "OPTRE_MA5Suppressor",         "type": "item",     "count": 2 },
+        { "class": "bipod_01_F_blk",              "type": "item",     "count": 2 },
+        { "class": "MEU_M12_Vis_Laser",           "type": "item",     "count": 2 },
+        { "class": "MEU_400Rnd_762x51_AP_HV_Box", "type": "magazine", "count": 5 },
+        { "class": "OPTRE_200Rnd_95x40_Box_JHP",  "type": "magazine", "count": 10 }
+      ]
+    },
+    {
+      "name": "Combat Engineer",
+      "texture": "PF_Gear\\tictacs\\_textures\\pods\\combatengineer.paa",
+      "preview": "PF_Gear\\tictacs\\_textures\\previews\\empty.jpg",
+      "contents": [
+        { "class": "C7_Remote_Mag",                        "type": "magazine", "count": 10 },
+        { "class": "OPTRE_c7_remote_throwable_sticky_mag", "type": "magazine", "count": 5 },
+        { "class": "MEU_Deployable_Bubbleshield_mag",      "type": "magazine", "count": 5 },
+        { "class": "C12_Remote_Mag",                       "type": "magazine", "count": 2 },
+        { "class": "M168_Remote_Mag",                      "type": "magazine", "count": 1 }
+      ]
+    },
+    {
+      "name": "Marksman",
+      "texture": "PF_Gear\\tictacs\\_textures\\pods\\marksman.paa",
+      "preview": "PF_Gear\\tictacs\\_textures\\previews\\marksman.jpg",
+      "contents": [
+        { "class": "MEU_OPTRE_BR55HB",              "type": "weapon",   "count": 2 },
+        { "class": "MEU_OPTRE_M393_DMR",            "type": "weapon",   "count": 2 },
+        { "class": "PF_Holo_DMR",                   "type": "item",     "count": 4 },
+        { "class": "OPTRE_MA5Suppressor",           "type": "item",     "count": 4 },
+        { "class": "bipod_01_F_blk",                "type": "item",     "count": 4 },
+        { "class": "MEU_M12_Vis_Laser",             "type": "item",     "count": 4 },
+        { "class": "OPTRE_36Rnd_95x40_Mag_JHP",     "type": "magazine", "count": 40 },
+        { "class": "PF_15Rnd_65_Creedmoor_DMR_Mag", "type": "magazine", "count": 40 }
+      ]
+    },
+    {
+      "name": "Rifleman",
+      "texture": "PF_Gear\\tictacs\\_textures\\pods\\rifleman.paa",
+      "preview": "PF_Gear\\tictacs\\_textures\\previews\\rifleman.jpg",
+      "contents": [
+        { "class": "MEU_OPTRE_MA5C",              "type": "weapon",   "count": 4 },
+        { "class": "PF_Holo",                     "type": "item",     "count": 4 },
+        { "class": "OPTRE_MA5Suppressor",         "type": "item",     "count": 4 },
+        { "class": "MEU_M12_Vis_Laser",           "type": "item",     "count": 4 },
+        { "class": "OPTRE_32Rnd_762x51_Mag_JHP",  "type": "magazine", "count": 80 }
+      ]
+    },
+    {
+      "name": "Sidearms",
+      "texture": "PF_Gear\\tictacs\\_textures\\pods\\pistol.paa",
+      "preview": "PF_Gear\\tictacs\\_textures\\previews\\pistol.jpg",
+      "contents": [
+        { "class": "19_UNSC_M7_Side",       "type": "weapon",   "count": 2 },
+        { "class": "19_UNSC_M7_optic",      "type": "item",     "count": 2 },
+        { "class": "19_UNSC_M7_LAM",        "type": "item",     "count": 2 },
+        { "class": "19_UNSC_m7_Suppressor", "type": "item",     "count": 2 },
+        { "class": "60Rnd_5x23_m7_fmj",     "type": "magazine", "count": 20 },
+
+        { "class": "TCF_M6D_Black",             "type": "weapon",   "count": 2 },
+        { "class": "OPTRE_M6C_Laser",           "type": "item",     "count": 2 },
+        { "class": "OPTRE_M6C_compensator",     "type": "item",     "count": 2 },
+
+        { "class": "TCF_M6D",                   "type": "weapon",   "count": 4 },
+        { "class": "OPTRE_M6G_Scope",           "type": "item",     "count": 4 },
+        { "class": "OPTRE_M6G_Flashlight",      "type": "item",     "count": 4 },
+        { "class": "OPTRE_M6_silencer",         "type": "item",     "count": 4 },
+
+        { "class": "TCF_12Rnd_127x40_Mag_JHP",  "type": "magazine", "count": 42 },
+        { "class": "TCF_12Rnd_127x40_Mag_NARQ", "type": "magazine", "count": 42 }
+      ]
+    },
+    {
+      "name": "AntiTank",
+      "texture": "PF_Gear\\tictacs\\_textures\\pods\\antitank.paa",
+      "preview": "PF_Gear\\tictacs\\_textures\\previews\\antitank.jpg",
+      "contents": [
+        { "class": "MEU_M41_SSR",                 "type": "weapon",   "count": 1 },
+        { "class": "MEU_Hopper_v2_Loaded",        "type": "weapon",   "count": 4 },
+        { "class": "OPTRE_M41_Twin_HEAT_Thermal", "type": "magazine", "count": 8 },
+        { "class": "OPTRE_M41_Twin_HEAT_SACLOS",  "type": "magazine", "count": 4 },
+        { "class": "OPTRE_M41_Twin_HEAT_SALH",    "type": "magazine", "count": 4 },
+        { "class": "OPTRE_M41_Twin_HEAP",         "type": "magazine", "count": 4 }
+      ]
+    },
+    {
+      "name": "Grenadier",
+      "texture": "PF_Gear\\tictacs\\_textures\\pods\\grenadier.paa",
+      "preview": "PF_Gear\\tictacs\\_textures\\previews\\grenadier.jpg",
+      "contents": [
+        { "class": "MEU_OPTRE_MA5CGL_Red",            "type": "weapon",   "count": 2 },
+        { "class": "MEU_REC_HOLO",                    "type": "item",     "count": 2 },
+        { "class": "OPTRE_MA5Suppressor",             "type": "item",     "count": 2 },
+        { "class": "MEU_M12_Vis_Laser",               "type": "item",     "count": 2 },
+        { "class": "OPTRE_32Rnd_762x51_Mag_JHP",      "type": "magazine", "count": 30 },
+        { "class": "1Rnd_HE_MEU_shell",               "type": "magazine", "count": 40 },
+        { "class": "1Rnd_9Bang_MEU_shell",            "type": "magazine", "count": 10 },
+        { "class": "1Rnd_HEDP_MEU_shell",             "type": "magazine", "count": 10 },
+        { "class": "3Rnd_Airburst_MEU_shell",         "type": "magazine", "count": 6 },
+        { "class": "ACE_40mm_Flare_white",            "type": "magazine", "count": 4 },
+        { "class": "ACE_40mm_Flare_green",            "type": "magazine", "count": 4 },
+        { "class": "ACE_40mm_Flare_red",              "type": "magazine", "count": 4 },
+        { "class": "ACE_40mm_Flare_ir",               "type": "magazine", "count": 4 },
+        { "class": "1Rnd_SmokeBlue_Grenade_shell",    "type": "magazine", "count": 4 },
+        { "class": "1Rnd_SmokeGreen_Grenade_shell",   "type": "magazine", "count": 4 },
+        { "class": "1Rnd_SmokePurple_Grenade_shell",  "type": "magazine", "count": 4 },
+        { "class": "1Rnd_SmokeRed_Grenade_shell",     "type": "magazine", "count": 4 },
+        { "class": "1Rnd_Smoke_Grenade_shell",        "type": "magazine", "count": 12 }
+      ]
+    },
+    {
+      "name": "Sniper",
+      "texture": "PF_Gear\\tictacs\\_textures\\pods\\sniper.paa",
+      "preview": "PF_Gear\\tictacs\\_textures\\previews\\sniper.jpg",
+      "contents": [
+        { "class": "MEU_OPTRE_SRS99C",              "type": "weapon",   "count": 1 },
+        { "class": "OPTRE_SRS99C_Scope_v2",         "type": "item",     "count": 1 },
+        { "class": "OPTRE_MA37KSuppressor",         "type": "item",     "count": 1 },
+        { "class": "MEU_M12_Vis_Laser",             "type": "item",     "count": 1 },
+        { "class": "OPTRE_4Rnd_145x114_Mag_NARQ",   "type": "magazine", "count": 4 },
+        { "class": "OPTRE_4Rnd_145x114_APFSDS_Mag", "type": "magazine", "count": 26 },
+        { "class": "OPTRE_4Rnd_145x114_HEDP_Mag",   "type": "magazine", "count": 8 }
+      ]
+    },
+    {
+      "name": "Static M247H",
+      "texture": "PF_Gear\\tictacs\\_textures\\pods\\m247h.paa",
+      "preview": "PF_Gear\\tictacs\\_textures\\previews\\empty.jpg",
+      "contents": [
+        { "class": "OPTRE_CSW_M247H_Shield_Weapon", "type": "weapon",   "count": 1 },
+        { "class": "OPTRE_CSW_M247H_Carry_Tripod",  "type": "weapon",   "count": 1 },
+        { "class": "OPTRE_csw_200Rnd_127x99",       "type": "magazine", "count": 20 }
+      ]
+    },
+    {
+      "name": "Mk6 Mortar",
+      "texture": "PF_Gear\\tictacs\\_textures\\pods\\mk6mortar.paa",
+      "preview": "PF_Gear\\tictacs\\_textures\\previews\\empty.jpg",
+      "contents": [
+        { "class": "ace_csw_staticMortarCarry",     "type": "weapon", "count": 1 },
+        { "class": "ace_csw_carryMortarBaseplate",  "type": "weapon", "count": 1 }
+      ]
+    },
+    {
+      "name": "Mk6 Mortar Ammo",
+      "texture": "PF_Gear\\tictacs\\_textures\\pods\\mk6mortarammo.paa",
+      "preview": "PF_Gear\\tictacs\\_textures\\previews\\empty.jpg",
+      "contents": [
+        { "class": "ACE_1Rnd_82mm_Mo_HE",             "type": "magazine", "count": 30 },
+        { "class": "ACE_1Rnd_82mm_Mo_Illum",          "type": "magazine", "count": 5 },
+        { "class": "ACE_1Rnd_82mm_Mo_HE_LaserGuided", "type": "magazine", "count": 10 },
+        { "class": "ACE_1Rnd_82mm_Mo_Smoke",          "type": "magazine", "count": 10 }
+      ]
+    }
+  ]
+}
