@@ -6,10 +6,3 @@ class Pathfinder_Van_Canto // name of class (not really important)
   musicClass = "PF_Music_Tracks"; // points to the config.cpp musicClass
 };
 
-// class Helldivers_2_MainTheme
-// {
-//   name ="Helldivers 2 Main Theme";
-//   sound[] = {"relative path",db+0,1};
-//   duration = 00;
-//   musicClass = "PF_Music_Tracks";
-// };
