@@ -22,10 +22,10 @@ class etr_ranks_insignias
 			"PF_Core\ranks\_textures\unicom\E-2 Private First Class.paa",
 			"PF_Core\ranks\_textures\unicom\E-4 Corporal.paa",
 			"PF_Core\ranks\_textures\unicom\E-5 Sergeant.paa",
-			"\z\etr_ranks\addons\assets\data\us_army\O-2 First Lieutenant.paa",
-			"\z\etr_ranks\addons\assets\data\us_army\O-3 Captain.paa",
-			"\z\etr_ranks\addons\assets\data\us_army\O-4 Major.paa",
-			"\z\etr_ranks\addons\assets\data\us_army\O-6 Colonel.paa"
+			"PF_Core\ranks\_textures\unicom\O-2 First Lieutenant.paa",
+			"PF_Core\ranks\_textures\unicom\O-3 Captain.paa",
+			"PF_Core\ranks\_textures\unicom\O-4 Major.paa",
+			"PF_Core\ranks\_textures\unicom\O-6 Colonel.paa"
     };
     class default_rank
     {
@@ -99,83 +99,83 @@ class etr_ranks_insignias
       icon = "PF_Core\ranks\_textures\unicom\E-9 Sergeant Major.paa";
       rank = -1;
     };
-    // class w1_warrant_officer
-    // {
-    //   name = "";
-    //   icon = "";
-    //   rank = -1;
-    // };
-    // class w2_chief_warrant_officer
-    // {
-    //   name = "";
-    //   icon = "";
-    //   rank = -1;
-    // };
-    // class o0_cadet
-    // {
-    //   name = "";
-    //   icon = "";
-    //   rank = -1;
-    // };
-    // class o1_second_lieutenant
-    // {
-    //   name = "";
-    //   icon = "";
-    //   rank = -1;
-    // };
-    // class o2_first_lieutenant
-    // {
-    //   name = "";
-    //   icon = "";
-    //   rank = 3;
-    // };
-    // class o3_captain
-    // {
-    //   name = "";
-    //   icon = "";
-    //   rank = 4;
-    // };
-    // class o4_major
-    // {
-    //   name = "";
-    //   icon = "";
-    //   rank = 5;
-    // };
-    // class o5_lieutenant_colonel
-    // {
-    //   name = "";
-    //   icon = "";
-    //   rank = -1;
-    // };
-    // class o6_colonel
-    // {
-    //   name = "";
-    //   icon = "";
-    //   rank = 6;
-    // };
-    // class o7_brigadier_general
-    // {
-    //   name = "";
-    //   icon = "";
-    //   rank = -1;
-    // };
-    // class o8_major_general
-    // {
-    //   name = "";
-    //   icon = "";
-    //   rank = -1;
-    // };
-    // class o9_lieutenant_general
-    // {
-    //   name = "";
-    //   icon = "";
-    //   rank = -1;
-    // };
-    // class o10_general
-    // {
-    //   name = "";
-    //   icon = "";
-    //   rank = -1;
-    // };
+    class w1_warrant_officer
+    {
+      name = "W-1 Warrant Officer";
+      icon = "PF_Core\ranks\_textures\unicom\W-1 Warrant Officer.paa";
+      rank = -1;
+    };
+    class w2_chief_warrant_officer
+    {
+      name = "W-2 Chief Warrant Officer";
+      icon = "PF_Core\ranks\_textures\unicom\W-2 Chief Warrant Officer.paa";
+      rank = -1;
+    };
+    class o0_cadet
+    {
+      name = "O-0 Cadet";
+      icon = "PF_Core\ranks\_textures\unicom\O-0 Cadet.paa";
+      rank = -1;
+    };
+    class o1_second_lieutenant
+    {
+      name = "O-1 Second Lieutenant";
+      icon = "PF_Core\ranks\_textures\unicom\O-1 Second Lieutenant.paa";
+      rank = -1;
+    };
+    class o2_first_lieutenant
+    {
+      name = "O-2 First Lieutenant";
+      icon = "PF_Core\ranks\_textures\unicom\O-2 First Lieutenant.paa";
+      rank = 3;
+    };
+    class o3_captain
+    {
+      name = "O-3 Captain";
+      icon = "PF_Core\ranks\_textures\unicom\O-3 Captain.paa";
+      rank = 4;
+    };
+    class o4_major
+    {
+      name = "O-4 Major";
+      icon = "PF_Core\ranks\_textures\unicom\O-4 Major.paa";
+      rank = 5;
+    };
+    class o5_lieutenant_colonel
+    {
+      name = "O-5 Lieutenant Colonel";
+      icon = "PF_Core\ranks\_textures\unicom\O-5 Lieutenant Colonel.paa";
+      rank = -1;
+    };
+    class o6_colonel
+    {
+      name = "O-6 Colonel";
+      icon = "PF_Core\ranks\_textures\unicom\O-6 Colonel.paa";
+      rank = 6;
+    };
+    class o7_brigadier_general
+    {
+      name = "O-7 Brigadier General";
+      icon = "PF_Core\ranks\_textures\unicom\O-7 Brigadier General.paa";
+      rank = -1;
+    };
+    class o8_major_general
+    {
+      name = "O-8 Major General";
+      icon = "PF_Core\ranks\_textures\unicom\O-8 Major General.paa";
+      rank = -1;
+    };
+    class o9_lieutenant_general
+    {
+      name = "O-9 Lieutenant General";
+      icon = "PF_Core\ranks\_textures\unicom\O-9 Lieutenant General.paa";
+      rank = -1;
+    };
+    class o10_general
+    {
+      name = "O-10 General";
+      icon = "PF_Core\ranks\_textures\unicom\O-10 General.paa";
+      rank = -1;
+    };
   };
 };
