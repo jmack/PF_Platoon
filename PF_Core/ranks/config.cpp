@@ -36,7 +36,7 @@ class etr_ranks_insignias
     class e1_private
     {
       name = "E-1 Private";
-      icon = "PF_Core\ranks\_textures\unicom\blank.paa";
+      icon = "PF_Core\ranks\_textures\blank.paa";
       rank = 0;
     };
     class e2_private_first_class
