@@ -102,13 +102,13 @@ class etr_ranks_insignias
     class w1_warrant_officer
     {
       name = "W-1 Warrant Officer";
-      icon = "PF_Core\ranks\_textures\unicom\W-1 Warrant Officer.paa";
+      icon = "PF_Core\ranks\_textures\W-1 Warrant Officer.paa";
       rank = -1;
     };
     class w2_chief_warrant_officer
     {
       name = "W-2 Chief Warrant Officer";
-      icon = "PF_Core\ranks\_textures\unicom\W-2 Chief Warrant Officer.paa";
+      icon = "PF_Core\ranks\_textures\W-2 Chief Warrant Officer.paa";
       rank = -1;
     };
     class o0_cadet
