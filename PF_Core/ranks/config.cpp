@@ -187,10 +187,10 @@ class etr_ranks_insignias
 			"PF_Core\ranks\_textures\navcom\E-2 Crewman Apprentice.paa",
 			"PF_Core\ranks\_textures\navcom\E-4 Petty Officer Third Class.paa",
 			"PF_Core\ranks\_textures\navcom\E-7 Chief Petty Officer.paa",
-			"PF_Core\ranks\_textures\unicom\O-2 First Lieutenant.paa",
-			"PF_Core\ranks\_textures\unicom\O-3 Captain.paa",
-			"PF_Core\ranks\_textures\unicom\O-4 Major.paa",
-			"PF_Core\ranks\_textures\unicom\O-6 Colonel.paa"
+			"PF_Core\ranks\_textures\navcom\O-1 Ensign.paa",
+			"PF_Core\ranks\_textures\navcom\O-3 Lieutenant.paa",
+			"PF_Core\ranks\_textures\navcom\O-5 Commander.paa",
+			"PF_Core\ranks\_textures\navcom\O-6 Captain.paa"
     };
     class default_rank
     {
@@ -327,37 +327,37 @@ class etr_ranks_insignias
     class o1_ensign
     {
       name = "O1 - Ensign";
-      icon = "";
-      rank = -1;
+      icon = "PF_Core\ranks\_textures\navcom\O-1 Ensign.paa";
+      rank = 3;
     };
     class o2_lieutenant_junior_grade
     {
       name = "O2 - Lieutenant Junior Grade";
-      icon = "";
-      rank = 3;
+      icon = "PF_Core\ranks\_textures\navcom\O-2 Lieutenant Junior Grade.paa";
+      rank = -1;
     };
     class o3_lieutenant
     {
       name = "O3 - Lieutenant";
-      icon = "";
+      icon = "PF_Core\ranks\_textures\navcom\O-3 Lieutenant.paa";
       rank = 4;
     };
     class o4_lieutenant_commander
     {
       name = "O4 - Lieutenant Commander";
-      icon = "";
-      rank = 5;
+      icon = "PF_Core\ranks\_textures\navcom\O-4 Lieutenant Commander.paa";
+      rank = -1;
     };
     class o5_commander
     {
       name = "O5 - Commander";
-      icon = "";
-      rank = -1;
+      icon = "PF_Core\ranks\_textures\navcom\O-5 Commander.paa";
+      rank = 5;
     };
     class o6_captain
     {
       name = "O6 - Captain";
-      icon = "";
+      icon = "PF_Core\ranks\_textures\navcom\O-6 Captain.paa";
       rank = 6;
     };
     class o7_rear_admiral
