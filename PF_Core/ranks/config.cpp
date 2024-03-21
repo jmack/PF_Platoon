@@ -178,4 +178,211 @@ class etr_ranks_insignias
       rank = -1;
     };
   };
+
+  class unsc_navcom
+  {
+    name = "UNSC - NAVCOM";
+    values[] =
+    {
+			"PF_Core\ranks\_textures\navcom\E-2 Crewman Apprentice.paa",
+			"PF_Core\ranks\_textures\navcom\E-4 Petty Officer Third Class.paa",
+			"PF_Core\ranks\_textures\navcom\E-7 Chief Petty Officer.paa",
+			"PF_Core\ranks\_textures\unicom\O-2 First Lieutenant.paa",
+			"PF_Core\ranks\_textures\unicom\O-3 Captain.paa",
+			"PF_Core\ranks\_textures\unicom\O-4 Major.paa",
+			"PF_Core\ranks\_textures\unicom\O-6 Colonel.paa"
+    };
+    class default_rank
+    {
+      name = "Default";
+      icon = "";
+      rank = -1;
+    };
+    class e1_crewman_recruit
+    {
+      name = "E-1 Crewman Recruit";
+      icon = "PF_Core\ranks\_textures\blank.paa";
+      rank = -1;
+    };
+    class e1_hospitalman_recruit
+    {
+      name = "E-1 Hospitalman Recruit";
+      icon = "PF_Core\ranks\_textures\blank.paa";
+      rank = -1;
+    };
+    class e2_crewman_apprentice
+    {
+      name = "E2 - Crewman Apprentice";
+      icon = "PF_Core\ranks\_textures\navcom\E-2 Crewman Apprentice.paa";
+      rank = 0;
+    };
+    class e2_hospitalman_apprentice
+    {
+      name = "E2 - Hospitalman Apprentice";
+      icon = "PF_Core\ranks\_textures\navcom\E-2 Hospitalman Apprentice.paa";
+      rank = 0;
+    };
+    class e3_crewman
+    {
+      name = "E3 - Crewman";
+      icon = "PF_Core\ranks\_textures\navcom\E-3 Crewman.paa";
+      rank = -1;
+    };
+    class e3_hospitalman
+    {
+      name = "E3 - Hospitalman";
+      icon = "PF_Core\ranks\_textures\navcom\E-3 Hospitalman.paa";
+      rank = -1;
+    };
+    class e4_petty_officer_third_class
+    {
+      name = "E4 - Petty Officer Third Class";
+      icon = "PF_Core\ranks\_textures\navcom\E-4 Petty Officer Third Class.paa";
+      rank = 1;
+    };
+    class e4_hospital_corpsman_third_class
+    {
+      name = "E4 - Hospital Corpsman Third Class";
+      icon = "PF_Core\ranks\_textures\navcom\E-4 Hospital Corpsman Third Class.paa";
+      rank = 1;
+    };
+    class e5_petty_officer_second_class
+    {
+      name = "E5 - Petty Officer Second Class";
+      icon = "PF_Core\ranks\_textures\navcom\E-5 Petty Officer Second Class.paa";
+      rank = -1;
+    };
+    class e5_hospital_corpsman_second_class
+    {
+      name = "E5 - Hospital Corpsman Second Class";
+      icon = "PF_Core\ranks\_textures\navcom\E-5 Hospital Corpsman Second Class.paa";
+      rank = -1;
+    };
+    class e6_petty_officer_first_class
+    {
+      name = "E6 - Petty Officer First Class";
+      icon = "PF_Core\ranks\_textures\navcom\E-6 Petty Officer First Class.paa";
+      rank = -1;
+    };
+    class e6_hospital_corpsman_first_class
+    {
+      name = "E6 - Hospital Corpsman First Class";
+      icon = "PF_Core\ranks\_textures\navcom\E-6 Hospital Corpsman First Class.paa";
+      rank = -1;
+    };
+    class e7_chief_petty_officer
+    {
+      name = "E7 - Chief Petty Officer";
+      icon = "PF_Core\ranks\_textures\navcom\E-7 Chief Petty Officer.paa";
+      rank = 2;
+    };
+    class e7_chief_hospital_corpsman
+    {
+      name = "E7 - Chief Hospital Corpsman";
+      icon = "PF_Core\ranks\_textures\navcom\E-7 Chief Hospital Corpsman.paa";
+      rank = 2;
+    };
+    class e8_senior_chief_petty_officer
+    {
+      name = "E8 - Senior Chief Petty Officer";
+      icon = "PF_Core\ranks\_textures\navcom\E-8 Senior Chief Petty Officer.paa";
+      rank = -1;
+    };
+    class e8_senior_chief_hospital_corpsman
+    {
+      name = "E8 - Senior Chief Hospital Corpsman";
+      icon = "PF_Core\ranks\_textures\navcom\E-8 Senior Chief Hospital Corpsman.paa";
+      rank = -1;
+    };
+    class e9_master_chief_petty_officer
+    {
+      name = "E9 - Master Chief Petty Officer";
+      icon = "PF_Core\ranks\_textures\navcom\E-9 Master Chief Petty Officer.paa";
+      rank = -1;
+    };
+    class e9_master_chief_hospital_corpsman
+    {
+      name = "E9 - Master Chief Hospital Corpsman";
+      icon = "PF_Core\ranks\_textures\navcom\E-9 Master Chief Hospital Corpsman.paa";
+      rank = -1;
+    };
+    class w1_warrant_officer
+    {
+      name = "W1 - Warrant Officer";
+      icon = "PF_Core\ranks\_textures\W-1 Warrant Officer.paa";
+      rank = -1;
+    };
+    class w2_chief_warrant_officer
+    {
+      name = "W2 - Chief Warrant Officer";
+      icon = "PF_Core\ranks\_textures\W-2 Chief Warrant Officer.paa";
+      rank = -1;
+    };
+    class o0_cadet
+    {
+      name = "O0 - Cadet";
+      icon = "";
+      rank = -1;
+    };
+    class o1_ensign
+    {
+      name = "O1 - Ensign";
+      icon = "";
+      rank = -1;
+    };
+    class o2_lieutenant_junior_grade
+    {
+      name = "O2 - Lieutenant Junior Grade";
+      icon = "";
+      rank = 3;
+    };
+    class o3_lieutenant
+    {
+      name = "O3 - Lieutenant";
+      icon = "";
+      rank = 4;
+    };
+    class o4_lieutenant_commander
+    {
+      name = "O4 - Lieutenant Commander";
+      icon = "";
+      rank = 5;
+    };
+    class o5_commander
+    {
+      name = "O5 - Commander";
+      icon = "";
+      rank = -1;
+    };
+    class o6_captain
+    {
+      name = "O6 - Captain";
+      icon = "";
+      rank = 6;
+    };
+    class o7_rear_admiral
+    {
+      name = "O7 - Rear Admiral";
+      icon = "";
+      rank = -1;
+    };
+    class o8_vice_admiral
+    {
+      name = "O8 - Vice Admiral";
+      icon = "";
+      rank = -1;
+    };
+    class o9_admiral
+    {
+      name = "O9 - Admiral";
+      icon = "";
+      rank = -1;
+    };
+    class o10_fleet_admiral
+    {
+      name = "O10 - Fleet Admiral";
+      icon = "";
+      rank = -1;
+    };
+  };
 };
