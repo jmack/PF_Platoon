@@ -363,25 +363,25 @@ class etr_ranks_insignias
     class o7_rear_admiral
     {
       name = "O7 - Rear Admiral";
-      icon = "";
+      icon = "PF_Core\ranks\_textures\navcom\O-7 Rear Admiral.paa";
       rank = -1;
     };
     class o8_vice_admiral
     {
       name = "O8 - Vice Admiral";
-      icon = "";
+      icon = "PF_Core\ranks\_textures\navcom\O-8 Vice Admiral.paa";
       rank = -1;
     };
     class o9_admiral
     {
       name = "O9 - Admiral";
-      icon = "";
+      icon = "PF_Core\ranks\_textures\navcom\O-9 Admiral.paa";
       rank = -1;
     };
     class o10_fleet_admiral
     {
       name = "O10 - Fleet Admiral";
-      icon = "";
+      icon = "PF_Core\ranks\_textures\navcom\O-10 Fleet Admiral.paa";
       rank = -1;
     };
   };
