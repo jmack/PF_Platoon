@@ -321,7 +321,7 @@ class etr_ranks_insignias
     class o0_cadet
     {
       name = "O0 - Cadet";
-      icon = "";
+      icon = "PF_Core\ranks\_textures\navcom\O-0 Cadet.paa";
       rank = -1;
     };
     class o1_ensign
