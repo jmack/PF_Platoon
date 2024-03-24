@@ -2,12 +2,11 @@
 
 # Preprocessor
 # Node.js check (for tic-tac generation)
-$oldPreference = $ErrorActionPreference
-try {if(Get-Command node) {
-  node .\PF_Gear\tictacs\tictac-converter.js
-}}
-catch {Write-Host "[WARN] nodejs not found. skipping tictac generation" -ForegroundColor yellow}
-finally {$ErrorActionPreference = $oldPreference}
+if (Get-Command node -errorAction SilentlyContinue) {
+	node .\PF_Gear\tictacs\tictac-converter.js
+} else {
+	Write-Host "[WARN] Node not installed in this environment. Skipping tic-tac generation" -ForegroundColor Yellow
+}
 
 # Build
 if ($args.count -gt 0) {
