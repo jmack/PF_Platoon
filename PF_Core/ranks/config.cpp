@@ -390,6 +390,7 @@ class etr_ranks_insignias
 class etr_ranks_uids {
   class unsc_unicom {
     e2_private_first_class[] = {
+      "76561198215844127", // Bottle, B.
       "76561198059101204", // Bridges, J.
     };
     e4_corporal[] = {
