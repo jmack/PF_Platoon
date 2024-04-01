@@ -386,3 +386,32 @@ class etr_ranks_insignias
     };
   };
 };
+
+class etr_ranks_uids {
+  class unsc_unicom {
+    e2_private_first_class[] = {
+      "76561198215844127", // Bottle, B.
+      "76561198059101204", // Bridges, J.
+    };
+    e4_corporal[] = {
+      "76561198165291798", // Baird, L.
+      "76561197994104151", // Barnes, C.
+      "76561198057360119", // Winter, E.
+    };
+    e5_sergeant[] = {
+      "76561198027379348", // Reid, M.
+    };
+    o1_second_lieutenant[] = {
+      "76561198003178837", // O'Neill, R.
+    };
+  };
+  class unsc_navcom {
+    e2_hospitalman_apprentice[] = {
+      "76561198250448962", // Dukova, L.
+      "76561198004854314", // Selanne, T.
+    };
+    o3_lieutenant[] = {
+      "76561198012329251", // Cherry, D.
+    };
+  };
+};
