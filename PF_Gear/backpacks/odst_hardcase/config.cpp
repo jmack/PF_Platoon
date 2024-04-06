@@ -64,6 +64,7 @@ class XtdGearModels
         {
           "basic",
           "medical",
+          "zeus",
         };
         class basic
         {
@@ -73,6 +74,11 @@ class XtdGearModels
         {
           label = "Medical";
         };
+        class zeus
+        {
+          label = "Zeus";
+          description = " /!\ DO NOT PICK: FOR ZEUS ONLY /!\ ";
+        }
       };
       class camouflage
       {
@@ -100,6 +106,14 @@ class XtdGearModels
 
 class CfgVehicles
 {
+  // XXXX Basic
+  // XXXX Medical
+  // XXXX Zeus
+  // XXXX Basic Snow
+  // XXXX Medical Snow
+  // XXXX Zeus Snow
+
+  // Light
   class MA_M56S_Rucksack;
   class PF_Gear_Backpacks_ODSTHardcases_Light_Basic : MA_M56S_Rucksack
   {
@@ -118,6 +132,23 @@ class CfgVehicles
       "PF_Gear\backpacks\odst_hardcase\_textures\MA_Ruck\backpack_radio_green.paa",
     };
   };
+  class PF_Gear_Backpacks_ODSTHardcases_Light_Zeus : PF_Gear_Backpacks_ODSTHardcases_Light_Basic
+  {
+    class XtdGearInfo
+    {
+      model = "PF_Gear_Backpacks_ODSTHardcases";
+      type = "light";
+      role = "zeus";
+      camouflage = "black";
+    };
+    // TFAR
+    tf_encryptionCode = "tf_west_radio_code";
+    tf_dialog = "rt1523g_radio_dialog";
+    tf_subtype = "digital_lr";
+    tf_range = 120000;
+    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel";
+    tf_hasLRradio = 1;
+  };
   class PF_Gear_Backpacks_ODSTHardcases_Light_Basic_Snow : PF_Gear_Backpacks_ODSTHardcases_Light_Basic
   {
     class XtdGearInfo
@@ -133,7 +164,25 @@ class CfgVehicles
       "PF_Gear\backpacks\odst_hardcase\_textures\MA_Ruck\backpack_radio_green.paa",
     };
   };
+  class PF_Gear_Backpacks_ODSTHardcases_Light_Zeus_Snow : PF_Gear_Backpacks_ODSTHardcases_Light_Basic_Snow
+  {
+    class XtdGearInfo
+    {
+      model = "PF_Gear_Backpacks_ODSTHardcases";
+      type = "light";
+      role = "zeus";
+      camouflage = "snow";
+    };
+    // TFAR
+    tf_encryptionCode = "tf_west_radio_code";
+    tf_dialog = "rt1523g_radio_dialog";
+    tf_subtype = "digital_lr";
+    tf_range = 120000;
+    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel";
+    tf_hasLRradio = 1;
+  };
 
+  // Common for Padded / Hardcase
   class OPTRE_ILCS_Rucksack_Heavy;
   class PF_Gear_Backpacks_ODSTHardcases_Main : OPTRE_ILCS_Rucksack_Heavy
   {
@@ -147,6 +196,14 @@ class CfgVehicles
       "PF_Gear\backpacks\odst_hardcase\_textures\OPTRE_ILCS_Ruck\hardcase_black.paa",
     };
   };
+  class PF_Gear_Backpacks_ODSTHardcases_Main_Snow : PF_Gear_Backpacks_ODSTHardcases_Main
+  {
+    hiddenSelectionsTextures[] = {
+      "PF_Gear\backpacks\odst_hardcase\_textures\OPTRE_ILCS_Ruck\hardcase_snow.paa",
+    };
+  };
+
+  // Padded
   class PF_Gear_Backpacks_ODSTHardcases_Padded_Basic : PF_Gear_Backpacks_ODSTHardcases_Main
   {
     class XtdGearInfo
@@ -161,23 +218,6 @@ class CfgVehicles
     hiddenSelections[] = {
       "camo1",
       "AP_Heavy",
-      "biofoam",
-    };
-  };
-  class PF_Gear_Backpacks_ODSTHardcases_Heavy_Basic : PF_Gear_Backpacks_ODSTHardcases_Main
-  {
-    class XtdGearInfo
-    {
-      model = "PF_Gear_Backpacks_ODSTHardcases";
-      type = "heavy";
-      role = "basic";
-      camouflage = "black";
-    };
-
-    displayName = "[PF] ODST Heavy Hardcase";
-    hiddenSelections[] = {
-      "camo1",
-      // "AP_Heavy",
       "biofoam",
     };
   };
@@ -198,28 +238,22 @@ class CfgVehicles
       // "biofoam",
     };
   };
-  class PF_Gear_Backpacks_ODSTHardcases_Heavy_Medical : PF_Gear_Backpacks_ODSTHardcases_Main
+  class PF_Gear_Backpacks_ODSTHardcases_Padded_Zeus : PF_Gear_Backpacks_ODSTHardcases_Padded_Basic
   {
     class XtdGearInfo
     {
       model = "PF_Gear_Backpacks_ODSTHardcases";
-      type = "heavy";
-      role = "medical";
+      type = "padded";
+      role = "zeus";
       camouflage = "black";
     };
-
-    displayName = "[PF] ODST Heavy Medical Hardcase";
-    hiddenSelections[] = {
-      "camo1",
-      // "AP_Heavy",
-      // "biofoam",
-    };
-  };
-  class PF_Gear_Backpacks_ODSTHardcases_Main_Snow : PF_Gear_Backpacks_ODSTHardcases_Main
-  {
-    hiddenSelectionsTextures[] = {
-      "PF_Gear\backpacks\odst_hardcase\_textures\OPTRE_ILCS_Ruck\hardcase_snow.paa",
-    };
+    // TFAR
+    tf_encryptionCode = "tf_west_radio_code";
+    tf_dialog = "rt1523g_radio_dialog";
+    tf_subtype = "digital_lr";
+    tf_range = 120000;
+    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel";
+    tf_hasLRradio = 1;
   };
   class PF_Gear_Backpacks_ODSTHardcases_Padded_Basic_Snow : PF_Gear_Backpacks_ODSTHardcases_Main_Snow
   {
@@ -235,23 +269,6 @@ class CfgVehicles
     hiddenSelections[] = {
       "camo1",
       "AP_Heavy",
-      "biofoam",
-    };
-  };
-  class PF_Gear_Backpacks_ODSTHardcases_Heavy_Basic_Snow : PF_Gear_Backpacks_ODSTHardcases_Main_Snow
-  {
-    class XtdGearInfo
-    {
-      model = "PF_Gear_Backpacks_ODSTHardcases";
-      type = "heavy";
-      role = "basic";
-      camouflage = "snow";
-    };
-
-    displayName = "[PF] ODST Heavy Hardcase";
-    hiddenSelections[] = {
-      "camo1",
-      // "AP_Heavy",
       "biofoam",
     };
   };
@@ -272,6 +289,103 @@ class CfgVehicles
       // "biofoam",
     };
   };
+  class PF_Gear_Backpacks_ODSTHardcases_Padded_Zeus_Snow : PF_Gear_Backpacks_ODSTHardcases_Padded_Basic_Snow
+  {
+    class XtdGearInfo
+    {
+      model = "PF_Gear_Backpacks_ODSTHardcases";
+      type = "padded";
+      role = "zeus";
+      camouflage = "snow";
+    };
+    // TFAR
+    tf_encryptionCode = "tf_west_radio_code";
+    tf_dialog = "rt1523g_radio_dialog";
+    tf_subtype = "digital_lr";
+    tf_range = 120000;
+    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel";
+    tf_hasLRradio = 1;
+  };
+
+
+  // XXXX Basic
+  // XXXX Medical
+  // XXXX Zeus
+  // XXXX Basic Snow
+  // XXXX Medical Snow
+  // XXXX Zeus Snow
+
+
+  // Heavy
+  class PF_Gear_Backpacks_ODSTHardcases_Heavy_Basic : PF_Gear_Backpacks_ODSTHardcases_Main
+  {
+    class XtdGearInfo
+    {
+      model = "PF_Gear_Backpacks_ODSTHardcases";
+      type = "heavy";
+      role = "basic";
+      camouflage = "black";
+    };
+
+    displayName = "[PF] ODST Heavy Hardcase";
+    hiddenSelections[] = {
+      "camo1",
+      // "AP_Heavy",
+      "biofoam",
+    };
+  };
+
+  class PF_Gear_Backpacks_ODSTHardcases_Heavy_Medical : PF_Gear_Backpacks_ODSTHardcases_Main
+  {
+    class XtdGearInfo
+    {
+      model = "PF_Gear_Backpacks_ODSTHardcases";
+      type = "heavy";
+      role = "medical";
+      camouflage = "black";
+    };
+
+    displayName = "[PF] ODST Heavy Medical Hardcase";
+    hiddenSelections[] = {
+      "camo1",
+      // "AP_Heavy",
+      // "biofoam",
+    };
+  };
+  class PF_Gear_Backpacks_ODSTHardcases_Heavy_Zeus : PF_Gear_Backpacks_ODSTHardcases_Heavy_Basic
+  {
+    class XtdGearInfo
+    {
+      model = "PF_Gear_Backpacks_ODSTHardcases";
+      type = "heavy";
+      role = "zeus";
+      camouflage = "black";
+    };
+    // TFAR
+    tf_encryptionCode = "tf_west_radio_code";
+    tf_dialog = "rt1523g_radio_dialog";
+    tf_subtype = "digital_lr";
+    tf_range = 120000;
+    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel";
+    tf_hasLRradio = 1;
+  };
+  class PF_Gear_Backpacks_ODSTHardcases_Heavy_Basic_Snow : PF_Gear_Backpacks_ODSTHardcases_Main_Snow
+  {
+    class XtdGearInfo
+    {
+      model = "PF_Gear_Backpacks_ODSTHardcases";
+      type = "heavy";
+      role = "basic";
+      camouflage = "snow";
+    };
+
+    displayName = "[PF] ODST Heavy Hardcase";
+    hiddenSelections[] = {
+      "camo1",
+      // "AP_Heavy",
+      "biofoam",
+    };
+  };
   class PF_Gear_Backpacks_ODSTHardcases_Heavy_Medical_Snow : PF_Gear_Backpacks_ODSTHardcases_Main_Snow
   {
     class XtdGearInfo
@@ -289,7 +403,25 @@ class CfgVehicles
       // "biofoam",
     };
   };
+    class PF_Gear_Backpacks_ODSTHardcases_Heavy_Zeus_Snow : PF_Gear_Backpacks_ODSTHardcases_Heavy_Basic_Snow
+  {
+    class XtdGearInfo
+    {
+      model = "PF_Gear_Backpacks_ODSTHardcases";
+      type = "heavy";
+      role = "zeus";
+      camouflage = "snow";
+    };
+    // TFAR
+    tf_encryptionCode = "tf_west_radio_code";
+    tf_dialog = "rt1523g_radio_dialog";
+    tf_subtype = "digital_lr";
+    tf_range = 120000;
+    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel";
+    tf_hasLRradio = 1;
+  };
 
+  // Longbow
   class OPTRE_ANPRC_521_green;
   class PF_Gear_Backpacks_ODSTHardcases_Longbow_Basic : OPTRE_ANPRC_521_green
   {
