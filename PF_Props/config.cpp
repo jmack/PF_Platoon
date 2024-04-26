@@ -11,15 +11,15 @@ class CfgPatches
 
 class CfgEditorCategories
 {
-	class PF_EditorCategory_PF
-	{
-		displayName="[PF] Pathfinder Platoon";
-	};
+  class PF_EditorCategory_PF
+  {
+    displayName="[PF] Pathfinder Platoon";
+  };
 };
 class CfgEditorSubcategories
 {
-	class PF_EditorSubcategory_Ships
-	{
-		displayName="Ships";
-	};
+  class PF_EditorSubcategory_Ships
+  {
+    displayName="Ships";
+  };
 };
