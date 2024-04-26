@@ -4,14 +4,25 @@ class CfgPatches
 {
   class PF_Core
   {
-    units[] = {""};
+    author = "wlan0";
+    units[] = {};
     weapons[] = {};
-    magazines[] = {};
-    ammo[] = {};
-    requiredVersion = 0.1;
     requiredAddons[] = {
-      "1st_MEU_patch_main_loadingScreens"
-      // we dont actually extend anything from 1MEU, this is just to ensure our loading screen overwrites theirs
+      "1st_MEU_patch_main_loadingScreens", // we dont actually extend anything from 1MEU, this is just to ensure our loading screen overwrites theirs
+      "A3_Data_F_Enoch_Loadorder",
+    };
+    requiredVersion = 0.1;
+  };
+};
+class CfgFunctions
+{
+  class PF_Functions
+  {
+    tag = "PF";
+    class Scripts
+    {
+      file = "\PF_Core\scripts";
+      class letterbox {  };
     };
   };
 };
