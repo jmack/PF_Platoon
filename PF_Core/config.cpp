@@ -22,7 +22,8 @@ class CfgFunctions
     class Scripts
     {
       file = "\PF_Core\scripts";
-      class letterbox {  };
+      class letterbox { };
+      class hintAction { };
     };
   };
 };
