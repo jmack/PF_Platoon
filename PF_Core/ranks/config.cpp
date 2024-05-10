@@ -391,6 +391,8 @@ class etr_ranks_uids {
   class unsc_unicom {
     e2_private_first_class[] = {
       "76561198215844127", // Bottle, B.
+    };
+    e3_lance_corporal[] = {
       "76561198059101204", // Bridges, J.
     };
     e4_corporal[] = {
@@ -407,8 +409,10 @@ class etr_ranks_uids {
   };
   class unsc_navcom {
     e2_hospitalman_apprentice[] = {
-      "76561198250448962", // Dukova, L.
       "76561198004854314", // Selanne, T.
+    };
+    e3_hospitalman[] = {
+      "76561198250448962", // Dukova, L.
     };
     o3_lieutenant[] = {
       "76561198012329251", // Cherry, D.
