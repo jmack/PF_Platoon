@@ -8,380 +8,918 @@ class CfgPatches {
   class O_FapovoArmy {
     author = "wlan0";
     addonRootClass = "PF_Factions";
-    units[] = {
-      "O_FapovoArmy_Officer_01",
-      "O_FapovoArmy_Squad_Leader_01",
-      "O_FapovoArmy_Team_Leader_01",
-      "O_FapovoArmy_Rifleman_01",
-      "O_FapovoArmy_Grenadier_01",
-      "O_FapovoArmy_Autorifleman_01",
-      "O_FapovoArmy_Marksman_01",
-      "O_FapovoArmy_RTO_01",
-      "O_FapovoArmy_Rifleman_AT_01",
-      "O_FapovoArmy_Rifleman_AA_01",
-      "O_FapovoArmy_Secret_Police_01",
-      "O_FapovoArmy_Secret_Police_Sergeant_01",
-      "O_FapovoArmy_Pilot_01",
-      "O_FapovoArmy_Crewman_01",
-      "O_FapovoArmy_Medic_01",
-      "O_FapovoArmy_Rake_V5_01",
-      "O_FapovoArmy_Rake_V5_HMG_01",
-      "O_FapovoArmy_UH_95_Felix_01",
-      "O_FapovoArmy_UH_101_Eagle_01",
-      "O_FapovoArmy_M1015_Mule_01"
-    };
-    weapons[] = {};
     requiredVersion = 1.62;
-    requiredAddons[] = { };
-    
   };
 };
 
 class CfgFactionClasses {
-  class O_FapovoArmy {
-    displayName = "[PF] Fapovo Citizens Militia";
-    side = 0;
-    flag = "\OPTRE_Core\Data\flag_Ins_ca.paa";
-    icon = "\OPTRE_Core\Data\flag_Ins_ca.paa";
-    priority = 0;
-  };
+    class O_FapovoArmy {
+        displayName = "[PF] Fapovo Citizens Militia";
+        side = 0;
+        flag = "\OPTRE_Core\Data\flag_Ins_ca.paa";
+        icon = "\OPTRE_Core\Data\flag_Ins_ca.paa";
+        priority = 0;
+    };
 };
 
 class CfgGroups {
-  class EAST {
+    class EAST {
 
-    class O_FapovoArmy {
-      name = "[PF] Fapovo Citizens Militia";
+        class O_FapovoArmy {
+            name = "[PF] Fapovo Citizens Militia";
 
-      class Infantry {
-        name = "Infantry";
+            class Infantry {
+                name = "Infantry";
 
-        class o_fapovoarmy_infantry_fireteam {
-          name = "Fireteam";
-          side = 0;
-          faction = "O_FapovoArmy";
-          icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
-          rarityGroup = 0.5;
+                class o_ofapovoarmy_infantry_patrol {
+                    name = "Patrol";
+                    side = 0;
+                    faction = "O_FapovoArmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
 
-          class Unit0 {
-            position[] = {0,0,0};
-            rank = "CORPORAL";
-            side = 0;
-            vehicle = "O_FapovoArmy_Team_Leader_01";
-          };
-          class Unit1 {
-            position[] = {5,-5,0};
-            rank = "PRIVATE";
-            side = 0;
-            vehicle = "O_FapovoArmy_Rifleman_01";
-          };
-          class Unit2 {
-            position[] = {-5,-5,0};
-            rank = "PRIVATE";
-            side = 0;
-            vehicle = "O_FapovoArmy_Grenadier_01";
-          };
-          class Unit3 {
-            position[] = {10,-10,0};
-            rank = "PRIVATE";
-            side = 0;
-            vehicle = "O_FapovoArmy_Autorifleman_01";
-          };
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Rifleman_01";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Rifleman_01";
+                    };
+                };
+
+                class o_ofapovoarmy_infantry_fireteam {
+                    name = "Fireteam";
+                    side = 0;
+                    faction = "O_FapovoArmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Team_Leader_01";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Rifleman_01";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Rifleman_01";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Rifleman_01";
+                    };
+                };
+
+                class o_ofapovoarmy_infantry_rifle_squad {
+                    name = "Rifle Squad";
+                    side = 0;
+                    faction = "O_FapovoArmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Squad_Leader_01";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Grenadier_01";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Team_Leader_01";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Team_Leader_01";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Rifleman_01";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Rifleman_01";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Rifleman_01";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Rifleman_01";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Rifleman_01";
+                    };
+                    class Unit9 {
+                        position[] = {25,-25,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Rifleman_01";
+                    };
+                    class Unit10 {
+                        position[] = {-25,-25,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Medic_01";
+                    };
+                };
+
+                class o_ofapovoarmy_infantry_anti_tank_team {
+                    name = "Anti-Tank Team";
+                    side = 0;
+                    faction = "O_FapovoArmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Rifleman_AT_01";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Rifleman_01";
+                    };
+                };
+
+                class o_ofapovoarmy_infantry_anti_air_team {
+                    name = "Anti-Air Team";
+                    side = 0;
+                    faction = "O_FapovoArmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_antiair.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Rifleman_AA_01";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Rifleman_01";
+                    };
+                };
+
+                class o_ofapovoarmy_infantry_machine_gun_team {
+                    name = "Machine Gun Team";
+                    side = 0;
+                    faction = "O_FapovoArmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Autorifleman_01";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Rifleman_01";
+                    };
+                };
+
+                class o_ofapovoarmy_infantry_sniper_team {
+                    name = "Sniper Team";
+                    side = 0;
+                    faction = "O_FapovoArmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Marksman_01";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Rifleman_01";
+                    };
+                };
+
+                class o_ofapovoarmy_infantry_conscript_fireteam {
+                    name = "Conscript Fireteam";
+                    side = 0;
+                    faction = "O_FapovoArmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Team_Leader_01";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_Conscript_Rifleman_01";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_Conscript_Rifleman_01";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_Conscript_Rifleman_01";
+                    };
+                };
+
+                class o_ofapovoarmy_infantry_conscript_rifle_squad {
+                    name = "Conscript Rifle Squad";
+                    side = 0;
+                    faction = "O_FapovoArmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Squad_Leader_01";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Team_Leader_01";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Team_Leader_01";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_Conscript_Rifleman_01";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_Conscript_Rifleman_01";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_Conscript_Rifleman_01";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_Conscript_Rifleman_01";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_Conscript_Rifleman_01";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_Conscript_Rifleman_01";
+                    };
+                    class Unit9 {
+                        position[] = {25,-25,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Medic_01";
+                    };
+                };
+
+            };
+
+            class SpecOps {
+                name = "SpecOps";
+
+                class o_ofapovoarmy_specops_party_rifle_squad {
+                    name = "Party Rifle Squad";
+                    side = 0;
+                    faction = "O_FapovoArmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_Party_Squad_Leader_01";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_Party_Grenadier_01";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_Party_Team_Leader_01";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_Party_Team_Leader_01";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_Party_Rifleman_01";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_Party_Rifleman_01";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_Party_Rifleman_01";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_Party_Rifleman_01";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_Party_Rifleman_01";
+                    };
+                    class Unit9 {
+                        position[] = {25,-25,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_Party_Rifleman_01";
+                    };
+                    class Unit10 {
+                        position[] = {-25,-25,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_Party_Medic_01";
+                    };
+                };
+
+                class o_ofapovoarmy_specops_party_anti_tank_team {
+                    name = "Party Anti-Tank Team";
+                    side = 0;
+                    faction = "O_FapovoArmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_motor_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_Party_Anti_Tank_01";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_Party_Rifleman_01";
+                    };
+                };
+
+                class o_ofapovoarmy_specops_party_anti_air_team {
+                    name = "Party Anti-Air Team";
+                    side = 0;
+                    faction = "O_FapovoArmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_antiair.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_Party_Anti_Air_01";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_Party_Rifleman_01";
+                    };
+                };
+
+                class o_ofapovoarmy_specops_party_sniper_team {
+                    name = "Party Sniper Team";
+                    side = 0;
+                    faction = "O_FapovoArmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_recon.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_Party_Sniper_01";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_Party_Rifleman_01";
+                    };
+                };
+
+            };
+
+            class Motorized {
+                name = "Motorized";
+
+                class o_ofapovoarmy_motorized_motorized_rifle_squad {
+                    name = "Motorized Rifle Squad";
+                    side = 0;
+                    faction = "O_FapovoArmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_motor_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Squad_Leader_01";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Grenadier_01";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Team_Leader_01";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Team_Leader_01";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Rifleman_01";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Rifleman_01";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Rifleman_01";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Rifleman_01";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Rifleman_01";
+                    };
+                    class Unit9 {
+                        position[] = {25,-25,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Rifleman_01";
+                    };
+                    class Unit10 {
+                        position[] = {-25,-25,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Medic_01";
+                    };
+                    class Unit11 {
+                        position[] = {31,-49,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_M1015_Mule_01";
+                    };
+                };
+
+                class o_ofapovoarmy_motorized_motorized_support_squad {
+                    name = "Motorized Support Squad";
+                    side = 0;
+                    faction = "O_FapovoArmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_motor_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Squad_Leader_01";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Team_Leader_01";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Team_Leader_01";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Autorifleman_01";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Autorifleman_01";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Rifleman_01";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Rifleman_01";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Rifleman_AT_01";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Rifleman_AA_01";
+                    };
+                    class Unit9 {
+                        position[] = {25,-25,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Rifleman_01";
+                    };
+                    class Unit10 {
+                        position[] = {-25,-25,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Rifleman_01";
+                    };
+                };
+
+                class o_ofapovoarmy_motorized_luv_patrol {
+                    name = "LUV Patrol";
+                    side = 0;
+                    faction = "O_FapovoArmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_recon.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_Light_Utility_Vehicle_MG_01";
+                    };
+                    class Unit1 {
+                        position[] = {6,-17,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_Light_Utility_Vehicle_MG_01";
+                    };
+                };
+
+            };
+
+            class Motorized_MTP {
+                name = "Motorized Infantry (MTP)";
+
+            };
+
+            class Support {
+                name = "Support";
+
+            };
+
+            class Mechanized {
+                name = "Mechanized";
+
+                class o_ofapovoarmy_mechanized_light_mechanized_squad {
+                    name = "Light Mechanized Squad";
+                    side = 0;
+                    faction = "O_FapovoArmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_mech_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Squad_Leader_01";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Grenadier_01";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Team_Leader_01";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Team_Leader_01";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Rifleman_01";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Rifleman_01";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Rifleman_01";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Rifleman_01";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Rifleman_01";
+                    };
+                    class Unit9 {
+                        position[] = {25,-25,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Rifleman_01";
+                    };
+                    class Unit10 {
+                        position[] = {-25,-25,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_FapovoArmy_Medic_01";
+                    };
+                    class Unit11 {
+                        position[] = {33,-41,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_BM_2T_IFV_01";
+                    };
+                    class Unit12 {
+                        position[] = {-33,-41,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_BM_2T_IFV_01";
+                    };
+                };
+
+            };
+
+            class Armored {
+                name = "Armored";
+
+                class o_ofapovoarmy_armored_ifv_section {
+                    name = "IFV Section";
+                    side = 0;
+                    faction = "O_FapovoArmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_armor.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_BM_2T_IFV_01";
+                    };
+                    class Unit1 {
+                        position[] = {8,-16,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_BM_2T_IFV_01";
+                    };
+                };
+
+                class o_ofapovoarmy_armored_tank_section {
+                    name = "Tank Section";
+                    side = 0;
+                    faction = "O_FapovoArmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_armor.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_SCT3_Armata_MBT_01";
+                    };
+                    class Unit1 {
+                        position[] = {11,-18,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_SCT3_Armata_MBT_01";
+                    };
+                };
+
+            };
+
+            class Artillery {
+                name = "Artillery";
+
+            };
+
+            class Naval {
+                name = "Naval";
+
+            };
+
+            class Air {
+                name = "Air";
+
+                class o_ofapovoarmy_air_rotary_cas {
+                    name = "Rotary CAS";
+                    side = 0;
+                    faction = "O_FapovoArmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_air.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_UH_101_Eagle_01";
+                    };
+                    class Unit1 {
+                        position[] = {18,-22,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_UH_101_Eagle_01";
+                    };
+                };
+
+                class o_ofapovoarmy_air_fixed_wing_cas {
+                    name = "Fixed Wing CAS";
+                    side = 0;
+                    faction = "O_FapovoArmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_plane.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_A84_Gladius_01";
+                    };
+                    class Unit1 {
+                        position[] = {26,-24,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_A84_Gladius_01";
+                    };
+                };
+
+                class o_ofapovoarmy_air_fixed_wing_cap {
+                    name = "Fixed Wing CAP";
+                    side = 0;
+                    faction = "O_FapovoArmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_plane.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_L159_ALCA_01";
+                    };
+                    class Unit1 {
+                        position[] = {15,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_L159_ALCA_01";
+                    };
+                };
+
+                class o_ofapovoarmy_air_razor_harpy {
+                    name = "Razor Harpy";
+                    side = 0;
+                    faction = "O_FapovoArmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_air.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "O_OFapovoArmy_D81_LRTA_Razor_Harpy_01";
+                    };
+                };
+
+            };
+
+
         };
-
-        class o_fapovoarmy_infantry_rifle_squad {
-          name = "Rifle Squad";
-          side = 0;
-          faction = "O_FapovoArmy";
-          icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
-          rarityGroup = 0.5;
-
-          class Unit0 {
-            position[] = {0,0,0};
-            rank = "SERGEANT";
-            side = 0;
-            vehicle = "O_FapovoArmy_Squad_Leader_01";
-          };
-          class Unit1 {
-            position[] = {5,-5,0};
-            rank = "CORPORAL";
-            side = 0;
-            vehicle = "O_FapovoArmy_Team_Leader_01";
-          };
-          class Unit2 {
-            position[] = {-5,-5,0};
-            rank = "CORPORAL";
-            side = 0;
-            vehicle = "O_FapovoArmy_Team_Leader_01";
-          };
-          class Unit3 {
-            position[] = {10,-10,0};
-            rank = "PRIVATE";
-            side = 0;
-            vehicle = "O_FapovoArmy_Rifleman_01";
-          };
-          class Unit4 {
-            position[] = {-10,-10,0};
-            rank = "PRIVATE";
-            side = 0;
-            vehicle = "O_FapovoArmy_Rifleman_01";
-          };
-          class Unit5 {
-            position[] = {15,-15,0};
-            rank = "PRIVATE";
-            side = 0;
-            vehicle = "O_FapovoArmy_Grenadier_01";
-          };
-          class Unit6 {
-            position[] = {-15,-15,0};
-            rank = "PRIVATE";
-            side = 0;
-            vehicle = "O_FapovoArmy_Grenadier_01";
-          };
-          class Unit7 {
-            position[] = {20,-20,0};
-            rank = "PRIVATE";
-            side = 0;
-            vehicle = "O_FapovoArmy_Autorifleman_01";
-          };
-          class Unit8 {
-            position[] = {-20,-20,0};
-            rank = "PRIVATE";
-            side = 0;
-            vehicle = "O_FapovoArmy_Autorifleman_01";
-          };
-        };
-
-        class o_fapovoarmy_infantry_platoon_hq {
-          name = "Platoon HQ";
-          side = 0;
-          faction = "O_FapovoArmy";
-          icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
-          rarityGroup = 0.5;
-
-          class Unit0 {
-            position[] = {0,0,0};
-            rank = "LIEUTENANT";
-            side = 0;
-            vehicle = "O_FapovoArmy_Officer_01";
-          };
-          class Unit1 {
-            position[] = {5,-5,0};
-            rank = "PRIVATE";
-            side = 0;
-            vehicle = "O_FapovoArmy_RTO_01";
-          };
-          class Unit2 {
-            position[] = {-5,-5,0};
-            rank = "CORPORAL";
-            side = 0;
-            vehicle = "O_FapovoArmy_Medic_01";
-          };
-          class Unit3 {
-            position[] = {10,-10,0};
-            rank = "PRIVATE";
-            side = 0;
-            vehicle = "O_FapovoArmy_Marksman_01";
-          };
-          class Unit4 {
-            position[] = {-10,-10,0};
-            rank = "PRIVATE";
-            side = 0;
-            vehicle = "O_FapovoArmy_Rifleman_AT_01";
-          };
-        };
-
-        class o_fapovoarmy_infantry_secret_police {
-          name = "Secret Police";
-          side = 0;
-          faction = "O_FapovoArmy";
-          icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
-          rarityGroup = 0.5;
-
-          class Unit0 {
-            position[] = {0,0,0};
-            rank = "SERGEANT";
-            side = 0;
-            vehicle = "O_FapovoArmy_Secret_Police_01";
-          };
-          class Unit1 {
-            position[] = {5,-5,0};
-            rank = "PRIVATE";
-            side = 0;
-            vehicle = "O_FapovoArmy_Secret_Police_01";
-          };
-        };
-
-        class o_fapovoarmy_infantry_motorized_rifle_squad {
-          name = "Motorized Rifle Squad";
-          side = 0;
-          faction = "O_FapovoArmy";
-          icon = "\A3\ui_f\data\map\markers\nato\o_motor_inf.paa";
-          rarityGroup = 0.5;
-
-          class Unit0 {
-            position[] = {0,0,0};
-            rank = "SERGEANT";
-            side = 0;
-            vehicle = "O_FapovoArmy_Squad_Leader_01";
-          };
-          class Unit1 {
-            position[] = {5,-5,0};
-            rank = "CORPORAL";
-            side = 0;
-            vehicle = "O_FapovoArmy_Team_Leader_01";
-          };
-          class Unit2 {
-            position[] = {-5,-5,0};
-            rank = "CORPORAL";
-            side = 0;
-            vehicle = "O_FapovoArmy_Team_Leader_01";
-          };
-          class Unit3 {
-            position[] = {10,-10,0};
-            rank = "PRIVATE";
-            side = 0;
-            vehicle = "O_FapovoArmy_Rifleman_01";
-          };
-          class Unit4 {
-            position[] = {-10,-10,0};
-            rank = "PRIVATE";
-            side = 0;
-            vehicle = "O_FapovoArmy_Rifleman_01";
-          };
-          class Unit5 {
-            position[] = {15,-15,0};
-            rank = "PRIVATE";
-            side = 0;
-            vehicle = "O_FapovoArmy_Grenadier_01";
-          };
-          class Unit6 {
-            position[] = {-15,-15,0};
-            rank = "PRIVATE";
-            side = 0;
-            vehicle = "O_FapovoArmy_Grenadier_01";
-          };
-          class Unit7 {
-            position[] = {20,-20,0};
-            rank = "PRIVATE";
-            side = 0;
-            vehicle = "O_FapovoArmy_Autorifleman_01";
-          };
-          class Unit8 {
-            position[] = {-20,-20,0};
-            rank = "PRIVATE";
-            side = 0;
-            vehicle = "O_FapovoArmy_Autorifleman_01";
-          };
-          class Unit9 {
-            position[] = {26,-44,0};
-            rank = "PRIVATE";
-            side = 0;
-            vehicle = "O_FapovoArmy_M1015_Mule_01";
-          };
-        };
-
-        class o_fapovoarmy_infantry_marksman_team {
-          name = "Marksman Team";
-          side = 0;
-          faction = "O_FapovoArmy";
-          icon = "\A3\ui_f\data\map\markers\nato\o_recon.paa";
-          rarityGroup = 0.5;
-
-          class Unit0 {
-            position[] = {0,0,0};
-            rank = "CORPORAL";
-            side = 0;
-            vehicle = "O_FapovoArmy_Marksman_01";
-          };
-          class Unit1 {
-            position[] = {5,-5,0};
-            rank = "PRIVATE";
-            side = 0;
-            vehicle = "O_FapovoArmy_Rifleman_01";
-          };
-        };
-
-        class o_fapovoarmy_infantry_anti_tank_team {
-          name = "Anti-Tank Team";
-          side = 0;
-          faction = "O_FapovoArmy";
-          icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
-          rarityGroup = 0.5;
-
-          class Unit0 {
-            position[] = {0,0,0};
-            rank = "CORPORAL";
-            side = 0;
-            vehicle = "O_FapovoArmy_Rifleman_AT_01";
-          };
-          class Unit1 {
-            position[] = {5,-5,0};
-            rank = "PRIVATE";
-            side = 0;
-            vehicle = "O_FapovoArmy_Grenadier_01";
-          };
-        };
-
-      };
-
-      class SpecOps {
-        name = "Special Forces";
-
-      };
-
-      class Motorized {
-        name = "Motorized Infantry";
-
-      };
-
-      class Motorized_MTP {
-        name = "Motorized Infantry (MTP)";
-
-      };
-
-      class Support {
-        name = "Support Infantry";
-
-      };
-
-      class Mechanized {
-        name = "Mechanized Infantry";
-
-      };
-
-      class Armored {
-        name = "Armor";
-
-      };
-
-      class Artillery {
-        name = "Artillery";
-
-      };
-
-      class Naval {
-        name = "Naval";
-
-      };
-
-      class Air {
-        name = "Air";
-
-      };
-
 
     };
-
-  };
 };
-
-
-//////////////////////////////////////////////////////////////////////////////////
-// Config Automatically Generated by ALiVE ORBAT Creator
-// Generated with Arma 3 version 216.151618 on Stable branch
-// Generated with ALiVE version 2.1.2.2309211
-//////////////////////////////////////////////////////////////////////////////////
 
 
 class CBA_Extended_EventHandlers_base;
@@ -392,15 +930,61 @@ class CfgVehicles {
     class O_Soldier_F_OCimport_01 : O_Soldier_F { scope = 0; class EventHandlers; };
     class O_Soldier_F_OCimport_02 : O_Soldier_F_OCimport_01 { class EventHandlers; };
 
-    class LM_OPCAN_Rake_FRI_HMG;
-    class LM_OPCAN_Rake_FRI_HMG_OCimport_01 : LM_OPCAN_Rake_FRI_HMG { scope = 0; class EventHandlers; class Turrets; };
-    class LM_OPCAN_Rake_FRI_HMG_OCimport_02 : LM_OPCAN_Rake_FRI_HMG_OCimport_01 { 
+    class OPTRE_m1015_mule_cover_ins;
+    class OPTRE_m1015_mule_cover_ins_OCimport_01 : OPTRE_m1015_mule_cover_ins { scope = 0; class EventHandlers; class Turrets; };
+    class OPTRE_m1015_mule_cover_ins_OCimport_02 : OPTRE_m1015_mule_cover_ins_OCimport_01 { 
         class EventHandlers; 
         class Turrets : Turrets {
-            class TopTurret;
-            class CodRiverTurret;
+            class CargoTurret_01;
             class CargoTurret_02;
-            class CargoTurret_03;
+        };
+    };
+
+    class DMNS_RVGR14_FAV;
+    class DMNS_RVGR14_FAV_OCimport_01 : DMNS_RVGR14_FAV { scope = 0; class EventHandlers; class Turrets; };
+    class DMNS_RVGR14_FAV_OCimport_02 : DMNS_RVGR14_FAV_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class CargoGunner_1;
+            class CargoTurret_02;
+        };
+    };
+
+    class DMNS_RVGR14_LRV_Armed;
+    class DMNS_RVGR14_LRV_Armed_OCimport_01 : DMNS_RVGR14_LRV_Armed { scope = 0; class EventHandlers; class Turrets; };
+    class DMNS_RVGR14_LRV_Armed_OCimport_02 : DMNS_RVGR14_LRV_Armed_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class CargoGunner_1;
+            class CargoTurret_02;
+            class MainTurret;
+        };
+    };
+
+    class O_OColURFOPTRE_BM_2T_Stalker_ALiVE_01;
+    class O_OColURFOPTRE_BM_2T_Stalker_ALiVE_01_OCimport_01 : O_OColURFOPTRE_BM_2T_Stalker_ALiVE_01 { scope = 0; class EventHandlers; class Turrets; };
+    class O_OColURFOPTRE_BM_2T_Stalker_ALiVE_01_OCimport_02 : O_OColURFOPTRE_BM_2T_Stalker_ALiVE_01_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+
+    class TCF_Armata_Koslovic;
+    class TCF_Armata_Koslovic_OCimport_01 : TCF_Armata_Koslovic { scope = 0; class EventHandlers; class Turrets; };
+    class TCF_Armata_Koslovic_OCimport_02 : TCF_Armata_Koslovic_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+
+    class I_IColMAOPTRE_AW159_Wildcat_Unarmed_ALiVE_01;
+    class I_IColMAOPTRE_AW159_Wildcat_Unarmed_ALiVE_01_OCimport_01 : I_IColMAOPTRE_AW159_Wildcat_Unarmed_ALiVE_01 { scope = 0; class EventHandlers; class Turrets; };
+    class I_IColMAOPTRE_AW159_Wildcat_Unarmed_ALiVE_01_OCimport_02 : I_IColMAOPTRE_AW159_Wildcat_Unarmed_ALiVE_01_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
         };
     };
 
@@ -413,44 +997,41 @@ class CfgVehicles {
         };
     };
 
-    class OPTRE_m1015_mule_cover_ins;
-    class OPTRE_m1015_mule_cover_ins_OCimport_01 : OPTRE_m1015_mule_cover_ins { scope = 0; class EventHandlers; class Turrets; };
-    class OPTRE_m1015_mule_cover_ins_OCimport_02 : OPTRE_m1015_mule_cover_ins_OCimport_01 { 
+    class TCF_D81LRTI;
+    class TCF_D81LRTI_OCimport_01 : TCF_D81LRTI { scope = 0; class EventHandlers; class Turrets; };
+    class TCF_D81LRTI_OCimport_02 : TCF_D81LRTI_OCimport_01 { 
         class EventHandlers; 
         class Turrets : Turrets {
-            class CargoTurret_01;
-            class CargoTurret_02;
-        };
-    };
-
-    class LM_OPCAN_Rake_FRI_U;
-    class LM_OPCAN_Rake_FRI_U_OCimport_01 : LM_OPCAN_Rake_FRI_U { scope = 0; class EventHandlers; class Turrets; };
-    class LM_OPCAN_Rake_FRI_U_OCimport_02 : LM_OPCAN_Rake_FRI_U_OCimport_01 { 
-        class EventHandlers; 
-        class Turrets : Turrets {
-            class CargoTurret_02;
+            class CopilotTurret;
+            class PassengerTurret_01;
+            class PassengerTurret_02;
             class CargoTurret_03;
-            class CargoTurret_01;
             class CargoTurret_04;
-            class CargoTurret_05;
-            class CargoTurret_06;
         };
     };
 
-    class TCF_Felix_Rotary_Frieden;
-    class TCF_Felix_Rotary_Frieden_OCimport_01 : TCF_Felix_Rotary_Frieden { scope = 0; class EventHandlers; class Turrets; };
-    class TCF_Felix_Rotary_Frieden_OCimport_02 : TCF_Felix_Rotary_Frieden_OCimport_01 { 
+    class TCF_D81LRTA;
+    class TCF_D81LRTA_OCimport_01 : TCF_D81LRTA { scope = 0; class EventHandlers; class Turrets; };
+    class TCF_D81LRTA_OCimport_02 : TCF_D81LRTA_OCimport_01 { 
         class EventHandlers; 
         class Turrets : Turrets {
-            class MainTurret;
-            class CargoTurret_01;
-            class CargoTurret_02;
+            class CopilotTurret;
+            class GunnerTurret_01;
+            class GunnerTurret_02;
         };
     };
+
+    class I_IColMAOPTRE_L159_ALCA_ALiVE_01;
+    class I_IColMAOPTRE_L159_ALCA_ALiVE_01_OCimport_01 : I_IColMAOPTRE_L159_ALCA_ALiVE_01 { scope = 0; class EventHandlers; };
+    class I_IColMAOPTRE_L159_ALCA_ALiVE_01_OCimport_02 : I_IColMAOPTRE_L159_ALCA_ALiVE_01_OCimport_01 { scope = 0; class EventHandlers; };
+
+    class OPTRE_gladius_02;
+    class OPTRE_gladius_02_OCimport_01 : OPTRE_gladius_02 { scope = 0; class EventHandlers; };
+    class OPTRE_gladius_02_OCimport_02 : OPTRE_gladius_02_OCimport_01 { scope = 0; class EventHandlers; };
 
 
     class O_FapovoArmy_Officer_01 : O_Soldier_F_OCimport_02 {
-        author = "wlan0";
+        author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
         displayName = "Officer";
@@ -491,7 +1072,7 @@ class CfgVehicles {
     };
 
     class O_FapovoArmy_Squad_Leader_01 : O_FapovoArmy_Officer_01 {
-        author = "wlan0";
+        author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
         displayName = "Squad Leader";
@@ -532,7 +1113,7 @@ class CfgVehicles {
     };
 
     class O_FapovoArmy_Team_Leader_01 : O_FapovoArmy_Squad_Leader_01 {
-        author = "wlan0";
+        author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
         displayName = "Team Leader";
@@ -573,7 +1154,7 @@ class CfgVehicles {
     };
 
     class O_FapovoArmy_Rifleman_01 : O_FapovoArmy_Team_Leader_01 {
-        author = "wlan0";
+        author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
         displayName = "Rifleman";
@@ -614,7 +1195,7 @@ class CfgVehicles {
     };
 
     class O_FapovoArmy_Grenadier_01 : O_FapovoArmy_Rifleman_01 {
-        author = "wlan0";
+        author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
         displayName = "Grenadier";
@@ -655,10 +1236,10 @@ class CfgVehicles {
     };
 
     class O_FapovoArmy_Autorifleman_01 : O_FapovoArmy_Rifleman_01 {
-        author = "wlan0";
+        author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
-        displayName = "Autorifleman";
+        displayName = "Machine Gunner";
         side = 0;
         faction = "o_fapovoarmy";
 
@@ -696,7 +1277,7 @@ class CfgVehicles {
     };
 
     class O_FapovoArmy_Marksman_01 : O_FapovoArmy_Rifleman_01 {
-        author = "wlan0";
+        author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
         displayName = "Marksman";
@@ -736,30 +1317,30 @@ class CfgVehicles {
 
     };
 
-    class O_FapovoArmy_RTO_01 : O_FapovoArmy_Rifleman_01 {
-        author = "wlan0";
+    class O_OFapovoArmy_Party_Team_Leader_01 : O_FapovoArmy_Team_Leader_01 {
+        author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
-        displayName = "RTO";
+        displayName = "Party Team Leader";
         side = 0;
         faction = "o_fapovoarmy";
 
         identityTypes[] = {"Head_NATO","LanguageENG_F","NoGlasses"};
 
-        uniformClass = "MEU_FRI_uni_Base_D";
+        uniformClass = "MEU_FRI_uni_Base_W";
 
-        linkedItems[] = {"V_BandollierB_khk","LM_MEU_Frihelm_D","ItemMap","TFAR_fadak","ItemCompass","Itemwatch"};
-        respawnlinkedItems[] = {"V_BandollierB_khk","LM_MEU_Frihelm_D","ItemMap","TFAR_fadak","ItemCompass","Itemwatch"};
+        linkedItems[] = {"TCF_Reactive_Vest2","LM_MEU_Frihelm_W","ItemMap","TFAR_fadak","ItemCompass","Itemwatch"};
+        respawnlinkedItems[] = {"TCF_Reactive_Vest2","LM_MEU_Frihelm_W","ItemMap","TFAR_fadak","ItemCompass","Itemwatch"};
 
-        weapons[] = {"arifle_MSBS65_sand_F","hgun_Rook40_F","Binocular"};
-        respawnWeapons[] = {"arifle_MSBS65_sand_F","hgun_Rook40_F","Binocular"};
+        weapons[] = {"arifle_MSBS65_black_F","hgun_Rook40_F","Binocular"};
+        respawnWeapons[] = {"arifle_MSBS65_black_F","hgun_Rook40_F","Binocular"};
 
         magazines[] = {"30Rnd_65x39_caseless_msbs_mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_msbs_mag","16Rnd_9x21_Mag"};
         respawnMagazines[] = {"30Rnd_65x39_caseless_msbs_mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_msbs_mag","16Rnd_9x21_Mag"};
 
-        backpack = "B_RadioBag_01_hex_F";
+        backpack = "B_LegStrapBag_black_F";
 
-        ALiVE_orbatCreator_loadout[] = {{"arifle_MSBS65_sand_F","","","optic_ico_01_sand_f",{"30Rnd_65x39_caseless_msbs_mag",30},{},""},{},{"hgun_Rook40_F","","","",{"16Rnd_9x21_Mag",17},{},""},{"MEU_FRI_uni_Base_D",{{"OPTRE_Biofoam",3},{"30Rnd_65x39_caseless_msbs_mag",2,30}}},{"V_BandollierB_khk",{{"Chemlight_green",2,1},{"OPTRE_M9_Frag",2,1},{"16Rnd_9x21_Mag",2,17},{"30Rnd_65x39_caseless_msbs_mag",4,30}}},{"B_RadioBag_01_hex_F",{{"ACE_splint",2},{"ACE_morphine",1},{"ACE_MapTools",1},{"ACE_CableTie",5},{"OPTRE_Biofoam",1},{"ACE_quikclot",3},{"ACE_packingBandage",3},{"ACE_elasticBandage",3},{"ACE_fieldDressing",3},{"ACE_adenosine",1}}},"LM_MEU_Frihelm_D","",{"Binocular","","","",{},{},""},{"ItemMap","","TFAR_fadak","ItemCompass","Itemwatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"arifle_MSBS65_black_F","ACE_muzzle_mzls_H","OPTRE_M12_Laser","PF_Holo_DMR",{"30Rnd_65x39_caseless_msbs_mag",30},{},""},{},{"hgun_Rook40_F","","","",{"16Rnd_9x21_Mag",17},{},""},{"MEU_FRI_uni_Base_W",{{"OPTRE_Biofoam",3},{"30Rnd_65x39_caseless_msbs_mag",2,30}}},{"TCF_Reactive_Vest2",{{"Chemlight_green",2,1},{"OPTRE_M9_Frag",2,1},{"16Rnd_9x21_Mag",2,17},{"30Rnd_65x39_caseless_msbs_mag",1,30}}},{"B_LegStrapBag_black_F",{{"ACE_splint",2},{"ACE_morphine",1},{"ACE_MapTools",1},{"ACE_CableTie",5},{"OPTRE_Biofoam",1},{"ACE_quikclot",3},{"ACE_packingBandage",3},{"ACE_elasticBandage",3},{"ACE_fieldDressing",3},{"ACE_adenosine",1},{"ACE_epinephrine",1},{"MEU_Medigel_Light",5},{"SmokeShellBlue",1,1},{"HandGrenade",2,1}}},"LM_MEU_Frihelm_W","",{"Binocular","","","",{},{},""},{"ItemMap","","TFAR_fadak","ItemCompass","Itemwatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -778,7 +1359,7 @@ class CfgVehicles {
     };
 
     class O_FapovoArmy_Medic_01 : O_FapovoArmy_Rifleman_01 {
-        author = "wlan0";
+        author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
         displayName = "Medic";
@@ -819,10 +1400,10 @@ class CfgVehicles {
     };
 
     class O_FapovoArmy_Rifleman_AT_01 : O_FapovoArmy_Rifleman_01 {
-        author = "wlan0";
+        author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
-        displayName = "Rifleman (AT)";
+        displayName = "Anti-Tank";
         side = 0;
         faction = "o_fapovoarmy";
 
@@ -860,10 +1441,10 @@ class CfgVehicles {
     };
 
     class O_FapovoArmy_Rifleman_AA_01 : O_FapovoArmy_Rifleman_AT_01 {
-        author = "wlan0";
+        author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
-        displayName = "Rifleman (AA)";
+        displayName = "Anti-Air";
         side = 0;
         faction = "o_fapovoarmy";
 
@@ -900,28 +1481,30 @@ class CfgVehicles {
 
     };
 
-    class O_FapovoArmy_Secret_Police_01 : O_FapovoArmy_Rifleman_01 {
-        author = "wlan0";
+    class O_OFapovoArmy_Party_Officer_01 : O_FapovoArmy_Officer_01 {
+        author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
-        displayName = "Secret Police";
+        displayName = "Party Officer";
         side = 0;
         faction = "o_fapovoarmy";
 
         identityTypes[] = {"Head_NATO","LanguageENG_F","NoGlasses"};
 
-        uniformClass = "MEU_FRI_uni_Base";
+        uniformClass = "MEU_FRI_uni_Base_W";
 
-        linkedItems[] = {"V_BandollierB_blk","TCF_MC_Regular","ItemMap","TFAR_fadak","ItemCompass","Itemwatch"};
-        respawnlinkedItems[] = {"V_BandollierB_blk","TCF_MC_Regular","ItemMap","TFAR_fadak","ItemCompass","Itemwatch"};
+        linkedItems[] = {"TCF_Reactive_Vest2","Koslovich_Red_beret","ItemMap","TFAR_fadak","ItemCompass","Itemwatch"};
+        respawnlinkedItems[] = {"TCF_Reactive_Vest2","Koslovich_Red_beret","ItemMap","TFAR_fadak","ItemCompass","Itemwatch"};
 
-        weapons[] = {"arifle_MSBS65_UBS_black_F","hgun_Rook40_F","Binocular"};
-        respawnWeapons[] = {"arifle_MSBS65_UBS_black_F","hgun_Rook40_F","Binocular"};
+        weapons[] = {"arifle_MSBS65_black_F","hgun_Rook40_F","Binocular"};
+        respawnWeapons[] = {"arifle_MSBS65_black_F","hgun_Rook40_F","Binocular"};
 
-        magazines[] = {"30Rnd_65x39_caseless_msbs_mag","6Rnd_12Gauge_Pellets","16Rnd_9x21_Mag","30Rnd_65x39_caseless_msbs_mag","6Rnd_12Gauge_Pellets","16Rnd_9x21_Mag"};
-        respawnMagazines[] = {"30Rnd_65x39_caseless_msbs_mag","6Rnd_12Gauge_Pellets","16Rnd_9x21_Mag","30Rnd_65x39_caseless_msbs_mag","6Rnd_12Gauge_Pellets","16Rnd_9x21_Mag"};
+        magazines[] = {"30Rnd_65x39_caseless_msbs_mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_msbs_mag","16Rnd_9x21_Mag"};
+        respawnMagazines[] = {"30Rnd_65x39_caseless_msbs_mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_msbs_mag","16Rnd_9x21_Mag"};
 
-        ALiVE_orbatCreator_loadout[] = {{"arifle_MSBS65_UBS_black_F","","","MEU_REC_HOLO",{"30Rnd_65x39_caseless_msbs_mag",30},{"6Rnd_12Gauge_Pellets",6},""},{},{"hgun_Rook40_F","","","",{"16Rnd_9x21_Mag",17},{},""},{"MEU_FRI_uni_Base",{{"OPTRE_Biofoam",3},{"30Rnd_65x39_caseless_msbs_mag",2,30}}},{"V_BandollierB_blk",{{"Chemlight_green",2,1},{"OPTRE_M9_Frag",2,1},{"16Rnd_9x21_Mag",2,17},{"30Rnd_65x39_caseless_msbs_mag",2,30},{"6Rnd_12Gauge_Pellets",2,6}}},{},"TCF_MC_Regular","41st_Shemagh_McFenrir_UP",{"Binocular","","","",{},{},""},{"ItemMap","","TFAR_fadak","ItemCompass","Itemwatch",""}};
+        backpack = "B_LegStrapBag_black_F";
+
+        ALiVE_orbatCreator_loadout[] = {{"arifle_MSBS65_black_F","ACE_muzzle_mzls_H","OPTRE_M12_Laser","PF_Holo_DMR",{"30Rnd_65x39_caseless_msbs_mag",30},{},""},{},{"hgun_Rook40_F","","","",{"16Rnd_9x21_Mag",17},{},""},{"MEU_FRI_uni_Base_W",{{"OPTRE_Biofoam",3},{"30Rnd_65x39_caseless_msbs_mag",2,30}}},{"TCF_Reactive_Vest2",{{"Chemlight_green",2,1},{"OPTRE_M9_Frag",2,1},{"16Rnd_9x21_Mag",2,17},{"30Rnd_65x39_caseless_msbs_mag",1,30}}},{"B_LegStrapBag_black_F",{{"ACE_splint",2},{"ACE_morphine",1},{"ACE_MapTools",1},{"ACE_CableTie",5},{"OPTRE_Biofoam",1},{"ACE_quikclot",3},{"ACE_packingBandage",3},{"ACE_elasticBandage",3},{"ACE_fieldDressing",3},{"ACE_adenosine",1},{"ACE_epinephrine",1},{"MEU_Medigel_Light",5},{"SmokeShellBlue",1,1},{"HandGrenade",2,1}}},"Koslovich_Red_beret","41st_Shemagh_BlkMulticam",{"Binocular","","","",{},{},""},{"ItemMap","","TFAR_fadak","ItemCompass","Itemwatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -939,20 +1522,20 @@ class CfgVehicles {
 
     };
 
-    class O_FapovoArmy_Secret_Police_Sergeant_01 : O_FapovoArmy_Secret_Police_01 {
-        author = "wlan0";
+    class O_OFapovoArmy_Party_Squad_Leader_01 : O_FapovoArmy_Squad_Leader_01 {
+        author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
-        displayName = "Secret Police (Sergeant)";
+        displayName = "Party Squad Leader";
         side = 0;
         faction = "o_fapovoarmy";
 
         identityTypes[] = {"Head_NATO","LanguageENG_F","NoGlasses"};
 
-        uniformClass = "MEU_FRI_uni_Base";
+        uniformClass = "MEU_FRI_uni_Base_W";
 
-        linkedItems[] = {"V_BandollierB_blk","Frieden_Grey_beret","ItemMap","TFAR_fadak","ItemCompass","Itemwatch"};
-        respawnlinkedItems[] = {"V_BandollierB_blk","Frieden_Grey_beret","ItemMap","TFAR_fadak","ItemCompass","Itemwatch"};
+        linkedItems[] = {"TCF_Reactive_Vest2","LM_MEU_Frihelm_W","ItemMap","TFAR_fadak","ItemCompass","Itemwatch"};
+        respawnlinkedItems[] = {"TCF_Reactive_Vest2","LM_MEU_Frihelm_W","ItemMap","TFAR_fadak","ItemCompass","Itemwatch"};
 
         weapons[] = {"arifle_MSBS65_black_F","hgun_Rook40_F","Binocular"};
         respawnWeapons[] = {"arifle_MSBS65_black_F","hgun_Rook40_F","Binocular"};
@@ -960,7 +1543,9 @@ class CfgVehicles {
         magazines[] = {"30Rnd_65x39_caseless_msbs_mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_msbs_mag","16Rnd_9x21_Mag"};
         respawnMagazines[] = {"30Rnd_65x39_caseless_msbs_mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_msbs_mag","16Rnd_9x21_Mag"};
 
-        ALiVE_orbatCreator_loadout[] = {{"arifle_MSBS65_black_F","","","MEU_REC_HOLO",{"30Rnd_65x39_caseless_msbs_mag",30},{},""},{},{"hgun_Rook40_F","","","",{"16Rnd_9x21_Mag",17},{},""},{"MEU_FRI_uni_Base",{{"OPTRE_Biofoam",3},{"30Rnd_65x39_caseless_msbs_mag",2,30}}},{"V_BandollierB_blk",{{"Chemlight_green",2,1},{"OPTRE_M9_Frag",2,1},{"16Rnd_9x21_Mag",2,17},{"30Rnd_65x39_caseless_msbs_mag",4,30}}},{},"Frieden_Grey_beret","41st_Shemagh_McSurtr",{"Binocular","","","",{},{},""},{"ItemMap","","TFAR_fadak","ItemCompass","Itemwatch",""}};
+        backpack = "stukasbackpack";
+
+        ALiVE_orbatCreator_loadout[] = {{"arifle_MSBS65_black_F","ACE_muzzle_mzls_H","OPTRE_M12_Laser","PF_Holo_DMR",{"30Rnd_65x39_caseless_msbs_mag",30},{},""},{},{"hgun_Rook40_F","","","",{"16Rnd_9x21_Mag",17},{},""},{"MEU_FRI_uni_Base_W",{{"OPTRE_Biofoam",3},{"30Rnd_65x39_caseless_msbs_mag",2,30}}},{"TCF_Reactive_Vest2",{{"Chemlight_green",2,1},{"OPTRE_M9_Frag",2,1},{"16Rnd_9x21_Mag",2,17},{"30Rnd_65x39_caseless_msbs_mag",1,30}}},{"stukasbackpack",{{"ACE_splint",2},{"ACE_morphine",1},{"ACE_MapTools",1},{"ACE_CableTie",5},{"OPTRE_Biofoam",1},{"ACE_quikclot",3},{"ACE_packingBandage",3},{"ACE_elasticBandage",3},{"ACE_fieldDressing",3},{"ACE_adenosine",1},{"ACE_epinephrine",1},{"MEU_Medigel_Light",5},{"SmokeShellBlue",1,1},{"HandGrenade",2,1}}},"LM_MEU_Frihelm_W","41st_Shemagh_McSurtr_UP",{"Binocular","","","",{},{},""},{"ItemMap","","TFAR_fadak","ItemCompass","Itemwatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -979,7 +1564,7 @@ class CfgVehicles {
     };
 
     class O_FapovoArmy_Pilot_01 : O_FapovoArmy_Rifleman_01 {
-        author = "wlan0";
+        author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
         displayName = "Pilot";
@@ -1020,7 +1605,7 @@ class CfgVehicles {
     };
 
     class O_FapovoArmy_Crewman_01 : O_FapovoArmy_Pilot_01 {
-        author = "wlan0";
+        author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
         displayName = "Crewman";
@@ -1060,14 +1645,340 @@ class CfgVehicles {
 
     };
 
-    class O_FapovoArmy_M1015_Mule_01 : OPTRE_m1015_mule_cover_ins_OCimport_02 {
-        author = "wlan0";
+    class O_OFapovoArmy_Conscript_Rifleman_01 : O_FapovoArmy_Rifleman_01 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Conscript Rifleman";
+        side = 0;
+        faction = "o_fapovoarmy";
+
+        identityTypes[] = {"Head_NATO","LanguageENG_F","NoGlasses"};
+
+        uniformClass = "MEU_FRI_uni_Base_D";
+
+        linkedItems[] = {"TCF_SU_FLAK_VEST","H_PASGT_basic_black_F","ItemMap","TFAR_fadak","ItemCompass","Itemwatch"};
+        respawnlinkedItems[] = {"TCF_SU_FLAK_VEST","H_PASGT_basic_black_F","ItemMap","TFAR_fadak","ItemCompass","Itemwatch"};
+
+        weapons[] = {"arifle_AK12_arid_F","hgun_Rook40_F","Binocular"};
+        respawnWeapons[] = {"arifle_AK12_arid_F","hgun_Rook40_F","Binocular"};
+
+        magazines[] = {"30rnd_762x39_AK12_Arid_Mag_F","16Rnd_9x21_Mag","30rnd_762x39_AK12_Arid_Mag_F","16Rnd_9x21_Mag"};
+        respawnMagazines[] = {"30rnd_762x39_AK12_Arid_Mag_F","16Rnd_9x21_Mag","30rnd_762x39_AK12_Arid_Mag_F","16Rnd_9x21_Mag"};
+
+        ALiVE_orbatCreator_loadout[] = {{"arifle_AK12_arid_F","","","",{"30rnd_762x39_AK12_Arid_Mag_F",30},{},""},{},{"hgun_Rook40_F","","","",{"16Rnd_9x21_Mag",17},{},""},{"MEU_FRI_uni_Base_D",{{"OPTRE_Biofoam",3},{"30rnd_762x39_AK12_Arid_Mag_F",2,30}}},{"TCF_SU_FLAK_VEST",{{"MEU_Medigel_Light",5},{"ACE_elasticBandage",2},{"ACE_morphine",1},{"Chemlight_green",2,1},{"OPTRE_M9_Frag",2,1},{"16Rnd_9x21_Mag",2,17},{"30rnd_762x39_AK12_Arid_Mag_F",7,30}}},{},"H_PASGT_basic_black_F","",{"Binocular","","","",{},{},""},{"ItemMap","","TFAR_fadak","ItemCompass","Itemwatch",""}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'OPTRE_Insignia_emblems_uprising'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_insignia = "OPTRE_Insignia_emblems_uprising";
+
+    };
+
+    class O_OFapovoArmy_Party_Rifleman_01 : O_FapovoArmy_Rifleman_01 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Party Rifleman";
+        side = 0;
+        faction = "o_fapovoarmy";
+
+        identityTypes[] = {"Head_NATO","LanguageENG_F","NoGlasses"};
+
+        uniformClass = "MEU_FRI_uni_Base_W";
+
+        linkedItems[] = {"TCF_Reactive_Vest2","LM_MEU_Frihelm_W","ItemMap","TFAR_fadak","ItemCompass","Itemwatch"};
+        respawnlinkedItems[] = {"TCF_Reactive_Vest2","LM_MEU_Frihelm_W","ItemMap","TFAR_fadak","ItemCompass","Itemwatch"};
+
+        weapons[] = {"arifle_MSBS65_black_F","hgun_Rook40_F","Binocular"};
+        respawnWeapons[] = {"arifle_MSBS65_black_F","hgun_Rook40_F","Binocular"};
+
+        magazines[] = {"30Rnd_65x39_caseless_msbs_mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_msbs_mag","16Rnd_9x21_Mag"};
+        respawnMagazines[] = {"30Rnd_65x39_caseless_msbs_mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_msbs_mag","16Rnd_9x21_Mag"};
+
+        backpack = "B_LegStrapBag_black_F";
+
+        ALiVE_orbatCreator_loadout[] = {{"arifle_MSBS65_black_F","ACE_muzzle_mzls_H","","PF_Holo_DMR",{"30Rnd_65x39_caseless_msbs_mag",30},{},""},{},{"hgun_Rook40_F","","","",{"16Rnd_9x21_Mag",17},{},""},{"MEU_FRI_uni_Base_W",{{"OPTRE_Biofoam",3},{"30Rnd_65x39_caseless_msbs_mag",2,30}}},{"TCF_Reactive_Vest2",{{"Chemlight_green",2,1},{"OPTRE_M9_Frag",2,1},{"16Rnd_9x21_Mag",2,17},{"30rnd_65x39_mag_msbs_JHP",8,30}}},{"B_LegStrapBag_black_F",{{"ACE_splint",2},{"ACE_morphine",1},{"ACE_MapTools",1},{"ACE_CableTie",5},{"OPTRE_Biofoam",1},{"ACE_quikclot",3},{"ACE_packingBandage",3},{"ACE_elasticBandage",3},{"ACE_fieldDressing",3},{"ACE_adenosine",1},{"ACE_epinephrine",1},{"MEU_Medigel_Light",5},{"SmokeShellBlue",1,1},{"HandGrenade",2,1}}},"LM_MEU_Frihelm_W","",{"Binocular","","","",{},{},""},{"ItemMap","","TFAR_fadak","ItemCompass","Itemwatch",""}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'OPTRE_Insignia_emblems_uprising'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_insignia = "OPTRE_Insignia_emblems_uprising";
+
+    };
+
+    class O_OFapovoArmy_Party_Grenadier_01 : O_FapovoArmy_Grenadier_01 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Party Grenadier";
+        side = 0;
+        faction = "o_fapovoarmy";
+
+        identityTypes[] = {"Head_NATO","LanguageENG_F","NoGlasses"};
+
+        uniformClass = "MEU_FRI_uni_Base_W";
+
+        linkedItems[] = {"TCF_Reactive_Vest2","LM_MEU_Frihelm_W","ItemMap","TFAR_fadak","ItemCompass","Itemwatch"};
+        respawnlinkedItems[] = {"TCF_Reactive_Vest2","LM_MEU_Frihelm_W","ItemMap","TFAR_fadak","ItemCompass","Itemwatch"};
+
+        weapons[] = {"arifle_MSBS65_GL_black_F","hgun_Rook40_F","Binocular"};
+        respawnWeapons[] = {"arifle_MSBS65_GL_black_F","hgun_Rook40_F","Binocular"};
+
+        magazines[] = {"30Rnd_65x39_caseless_msbs_mag","1Rnd_HE_Grenade_shell","16Rnd_9x21_Mag","30Rnd_65x39_caseless_msbs_mag","1Rnd_HE_Grenade_shell","16Rnd_9x21_Mag"};
+        respawnMagazines[] = {"30Rnd_65x39_caseless_msbs_mag","1Rnd_HE_Grenade_shell","16Rnd_9x21_Mag","30Rnd_65x39_caseless_msbs_mag","1Rnd_HE_Grenade_shell","16Rnd_9x21_Mag"};
+
+        backpack = "B_FieldPack_blk";
+
+        ALiVE_orbatCreator_loadout[] = {{"arifle_MSBS65_GL_black_F","ACE_muzzle_mzls_H","","PF_Holo_DMR",{"30Rnd_65x39_caseless_msbs_mag",30},{"1Rnd_HE_Grenade_shell",1},""},{},{"hgun_Rook40_F","","","",{"16Rnd_9x21_Mag",17},{},""},{"MEU_FRI_uni_Base_W",{{"OPTRE_Biofoam",3},{"30Rnd_65x39_caseless_msbs_mag",2,30},{"1Rnd_HE_Grenade_shell",1,1}}},{"TCF_Reactive_Vest2",{{"Chemlight_green",2,1},{"OPTRE_M9_Frag",2,1},{"16Rnd_9x21_Mag",2,17},{"1Rnd_HE_Grenade_shell",2,1},{"30rnd_65x39_mag_msbs_JHP",7,30}}},{"B_FieldPack_blk",{{"ACE_splint",2},{"ACE_morphine",1},{"ACE_MapTools",1},{"ACE_CableTie",5},{"OPTRE_Biofoam",1},{"ACE_quikclot",3},{"ACE_packingBandage",3},{"ACE_elasticBandage",3},{"ACE_fieldDressing",3},{"ACE_adenosine",1},{"ACE_epinephrine",1},{"MEU_Medigel_Light",5},{"SmokeShellBlue",1,1},{"HandGrenade",2,1},{"1Rnd_HE_Grenade_shell",5,1},{"1Rnd_Smoke_Grenade_shell",4,1},{"1Rnd_SmokeRed_Grenade_shell",2,1},{"1Rnd_SmokeBlue_Grenade_shell",2,1}}},"LM_MEU_Frihelm_W","",{"Binocular","","","",{},{},""},{"ItemMap","","TFAR_fadak","ItemCompass","Itemwatch",""}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'OPTRE_Insignia_emblems_uprising'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_insignia = "OPTRE_Insignia_emblems_uprising";
+
+    };
+
+    class O_OFapovoArmy_Party_Machine_Gunner_01 : O_FapovoArmy_Autorifleman_01 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Party Machine Gunner";
+        side = 0;
+        faction = "o_fapovoarmy";
+
+        identityTypes[] = {"Head_NATO","LanguageENG_F","NoGlasses"};
+
+        uniformClass = "MEU_FRI_uni_Base_W";
+
+        linkedItems[] = {"TCF_Reactive_Vest2","LM_MEU_Frihelm_W","ItemMap","TFAR_fadak","ItemCompass","Itemwatch"};
+        respawnlinkedItems[] = {"TCF_Reactive_Vest2","LM_MEU_Frihelm_W","ItemMap","TFAR_fadak","ItemCompass","Itemwatch"};
+
+        weapons[] = {"TCF_CM_12_Insurgent","Binocular"};
+        respawnWeapons[] = {"TCF_CM_12_Insurgent","Binocular"};
+
+        magazines[] = {"TCF_150Rnd_30x06_Mag","TCF_150Rnd_30x06_Mag"};
+        respawnMagazines[] = {"TCF_150Rnd_30x06_Mag","TCF_150Rnd_30x06_Mag"};
+
+        backpack = "B_FieldPack_blk";
+
+        ALiVE_orbatCreator_loadout[] = {{"TCF_CM_12_Insurgent","","","",{"TCF_150Rnd_30x06_Mag",150},{},""},{},{},{"MEU_FRI_uni_Base_W",{{"OPTRE_Biofoam",3}}},{"TCF_Reactive_Vest2",{{"Chemlight_green",2,1},{"OPTRE_M9_Frag",2,1},{"TCF_150Rnd_30x06_Mag",2,150}}},{"B_FieldPack_blk",{{"ACE_splint",2},{"ACE_morphine",1},{"ACE_MapTools",1},{"ACE_CableTie",5},{"OPTRE_Biofoam",1},{"ACE_quikclot",3},{"ACE_packingBandage",3},{"ACE_elasticBandage",3},{"ACE_fieldDressing",3},{"ACE_adenosine",1},{"ACE_epinephrine",1},{"MEU_Medigel_Light",5},{"SmokeShellBlue",1,1},{"HandGrenade",2,1},{"TCF_150Rnd_30x06_Mag",3,150}}},"LM_MEU_Frihelm_W","41st_Shemagh_McValkyrie",{"Binocular","","","",{},{},""},{"ItemMap","","TFAR_fadak","ItemCompass","Itemwatch",""}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'OPTRE_Insignia_emblems_uprising'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_insignia = "OPTRE_Insignia_emblems_uprising";
+
+    };
+
+    class O_OFapovoArmy_Party_Anti_Tank_01 : O_FapovoArmy_Rifleman_AT_01 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Party Anti-Tank";
+        side = 0;
+        faction = "o_fapovoarmy";
+
+        identityTypes[] = {"Head_NATO","LanguageENG_F","NoGlasses"};
+
+        uniformClass = "MEU_FRI_uni_Base_W";
+
+        linkedItems[] = {"TCF_Reactive_Vest2","LM_MEU_Frihelm_W","ItemMap","TFAR_fadak","ItemCompass","Itemwatch"};
+        respawnlinkedItems[] = {"TCF_Reactive_Vest2","LM_MEU_Frihelm_W","ItemMap","TFAR_fadak","ItemCompass","Itemwatch"};
+
+        weapons[] = {"arifle_MSBS65_black_F","launch_MRAWS_sand_rail_F","hgun_Rook40_F","Binocular"};
+        respawnWeapons[] = {"arifle_MSBS65_black_F","launch_MRAWS_sand_rail_F","hgun_Rook40_F","Binocular"};
+
+        magazines[] = {"30Rnd_65x39_caseless_msbs_mag","MRAWS_HEAT_F","16Rnd_9x21_Mag","30Rnd_65x39_caseless_msbs_mag","16Rnd_9x21_Mag"};
+        respawnMagazines[] = {"30Rnd_65x39_caseless_msbs_mag","MRAWS_HEAT_F","16Rnd_9x21_Mag","30Rnd_65x39_caseless_msbs_mag","16Rnd_9x21_Mag"};
+
+        backpack = "B_FieldPack_blk";
+
+        ALiVE_orbatCreator_loadout[] = {{"arifle_MSBS65_black_F","ACE_muzzle_mzls_H","","PF_Holo_DMR",{"30Rnd_65x39_caseless_msbs_mag",30},{},""},{"launch_MRAWS_sand_rail_F","","","",{"MRAWS_HEAT_F",1},{},""},{"hgun_Rook40_F","","","",{"16Rnd_9x21_Mag",17},{},""},{"MEU_FRI_uni_Base_W",{{"OPTRE_Biofoam",3},{"30Rnd_65x39_caseless_msbs_mag",2,30}}},{"TCF_Reactive_Vest2",{{"Chemlight_green",2,1},{"OPTRE_M9_Frag",2,1},{"16Rnd_9x21_Mag",2,17},{"30Rnd_65x39_caseless_msbs_mag",1,30}}},{"B_FieldPack_blk",{{"ACE_splint",2},{"ACE_morphine",1},{"ACE_MapTools",1},{"ACE_CableTie",5},{"OPTRE_Biofoam",1},{"ACE_quikclot",3},{"ACE_packingBandage",3},{"ACE_elasticBandage",3},{"ACE_fieldDressing",3},{"ACE_adenosine",1},{"ACE_epinephrine",1},{"MEU_Medigel_Light",5},{"SmokeShellBlue",1,1},{"HandGrenade",2,1},{"MRAWS_HEAT_F",2,1},{"30rnd_65x39_mag_msbs_JHP",3,30}}},"LM_MEU_Frihelm_W","",{"Binocular","","","",{},{},""},{"ItemMap","","TFAR_fadak","ItemCompass","Itemwatch",""}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'OPTRE_Insignia_emblems_uprising'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_insignia = "OPTRE_Insignia_emblems_uprising";
+
+    };
+
+    class O_OFapovoArmy_Party_Anti_Air_01 : O_FapovoArmy_Rifleman_AA_01 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Party Anti-Air";
+        side = 0;
+        faction = "o_fapovoarmy";
+
+        identityTypes[] = {"Head_NATO","LanguageENG_F","NoGlasses"};
+
+        uniformClass = "MEU_FRI_uni_Base_W";
+
+        linkedItems[] = {"TCF_Reactive_Vest2","LM_MEU_Frihelm_W","ItemMap","TFAR_fadak","ItemCompass","Itemwatch"};
+        respawnlinkedItems[] = {"TCF_Reactive_Vest2","LM_MEU_Frihelm_W","ItemMap","TFAR_fadak","ItemCompass","Itemwatch"};
+
+        weapons[] = {"arifle_MSBS65_black_F","TCF_M57_Pilum_b","hgun_Rook40_F","Binocular"};
+        respawnWeapons[] = {"arifle_MSBS65_black_F","TCF_M57_Pilum_b","hgun_Rook40_F","Binocular"};
+
+        magazines[] = {"30Rnd_65x39_caseless_msbs_mag","TCF_2Rnd_50x137_HEAT","16Rnd_9x21_Mag","30Rnd_65x39_caseless_msbs_mag","16Rnd_9x21_Mag"};
+        respawnMagazines[] = {"30Rnd_65x39_caseless_msbs_mag","TCF_2Rnd_50x137_HEAT","16Rnd_9x21_Mag","30Rnd_65x39_caseless_msbs_mag","16Rnd_9x21_Mag"};
+
+        backpack = "B_FieldPack_blk";
+
+        ALiVE_orbatCreator_loadout[] = {{"arifle_MSBS65_black_F","ACE_muzzle_mzls_H","","PF_Holo_DMR",{"30Rnd_65x39_caseless_msbs_mag",30},{},""},{"TCF_M57_Pilum_b","","","",{"TCF_2Rnd_50x137_HEAT",2},{},""},{"hgun_Rook40_F","","","",{"16Rnd_9x21_Mag",17},{},""},{"MEU_FRI_uni_Base_W",{{"OPTRE_Biofoam",3},{"30Rnd_65x39_caseless_msbs_mag",2,30}}},{"TCF_Reactive_Vest2",{{"Chemlight_green",2,1},{"OPTRE_M9_Frag",2,1},{"16Rnd_9x21_Mag",2,17},{"30Rnd_65x39_caseless_msbs_mag",1,30},{"30rnd_65x39_mag_msbs_JHP",7,30}}},{"B_FieldPack_blk",{{"ACE_splint",2},{"ACE_morphine",1},{"ACE_MapTools",1},{"ACE_CableTie",5},{"OPTRE_Biofoam",1},{"ACE_quikclot",3},{"ACE_packingBandage",3},{"ACE_elasticBandage",3},{"ACE_fieldDressing",3},{"ACE_adenosine",1},{"ACE_epinephrine",1},{"MEU_Medigel_Light",5},{"SmokeShellBlue",1,1},{"HandGrenade",2,1},{"TCF_2Rnd_50x137_GUIDED",1,2}}},"LM_MEU_Frihelm_W","",{"Binocular","","","",{},{},""},{"ItemMap","","TFAR_fadak","ItemCompass","Itemwatch",""}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'OPTRE_Insignia_emblems_uprising'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_insignia = "OPTRE_Insignia_emblems_uprising";
+
+    };
+
+    class O_OFapovoArmy_Party_Sniper_01 : O_FapovoArmy_Marksman_01 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Party Sniper";
+        side = 0;
+        faction = "o_fapovoarmy";
+
+        identityTypes[] = {"Head_NATO","LanguageENG_F","NoGlasses"};
+
+        uniformClass = "MEU_FRI_uni_Base_W";
+
+        linkedItems[] = {"V_BandollierB_blk","LM_MEU_Frihelm_W","ItemMap","TFAR_fadak","ItemCompass","Itemwatch"};
+        respawnlinkedItems[] = {"V_BandollierB_blk","LM_MEU_Frihelm_W","ItemMap","TFAR_fadak","ItemCompass","Itemwatch"};
+
+        weapons[] = {"arifle_MSBS65_Mark_black_F","hgun_Rook40_F","Binocular"};
+        respawnWeapons[] = {"arifle_MSBS65_Mark_black_F","hgun_Rook40_F","Binocular"};
+
+        magazines[] = {"30Rnd_65x39_caseless_msbs_mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_msbs_mag","16Rnd_9x21_Mag"};
+        respawnMagazines[] = {"30Rnd_65x39_caseless_msbs_mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_msbs_mag","16Rnd_9x21_Mag"};
+
+        backpack = "B_LegStrapBag_black_F";
+
+        ALiVE_orbatCreator_loadout[] = {{"arifle_MSBS65_Mark_black_F","muzzle_snds_65_TI_blk_F","","OPTRE_SRM_Sight",{"30Rnd_65x39_caseless_msbs_mag",30},{},"bipod_02_F_blk"},{},{"hgun_Rook40_F","","","",{"16Rnd_9x21_Mag",17},{},""},{"MEU_FRI_uni_Base_W",{{"OPTRE_Biofoam",3},{"30Rnd_65x39_caseless_msbs_mag",2,30}}},{"V_BandollierB_blk",{{"Chemlight_green",2,1},{"OPTRE_M9_Frag",2,1},{"16Rnd_9x21_Mag",1,17},{"30rnd_65x39_mag_msbs_AP",2,30},{"30rnd_65x39_mag_msbs_JHP",3,30}}},{"B_LegStrapBag_black_F",{{"ACE_splint",2},{"ACE_morphine",1},{"ACE_MapTools",1},{"ACE_CableTie",5},{"OPTRE_Biofoam",1},{"ACE_quikclot",3},{"ACE_packingBandage",3},{"ACE_elasticBandage",3},{"ACE_fieldDressing",3},{"ACE_adenosine",1},{"ACE_epinephrine",1},{"MEU_Medigel_Light",5},{"SmokeShellBlue",1,1},{"HandGrenade",2,1},{"30rnd_65x39_mag_msbs_APT",1,30},{"30rnd_65x39_mag_msbs_JHP",2,30}}},"LM_MEU_Frihelm_W","",{"Binocular","","","",{},{},""},{"ItemMap","","TFAR_fadak","ItemCompass","Itemwatch",""}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'OPTRE_Insignia_emblems_uprising'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_insignia = "OPTRE_Insignia_emblems_uprising";
+
+    };
+
+    class O_OFapovoArmy_Party_Medic_01 : O_FapovoArmy_Medic_01 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Party Medic";
+        side = 0;
+        faction = "o_fapovoarmy";
+
+        identityTypes[] = {"Head_NATO","LanguageENG_F","NoGlasses"};
+
+        uniformClass = "MEU_FRI_uni_Base_W";
+
+        linkedItems[] = {"TCF_Reactive_Vest2","LM_MEU_Frihelm_W","ItemMap","TFAR_fadak","ItemCompass","Itemwatch"};
+        respawnlinkedItems[] = {"TCF_Reactive_Vest2","LM_MEU_Frihelm_W","ItemMap","TFAR_fadak","ItemCompass","Itemwatch"};
+
+        weapons[] = {"arifle_MSBS65_black_F","hgun_Rook40_F","Binocular"};
+        respawnWeapons[] = {"arifle_MSBS65_black_F","hgun_Rook40_F","Binocular"};
+
+        magazines[] = {"30Rnd_65x39_caseless_msbs_mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_msbs_mag","16Rnd_9x21_Mag"};
+        respawnMagazines[] = {"30Rnd_65x39_caseless_msbs_mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_msbs_mag","16Rnd_9x21_Mag"};
+
+        backpack = "TCF_wnato_kitbag";
+
+        ALiVE_orbatCreator_loadout[] = {{"arifle_MSBS65_black_F","ACE_muzzle_mzls_H","","PF_Holo_DMR",{"30Rnd_65x39_caseless_msbs_mag",30},{},""},{},{"hgun_Rook40_F","","","",{"16Rnd_9x21_Mag",17},{},""},{"MEU_FRI_uni_Base_W",{{"OPTRE_Biofoam",3},{"30Rnd_65x39_caseless_msbs_mag",2,30}}},{"TCF_Reactive_Vest2",{{"Chemlight_green",2,1},{"OPTRE_M9_Frag",2,1},{"16Rnd_9x21_Mag",2,17},{"30Rnd_65x39_caseless_msbs_mag",1,30}}},{"TCF_wnato_kitbag",{{"ACE_splint",5},{"ACE_morphine",4},{"OPTRE_Biofoam",5},{"ACE_elasticBandage",3},{"ACE_adenosine",4},{"ACE_epinephrine",4},{"MEU_Medigel_Light",20},{"ACE_bodyBag",2},{"adv_aceCPR_AED",1},{"ACE_salineIV",1},{"ACE_salineIV_250",2},{"ACE_salineIV_500",1},{"ACE_surgicalKit",1},{"SmokeShellBlue",1,1},{"HandGrenade",2,1}}},"LM_MEU_Frihelm_W","41st_Shemagh_McGungnir_UP",{"Binocular","","","",{},{},""},{"ItemMap","","TFAR_fadak","ItemCompass","Itemwatch",""}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'OPTRE_Insignia_medic'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_insignia = "OPTRE_Insignia_medic";
+
+    };
+
+    class O_OFapovoArmy_M1015_Mule_01 : OPTRE_m1015_mule_cover_ins_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
         displayName = "M1015 Mule";
         side = 0;
-        faction = "o_fapovoarmy";
-        crew = "O_FapovoArmy_Crewman_01";
+        faction = "O_FapovoArmy";
+        crew = "O_FapovoArmy_Rifleman_01";
 
         class Turrets : Turrets {
             class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
@@ -1080,33 +1991,91 @@ class CfgVehicles {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
             class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\A3\soft_f_beta\Truck_02\Data\Truck_02_kab_opfor_co.paa'];_unit setObjectTextureGlobal [1,'\A3\soft_f_beta\Truck_02\Data\Truck_02_kuz_OPFOR_co.paa'];_unit setObjectTextureGlobal [2,'\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\A3\soft_f_Enoch\Truck_02\Data\Truck_02_kab_EAF_co.paa'];_unit setObjectTextureGlobal [1,'\A3\soft_f_Enoch\Truck_02\Data\Truck_02_kuz_EAF_co.paa'];_unit setObjectTextureGlobal [2,'\A3\soft_f_Enoch\Truck_02\Data\Truck_02_int_EAF_co.paa'];_unit setObjectTextureGlobal [3,'\A3\soft_f_Enoch\Truck_02\Data\truck_02_chassis_EAF_CO.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
             };
 
         };
 
         // custom attributes (do not delete)
         ALiVE_orbatCreator_owned = 1;
-        ALiVE_orbatCreator_texture = "Opfor";
+        ALiVE_orbatCreator_texture = "EAF";
 
     };
 
-    class O_FapovoArmy_Rake_V5_01 : LM_OPCAN_Rake_FRI_U_OCimport_02 {
-        author = "wlan0";
+    class O_OFapovoArmy_Light_Utility_Vehicle_01 : DMNS_RVGR14_FAV_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
-        displayName = "Rake V-5";
+        displayName = "Light Utility Vehicle";
+        side = 0;
+        faction = "O_FapovoArmy";
+        crew = "O_FapovoArmy_Rifleman_01";
+
+        class Turrets : Turrets {
+            class CargoGunner_1 : CargoGunner_1 { gunnerType = ""; };
+            class CargoTurret_02 : CargoTurret_02 { gunnerType = ""; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'DMNS\DMNS_Soft\Ravager_Hog\Data\Body_Insurgent_DES_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "Innie_DES";
+
+    };
+
+    class O_OFapovoArmy_Light_Utility_Vehicle_MG_01 : DMNS_RVGR14_LRV_Armed_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Light Utility Vehicle (MG)";
+        side = 0;
+        faction = "O_FapovoArmy";
+        crew = "O_FapovoArmy_Rifleman_01";
+
+        class Turrets : Turrets {
+            class CargoGunner_1 : CargoGunner_1 { gunnerType = ""; };
+            class CargoTurret_02 : CargoTurret_02 { gunnerType = ""; };
+            class MainTurret : MainTurret { gunnerType = "O_FapovoArmy_Rifleman_01"; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'DMNS\DMNS_Soft\Ravager_Hog\Data\Body_Insurgent_DES_co.paa'];_unit setObjectTextureGlobal [1,'DMNS\DMNS_Soft\Ravager_Hog\Data\Gunner_Seat_Insurgent_DES_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "Innie_DES";
+
+    };
+
+    class O_OFapovoArmy_BM_2T_IFV_01 : O_OColURFOPTRE_BM_2T_Stalker_ALiVE_01_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "BM-2T IFV";
         side = 0;
         faction = "O_FapovoArmy";
         crew = "O_FapovoArmy_Crewman_01";
 
         class Turrets : Turrets {
-            class CargoTurret_02 : CargoTurret_02 { gunnerType = ""; };
-            class CargoTurret_03 : CargoTurret_03 { gunnerType = ""; };
-            class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
-            class CargoTurret_04 : CargoTurret_04 { gunnerType = ""; };
-            class CargoTurret_05 : CargoTurret_05 { gunnerType = ""; };
-            class CargoTurret_06 : CargoTurret_06 { gunnerType = "O_FapovoArmy_Crewman_01"; };
+            class MainTurret : MainTurret { gunnerType = "O_FapovoArmy_Crewman_01"; };
         };
 
 
@@ -1115,30 +2084,28 @@ class CfgVehicles {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
             class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'A3\Armor_F_Beta\APC_Tracked_02\Data\apc_tracked_02_ext_01_hexarid_co.paa'];_unit setObjectTextureGlobal [1,'A3\Armor_F_Beta\APC_Tracked_02\Data\apc_tracked_02_ext_02_hexarid_co.paa'];_unit setObjectTextureGlobal [2,'A3\Armor_F_Beta\APC_Tracked_02\Data\rcws30_opfor_co.paa'];_unit setObjectTextureGlobal [3,'A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa'];_unit setObjectTextureGlobal [4,'A3\armor_f\data\cage_csat_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
             };
 
         };
 
         // custom attributes (do not delete)
         ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "Hex";
 
     };
 
-    class O_FapovoArmy_Rake_V5_HMG_01 : LM_OPCAN_Rake_FRI_HMG_OCimport_02 {
-        author = "wlan0";
+    class O_OFapovoArmy_SCT3_Armata_MBT_01 : TCF_Armata_Koslovic_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
-        displayName = "Rake V-5 (HMG)";
+        displayName = "SCT3 Armata MBT";
         side = 0;
-        faction = "o_fapovoarmy";
+        faction = "O_FapovoArmy";
         crew = "O_FapovoArmy_Crewman_01";
 
         class Turrets : Turrets {
-            class TopTurret : TopTurret { gunnerType = "O_FapovoArmy_Rifleman_01"; };
-            class CodRiverTurret : CodRiverTurret { gunnerType = "O_FapovoArmy_Team_Leader_01"; };
-            class CargoTurret_02 : CargoTurret_02 { gunnerType = ""; };
-            class CargoTurret_03 : CargoTurret_03 { gunnerType = ""; };
+            class MainTurret : MainTurret { gunnerType = "O_FapovoArmy_Crewman_01"; };
         };
 
 
@@ -1147,58 +2114,58 @@ class CfgVehicles {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
             class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'TCF_OPFOR\Koslovic\Vehicles\data\MBT_04_exterior_Koslovic_1_CO.paa'];_unit setObjectTextureGlobal [1,'TCF_OPFOR\Koslovic\Vehicles\data\MBT_04_exterior_Koslovic_2_CO.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
             };
 
         };
 
         // custom attributes (do not delete)
         ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "KOS_Regular";
 
     };
 
-    class O_FapovoArmy_UH_101_Eagle_01 : LM_OPCAN_UH101_FRI_OCimport_02 {
-        author = "wlan0";
+    class O_OFapovoArmy_MW159_Wildcat_01 : I_IColMAOPTRE_AW159_Wildcat_Unarmed_ALiVE_01_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
-        displayName = "UH-101 Eagle";
-        side = 0;
-        faction = "o_fapovoarmy";
-        crew = "O_FapovoArmy_Pilot_01";
-
-        class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = "O_FapovoArmy_Officer_01"; };
-        };
-
-
-
-        class EventHandlers : EventHandlers {
-            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
-
-            class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
-            };
-
-        };
-
-        // custom attributes (do not delete)
-        ALiVE_orbatCreator_owned = 1;
-
-    };
-
-    class O_FapovoArmy_UH_95_Felix_01 : TCF_Felix_Rotary_Frieden_OCimport_02 {
-        author = "wlan0";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "UH-95 Felix";
+        displayName = "MW159 Wildcat";
         side = 0;
         faction = "O_FapovoArmy";
         crew = "O_FapovoArmy_Pilot_01";
 
         class Turrets : Turrets {
             class MainTurret : MainTurret { gunnerType = "O_FapovoArmy_Pilot_01"; };
-            class CargoTurret_01 : CargoTurret_01 { gunnerType = "O_FapovoArmy_Crewman_01"; };
-            class CargoTurret_02 : CargoTurret_02 { gunnerType = "O_FapovoArmy_Crewman_01"; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\A3\Air_F_EPB\Heli_Light_03\data\Heli_Light_03_base_CO.paa'];_unit setObjectTextureGlobal [1,'a3\weapons_f\ammoboxes\data\ammobox_co.paa'];_unit setObjectTextureGlobal [2,'a3\weapons_f\ammoboxes\data\ammobox_signs_ca.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "Green";
+
+    };
+
+    class O_OFapovoArmy_UH_101_Eagle_01 : LM_OPCAN_UH101_FRI_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "UH-101 Eagle";
+        side = 0;
+        faction = "O_FapovoArmy";
+        crew = "O_FapovoArmy_Pilot_01";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "O_FapovoArmy_Pilot_01"; };
         };
 
 
@@ -1216,4 +2183,118 @@ class CfgVehicles {
         ALiVE_orbatCreator_owned = 1;
 
     };
+
+    class O_OFapovoArmy_D81_LRTI_Harpy_01 : TCF_D81LRTI_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "D81-LRTI Harpy";
+        side = 0;
+        faction = "O_FapovoArmy";
+        crew = "O_FapovoArmy_Pilot_01";
+
+        class Turrets : Turrets {
+            class CopilotTurret : CopilotTurret { gunnerType = "O_FapovoArmy_Pilot_01"; };
+            class PassengerTurret_01 : PassengerTurret_01 { gunnerType = ""; };
+            class PassengerTurret_02 : PassengerTurret_02 { gunnerType = ""; };
+            class CargoTurret_03 : CargoTurret_03 { gunnerType = ""; };
+            class CargoTurret_04 : CargoTurret_04 { gunnerType = ""; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class O_OFapovoArmy_D81_LRTA_Razor_Harpy_01 : TCF_D81LRTA_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "D81-LRTA Razor Harpy";
+        side = 0;
+        faction = "O_FapovoArmy";
+        crew = "O_FapovoArmy_Pilot_01";
+
+        class Turrets : Turrets {
+            class CopilotTurret : CopilotTurret { gunnerType = "O_FapovoArmy_Pilot_01"; };
+            class GunnerTurret_01 : GunnerTurret_01 { gunnerType = "O_FapovoArmy_Crewman_01"; };
+            class GunnerTurret_02 : GunnerTurret_02 { gunnerType = "O_FapovoArmy_Crewman_01"; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class O_OFapovoArmy_L159_ALCA_01 : I_IColMAOPTRE_L159_ALCA_ALiVE_01_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "L-159 ALCA";
+        side = 0;
+        faction = "O_FapovoArmy";
+        crew = "O_FapovoArmy_Pilot_01";
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\a3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_body_1_brownhex_CO.paa'];_unit setObjectTextureGlobal [1,'\a3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_body_2_brownhex_CO.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "Hex";
+
+    };
+
+    class O_OFapovoArmy_A84_Gladius_01 : OPTRE_gladius_02_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "A-84 Gladius";
+        side = 0;
+        faction = "O_FapovoArmy";
+        crew = "O_FapovoArmy_Pilot_01";
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
 };
