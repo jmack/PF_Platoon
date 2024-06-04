@@ -5,12 +5,157 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 class CfgPatches {
-  class O_FapovoArmy {
-    author = "wlan0";
-    addonRootClass = "PF_Factions";
-    requiredVersion = 1.62;
-  };
+    class O_FapovoArmy {
+        units[] = {
+            "O_FapovoArmy_Officer_01",
+            "O_FapovoArmy_Squad_Leader_01",
+            "O_FapovoArmy_Team_Leader_01",
+            "O_FapovoArmy_Rifleman_01",
+            "O_FapovoArmy_Grenadier_01",
+            "O_FapovoArmy_Autorifleman_01",
+            "O_FapovoArmy_Marksman_01",
+            "O_OFapovoArmy_Party_Team_Leader_01",
+            "O_FapovoArmy_Medic_01",
+            "O_FapovoArmy_Rifleman_AT_01",
+            "O_FapovoArmy_Rifleman_AA_01",
+            "O_OFapovoArmy_Party_Officer_01",
+            "O_OFapovoArmy_Party_Squad_Leader_01",
+            "O_FapovoArmy_Pilot_01",
+            "O_FapovoArmy_Crewman_01",
+            "O_OFapovoArmy_Conscript_Rifleman_01",
+            "O_OFapovoArmy_Party_Rifleman_01",
+            "O_OFapovoArmy_Party_Grenadier_01",
+            "O_OFapovoArmy_Party_Machine_Gunner_01",
+            "O_OFapovoArmy_Party_Anti_Tank_01",
+            "O_OFapovoArmy_Party_Anti_Air_01",
+            "O_OFapovoArmy_Party_Sniper_01",
+            "O_OFapovoArmy_Party_Medic_01",
+            "O_OFapovoArmy_M1015_Mule_01",
+            "O_OFapovoArmy_Light_Utility_Vehicle_01",
+            "O_OFapovoArmy_Light_Utility_Vehicle_MG_01",
+            "O_OFapovoArmy_BM_2T_IFV_01",
+            "O_OFapovoArmy_SCT3_Armata_MBT_01",
+            "O_OFapovoArmy_MW159_Wildcat_01",
+            "O_OFapovoArmy_UH_101_Eagle_01",
+            "O_OFapovoArmy_D81_LRTI_Harpy_01",
+            "O_OFapovoArmy_D81_LRTA_Razor_Harpy_01",
+            "O_OFapovoArmy_L159_ALCA_01",
+            "O_OFapovoArmy_A84_Gladius_01"
+        };
+        weapons[] = {};
+        requiredVersion = 1.62;
+        requiredAddons[] = {
+            "A3_Characters_F",
+            "NDT_HideVanillaFactions",
+            "lambs_danger",
+            "kka3_gestures_ace",
+            "A3_Sounds_F",
+            "A3_Sounds_F_Exp",
+            "Webs_Footsteps",
+            "tfar_core",
+            "ace_gforces",
+            "ace_movement",
+            "ace_medical_feedback",
+            "A3_Data_F",
+            "A3_Data_F_Curator",
+            "A3_Air_F_Heli",
+            "A3_Map_Abramia",
+            "A3_Map_IslaDuala3",
+            "A3_Map_lingor3",
+            "pja310",
+            "ibr_panthera_c",
+            "tem_ihantalaw",
+            "lambs_range",
+            "ace_thermals",
+            "lambs_formations",
+            "zen_attributes",
+            "ace_refuel",
+            "AlkFrameWork_Default_UI",
+            "CUP_Core",
+            "cba_xeh",
+            "OPTRE_Vehicles_Misc",
+            "TCF_OPFOR_URF_Vehicles",
+            "A3_Soft_F_Beta_Truck_02",
+            "ace_realisticnames",
+            "A3_Soft_F_Gamma_Truck_02",
+            "A3_Soft_F_Enoch_Truck_02",
+            "ace_cookoff",
+            "ace_vehicles",
+            "ace_cargo",
+            "A3_Soft_F",
+            "A3_Soft_F_Beta_Truck_01",
+            "A3_Soft_F_Gamma_Truck_01",
+            "A3_Soft_F_Gamma_Van_01",
+            "A3_Soft_F_EPC_Truck_03",
+            "A3_Soft_F_Orange_Van_02",
+            "ace_repair",
+            "A3_Soft_F_Gamma_Hatchback_01",
+            "A3_Soft_F_Exp_Offroad_02",
+            "mrb_a3_vehiclevisibility",
+            "MA_HUD",
+            "A3_Data_F_ParticleEffects",
+            "Napf",
+            "A3_Map_Winthera3",
+            "ace_interaction",
+            "ace_tagging",
+            "A3_Armor_F_Beta",
+            "DMNS_Vehicles_Ravager",
+            "DMNS_ACE_Compat",
+            "O_ColURF_OPTRE",
+            "A3_Armor_F_Exp_APC_Tracked_02",
+            "A3_Armor_F_Beta_APC_Tracked_02",
+            "tfar_external_intercom",
+            "ace_vehicle_damage",
+            "A3_Armor_F_Beta_APC_Tracked_01",
+            "A3_Armor_F_Gamma_MBT_01",
+            "A3_Armor_F_Gamma_MBT_02",
+            "A3_Armor_F_EPB_APC_Tracked_03",
+            "A3_Armor_F_EPB_MBT_03",
+            "A3_Armor_F_Tank_LT_01",
+            "A3_Armor_F_Tank_MBT_04",
+            "A3_Soft_F_Enoch_UGV_02",
+            "ace_logistics_uavbattery",
+            "OPTRE_Vehicles_Elephant",
+            "OPTRE_Vehicles_M808B2",
+            "OPTRE_Vehicles_M494",
+            "1st_MEU_patch_vehicles_land_vimv",
+            "TCF_OPFOR_Koslovic_Vehicles",
+            "A3_Sounds_F_Tank",
+            "ace_hunterkiller",
+            "I_ColMA_OPTRE",
+            "A3_Air_F_EPB_Heli_Light_03",
+            "ace_fastroping",
+            "ace_aircraft",
+            "A3_Air_F",
+            "mrb_a3_airvisibility",
+            "TFAR_IntercomDummy",
+            "LM_OPCAN_FRI_VEH",
+            "A3_Air_F_Beta_Heli_Attack_01",
+            "TCF_OPFOR_Frieden_Vehicles",
+            "A3_Air_F_Exp_VTOL_01",
+            "A3_Air_F_Exp",
+            "A3_Air_F_Beta",
+            "A3_Air_F_Gamma_Plane_Fighter_03",
+            "A3_Air_F_EPC_Plane_CAS_01",
+            "A3_Air_F_EPC_Plane_CAS_02",
+            "A3_Air_F_Exp_Plane_Civil_01",
+            "A3_Air_F_Jets_Plane_Fighter_01",
+            "A3_Air_F_Jets_Plane_Fighter_02",
+            "A3_Air_F_Jets_Plane_Fighter_04",
+            "A3_Air_F_Jets_UAV_05",
+            "OPTRE_Plus_Longsword",
+            "DMNS_Shortsword_F",
+            "OPTRE_Vehicles_Pod",
+            "OPTRE_Vehicles_Sabre",
+            "OPTRE_FC_Vehicles_Banshee",
+            "OPTRE_Plus"
+        };
+        author = "[2LT] O'Neill (He/Him)";
+        authors[] = {"[2LT] O'Neill (He/Him)"};
+        addonRootClass = "PF_Factions";
+    };
 };
+
 
 class CfgFactionClasses {
     class O_FapovoArmy {
@@ -926,6 +1071,8 @@ class CBA_Extended_EventHandlers_base;
 
 class CfgVehicles {
 
+    class Turrets;
+
     class O_Soldier_F;
     class O_Soldier_F_OCimport_01 : O_Soldier_F { scope = 0; class EventHandlers; };
     class O_Soldier_F_OCimport_02 : O_Soldier_F_OCimport_01 { class EventHandlers; };
@@ -950,9 +1097,17 @@ class CfgVehicles {
         };
     };
 
-    class DMNS_RVGR14_LRV_Armed;
-    class DMNS_RVGR14_LRV_Armed_OCimport_01 : DMNS_RVGR14_LRV_Armed { scope = 0; class EventHandlers; class Turrets; };
-    class DMNS_RVGR14_LRV_Armed_OCimport_02 : DMNS_RVGR14_LRV_Armed_OCimport_01 { 
+    class DMNS_RVGR14_LRV_Armed_INS_DES;
+    class DMNS_RVGR14_LRV_Armed_INS_DES_OCimport_01 : DMNS_RVGR14_LRV_Armed_INS_DES {
+        scope = 0;
+        class EventHandlers;
+        class Turrets : Turrets {
+            class CargoGunner_1;
+            class CargoTurret_02;
+            class MainTurret;
+        };
+    };
+    class DMNS_RVGR14_LRV_Armed_INS_DES_OCimport_02 : DMNS_RVGR14_LRV_Armed_INS_DES_OCimport_01 { 
         class EventHandlers; 
         class Turrets : Turrets {
             class CargoGunner_1;
@@ -2033,7 +2188,7 @@ class CfgVehicles {
 
     };
 
-    class O_OFapovoArmy_Light_Utility_Vehicle_MG_01 : DMNS_RVGR14_LRV_Armed_OCimport_02 {
+    class O_OFapovoArmy_Light_Utility_Vehicle_MG_01 : DMNS_RVGR14_LRV_Armed_INS_DES_OCimport_02 {
         author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
@@ -2043,8 +2198,8 @@ class CfgVehicles {
         crew = "O_FapovoArmy_Rifleman_01";
 
         class Turrets : Turrets {
-            class CargoGunner_1 : CargoGunner_1 { gunnerType = ""; };
-            class CargoTurret_02 : CargoTurret_02 { gunnerType = ""; };
+            class CargoGunner_1;
+            class CargoTurret_02;
             class MainTurret : MainTurret { gunnerType = "O_FapovoArmy_Rifleman_01"; };
         };
 
