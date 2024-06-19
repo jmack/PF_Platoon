@@ -46,7 +46,6 @@ class CfgPatches {
         requiredVersion = 1.62;
         requiredAddons[] = {
             "A3_Characters_F",
-            "NDT_HideVanillaFactions",
             "lambs_danger",
             "kka3_gestures_ace",
             "A3_Sounds_F",
