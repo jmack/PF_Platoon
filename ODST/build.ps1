@@ -4,7 +4,7 @@ if (!(Test-Path -PathType container $addonsDirPath)) {
 	New-Item -ItemType Directory -Path $addonsDirPath
 }
 
-. ../vars.ps1F
+. ../vars.ps1
 
 # Preprocessor
 # Node.js check (for tic-tac generation)
