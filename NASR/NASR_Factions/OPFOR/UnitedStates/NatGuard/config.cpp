@@ -6,7 +6,13 @@ class CfgPatches {
             "O_USGuard_Machine_Gunner_OD_01",
             "O_USGuard_Shotgun_OD_01",
             "O_USGuard_Team_Leader_OD_01",
-            "O_USGuard_Officer_OD_01"
+            "O_USGuard_Officer_OD_01",
+            "O_OUSGuardOD_M38A2_Covered_01",
+            "O_OUSGuardOD_M38A2_Ammo_01",
+            "O_OUSGuardOD_M38A2_Fuel_01",
+            "O_OUSGuardOD_M38A2_Open_01",
+            "O_OUSGuardOD_M223_Unarmed_01",
+            "O_OUSGuardOD_M223_Armed_01"
         };
         weapons[] = {};
         requiredVersion = 1.62;
@@ -55,7 +61,44 @@ class CfgPatches {
             "ace_refuel",
             "AlkFrameWork_Default_UI",
             "CUP_Core",
-            "cba_xeh"
+            "cba_xeh",
+            "CUP_WheeledVehicles_Ural",
+            "A3_Soft_F",
+            "A3_Soft_F_Beta_Truck_01",
+            "A3_Soft_F_Beta_Truck_02",
+            "A3_Soft_F_Gamma_Truck_01",
+            "A3_Soft_F_Gamma_Van_01",
+            "A3_Soft_F_EPC_Truck_03",
+            "A3_Soft_F_Orange_Van_02",
+            "rhs_c_zil131",
+            "rhs_c_a2port_car",
+            "rhs_c_kamaz",
+            "rhs_c_kraz255",
+            "rhs_c_rva",
+            "rhsusf_c_Caiman",
+            "rhsusf_c_fmtv",
+            "rhsusf_c_HEMTT_A4",
+            "rhsusf_c_himars",
+            "rhsusf_c_mtvr",
+            "cwr3_vehicle_bus",
+            "ace_repair",
+            "rhssaf_c_vehicles",
+            "ace_cargo",
+            "rhsgref_c_vehicles_ret",
+            "cwr3_vehicle_m939",
+            "CUP_WheeledVehicles_RM70",
+            "A3_Soft_F_Gamma_Hatchback_01",
+            "A3_Soft_F_Exp_Offroad_02",
+            "mrb_a3_vehiclevisibility",
+            "cwr3_vehicle_scud",
+            "A3_Data_F_ParticleEffects",
+            "ace_compat_rhs_afrf3",
+            "ace_interaction",
+            "ace_tagging",
+            "ace_vehicles",
+            "A3_Armor_F_Beta",
+            "ace_compat_cup_vehicles_refuel",
+            "CUP_WheeledVehicles_GAZTigr"
         };
         author = "[2LT] O'Neill (He/Him)";
         authors[] = {"[2LT] O'Neill (He/Him)"};
@@ -91,7 +134,7 @@ class CfgGroups {
                 class o_ousguardod_infantry_patrol {
                     name = "Patrol";
                     side = 0;
-                    faction = "O_USGuard_OD";
+                    faction = "o_usguard_od";
                     icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
                     rarityGroup = 0.5;
 
@@ -112,7 +155,7 @@ class CfgGroups {
                 class o_ousguardod_infantry_fireteam {
                     name = "Fireteam";
                     side = 0;
-                    faction = "O_USGuard_OD";
+                    faction = "o_usguard_od";
                     icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
                     rarityGroup = 0.5;
 
@@ -145,7 +188,7 @@ class CfgGroups {
                 class o_ousguardod_infantry_heavy_fireteam {
                     name = "Heavy Fireteam";
                     side = 0;
-                    faction = "O_USGuard_OD";
+                    faction = "o_usguard_od";
                     icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
                     rarityGroup = 0.5;
 
@@ -178,7 +221,7 @@ class CfgGroups {
                 class o_ousguardod_infantry_squad {
                     name = "Squad";
                     side = 0;
-                    faction = "O_USGuard_OD";
+                    faction = "o_usguard_od";
                     icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
                     rarityGroup = 0.5;
 
@@ -248,6 +291,159 @@ class CfgGroups {
             class Motorized {
                 name = "Motorized";
 
+                class o_ousguardod_motorized_rifle_squad {
+                    name = "Rifle Squad";
+                    side = 0;
+                    faction = "O_USGuard_OD";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_motor_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "O_USGuard_Officer_OD_01";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "O_USGuard_Team_Leader_OD_01";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "O_USGuard_Team_Leader_OD_01";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_USNG_Rifleman_01";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_USNG_Rifleman_01";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_USNG_Rifleman_01";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_USGuard_Shotgun_OD_01";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_USGuard_Shotgun_OD_01";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OUSGuardOD_M38A2_Covered_01";
+                    };
+                };
+
+                class o_ousguardod_motorized_rifle_squad_with_escort {
+                    name = "Rifle Squad with Escort";
+                    side = 0;
+                    faction = "O_USGuard_OD";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_motor_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "O_USGuard_Officer_OD_01";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "O_USGuard_Team_Leader_OD_01";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "O_USGuard_Team_Leader_OD_01";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_USNG_Rifleman_01";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_USNG_Rifleman_01";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_USNG_Rifleman_01";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_USGuard_Shotgun_OD_01";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_USGuard_Shotgun_OD_01";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OUSGuardOD_M38A2_Covered_01";
+                    };
+                    class Unit9 {
+                        position[] = {25,-29,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OUSGuardOD_M223_Armed_01";
+                    };
+                };
+
+                class o_ousguardod_motorized_m223_patrol {
+                    name = "M223 Patrol";
+                    side = 0;
+                    faction = "O_USGuard_OD";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_motor_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "O_OUSGuardOD_M223_Armed_01";
+                    };
+                    class Unit1 {
+                        position[] = {5,-9,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OUSGuardOD_M223_Armed_01";
+                    };
+                };
+
             };
 
             class Motorized_MTP {
@@ -303,6 +499,56 @@ class CfgVehicles {
     class O_OUSArmyDES_Rifleman_01;
     class O_OUSArmyDES_Rifleman_01_OCimport_01 : O_OUSArmyDES_Rifleman_01 { scope = 0; class EventHandlers; };
     class O_OUSArmyDES_Rifleman_01_OCimport_02 : O_OUSArmyDES_Rifleman_01_OCimport_01 { class EventHandlers; };
+
+    class CUP_B_Ural_AFU;
+    class CUP_B_Ural_AFU_OCimport_01 : CUP_B_Ural_AFU { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_B_Ural_AFU_OCimport_02 : CUP_B_Ural_AFU_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class CargoTurret_01;
+            class CargoTurret_02;
+        };
+    };
+
+    class CUP_B_Ural_Reammo_AFU;
+    class CUP_B_Ural_Reammo_AFU_OCimport_01 : CUP_B_Ural_Reammo_AFU { scope = 0; class EventHandlers; };
+    class CUP_B_Ural_Reammo_AFU_OCimport_02 : CUP_B_Ural_Reammo_AFU_OCimport_01 { scope = 0; class EventHandlers; };
+
+    class CUP_B_Ural_Refuel_AFU;
+    class CUP_B_Ural_Refuel_AFU_OCimport_01 : CUP_B_Ural_Refuel_AFU { scope = 0; class EventHandlers; };
+    class CUP_B_Ural_Refuel_AFU_OCimport_02 : CUP_B_Ural_Refuel_AFU_OCimport_01 { scope = 0; class EventHandlers; };
+
+    class CUP_B_Ural_Open_AFU;
+    class CUP_B_Ural_Open_AFU_OCimport_01 : CUP_B_Ural_Open_AFU { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_B_Ural_Open_AFU_OCimport_02 : CUP_B_Ural_Open_AFU_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class CargoTurret_01;
+            class CargoTurret_02;
+        };
+    };
+
+    class CUP_B_Tigr_233011_GREEN_AFU;
+    class CUP_B_Tigr_233011_GREEN_AFU_OCimport_01 : CUP_B_Tigr_233011_GREEN_AFU { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_B_Tigr_233011_GREEN_AFU_OCimport_02 : CUP_B_Tigr_233011_GREEN_AFU_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurretTurnIn;
+            class MainTurretFFV;
+            class SecTurretTurnIn;
+            class SecTurretFFV;
+        };
+    };
+
+    class CUP_B_Tigr_233014_PK_GREEN_AFU;
+    class CUP_B_Tigr_233014_PK_GREEN_AFU_OCimport_01 : CUP_B_Tigr_233014_PK_GREEN_AFU { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_B_Tigr_233014_PK_GREEN_AFU_OCimport_02 : CUP_B_Tigr_233014_PK_GREEN_AFU_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+            class MainTurretTurnIn;
+        };
+    };
 
 
     class O_USNG_Crewman_01 : O_OUSArmyDES_Crewman_01_OCimport_02 {
@@ -534,6 +780,182 @@ class CfgVehicles {
 
         // custom attributes (do not delete)
         ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class O_OUSGuardOD_M38A2_Covered_01 : CUP_B_Ural_AFU_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M38A2 (Covered)";
+        side = 0;
+        faction = "O_USGuard_OD";
+        crew = "O_USNG_Rifleman_01";
+
+        class Turrets : Turrets {
+            class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
+            class CargoTurret_02 : CargoTurret_02 { gunnerType = ""; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'CUP\WheeledVehicles\CUP_WheeledVehicles_Ural\data\ural_kabina_sla_co.paa'];_unit setObjectTextureGlobal [1,'CUP\WheeledVehicles\CUP_WheeledVehicles_Ural\data\ural_plachta_sla_co.paa'];_unit setObjectTextureGlobal [2,'CUP\WheeledVehicles\CUP_WheeledVehicles_Ural\data\WHL_TyreSize3.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "SLA";
+
+    };
+
+    class O_OUSGuardOD_M38A2_Ammo_01 : CUP_B_Ural_Reammo_AFU_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M38A2 (Ammo)";
+        side = 0;
+        faction = "O_USGuard_OD";
+        crew = "O_USNG_Rifleman_01";
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'CUP\WheeledVehicles\CUP_WheeledVehicles_Ural\data\ural_kabina_sla_co.paa'];_unit setObjectTextureGlobal [1,'CUP\WheeledVehicles\CUP_WheeledVehicles_Ural\data\ural_plachta_sla_co.paa'];_unit setObjectTextureGlobal [2,'CUP\WheeledVehicles\CUP_WheeledVehicles_Ural\data\WHL_TyreSize3.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "SLA";
+
+    };
+
+    class O_OUSGuardOD_M38A2_Fuel_01 : CUP_B_Ural_Refuel_AFU_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M38A2 (Fuel)";
+        side = 0;
+        faction = "O_USGuard_OD";
+        crew = "O_USNG_Rifleman_01";
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'CUP\WheeledVehicles\CUP_WheeledVehicles_Ural\data\ural_kabina_sla_co.paa'];_unit setObjectTextureGlobal [1,'CUP\WheeledVehicles\CUP_WheeledVehicles_Ural\data\ural_open_sla_co.paa'];_unit setObjectTextureGlobal [2,'CUP\WheeledVehicles\CUP_WheeledVehicles_Ural\data\ural_fuel_chdkz_co.paa'];_unit setObjectTextureGlobal [3,'CUP\WheeledVehicles\CUP_WheeledVehicles_Ural\data\WHL_TyreSize3.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "SLA";
+
+    };
+
+    class O_OUSGuardOD_M38A2_Open_01 : CUP_B_Ural_Open_AFU_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M38A2 (Open)";
+        side = 0;
+        faction = "O_USGuard_OD";
+        crew = "O_USNG_Rifleman_01";
+
+        class Turrets : Turrets {
+            class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
+            class CargoTurret_02 : CargoTurret_02 { gunnerType = ""; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'CUP\WheeledVehicles\CUP_WheeledVehicles_Ural\data\ural_kabina_sla_co.paa'];_unit setObjectTextureGlobal [1,'CUP\WheeledVehicles\CUP_WheeledVehicles_Ural\data\ural_open_sla_co.paa'];_unit setObjectTextureGlobal [2,'CUP\WheeledVehicles\CUP_WheeledVehicles_Ural\data\WHL_TyreSize3.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "SLA";
+
+    };
+
+    class O_OUSGuardOD_M223_Unarmed_01 : CUP_B_Tigr_233011_GREEN_AFU_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M223 (Unarmed)";
+        side = 0;
+        faction = "O_USGuard_OD";
+        crew = "O_USNG_Rifleman_01";
+
+        class Turrets : Turrets {
+            class MainTurretTurnIn : MainTurretTurnIn { gunnerType = ""; };
+            class MainTurretFFV : MainTurretFFV { gunnerType = ""; };
+            class SecTurretTurnIn : SecTurretTurnIn { gunnerType = ""; };
+            class SecTurretFFV : SecTurretFFV { gunnerType = ""; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'CUP\WheeledVehicles\CUP_WheeledVehicles_Tigr\data\camo\Civil_02\CarBody_co.paa'];_unit setObjectTextureGlobal [1,'CUP\WheeledVehicles\CUP_WheeledVehicles_Tigr\data\camo\Civil_02\HoodOld_co.paa'];_unit setObjectTextureGlobal [2,'CUP\WheeledVehicles\CUP_WheeledVehicles_Tigr\data\camo\Civil_02\grille_co.paa'];_unit setObjectTextureGlobal [3,'CUP\WheeledVehicles\CUP_WheeledVehicles_Tigr\data\camo\Civil_02\ExtraParts_co.paa'];_unit setObjectTextureGlobal [4,'CUP\WheeledVehicles\CUP_WheeledVehicles_Tigr\data\camo\Civil_02\RoofOld_co.paa'];_unit setObjectTextureGlobal [5,'#(argb,1,1,1)color(0,0,0,0)'];_unit setObjectTextureGlobal [6,'#(argb,1,1,1)color(0,0,0,0)'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "Generic_Civil_02";
+
+    };
+
+    class O_OUSGuardOD_M223_Armed_01 : CUP_B_Tigr_233014_PK_GREEN_AFU_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M223 (Armed)";
+        side = 0;
+        faction = "O_USGuard_OD";
+        crew = "O_USNG_Rifleman_01";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "O_USNG_Rifleman_01"; };
+            class MainTurretTurnIn : MainTurretTurnIn { gunnerType = ""; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'CUP\WheeledVehicles\CUP_WheeledVehicles_Tigr\data\camo\Civil_02\CarBody_co.paa'];_unit setObjectTextureGlobal [1,'CUP\WheeledVehicles\CUP_WheeledVehicles_Tigr\data\camo\Civil_02\HoodOld_co.paa'];_unit setObjectTextureGlobal [2,'CUP\WheeledVehicles\CUP_WheeledVehicles_Tigr\data\camo\Civil_02\grille_co.paa'];_unit setObjectTextureGlobal [3,'CUP\WheeledVehicles\CUP_WheeledVehicles_Tigr\data\camo\Civil_02\ExtraParts_co.paa'];_unit setObjectTextureGlobal [4,'CUP\WheeledVehicles\CUP_WheeledVehicles_Tigr\data\camo\Civil_02\RoofNew_co.paa'];_unit setObjectTextureGlobal [5,'#(argb,1,1,1)color(0,0,0,0)'];_unit setObjectTextureGlobal [6,'#(argb,1,1,1)color(0,0,0,0)'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "Generic_Civil_02";
 
     };
 
