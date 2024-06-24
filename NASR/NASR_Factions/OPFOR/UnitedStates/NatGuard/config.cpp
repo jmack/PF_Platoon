@@ -17,7 +17,6 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = 1.62;
         requiredAddons[] = {
-            "O_USArmy_DES",
             "A3_Characters_F",
             "CUP_Creatures_Military_RussiaModern_Uniforms",
             "lambs_danger",
