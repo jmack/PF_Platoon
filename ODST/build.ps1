@@ -1,4 +1,10 @@
-. ./vars.ps1
+# Create addons folder if it doesn't exist
+$addonsDirPath = "" + $( Get-Location ) + "\dist\addons";
+if (!(Test-Path -PathType container $addonsDirPath)) {
+	New-Item -ItemType Directory -Path $addonsDirPath
+}
+
+. ../vars.ps1
 
 # Preprocessor
 # Node.js check (for tic-tac generation)
@@ -18,7 +24,7 @@ if ($args.count -gt 0) {
 Get-ChildItem . -Directory $dirs | Foreach-Object {
 	$fn = $_.FullName;
 	$signArg = "-sign=" + $privKey;
-	$whitelistArg = "-include=" + $( Get-Location ) + "\addonBuilderWhitelist.txt";
+	$whitelistArg = "-include=" + $( Get-Location ) + "\..\addonBuilderWhitelist.txt";
 	
 	& $addonBuilder $fn $destination $signArg $whitelistArg -binarizeFullLogs -binarizeAllTextures -clear;
 }
