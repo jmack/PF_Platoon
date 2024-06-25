@@ -18,7 +18,20 @@ class CfgPatches {
             "B_NASRArmy_Pilot_Helicopter_WDL_01",
             "B_NASRArmy_Officer_WDL_01",
             "B_NASRArmy_Sniper_WDL_01",
-            "B_NASRArmy_Spotter_WDL_01"
+            "B_NASRArmy_Spotter_WDL_01",
+            "B_BNASRArmyWDL_M1151_HMMWV_Unarmed_01",
+            "B_BNASRArmyWDL_M1151_HMMWV_M2_01",
+            "B_BNASRArmyWDL_M1151_HMMWV_Mk19_01",
+            "B_BNASRArmyWDL_M1151_HMMWV_TOW_01",
+            "B_BNASRArmyWDL_M1151_HMMWV_MedEvac_01",
+            "B_BNASRArmyWDL_M1151_HMMWV_Transport_01",
+            "B_BNASRArmyWDL_M939_Covered_01",
+            "B_BNASRArmyWDL_M939_Open_01",
+            "B_BNASRArmyWDL_M939_Ammo_01",
+            "B_BNASRArmyWDL_M939_Fuel_01",
+            "B_BNASRArmyWDL_M939_Repair_01",
+            "B_BNASRArmyWDL_M939_Cargo_01",
+            "B_BNASRArmyWDL_M939_MedEvac_01"
         };
         weapons[] = {};
         requiredVersion = 1.62;
@@ -67,7 +80,48 @@ class CfgPatches {
             "ace_refuel",
             "AlkFrameWork_Default_UI",
             "CUP_Core",
-            "cba_xeh"
+            "cba_xeh",
+            "cwr3_vehicle_hmmwv",
+            "CUP_WheeledVehicles_NewHMMWV",
+            "CUP_WheeledVehicles_NewM1036",
+            "CUP_WheeledVehicles_NewM1097",
+            "CUP_WheeledVehicles_NewSOV",
+            "A3_Soft_F",
+            "A3_Soft_F_Gamma_Hatchback_01",
+            "A3_Soft_F_Exp_Offroad_02",
+            "mrb_a3_vehiclevisibility",
+            "cwr3_vehicle_scud",
+            "A3_Data_F_ParticleEffects",
+            "ace_compat_rhs_afrf3",
+            "ace_interaction",
+            "ace_tagging",
+            "ace_vehicles",
+            "ace_cargo",
+            "A3_Armor_F_Beta",
+            "CUP_WheeledVehicles_NewM998",
+            "cwr3_vehicle_m939",
+            "A3_Soft_F_Beta_Truck_01",
+            "A3_Soft_F_Beta_Truck_02",
+            "A3_Soft_F_Gamma_Truck_01",
+            "A3_Soft_F_Gamma_Van_01",
+            "A3_Soft_F_EPC_Truck_03",
+            "A3_Soft_F_Orange_Van_02",
+            "rhs_c_zil131",
+            "rhs_c_a2port_car",
+            "rhs_c_kamaz",
+            "rhs_c_kraz255",
+            "rhs_c_rva",
+            "rhsusf_c_Caiman",
+            "rhsusf_c_fmtv",
+            "rhsusf_c_HEMTT_A4",
+            "rhsusf_c_himars",
+            "rhsusf_c_mtvr",
+            "cwr3_vehicle_bus",
+            "ace_repair",
+            "rhssaf_c_vehicles",
+            "rhsgref_c_vehicles_ret",
+            "CUP_WheeledVehicles_Ural",
+            "CUP_WheeledVehicles_RM70"
         };
         author = "[2LT] O'Neill (He/Him)";
         authors[] = {"[2LT] O'Neill (He/Him)"};
@@ -103,7 +157,7 @@ class CfgGroups {
                 class b_bnasrarmywdl_infantry_patrol {
                     name = "Patrol";
                     side = 1;
-                    faction = "B_NASRArmy_WDL";
+                    faction = "b_nasrarmy_wdl";
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
                     rarityGroup = 0.5;
 
@@ -124,7 +178,7 @@ class CfgGroups {
                 class b_bnasrarmywdl_infantry_platoon_hq {
                     name = "Platoon HQ";
                     side = 1;
-                    faction = "B_NASRArmy_WDL";
+                    faction = "b_nasrarmy_wdl";
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
                     rarityGroup = 0.5;
 
@@ -163,7 +217,7 @@ class CfgGroups {
                 class b_bnasrarmywdl_infantry_rifle_squad {
                     name = "Rifle Squad";
                     side = 1;
-                    faction = "B_NASRArmy_WDL";
+                    faction = "b_nasrarmy_wdl";
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
                     rarityGroup = 0.5;
 
@@ -226,7 +280,7 @@ class CfgGroups {
                 class b_bnasrarmywdl_infantry_sniper_team {
                     name = "Sniper Team";
                     side = 1;
-                    faction = "B_NASRArmy_WDL";
+                    faction = "b_nasrarmy_wdl";
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
                     rarityGroup = 0.5;
 
@@ -247,7 +301,7 @@ class CfgGroups {
                 class b_bnasrarmywdl_infantry_anti_tank_team {
                     name = "Anti-Tank Team";
                     side = 1;
-                    faction = "B_NASRArmy_WDL";
+                    faction = "b_nasrarmy_wdl";
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
                     rarityGroup = 0.5;
 
@@ -268,7 +322,7 @@ class CfgGroups {
                 class b_bnasrarmywdl_infantry_fireteam_marksman {
                     name = "Fireteam (Marksman)";
                     side = 1;
-                    faction = "B_NASRArmy_WDL";
+                    faction = "b_nasrarmy_wdl";
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
                     rarityGroup = 0.5;
 
@@ -301,7 +355,7 @@ class CfgGroups {
                 class b_bnasrarmywdl_infantry_fireteam_grenadier {
                     name = "Fireteam (Grenadier)";
                     side = 1;
-                    faction = "B_NASRArmy_WDL";
+                    faction = "b_nasrarmy_wdl";
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
                     rarityGroup = 0.5;
 
@@ -334,7 +388,7 @@ class CfgGroups {
                 class b_bnasrarmywdl_infantry_anti_air_team {
                     name = "Anti-Air Team";
                     side = 1;
-                    faction = "B_NASRArmy_WDL";
+                    faction = "b_nasrarmy_wdl";
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
                     rarityGroup = 0.5;
 
@@ -414,9 +468,78 @@ class CfgVehicles {
     class O_Soldier_F_OCimport_01 : O_Soldier_F { scope = 0; class EventHandlers; };
     class O_Soldier_F_OCimport_02 : O_Soldier_F_OCimport_01 { class EventHandlers; };
 
+    class cwr3_b_hmmwv;
+    class cwr3_b_hmmwv_OCimport_01 : cwr3_b_hmmwv { scope = 0; class EventHandlers; };
+    class cwr3_b_hmmwv_OCimport_02 : cwr3_b_hmmwv_OCimport_01 { scope = 0; class EventHandlers; };
+
+    class cwr3_b_hmmwv_m2;
+    class cwr3_b_hmmwv_m2_OCimport_01 : cwr3_b_hmmwv_m2 { scope = 0; class EventHandlers; class Turrets; };
+    class cwr3_b_hmmwv_m2_OCimport_02 : cwr3_b_hmmwv_m2_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+            class MainTurretTurnIn;
+        };
+    };
+
+    class cwr3_b_hmmwv_mk19;
+    class cwr3_b_hmmwv_mk19_OCimport_01 : cwr3_b_hmmwv_mk19 { scope = 0; class EventHandlers; class Turrets; };
+    class cwr3_b_hmmwv_mk19_OCimport_02 : cwr3_b_hmmwv_mk19_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+            class MainTurretTurnIn;
+        };
+    };
+
+    class cwr3_b_hmmwv_tow;
+    class cwr3_b_hmmwv_tow_OCimport_01 : cwr3_b_hmmwv_tow { scope = 0; class EventHandlers; class Turrets; };
+    class cwr3_b_hmmwv_tow_OCimport_02 : cwr3_b_hmmwv_tow_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+            class MainTurretTurnIn;
+        };
+    };
+
+    class cwr3_b_hmmwv_mev;
+    class cwr3_b_hmmwv_mev_OCimport_01 : cwr3_b_hmmwv_mev { scope = 0; class EventHandlers; };
+    class cwr3_b_hmmwv_mev_OCimport_02 : cwr3_b_hmmwv_mev_OCimport_01 { scope = 0; class EventHandlers; };
+
+    class cwr3_b_hmmwv_transport;
+    class cwr3_b_hmmwv_transport_OCimport_01 : cwr3_b_hmmwv_transport { scope = 0; class EventHandlers; };
+    class cwr3_b_hmmwv_transport_OCimport_02 : cwr3_b_hmmwv_transport_OCimport_01 { scope = 0; class EventHandlers; };
+
+    class cwr3_b_m939;
+    class cwr3_b_m939_OCimport_01 : cwr3_b_m939 { scope = 0; class EventHandlers; };
+    class cwr3_b_m939_OCimport_02 : cwr3_b_m939_OCimport_01 { scope = 0; class EventHandlers; };
+
+    class cwr3_b_m939_open;
+    class cwr3_b_m939_open_OCimport_01 : cwr3_b_m939_open { scope = 0; class EventHandlers; };
+    class cwr3_b_m939_open_OCimport_02 : cwr3_b_m939_open_OCimport_01 { scope = 0; class EventHandlers; };
+
+    class cwr3_b_m939_reammo;
+    class cwr3_b_m939_reammo_OCimport_01 : cwr3_b_m939_reammo { scope = 0; class EventHandlers; };
+    class cwr3_b_m939_reammo_OCimport_02 : cwr3_b_m939_reammo_OCimport_01 { scope = 0; class EventHandlers; };
+
+    class cwr3_b_m939_refuel;
+    class cwr3_b_m939_refuel_OCimport_01 : cwr3_b_m939_refuel { scope = 0; class EventHandlers; };
+    class cwr3_b_m939_refuel_OCimport_02 : cwr3_b_m939_refuel_OCimport_01 { scope = 0; class EventHandlers; };
+
+    class cwr3_b_m939_repair;
+    class cwr3_b_m939_repair_OCimport_01 : cwr3_b_m939_repair { scope = 0; class EventHandlers; };
+    class cwr3_b_m939_repair_OCimport_02 : cwr3_b_m939_repair_OCimport_01 { scope = 0; class EventHandlers; };
+
+    class cwr3_b_m939_empty;
+    class cwr3_b_m939_empty_OCimport_01 : cwr3_b_m939_empty { scope = 0; class EventHandlers; };
+    class cwr3_b_m939_empty_OCimport_02 : cwr3_b_m939_empty_OCimport_01 { scope = 0; class EventHandlers; };
+
+    class cwr3_b_m939_mev;
+    class cwr3_b_m939_mev_OCimport_01 : cwr3_b_m939_mev { scope = 0; class EventHandlers; };
+    class cwr3_b_m939_mev_OCimport_02 : cwr3_b_m939_mev_OCimport_01 { scope = 0; class EventHandlers; };
+
 
     class B_NASRArmy_Rifleman_WDL_01 : O_Soldier_F_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\previews\B_NASRArmy_Rifleman_WDL_01.jpg";
         author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
@@ -458,7 +581,6 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Rifleman_M136_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\previews\B_NASRArmy_Rifleman_M136_WDL_01.jpg";
         author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
@@ -500,7 +622,6 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Grenadier_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\previews\B_NASRArmy_Grenadier_WDL_01.jpg";
         author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
@@ -542,7 +663,6 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Machine_Gunner_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\previews\B_NASRArmy_Machine_Gunner_WDL_01.jpg";
         author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
@@ -584,7 +704,6 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Ammo_Bearer_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\previews\B_NASRArmy_Ammo_Bearer_WDL_01.jpg";
         author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
@@ -626,7 +745,6 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Marksman_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\previews\B_NASRArmy_Marksman_WDL_01.jpg";
         author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
@@ -668,7 +786,6 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_RATELO_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\previews\B_NASRArmy_RATELO_WDL_01.jpg";
         author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
@@ -710,7 +827,6 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Corpsman_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\previews\B_NASRArmy_Corpsman_WDL_01.jpg";
         author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
@@ -752,7 +868,6 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Rifleman_AT_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\previews\B_NASRArmy_Rifleman_AT_WDL_01.jpg";
         author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
@@ -794,7 +909,6 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Rifleman_AA_WDL_01 : B_NASRArmy_Rifleman_AT_WDL_01 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\previews\B_NASRArmy_Rifleman_AA_WDL_01.jpg";
         author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
@@ -836,7 +950,6 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Team_Leader_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\previews\B_NASRArmy_Team_Leader_WDL_01.jpg";
         author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
@@ -878,7 +991,6 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Squad_Leader_WDL_01 : B_NASRArmy_Team_Leader_WDL_01 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\previews\B_NASRArmy_Squad_Leader_WDL_01.jpg";
         author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
@@ -920,7 +1032,6 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Crewman_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\previews\B_NASRArmy_Crewman_WDL_01.jpg";
         author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
@@ -962,7 +1073,6 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Pilot_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\previews\B_NASRArmy_Pilot_WDL_01.jpg";
         author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
@@ -1004,7 +1114,6 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Pilot_Helicopter_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\previews\B_NASRArmy_Pilot_Helicopter_WDL_01.jpg";
         author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
@@ -1044,7 +1153,6 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Officer_WDL_01 : B_NASRArmy_Squad_Leader_WDL_01 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\previews\B_NASRArmy_Officer_WDL_01.jpg";
         author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
@@ -1086,7 +1194,6 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Sniper_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\previews\B_NASRArmy_Sniper_WDL_01.jpg";
         author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
@@ -1128,7 +1235,6 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Spotter_WDL_01 : B_NASRArmy_Sniper_WDL_01 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\previews\B_NASRArmy_Spotter_WDL_01.jpg";
         author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
@@ -1166,6 +1272,349 @@ class CfgVehicles {
         // custom attributes (do not delete)
         ALiVE_orbatCreator_owned = 1;
         ALiVE_orbatCreator_insignia = "NASR_Insignia_NASR_Subdued_Woodland";
+
+    };
+
+    class B_BNASRArmyWDL_M1151_HMMWV_Unarmed_01 : cwr3_b_hmmwv_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M1151 HMMWV Unarmed";
+        side = 1;
+        faction = "B_NASRArmy_WDL";
+        crew = "B_NASRArmy_Rifleman_WDL_01";
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\us_woodland\Body_co.paa'];_unit setObjectTextureGlobal [1,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\us_woodland\Roof_co.paa'];_unit setObjectTextureGlobal [2,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\snorkel_mesh_ca.paa'];_unit setObjectTextureGlobal [3,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\chassis_co.paa'];_unit setObjectTextureGlobal [4,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\attachments_co.paa'];_unit setObjectTextureGlobal [5,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\interior_co.paa'];_unit setObjectTextureGlobal [6,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\interior_detail_co.paa'];_unit setObjectTextureGlobal [7,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [8,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [9,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [10,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [11,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [12,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [13,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [14,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [15,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [16,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [17,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [18,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\chassis_co.paa'];_unit setObjectTextureGlobal [19,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [20,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [21,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [22,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [23,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [24,'#(argb,8,8,3)color(0,0,0,1)'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "Woodland";
+
+    };
+
+    class B_BNASRArmyWDL_M1151_HMMWV_M2_01 : cwr3_b_hmmwv_m2_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M1151 HMMWV M2";
+        side = 1;
+        faction = "B_NASRArmy_WDL";
+        crew = "B_NASRArmy_Rifleman_WDL_01";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_NASRArmy_Rifleman_WDL_01"; };
+            class MainTurretTurnIn : MainTurretTurnIn { gunnerType = ""; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\us_woodland\Body_co.paa'];_unit setObjectTextureGlobal [1,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\us_woodland\Roof_co.paa'];_unit setObjectTextureGlobal [2,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\snorkel_mesh_ca.paa'];_unit setObjectTextureGlobal [3,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\chassis_co.paa'];_unit setObjectTextureGlobal [4,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\attachments_co.paa'];_unit setObjectTextureGlobal [5,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\interior_co.paa'];_unit setObjectTextureGlobal [6,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\interior_detail_co.paa'];_unit setObjectTextureGlobal [7,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [8,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [9,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [10,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [11,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [12,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [13,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [14,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [15,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [16,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [17,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [18,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\chassis_co.paa'];_unit setObjectTextureGlobal [19,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [20,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [21,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [22,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [23,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [24,'#(argb,8,8,3)color(0,0,0,1)'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "Woodland";
+
+    };
+
+    class B_BNASRArmyWDL_M1151_HMMWV_Mk19_01 : cwr3_b_hmmwv_mk19_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M1151 HMMWV Mk19";
+        side = 1;
+        faction = "B_NASRArmy_WDL";
+        crew = "B_NASRArmy_Rifleman_WDL_01";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_NASRArmy_Rifleman_WDL_01"; };
+            class MainTurretTurnIn : MainTurretTurnIn { gunnerType = ""; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\us_woodland\Body_co.paa'];_unit setObjectTextureGlobal [1,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\us_woodland\Roof_co.paa'];_unit setObjectTextureGlobal [2,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\snorkel_mesh_ca.paa'];_unit setObjectTextureGlobal [3,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\chassis_co.paa'];_unit setObjectTextureGlobal [4,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\attachments_co.paa'];_unit setObjectTextureGlobal [5,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\interior_co.paa'];_unit setObjectTextureGlobal [6,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\interior_detail_co.paa'];_unit setObjectTextureGlobal [7,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [8,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [9,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [10,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [11,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [12,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [13,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [14,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [15,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [16,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [17,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [18,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\chassis_co.paa'];_unit setObjectTextureGlobal [19,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [20,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [21,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [22,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [23,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [24,'#(argb,8,8,3)color(0,0,0,1)'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "Woodland";
+
+    };
+
+    class B_BNASRArmyWDL_M1151_HMMWV_TOW_01 : cwr3_b_hmmwv_tow_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M1151 HMMWV TOW";
+        side = 1;
+        faction = "B_NASRArmy_WDL";
+        crew = "B_NASRArmy_Rifleman_WDL_01";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_NASRArmy_Rifleman_WDL_01"; };
+            class MainTurretTurnIn : MainTurretTurnIn { gunnerType = ""; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\us_woodland\Body_co.paa'];_unit setObjectTextureGlobal [1,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\us_woodland\Roof_co.paa'];_unit setObjectTextureGlobal [2,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\snorkel_mesh_ca.paa'];_unit setObjectTextureGlobal [3,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\chassis_co.paa'];_unit setObjectTextureGlobal [4,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\attachments_co.paa'];_unit setObjectTextureGlobal [5,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\interior_co.paa'];_unit setObjectTextureGlobal [6,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\interior_detail_co.paa'];_unit setObjectTextureGlobal [7,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewM1036\Data\nato_olive\tow_mount_co.paa'];_unit setObjectTextureGlobal [8,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [9,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [10,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [11,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [12,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [13,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [14,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [15,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [16,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [17,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [18,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\chassis_co.paa'];_unit setObjectTextureGlobal [19,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [20,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [21,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewM1036\Data\nato_olive\tow_a_co.paa'];_unit setObjectTextureGlobal [22,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewM1036\Data\nato_olive\tow_b_co.paa'];_unit setObjectTextureGlobal [23,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewM1036\Data\nato_olive\tow_tube_co.paa'];_unit setObjectTextureGlobal [24,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewM1036\Data\nato_olive\tow_tube_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "Woodland";
+
+    };
+
+    class B_BNASRArmyWDL_M1151_HMMWV_MedEvac_01 : cwr3_b_hmmwv_mev_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M1151 HMMWV MedEvac";
+        side = 1;
+        faction = "B_NASRArmy_WDL";
+        crew = "B_NASRArmy_Corpsman_WDL_01";
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\us_woodland\Body_co.paa'];_unit setObjectTextureGlobal [1,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewM998\Data\us_woodland\rear_997_amb_co.paa'];_unit setObjectTextureGlobal [2,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\snorkel_mesh_ca.paa'];_unit setObjectTextureGlobal [3,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\chassis_co.paa'];_unit setObjectTextureGlobal [4,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\attachments_co.paa'];_unit setObjectTextureGlobal [5,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\interior_co.paa'];_unit setObjectTextureGlobal [6,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\interior_detail_co.paa'];_unit setObjectTextureGlobal [7,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewM998\Data\nato_olive\int_997_amb_co.paa'];_unit setObjectTextureGlobal [8,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [9,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [10,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [11,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [12,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [13,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [14,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [15,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [16,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [17,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [18,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\chassis_co.paa'];_unit setObjectTextureGlobal [19,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [20,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [21,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [22,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [23,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [24,'#(argb,8,8,3)color(0,0,0,1)'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "Woodland";
+
+    };
+
+    class B_BNASRArmyWDL_M1151_HMMWV_Transport_01 : cwr3_b_hmmwv_transport_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M1151 HMMWV Transport";
+        side = 1;
+        faction = "B_NASRArmy_WDL";
+        crew = "B_NASRArmy_Rifleman_WDL_01";
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\us_woodland\Body_co.paa'];_unit setObjectTextureGlobal [1,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewM998\Data\us_woodland\roof_998_co.paa'];_unit setObjectTextureGlobal [2,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\snorkel_mesh_ca.paa'];_unit setObjectTextureGlobal [3,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\chassis_co.paa'];_unit setObjectTextureGlobal [4,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\attachments_co.paa'];_unit setObjectTextureGlobal [5,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\interior_co.paa'];_unit setObjectTextureGlobal [6,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\interior_detail_co.paa'];_unit setObjectTextureGlobal [7,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewM998\Data\us_woodland\rear_998_4s_co.paa'];_unit setObjectTextureGlobal [8,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [9,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [10,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [11,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [12,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [13,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [14,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [15,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [16,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [17,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [18,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\chassis_co.paa'];_unit setObjectTextureGlobal [19,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [20,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [21,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [22,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [23,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [24,'#(argb,8,8,3)color(0,0,0,1)'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "Woodland";
+
+    };
+
+    class B_BNASRArmyWDL_M939_Covered_01 : cwr3_b_m939_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M939 Covered";
+        side = 1;
+        faction = "B_NASRArmy_WDL";
+        crew = "B_NASRArmy_Rifleman_WDL_01";
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cwr3\vehicles\cwr3_m939\data\truck5t_01_woodland_co.paa'];_unit setObjectTextureGlobal [1,'\cwr3\vehicles\cwr3_m939\data\truck5t_02_woodland_co.paa'];_unit setObjectTextureGlobal [2,'\cwr3\vehicles\cwr3_m939\data\truck5t_dash_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "woodland";
+
+    };
+
+    class B_BNASRArmyWDL_M939_Open_01 : cwr3_b_m939_open_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M939 Open";
+        side = 1;
+        faction = "B_NASRArmy_WDL";
+        crew = "B_NASRArmy_Rifleman_WDL_01";
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cwr3\vehicles\cwr3_m939\data\truck5t_01_woodland_co.paa'];_unit setObjectTextureGlobal [1,'\cwr3\vehicles\cwr3_m939\data\truck5t_02_woodland_co.paa'];_unit setObjectTextureGlobal [2,'\cwr3\vehicles\cwr3_m939\data\truck5t_dash_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "woodland";
+
+    };
+
+    class B_BNASRArmyWDL_M939_Ammo_01 : cwr3_b_m939_reammo_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M939 Ammo";
+        side = 1;
+        faction = "B_NASRArmy_WDL";
+        crew = "B_NASRArmy_Rifleman_WDL_01";
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cwr3\vehicles\cwr3_m939\data\truck5t_01_woodland_co.paa'];_unit setObjectTextureGlobal [1,'\cwr3\vehicles\cwr3_m939\data\truck5t_02_woodland_co.paa'];_unit setObjectTextureGlobal [2,'\cwr3\vehicles\cwr3_m939\data\truck5t_dash_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "woodland";
+
+    };
+
+    class B_BNASRArmyWDL_M939_Fuel_01 : cwr3_b_m939_refuel_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M939 Fuel";
+        side = 1;
+        faction = "B_NASRArmy_WDL";
+        crew = "B_NASRArmy_Rifleman_WDL_01";
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cwr3\vehicles\cwr3_m939\data\truck5t_01_woodland_co.paa'];_unit setObjectTextureGlobal [1,'\cwr3\vehicles\cwr3_m939\data\truck5t_02_woodland_co.paa'];_unit setObjectTextureGlobal [2,'\cwr3\vehicles\cwr3_m939\data\truck5t_dash_co.paa'];_unit setObjectTextureGlobal [3,'\a3\structures_f\items\vessels\data\firebarrel_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "woodland";
+
+    };
+
+    class B_BNASRArmyWDL_M939_Repair_01 : cwr3_b_m939_repair_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M939 Repair";
+        side = 1;
+        faction = "B_NASRArmy_WDL";
+        crew = "B_NASRArmy_Rifleman_WDL_01";
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cwr3\vehicles\cwr3_m939\data\truck5t_01_woodland_co.paa'];_unit setObjectTextureGlobal [1,'\cwr3\vehicles\cwr3_m939\data\truck5t_02_woodland_co.paa'];_unit setObjectTextureGlobal [2,'\cwr3\vehicles\cwr3_m939\data\truck5t_dash_co.paa'];_unit setObjectTextureGlobal [3,'\cwr3\vehicles\cwr3_m939\data\truck5t_repair_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "woodland";
+
+    };
+
+    class B_BNASRArmyWDL_M939_Cargo_01 : cwr3_b_m939_empty_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M939 Cargo";
+        side = 1;
+        faction = "B_NASRArmy_WDL";
+        crew = "B_NASRArmy_Rifleman_WDL_01";
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cwr3\vehicles\cwr3_m939\data\truck5t_01_woodland_co.paa'];_unit setObjectTextureGlobal [1,'\cwr3\vehicles\cwr3_m939\data\truck5t_02_woodland_co.paa'];_unit setObjectTextureGlobal [2,'\cwr3\vehicles\cwr3_m939\data\truck5t_dash_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "woodland";
+
+    };
+
+    class B_BNASRArmyWDL_M939_MedEvac_01 : cwr3_b_m939_mev_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M939 MedEvac";
+        side = 1;
+        faction = "B_NASRArmy_WDL";
+        crew = "B_NASRArmy_Corpsman_WDL_01";
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cwr3\vehicles\cwr3_m939\data\truck5t_01_woodland_co.paa'];_unit setObjectTextureGlobal [1,'\cwr3\vehicles\cwr3_m939\data\truck5t_02_woodland_co.paa'];_unit setObjectTextureGlobal [2,'\cwr3\vehicles\cwr3_m939\data\truck5t_dash_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "woodland";
 
     };
 
