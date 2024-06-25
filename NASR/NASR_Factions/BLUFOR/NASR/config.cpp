@@ -416,6 +416,7 @@ class CfgVehicles {
 
 
     class B_NASRArmy_Rifleman_WDL_01 : O_Soldier_F_OCimport_02 {
+        editorPreview = "NASR_Factions\BLUFOR\NASR\previews\B_NASRArmy_Rifleman_WDL_01.jpg";
         author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
@@ -457,6 +458,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Rifleman_M136_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
+        editorPreview = "NASR_Factions\BLUFOR\NASR\previews\B_NASRArmy_Rifleman_M136_WDL_01.jpg";
         author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
@@ -498,6 +500,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Grenadier_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
+        editorPreview = "NASR_Factions\BLUFOR\NASR\previews\B_NASRArmy_Grenadier_WDL_01.jpg";
         author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
@@ -539,6 +542,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Machine_Gunner_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
+        editorPreview = "NASR_Factions\BLUFOR\NASR\previews\B_NASRArmy_Machine_Gunner_WDL_01.jpg";
         author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
@@ -580,6 +584,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Ammo_Bearer_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
+        editorPreview = "NASR_Factions\BLUFOR\NASR\previews\B_NASRArmy_Ammo_Bearer_WDL_01.jpg";
         author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
@@ -621,6 +626,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Marksman_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
+        editorPreview = "NASR_Factions\BLUFOR\NASR\previews\B_NASRArmy_Marksman_WDL_01.jpg";
         author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
@@ -662,6 +668,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_RATELO_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
+        editorPreview = "NASR_Factions\BLUFOR\NASR\previews\B_NASRArmy_RATELO_WDL_01.jpg";
         author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
@@ -703,6 +710,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Corpsman_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
+        editorPreview = "NASR_Factions\BLUFOR\NASR\previews\B_NASRArmy_Corpsman_WDL_01.jpg";
         author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
@@ -744,6 +752,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Rifleman_AT_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
+        editorPreview = "NASR_Factions\BLUFOR\NASR\previews\B_NASRArmy_Rifleman_AT_WDL_01.jpg";
         author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
@@ -785,6 +794,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Rifleman_AA_WDL_01 : B_NASRArmy_Rifleman_AT_WDL_01 {
+        editorPreview = "NASR_Factions\BLUFOR\NASR\previews\B_NASRArmy_Rifleman_AA_WDL_01.jpg";
         author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
@@ -826,6 +836,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Team_Leader_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
+        editorPreview = "NASR_Factions\BLUFOR\NASR\previews\B_NASRArmy_Team_Leader_WDL_01.jpg";
         author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
@@ -867,6 +878,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Squad_Leader_WDL_01 : B_NASRArmy_Team_Leader_WDL_01 {
+        editorPreview = "NASR_Factions\BLUFOR\NASR\previews\B_NASRArmy_Squad_Leader_WDL_01.jpg";
         author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
@@ -908,6 +920,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Crewman_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
+        editorPreview = "NASR_Factions\BLUFOR\NASR\previews\B_NASRArmy_Crewman_WDL_01.jpg";
         author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
@@ -949,6 +962,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Pilot_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
+        editorPreview = "NASR_Factions\BLUFOR\NASR\previews\B_NASRArmy_Pilot_WDL_01.jpg";
         author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
@@ -990,6 +1004,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Pilot_Helicopter_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
+        editorPreview = "NASR_Factions\BLUFOR\NASR\previews\B_NASRArmy_Pilot_Helicopter_WDL_01.jpg";
         author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
@@ -1029,6 +1044,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Officer_WDL_01 : B_NASRArmy_Squad_Leader_WDL_01 {
+        editorPreview = "NASR_Factions\BLUFOR\NASR\previews\B_NASRArmy_Officer_WDL_01.jpg";
         author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
@@ -1070,6 +1086,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Sniper_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
+        editorPreview = "NASR_Factions\BLUFOR\NASR\previews\B_NASRArmy_Sniper_WDL_01.jpg";
         author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
@@ -1111,6 +1128,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Spotter_WDL_01 : B_NASRArmy_Sniper_WDL_01 {
+        editorPreview = "NASR_Factions\BLUFOR\NASR\previews\B_NASRArmy_Spotter_WDL_01.jpg";
         author = "[2LT] O'Neill (He/Him)";
         scope = 2;
         scopeCurator = 2;
