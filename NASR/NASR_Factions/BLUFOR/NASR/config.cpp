@@ -255,8 +255,8 @@ class CfgFactionClasses {
     class B_NASRArmy_WDL {
         displayName = "[PF] North American Socialist Republic";
         side = 1;
-        flag = "ca\Ca_E\data\flag_opfor_co.paa";
-        icon = "ca\Ca_E\data\flag_opfor_co.paa";
+        flag = "NASR_Factions\BLUFOR\NASR\data\flag.paa";
+        icon = "NASR_Factions\BLUFOR\NASR\data\flag.paa";
         priority = 0;
     };
 };
