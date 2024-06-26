@@ -46,7 +46,14 @@ class CfgPatches {
             "B_BNASRArmyWDL_UH_60L_Blackbird_4Pylons_01",
             "B_BNASRArmyWDL_UH_60M_Blackhawk_Door_Guns_01",
             "B_BNASRArmyWDL_CH_47F_Chinook_Cargo_01",
-            "B_BNASRArmyWDL_CH_47F_Chinook_Transport_01"
+            "B_BNASRArmyWDL_CH_47F_Chinook_Transport_01",
+            "B_BNASRArmyWDL_A10A_Thunderbolt_II_01",
+            "B_BNASRArmyWDL_F4E_01",
+            "B_BNASRArmyWDL_F16C_01",
+            "B_BNASRArmyWDL_C130E_Transport_01",
+            "B_BNASRArmyWDL_C130E_Cargo_01",
+            "B_BNASRArmyWDL_F18_Multirole_01",
+            "B_BNASRArmyWDL_F18_CAP_01"
         };
         weapons[] = {};
         requiredVersion = 1.62;
@@ -237,11 +244,37 @@ class CfgPatches {
             "ace_compat_rhs_usf3",
             "A3_Air_F_Beta_Heli_Attack_01",
             "ace_aircraft",
-            "CUP_AirVehicles_CH47"
+            "CUP_AirVehicles_CH47",
+            "CUP_AirVehicles_A10",
+            "A3_Air_F_Beta",
+            "A3_Air_F_Gamma_Plane_Fighter_03",
+            "A3_Air_F_EPC_Plane_CAS_01",
+            "A3_Air_F_EPC_Plane_CAS_02",
+            "A3_Air_F_Exp_Plane_Civil_01",
+            "A3_Air_F_Jets_Plane_Fighter_01",
+            "A3_Air_F_Jets_Plane_Fighter_02",
+            "A3_Air_F_Jets_Plane_Fighter_04",
+            "A3_Air_F_Jets_UAV_05",
+            "rhs_c_a2port_air",
+            "rhs_c_air",
+            "rhs_c_mig29",
+            "RHSGREF_c_A29",
+            "rhsgref_c_air",
+            "cwr3_vehicle_f16",
+            "CUP_AirVehicles_AN2",
+            "CUP_AirVehicles_C130J",
+            "CUP_AirVehciles_Cessna",
+            "CUP_AirVehicles_DC3",
+            "CUP_AirVehicles_L39",
+            "CUP_AirVehicles_MV22",
+            "cwr3_vehicle_an12",
+            "cwr3_vehicle_an2",
+            "CUP_AirVehicles_AmbientPlanes",
+            "cwr3_vehicle_f4",
+            "cwr3_vehicle_c130"
         };
         author = "[2LT] O'Neill (He/Him)";
         authors[] = {"[2LT] O'Neill (He/Him)"};
-        addonRootClass = "NASR_Factions";
     };
 };
 
@@ -818,6 +851,49 @@ class CfgVehicles {
             class CopilotTurret;
         };
     };
+
+    class CUP_B_A10_DYN_USA;
+    class CUP_B_A10_DYN_USA_OCimport_01 : CUP_B_A10_DYN_USA { scope = 0; class EventHandlers; };
+    class CUP_B_A10_DYN_USA_OCimport_02 : CUP_B_A10_DYN_USA_OCimport_01 { scope = 0; class EventHandlers; };
+
+    class cwr3_b_f4e;
+    class cwr3_b_f4e_OCimport_01 : cwr3_b_f4e { scope = 0; class EventHandlers; class Turrets; };
+    class cwr3_b_f4e_OCimport_02 : cwr3_b_f4e_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+
+    class cwr3_b_f16c;
+    class cwr3_b_f16c_OCimport_01 : cwr3_b_f16c { scope = 0; class EventHandlers; };
+    class cwr3_b_f16c_OCimport_02 : cwr3_b_f16c_OCimport_01 { scope = 0; class EventHandlers; };
+
+    class cwr3_b_c130;
+    class cwr3_b_c130_OCimport_01 : cwr3_b_c130 { scope = 0; class EventHandlers; class Turrets; };
+    class cwr3_b_c130_OCimport_02 : cwr3_b_c130_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+
+    class cwr3_b_c130_cargo;
+    class cwr3_b_c130_cargo_OCimport_01 : cwr3_b_c130_cargo { scope = 0; class EventHandlers; class Turrets; };
+    class cwr3_b_c130_cargo_OCimport_02 : cwr3_b_c130_cargo_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+
+    class rhssaf_airforce_l_18;
+    class rhssaf_airforce_l_18_OCimport_01 : rhssaf_airforce_l_18 { scope = 0; class EventHandlers; };
+    class rhssaf_airforce_l_18_OCimport_02 : rhssaf_airforce_l_18_OCimport_01 { scope = 0; class EventHandlers; };
+
+    class rhssaf_airforce_l_18_101;
+    class rhssaf_airforce_l_18_101_OCimport_01 : rhssaf_airforce_l_18_101 { scope = 0; class EventHandlers; };
+    class rhssaf_airforce_l_18_101_OCimport_02 : rhssaf_airforce_l_18_101_OCimport_01 { scope = 0; class EventHandlers; };
 
 
     class B_NASRArmy_Rifleman_WDL_01 : O_Soldier_F_OCimport_02 {
@@ -2343,7 +2419,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "CH-47F Chinook (Transport)";
         side = 1;
-        faction = "B_NASRArmy_WDL";
+        faction = "b_nasrarmy_wdl";
         crew = "B_NASRArmy_Pilot_Helicopter_WDL_01";
 
         class Turrets : Turrets {
@@ -2366,6 +2442,196 @@ class CfgVehicles {
 
         // custom attributes (do not delete)
         ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class B_BNASRArmyWDL_A10A_Thunderbolt_II_01 : CUP_B_A10_DYN_USA_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "A-10A Thunderbolt II";
+        side = 1;
+        faction = "B_NASRArmy_WDL";
+        crew = "B_NASRArmy_Pilot_WDL_01";
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\CUP\AirVehicles\CUP_AirVehicles_A10\data\a10_01_co.paa'];_unit setObjectTextureGlobal [1,'\CUP\AirVehicles\CUP_AirVehicles_A10\data\a10_02_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "USAFGrey";
+
+    };
+
+    class B_BNASRArmyWDL_F4E_01 : cwr3_b_f4e_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "F-4E";
+        side = 1;
+        faction = "B_NASRArmy_WDL";
+        crew = "B_NASRArmy_Pilot_WDL_01";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_NASRArmy_Pilot_WDL_01"; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cwr3\vehicles\cwr3_f4\tex\body_usaf_grey_co.paa'];_unit setObjectTextureGlobal [1,'\cwr3\vehicles\cwr3_f4\tex\wing_usaf_grey_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "usaf_grey";
+
+    };
+
+    class B_BNASRArmyWDL_F16C_01 : cwr3_b_f16c_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "F-16C";
+        side = 1;
+        faction = "B_NASRArmy_WDL";
+        crew = "B_NASRArmy_Pilot_WDL_01";
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cwr3\vehicles\cwr3_f16\data\F16_Body_Grey_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "usaf_grey";
+
+    };
+
+    class B_BNASRArmyWDL_C130E_Transport_01 : cwr3_b_c130_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "C-130E Transport";
+        side = 1;
+        faction = "B_NASRArmy_WDL";
+        crew = "B_NASRArmy_Pilot_WDL_01";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_NASRArmy_Pilot_WDL_01"; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'CUP\AirVehicles\CUP_AirVehicles_C130J\data\c130j_body_co.paa'];_unit setObjectTextureGlobal [1,'CUP\AirVehicles\CUP_AirVehicles_C130J\data\c130j_wings_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "USMCGrey";
+
+    };
+
+    class B_BNASRArmyWDL_C130E_Cargo_01 : cwr3_b_c130_cargo_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "C-130E Cargo";
+        side = 1;
+        faction = "B_NASRArmy_WDL";
+        crew = "B_NASRArmy_Pilot_WDL_01";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_NASRArmy_Pilot_WDL_01"; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'CUP\AirVehicles\CUP_AirVehicles_C130J\data\c130j_body_co.paa'];_unit setObjectTextureGlobal [1,'CUP\AirVehicles\CUP_AirVehicles_C130J\data\c130j_wings_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "USMCGrey";
+
+    };
+
+    class B_BNASRArmyWDL_F18_Multirole_01 : rhssaf_airforce_l_18_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "F-18 Multirole";
+        side = 1;
+        faction = "B_NASRArmy_WDL";
+        crew = "B_NASRArmy_Pilot_WDL_01";
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'rhsafrf\addons\rhs_mig29\data\rhs_mig29_01_lgray_co.paa'];_unit setObjectTextureGlobal [1,'rhsafrf\addons\rhs_mig29\data\rhs_mig29_02_lgray_co.paa'];_unit setObjectTextureGlobal [2,'rhsafrf\addons\rhs_mig29\data\rhs_mig29_03_lgray_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "LightGray";
+
+    };
+
+    class B_BNASRArmyWDL_F18_CAP_01 : rhssaf_airforce_l_18_101_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "F-18 CAP";
+        side = 1;
+        faction = "B_NASRArmy_WDL";
+        crew = "B_NASRArmy_Pilot_WDL_01";
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'rhsafrf\addons\rhs_mig29\data\rhs_mig29_01_lgray_co.paa'];_unit setObjectTextureGlobal [1,'rhsafrf\addons\rhs_mig29\data\rhs_mig29_02_lgray_co.paa'];_unit setObjectTextureGlobal [2,'rhsafrf\addons\rhs_mig29\data\rhs_mig29_03_lgray_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "LightGray";
 
     };
 
