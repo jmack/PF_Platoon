@@ -31,7 +31,12 @@ class CfgPatches {
             "B_BNASRArmyWDL_M939_Fuel_01",
             "B_BNASRArmyWDL_M939_Repair_01",
             "B_BNASRArmyWDL_M939_Cargo_01",
-            "B_BNASRArmyWDL_M939_MedEvac_01"
+            "B_BNASRArmyWDL_M939_MedEvac_01",
+            "B_BNASRArmyWDL_M1126_Stryker_M2_01",
+            "B_BNASRArmyWDL_M1126_Stryker_Mk19_01",
+            "B_BNASRArmyWDL_M1126_Stryker_MGS_01",
+            "B_BNASRArmyWDL_M2_Bradley_IFV_01",
+            "B_BNASRArmyWDL_M1A2_Butler_01"
         };
         weapons[] = {};
         requiredVersion = 1.62;
@@ -121,7 +126,93 @@ class CfgPatches {
             "rhssaf_c_vehicles",
             "rhsgref_c_vehicles_ret",
             "CUP_WheeledVehicles_Ural",
-            "CUP_WheeledVehicles_RM70"
+            "CUP_WheeledVehicles_RM70",
+            "CUP_WheeledVehicles_Stryker",
+            "TFAR_IntercomDummy",
+            "A3_Armor_F_Beta_APC_Wheeled_01",
+            "A3_Armor_F_Beta_APC_Wheeled_02",
+            "A3_Armor_F_Gamma_APC_Wheeled_03",
+            "A3_Armor_F_Tank_AFV_Wheeled_01",
+            "rhs_c_btr",
+            "rhs_c_a2port_armor",
+            "ace_cookoff",
+            "ace_vehicle_damage",
+            "rhsgref_c_a2port_armor",
+            "CUP_WheeledVehicles_Boxer",
+            "CUP_WheeledVehicles_LAV25",
+            "CUP_WheeledVehicles_Mastiff",
+            "CUP_WheeledVehicles_Ridgeback",
+            "CUP_WheeledVehicles_Vodnik",
+            "CUP_WheeledVehicles_Wolfhound",
+            "CUP_WheeledVehicles_BTR90",
+            "cwr3_vehicle_fv620_uk",
+            "CUP_TrackedVehicles_Bradley",
+            "ace_compat_cup_vehicles",
+            "A3_Armor_F_Beta_APC_Tracked_01",
+            "A3_Armor_F_Beta_APC_Tracked_02",
+            "A3_Armor_F_Gamma_MBT_01",
+            "A3_Armor_F_Gamma_MBT_02",
+            "A3_Armor_F_EPB_APC_Tracked_03",
+            "A3_Armor_F_EPB_MBT_03",
+            "A3_Armor_F_Tank_LT_01",
+            "A3_Armor_F_Tank_MBT_04",
+            "A3_Soft_F_Enoch_UGV_02",
+            "rhs_c_2s1",
+            "rhs_c_2s3",
+            "rhs_c_bmd",
+            "rhs_c_bmp3",
+            "rhs_c_bmp",
+            "rhs_c_pts",
+            "rhs_c_sprut",
+            "rhs_c_t14",
+            "rhs_c_t15",
+            "rhs_c_t72",
+            "rhs_c_tanks",
+            "RHS_US_A2Port_Armor",
+            "rhsusf_c_m109",
+            "rhsusf_c_m113",
+            "rhsusf_c_m1a1",
+            "rhsusf_c_m1a2",
+            "m109_ukr",
+            "ace_logistics_uavbattery",
+            "CUP_TrackedVehicles_MTLB",
+            "CUP_TrackedVehicles_FV510",
+            "CUP_TrackedVehicles_Leopard1",
+            "CUP_TrackedVehicles_Leopard2",
+            "CUP_TrackedVehicles_MCV80",
+            "cwr3_vehicle_mtlb",
+            "CUP_TrackedVehicles_2S6M",
+            "CUP_TrackedVehicles_AAV",
+            "CUP_TrackedVehicles_BMP3",
+            "CUP_TrackedVehicles_BMP",
+            "CUP_TrackedVehicles_ChallengerII",
+            "CUP_TrackedVehicles_LCAC",
+            "CUP_TrackedVehicles_M113",
+            "CUP_TrackedVehicles_M1_Abrams",
+            "CUP_TrackedVehicles_M1Abrams",
+            "CUP_TrackedVehicles_M60",
+            "CUP_TrackedVehicles_NewM113",
+            "CUP_TrackedVehicles_T72",
+            "CUP_TrackedVehicles_T90",
+            "CUP_TrackedVehicles_T90M",
+            "CUP_TrackedVehicles_ZSU23",
+            "cwr3_vehicle_m113",
+            "cwr3_vehicle_m1a1",
+            "cwr3_vehicle_m41",
+            "cwr3_vehicle_t64",
+            "cwr3_vehicle_t72",
+            "CUP_TrackedVehicles_Bulldog",
+            "CUP_TrackedVehicles_M1A2Abrams",
+            "CUP_TrackedVehicles_M270",
+            "CUP_TrackedVehicles_T34",
+            "CUP_TrackedVehicles_T55",
+            "cwr3_vehicle_fv432_uk",
+            "cwr3_vehicle_fv510_uk",
+            "cwr3_vehicle_pt76",
+            "cwr3_vehicle_t55",
+            "cwr3_vehicle_fv101_uk",
+            "cwr3_vehicle_fv4030_uk",
+            "cwr3_vehicle_fv4201_uk"
         };
         author = "[2LT] O'Neill (He/Him)";
         authors[] = {"[2LT] O'Neill (He/Him)"};
@@ -537,6 +628,54 @@ class CfgVehicles {
     class cwr3_b_m939_mev;
     class cwr3_b_m939_mev_OCimport_01 : cwr3_b_m939_mev { scope = 0; class EventHandlers; };
     class cwr3_b_m939_mev_OCimport_02 : cwr3_b_m939_mev_OCimport_01 { scope = 0; class EventHandlers; };
+
+    class CUP_B_M1126_ICV_M2_Woodland;
+    class CUP_B_M1126_ICV_M2_Woodland_OCimport_01 : CUP_B_M1126_ICV_M2_Woodland { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_B_M1126_ICV_M2_Woodland_OCimport_02 : CUP_B_M1126_ICV_M2_Woodland_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class ObsTurret;
+            class CargoTurret_01;
+        };
+    };
+
+    class CUP_B_M1126_ICV_MK19_Woodland;
+    class CUP_B_M1126_ICV_MK19_Woodland_OCimport_01 : CUP_B_M1126_ICV_MK19_Woodland { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_B_M1126_ICV_MK19_Woodland_OCimport_02 : CUP_B_M1126_ICV_MK19_Woodland_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class ObsTurret;
+            class CargoTurret_01;
+        };
+    };
+
+    class CUP_B_M1128_MGS_Woodland;
+    class CUP_B_M1128_MGS_Woodland_OCimport_01 : CUP_B_M1128_MGS_Woodland { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_B_M1128_MGS_Woodland_OCimport_02 : CUP_B_M1128_MGS_Woodland_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+            class CommanderOptics;
+        };
+    };
+
+    class CUP_B_M2Bradley_USA_W;
+    class CUP_B_M2Bradley_USA_W_OCimport_01 : CUP_B_M2Bradley_USA_W { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_B_M2Bradley_USA_W_OCimport_02 : CUP_B_M2Bradley_USA_W_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+
+    class CUP_B_M1A2C_TUSK_II_Woodland_US_Army;
+    class CUP_B_M1A2C_TUSK_II_Woodland_US_Army_OCimport_01 : CUP_B_M1A2C_TUSK_II_Woodland_US_Army { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_B_M1A2C_TUSK_II_Woodland_US_Army_OCimport_02 : CUP_B_M1A2C_TUSK_II_Woodland_US_Army_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
 
 
     class B_NASRArmy_Rifleman_WDL_01 : O_Soldier_F_OCimport_02 {
@@ -1281,7 +1420,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M1151 HMMWV Unarmed";
         side = 1;
-        faction = "B_NASRArmy_WDL";
+        faction = "b_nasrarmy_wdl";
         crew = "B_NASRArmy_Rifleman_WDL_01";
 
 
@@ -1306,7 +1445,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M1151 HMMWV M2";
         side = 1;
-        faction = "B_NASRArmy_WDL";
+        faction = "b_nasrarmy_wdl";
         crew = "B_NASRArmy_Rifleman_WDL_01";
 
         class Turrets : Turrets {
@@ -1337,7 +1476,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M1151 HMMWV Mk19";
         side = 1;
-        faction = "B_NASRArmy_WDL";
+        faction = "b_nasrarmy_wdl";
         crew = "B_NASRArmy_Rifleman_WDL_01";
 
         class Turrets : Turrets {
@@ -1368,7 +1507,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M1151 HMMWV TOW";
         side = 1;
-        faction = "B_NASRArmy_WDL";
+        faction = "b_nasrarmy_wdl";
         crew = "B_NASRArmy_Rifleman_WDL_01";
 
         class Turrets : Turrets {
@@ -1399,7 +1538,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M1151 HMMWV MedEvac";
         side = 1;
-        faction = "B_NASRArmy_WDL";
+        faction = "b_nasrarmy_wdl";
         crew = "B_NASRArmy_Corpsman_WDL_01";
 
 
@@ -1424,7 +1563,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M1151 HMMWV Transport";
         side = 1;
-        faction = "B_NASRArmy_WDL";
+        faction = "b_nasrarmy_wdl";
         crew = "B_NASRArmy_Rifleman_WDL_01";
 
 
@@ -1449,7 +1588,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M939 Covered";
         side = 1;
-        faction = "B_NASRArmy_WDL";
+        faction = "b_nasrarmy_wdl";
         crew = "B_NASRArmy_Rifleman_WDL_01";
 
 
@@ -1474,7 +1613,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M939 Open";
         side = 1;
-        faction = "B_NASRArmy_WDL";
+        faction = "b_nasrarmy_wdl";
         crew = "B_NASRArmy_Rifleman_WDL_01";
 
 
@@ -1499,7 +1638,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M939 Ammo";
         side = 1;
-        faction = "B_NASRArmy_WDL";
+        faction = "b_nasrarmy_wdl";
         crew = "B_NASRArmy_Rifleman_WDL_01";
 
 
@@ -1524,7 +1663,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M939 Fuel";
         side = 1;
-        faction = "B_NASRArmy_WDL";
+        faction = "b_nasrarmy_wdl";
         crew = "B_NASRArmy_Rifleman_WDL_01";
 
 
@@ -1549,7 +1688,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M939 Repair";
         side = 1;
-        faction = "B_NASRArmy_WDL";
+        faction = "b_nasrarmy_wdl";
         crew = "B_NASRArmy_Rifleman_WDL_01";
 
 
@@ -1574,7 +1713,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M939 Cargo";
         side = 1;
-        faction = "B_NASRArmy_WDL";
+        faction = "b_nasrarmy_wdl";
         crew = "B_NASRArmy_Rifleman_WDL_01";
 
 
@@ -1599,7 +1738,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M939 MedEvac";
         side = 1;
-        faction = "B_NASRArmy_WDL";
+        faction = "b_nasrarmy_wdl";
         crew = "B_NASRArmy_Corpsman_WDL_01";
 
 
@@ -1615,6 +1754,157 @@ class CfgVehicles {
         // custom attributes (do not delete)
         ALiVE_orbatCreator_owned = 1;
         ALiVE_orbatCreator_texture = "woodland";
+
+    };
+
+    class B_BNASRArmyWDL_M1126_Stryker_M2_01 : CUP_B_M1126_ICV_M2_Woodland_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M1126 Stryker M2";
+        side = 1;
+        faction = "B_NASRArmy_WDL";
+        crew = "B_NASRArmy_Crewman_WDL_01";
+
+        class Turrets : Turrets {
+            class ObsTurret : ObsTurret { gunnerType = "B_NASRArmy_Crewman_WDL_01"; };
+            class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'CUP\WheeledVehicles\CUP_WheeledVehicles_Stryker\Data\Woodland\stryker_body1_des_co.paa'];_unit setObjectTextureGlobal [1,'CUP\WheeledVehicles\CUP_WheeledVehicles_Stryker\Data\Woodland\stryker_body2_des_co.paa'];_unit setObjectTextureGlobal [2,'cup\wheeledvehicles\cup_wheeledvehicles_stryker\data\Woodland\stryker_body2_des_co.paa'];_unit setObjectTextureGlobal [3,'cup\wheeledvehicles\cup_wheeledvehicles_stryker\data\Woodland\icv_des_co.paa'];_unit setObjectTextureGlobal [4,'cup\wheeledvehicles\cup_wheeledvehicles_stryker\data\Woodland\stryker_alfa_des_co.paa'];_unit setObjectTextureGlobal [5,'cup\wheeledvehicles\cup_wheeledvehicles_stryker\data\Woodland\stryker_alfa_des_co.paa'];_unit setObjectTextureGlobal [6,'cup\wheeledvehicles\cup_wheeledvehicles_stryker\data\Woodland\slat_armor_des_co.paa'];_unit setObjectTextureGlobal [7,'cup\wheeledvehicles\cup_wheeledvehicles_stryker\data\Woodland\slat_armor_des_co.paa'];_unit setObjectTextureGlobal [8,'cup\wheeledvehicles\cup_wheeledvehicles_stryker\data\Woodland\default_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "Woodland";
+
+    };
+
+    class B_BNASRArmyWDL_M1126_Stryker_Mk19_01 : CUP_B_M1126_ICV_MK19_Woodland_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M1126 Stryker Mk19";
+        side = 1;
+        faction = "B_NASRArmy_WDL";
+        crew = "B_NASRArmy_Crewman_WDL_01";
+
+        class Turrets : Turrets {
+            class ObsTurret : ObsTurret { gunnerType = "B_NASRArmy_Crewman_WDL_01"; };
+            class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class B_BNASRArmyWDL_M1126_Stryker_MGS_01 : CUP_B_M1128_MGS_Woodland_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M1126 Stryker MGS";
+        side = 1;
+        faction = "B_NASRArmy_WDL";
+        crew = "B_NASRArmy_Crewman_WDL_01";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_NASRArmy_Crewman_WDL_01"; };
+            class CommanderOptics : CommanderOptics { gunnerType = "B_NASRArmy_Crewman_WDL_01"; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class B_BNASRArmyWDL_M2_Bradley_IFV_01 : CUP_B_M2Bradley_USA_W_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M2A2 Bradley IFV";
+        side = 1;
+        faction = "B_NASRArmy_WDL";
+        crew = "B_NASRArmy_Crewman_WDL_01";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_NASRArmy_Crewman_WDL_01"; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'cup\TrackedVehicles\CUP_TrackedVehicles_Bradley\data\base_wdl_co.paa'];_unit setObjectTextureGlobal [1,'cup\TrackedVehicles\CUP_TrackedVehicles_Bradley\data\a3_wdl_co.paa'];_unit setObjectTextureGlobal [2,'cup\TrackedVehicles\CUP_TrackedVehicles_Bradley\data\ultralp_wdl_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "Woodland";
+
+    };
+
+    class B_BNASRArmyWDL_M1A2_Butler_01 : CUP_B_M1A2C_TUSK_II_Woodland_US_Army_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M1A2 Butler";
+        side = 1;
+        faction = "B_NASRArmy_WDL";
+        crew = "B_NASRArmy_Crewman_WDL_01";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_NASRArmy_Crewman_WDL_01"; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\CUP\TrackedVehicles\CUP_TrackedVehicles_M1Abrams\data\camo\US_Woodland\Hull_co.paa'];_unit setObjectTextureGlobal [1,'\CUP\TrackedVehicles\CUP_TrackedVehicles_M1Abrams\data\camo\US_Woodland\M1A2Parts_co.paa'];_unit setObjectTextureGlobal [2,'\CUP\TrackedVehicles\CUP_TrackedVehicles_M1Abrams\data\camo\US_Woodland\Turret_co.paa'];_unit setObjectTextureGlobal [3,'\CUP\TrackedVehicles\CUP_TrackedVehicles_M1Abrams\data\camo\US_Woodland\Wheels_co.paa'];_unit setObjectTextureGlobal [4,'\CUP\TrackedVehicles\CUP_TrackedVehicles_M1Abrams\data\camo\US_Woodland\TUSKkit_co.paa'];_unit setObjectTextureGlobal [5,'\CUP\TrackedVehicles\CUP_TrackedVehicles_M1Abrams\data\camo\US_Woodland\M1A1Parts_co.paa'];_unit setObjectTextureGlobal [6,'\CUP\TrackedVehicles\CUP_TrackedVehicles_M1Abrams\data\camo\US_Woodland\CType_co.paa'];_unit setObjectTextureGlobal [7,'\a3\armor_f\data\camonet_nato_green_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "USWoodland";
 
     };
 
