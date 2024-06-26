@@ -36,7 +36,17 @@ class CfgPatches {
             "B_BNASRArmyWDL_M1126_Stryker_Mk19_01",
             "B_BNASRArmyWDL_M1126_Stryker_MGS_01",
             "B_BNASRArmyWDL_M2_Bradley_IFV_01",
-            "B_BNASRArmyWDL_M1A2_Butler_01"
+            "B_BNASRArmyWDL_M1A2_Butler_01",
+            "B_BNASRArmyWDL_MH_6M_Unarmed_01",
+            "B_BNASRArmyWDL_AH_6M_01",
+            "B_BNASRArmyWDL_UH_60M_Blackbird_Unarmed_01",
+            "B_BNASRArmyWDL_AH_64D_Souix_01",
+            "B_BNASRArmyWDL_UH_60M_Blackbird_MedEvac_01",
+            "B_BNASRArmyWDL_UH_60L_Blackbird_2Pylons_01",
+            "B_BNASRArmyWDL_UH_60L_Blackbird_4Pylons_01",
+            "B_BNASRArmyWDL_UH_60M_Blackhawk_Door_Guns_01",
+            "B_BNASRArmyWDL_CH_47F_Chinook_Cargo_01",
+            "B_BNASRArmyWDL_CH_47F_Chinook_Transport_01"
         };
         weapons[] = {};
         requiredVersion = 1.62;
@@ -212,7 +222,22 @@ class CfgPatches {
             "cwr3_vehicle_t55",
             "cwr3_vehicle_fv101_uk",
             "cwr3_vehicle_fv4030_uk",
-            "cwr3_vehicle_fv4201_uk"
+            "cwr3_vehicle_fv4201_uk",
+            "CUP_AirVehicles_AH6",
+            "ace_compat_cup_vehicles_fastroping",
+            "A3_Air_F",
+            "A3_Air_F_Heli_Light_01",
+            "A3_Air_F_Heli_Light_02",
+            "A3_Air_F_Beta_Heli_Transport_01",
+            "CUP_AirVehicles_412",
+            "cwr3_vehicle_ah6",
+            "mrb_a3_airvisibility",
+            "CUP_AirVehicles_UH60",
+            "RHS_US_A2_AirImport",
+            "ace_compat_rhs_usf3",
+            "A3_Air_F_Beta_Heli_Attack_01",
+            "ace_aircraft",
+            "CUP_AirVehicles_CH47"
         };
         author = "[2LT] O'Neill (He/Him)";
         authors[] = {"[2LT] O'Neill (He/Him)"};
@@ -674,6 +699,123 @@ class CfgVehicles {
         class EventHandlers; 
         class Turrets : Turrets {
             class MainTurret;
+        };
+    };
+
+    class CUP_B_MH6M_OBS_USA;
+    class CUP_B_MH6M_OBS_USA_OCimport_01 : CUP_B_MH6M_OBS_USA { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_B_MH6M_OBS_USA_OCimport_02 : CUP_B_MH6M_OBS_USA_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class CopilotTurret;
+            class CargoTurret_01;
+            class CargoTurret_02;
+            class CargoTurret_03;
+            class CargoTurret_04;
+            class CargoTurret_05;
+            class CargoTurret_06;
+            class CargoTurret_07;
+            class CargoTurret_08;
+        };
+    };
+
+    class CUP_B_AH6M_USA;
+    class CUP_B_AH6M_USA_OCimport_01 : CUP_B_AH6M_USA { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_B_AH6M_USA_OCimport_02 : CUP_B_AH6M_USA_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class CopilotTurret;
+        };
+    };
+
+    class CUP_B_UH60M_Unarmed_US;
+    class CUP_B_UH60M_Unarmed_US_OCimport_01 : CUP_B_UH60M_Unarmed_US { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_B_UH60M_Unarmed_US_OCimport_02 : CUP_B_UH60M_Unarmed_US_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class CopilotTurret;
+            class CargoTurret_01;
+            class CargoTurret_02;
+        };
+    };
+
+    class RHS_AH64D_wd;
+    class RHS_AH64D_wd_OCimport_01 : RHS_AH64D_wd { scope = 0; class EventHandlers; class Turrets; };
+    class RHS_AH64D_wd_OCimport_02 : RHS_AH64D_wd_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+
+    class CUP_B_UH60M_Unarmed_FFV_MEV_US;
+    class CUP_B_UH60M_Unarmed_FFV_MEV_US_OCimport_01 : CUP_B_UH60M_Unarmed_FFV_MEV_US { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_B_UH60M_Unarmed_FFV_MEV_US_OCimport_02 : CUP_B_UH60M_Unarmed_FFV_MEV_US_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class CopilotTurret;
+            class CargoTurret_01;
+            class CargoTurret_02;
+            class CargoTurret_03;
+            class CargoTurret_04;
+            class CargoTurret_05;
+            class CargoTurret_06;
+        };
+    };
+
+    class CUP_B_MH60L_DAP_2x_US;
+    class CUP_B_MH60L_DAP_2x_US_OCimport_01 : CUP_B_MH60L_DAP_2x_US { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_B_MH60L_DAP_2x_US_OCimport_02 : CUP_B_MH60L_DAP_2x_US_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class CopilotTurret;
+            class MainTurret;
+            class RightDoorGun;
+        };
+    };
+
+    class CUP_B_MH60L_DAP_4x_US;
+    class CUP_B_MH60L_DAP_4x_US_OCimport_01 : CUP_B_MH60L_DAP_4x_US { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_B_MH60L_DAP_4x_US_OCimport_02 : CUP_B_MH60L_DAP_4x_US_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class CopilotTurret;
+            class MainTurret;
+            class RightDoorGun;
+        };
+    };
+
+    class CUP_B_UH60M_US;
+    class CUP_B_UH60M_US_OCimport_01 : CUP_B_UH60M_US { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_B_UH60M_US_OCimport_02 : CUP_B_UH60M_US_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class CopilotTurret;
+            class MainTurret;
+            class RightDoorGun;
+        };
+    };
+
+    class CUP_B_CH47F_VIV_USA;
+    class CUP_B_CH47F_VIV_USA_OCimport_01 : CUP_B_CH47F_VIV_USA { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_B_CH47F_VIV_USA_OCimport_02 : CUP_B_CH47F_VIV_USA_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+            class RightDoorGun;
+            class CopilotTurret;
+        };
+    };
+
+    class CUP_B_CH47F_USA;
+    class CUP_B_CH47F_USA_OCimport_01 : CUP_B_CH47F_USA { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_B_CH47F_USA_OCimport_02 : CUP_B_CH47F_USA_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+            class RightDoorGun;
+            class BackDoorGun;
+            class CopilotTurret;
         };
     };
 
@@ -1763,7 +1905,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M1126 Stryker M2";
         side = 1;
-        faction = "B_NASRArmy_WDL";
+        faction = "b_nasrarmy_wdl";
         crew = "B_NASRArmy_Crewman_WDL_01";
 
         class Turrets : Turrets {
@@ -1794,7 +1936,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M1126 Stryker Mk19";
         side = 1;
-        faction = "B_NASRArmy_WDL";
+        faction = "b_nasrarmy_wdl";
         crew = "B_NASRArmy_Crewman_WDL_01";
 
         class Turrets : Turrets {
@@ -1824,7 +1966,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M1126 Stryker MGS";
         side = 1;
-        faction = "B_NASRArmy_WDL";
+        faction = "b_nasrarmy_wdl";
         crew = "B_NASRArmy_Crewman_WDL_01";
 
         class Turrets : Turrets {
@@ -1854,7 +1996,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M2A2 Bradley IFV";
         side = 1;
-        faction = "B_NASRArmy_WDL";
+        faction = "b_nasrarmy_wdl";
         crew = "B_NASRArmy_Crewman_WDL_01";
 
         class Turrets : Turrets {
@@ -1884,7 +2026,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M1A2 Butler";
         side = 1;
-        faction = "B_NASRArmy_WDL";
+        faction = "b_nasrarmy_wdl";
         crew = "B_NASRArmy_Crewman_WDL_01";
 
         class Turrets : Turrets {
@@ -1905,6 +2047,325 @@ class CfgVehicles {
         // custom attributes (do not delete)
         ALiVE_orbatCreator_owned = 1;
         ALiVE_orbatCreator_texture = "USWoodland";
+
+    };
+
+    class B_BNASRArmyWDL_MH_6M_Unarmed_01 : CUP_B_MH6M_OBS_USA_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "MH-6M (Unarmed)";
+        side = 1;
+        faction = "b_nasrarmy_wdl";
+        crew = "B_NASRArmy_Pilot_Helicopter_WDL_01";
+
+        class Turrets : Turrets {
+            class CopilotTurret : CopilotTurret { gunnerType = "B_NASRArmy_Pilot_Helicopter_WDL_01"; };
+            class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
+            class CargoTurret_02 : CargoTurret_02 { gunnerType = ""; };
+            class CargoTurret_03 : CargoTurret_03 { gunnerType = ""; };
+            class CargoTurret_04 : CargoTurret_04 { gunnerType = ""; };
+            class CargoTurret_05 : CargoTurret_05 { gunnerType = ""; };
+            class CargoTurret_06 : CargoTurret_06 { gunnerType = ""; };
+            class CargoTurret_07 : CargoTurret_07 { gunnerType = ""; };
+            class CargoTurret_08 : CargoTurret_08 { gunnerType = ""; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class B_BNASRArmyWDL_AH_6M_01 : CUP_B_AH6M_USA_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "AH-6M";
+        side = 1;
+        faction = "b_nasrarmy_wdl";
+        crew = "B_NASRArmy_Pilot_Helicopter_WDL_01";
+
+        class Turrets : Turrets {
+            class CopilotTurret : CopilotTurret { gunnerType = "B_NASRArmy_Pilot_Helicopter_WDL_01"; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class B_BNASRArmyWDL_UH_60M_Blackbird_Unarmed_01 : CUP_B_UH60M_Unarmed_US_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "UH-60M Blackbird (Unarmed)";
+        side = 1;
+        faction = "b_nasrarmy_wdl";
+        crew = "B_NASRArmy_Pilot_Helicopter_WDL_01";
+
+        class Turrets : Turrets {
+            class CopilotTurret : CopilotTurret { gunnerType = "B_NASRArmy_Pilot_Helicopter_WDL_01"; };
+            class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
+            class CargoTurret_02 : CargoTurret_02 { gunnerType = ""; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'cup\airvehicles\cup_airvehicles_uh60\data\uh60m_fuselage_co.paa'];_unit setObjectTextureGlobal [1,'cup\airvehicles\cup_airvehicles_uh60\data\uh60m_engine_co.paa'];_unit setObjectTextureGlobal [2,'cup\airvehicles\cup_airvehicles_uh60\data\default_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "Black";
+
+    };
+
+    class B_BNASRArmyWDL_AH_64D_Souix_01 : RHS_AH64D_wd_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "AH-64D Souix";
+        side = 1;
+        faction = "b_nasrarmy_wdl";
+        crew = "B_NASRArmy_Pilot_Helicopter_WDL_01";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_NASRArmy_Pilot_Helicopter_WDL_01"; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\rhsusf\addons\rhsusf_a2port_air\ah64\data\ah64d_body_co.paa'];_unit setObjectTextureGlobal [1,'\rhsusf\addons\rhsusf_a2port_air\ah64\data\ah64d_details_co.paa'];_unit setObjectTextureGlobal [2,'\rhsusf\addons\rhsusf_a2port_air\ah64\data\ah64d_alfa_ca.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "standard";
+
+    };
+
+    class B_BNASRArmyWDL_UH_60M_Blackbird_MedEvac_01 : CUP_B_UH60M_Unarmed_FFV_MEV_US_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "UH-60M Blackbird (MedEvac)";
+        side = 1;
+        faction = "b_nasrarmy_wdl";
+        crew = "B_NASRArmy_Pilot_Helicopter_WDL_01";
+
+        class Turrets : Turrets {
+            class CopilotTurret : CopilotTurret { gunnerType = "B_NASRArmy_Pilot_Helicopter_WDL_01"; };
+            class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
+            class CargoTurret_02 : CargoTurret_02 { gunnerType = ""; };
+            class CargoTurret_03 : CargoTurret_03 { gunnerType = ""; };
+            class CargoTurret_04 : CargoTurret_04 { gunnerType = ""; };
+            class CargoTurret_05 : CargoTurret_05 { gunnerType = "B_NASRArmy_Corpsman_WDL_01"; };
+            class CargoTurret_06 : CargoTurret_06 { gunnerType = "B_NASRArmy_Corpsman_WDL_01"; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class B_BNASRArmyWDL_UH_60L_Blackbird_2Pylons_01 : CUP_B_MH60L_DAP_2x_US_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "UH-60L Blackbird (2 Pylons)";
+        side = 1;
+        faction = "b_nasrarmy_wdl";
+        crew = "B_NASRArmy_Pilot_Helicopter_WDL_01";
+
+        class Turrets : Turrets {
+            class CopilotTurret : CopilotTurret { gunnerType = "B_NASRArmy_Pilot_Helicopter_WDL_01"; };
+            class MainTurret : MainTurret { gunnerType = "B_NASRArmy_Crewman_WDL_01"; };
+            class RightDoorGun : RightDoorGun { gunnerType = "B_NASRArmy_Crewman_WDL_01"; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class B_BNASRArmyWDL_UH_60L_Blackbird_4Pylons_01 : CUP_B_MH60L_DAP_4x_US_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "UH-60L Blackbird (4 Pylons)";
+        side = 1;
+        faction = "b_nasrarmy_wdl";
+        crew = "B_NASRArmy_Pilot_Helicopter_WDL_01";
+
+        class Turrets : Turrets {
+            class CopilotTurret : CopilotTurret { gunnerType = "B_NASRArmy_Pilot_Helicopter_WDL_01"; };
+            class MainTurret : MainTurret { gunnerType = "B_NASRArmy_Crewman_WDL_01"; };
+            class RightDoorGun : RightDoorGun { gunnerType = "B_NASRArmy_Crewman_WDL_01"; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class B_BNASRArmyWDL_UH_60M_Blackhawk_Door_Guns_01 : CUP_B_UH60M_US_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "UH-60M Blackhawk (Door Guns)";
+        side = 1;
+        faction = "b_nasrarmy_wdl";
+        crew = "B_NASRArmy_Pilot_Helicopter_WDL_01";
+
+        class Turrets : Turrets {
+            class CopilotTurret : CopilotTurret { gunnerType = "B_NASRArmy_Pilot_Helicopter_WDL_01"; };
+            class MainTurret : MainTurret { gunnerType = "B_NASRArmy_Crewman_WDL_01"; };
+            class RightDoorGun : RightDoorGun { gunnerType = "B_NASRArmy_Crewman_WDL_01"; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class B_BNASRArmyWDL_CH_47F_Chinook_Cargo_01 : CUP_B_CH47F_VIV_USA_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "CH-47F Chinook (Cargo)";
+        side = 1;
+        faction = "b_nasrarmy_wdl";
+        crew = "B_NASRArmy_Pilot_Helicopter_WDL_01";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_NASRArmy_Crewman_WDL_01"; };
+            class RightDoorGun : RightDoorGun { gunnerType = "B_NASRArmy_Crewman_WDL_01"; };
+            class CopilotTurret : CopilotTurret { gunnerType = "B_NASRArmy_Pilot_Helicopter_WDL_01"; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class B_BNASRArmyWDL_CH_47F_Chinook_Transport_01 : CUP_B_CH47F_USA_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "CH-47F Chinook (Transport)";
+        side = 1;
+        faction = "B_NASRArmy_WDL";
+        crew = "B_NASRArmy_Pilot_Helicopter_WDL_01";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_NASRArmy_Crewman_WDL_01"; };
+            class RightDoorGun : RightDoorGun { gunnerType = "B_NASRArmy_Crewman_WDL_01"; };
+            class BackDoorGun : BackDoorGun { gunnerType = "B_NASRArmy_Crewman_WDL_01"; };
+            class CopilotTurret : CopilotTurret { gunnerType = "B_NASRArmy_Pilot_Helicopter_WDL_01"; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
 
     };
 
