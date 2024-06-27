@@ -298,8 +298,8 @@ class CfgPatches {
             "ace_compat_rhs_usf3_csw",
             "ace_artillerytables"
         };
-        author = "[2LT] O'Neill (He/Him)";
-        authors[] = {"[2LT] O'Neill (He/Him)"};
+        author = "wlan0";
+        authors[] = {"wlan0"};
         addonRootClass = "NASR_Factions";
     };
 };
@@ -1233,7 +1233,8 @@ class CfgVehicles {
 
 
     class B_NASRArmy_Rifleman_WDL_01 : O_Soldier_F_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_NASRArmy_Rifleman_WDL_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Rifleman";
@@ -1274,7 +1275,8 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Rifleman_M136_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_NASRArmy_Rifleman_M136_WDL_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Rifleman (M136)";
@@ -1315,7 +1317,8 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Grenadier_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_NASRArmy_Grenadier_WDL_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Grenadier";
@@ -1356,7 +1359,8 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Machine_Gunner_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_NASRArmy_Machine_Gunner_WDL_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Machine Gunner";
@@ -1397,7 +1401,8 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Ammo_Bearer_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_NASRArmy_Ammo_Bearer_WDL_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Ammo Bearer";
@@ -1438,7 +1443,8 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Marksman_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_NASRArmy_Marksman_WDL_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Marksman";
@@ -1479,7 +1485,8 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_RATELO_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_NASRArmy_RATELO_WDL_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "RATELO";
@@ -1520,7 +1527,8 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Corpsman_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_NASRArmy_Corpsman_WDL_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Corpsman";
@@ -1561,7 +1569,8 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Rifleman_AT_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_NASRArmy_Rifleman_AT_WDL_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Rifleman (AT)";
@@ -1602,7 +1611,8 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Rifleman_AA_WDL_01 : B_NASRArmy_Rifleman_AT_WDL_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_NASRArmy_Rifleman_AA_WDL_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Rifleman (AA)";
@@ -1643,7 +1653,8 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Team_Leader_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_NASRArmy_Team_Leader_WDL_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Team Leader";
@@ -1684,7 +1695,8 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Squad_Leader_WDL_01 : B_NASRArmy_Team_Leader_WDL_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_NASRArmy_Squad_Leader_WDL_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Squad Leader";
@@ -1725,7 +1737,8 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Crewman_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_NASRArmy_Crewman_WDL_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Crewman";
@@ -1766,7 +1779,8 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Pilot_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_NASRArmy_Pilot_WDL_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Pilot";
@@ -1807,7 +1821,8 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Pilot_Helicopter_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_NASRArmy_Pilot_Helicopter_WDL_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Pilot (Helicopter)";
@@ -1846,7 +1861,8 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Officer_WDL_01 : B_NASRArmy_Squad_Leader_WDL_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_NASRArmy_Officer_WDL_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Officer";
@@ -1887,7 +1903,8 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Sniper_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_NASRArmy_Sniper_WDL_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Sniper";
@@ -1928,7 +1945,8 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Spotter_WDL_01 : B_NASRArmy_Sniper_WDL_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_NASRArmy_Spotter_WDL_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Spotter";
@@ -1969,7 +1987,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M1151_HMMWV_Unarmed_01 : cwr3_b_hmmwv_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M1151_HMMWV_Unarmed_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M1151 HMMWV Unarmed";
@@ -1994,7 +2013,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M1151_HMMWV_M2_01 : cwr3_b_hmmwv_m2_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M1151_HMMWV_M2_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M1151 HMMWV M2";
@@ -2025,7 +2045,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M1151_HMMWV_Mk19_01 : cwr3_b_hmmwv_mk19_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M1151_HMMWV_Mk19_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M1151 HMMWV Mk19";
@@ -2056,7 +2077,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M1151_HMMWV_TOW_01 : cwr3_b_hmmwv_tow_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M1151_HMMWV_TOW_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M1151 HMMWV TOW";
@@ -2087,7 +2109,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M1151_HMMWV_MedEvac_01 : cwr3_b_hmmwv_mev_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M1151_HMMWV_MedEvac_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M1151 HMMWV MedEvac";
@@ -2112,7 +2135,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M1151_HMMWV_Transport_01 : cwr3_b_hmmwv_transport_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M1151_HMMWV_Transport_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M1151 HMMWV Transport";
@@ -2137,7 +2161,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M939_Covered_01 : cwr3_b_m939_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M939_Covered_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M939 Covered";
@@ -2162,7 +2187,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M939_Open_01 : cwr3_b_m939_open_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M939_Open_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M939 Open";
@@ -2187,7 +2213,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M939_Ammo_01 : cwr3_b_m939_reammo_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M939_Ammo_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M939 Ammo";
@@ -2212,7 +2239,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M939_Fuel_01 : cwr3_b_m939_refuel_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M939_Fuel_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M939 Fuel";
@@ -2237,7 +2265,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M939_Repair_01 : cwr3_b_m939_repair_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M939_Repair_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M939 Repair";
@@ -2262,7 +2291,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M939_Cargo_01 : cwr3_b_m939_empty_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M939_Cargo_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M939 Cargo";
@@ -2287,7 +2317,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M939_MedEvac_01 : cwr3_b_m939_mev_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M939_MedEvac_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M939 MedEvac";
@@ -2312,7 +2343,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M1126_Stryker_M2_01 : CUP_B_M1126_ICV_M2_Woodland_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M1126_Stryker_M2_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M1126 Stryker M2";
@@ -2343,7 +2375,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M1126_Stryker_Mk19_01 : CUP_B_M1126_ICV_MK19_Woodland_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M1126_Stryker_Mk19_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M1126 Stryker Mk19";
@@ -2373,7 +2406,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M1126_Stryker_MGS_01 : CUP_B_M1128_MGS_Woodland_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M1126_Stryker_MGS_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M1126 Stryker MGS";
@@ -2403,7 +2437,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M2_Bradley_IFV_01 : CUP_B_M2Bradley_USA_W_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M2_Bradley_IFV_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M2A2 Bradley IFV";
@@ -2433,7 +2468,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M1A2_Butler_01 : CUP_B_M1A2C_TUSK_II_Woodland_US_Army_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M1A2_Butler_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M1A2 Butler";
@@ -2463,7 +2499,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_MH_6M_Unarmed_01 : CUP_B_MH6M_OBS_USA_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_MH_6M_Unarmed_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "MH-6M (Unarmed)";
@@ -2500,7 +2537,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_AH_6M_01 : CUP_B_AH6M_USA_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_AH_6M_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "AH-6M";
@@ -2529,7 +2567,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_UH_60M_Blackbird_Unarmed_01 : CUP_B_UH60M_Unarmed_US_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_UH_60M_Blackbird_Unarmed_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "UH-60M Blackbird (Unarmed)";
@@ -2561,7 +2600,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_AH_64D_Souix_01 : RHS_AH64D_wd_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_AH_64D_Souix_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "AH-64D Souix";
@@ -2591,7 +2631,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_UH_60M_Blackbird_MedEvac_01 : CUP_B_UH60M_Unarmed_FFV_MEV_US_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_UH_60M_Blackbird_MedEvac_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "UH-60M Blackbird (MedEvac)";
@@ -2626,7 +2667,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_UH_60L_Blackbird_2Pylons_01 : CUP_B_MH60L_DAP_2x_US_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_UH_60L_Blackbird_2Pylons_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "UH-60L Blackbird (2 Pylons)";
@@ -2657,7 +2699,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_UH_60L_Blackbird_4Pylons_01 : CUP_B_MH60L_DAP_4x_US_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_UH_60L_Blackbird_4Pylons_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "UH-60L Blackbird (4 Pylons)";
@@ -2688,7 +2731,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_UH_60M_Blackhawk_Door_Guns_01 : CUP_B_UH60M_US_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_UH_60M_Blackhawk_Door_Guns_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "UH-60M Blackhawk (Door Guns)";
@@ -2719,7 +2763,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_CH_47F_Chinook_Cargo_01 : CUP_B_CH47F_VIV_USA_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_CH_47F_Chinook_Cargo_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "CH-47F Chinook (Cargo)";
@@ -2750,7 +2795,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_CH_47F_Chinook_Transport_01 : CUP_B_CH47F_USA_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_CH_47F_Chinook_Transport_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "CH-47F Chinook (Transport)";
@@ -2782,7 +2828,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_A10A_Thunderbolt_II_01 : CUP_B_A10_DYN_USA_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_A10A_Thunderbolt_II_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "A-10A Thunderbolt II";
@@ -2807,7 +2854,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_F4E_01 : cwr3_b_f4e_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_F4E_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "F-4E";
@@ -2837,7 +2885,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_F16C_01 : cwr3_b_f16c_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_F16C_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "F-16C";
@@ -2862,7 +2911,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_C130E_Transport_01 : cwr3_b_c130_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_C130E_Transport_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "C-130E Transport";
@@ -2892,7 +2942,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_C130E_Cargo_01 : cwr3_b_c130_cargo_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_C130E_Cargo_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "C-130E Cargo";
@@ -2922,7 +2973,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_F18_Multirole_01 : rhssaf_airforce_l_18_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_F18_Multirole_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "F-18 Multirole";
@@ -2947,7 +2999,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_F18_CAP_01 : rhssaf_airforce_l_18_101_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_F18_CAP_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "F-18 CAP";
@@ -2972,7 +3025,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_Delta_Force_Team_Leader_01 : CUP_B_US_SpecOps_TL_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_Delta_Force_Team_Leader_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Delta Force Team Leader";
@@ -3013,7 +3067,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_Delta_Force_Rifleman_01 : B_BNASRArmyWDL_Delta_Force_Team_Leader_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_Delta_Force_Rifleman_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Delta Force Rifleman";
@@ -3054,7 +3109,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_Delta_Force_Machine_Gunner_01 : B_BNASRArmyWDL_Delta_Force_Rifleman_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_Delta_Force_Machine_Gunner_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Delta Force Machine Gunner";
@@ -3095,7 +3151,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_Delta_Force_Grenadier_01 : B_BNASRArmyWDL_Delta_Force_Rifleman_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_Delta_Force_Grenadier_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Delta Force Grenadier";
@@ -3136,7 +3193,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_Delta_Force_Marksman_01 : B_BNASRArmyWDL_Delta_Force_Rifleman_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_Delta_Force_Marksman_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Delta Force Marksman";
@@ -3177,7 +3235,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_Delta_Force_Operator_01 : B_BNASRArmyWDL_Delta_Force_Rifleman_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_Delta_Force_Operator_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Delta Force Operator";
@@ -3218,7 +3277,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M270_MLRS_HE_01 : CUP_B_M270_HE_USA_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M270_MLRS_HE_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M270 MLRS (HE)";
@@ -3248,7 +3308,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M270_MLRS_DPICM_01 : CUP_B_M270_DPICM_USA_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M270_MLRS_DPICM_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M270 MLRS (DPICM)";
@@ -3278,7 +3339,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M119_01 : cwr3_b_m119_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M119_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M119";
@@ -3307,7 +3369,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M109A6_01 : rhsusf_m109_usarmy_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M109A6_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M109A6";
@@ -3336,7 +3399,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M252_01 : RHS_M252_WD_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M252_01.jpg";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M252";
