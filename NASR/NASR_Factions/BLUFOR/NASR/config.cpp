@@ -53,7 +53,18 @@ class CfgPatches {
             "B_BNASRArmyWDL_C130E_Transport_01",
             "B_BNASRArmyWDL_C130E_Cargo_01",
             "B_BNASRArmyWDL_F18_Multirole_01",
-            "B_BNASRArmyWDL_F18_CAP_01"
+            "B_BNASRArmyWDL_F18_CAP_01",
+            "B_BNASRArmyWDL_Delta_Force_Team_Leader_01",
+            "B_BNASRArmyWDL_Delta_Force_Rifleman_01",
+            "B_BNASRArmyWDL_Delta_Force_Machine_Gunner_01",
+            "B_BNASRArmyWDL_Delta_Force_Grenadier_01",
+            "B_BNASRArmyWDL_Delta_Force_Marksman_01",
+            "B_BNASRArmyWDL_Delta_Force_Operator_01",
+            "B_BNASRArmyWDL_M270_MLRS_HE_01",
+            "B_BNASRArmyWDL_M270_MLRS_DPICM_01",
+            "B_BNASRArmyWDL_M119_01",
+            "B_BNASRArmyWDL_M109A6_01",
+            "B_BNASRArmyWDL_M252_01"
         };
         weapons[] = {};
         requiredVersion = 1.62;
@@ -271,10 +282,25 @@ class CfgPatches {
             "cwr3_vehicle_an2",
             "CUP_AirVehicles_AmbientPlanes",
             "cwr3_vehicle_f4",
-            "cwr3_vehicle_c130"
+            "cwr3_vehicle_c130",
+            "rhsusf_c_troops",
+            "cwr3_static_weapons",
+            "CUP_Weapons_StaticWeapons",
+            "ace_compat_cup_weapons_csw",
+            "A3_Static_F",
+            "A3_Static_F_AA_01",
+            "A3_Static_F_AT_01",
+            "CUP_WarfareBuildings",
+            "ace_dragging",
+            "rhs_c_heavyweapons",
+            "rhsusf_c_statics",
+            "ace_hunterkiller",
+            "ace_compat_rhs_usf3_csw",
+            "ace_artillerytables"
         };
         author = "[2LT] O'Neill (He/Him)";
         authors[] = {"[2LT] O'Neill (He/Him)"};
+        addonRootClass = "NASR_Factions";
     };
 };
 
@@ -560,6 +586,126 @@ class CfgGroups {
             class SpecOps {
                 name = "SpecOps";
 
+                class b_bnasrarmywdl_specops_delta_force {
+                    name = "Delta Force";
+                    side = 1;
+                    faction = "B_NASRArmy_WDL";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_recon.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "CAPTAIN";
+                        side = 1;
+                        vehicle = "B_BNASRArmyWDL_Delta_Force_Team_Leader_01";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "LIEUTENANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmyWDL_Delta_Force_Rifleman_01";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmyWDL_Delta_Force_Rifleman_01";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmyWDL_Delta_Force_Machine_Gunner_01";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmyWDL_Delta_Force_Grenadier_01";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmyWDL_Delta_Force_Marksman_01";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmyWDL_Delta_Force_Operator_01";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmyWDL_Delta_Force_Operator_01";
+                    };
+                };
+
+                class b_bnasrarmywdl_specops_delta_force_air_insertion {
+                    name = "Delta Force (Air Insertion)";
+                    side = 1;
+                    faction = "B_NASRArmy_WDL";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_recon.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "CAPTAIN";
+                        side = 1;
+                        vehicle = "B_BNASRArmyWDL_Delta_Force_Team_Leader_01";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "LIEUTENANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmyWDL_Delta_Force_Rifleman_01";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmyWDL_Delta_Force_Rifleman_01";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmyWDL_Delta_Force_Machine_Gunner_01";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmyWDL_Delta_Force_Grenadier_01";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmyWDL_Delta_Force_Marksman_01";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmyWDL_Delta_Force_Operator_01";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmyWDL_Delta_Force_Operator_01";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "LIEUTENANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmyWDL_UH_60M_Blackhawk_Door_Guns_01";
+                    };
+                };
+
             };
 
             class Motorized {
@@ -584,6 +730,147 @@ class CfgGroups {
 
             class Armored {
                 name = "Armored";
+
+                class b_bnasrarmywdl_armored_tank_section {
+                    name = "Tank Section";
+                    side = 1;
+                    faction = "B_NASRArmy_WDL";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_armor.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmyWDL_M1A2_Butler_01";
+                    };
+                    class Unit1 {
+                        position[] = {9,-15,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmyWDL_M1A2_Butler_01";
+                    };
+                };
+
+                class b_bnasrarmywdl_armored_tank_platoon {
+                    name = "Tank Platoon";
+                    side = 1;
+                    faction = "B_NASRArmy_WDL";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_armor.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmyWDL_M1A2_Butler_01";
+                    };
+                    class Unit1 {
+                        position[] = {9,-15,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmyWDL_M1A2_Butler_01";
+                    };
+                    class Unit2 {
+                        position[] = {-9,-15,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmyWDL_M1A2_Butler_01";
+                    };
+                    class Unit3 {
+                        position[] = {18,-24,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmyWDL_M1A2_Butler_01";
+                    };
+                };
+
+                class b_bnasrarmywdl_armored_ifv_section {
+                    name = "IFV Section";
+                    side = 1;
+                    faction = "B_NASRArmy_WDL";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_armor.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmyWDL_M2_Bradley_IFV_01";
+                    };
+                    class Unit1 {
+                        position[] = {9,-14,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmyWDL_M2_Bradley_IFV_01";
+                    };
+                };
+
+                class b_bnasrarmywdl_armored_ifv_platoon {
+                    name = "IFV Platoon";
+                    side = 1;
+                    faction = "B_NASRArmy_WDL";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_armor.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmyWDL_M2_Bradley_IFV_01";
+                    };
+                    class Unit1 {
+                        position[] = {9,-14,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmyWDL_M2_Bradley_IFV_01";
+                    };
+                    class Unit2 {
+                        position[] = {-9,-14,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmyWDL_M2_Bradley_IFV_01";
+                    };
+                    class Unit3 {
+                        position[] = {18,-23,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmyWDL_M2_Bradley_IFV_01";
+                    };
+                };
+
+                class b_bnasrarmywdl_armored_mixed_platoon {
+                    name = "Mixed Platoon";
+                    side = 1;
+                    faction = "B_NASRArmy_WDL";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_armor.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmyWDL_M2_Bradley_IFV_01";
+                    };
+                    class Unit1 {
+                        position[] = {9,-14,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmyWDL_M2_Bradley_IFV_01";
+                    };
+                    class Unit2 {
+                        position[] = {-9,-14,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmyWDL_M1A2_Butler_01";
+                    };
+                    class Unit3 {
+                        position[] = {18,-24,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmyWDL_M1A2_Butler_01";
+                    };
+                };
 
             };
 
@@ -894,6 +1181,55 @@ class CfgVehicles {
     class rhssaf_airforce_l_18_101;
     class rhssaf_airforce_l_18_101_OCimport_01 : rhssaf_airforce_l_18_101 { scope = 0; class EventHandlers; };
     class rhssaf_airforce_l_18_101_OCimport_02 : rhssaf_airforce_l_18_101_OCimport_01 { scope = 0; class EventHandlers; };
+
+    class CUP_B_US_SpecOps_TL;
+    class CUP_B_US_SpecOps_TL_OCimport_01 : CUP_B_US_SpecOps_TL { scope = 0; class EventHandlers; };
+    class CUP_B_US_SpecOps_TL_OCimport_02 : CUP_B_US_SpecOps_TL_OCimport_01 { class EventHandlers; };
+
+    class CUP_B_M270_HE_USA;
+    class CUP_B_M270_HE_USA_OCimport_01 : CUP_B_M270_HE_USA { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_B_M270_HE_USA_OCimport_02 : CUP_B_M270_HE_USA_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+
+    class CUP_B_M270_DPICM_USA;
+    class CUP_B_M270_DPICM_USA_OCimport_01 : CUP_B_M270_DPICM_USA { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_B_M270_DPICM_USA_OCimport_02 : CUP_B_M270_DPICM_USA_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+
+    class cwr3_b_m119;
+    class cwr3_b_m119_OCimport_01 : cwr3_b_m119 { scope = 0; class EventHandlers; class Turrets; };
+    class cwr3_b_m119_OCimport_02 : cwr3_b_m119_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+
+    class rhsusf_m109_usarmy;
+    class rhsusf_m109_usarmy_OCimport_01 : rhsusf_m109_usarmy { scope = 0; class EventHandlers; class Turrets; };
+    class rhsusf_m109_usarmy_OCimport_02 : rhsusf_m109_usarmy_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+
+    class RHS_M252_WD;
+    class RHS_M252_WD_OCimport_01 : RHS_M252_WD { scope = 0; class EventHandlers; class Turrets; };
+    class RHS_M252_WD_OCimport_02 : RHS_M252_WD_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
 
 
     class B_NASRArmy_Rifleman_WDL_01 : O_Soldier_F_OCimport_02 {
@@ -2451,7 +2787,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "A-10A Thunderbolt II";
         side = 1;
-        faction = "B_NASRArmy_WDL";
+        faction = "b_nasrarmy_wdl";
         crew = "B_NASRArmy_Pilot_WDL_01";
 
 
@@ -2476,7 +2812,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "F-4E";
         side = 1;
-        faction = "B_NASRArmy_WDL";
+        faction = "b_nasrarmy_wdl";
         crew = "B_NASRArmy_Pilot_WDL_01";
 
         class Turrets : Turrets {
@@ -2506,7 +2842,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "F-16C";
         side = 1;
-        faction = "B_NASRArmy_WDL";
+        faction = "b_nasrarmy_wdl";
         crew = "B_NASRArmy_Pilot_WDL_01";
 
 
@@ -2531,7 +2867,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "C-130E Transport";
         side = 1;
-        faction = "B_NASRArmy_WDL";
+        faction = "b_nasrarmy_wdl";
         crew = "B_NASRArmy_Pilot_WDL_01";
 
         class Turrets : Turrets {
@@ -2561,7 +2897,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "C-130E Cargo";
         side = 1;
-        faction = "B_NASRArmy_WDL";
+        faction = "b_nasrarmy_wdl";
         crew = "B_NASRArmy_Pilot_WDL_01";
 
         class Turrets : Turrets {
@@ -2591,7 +2927,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "F-18 Multirole";
         side = 1;
-        faction = "B_NASRArmy_WDL";
+        faction = "b_nasrarmy_wdl";
         crew = "B_NASRArmy_Pilot_WDL_01";
 
 
@@ -2616,7 +2952,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "F-18 CAP";
         side = 1;
-        faction = "B_NASRArmy_WDL";
+        faction = "b_nasrarmy_wdl";
         crew = "B_NASRArmy_Pilot_WDL_01";
 
 
@@ -2632,6 +2968,399 @@ class CfgVehicles {
         // custom attributes (do not delete)
         ALiVE_orbatCreator_owned = 1;
         ALiVE_orbatCreator_texture = "LightGray";
+
+    };
+
+    class B_BNASRArmyWDL_Delta_Force_Team_Leader_01 : CUP_B_US_SpecOps_TL_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Delta Force Team Leader";
+        side = 1;
+        faction = "b_nasrarmy_wdl";
+
+        identityTypes[] = {"Head_NATO","LanguageENG_F","CUP_G_ARMY"};
+
+        uniformClass = "CUP_U_CRYE_G3C_M81";
+
+        linkedItems[] = {"CUP_V_PMC_CIRAS_Black_TL","CUP_H_Ger_Beret_TankCommander_Blk","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+        respawnlinkedItems[] = {"CUP_V_PMC_CIRAS_Black_TL","CUP_H_Ger_Beret_TankCommander_Blk","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+
+        weapons[] = {"CUP_CZ_BREN2_556_8","CUP_hgun_M9_snds","CUP_SOFLAM"};
+        respawnWeapons[] = {"CUP_CZ_BREN2_556_8","CUP_hgun_M9_snds","CUP_SOFLAM"};
+
+        magazines[] = {"CUP_30Rnd_556x45_Stanag","CUP_15Rnd_9x19_M9","Laserbatteries","CUP_30Rnd_556x45_Stanag","CUP_15Rnd_9x19_M9","Laserbatteries"};
+        respawnMagazines[] = {"CUP_30Rnd_556x45_Stanag","CUP_15Rnd_9x19_M9","Laserbatteries","CUP_30Rnd_556x45_Stanag","CUP_15Rnd_9x19_M9","Laserbatteries"};
+
+        backpack = "B_AssaultPack_blk";
+
+        ALiVE_orbatCreator_loadout[] = {{"CUP_CZ_BREN2_556_8","CUP_muzzle_snds_G36_black","rhsusf_acc_anpeq15_bk_top","CUP_optic_AIMM_MICROT1_BLK",{"CUP_30Rnd_556x45_Stanag",30},{},""},{},{"CUP_hgun_M9_snds","CUP_muzzle_snds_M9","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"CUP_U_CRYE_G3C_M81",{{"CUP_NVG_1PN138",1},{"CUP_30Rnd_556x45_Stanag",3,30}}},{"CUP_V_PMC_CIRAS_Black_TL",{{"CUP_NVG_PVS15_Hide",1},{"NVGoggles_OPFOR",1},{"CUP_HandGrenade_M67",1,1},{"B_IR_Grenade",1,1},{"SmokeShellRed",1,1},{"CUP_15Rnd_9x19_M9",1,15}}},{"B_AssaultPack_blk",{{"CUP_20Rnd_762x51_B_SCAR",2,20},{"CUP_PipeBomb_M",1,1},{"CUP_HandGrenade_M67",1,1}}},"CUP_H_Ger_Beret_TankCommander_Blk","",{"CUP_SOFLAM","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'NASR_Insignia_NASR_Subdued_Woodland'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_insignia = "NASR_Insignia_NASR_Subdued_Woodland";
+
+    };
+
+    class B_BNASRArmyWDL_Delta_Force_Rifleman_01 : B_BNASRArmyWDL_Delta_Force_Team_Leader_01 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Delta Force Rifleman";
+        side = 1;
+        faction = "b_nasrarmy_wdl";
+
+        identityTypes[] = {"Head_NATO","LanguageENG_F","CUP_G_ARMY"};
+
+        uniformClass = "CUP_U_CRYE_G3C_M81";
+
+        linkedItems[] = {"CUP_V_PMC_CIRAS_Black_Patrol","rhsusf_opscore_bk_pelt","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","NVGoggles_OPFOR"};
+        respawnlinkedItems[] = {"CUP_V_PMC_CIRAS_Black_Patrol","rhsusf_opscore_bk_pelt","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","NVGoggles_OPFOR"};
+
+        weapons[] = {"CUP_CZ_BREN2_556_8","CUP_hgun_M9_snds","CUP_SOFLAM"};
+        respawnWeapons[] = {"CUP_CZ_BREN2_556_8","CUP_hgun_M9_snds","CUP_SOFLAM"};
+
+        magazines[] = {"CUP_30Rnd_556x45_Stanag","CUP_15Rnd_9x19_M9","Laserbatteries","CUP_30Rnd_556x45_Stanag","CUP_15Rnd_9x19_M9","Laserbatteries"};
+        respawnMagazines[] = {"CUP_30Rnd_556x45_Stanag","CUP_15Rnd_9x19_M9","Laserbatteries","CUP_30Rnd_556x45_Stanag","CUP_15Rnd_9x19_M9","Laserbatteries"};
+
+        backpack = "B_AssaultPack_blk";
+
+        ALiVE_orbatCreator_loadout[] = {{"CUP_CZ_BREN2_556_8","CUP_muzzle_snds_G36_black","rhsusf_acc_anpeq15_bk_top","CUP_optic_AIMM_MICROT1_BLK",{"CUP_30Rnd_556x45_Stanag",30},{},""},{},{"CUP_hgun_M9_snds","CUP_muzzle_snds_M9","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"CUP_U_CRYE_G3C_M81",{{"CUP_NVG_1PN138",1},{"CUP_30Rnd_556x45_Stanag",3,30}}},{"CUP_V_PMC_CIRAS_Black_Patrol",{{"CUP_NVG_PVS15_Hide",1},{"NVGoggles_OPFOR",3},{"CUP_HandGrenade_M67",1,1},{"B_IR_Grenade",1,1},{"SmokeShellRed",1,1},{"CUP_15Rnd_9x19_M9",1,15}}},{"B_AssaultPack_blk",{{"CUP_20Rnd_762x51_B_SCAR",2,20},{"CUP_PipeBomb_M",1,1},{"CUP_HandGrenade_M67",1,1}}},"rhsusf_opscore_bk_pelt","CUP_G_Shades_Black",{"CUP_SOFLAM","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","NVGoggles_OPFOR"}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'NASR_Insignia_NASR_Subdued_Woodland'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_insignia = "NASR_Insignia_NASR_Subdued_Woodland";
+
+    };
+
+    class B_BNASRArmyWDL_Delta_Force_Machine_Gunner_01 : B_BNASRArmyWDL_Delta_Force_Rifleman_01 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Delta Force Machine Gunner";
+        side = 1;
+        faction = "b_nasrarmy_wdl";
+
+        identityTypes[] = {"Head_NATO","LanguageENG_F","CUP_G_ARMY"};
+
+        uniformClass = "CUP_U_CRYE_G3C_M81_RGR";
+
+        linkedItems[] = {"CUP_V_PMC_CIRAS_Black_Patrol","rhsusf_opscore_bk_pelt","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","NVGoggles_OPFOR"};
+        respawnlinkedItems[] = {"CUP_V_PMC_CIRAS_Black_Patrol","rhsusf_opscore_bk_pelt","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","NVGoggles_OPFOR"};
+
+        weapons[] = {"CUP_lmg_minimipara","CUP_hgun_M9_snds","CUP_SOFLAM"};
+        respawnWeapons[] = {"CUP_lmg_minimipara","CUP_hgun_M9_snds","CUP_SOFLAM"};
+
+        magazines[] = {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249","CUP_15Rnd_9x19_M9","Laserbatteries","CUP_200Rnd_TE4_Red_Tracer_556x45_M249","CUP_15Rnd_9x19_M9","Laserbatteries"};
+        respawnMagazines[] = {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249","CUP_15Rnd_9x19_M9","Laserbatteries","CUP_200Rnd_TE4_Red_Tracer_556x45_M249","CUP_15Rnd_9x19_M9","Laserbatteries"};
+
+        backpack = "B_AssaultPack_blk";
+
+        ALiVE_orbatCreator_loadout[] = {{"CUP_lmg_minimipara","CUP_muzzle_snds_G36_black","","",{"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",200},{},""},{},{"CUP_hgun_M9_snds","CUP_muzzle_snds_M9","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"CUP_U_CRYE_G3C_M81_RGR",{{"CUP_NVG_1PN138",1}}},{"CUP_V_PMC_CIRAS_Black_Patrol",{{"CUP_NVG_PVS15_Hide",1},{"NVGoggles_OPFOR",3},{"CUP_HandGrenade_M67",1,1},{"B_IR_Grenade",1,1},{"SmokeShellRed",1,1},{"CUP_15Rnd_9x19_M9",1,15}}},{"B_AssaultPack_blk",{{"NVGoggles_OPFOR",1},{"CUP_20Rnd_762x51_B_SCAR",2,20},{"CUP_PipeBomb_M",1,1},{"CUP_HandGrenade_M67",1,1},{"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",1,200}}},"rhsusf_opscore_bk_pelt","CUP_G_Shades_Black",{"CUP_SOFLAM","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","NVGoggles_OPFOR"}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'NASR_Insignia_NASR_Subdued_Woodland'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_insignia = "NASR_Insignia_NASR_Subdued_Woodland";
+
+    };
+
+    class B_BNASRArmyWDL_Delta_Force_Grenadier_01 : B_BNASRArmyWDL_Delta_Force_Rifleman_01 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Delta Force Grenadier";
+        side = 1;
+        faction = "b_nasrarmy_wdl";
+
+        identityTypes[] = {"Head_NATO","LanguageENG_F","CUP_G_ARMY"};
+
+        uniformClass = "CUP_U_CRYE_G3C_RGR";
+
+        linkedItems[] = {"CUP_V_PMC_CIRAS_Black_Grenadier","CUP_H_PMC_Cap_Back_PRR_Grey","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","NVGoggles_OPFOR"};
+        respawnlinkedItems[] = {"CUP_V_PMC_CIRAS_Black_Grenadier","CUP_H_PMC_Cap_Back_PRR_Grey","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","NVGoggles_OPFOR"};
+
+        weapons[] = {"CUP_CZ_BREN2_556_11_GL","CUP_hgun_M9_snds","CUP_SOFLAM"};
+        respawnWeapons[] = {"CUP_CZ_BREN2_556_11_GL","CUP_hgun_M9_snds","CUP_SOFLAM"};
+
+        magazines[] = {"CUP_30Rnd_556x45_Stanag","1Rnd_HE_Grenade_shell","CUP_15Rnd_9x19_M9","Laserbatteries","CUP_30Rnd_556x45_Stanag","1Rnd_HE_Grenade_shell","CUP_15Rnd_9x19_M9","Laserbatteries"};
+        respawnMagazines[] = {"CUP_30Rnd_556x45_Stanag","1Rnd_HE_Grenade_shell","CUP_15Rnd_9x19_M9","Laserbatteries","CUP_30Rnd_556x45_Stanag","1Rnd_HE_Grenade_shell","CUP_15Rnd_9x19_M9","Laserbatteries"};
+
+        backpack = "B_AssaultPack_blk";
+
+        ALiVE_orbatCreator_loadout[] = {{"CUP_CZ_BREN2_556_11_GL","CUP_muzzle_snds_G36_black","rhsusf_acc_anpeq15_bk_top","CUP_optic_AIMM_MICROT1_BLK",{"CUP_30Rnd_556x45_Stanag",30},{"1Rnd_HE_Grenade_shell",1},""},{},{"CUP_hgun_M9_snds","CUP_muzzle_snds_M9","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"CUP_U_CRYE_G3C_RGR",{{"CUP_NVG_1PN138",1},{"CUP_30Rnd_556x45_Stanag",3,30}}},{"CUP_V_PMC_CIRAS_Black_Grenadier",{{"CUP_NVG_PVS15_Hide",1},{"NVGoggles_OPFOR",3},{"CUP_HandGrenade_M67",1,1},{"B_IR_Grenade",1,1},{"SmokeShellRed",1,1},{"CUP_15Rnd_9x19_M9",1,15},{"1Rnd_HE_Grenade_shell",3,1}}},{"B_AssaultPack_blk",{{"NVGoggles_OPFOR",1},{"CUP_20Rnd_762x51_B_SCAR",2,20},{"CUP_PipeBomb_M",1,1},{"CUP_HandGrenade_M67",1,1}}},"CUP_H_PMC_Cap_Back_PRR_Grey","CUP_G_Shades_Black",{"CUP_SOFLAM","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","NVGoggles_OPFOR"}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'NASR_Insignia_NASR_Subdued_Woodland'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_insignia = "NASR_Insignia_NASR_Subdued_Woodland";
+
+    };
+
+    class B_BNASRArmyWDL_Delta_Force_Marksman_01 : B_BNASRArmyWDL_Delta_Force_Rifleman_01 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Delta Force Marksman";
+        side = 1;
+        faction = "b_nasrarmy_wdl";
+
+        identityTypes[] = {"Head_NATO","LanguageENG_F","CUP_G_ARMY"};
+
+        uniformClass = "CUP_U_CRYE_BLK_Roll";
+
+        linkedItems[] = {"CUP_V_PMC_CIRAS_Black_Veh","TRYK_H_woolhat","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","NVGoggles_OPFOR"};
+        respawnlinkedItems[] = {"CUP_V_PMC_CIRAS_Black_Veh","TRYK_H_woolhat","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","NVGoggles_OPFOR"};
+
+        weapons[] = {"CUP_srifle_AWM_blk","CUP_hgun_M9_snds","CUP_SOFLAM"};
+        respawnWeapons[] = {"CUP_srifle_AWM_blk","CUP_hgun_M9_snds","CUP_SOFLAM"};
+
+        magazines[] = {"CUP_5Rnd_86x70_L115A1","CUP_15Rnd_9x19_M9","Laserbatteries","CUP_5Rnd_86x70_L115A1","CUP_15Rnd_9x19_M9","Laserbatteries"};
+        respawnMagazines[] = {"CUP_5Rnd_86x70_L115A1","CUP_15Rnd_9x19_M9","Laserbatteries","CUP_5Rnd_86x70_L115A1","CUP_15Rnd_9x19_M9","Laserbatteries"};
+
+        backpack = "B_AssaultPack_blk";
+
+        ALiVE_orbatCreator_loadout[] = {{"CUP_srifle_AWM_blk","CUP_muzzle_snds_AWM","","CUP_optic_LeupoldMk4_25x50_LRT",{"CUP_5Rnd_86x70_L115A1",5},{},"bipod_01_F_blk"},{},{"CUP_hgun_M9_snds","CUP_muzzle_snds_M9","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"CUP_U_CRYE_BLK_Roll",{{"CUP_NVG_1PN138",1},{"CUP_5Rnd_86x70_L115A1",2,5}}},{"CUP_V_PMC_CIRAS_Black_Veh",{{"CUP_NVG_PVS15_Hide",1},{"NVGoggles_OPFOR",3},{"SmokeShellRed",1,1}}},{"B_AssaultPack_blk",{{"NVGoggles_OPFOR",1},{"CUP_20Rnd_762x51_B_SCAR",2,20},{"CUP_PipeBomb_M",1,1},{"CUP_HandGrenade_M67",1,1}}},"TRYK_H_woolhat","CUP_G_Oakleys_Drk",{"CUP_SOFLAM","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","NVGoggles_OPFOR"}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'NASR_Insignia_NASR_Subdued_Woodland'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_insignia = "NASR_Insignia_NASR_Subdued_Woodland";
+
+    };
+
+    class B_BNASRArmyWDL_Delta_Force_Operator_01 : B_BNASRArmyWDL_Delta_Force_Rifleman_01 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Delta Force Operator";
+        side = 1;
+        faction = "b_nasrarmy_wdl";
+
+        identityTypes[] = {"Head_NATO","LanguageENG_F","CUP_G_ARMY"};
+
+        uniformClass = "TRYK_U_B_OD_BLK_2";
+
+        linkedItems[] = {"CUP_V_PMC_CIRAS_Black_Patrol","rhsusf_opscore_bk_pelt","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","NVGoggles_OPFOR"};
+        respawnlinkedItems[] = {"CUP_V_PMC_CIRAS_Black_Patrol","rhsusf_opscore_bk_pelt","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","NVGoggles_OPFOR"};
+
+        weapons[] = {"hlc_smg_mp5sd6","CUP_hgun_M9_snds","CUP_SOFLAM"};
+        respawnWeapons[] = {"hlc_smg_mp5sd6","CUP_hgun_M9_snds","CUP_SOFLAM"};
+
+        magazines[] = {"hlc_30Rnd_9x19_B_MP5","CUP_15Rnd_9x19_M9","Laserbatteries","hlc_30Rnd_9x19_B_MP5","CUP_15Rnd_9x19_M9","Laserbatteries"};
+        respawnMagazines[] = {"hlc_30Rnd_9x19_B_MP5","CUP_15Rnd_9x19_M9","Laserbatteries","hlc_30Rnd_9x19_B_MP5","CUP_15Rnd_9x19_M9","Laserbatteries"};
+
+        backpack = "B_AssaultPack_blk";
+
+        ALiVE_orbatCreator_loadout[] = {{"hlc_smg_mp5sd6","","","CUP_optic_AIMM_MICROT1_BLK",{"hlc_30Rnd_9x19_B_MP5",30},{},""},{},{"CUP_hgun_M9_snds","CUP_muzzle_snds_M9","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"TRYK_U_B_OD_BLK_2",{}},{"CUP_V_PMC_CIRAS_Black_Patrol",{{"CUP_NVG_PVS15_Hide",1},{"NVGoggles_OPFOR",3},{"CUP_HandGrenade_M67",1,1},{"B_IR_Grenade",1,1},{"SmokeShellRed",1,1},{"CUP_15Rnd_9x19_M9",1,15},{"hlc_30Rnd_9x19_B_MP5",1,30}}},{"B_AssaultPack_blk",{{"NVGoggles_OPFOR",1},{"CUP_20Rnd_762x51_B_SCAR",2,20},{"CUP_PipeBomb_M",1,1},{"CUP_HandGrenade_M67",1,1}}},"rhsusf_opscore_bk_pelt","CUP_G_ESS_BLK_Dark",{"CUP_SOFLAM","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","NVGoggles_OPFOR"}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'NASR_Insignia_NASR_Subdued_Woodland'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_insignia = "NASR_Insignia_NASR_Subdued_Woodland";
+
+    };
+
+    class B_BNASRArmyWDL_M270_MLRS_HE_01 : CUP_B_M270_HE_USA_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M270 MLRS (HE)";
+        side = 1;
+        faction = "b_nasrarmy_wdl";
+        crew = "B_NASRArmy_Crewman_WDL_01";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_NASRArmy_Crewman_WDL_01"; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cup\trackedvehicles\cup_trackedvehicles_m270\data\mlrs_hull_woodland_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "USMC";
+
+    };
+
+    class B_BNASRArmyWDL_M270_MLRS_DPICM_01 : CUP_B_M270_DPICM_USA_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M270 MLRS (DPICM)";
+        side = 1;
+        faction = "b_nasrarmy_wdl";
+        crew = "B_NASRArmy_Crewman_WDL_01";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_NASRArmy_Crewman_WDL_01"; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cup\trackedvehicles\cup_trackedvehicles_m270\data\mlrs_hull_woodland_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "USMC";
+
+    };
+
+    class B_BNASRArmyWDL_M119_01 : cwr3_b_m119_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M119";
+        side = 1;
+        faction = "b_nasrarmy_wdl";
+        crew = "cwr3_b_soldier";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_NASRArmy_Rifleman_WDL_01"; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class B_BNASRArmyWDL_M109A6_01 : rhsusf_m109_usarmy_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M109A6";
+        side = 1;
+        faction = "b_nasrarmy_wdl";
+        crew = "B_NASRArmy_Crewman_WDL_01";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_NASRArmy_Crewman_WDL_01"; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class B_BNASRArmyWDL_M252_01 : RHS_M252_WD_OCimport_02 {
+        author = "[2LT] O'Neill (He/Him)";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M252";
+        side = 1;
+        faction = "b_nasrarmy_wdl";
+        crew = "rhsusf_army_ucp_rifleman";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_NASRArmy_Rifleman_WDL_01"; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
 
     };
 
