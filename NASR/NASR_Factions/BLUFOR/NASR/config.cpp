@@ -1258,7 +1258,7 @@ class CfgVehicles {
         side = 1;
         faction = "b_nasrarmy_wdl";
 
-        identityTypes[] = {"Head_NATO","LanguageENG_F","CUP_G_ARMY","NoGlasses"};
+        identityTypes[] = {"usm_heads_generic","LanguageENG_F","CUP_G_ARMY","NoGlasses"};
 
         uniformClass = "CUP_U_B_USMC_MCCUU_M81_gloves";
 
@@ -1300,7 +1300,7 @@ class CfgVehicles {
         side = 1;
         faction = "b_nasrarmy_wdl";
 
-        identityTypes[] = {"Head_NATO","LanguageENG_F","CUP_G_ARMY","NoGlasses"};
+        identityTypes[] = {"usm_heads_generic","LanguageENG_F","CUP_G_ARMY","NoGlasses"};
 
         uniformClass = "CUP_U_B_USMC_MCCUU_M81_gloves";
 
@@ -1342,7 +1342,7 @@ class CfgVehicles {
         side = 1;
         faction = "b_nasrarmy_wdl";
 
-        identityTypes[] = {"Head_NATO","LanguageENG_F","CUP_G_ARMY","NoGlasses"};
+        identityTypes[] = {"usm_heads_generic","LanguageENG_F","CUP_G_ARMY","NoGlasses"};
 
         uniformClass = "CUP_U_B_USMC_MCCUU_M81_gloves";
 
@@ -1384,7 +1384,7 @@ class CfgVehicles {
         side = 1;
         faction = "b_nasrarmy_wdl";
 
-        identityTypes[] = {"Head_NATO","LanguageENG_F","CUP_G_ARMY","NoGlasses"};
+        identityTypes[] = {"usm_heads_generic","LanguageENG_F","CUP_G_ARMY","NoGlasses"};
 
         uniformClass = "CUP_U_B_USMC_MCCUU_M81_gloves";
 
@@ -1426,7 +1426,7 @@ class CfgVehicles {
         side = 1;
         faction = "b_nasrarmy_wdl";
 
-        identityTypes[] = {"Head_NATO","LanguageENG_F","CUP_G_ARMY","NoGlasses"};
+        identityTypes[] = {"usm_heads_generic","LanguageENG_F","CUP_G_ARMY","NoGlasses"};
 
         uniformClass = "CUP_U_B_USMC_MCCUU_M81_gloves";
 
@@ -1468,7 +1468,7 @@ class CfgVehicles {
         side = 1;
         faction = "b_nasrarmy_wdl";
 
-        identityTypes[] = {"Head_NATO","LanguageENG_F","CUP_G_ARMY","NoGlasses"};
+        identityTypes[] = {"usm_heads_generic","LanguageENG_F","CUP_G_ARMY","NoGlasses"};
 
         uniformClass = "CUP_U_B_USMC_MCCUU_M81_gloves";
 
@@ -1510,7 +1510,7 @@ class CfgVehicles {
         side = 1;
         faction = "b_nasrarmy_wdl";
 
-        identityTypes[] = {"Head_NATO","LanguageENG_F","CUP_G_ARMY","NoGlasses"};
+        identityTypes[] = {"usm_heads_generic","LanguageENG_F","CUP_G_ARMY","NoGlasses"};
 
         uniformClass = "CUP_U_B_USMC_MCCUU_M81_gloves";
 
@@ -1552,7 +1552,7 @@ class CfgVehicles {
         side = 1;
         faction = "b_nasrarmy_wdl";
 
-        identityTypes[] = {"Head_NATO","LanguageENG_F","CUP_G_ARMY","NoGlasses"};
+        identityTypes[] = {"usm_heads_generic","LanguageENG_F","CUP_G_ARMY","NoGlasses"};
 
         uniformClass = "CUP_U_B_USMC_MCCUU_M81_gloves";
 
@@ -1594,7 +1594,7 @@ class CfgVehicles {
         side = 1;
         faction = "b_nasrarmy_wdl";
 
-        identityTypes[] = {"Head_NATO","LanguageENG_F","CUP_G_ARMY","NoGlasses"};
+        identityTypes[] = {"usm_heads_generic","LanguageENG_F","CUP_G_ARMY","NoGlasses"};
 
         uniformClass = "CUP_U_B_USMC_MCCUU_M81_gloves";
 
@@ -1636,7 +1636,7 @@ class CfgVehicles {
         side = 1;
         faction = "b_nasrarmy_wdl";
 
-        identityTypes[] = {"Head_NATO","LanguageENG_F","CUP_G_ARMY","NoGlasses"};
+        identityTypes[] = {"usm_heads_generic","LanguageENG_F","CUP_G_ARMY","NoGlasses"};
 
         uniformClass = "CUP_U_B_USMC_MCCUU_M81_gloves";
 
@@ -1678,7 +1678,7 @@ class CfgVehicles {
         side = 1;
         faction = "b_nasrarmy_wdl";
 
-        identityTypes[] = {"Head_NATO","LanguageENG_F","CUP_G_ARMY","NoGlasses"};
+        identityTypes[] = {"usm_heads_generic","LanguageENG_F","CUP_G_ARMY","NoGlasses"};
 
         uniformClass = "CUP_U_B_USMC_MCCUU_M81_gloves";
 
@@ -1720,7 +1720,7 @@ class CfgVehicles {
         side = 1;
         faction = "b_nasrarmy_wdl";
 
-        identityTypes[] = {"Head_NATO","LanguageENG_F","CUP_G_ARMY","NoGlasses"};
+        identityTypes[] = {"usm_heads_generic","LanguageENG_F","CUP_G_ARMY","NoGlasses"};
 
         uniformClass = "CUP_U_B_USMC_MCCUU_M81_gloves";
 
@@ -1762,7 +1762,7 @@ class CfgVehicles {
         side = 1;
         faction = "b_nasrarmy_wdl";
 
-        identityTypes[] = {"Head_NATO","LanguageENG_F","CUP_G_ARMY","NoGlasses"};
+        identityTypes[] = {"usm_heads_generic","LanguageENG_F","CUP_G_ARMY","NoGlasses"};
 
         uniformClass = "CUP_U_B_USMC_MCCUU_M81_gloves";
 
@@ -1804,7 +1804,7 @@ class CfgVehicles {
         side = 1;
         faction = "b_nasrarmy_wdl";
 
-        identityTypes[] = {"Head_NATO","LanguageENG_F","CUP_G_ARMY","NoGlasses"};
+        identityTypes[] = {"usm_heads_generic","LanguageENG_F","CUP_G_ARMY","NoGlasses"};
 
         uniformClass = "U_I_pilotCoveralls";
 
@@ -1846,7 +1846,7 @@ class CfgVehicles {
         side = 1;
         faction = "b_nasrarmy_wdl";
 
-        identityTypes[] = {"Head_NATO","LanguageENG_F","CUP_G_ARMY","NoGlasses"};
+        identityTypes[] = {"usm_heads_generic","LanguageENG_F","CUP_G_ARMY","NoGlasses"};
 
         uniformClass = "CUP_U_B_USMC_MCCUU_M81_roll_2_gloves";
 
@@ -1886,7 +1886,7 @@ class CfgVehicles {
         side = 1;
         faction = "b_nasrarmy_wdl";
 
-        identityTypes[] = {"Head_NATO","LanguageENG_F","CUP_G_ARMY","NoGlasses"};
+        identityTypes[] = {"usm_heads_generic","LanguageENG_F","CUP_G_ARMY","NoGlasses"};
 
         uniformClass = "CUP_U_B_USMC_MCCUU_M81_gloves";
 
@@ -1928,7 +1928,7 @@ class CfgVehicles {
         side = 1;
         faction = "b_nasrarmy_wdl";
 
-        identityTypes[] = {"Head_NATO","LanguageENG_F","CUP_G_ARMY","NoGlasses"};
+        identityTypes[] = {"usm_heads_generic","LanguageENG_F","CUP_G_ARMY","NoGlasses"};
 
         uniformClass = "CUP_U_B_USMC_MCCUU_M81_roll_pads_gloves";
 
@@ -1970,7 +1970,7 @@ class CfgVehicles {
         side = 1;
         faction = "b_nasrarmy_wdl";
 
-        identityTypes[] = {"Head_NATO","LanguageENG_F","CUP_G_ARMY","NoGlasses"};
+        identityTypes[] = {"usm_heads_generic","LanguageENG_F","CUP_G_ARMY","NoGlasses"};
 
         uniformClass = "CUP_U_B_USMC_MCCUU_M81_roll_pads_gloves";
 
@@ -3055,7 +3055,7 @@ class CfgVehicles {
         side = 1;
         faction = "b_nasrarmy_wdl";
 
-        identityTypes[] = {"Head_NATO","LanguageENG_F","CUP_G_ARMY"};
+        identityTypes[] = {"usm_heads_generic","LanguageENG_F","CUP_G_ARMY"};
 
         uniformClass = "CUP_U_CRYE_G3C_M81";
 
@@ -3097,7 +3097,7 @@ class CfgVehicles {
         side = 1;
         faction = "b_nasrarmy_wdl";
 
-        identityTypes[] = {"Head_NATO","LanguageENG_F","CUP_G_ARMY"};
+        identityTypes[] = {"usm_heads_generic","LanguageENG_F","CUP_G_ARMY"};
 
         uniformClass = "CUP_U_CRYE_G3C_M81";
 
@@ -3139,7 +3139,7 @@ class CfgVehicles {
         side = 1;
         faction = "b_nasrarmy_wdl";
 
-        identityTypes[] = {"Head_NATO","LanguageENG_F","CUP_G_ARMY"};
+        identityTypes[] = {"usm_heads_generic","LanguageENG_F","CUP_G_ARMY"};
 
         uniformClass = "CUP_U_CRYE_G3C_M81_RGR";
 
@@ -3181,7 +3181,7 @@ class CfgVehicles {
         side = 1;
         faction = "b_nasrarmy_wdl";
 
-        identityTypes[] = {"Head_NATO","LanguageENG_F","CUP_G_ARMY"};
+        identityTypes[] = {"usm_heads_generic","LanguageENG_F","CUP_G_ARMY"};
 
         uniformClass = "CUP_U_CRYE_G3C_RGR";
 
@@ -3223,7 +3223,7 @@ class CfgVehicles {
         side = 1;
         faction = "b_nasrarmy_wdl";
 
-        identityTypes[] = {"Head_NATO","LanguageENG_F","CUP_G_ARMY"};
+        identityTypes[] = {"usm_heads_generic","LanguageENG_F","CUP_G_ARMY"};
 
         uniformClass = "CUP_U_CRYE_BLK_Roll";
 
@@ -3265,7 +3265,7 @@ class CfgVehicles {
         side = 1;
         faction = "b_nasrarmy_wdl";
 
-        identityTypes[] = {"Head_NATO","LanguageENG_F","CUP_G_ARMY"};
+        identityTypes[] = {"usm_heads_generic","LanguageENG_F","CUP_G_ARMY"};
 
         uniformClass = "TRYK_U_B_OD_BLK_2";
 
