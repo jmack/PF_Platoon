@@ -1257,6 +1257,7 @@ class CfgVehicles {
         displayName = "Rifleman";
         side = 1;
         faction = "b_nasrarmy_wdl";
+        genericNames = "AmericanEast";
 
         identityTypes[] = {"usm_heads_generic","LanguageENG_F","CUP_G_ARMY","NoGlasses"};
 
@@ -3054,6 +3055,7 @@ class CfgVehicles {
         displayName = "Delta Force Team Leader";
         side = 1;
         faction = "b_nasrarmy_wdl";
+        genericNames = "AmericanEast";
 
         identityTypes[] = {"usm_heads_generic","LanguageENG_F","CUP_G_ARMY"};
 
