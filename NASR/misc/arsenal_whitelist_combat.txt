@@ -65,6 +65,56 @@ Launchers
 [
 
 ]
+Headgear
+[
+
+]
+Uniform
+[
+
+]
+Vest
+[
+
+]
+Backpack
+[
+
+]
+Facewear
+[
+
+] 
+NVGs
+[
+    "immersion_cigs_cigar0_nv",
+    "murshun_cigs_cig0_nv",
+]
+Binoculars
+[
+    "Binocular",
+    "rhsusf_bino_m24",
+]
+Map
+[
+    "ItemMap",
+]
+Terminal
+[
+
+]
+Communication
+[
+    "TFAR_anprc152",
+]
+Navigation
+[
+    "ItemCompass",
+]
+Watch
+[
+    "ItemWatch",
+]
 
 -- After getting partisan supply drop from NASR --
 Primary Weapons
@@ -82,6 +132,55 @@ Secondary Weapons
 Launchers
 [
     "CUP_launch_M72A6",
+]
+Headgear
+[
+
+]
+Uniform
+[
+
+]
+Vest
+[
+
+]
+Backpack
+[
+
+]
+Facewear
+[
+
+]
+NVGs
+[
+    "ACE_NVGoggles_OPFOR_WP",
+]
+Binoculars
+[
+    "rhsusf_bino_lerca_1200_black",
+    "rhsusf_bino_leopold_mk4",
+]
+Map
+[
+
+]
+Terminal
+[
+
+]
+Communication
+[
+
+]
+Navigation
+[
+
+]
+Watch
+[
+    "ACE_Altimeter",
 ]
 
 -- After getting full supplies from NASR --
@@ -107,6 +206,55 @@ Launchers
     "CUP_launch_NLAW",
     "CUP_launch_FIM92Stinger",
 ]
+Headgear
+[
+
+]
+Uniform
+[
+
+]
+Vest
+[
+
+]
+Backpack
+[
+
+]
+Facewear
+[
+
+]
+NVGs
+[
+    "ACE_NVG_Gen4_Black_WP",
+    "ACE_NVG_Wide_Black_WP",
+]
+Binoculars
+[
+    "Laserdesignator",
+]
+Map
+[
+
+]
+Terminal
+[
+
+]
+Communication
+[
+
+]
+Navigation
+[
+
+]
+Watch
+[
+
+]
 
 
 -- After capture of US Army gear --
@@ -124,6 +272,54 @@ Secondary Weapons
     "rhs_weap_M320"
 ]
 Launchers
+[
+
+]
+Headgear
+[
+
+]
+Uniform
+[
+
+]
+Vest
+[
+
+]
+Backpack
+[
+
+]
+Facewear
+[
+
+]
+NVGs
+[
+
+]
+Binoculars
+[
+
+]
+Map
+[
+
+]
+Terminal
+[
+
+]
+Communication
+[
+
+]
+Navigation
+[
+
+]
+Watch
 [
 
 ]
