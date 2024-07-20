@@ -1,3 +1,5 @@
+-- Weapons / Armor available initially --
+Primary Weapons
 [
     "CUP_arifle_AK47_Early",
     "CUP_arifle_AK74_Early",
@@ -17,8 +19,6 @@
     "CUP_srifle_Mosin_Nagant",
     "pas_m1a_1",
     "CUP_smg_M3A1",
-    "rhs_weap_M590_8RD",
-    "rhs_weap_M590_5RD",
     "CUP_smg_Mac10",
     "CUP_srifle_LeeEnfield",
     "CUP_srifle_Remington700",
@@ -26,7 +26,7 @@
     "CUP_SKS",
     "CUP_sgun_Slamfire"
 ]
-sidearms
+Secondary Weapons
 [
     "92FS_Beretta",
     "Pipe_aluminium",
@@ -61,26 +61,69 @@ sidearms
     "CUP_hgun_TaurusTracker455",
     "rhs_weap_tr8"
 ]
+Launchers
+[
 
+]
 
-after radio contact with NASR
+-- After getting partisan supply drop from NASR --
+Primary Weapons
+[
+    "hlc_smg_mp5sd6",
+    "rhs_weap_m3a1_specops",
+    "SMG_03C_black",
+    "SMG_03C_TR_black",
+    "CUP_sgun_Saiga12K",
+]
+Secondary Weapons
+[
+
+]
+Launchers
+[
+    "CUP_launch_M72A6",
+]
+
+-- After getting full supplies from NASR --
+Primary Weapons
 [
     "CUP_srifle_ksvk",
     "CUP_arifle_XM8_Railed",
     "CUP_arifle_XM8_Carbine_GL_Rail",
     "CUP_arifle_XM8_Compact_Rail",
     "CUP_arifle_XM8_SAW_Rail",
-    "CUP_arifle_XM8_Sharpshooter_Rail"
+    "CUP_arifle_XM8_Sharpshooter_Rail",
+    "CUP_srifle_M107_Woodland",
+]
+Secondary Weapons
+[
+    "CUP_hgun_M9",
+]
+Launchers
+[
+    "rhs_weap_M136",
+    "rhs_weap_M136_hedp",
+    "rhs_weap_M136_hp",
+    "CUP_launch_NLAW",
+    "CUP_launch_FIM92Stinger",
 ]
 
-after capture of army gear
+
+-- After capture of US Army gear --
+Primary Weapons
 [
     "CUP_arifle_M16A2",
     "CUP_arifle_Colt727",
     "CUP_arifle_Colt727_M203",
-    "CUP_arifle_M203"
+    "CUP_arifle_M203",
+    "rhs_weap_M590_5RD",
+    "CUP_lmg_M60E4_norail",
 ]
-sidearms
+Secondary Weapons
 [
     "rhs_weap_M320"
+]
+Launchers
+[
+
 ]
