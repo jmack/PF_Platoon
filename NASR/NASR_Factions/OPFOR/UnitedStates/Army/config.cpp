@@ -1195,7 +1195,7 @@ class CfgVehicles {
 
         backpack = "CUP_B_RUS_Patrol_bag_6E5_Desert";
 
-        ALiVE_orbatCreator_loadout[] = {{"CUP_arifle_M16A2","","","",{"30Rnd_556x45_Stanag",30},{},""},{},{},{"CUP_U_B_BDUv2_roll_gloves_desert_US",{{"usm_dogtags",1},{"usm_bdu_boonie_des",1}}},{"cwr3_b_vest_alice",{{"usm_fielddressing",1},{"CUP_NVG_PVS7",1},{"30Rnd_556x45_Stanag",5,30},{"SmokeShell",1,1},{"SmokeShellYellow",1,1},{"HandGrenade",2,1}}},{"CUP_B_RUS_Patrol_bag_6E5_Desert",{}},"cwr3_b_headgear_m1_desert_6color","",{"Binocular","","","",{},{},""},{"ItemMap","","","ItemCompass","Itemwatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"CUP_arifle_M16A2","","","",{"30Rnd_556x45_Stanag",30},{},""},{},{},{"CUP_U_B_BDUv2_roll_gloves_desert_US",{{"usm_dogtags",1},{"usm_bdu_boonie_des",1}}},{"cwr3_b_vest_alice",{{"usm_fielddressing",1},{"30Rnd_556x45_Stanag",5,30},{"SmokeShell",1,1},{"SmokeShellYellow",1,1},{"HandGrenade",2,1}}},{"CUP_B_RUS_Patrol_bag_6E5_Desert",{}},"cwr3_b_headgear_m1_desert_6color","",{"Binocular","","","",{},{},""},{"ItemMap","","","ItemCompass","Itemwatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -1235,7 +1235,7 @@ class CfgVehicles {
 
         backpack = "usm_pack_abag_m60";
 
-        ALiVE_orbatCreator_loadout[] = {{"CUP_lmg_m249_pip1","","","",{"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",200},{},""},{},{},{"CUP_U_B_BDUv2_roll_gloves_desert_US",{{"usm_dogtags",1},{"usm_bdu_boonie_des",1}}},{"cwr3_b_vest_alice_mg",{{"usm_fielddressing",1},{"CUP_NVG_PVS7",1},{"SmokeShell",1,1},{"SmokeShellYellow",1,1},{"HandGrenade",2,1},{"CUP_200Rnd_TE4_Green_Tracer_556x45_M249",2,200}}},{"usm_pack_abag_m60",{{"CUP_200Rnd_TE4_Green_Tracer_556x45_M249",1,200}}},"cwr3_b_headgear_m1_desert_6color","",{},{"ItemMap","","","ItemCompass","Itemwatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"CUP_lmg_m249_pip1","","","",{"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",200},{},""},{},{},{"CUP_U_B_BDUv2_roll_gloves_desert_US",{{"usm_dogtags",1},{"usm_bdu_boonie_des",1}}},{"cwr3_b_vest_alice_mg",{{"usm_fielddressing",1},{"SmokeShell",1,1},{"SmokeShellYellow",1,1},{"HandGrenade",2,1},{"CUP_200Rnd_TE4_Green_Tracer_556x45_M249",2,200}}},{"usm_pack_abag_m60",{{"CUP_200Rnd_TE4_Green_Tracer_556x45_M249",1,200}}},"cwr3_b_headgear_m1_desert_6color","",{},{"ItemMap","","","ItemCompass","Itemwatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -1273,7 +1273,7 @@ class CfgVehicles {
         magazines[] = {"CUP_30Rnd_556x45_Stanag","CUP_1Rnd_HE_M203","CUP_30Rnd_556x45_Stanag","CUP_1Rnd_HE_M203"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_Stanag","CUP_1Rnd_HE_M203","CUP_30Rnd_556x45_Stanag","CUP_1Rnd_HE_M203"};
 
-        ALiVE_orbatCreator_loadout[] = {{"CUP_arifle_M16A2_GL","","","",{"CUP_30Rnd_556x45_Stanag",30},{"CUP_1Rnd_HE_M203",1},""},{},{},{"CUP_U_B_BDUv2_roll_gloves_desert_US",{{"usm_dogtags",1},{"usm_bdu_boonie_des",1},{"CUP_30Rnd_556x45_Stanag",3,30},{"CUP_1Rnd_HE_M203",1,1}}},{"cwr3_b_vest_alice_gl",{{"usm_fielddressing",1},{"CUP_NVG_PVS7",1},{"SmokeShell",1,1},{"SmokeShellYellow",1,1},{"HandGrenade",2,1},{"CUP_1Rnd_HE_M203",4,1},{"CUP_1Rnd_Smoke_M203",2,1}}},{},"cwr3_b_headgear_m1_desert_6color","",{},{"ItemMap","","ItemRadio","ItemCompass","Itemwatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"CUP_arifle_M16A2_GL","","","",{"CUP_30Rnd_556x45_Stanag",30},{"CUP_1Rnd_HE_M203",1},""},{},{},{"CUP_U_B_BDUv2_roll_gloves_desert_US",{{"usm_dogtags",1},{"usm_bdu_boonie_des",1},{"CUP_30Rnd_556x45_Stanag",3,30},{"CUP_1Rnd_HE_M203",1,1}}},{"cwr3_b_vest_alice_gl",{{"usm_fielddressing",1},{"SmokeShell",1,1},{"SmokeShellYellow",1,1},{"HandGrenade",2,1},{"CUP_1Rnd_HE_M203",4,1},{"CUP_1Rnd_Smoke_M203",2,1}}},{},"cwr3_b_headgear_m1_desert_6color","",{},{"ItemMap","","ItemRadio","ItemCompass","Itemwatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -1313,7 +1313,7 @@ class CfgVehicles {
 
         backpack = "CUP_B_RUS_Patrol_bag_Desert";
 
-        ALiVE_orbatCreator_loadout[] = {{"CUP_arifle_M16A2","","","",{"30Rnd_556x45_Stanag",30},{},""},{},{},{"CUP_U_B_BDUv2_roll_gloves_desert_US",{{"usm_dogtags",1},{"usm_bdu_boonie_des",1}}},{"cwr3_b_vest_alice_light",{{"usm_fielddressing",1},{"CUP_NVG_PVS7",1},{"30Rnd_556x45_Stanag",5,30},{"SmokeShell",1,1},{"SmokeShellYellow",1,1},{"HandGrenade",1,1}}},{"CUP_B_RUS_Patrol_bag_Desert",{}},"cwr3_b_headgear_m1_desert_6color","",{"Binocular","","","",{},{},""},{"ItemMap","","TFAR_fadak","ItemCompass","Itemwatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"CUP_arifle_M16A2","","","",{"30Rnd_556x45_Stanag",30},{},""},{},{},{"CUP_U_B_BDUv2_roll_gloves_desert_US",{{"usm_dogtags",1},{"usm_bdu_boonie_des",1}}},{"cwr3_b_vest_alice_light",{{"usm_fielddressing",1},{"30Rnd_556x45_Stanag",5,30},{"SmokeShell",1,1},{"SmokeShellYellow",1,1},{"HandGrenade",1,1}}},{"CUP_B_RUS_Patrol_bag_Desert",{}},"cwr3_b_headgear_m1_desert_6color","",{"Binocular","","","",{},{},""},{"ItemMap","","TFAR_fadak","ItemCompass","Itemwatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -1353,7 +1353,7 @@ class CfgVehicles {
 
         backpack = "CUP_B_RUS_Patrol_bag_Desert";
 
-        ALiVE_orbatCreator_loadout[] = {{"CUP_arifle_M16A2_GL","","","",{"CUP_30Rnd_556x45_Stanag",30},{"CUP_1Rnd_HE_M203",1},""},{},{},{"CUP_U_B_BDUv2_roll_gloves_desert_US",{{"usm_dogtags",1},{"usm_bdu_boonie_des",1},{"CUP_30Rnd_556x45_Stanag",3,30},{"CUP_1Rnd_HE_M203",1,1}}},{"cwr3_b_vest_alice_gl",{{"usm_fielddressing",1},{"CUP_NVG_PVS7",1},{"SmokeShell",1,1},{"SmokeShellYellow",1,1},{"HandGrenade",1,1},{"CUP_1Rnd_HE_M203",4,1},{"1Rnd_SmokeBlue_Grenade_shell",1,1},{"1Rnd_SmokeGreen_Grenade_shell",1,1},{"1Rnd_SmokeRed_Grenade_shell",1,1},{"1Rnd_Smoke_Grenade_shell",2,1},{"CUP_30Rnd_556x45_Stanag",7,30}}},{"CUP_B_RUS_Patrol_bag_Desert",{}},"cwr3_b_headgear_m1_desert_6color","",{},{"ItemMap","","TFAR_fadak","ItemCompass","Itemwatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"CUP_arifle_M16A2_GL","","","",{"CUP_30Rnd_556x45_Stanag",30},{"CUP_1Rnd_HE_M203",1},""},{},{},{"CUP_U_B_BDUv2_roll_gloves_desert_US",{{"usm_dogtags",1},{"usm_bdu_boonie_des",1},{"CUP_30Rnd_556x45_Stanag",3,30},{"CUP_1Rnd_HE_M203",1,1}}},{"cwr3_b_vest_alice_gl",{{"usm_fielddressing",1},{"SmokeShell",1,1},{"SmokeShellYellow",1,1},{"HandGrenade",1,1},{"CUP_1Rnd_HE_M203",4,1},{"1Rnd_SmokeBlue_Grenade_shell",1,1},{"1Rnd_SmokeGreen_Grenade_shell",1,1},{"1Rnd_SmokeRed_Grenade_shell",1,1},{"1Rnd_Smoke_Grenade_shell",2,1},{"CUP_30Rnd_556x45_Stanag",7,30}}},{"CUP_B_RUS_Patrol_bag_Desert",{}},"cwr3_b_headgear_m1_desert_6color","",{},{"ItemMap","","TFAR_fadak","ItemCompass","Itemwatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -1393,7 +1393,7 @@ class CfgVehicles {
 
         backpack = "CUP_B_RUS_Patrol_bag_Desert";
 
-        ALiVE_orbatCreator_loadout[] = {{"CUP_arifle_Colt727","","","",{"CUP_30Rnd_556x45_Stanag",30},{},""},{},{},{"CUP_U_B_BDUv2_roll_gloves_desert_US",{{"usm_dogtags",1},{"usm_bdu_boonie_des",1},{"CUP_30Rnd_556x45_Stanag",3,30}}},{"cwr3_b_vest_alice_officer",{{"usm_fielddressing",1},{"CUP_NVG_PVS7",1},{"SmokeShell",1,1},{"SmokeShellYellow",1,1},{"HandGrenade",2,1}}},{"CUP_B_RUS_Patrol_bag_Desert",{}},"rhssaf_beret_green","",{"CUP_SOFLAM","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","TFAR_fadak","ItemCompass","ACE_Altimeter",""}};
+        ALiVE_orbatCreator_loadout[] = {{"CUP_arifle_Colt727","","","",{"CUP_30Rnd_556x45_Stanag",30},{},""},{},{},{"CUP_U_B_BDUv2_roll_gloves_desert_US",{{"usm_dogtags",1},{"usm_bdu_boonie_des",1},{"CUP_30Rnd_556x45_Stanag",3,30}}},{"cwr3_b_vest_alice_officer",{{"usm_fielddressing",1},{"SmokeShell",1,1},{"SmokeShellYellow",1,1},{"HandGrenade",2,1}}},{"CUP_B_RUS_Patrol_bag_Desert",{}},"rhssaf_beret_green","",{"CUP_SOFLAM","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","TFAR_fadak","ItemCompass","ACE_Altimeter",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -1431,7 +1431,7 @@ class CfgVehicles {
         magazines[] = {"CUP_5Rnd_762x51_M24","CUP_5Rnd_762x51_M24"};
         respawnMagazines[] = {"CUP_5Rnd_762x51_M24","CUP_5Rnd_762x51_M24"};
 
-        ALiVE_orbatCreator_loadout[] = {{"CUP_srifle_M24_wdl","","","hlc_optic_ZF95Base",{"CUP_5Rnd_762x51_M24",5},{},"bipod_02_F_arid"},{},{},{"CUP_U_B_BDUv2_roll_gloves_desert_US",{{"usm_dogtags",1},{"usm_bdu_boonie_des",1},{"CUP_5Rnd_762x51_M24",3,5}}},{"cwr3_b_vest_alice_light",{{"usm_fielddressing",1},{"CUP_NVG_PVS7",1},{"SmokeShell",1,1},{"SmokeShellYellow",1,1},{"HandGrenade",2,1}}},{},"cwr3_b_headgear_boonie_desert_6color","",{"rhsusf_bino_lerca_1200_tan","","","",{},{},""},{"ItemMap","","TFAR_fadak","ItemCompass","ACE_Altimeter",""}};
+        ALiVE_orbatCreator_loadout[] = {{"CUP_srifle_M24_wdl","","","hlc_optic_ZF95Base",{"CUP_5Rnd_762x51_M24",5},{},"bipod_02_F_arid"},{},{},{"CUP_U_B_BDUv2_roll_gloves_desert_US",{{"usm_dogtags",1},{"usm_bdu_boonie_des",1},{"CUP_5Rnd_762x51_M24",3,5}}},{"cwr3_b_vest_alice_light",{{"usm_fielddressing",1},{"SmokeShell",1,1},{"SmokeShellYellow",1,1},{"HandGrenade",2,1}}},{},"cwr3_b_headgear_boonie_desert_6color","",{"rhsusf_bino_lerca_1200_tan","","","",{},{},""},{"ItemMap","","TFAR_fadak","ItemCompass","ACE_Altimeter",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -1471,7 +1471,7 @@ class CfgVehicles {
 
         backpack = "cwr3_b_backpack_m5_medic";
 
-        ALiVE_orbatCreator_loadout[] = {{"CUP_arifle_Colt727","","","",{"CUP_30Rnd_556x45_Stanag",30},{},""},{},{},{"CUP_U_B_BDUv2_roll_gloves_desert_US",{{"usm_dogtags",1},{"usm_bdu_boonie_des",1},{"CUP_30Rnd_556x45_Stanag",3,30}}},{"cwr3_b_vest_alice_medic",{{"usm_fielddressing",1},{"CUP_NVG_PVS7",1},{"SmokeShell",1,1},{"SmokeShellYellow",1,1},{"HandGrenade",2,1}}},{"cwr3_b_backpack_m5_medic",{}},"cwr3_b_headgear_m1_desert_6color","",{},{"ItemMap","","TFAR_fadak","ItemCompass","Itemwatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"CUP_arifle_Colt727","","","",{"CUP_30Rnd_556x45_Stanag",30},{},""},{},{},{"CUP_U_B_BDUv2_roll_gloves_desert_US",{{"usm_dogtags",1},{"usm_bdu_boonie_des",1},{"CUP_30Rnd_556x45_Stanag",3,30}}},{"cwr3_b_vest_alice_medic",{{"usm_fielddressing",1},{"SmokeShell",1,1},{"SmokeShellYellow",1,1},{"HandGrenade",2,1}}},{"cwr3_b_backpack_m5_medic",{}},"cwr3_b_headgear_m1_desert_6color","",{},{"ItemMap","","TFAR_fadak","ItemCompass","Itemwatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -1511,7 +1511,7 @@ class CfgVehicles {
 
         backpack = "CUP_B_RUS_Patrol_bag_Desert";
 
-        ALiVE_orbatCreator_loadout[] = {{"CUP_arifle_M16A2","","","",{"30Rnd_556x45_Stanag",30},{},""},{"CUP_launch_FIM92Stinger_Loaded","","","",{"CUP_Stinger_M",1},{},""},{},{"CUP_U_B_BDUv2_roll_gloves_desert_US",{{"usm_dogtags",1},{"usm_bdu_boonie_des",1}}},{"cwr3_b_vest_alice_light",{{"usm_fielddressing",1},{"CUP_NVG_PVS7",1},{"30Rnd_556x45_Stanag",5,30},{"SmokeShell",1,1},{"SmokeShellYellow",1,1},{"HandGrenade",2,1}}},{"CUP_B_RUS_Patrol_bag_Desert",{}},"cwr3_b_headgear_m1_desert_6color","",{},{"ItemMap","","","ItemCompass","Itemwatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"CUP_arifle_M16A2","","","",{"30Rnd_556x45_Stanag",30},{},""},{"CUP_launch_FIM92Stinger_Loaded","","","",{"CUP_Stinger_M",1},{},""},{},{"CUP_U_B_BDUv2_roll_gloves_desert_US",{{"usm_dogtags",1},{"usm_bdu_boonie_des",1}}},{"cwr3_b_vest_alice_light",{{"usm_fielddressing",1},{"30Rnd_556x45_Stanag",5,30},{"SmokeShell",1,1},{"SmokeShellYellow",1,1},{"HandGrenade",2,1}}},{"CUP_B_RUS_Patrol_bag_Desert",{}},"cwr3_b_headgear_m1_desert_6color","",{},{"ItemMap","","","ItemCompass","Itemwatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -1551,7 +1551,7 @@ class CfgVehicles {
 
         backpack = "CUP_B_RUS_Patrol_bag_Desert";
 
-        ALiVE_orbatCreator_loadout[] = {{"CUP_arifle_M16A2","","","",{"30Rnd_556x45_Stanag",30},{},""},{"CUP_launch_NLAW","","","",{},{},""},{},{"CUP_U_B_BDUv2_roll_gloves_desert_US",{{"usm_dogtags",1},{"usm_bdu_boonie_des",1}}},{"cwr3_b_vest_alice_light",{{"usm_fielddressing",1},{"CUP_NVG_PVS7",1},{"30Rnd_556x45_Stanag",5,30},{"SmokeShell",1,1},{"SmokeShellYellow",1,1},{"HandGrenade",2,1}}},{"CUP_B_RUS_Patrol_bag_Desert",{}},"cwr3_b_headgear_m1_desert_6color","",{},{"ItemMap","","","ItemCompass","Itemwatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"CUP_arifle_M16A2","","","",{"30Rnd_556x45_Stanag",30},{},""},{"CUP_launch_NLAW","","","",{},{},""},{},{"CUP_U_B_BDUv2_roll_gloves_desert_US",{{"usm_dogtags",1},{"usm_bdu_boonie_des",1}}},{"cwr3_b_vest_alice_light",{{"usm_fielddressing",1},{"30Rnd_556x45_Stanag",5,30},{"SmokeShell",1,1},{"SmokeShellYellow",1,1},{"HandGrenade",2,1}}},{"CUP_B_RUS_Patrol_bag_Desert",{}},"cwr3_b_headgear_m1_desert_6color","",{},{"ItemMap","","","ItemCompass","Itemwatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -1591,7 +1591,7 @@ class CfgVehicles {
 
         backpack = "CUP_B_RUS_Patrol_bag_Desert";
 
-        ALiVE_orbatCreator_loadout[] = {{"CUP_arifle_Colt727","","","",{"CUP_30Rnd_556x45_Stanag",30},{},""},{},{},{"CUP_U_B_BDUv2_roll_gloves_desert_US",{{"usm_dogtags",1},{"usm_bdu_boonie_des",1},{"CUP_30Rnd_556x45_Stanag",3,30}}},{"cwr3_b_vest_alice_light",{{"usm_fielddressing",1},{"CUP_NVG_PVS7",1},{"SmokeShell",1,1},{"SmokeShellYellow",1,1},{"HandGrenade",2,1}}},{"CUP_B_RUS_Patrol_bag_Desert",{}},"usm_bdu_boonie_dcu","",{"rhsusf_bino_lerca_1200_tan","","","",{},{},""},{"ItemMap","","TFAR_fadak","ItemCompass","Itemwatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"CUP_arifle_Colt727","","","",{"CUP_30Rnd_556x45_Stanag",30},{},""},{},{},{"CUP_U_B_BDUv2_roll_gloves_desert_US",{{"usm_dogtags",1},{"usm_bdu_boonie_des",1},{"CUP_30Rnd_556x45_Stanag",3,30}}},{"cwr3_b_vest_alice_light",{{"usm_fielddressing",1},{"SmokeShell",1,1},{"SmokeShellYellow",1,1},{"HandGrenade",2,1}}},{"CUP_B_RUS_Patrol_bag_Desert",{}},"usm_bdu_boonie_dcu","",{"rhsusf_bino_lerca_1200_tan","","","",{},{},""},{"ItemMap","","TFAR_fadak","ItemCompass","Itemwatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -1629,7 +1629,7 @@ class CfgVehicles {
         magazines[] = {"CUP_15Rnd_9x19_M9","CUP_15Rnd_9x19_M9"};
         respawnMagazines[] = {"CUP_15Rnd_9x19_M9","CUP_15Rnd_9x19_M9"};
 
-        ALiVE_orbatCreator_loadout[] = {{},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"CUP_U_B_BDUv2_roll_gloves_desert_US",{{"usm_dogtags",1},{"usm_bdu_boonie_des",1},{"CUP_15Rnd_9x19_M9",3,15}}},{"cwr3_b_vest_pasgt_alice_od_crew",{{"usm_fielddressing",1},{"CUP_NVG_PVS7",1},{"SmokeShell",1,1},{"SmokeShellYellow",1,1},{"HandGrenade",2,1}}},{},"rhsusf_cvc_ess","",{"Binocular","","","",{},{},""},{"ItemMap","","","ItemCompass","Itemwatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"CUP_U_B_BDUv2_roll_gloves_desert_US",{{"usm_dogtags",1},{"usm_bdu_boonie_des",1},{"CUP_15Rnd_9x19_M9",3,15}}},{"cwr3_b_vest_pasgt_alice_od_crew",{{"usm_fielddressing",1},{"SmokeShell",1,1},{"SmokeShellYellow",1,1},{"HandGrenade",2,1}}},{},"rhsusf_cvc_ess","",{"Binocular","","","",{},{},""},{"ItemMap","","","ItemCompass","Itemwatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -1669,7 +1669,7 @@ class CfgVehicles {
 
         backpack = "CUP_T10_Parachute_backpack";
 
-        ALiVE_orbatCreator_loadout[] = {{},{},{},{"cwr3_b_uniform_pilot",{{"usm_dogtags",1},{"usm_bdu_boonie_des",1}}},{"Aircrew_vest_2_NH",{{"usm_fielddressing",1},{"CUP_NVG_PVS7",1},{"SmokeShell",1,1},{"SmokeShellYellow",1,1},{"HandGrenade",2,1}}},{"CUP_T10_Parachute_backpack",{}},"H_PilotHelmetHeli_O","",{"Binocular","","","",{},{},""},{"ItemMap","ItemGPS","","ItemCompass","ACE_Altimeter",""}};
+        ALiVE_orbatCreator_loadout[] = {{},{},{},{"cwr3_b_uniform_pilot",{{"usm_dogtags",1},{"usm_bdu_boonie_des",1}}},{"Aircrew_vest_2_NH",{{"usm_fielddressing",1},{"SmokeShell",1,1},{"SmokeShellYellow",1,1},{"HandGrenade",2,1}}},{"CUP_T10_Parachute_backpack",{}},"H_PilotHelmetHeli_O","",{"Binocular","","","",{},{},""},{"ItemMap","ItemGPS","","ItemCompass","ACE_Altimeter",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -1709,7 +1709,7 @@ class CfgVehicles {
 
         backpack = "usm_pack_762x51_bandoliers";
 
-        ALiVE_orbatCreator_loadout[] = {{"CUP_arifle_M16A2","","","",{"30Rnd_556x45_Stanag",30},{},""},{},{},{"CUP_U_B_BDUv2_roll_gloves_desert_US",{{"usm_dogtags",1},{"usm_bdu_boonie_des",1}}},{"cwr3_b_vest_alice",{{"usm_fielddressing",1},{"CUP_NVG_PVS7",1},{"30Rnd_556x45_Stanag",5,30},{"SmokeShell",1,1},{"SmokeShellYellow",1,1},{"HandGrenade",2,1}}},{"usm_pack_762x51_bandoliers",{}},"cwr3_b_headgear_m1_desert_6color","",{"Binocular","","","",{},{},""},{"ItemMap","","","ItemCompass","Itemwatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"CUP_arifle_M16A2","","","",{"30Rnd_556x45_Stanag",30},{},""},{},{},{"CUP_U_B_BDUv2_roll_gloves_desert_US",{{"usm_dogtags",1},{"usm_bdu_boonie_des",1}}},{"cwr3_b_vest_alice",{{"usm_fielddressing",1},{"30Rnd_556x45_Stanag",5,30},{"SmokeShell",1,1},{"SmokeShellYellow",1,1},{"HandGrenade",2,1}}},{"usm_pack_762x51_bandoliers",{}},"cwr3_b_headgear_m1_desert_6color","",{"Binocular","","","",{},{},""},{"ItemMap","","","ItemCompass","Itemwatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -1749,7 +1749,7 @@ class CfgVehicles {
 
         backpack = "usm_pack_st138_prc77";
 
-        ALiVE_orbatCreator_loadout[] = {{"CUP_arifle_Colt727","","","",{"CUP_30Rnd_556x45_Stanag",30},{},""},{},{},{"CUP_U_B_BDUv2_roll_gloves_desert_US",{{"usm_dogtags",1},{"usm_bdu_boonie_des",1},{"CUP_30Rnd_556x45_Stanag",3,30}}},{"cwr3_b_vest_alice",{{"usm_fielddressing",1},{"CUP_NVG_PVS7",1},{"SmokeShell",1,1},{"SmokeShellYellow",1,1},{"HandGrenade",2,1}}},{"usm_pack_st138_prc77",{}},"cwr3_b_headgear_m1_desert_6color","",{"Binocular","","","",{},{},""},{"ItemMap","","TFAR_fadak","ItemCompass","Itemwatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"CUP_arifle_Colt727","","","",{"CUP_30Rnd_556x45_Stanag",30},{},""},{},{},{"CUP_U_B_BDUv2_roll_gloves_desert_US",{{"usm_dogtags",1},{"usm_bdu_boonie_des",1},{"CUP_30Rnd_556x45_Stanag",3,30}}},{"cwr3_b_vest_alice",{{"usm_fielddressing",1},{"SmokeShell",1,1},{"SmokeShellYellow",1,1},{"HandGrenade",2,1}}},{"usm_pack_st138_prc77",{}},"cwr3_b_headgear_m1_desert_6color","",{"Binocular","","","",{},{},""},{"ItemMap","","TFAR_fadak","ItemCompass","Itemwatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -2055,7 +2055,7 @@ class CfgVehicles {
         magazines[] = {"CUP_15Rnd_9x19_M9","CUP_15Rnd_9x19_M9"};
         respawnMagazines[] = {"CUP_15Rnd_9x19_M9","CUP_15Rnd_9x19_M9"};
 
-        ALiVE_orbatCreator_loadout[] = {{},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"CUP_U_B_BDUv2_roll_gloves_desert_US",{{"usm_dogtags",1},{"usm_bdu_boonie_des",1},{"CUP_15Rnd_9x19_M9",3,15}}},{"CUP_V_B_PilotVest",{{"usm_fielddressing",1},{"CUP_NVG_PVS7",1},{"SmokeShell",1,1},{"SmokeShellYellow",1,1},{"HandGrenade",2,1}}},{},"rhsusf_hgu56p_tan","",{"Binocular","","","",{},{},""},{"ItemMap","","","ItemCompass","Itemwatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"CUP_U_B_BDUv2_roll_gloves_desert_US",{{"usm_dogtags",1},{"usm_bdu_boonie_des",1},{"CUP_15Rnd_9x19_M9",3,15}}},{"CUP_V_B_PilotVest",{{"usm_fielddressing",1},{"SmokeShell",1,1},{"SmokeShellYellow",1,1},{"HandGrenade",2,1}}},{},"rhsusf_hgu56p_tan","",{"Binocular","","","",{},{},""},{"ItemMap","","","ItemCompass","Itemwatch",""}};
 
 
         class EventHandlers : EventHandlers {
