@@ -201,7 +201,6 @@ class CfgPatches {
             "rhsusf_c_m113",
             "rhsusf_c_m1a1",
             "rhsusf_c_m1a2",
-            "m109_ukr",
             "ace_logistics_uavbattery",
             "CUP_TrackedVehicles_MTLB",
             "CUP_TrackedVehicles_FV510",
