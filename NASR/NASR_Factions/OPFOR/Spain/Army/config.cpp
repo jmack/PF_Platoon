@@ -38,7 +38,10 @@ class CfgPatches {
             "O_OESArmyDES_EF_18_MHornet_01",
             "O_OESArmyDES_AV_8B2_Harrier_01",
             "O_OESArmyDES_C130_Hercules_Transport_01",
-            "O_OESArmyDES_C130_Hercules_Cargo_01"
+            "O_OESArmyDES_C130_Hercules_Cargo_01",
+            "O_OESArmyDES_AS532UL_Cougar_Transport_01",
+            "O_OESArmyDES_AS532UL_Cougar_Armed_01",
+            "O_OESArmyDES_EC665_Tiger_01"
         };
         weapons[] = {};
         requiredVersion = 1.62;
@@ -225,7 +228,16 @@ class CfgPatches {
             "CUP_AirVehicles_AmbientPlanes",
             "TFAR_IntercomDummy",
             "A3_Air_F",
-            "FFAAHelis_Cougar"
+            "FFAAHelis_Cougar",
+            "ffaa_et_cougar",
+            "A3_Air_F_Heli_Light_01",
+            "A3_Air_F_Heli_Light_02",
+            "A3_Air_F_Beta_Heli_Transport_01",
+            "acfaa_bell",
+            "CUP_AirVehicles_412",
+            "cwr3_vehicle_ah6",
+            "CUP_AirVehicles_AH6",
+            "ffaa_et_tigre"
         };
         author = "Rick";
         authors[] = {"Rick"};
@@ -786,6 +798,43 @@ class CfgVehicles {
         class EventHandlers; 
         class Turrets : Turrets {
             class CopilotTurret;
+        };
+    };
+
+    class ffaa_famet_cougar;
+    class ffaa_famet_cougar_OCimport_01 : ffaa_famet_cougar { scope = 0; class EventHandlers; class Turrets; };
+    class ffaa_famet_cougar_OCimport_02 : ffaa_famet_cougar_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class CopilotTurret;
+            class CargoTurret_01;
+            class CargoTurret_02;
+            class CargoTurret_03;
+            class CargoTurret_04;
+        };
+    };
+
+    class ffaa_famet_cougar_armed;
+    class ffaa_famet_cougar_armed_OCimport_01 : ffaa_famet_cougar_armed { scope = 0; class EventHandlers; class Turrets; };
+    class ffaa_famet_cougar_armed_OCimport_02 : ffaa_famet_cougar_armed_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class CopilotTurret;
+            class MainTurret_I;
+            class MainTurret_D;
+            class CargoTurret_01;
+            class CargoTurret_02;
+            class CargoTurret_03;
+            class CargoTurret_04;
+        };
+    };
+
+    class ffaa_famet_tigre;
+    class ffaa_famet_tigre_OCimport_01 : ffaa_famet_tigre { scope = 0; class EventHandlers; class Turrets; };
+    class ffaa_famet_tigre_OCimport_02 : ffaa_famet_tigre_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
         };
     };
 
@@ -1668,7 +1717,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Vamtac (M2)";
         side = 0;
-        faction = "O_ESArmy_DES";
+        faction = "o_esarmy_des";
         crew = "O_OESArmyDES_Driver_01";
 
         class Turrets : Turrets {
@@ -1697,7 +1746,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Vamtac (TOW)";
         side = 0;
-        faction = "O_ESArmy_DES";
+        faction = "o_esarmy_des";
         crew = "O_OESArmyDES_Driver_01";
 
         class Turrets : Turrets {
@@ -1726,7 +1775,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Vamtac (LAG40)";
         side = 0;
-        faction = "O_ESArmy_DES";
+        faction = "o_esarmy_des";
         crew = "O_OESArmyDES_Driver_01";
 
         class Turrets : Turrets {
@@ -1755,7 +1804,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M113 (M2)";
         side = 0;
-        faction = "O_ESArmy_DES";
+        faction = "o_esarmy_des";
         crew = "O_OESArmyDES_Crewman_01";
 
         class Turrets : Turrets {
@@ -1784,7 +1833,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M113 (Sapper)";
         side = 0;
-        faction = "O_ESArmy_DES";
+        faction = "o_esarmy_des";
         crew = "O_OESArmyDES_Crewman_01";
 
         class Turrets : Turrets {
@@ -1813,7 +1862,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M113 (Spike)";
         side = 0;
-        faction = "O_ESArmy_DES";
+        faction = "o_esarmy_des";
         crew = "O_OESArmyDES_Crewman_01";
 
         class Turrets : Turrets {
@@ -1842,7 +1891,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M113 (Medical)";
         side = 0;
-        faction = "O_ESArmy_DES";
+        faction = "o_esarmy_des";
         crew = "O_OESArmyDES_Crewman_01";
 
         class Turrets : Turrets {
@@ -1871,7 +1920,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M577 (HQ)";
         side = 0;
-        faction = "O_ESArmy_DES";
+        faction = "o_esarmy_des";
         crew = "O_OESArmyDES_Crewman_01";
 
         class Turrets : Turrets {
@@ -1900,7 +1949,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M109 A2";
         side = 0;
-        faction = "O_ESArmy_DES";
+        faction = "o_esarmy_des";
         crew = "O_OESArmyDES_Crewman_01";
 
         class Turrets : Turrets {
@@ -1930,7 +1979,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Leopardo 2E";
         side = 0;
-        faction = "O_ESArmy_DES";
+        faction = "o_esarmy_des";
         crew = "O_OESArmyDES_Crewman_01";
 
         class Turrets : Turrets {
@@ -1959,7 +2008,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "EF-18 M Hornet";
         side = 0;
-        faction = "O_ESArmy_DES";
+        faction = "o_esarmy_des";
         crew = "O_OESArmyDES_Pilot_01";
 
 
@@ -1983,7 +2032,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "AV-8B2 Harrier";
         side = 0;
-        faction = "O_ESArmy_DES";
+        faction = "o_esarmy_des";
         crew = "O_OESArmyDES_Pilot_01";
 
 
@@ -2007,7 +2056,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "C-130 Hercules (Transport)";
         side = 0;
-        faction = "O_ESArmy_DES";
+        faction = "o_esarmy_des";
         crew = "O_OESArmyDES_Pilot_01";
 
         class Turrets : Turrets {
@@ -2037,7 +2086,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "C-130 Hercules (Cargo)";
         side = 0;
-        faction = "O_ESArmy_DES";
+        faction = "o_esarmy_des";
         crew = "O_OESArmyDES_Pilot_01";
 
         class Turrets : Turrets {
@@ -2058,6 +2107,103 @@ class CfgVehicles {
         // custom attributes (do not delete)
         ALiVE_orbatCreator_owned = 1;
         ALiVE_orbatCreator_texture = "CAMUFLAJE";
+
+    };
+
+    class O_OESArmyDES_AS532UL_Cougar_Transport_01 : ffaa_famet_cougar_OCimport_02 {
+        author = "Rick";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "AS532UL Cougar (Transport)";
+        side = 0;
+        faction = "O_ESArmy_DES";
+        crew = "O_OESArmyDES_Helicopter_Pilot_01";
+
+        class Turrets : Turrets {
+            class CopilotTurret : CopilotTurret { gunnerType = "O_OESArmyDES_Helicopter_Pilot_01"; };
+            class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
+            class CargoTurret_02 : CargoTurret_02 { gunnerType = ""; };
+            class CargoTurret_03 : CargoTurret_03 { gunnerType = ""; };
+            class CargoTurret_04 : CargoTurret_04 { gunnerType = ""; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class O_OESArmyDES_AS532UL_Cougar_Armed_01 : ffaa_famet_cougar_armed_OCimport_02 {
+        author = "Rick";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "AS532UL Cougar (Armed)";
+        side = 0;
+        faction = "O_ESArmy_DES";
+        crew = "O_OESArmyDES_Helicopter_Pilot_01";
+
+        class Turrets : Turrets {
+            class CopilotTurret : CopilotTurret { gunnerType = "O_OESArmyDES_Helicopter_Pilot_01"; };
+            class MainTurret_I : MainTurret_I { gunnerType = "O_OESArmyDES_Crewman_01"; };
+            class MainTurret_D : MainTurret_D { gunnerType = "O_OESArmyDES_Crewman_01"; };
+            class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
+            class CargoTurret_02 : CargoTurret_02 { gunnerType = ""; };
+            class CargoTurret_03 : CargoTurret_03 { gunnerType = ""; };
+            class CargoTurret_04 : CargoTurret_04 { gunnerType = ""; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class O_OESArmyDES_EC665_Tiger_01 : ffaa_famet_tigre_OCimport_02 {
+        author = "Rick";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "EC665 Tiger";
+        side = 0;
+        faction = "O_ESArmy_DES";
+        crew = "O_OESArmyDES_Helicopter_Pilot_01";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "O_OESArmyDES_Helicopter_Pilot_01"; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
 
     };
 
