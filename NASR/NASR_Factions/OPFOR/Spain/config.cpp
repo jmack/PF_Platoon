@@ -255,8 +255,8 @@ class CfgFactionClasses {
     class O_ESArmy_DES {
         displayName = "[PF] Spanish State";
         side = 0;
-        flag = "NASR_Factions\OPFOR\Spain\data\flag.png";
-        icon = "NASR_Factions\OPFOR\Spain\data\flag.png";
+        flag = "NASR_Factions\OPFOR\Spain\data\flag.paa";
+        icon = "NASR_Factions\OPFOR\Spain\data\flag.paa";
         priority = 0;
     };
 };
