@@ -142,7 +142,6 @@ class CfgPatches {
             "rhsusf_c_m113",
             "rhsusf_c_m1a1",
             "rhsusf_c_m1a2",
-            "m109_ukr",
             "rhs_c_a2port_armor",
             "ace_cookoff",
             "ace_logistics_uavbattery",
