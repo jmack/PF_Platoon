@@ -239,8 +239,8 @@ class CfgPatches {
             "CUP_AirVehicles_AH6",
             "ffaa_et_tigre"
         };
-        author = "Rick";
-        authors[] = {"Rick"};
+        author = "wlan0";
+        authors[] = {"wlan0"};
         addonRootClass = "NASR_Factions";
     };
 };
@@ -255,8 +255,8 @@ class CfgFactionClasses {
     class O_ESArmy_DES {
         displayName = "[PF] Spanish State";
         side = 0;
-        flag = "\A3\ui_f\data\map\markers\flags\Spain_ca.paa";
-        icon = "\A3\ui_f\data\map\markers\flags\Spain_ca.paa";
+        flag = "NASR_Factions\OPFOR\Spain\data\flag.png";
+        icon = "NASR_Factions\OPFOR\Spain\data\flag.png";
         priority = 0;
     };
 };
@@ -840,7 +840,7 @@ class CfgVehicles {
 
 
     class O_ESArmy_Rifleman_DES_01 : O_Soldier_F_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Rifleman";
@@ -881,7 +881,7 @@ class CfgVehicles {
     };
 
     class O_OESArmyDES_Rifleman_AT_01 : O_ESArmy_Rifleman_DES_01 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Rifleman (AT)";
@@ -922,7 +922,7 @@ class CfgVehicles {
     };
 
     class O_OESArmyDES_Grenadier_01 : O_ESArmy_Rifleman_DES_01 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Grenadier";
@@ -963,7 +963,7 @@ class CfgVehicles {
     };
 
     class O_OESArmyDES_Machine_Gunner_01 : O_ESArmy_Rifleman_DES_01 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Machine Gunner";
@@ -1004,7 +1004,7 @@ class CfgVehicles {
     };
 
     class O_OESArmyDES_Sniper_01 : O_ESArmy_Rifleman_DES_01 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Sniper";
@@ -1045,7 +1045,7 @@ class CfgVehicles {
     };
 
     class O_OESArmyDES_Medic_01 : O_ESArmy_Rifleman_DES_01 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Medic";
@@ -1086,7 +1086,7 @@ class CfgVehicles {
     };
 
     class O_OESArmyDES_Team_Leader_01 : O_ESArmy_Rifleman_DES_01 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Team Leader";
@@ -1125,7 +1125,7 @@ class CfgVehicles {
     };
 
     class O_OESArmyDES_Squad_Leader_01 : O_ESArmy_Rifleman_DES_01 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Squad Leader";
@@ -1166,7 +1166,7 @@ class CfgVehicles {
     };
 
     class O_OESArmyDES_Officer_01 : O_ESArmy_Rifleman_DES_01 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Officer";
@@ -1205,7 +1205,7 @@ class CfgVehicles {
     };
 
     class O_OESArmyDES_Driver_01 : O_ESArmy_Rifleman_DES_01 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Driver";
@@ -1244,7 +1244,7 @@ class CfgVehicles {
     };
 
     class O_OESArmyDES_Crewman_01 : O_OESArmyDES_Driver_01 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Crewman";
@@ -1283,7 +1283,7 @@ class CfgVehicles {
     };
 
     class O_OESArmyDES_Crew_Commander_01 : O_OESArmyDES_Crewman_01 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Crew Commander";
@@ -1322,7 +1322,7 @@ class CfgVehicles {
     };
 
     class O_OESArmyDES_Pilot_01 : O_OESArmyDES_Driver_01 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Pilot";
@@ -1363,7 +1363,7 @@ class CfgVehicles {
     };
 
     class O_OESArmyDES_Helicopter_Pilot_01 : O_OESArmyDES_Pilot_01 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Helicopter Pilot";
@@ -1402,7 +1402,7 @@ class CfgVehicles {
     };
 
     class O_OESArmyDES_Rifleman_AA_01 : O_OESArmyDES_Rifleman_AT_01 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Rifleman (AA)";
@@ -1443,7 +1443,7 @@ class CfgVehicles {
     };
 
     class O_OESArmyDES_Paratrooper_01 : O_ESArmy_Rifleman_DES_01 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Paratrooper";
@@ -1484,7 +1484,7 @@ class CfgVehicles {
     };
 
     class O_OESArmyDES_Pegaso_7226_Covered_01 : ffaa_et_pegaso_carga_lona_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Pegaso 7226 Covered";
@@ -1514,7 +1514,7 @@ class CfgVehicles {
     };
 
     class O_OESArmyDES_Pegaso_7226_01 : ffaa_et_pegaso_carga_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Pegaso 7226";
@@ -1544,7 +1544,7 @@ class CfgVehicles {
     };
 
     class O_OESArmyDES_Pegaso_7226_Ammo_01 : ffaa_et_pegaso_municion_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Pegaso 7226 Ammo";
@@ -1568,7 +1568,7 @@ class CfgVehicles {
     };
 
     class O_OESArmyDES_Pegaso_7226_Fuel_01 : ffaa_et_pegaso_combustible_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Pegaso 7226 Fuel";
@@ -1592,7 +1592,7 @@ class CfgVehicles {
     };
 
     class O_OESArmyDES_M250_01 : ffaa_et_m250_carga_blin_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M250";
@@ -1623,7 +1623,7 @@ class CfgVehicles {
     };
 
     class O_OESArmyDES_M250_Covered_01 : ffaa_et_m250_carga_lona_blin_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M250 Covered";
@@ -1654,7 +1654,7 @@ class CfgVehicles {
     };
 
     class O_OESArmyDES_M250_Fuel_01 : ffaa_et_m250_combustible_blin_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M250 Fuel";
@@ -1683,7 +1683,7 @@ class CfgVehicles {
     };
 
     class O_OESArmyDES_M250_Ammo_01 : ffaa_et_m250_municion_blin_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M250 Ammo";
@@ -1712,7 +1712,7 @@ class CfgVehicles {
     };
 
     class O_OESArmyDES_Vamtac_M2_01 : ffaaveh_vamtac_m2_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Vamtac (M2)";
@@ -1741,7 +1741,7 @@ class CfgVehicles {
     };
 
     class O_OESArmyDES_Vamtac_TOW_01 : ffaaveh_vamtac_tow_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Vamtac (TOW)";
@@ -1770,7 +1770,7 @@ class CfgVehicles {
     };
 
     class O_OESArmyDES_Vamtac_LAG40_01 : ffaaveh_vamtac_lag40_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Vamtac (LAG40)";
@@ -1799,7 +1799,7 @@ class CfgVehicles {
     };
 
     class O_OESArmyDES_M113_M2_01 : ffaa_et_toa_m2_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M113 (M2)";
@@ -1828,7 +1828,7 @@ class CfgVehicles {
     };
 
     class O_OESArmyDES_M113_Sapper_01 : ffaa_et_toa_zapador_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M113 (Sapper)";
@@ -1857,7 +1857,7 @@ class CfgVehicles {
     };
 
     class O_OESArmyDES_M113_Spike_01 : ffaa_et_toa_spike_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M113 (Spike)";
@@ -1886,7 +1886,7 @@ class CfgVehicles {
     };
 
     class O_OESArmyDES_M113_Medical_01 : ffaa_et_toa_ambulancia_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M113 (Medical)";
@@ -1915,7 +1915,7 @@ class CfgVehicles {
     };
 
     class O_OESArmyDES_M577_HQ_01 : ffaa_et_toa_mando_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M577 (HQ)";
@@ -1944,7 +1944,7 @@ class CfgVehicles {
     };
 
     class O_OESArmyDES_M109_A2_01 : ffaa_ar_m109_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M109 A2";
@@ -1974,7 +1974,7 @@ class CfgVehicles {
     };
 
     class O_OESArmyDES_Leopardo_2E_01 : ffaa_et_leopardo_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Leopardo 2E";
@@ -2003,7 +2003,7 @@ class CfgVehicles {
     };
 
     class O_OESArmyDES_EF_18_MHornet_01 : ffaa_ea_ef18m_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "EF-18 M Hornet";
@@ -2027,7 +2027,7 @@ class CfgVehicles {
     };
 
     class O_OESArmyDES_AV_8B2_Harrier_01 : FFAAPlanes_Harrier_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "AV-8B2 Harrier";
@@ -2051,7 +2051,7 @@ class CfgVehicles {
     };
 
     class O_OESArmyDES_C130_Hercules_Transport_01 : ffaa_ea_hercules_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "C-130 Hercules (Transport)";
@@ -2081,7 +2081,7 @@ class CfgVehicles {
     };
 
     class O_OESArmyDES_C130_Hercules_Cargo_01 : ffaa_ea_hercules_cargo_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "C-130 Hercules (Cargo)";
@@ -2111,7 +2111,7 @@ class CfgVehicles {
     };
 
     class O_OESArmyDES_AS532UL_Cougar_Transport_01 : ffaa_famet_cougar_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "AS532UL Cougar (Transport)";
@@ -2144,7 +2144,7 @@ class CfgVehicles {
     };
 
     class O_OESArmyDES_AS532UL_Cougar_Armed_01 : ffaa_famet_cougar_armed_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "AS532UL Cougar (Armed)";
@@ -2179,7 +2179,7 @@ class CfgVehicles {
     };
 
     class O_OESArmyDES_EC665_Tiger_01 : ffaa_famet_tigre_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "EC665 Tiger";
