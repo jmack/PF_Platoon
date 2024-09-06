@@ -1955,8 +1955,8 @@ class CfgVehicles {
 
         uniformClass = "TRYK_U_B_3cr";
 
-        linkedItems[] = {"cwr3_b_vest_alice_light","H_Cap_tan","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
-        respawnlinkedItems[] = {"cwr3_b_vest_alice_light","H_Cap_tan","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+        linkedItems[] = {"cwr3_b_vest_alice_light","cwr3_b_headgear_boonie_desert_6color","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+        respawnlinkedItems[] = {"cwr3_b_vest_alice_light","cwr3_b_headgear_boonie_desert_6color","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
 
         weapons[] = {"CUP_arifle_XM8_Compact_Rail_Tan","CUP_hgun_M9","Laserdesignator_03"};
         respawnWeapons[] = {"CUP_arifle_XM8_Compact_Rail_Tan","CUP_hgun_M9","Laserdesignator_03"};
@@ -1964,9 +1964,9 @@ class CfgVehicles {
         magazines[] = {"CUP_30Rnd_556x45_XM8","CUP_15Rnd_9x19_M9","Laserbatteries","CUP_30Rnd_556x45_XM8","CUP_15Rnd_9x19_M9","Laserbatteries"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_XM8","CUP_15Rnd_9x19_M9","Laserbatteries","CUP_30Rnd_556x45_XM8","CUP_15Rnd_9x19_M9","Laserbatteries"};
 
-        backpack = "B_AssaultPack_cbr";
+        backpack = "B_RadioBag_01_mtp_F";
 
-        ALiVE_orbatCreator_loadout[] = {{"CUP_arifle_XM8_Compact_Rail_Tan","CUP_muzzle_snds_XM8","","JCA_optic_ACOG_sand",{"CUP_30Rnd_556x45_XM8",30},{},""},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"TRYK_U_B_3cr",{{"FirstAidKit",1},{"CUP_15Rnd_9x19_M9",2,15},{"CUP_30Rnd_556x45_XM8",3,30}}},{"cwr3_b_vest_alice_light",{{"CUP_HandGrenade_M67",4,1},{"CUP_15Rnd_9x19_M9",1,15}}},{"B_AssaultPack_cbr",{}},"H_Cap_tan","CUP_FR_NeckScarf",{"Laserdesignator_03","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
+        ALiVE_orbatCreator_loadout[] = {{"CUP_arifle_XM8_Compact_Rail_Tan","CUP_muzzle_snds_XM8","","JCA_optic_ACOG_sand",{"CUP_30Rnd_556x45_XM8",30},{},""},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"TRYK_U_B_3cr",{{"FirstAidKit",1},{"CUP_15Rnd_9x19_M9",2,15},{"CUP_30Rnd_556x45_XM8",3,30}}},{"cwr3_b_vest_alice_light",{{"CUP_HandGrenade_M67",4,1},{"CUP_15Rnd_9x19_M9",1,15}}},{"B_RadioBag_01_mtp_F",{}},"cwr3_b_headgear_boonie_desert_6color","CUP_FR_NeckScarf",{"Laserdesignator_03","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
 
 
         class EventHandlers : EventHandlers {
