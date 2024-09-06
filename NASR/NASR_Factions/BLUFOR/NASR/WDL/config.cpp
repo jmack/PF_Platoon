@@ -340,7 +340,7 @@ class CfgGroups {
     class WEST {
 
         class B_NASRArmy_WDL {
-            name = "[PF] North American Socialist Republic";
+            name = "[PF] North American Socialist Republic (Woodland)";
 
             class Infantry {
                 name = "Infantry";
