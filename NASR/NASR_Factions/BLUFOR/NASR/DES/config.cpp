@@ -1252,6 +1252,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_NASRArmy_Rifleman_DES_01.jpg";
         displayName = "Rifleman";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -1293,6 +1294,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_NASRArmy_Rifleman_M136_DES_01.jpg";
         displayName = "Rifleman (M136)";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -1334,6 +1336,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_NASRArmy_Grenadier_DES_01.jpg";
         displayName = "Grenadier";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -1375,6 +1378,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_NASRArmy_Machine_Gunner_DES_01.jpg";
         displayName = "Machine Gunner";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -1416,6 +1420,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_NASRArmy_Ammo_Bearer_DES_01.jpg";
         displayName = "Ammo Bearer";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -1457,6 +1462,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_NASRArmy_Marksman_DES_01.jpg";
         displayName = "Marksman";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -1498,6 +1504,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_NASRArmy_RATELO_DES_01.jpg";
         displayName = "RATELO";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -1539,6 +1546,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_NASRArmy_Corpsman_DES_01.jpg";
         displayName = "Corpsman";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -1580,6 +1588,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_NASRArmy_Rifleman_AT_DES_01.jpg";
         displayName = "Rifleman (AT)";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -1621,6 +1630,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_NASRArmy_Rifleman_AA_DES_01.jpg";
         displayName = "Rifleman (AA)";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -1662,6 +1672,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_NASRArmy_Team_Leader_DES_01.jpg";
         displayName = "Team Leader";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -1703,6 +1714,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_NASRArmy_Squad_Leader_DES_01.jpg";
         displayName = "Squad Leader";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -1744,6 +1756,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_NASRArmy_Crewman_DES_01.jpg";
         displayName = "Crewman";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -1785,6 +1798,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_NASRArmy_Pilot_DES_01.jpg";
         displayName = "Pilot";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -1826,6 +1840,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_NASRArmy_Pilot_Helicopter_DES_01.jpg";
         displayName = "Pilot (Helicopter)";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -1865,6 +1880,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_NASRArmy_Officer_DES_01.jpg";
         displayName = "Officer";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -1906,6 +1922,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_NASRArmy_Sniper_DES_01.jpg";
         displayName = "Sniper";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -1947,6 +1964,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_NASRArmy_Spotter_DES_01.jpg";
         displayName = "Spotter";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -1988,6 +2006,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_M1151_HMMWV_Unarmed_01.jpg";
         displayName = "M1151 HMMWV Unarmed";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -2013,6 +2032,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_M1151_HMMWV_M2_01.jpg";
         displayName = "M1151 HMMWV M2";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -2044,6 +2064,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_M1151_HMMWV_Mk19_01.jpg";
         displayName = "M1151 HMMWV Mk19";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -2075,6 +2096,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_M1151_HMMWV_TOW_01.jpg";
         displayName = "M1151 HMMWV TOW";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -2106,6 +2128,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_M1151_HMMWV_MedEvac_01.jpg";
         displayName = "M1151 HMMWV MedEvac";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -2131,6 +2154,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_M1151_HMMWV_Transport_01.jpg";
         displayName = "M1151 HMMWV Transport";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -2156,6 +2180,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_M939_Covered_01.jpg";
         displayName = "M939 Covered";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -2181,6 +2206,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_M939_Open_01.jpg";
         displayName = "M939 Open";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -2206,6 +2232,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_M939_Ammo_01.jpg";
         displayName = "M939 Ammo";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -2231,6 +2258,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_M939_Fuel_01.jpg";
         displayName = "M939 Fuel";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -2256,6 +2284,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_M939_Repair_01.jpg";
         displayName = "M939 Repair";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -2281,6 +2310,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_M939_Cargo_01.jpg";
         displayName = "M939 Cargo";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -2306,6 +2336,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_M939_MedEvac_01.jpg";
         displayName = "M939 MedEvac";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -2332,6 +2363,7 @@ class CfgVehicles {
         editorSubcategory = "NASR_APCs";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_M1126_Stryker_M2_01.jpg";
         displayName = "M1126 Stryker M2";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -2364,6 +2396,7 @@ class CfgVehicles {
         editorSubcategory = "NASR_APCs";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_M1126_Stryker_Mk19_01.jpg";
         displayName = "M1126 Stryker Mk19";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -2396,6 +2429,7 @@ class CfgVehicles {
         editorSubcategory = "NASR_APCs";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_M1126_Stryker_MGS_01.jpg";
         displayName = "M1126 Stryker MGS";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -2428,6 +2462,7 @@ class CfgVehicles {
         editorSubcategory = "NASR_APCs";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_M2_Bradley_IFV_01.jpg";
         displayName = "M2A2 Bradley IFV";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -2459,6 +2494,7 @@ class CfgVehicles {
         editorSubcategory = "NASR_Tanks";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_M1A2_Butler_01.jpg";
         displayName = "M1A2 Butler";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -2489,6 +2525,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_MH_6M_Unarmed_01.jpg";
         displayName = "MH-6M (Unarmed)";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -2527,6 +2564,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_AH_6M_01.jpg";
         displayName = "AH-6M";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -2556,6 +2594,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_UH_60M_Blackbird_Unarmed_01.jpg";
         displayName = "UH-60M Blackbird (Unarmed)";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -2588,6 +2627,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_AH_64D_Souix_01.jpg";
         displayName = "AH-64D Souix";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -2618,6 +2658,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_UH_60M_Blackbird_MedEvac_01.jpg";
         displayName = "UH-60M Blackbird (MedEvac)";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -2653,6 +2694,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_UH_60L_Blackbird_2Pylons_01.jpg";
         displayName = "UH-60L Blackbird (2 Pylons)";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -2684,6 +2726,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_UH_60L_Blackbird_4Pylons_01.jpg";
         displayName = "UH-60L Blackbird (4 Pylons)";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -2715,6 +2758,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_UH_60M_Blackhawk_Door_Guns_01.jpg";
         displayName = "UH-60M Blackhawk (Door Guns)";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -2746,6 +2790,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_CH_47F_Chinook_Cargo_01.jpg";
         displayName = "CH-47F Chinook (Cargo)";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -2777,6 +2822,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_CH_47F_Chinook_Transport_01.jpg";
         displayName = "CH-47F Chinook (Transport)";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -2809,6 +2855,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_A10A_Thunderbolt_II_01.jpg";
         displayName = "A-10A Thunderbolt II";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -2834,6 +2881,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_F4E_01.jpg";
         displayName = "F-4E";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -2864,6 +2912,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_F16C_01.jpg";
         displayName = "F-16C";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -2889,6 +2938,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_C130E_Transport_01.jpg";
         displayName = "C-130E Transport";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -2919,6 +2969,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_C130E_Cargo_01.jpg";
         displayName = "C-130E Cargo";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -2949,6 +3000,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_F18_Multirole_01.jpg";
         displayName = "F-18 Multirole";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -2974,6 +3026,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_F18_CAP_01.jpg";
         displayName = "F-18 CAP";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -2999,6 +3052,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_Delta_Force_Team_Leader_01.jpg";
         displayName = "Delta Force Team Leader";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -3040,6 +3094,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_Delta_Force_Rifleman_01.jpg";
         displayName = "Delta Force Rifleman";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -3081,6 +3136,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_Delta_Force_Machine_Gunner_01.jpg";
         displayName = "Delta Force Machine Gunner";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -3122,6 +3178,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_Delta_Force_Grenadier_01.jpg";
         displayName = "Delta Force Grenadier";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -3163,6 +3220,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_Delta_Force_Marksman_01.jpg";
         displayName = "Delta Force Marksman";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -3204,6 +3262,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_Delta_Force_Operator_01.jpg";
         displayName = "Delta Force Operator";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -3246,6 +3305,7 @@ class CfgVehicles {
         editorSubcategory = "NASR_Artillery";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_M270_MLRS_HE_01.jpg";
         displayName = "M270 MLRS (HE)";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -3277,6 +3337,7 @@ class CfgVehicles {
         editorSubcategory = "NASR_Artillery";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_M270_MLRS_DPICM_01.jpg";
         displayName = "M270 MLRS (DPICM)";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -3308,6 +3369,7 @@ class CfgVehicles {
         editorSubcategory = "NASR_Artillery";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_M119_01.jpg";
         displayName = "M119";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -3338,6 +3400,7 @@ class CfgVehicles {
         editorSubcategory = "NASR_Artillery";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_M109A6_01.jpg";
         displayName = "M109A6";
         side = 1;
         faction = "b_nasrarmy_des";
@@ -3369,6 +3432,7 @@ class CfgVehicles {
         editorSubcategory = "NASR_Artillery";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\BLUFOR\NASR\DES\previews\B_BNASRArmyDES_M252_01.jpg";
         displayName = "M252";
         side = 1;
         faction = "b_nasrarmy_des";
