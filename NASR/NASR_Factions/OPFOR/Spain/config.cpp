@@ -843,6 +843,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_ESArmy_Rifleman_DES_01.jpg";
         displayName = "Rifleman";
         side = 0;
         faction = "o_esarmy_des";
@@ -884,6 +885,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_OESArmyDES_Rifleman_AT_01.jpg";
         displayName = "Rifleman (AT)";
         side = 0;
         faction = "o_esarmy_des";
@@ -925,6 +927,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_OESArmyDES_Grenadier_01.jpg";
         displayName = "Grenadier";
         side = 0;
         faction = "o_esarmy_des";
@@ -966,6 +969,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_OESArmyDES_Machine_Gunner_01.jpg";
         displayName = "Machine Gunner";
         side = 0;
         faction = "o_esarmy_des";
@@ -1007,6 +1011,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_OESArmyDES_Sniper_01.jpg";
         displayName = "Sniper";
         side = 0;
         faction = "o_esarmy_des";
@@ -1048,6 +1053,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_OESArmyDES_Medic_01.jpg";
         displayName = "Medic";
         side = 0;
         faction = "o_esarmy_des";
@@ -1089,6 +1095,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_OESArmyDES_Team_Leader_01.jpg";
         displayName = "Team Leader";
         side = 0;
         faction = "o_esarmy_des";
@@ -1128,6 +1135,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_OESArmyDES_Squad_Leader_01.jpg";
         displayName = "Squad Leader";
         side = 0;
         faction = "o_esarmy_des";
@@ -1169,6 +1177,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_OESArmyDES_Officer_01.jpg";
         displayName = "Officer";
         side = 0;
         faction = "o_esarmy_des";
@@ -1208,6 +1217,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_OESArmyDES_Driver_01.jpg";
         displayName = "Driver";
         side = 0;
         faction = "o_esarmy_des";
@@ -1247,6 +1257,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_OESArmyDES_Crewman_01.jpg";
         displayName = "Crewman";
         side = 0;
         faction = "o_esarmy_des";
@@ -1286,6 +1297,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_OESArmyDES_Crew_Commander_01.jpg";
         displayName = "Crew Commander";
         side = 0;
         faction = "o_esarmy_des";
@@ -1325,6 +1337,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_OESArmyDES_Pilot_01.jpg";
         displayName = "Pilot";
         side = 0;
         faction = "o_esarmy_des";
@@ -1366,6 +1379,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_OESArmyDES_Helicopter_Pilot_01.jpg";
         displayName = "Helicopter Pilot";
         side = 0;
         faction = "o_esarmy_des";
@@ -1405,6 +1419,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_OESArmyDES_Rifleman_AA_01.jpg";
         displayName = "Rifleman (AA)";
         side = 0;
         faction = "o_esarmy_des";
@@ -1446,6 +1461,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_OESArmyDES_Paratrooper_01.jpg";
         displayName = "Paratrooper";
         side = 0;
         faction = "o_esarmy_des";
@@ -1487,6 +1503,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_OESArmyDES_Pegaso_7226_Covered_01.jpg";
         displayName = "Pegaso 7226 Covered";
         side = 0;
         faction = "o_esarmy_des";
@@ -1517,6 +1534,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_OESArmyDES_Pegaso_7226_01.jpg";
         displayName = "Pegaso 7226";
         side = 0;
         faction = "o_esarmy_des";
@@ -1547,6 +1565,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_OESArmyDES_Pegaso_7226_Ammo_01.jpg";
         displayName = "Pegaso 7226 Ammo";
         side = 0;
         faction = "o_esarmy_des";
@@ -1571,6 +1590,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_OESArmyDES_Pegaso_7226_Fuel_01.jpg";
         displayName = "Pegaso 7226 Fuel";
         side = 0;
         faction = "o_esarmy_des";
@@ -1595,6 +1615,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_OESArmyDES_M250_01.jpg";
         displayName = "M250";
         side = 0;
         faction = "o_esarmy_des";
@@ -1626,6 +1647,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_OESArmyDES_M250_Covered_01.jpg";
         displayName = "M250 Covered";
         side = 0;
         faction = "o_esarmy_des";
@@ -1657,6 +1679,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_OESArmyDES_M250_Fuel_01.jpg";
         displayName = "M250 Fuel";
         side = 0;
         faction = "o_esarmy_des";
@@ -1686,6 +1709,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_OESArmyDES_M250_Ammo_01.jpg";
         displayName = "M250 Ammo";
         side = 0;
         faction = "o_esarmy_des";
@@ -1715,6 +1739,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_OESArmyDES_Vamtac_M2_01.jpg";
         displayName = "Vamtac (M2)";
         side = 0;
         faction = "o_esarmy_des";
@@ -1744,6 +1769,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_OESArmyDES_Vamtac_TOW_01.jpg";
         displayName = "Vamtac (TOW)";
         side = 0;
         faction = "o_esarmy_des";
@@ -1773,6 +1799,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_OESArmyDES_Vamtac_LAG40_01.jpg";
         displayName = "Vamtac (LAG40)";
         side = 0;
         faction = "o_esarmy_des";
@@ -1802,6 +1829,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_OESArmyDES_M113_M2_01.jpg";
         displayName = "M113 (M2)";
         side = 0;
         faction = "o_esarmy_des";
@@ -1831,6 +1859,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_OESArmyDES_M113_Sapper_01.jpg";
         displayName = "M113 (Sapper)";
         side = 0;
         faction = "o_esarmy_des";
@@ -1860,6 +1889,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_OESArmyDES_M113_Spike_01.jpg";
         displayName = "M113 (Spike)";
         side = 0;
         faction = "o_esarmy_des";
@@ -1889,6 +1919,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_OESArmyDES_M113_Medical_01.jpg";
         displayName = "M113 (Medical)";
         side = 0;
         faction = "o_esarmy_des";
@@ -1918,6 +1949,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_OESArmyDES_M577_HQ_01.jpg";
         displayName = "M577 (HQ)";
         side = 0;
         faction = "o_esarmy_des";
@@ -1947,6 +1979,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_OESArmyDES_M109_A2_01.jpg";
         displayName = "M109 A2";
         side = 0;
         faction = "o_esarmy_des";
@@ -1977,6 +2010,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_OESArmyDES_Leopardo_2E_01.jpg";
         displayName = "Leopardo 2E";
         side = 0;
         faction = "o_esarmy_des";
@@ -2006,6 +2040,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_OESArmyDES_EF_18_MHornet_01.jpg";
         displayName = "EF-18 M Hornet";
         side = 0;
         faction = "o_esarmy_des";
@@ -2030,6 +2065,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_OESArmyDES_AV_8B2_Harrier_01.jpg";
         displayName = "AV-8B2 Harrier";
         side = 0;
         faction = "o_esarmy_des";
@@ -2054,6 +2090,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_OESArmyDES_C130_Hercules_Transport_01.jpg";
         displayName = "C-130 Hercules (Transport)";
         side = 0;
         faction = "o_esarmy_des";
@@ -2084,6 +2121,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_OESArmyDES_C130_Hercules_Cargo_01.jpg";
         displayName = "C-130 Hercules (Cargo)";
         side = 0;
         faction = "o_esarmy_des";
@@ -2114,6 +2152,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_OESArmyDES_AS532UL_Cougar_Transport_01.jpg";
         displayName = "AS532UL Cougar (Transport)";
         side = 0;
         faction = "O_ESArmy_DES";
@@ -2147,6 +2186,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_OESArmyDES_AS532UL_Cougar_Armed_01.jpg";
         displayName = "AS532UL Cougar (Armed)";
         side = 0;
         faction = "O_ESArmy_DES";
@@ -2182,6 +2222,7 @@ class CfgVehicles {
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
+        editorPreview = "NASR_Factions\OPFOR\Spain\data\previews\O_OESArmyDES_EC665_Tiger_01.jpg";
         displayName = "EC665 Tiger";
         side = 0;
         faction = "O_ESArmy_DES";
