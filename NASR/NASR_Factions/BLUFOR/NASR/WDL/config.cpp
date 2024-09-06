@@ -328,7 +328,7 @@ class CfgEditorSubcategories
 
 class CfgFactionClasses {
     class B_NASRArmy_WDL {
-        displayName = "[PF] North American Socialist Republic";
+        displayName = "[PF] North American Socialist Republic (Woodland)";
         side = 1;
         flag = "NASR_Factions\BLUFOR\NASR\data\flag.paa";
         icon = "NASR_Factions\BLUFOR\NASR\data\flag.paa";
@@ -1249,7 +1249,7 @@ class CfgVehicles {
 
 
     class B_NASRArmy_Rifleman_WDL_01 : O_Soldier_F_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_NASRArmy_Rifleman_WDL_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_NASRArmy_Rifleman_WDL_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -1292,7 +1292,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Rifleman_M136_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_NASRArmy_Rifleman_M136_WDL_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_NASRArmy_Rifleman_M136_WDL_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -1334,7 +1334,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Grenadier_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_NASRArmy_Grenadier_WDL_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_NASRArmy_Grenadier_WDL_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -1376,7 +1376,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Machine_Gunner_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_NASRArmy_Machine_Gunner_WDL_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_NASRArmy_Machine_Gunner_WDL_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -1418,7 +1418,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Ammo_Bearer_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_NASRArmy_Ammo_Bearer_WDL_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_NASRArmy_Ammo_Bearer_WDL_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -1460,7 +1460,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Marksman_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_NASRArmy_Marksman_WDL_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_NASRArmy_Marksman_WDL_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -1502,7 +1502,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_RATELO_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_NASRArmy_RATELO_WDL_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_NASRArmy_RATELO_WDL_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -1544,7 +1544,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Corpsman_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_NASRArmy_Corpsman_WDL_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_NASRArmy_Corpsman_WDL_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -1586,7 +1586,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Rifleman_AT_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_NASRArmy_Rifleman_AT_WDL_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_NASRArmy_Rifleman_AT_WDL_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -1628,7 +1628,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Rifleman_AA_WDL_01 : B_NASRArmy_Rifleman_AT_WDL_01 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_NASRArmy_Rifleman_AA_WDL_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_NASRArmy_Rifleman_AA_WDL_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -1670,7 +1670,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Team_Leader_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_NASRArmy_Team_Leader_WDL_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_NASRArmy_Team_Leader_WDL_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -1712,7 +1712,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Squad_Leader_WDL_01 : B_NASRArmy_Team_Leader_WDL_01 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_NASRArmy_Squad_Leader_WDL_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_NASRArmy_Squad_Leader_WDL_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -1754,7 +1754,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Crewman_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_NASRArmy_Crewman_WDL_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_NASRArmy_Crewman_WDL_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -1796,7 +1796,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Pilot_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_NASRArmy_Pilot_WDL_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_NASRArmy_Pilot_WDL_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -1838,7 +1838,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Pilot_Helicopter_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_NASRArmy_Pilot_Helicopter_WDL_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_NASRArmy_Pilot_Helicopter_WDL_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -1878,7 +1878,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Officer_WDL_01 : B_NASRArmy_Squad_Leader_WDL_01 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_NASRArmy_Officer_WDL_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_NASRArmy_Officer_WDL_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -1920,7 +1920,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Sniper_WDL_01 : B_NASRArmy_Rifleman_WDL_01 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_NASRArmy_Sniper_WDL_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_NASRArmy_Sniper_WDL_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -1962,7 +1962,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Spotter_WDL_01 : B_NASRArmy_Sniper_WDL_01 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_NASRArmy_Spotter_WDL_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_NASRArmy_Spotter_WDL_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -2004,7 +2004,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M1151_HMMWV_Unarmed_01 : cwr3_b_hmmwv_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M1151_HMMWV_Unarmed_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_M1151_HMMWV_Unarmed_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -2030,7 +2030,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M1151_HMMWV_M2_01 : cwr3_b_hmmwv_m2_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M1151_HMMWV_M2_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_M1151_HMMWV_M2_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -2062,7 +2062,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M1151_HMMWV_Mk19_01 : cwr3_b_hmmwv_mk19_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M1151_HMMWV_Mk19_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_M1151_HMMWV_Mk19_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -2094,7 +2094,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M1151_HMMWV_TOW_01 : cwr3_b_hmmwv_tow_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M1151_HMMWV_TOW_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_M1151_HMMWV_TOW_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -2126,7 +2126,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M1151_HMMWV_MedEvac_01 : cwr3_b_hmmwv_mev_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M1151_HMMWV_MedEvac_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_M1151_HMMWV_MedEvac_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -2152,7 +2152,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M1151_HMMWV_Transport_01 : cwr3_b_hmmwv_transport_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M1151_HMMWV_Transport_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_M1151_HMMWV_Transport_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -2178,7 +2178,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M939_Covered_01 : cwr3_b_m939_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M939_Covered_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_M939_Covered_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -2204,7 +2204,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M939_Open_01 : cwr3_b_m939_open_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M939_Open_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_M939_Open_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -2230,7 +2230,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M939_Ammo_01 : cwr3_b_m939_reammo_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M939_Ammo_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_M939_Ammo_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -2256,7 +2256,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M939_Fuel_01 : cwr3_b_m939_refuel_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M939_Fuel_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_M939_Fuel_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -2282,7 +2282,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M939_Repair_01 : cwr3_b_m939_repair_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M939_Repair_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_M939_Repair_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -2308,7 +2308,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M939_Cargo_01 : cwr3_b_m939_empty_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M939_Cargo_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_M939_Cargo_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -2334,7 +2334,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M939_MedEvac_01 : cwr3_b_m939_mev_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M939_MedEvac_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_M939_MedEvac_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -2360,7 +2360,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M1126_Stryker_M2_01 : CUP_B_M1126_ICV_M2_Woodland_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M1126_Stryker_M2_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_M1126_Stryker_M2_01.jpg";
         author = "wlan0";
         editorSubcategory = "NASR_APCs";
         scope = 2;
@@ -2393,7 +2393,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M1126_Stryker_Mk19_01 : CUP_B_M1126_ICV_MK19_Woodland_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M1126_Stryker_Mk19_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_M1126_Stryker_Mk19_01.jpg";
         author = "wlan0";
         editorSubcategory = "NASR_APCs";
         scope = 2;
@@ -2425,7 +2425,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M1126_Stryker_MGS_01 : CUP_B_M1128_MGS_Woodland_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M1126_Stryker_MGS_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_M1126_Stryker_MGS_01.jpg";
         author = "wlan0";
         editorSubcategory = "NASR_APCs";
         scope = 2;
@@ -2457,7 +2457,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M2_Bradley_IFV_01 : CUP_B_M2Bradley_USA_W_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M2_Bradley_IFV_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_M2_Bradley_IFV_01.jpg";
         author = "wlan0";
         editorSubcategory = "NASR_APCs";
         scope = 2;
@@ -2489,7 +2489,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M1A2_Butler_01 : CUP_B_M1A2C_TUSK_II_Woodland_US_Army_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M1A2_Butler_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_M1A2_Butler_01.jpg";
         author = "wlan0";
         editorSubcategory = "NASR_Tanks";
         scope = 2;
@@ -2521,7 +2521,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_MH_6M_Unarmed_01 : CUP_B_MH6M_OBS_USA_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_MH_6M_Unarmed_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_MH_6M_Unarmed_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -2559,7 +2559,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_AH_6M_01 : CUP_B_AH6M_USA_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_AH_6M_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_AH_6M_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -2589,7 +2589,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_UH_60M_Blackbird_Unarmed_01 : CUP_B_UH60M_Unarmed_US_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_UH_60M_Blackbird_Unarmed_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_UH_60M_Blackbird_Unarmed_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -2622,7 +2622,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_AH_64D_Souix_01 : RHS_AH64D_wd_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_AH_64D_Souix_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_AH_64D_Souix_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -2653,7 +2653,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_UH_60M_Blackbird_MedEvac_01 : CUP_B_UH60M_Unarmed_FFV_MEV_US_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_UH_60M_Blackbird_MedEvac_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_UH_60M_Blackbird_MedEvac_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -2689,7 +2689,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_UH_60L_Blackbird_2Pylons_01 : CUP_B_MH60L_DAP_2x_US_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_UH_60L_Blackbird_2Pylons_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_UH_60L_Blackbird_2Pylons_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -2721,7 +2721,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_UH_60L_Blackbird_4Pylons_01 : CUP_B_MH60L_DAP_4x_US_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_UH_60L_Blackbird_4Pylons_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_UH_60L_Blackbird_4Pylons_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -2753,7 +2753,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_UH_60M_Blackhawk_Door_Guns_01 : CUP_B_UH60M_US_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_UH_60M_Blackhawk_Door_Guns_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_UH_60M_Blackhawk_Door_Guns_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -2785,7 +2785,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_CH_47F_Chinook_Cargo_01 : CUP_B_CH47F_VIV_USA_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_CH_47F_Chinook_Cargo_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_CH_47F_Chinook_Cargo_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -2817,7 +2817,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_CH_47F_Chinook_Transport_01 : CUP_B_CH47F_USA_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_CH_47F_Chinook_Transport_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_CH_47F_Chinook_Transport_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -2850,7 +2850,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_A10A_Thunderbolt_II_01 : CUP_B_A10_DYN_USA_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_A10A_Thunderbolt_II_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_A10A_Thunderbolt_II_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -2876,7 +2876,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_F4E_01 : cwr3_b_f4e_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_F4E_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_F4E_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -2907,7 +2907,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_F16C_01 : cwr3_b_f16c_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_F16C_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_F16C_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -2933,7 +2933,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_C130E_Transport_01 : cwr3_b_c130_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_C130E_Transport_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_C130E_Transport_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -2964,7 +2964,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_C130E_Cargo_01 : cwr3_b_c130_cargo_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_C130E_Cargo_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_C130E_Cargo_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -2995,7 +2995,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_F18_Multirole_01 : rhssaf_airforce_l_18_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_F18_Multirole_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_F18_Multirole_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -3021,7 +3021,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_F18_CAP_01 : rhssaf_airforce_l_18_101_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_F18_CAP_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_F18_CAP_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -3047,7 +3047,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_Delta_Force_Team_Leader_01 : CUP_B_US_SpecOps_TL_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_Delta_Force_Team_Leader_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_Delta_Force_Team_Leader_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -3090,7 +3090,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_Delta_Force_Rifleman_01 : B_BNASRArmyWDL_Delta_Force_Team_Leader_01 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_Delta_Force_Rifleman_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_Delta_Force_Rifleman_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -3132,7 +3132,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_Delta_Force_Machine_Gunner_01 : B_BNASRArmyWDL_Delta_Force_Rifleman_01 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_Delta_Force_Machine_Gunner_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_Delta_Force_Machine_Gunner_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -3174,7 +3174,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_Delta_Force_Grenadier_01 : B_BNASRArmyWDL_Delta_Force_Rifleman_01 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_Delta_Force_Grenadier_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_Delta_Force_Grenadier_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -3216,7 +3216,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_Delta_Force_Marksman_01 : B_BNASRArmyWDL_Delta_Force_Rifleman_01 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_Delta_Force_Marksman_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_Delta_Force_Marksman_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -3258,7 +3258,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_Delta_Force_Operator_01 : B_BNASRArmyWDL_Delta_Force_Rifleman_01 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_Delta_Force_Operator_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_Delta_Force_Operator_01.jpg";
         author = "wlan0";
         scope = 2;
         scopeCurator = 2;
@@ -3300,7 +3300,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M270_MLRS_HE_01 : CUP_B_M270_HE_USA_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M270_MLRS_HE_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_M270_MLRS_HE_01.jpg";
         author = "wlan0";
         editorSubcategory = "NASR_Artillery";
         scope = 2;
@@ -3332,7 +3332,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M270_MLRS_DPICM_01 : CUP_B_M270_DPICM_USA_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M270_MLRS_DPICM_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_M270_MLRS_DPICM_01.jpg";
         author = "wlan0";
         editorSubcategory = "NASR_Artillery";
         scope = 2;
@@ -3364,7 +3364,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M119_01 : cwr3_b_m119_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M119_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_M119_01.jpg";
         author = "wlan0";
         editorSubcategory = "NASR_Artillery";
         scope = 2;
@@ -3395,7 +3395,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M109A6_01 : rhsusf_m109_usarmy_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M109A6_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_M109A6_01.jpg";
         author = "wlan0";
         editorSubcategory = "NASR_Artillery";
         scope = 2;
@@ -3426,7 +3426,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyWDL_M252_01 : RHS_M252_WD_OCimport_02 {
-        editorPreview = "NASR_Factions\BLUFOR\NASR\data\previews\B_BNASRArmyWDL_M252_01.jpg";
+        editorPreview = "NASR_Factions\BLUFOR\NASR\WDL\previews\B_BNASRArmyWDL_M252_01.jpg";
         author = "wlan0";
         editorSubcategory = "NASR_Artillery";
         scope = 2;
