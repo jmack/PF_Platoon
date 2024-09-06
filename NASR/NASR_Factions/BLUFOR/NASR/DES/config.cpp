@@ -1249,7 +1249,7 @@ class CfgVehicles {
 
 
     class B_NASRArmy_Rifleman_DES_01 : O_Soldier_F_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Rifleman";
@@ -1290,7 +1290,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Rifleman_M136_DES_01 : B_NASRArmy_Rifleman_DES_01 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Rifleman (M136)";
@@ -1331,7 +1331,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Grenadier_DES_01 : B_NASRArmy_Rifleman_DES_01 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Grenadier";
@@ -1372,7 +1372,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Machine_Gunner_DES_01 : B_NASRArmy_Rifleman_DES_01 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Machine Gunner";
@@ -1413,7 +1413,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Ammo_Bearer_DES_01 : B_NASRArmy_Rifleman_DES_01 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Ammo Bearer";
@@ -1454,7 +1454,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Marksman_DES_01 : B_NASRArmy_Rifleman_DES_01 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Marksman";
@@ -1495,7 +1495,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_RATELO_DES_01 : B_NASRArmy_Rifleman_DES_01 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "RATELO";
@@ -1536,7 +1536,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Corpsman_DES_01 : B_NASRArmy_Rifleman_DES_01 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Corpsman";
@@ -1577,7 +1577,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Rifleman_AT_DES_01 : B_NASRArmy_Rifleman_DES_01 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Rifleman (AT)";
@@ -1618,7 +1618,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Rifleman_AA_DES_01 : B_NASRArmy_Rifleman_AT_DES_01 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Rifleman (AA)";
@@ -1659,7 +1659,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Team_Leader_DES_01 : B_NASRArmy_Rifleman_DES_01 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Team Leader";
@@ -1700,7 +1700,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Squad_Leader_DES_01 : B_NASRArmy_Team_Leader_DES_01 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Squad Leader";
@@ -1741,7 +1741,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Crewman_DES_01 : B_NASRArmy_Rifleman_DES_01 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Crewman";
@@ -1782,7 +1782,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Pilot_DES_01 : B_NASRArmy_Rifleman_DES_01 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Pilot";
@@ -1823,7 +1823,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Pilot_Helicopter_DES_01 : B_NASRArmy_Rifleman_DES_01 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Pilot (Helicopter)";
@@ -1862,7 +1862,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Officer_DES_01 : B_NASRArmy_Squad_Leader_DES_01 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Officer";
@@ -1903,7 +1903,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Sniper_DES_01 : B_NASRArmy_Rifleman_DES_01 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Sniper";
@@ -1944,7 +1944,7 @@ class CfgVehicles {
     };
 
     class B_NASRArmy_Spotter_DES_01 : B_NASRArmy_Sniper_DES_01 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Spotter";
@@ -1985,7 +1985,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyDES_M1151_HMMWV_Unarmed_01 : cwr3_b_hmmwv_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M1151 HMMWV Unarmed";
@@ -1998,19 +1998,19 @@ class CfgVehicles {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
             class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\us_woodland\Body_co.paa'];_unit setObjectTextureGlobal [1,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\us_woodland\Roof_co.paa'];_unit setObjectTextureGlobal [2,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\snorkel_mesh_ca.paa'];_unit setObjectTextureGlobal [3,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\chassis_co.paa'];_unit setObjectTextureGlobal [4,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\attachments_co.paa'];_unit setObjectTextureGlobal [5,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\interior_co.paa'];_unit setObjectTextureGlobal [6,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\interior_detail_co.paa'];_unit setObjectTextureGlobal [7,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [8,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [9,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [10,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [11,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [12,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [13,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [14,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [15,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [16,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [17,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [18,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\chassis_co.paa'];_unit setObjectTextureGlobal [19,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [20,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [21,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [22,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [23,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [24,'#(argb,8,8,3)color(0,0,0,1)'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'cwr3\vehicles\cwr3_hmmwv\data\MERDC_DG\Body_co.paa'];_unit setObjectTextureGlobal [1,'cwr3\vehicles\cwr3_hmmwv\data\MERDC_DG\Roof_co.paa'];_unit setObjectTextureGlobal [2,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\snorkel_mesh_ca.paa'];_unit setObjectTextureGlobal [3,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\chassis_co.paa'];_unit setObjectTextureGlobal [4,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\attachments_co.paa'];_unit setObjectTextureGlobal [5,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\interior_co.paa'];_unit setObjectTextureGlobal [6,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\interior_detail_co.paa'];_unit setObjectTextureGlobal [7,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [8,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [9,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [10,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [11,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [12,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [13,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [14,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [15,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [16,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [17,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [18,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\chassis_co.paa'];_unit setObjectTextureGlobal [19,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [20,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [21,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [22,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [23,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [24,'#(argb,8,8,3)color(0,0,0,1)'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
             };
 
         };
 
         // custom attributes (do not delete)
         ALiVE_orbatCreator_owned = 1;
-        ALiVE_orbatCreator_texture = "Woodland";
+        ALiVE_orbatCreator_texture = "MERDC_Desert";
 
     };
 
     class B_BNASRArmyDES_M1151_HMMWV_M2_01 : cwr3_b_hmmwv_m2_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M1151 HMMWV M2";
@@ -2029,19 +2029,19 @@ class CfgVehicles {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
             class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\us_woodland\Body_co.paa'];_unit setObjectTextureGlobal [1,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\us_woodland\Roof_co.paa'];_unit setObjectTextureGlobal [2,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\snorkel_mesh_ca.paa'];_unit setObjectTextureGlobal [3,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\chassis_co.paa'];_unit setObjectTextureGlobal [4,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\attachments_co.paa'];_unit setObjectTextureGlobal [5,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\interior_co.paa'];_unit setObjectTextureGlobal [6,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\interior_detail_co.paa'];_unit setObjectTextureGlobal [7,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [8,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [9,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [10,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [11,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [12,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [13,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [14,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [15,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [16,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [17,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [18,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\chassis_co.paa'];_unit setObjectTextureGlobal [19,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [20,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [21,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [22,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [23,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [24,'#(argb,8,8,3)color(0,0,0,1)'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'cwr3\vehicles\cwr3_hmmwv\data\MERDC_DG\Body_co.paa'];_unit setObjectTextureGlobal [1,'cwr3\vehicles\cwr3_hmmwv\data\MERDC_DG\Roof_co.paa'];_unit setObjectTextureGlobal [2,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\snorkel_mesh_ca.paa'];_unit setObjectTextureGlobal [3,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\chassis_co.paa'];_unit setObjectTextureGlobal [4,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\attachments_co.paa'];_unit setObjectTextureGlobal [5,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\interior_co.paa'];_unit setObjectTextureGlobal [6,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\interior_detail_co.paa'];_unit setObjectTextureGlobal [7,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [8,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [9,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [10,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [11,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [12,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [13,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [14,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [15,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [16,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [17,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [18,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\chassis_co.paa'];_unit setObjectTextureGlobal [19,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [20,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [21,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [22,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [23,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [24,'#(argb,8,8,3)color(0,0,0,1)'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
             };
 
         };
 
         // custom attributes (do not delete)
         ALiVE_orbatCreator_owned = 1;
-        ALiVE_orbatCreator_texture = "Woodland";
+        ALiVE_orbatCreator_texture = "MERDC_Desert";
 
     };
 
     class B_BNASRArmyDES_M1151_HMMWV_Mk19_01 : cwr3_b_hmmwv_mk19_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M1151 HMMWV Mk19";
@@ -2060,19 +2060,19 @@ class CfgVehicles {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
             class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\us_woodland\Body_co.paa'];_unit setObjectTextureGlobal [1,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\us_woodland\Roof_co.paa'];_unit setObjectTextureGlobal [2,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\snorkel_mesh_ca.paa'];_unit setObjectTextureGlobal [3,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\chassis_co.paa'];_unit setObjectTextureGlobal [4,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\attachments_co.paa'];_unit setObjectTextureGlobal [5,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\interior_co.paa'];_unit setObjectTextureGlobal [6,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\interior_detail_co.paa'];_unit setObjectTextureGlobal [7,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [8,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [9,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [10,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [11,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [12,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [13,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [14,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [15,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [16,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [17,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [18,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\chassis_co.paa'];_unit setObjectTextureGlobal [19,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [20,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [21,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [22,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [23,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [24,'#(argb,8,8,3)color(0,0,0,1)'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'cwr3\vehicles\cwr3_hmmwv\data\MERDC_DG\Body_co.paa'];_unit setObjectTextureGlobal [1,'cwr3\vehicles\cwr3_hmmwv\data\MERDC_DG\Roof_co.paa'];_unit setObjectTextureGlobal [2,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\snorkel_mesh_ca.paa'];_unit setObjectTextureGlobal [3,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\chassis_co.paa'];_unit setObjectTextureGlobal [4,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\attachments_co.paa'];_unit setObjectTextureGlobal [5,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\interior_co.paa'];_unit setObjectTextureGlobal [6,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\interior_detail_co.paa'];_unit setObjectTextureGlobal [7,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [8,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [9,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [10,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [11,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [12,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [13,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [14,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [15,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [16,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [17,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [18,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\chassis_co.paa'];_unit setObjectTextureGlobal [19,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [20,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [21,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [22,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [23,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [24,'#(argb,8,8,3)color(0,0,0,1)'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
             };
 
         };
 
         // custom attributes (do not delete)
         ALiVE_orbatCreator_owned = 1;
-        ALiVE_orbatCreator_texture = "Woodland";
+        ALiVE_orbatCreator_texture = "MERDC_Desert";
 
     };
 
     class B_BNASRArmyDES_M1151_HMMWV_TOW_01 : cwr3_b_hmmwv_tow_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M1151 HMMWV TOW";
@@ -2091,19 +2091,19 @@ class CfgVehicles {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
             class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\us_woodland\Body_co.paa'];_unit setObjectTextureGlobal [1,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\us_woodland\Roof_co.paa'];_unit setObjectTextureGlobal [2,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\snorkel_mesh_ca.paa'];_unit setObjectTextureGlobal [3,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\chassis_co.paa'];_unit setObjectTextureGlobal [4,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\attachments_co.paa'];_unit setObjectTextureGlobal [5,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\interior_co.paa'];_unit setObjectTextureGlobal [6,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\interior_detail_co.paa'];_unit setObjectTextureGlobal [7,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewM1036\Data\nato_olive\tow_mount_co.paa'];_unit setObjectTextureGlobal [8,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [9,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [10,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [11,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [12,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [13,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [14,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [15,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [16,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [17,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [18,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\chassis_co.paa'];_unit setObjectTextureGlobal [19,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [20,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [21,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewM1036\Data\nato_olive\tow_a_co.paa'];_unit setObjectTextureGlobal [22,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewM1036\Data\nato_olive\tow_b_co.paa'];_unit setObjectTextureGlobal [23,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewM1036\Data\nato_olive\tow_tube_co.paa'];_unit setObjectTextureGlobal [24,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewM1036\Data\nato_olive\tow_tube_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'cwr3\vehicles\cwr3_hmmwv\data\MERDC_DG\Body_co.paa'];_unit setObjectTextureGlobal [1,'cwr3\vehicles\cwr3_hmmwv\data\MERDC_DG\Roof_co.paa'];_unit setObjectTextureGlobal [2,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\snorkel_mesh_ca.paa'];_unit setObjectTextureGlobal [3,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\chassis_co.paa'];_unit setObjectTextureGlobal [4,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\attachments_co.paa'];_unit setObjectTextureGlobal [5,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\interior_co.paa'];_unit setObjectTextureGlobal [6,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\interior_detail_co.paa'];_unit setObjectTextureGlobal [7,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewM1036\Data\nato_olive\tow_mount_co.paa'];_unit setObjectTextureGlobal [8,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [9,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [10,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [11,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [12,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [13,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [14,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [15,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [16,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [17,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [18,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\chassis_co.paa'];_unit setObjectTextureGlobal [19,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [20,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [21,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewM1036\Data\nato_olive\tow_a_co.paa'];_unit setObjectTextureGlobal [22,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewM1036\Data\nato_olive\tow_b_co.paa'];_unit setObjectTextureGlobal [23,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewM1036\Data\nato_olive\tow_tube_co.paa'];_unit setObjectTextureGlobal [24,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewM1036\Data\nato_olive\tow_tube_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
             };
 
         };
 
         // custom attributes (do not delete)
         ALiVE_orbatCreator_owned = 1;
-        ALiVE_orbatCreator_texture = "Woodland";
+        ALiVE_orbatCreator_texture = "MERDC_Desert";
 
     };
 
     class B_BNASRArmyDES_M1151_HMMWV_MedEvac_01 : cwr3_b_hmmwv_mev_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M1151 HMMWV MedEvac";
@@ -2116,19 +2116,19 @@ class CfgVehicles {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
             class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\us_woodland\Body_co.paa'];_unit setObjectTextureGlobal [1,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewM998\Data\us_woodland\rear_997_amb_co.paa'];_unit setObjectTextureGlobal [2,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\snorkel_mesh_ca.paa'];_unit setObjectTextureGlobal [3,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\chassis_co.paa'];_unit setObjectTextureGlobal [4,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\attachments_co.paa'];_unit setObjectTextureGlobal [5,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\interior_co.paa'];_unit setObjectTextureGlobal [6,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\interior_detail_co.paa'];_unit setObjectTextureGlobal [7,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewM998\Data\nato_olive\int_997_amb_co.paa'];_unit setObjectTextureGlobal [8,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [9,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [10,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [11,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [12,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [13,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [14,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [15,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [16,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [17,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [18,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\chassis_co.paa'];_unit setObjectTextureGlobal [19,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [20,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [21,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [22,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [23,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [24,'#(argb,8,8,3)color(0,0,0,1)'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'cwr3\vehicles\cwr3_hmmwv\data\MERDC_DG\Body_co.paa'];_unit setObjectTextureGlobal [1,'cwr3\vehicles\cwr3_hmmwv\data\MERDC_DG\rear_997_amb_co.paa'];_unit setObjectTextureGlobal [2,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\snorkel_mesh_ca.paa'];_unit setObjectTextureGlobal [3,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\chassis_co.paa'];_unit setObjectTextureGlobal [4,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\attachments_co.paa'];_unit setObjectTextureGlobal [5,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\interior_co.paa'];_unit setObjectTextureGlobal [6,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\interior_detail_co.paa'];_unit setObjectTextureGlobal [7,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewM998\Data\nato_olive\int_997_amb_co.paa'];_unit setObjectTextureGlobal [8,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [9,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [10,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [11,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [12,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [13,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [14,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [15,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [16,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [17,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [18,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\chassis_co.paa'];_unit setObjectTextureGlobal [19,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [20,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [21,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [22,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [23,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [24,'#(argb,8,8,3)color(0,0,0,1)'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
             };
 
         };
 
         // custom attributes (do not delete)
         ALiVE_orbatCreator_owned = 1;
-        ALiVE_orbatCreator_texture = "Woodland";
+        ALiVE_orbatCreator_texture = "MERDC_Desert";
 
     };
 
     class B_BNASRArmyDES_M1151_HMMWV_Transport_01 : cwr3_b_hmmwv_transport_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M1151 HMMWV Transport";
@@ -2141,19 +2141,19 @@ class CfgVehicles {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
             class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\us_woodland\Body_co.paa'];_unit setObjectTextureGlobal [1,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewM998\Data\us_woodland\roof_998_co.paa'];_unit setObjectTextureGlobal [2,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\snorkel_mesh_ca.paa'];_unit setObjectTextureGlobal [3,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\chassis_co.paa'];_unit setObjectTextureGlobal [4,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\attachments_co.paa'];_unit setObjectTextureGlobal [5,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\interior_co.paa'];_unit setObjectTextureGlobal [6,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\interior_detail_co.paa'];_unit setObjectTextureGlobal [7,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewM998\Data\us_woodland\rear_998_4s_co.paa'];_unit setObjectTextureGlobal [8,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [9,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [10,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [11,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [12,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [13,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [14,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [15,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [16,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [17,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [18,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\chassis_co.paa'];_unit setObjectTextureGlobal [19,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [20,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [21,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [22,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [23,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [24,'#(argb,8,8,3)color(0,0,0,1)'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'cwr3\vehicles\cwr3_hmmwv\data\MERDC_DG\Body_co.paa'];_unit setObjectTextureGlobal [1,'cwr3\vehicles\cwr3_hmmwv\data\MERDC_DG\roof_998_co.paa'];_unit setObjectTextureGlobal [2,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\snorkel_mesh_ca.paa'];_unit setObjectTextureGlobal [3,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\chassis_co.paa'];_unit setObjectTextureGlobal [4,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\attachments_co.paa'];_unit setObjectTextureGlobal [5,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\interior_co.paa'];_unit setObjectTextureGlobal [6,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\interior_detail_co.paa'];_unit setObjectTextureGlobal [7,'cwr3\vehicles\cwr3_hmmwv\data\MERDC_DG\rear_998_4s_co.paa'];_unit setObjectTextureGlobal [8,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [9,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [10,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [11,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [12,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [13,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [14,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [15,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [16,'#(argb,8,8,3)color(0,0,0,0)'];_unit setObjectTextureGlobal [17,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [18,'CUP\WheeledVehicles\CUP_WheeledVehicles_NewHMMWV\Data\nato_olive\chassis_co.paa'];_unit setObjectTextureGlobal [19,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [20,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [21,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [22,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [23,'#(argb,8,8,3)color(0,0,0,1)'];_unit setObjectTextureGlobal [24,'#(argb,8,8,3)color(0,0,0,1)'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
             };
 
         };
 
         // custom attributes (do not delete)
         ALiVE_orbatCreator_owned = 1;
-        ALiVE_orbatCreator_texture = "Woodland";
+        ALiVE_orbatCreator_texture = "MERDC_Desert";
 
     };
 
     class B_BNASRArmyDES_M939_Covered_01 : cwr3_b_m939_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M939 Covered";
@@ -2166,19 +2166,19 @@ class CfgVehicles {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
             class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cwr3\vehicles\cwr3_m939\data\truck5t_01_woodland_co.paa'];_unit setObjectTextureGlobal [1,'\cwr3\vehicles\cwr3_m939\data\truck5t_02_woodland_co.paa'];_unit setObjectTextureGlobal [2,'\cwr3\vehicles\cwr3_m939\data\truck5t_dash_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cwr3\vehicles\cwr3_m939\data\truck5t_01_merdcD_co.paa'];_unit setObjectTextureGlobal [1,'\cwr3\vehicles\cwr3_m939\data\truck5t_02_merdcD_co.paa'];_unit setObjectTextureGlobal [2,'\cwr3\vehicles\cwr3_m939\data\truck5t_dashD_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
             };
 
         };
 
         // custom attributes (do not delete)
         ALiVE_orbatCreator_owned = 1;
-        ALiVE_orbatCreator_texture = "woodland";
+        ALiVE_orbatCreator_texture = "merdc_greydesert";
 
     };
 
     class B_BNASRArmyDES_M939_Open_01 : cwr3_b_m939_open_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M939 Open";
@@ -2191,19 +2191,19 @@ class CfgVehicles {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
             class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cwr3\vehicles\cwr3_m939\data\truck5t_01_woodland_co.paa'];_unit setObjectTextureGlobal [1,'\cwr3\vehicles\cwr3_m939\data\truck5t_02_woodland_co.paa'];_unit setObjectTextureGlobal [2,'\cwr3\vehicles\cwr3_m939\data\truck5t_dash_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cwr3\vehicles\cwr3_m939\data\truck5t_01_merdcD_co.paa'];_unit setObjectTextureGlobal [1,'\cwr3\vehicles\cwr3_m939\data\truck5t_02_merdcD_co.paa'];_unit setObjectTextureGlobal [2,'\cwr3\vehicles\cwr3_m939\data\truck5t_dashD_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
             };
 
         };
 
         // custom attributes (do not delete)
         ALiVE_orbatCreator_owned = 1;
-        ALiVE_orbatCreator_texture = "woodland";
+        ALiVE_orbatCreator_texture = "merdc_greydesert";
 
     };
 
     class B_BNASRArmyDES_M939_Ammo_01 : cwr3_b_m939_reammo_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M939 Ammo";
@@ -2216,19 +2216,19 @@ class CfgVehicles {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
             class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cwr3\vehicles\cwr3_m939\data\truck5t_01_woodland_co.paa'];_unit setObjectTextureGlobal [1,'\cwr3\vehicles\cwr3_m939\data\truck5t_02_woodland_co.paa'];_unit setObjectTextureGlobal [2,'\cwr3\vehicles\cwr3_m939\data\truck5t_dash_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cwr3\vehicles\cwr3_m939\data\truck5t_01_merdcD_co.paa'];_unit setObjectTextureGlobal [1,'\cwr3\vehicles\cwr3_m939\data\truck5t_02_merdcD_co.paa'];_unit setObjectTextureGlobal [2,'\cwr3\vehicles\cwr3_m939\data\truck5t_dashD_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
             };
 
         };
 
         // custom attributes (do not delete)
         ALiVE_orbatCreator_owned = 1;
-        ALiVE_orbatCreator_texture = "woodland";
+        ALiVE_orbatCreator_texture = "merdc_greydesert";
 
     };
 
     class B_BNASRArmyDES_M939_Fuel_01 : cwr3_b_m939_refuel_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M939 Fuel";
@@ -2241,19 +2241,19 @@ class CfgVehicles {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
             class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cwr3\vehicles\cwr3_m939\data\truck5t_01_woodland_co.paa'];_unit setObjectTextureGlobal [1,'\cwr3\vehicles\cwr3_m939\data\truck5t_02_woodland_co.paa'];_unit setObjectTextureGlobal [2,'\cwr3\vehicles\cwr3_m939\data\truck5t_dash_co.paa'];_unit setObjectTextureGlobal [3,'\a3\structures_f\items\vessels\data\firebarrel_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cwr3\vehicles\cwr3_m939\data\truck5t_01_merdcD_co.paa'];_unit setObjectTextureGlobal [1,'\cwr3\vehicles\cwr3_m939\data\truck5t_02_merdcD_co.paa'];_unit setObjectTextureGlobal [2,'\cwr3\vehicles\cwr3_m939\data\truck5t_dashD_co.paa'];_unit setObjectTextureGlobal [3,'\a3\structures_f\items\vessels\data\firebarrel_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
             };
 
         };
 
         // custom attributes (do not delete)
         ALiVE_orbatCreator_owned = 1;
-        ALiVE_orbatCreator_texture = "woodland";
+        ALiVE_orbatCreator_texture = "merdc_greydesert";
 
     };
 
     class B_BNASRArmyDES_M939_Repair_01 : cwr3_b_m939_repair_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M939 Repair";
@@ -2266,19 +2266,19 @@ class CfgVehicles {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
             class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cwr3\vehicles\cwr3_m939\data\truck5t_01_woodland_co.paa'];_unit setObjectTextureGlobal [1,'\cwr3\vehicles\cwr3_m939\data\truck5t_02_woodland_co.paa'];_unit setObjectTextureGlobal [2,'\cwr3\vehicles\cwr3_m939\data\truck5t_dash_co.paa'];_unit setObjectTextureGlobal [3,'\cwr3\vehicles\cwr3_m939\data\truck5t_repair_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cwr3\vehicles\cwr3_m939\data\truck5t_01_merdcD_co.paa'];_unit setObjectTextureGlobal [1,'\cwr3\vehicles\cwr3_m939\data\truck5t_02_merdcD_co.paa'];_unit setObjectTextureGlobal [2,'\cwr3\vehicles\cwr3_m939\data\truck5t_dashD_co.paa'];_unit setObjectTextureGlobal [3,'\cwr3\vehicles\cwr3_m939\data\truck5t_repair_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
             };
 
         };
 
         // custom attributes (do not delete)
         ALiVE_orbatCreator_owned = 1;
-        ALiVE_orbatCreator_texture = "woodland";
+        ALiVE_orbatCreator_texture = "merdc_greydesert";
 
     };
 
     class B_BNASRArmyDES_M939_Cargo_01 : cwr3_b_m939_empty_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M939 Cargo";
@@ -2291,19 +2291,19 @@ class CfgVehicles {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
             class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cwr3\vehicles\cwr3_m939\data\truck5t_01_woodland_co.paa'];_unit setObjectTextureGlobal [1,'\cwr3\vehicles\cwr3_m939\data\truck5t_02_woodland_co.paa'];_unit setObjectTextureGlobal [2,'\cwr3\vehicles\cwr3_m939\data\truck5t_dash_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cwr3\vehicles\cwr3_m939\data\truck5t_01_merdcD_co.paa'];_unit setObjectTextureGlobal [1,'\cwr3\vehicles\cwr3_m939\data\truck5t_02_merdcD_co.paa'];_unit setObjectTextureGlobal [2,'\cwr3\vehicles\cwr3_m939\data\truck5t_dashD_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
             };
 
         };
 
         // custom attributes (do not delete)
         ALiVE_orbatCreator_owned = 1;
-        ALiVE_orbatCreator_texture = "woodland";
+        ALiVE_orbatCreator_texture = "merdc_greydesert";
 
     };
 
     class B_BNASRArmyDES_M939_MedEvac_01 : cwr3_b_m939_mev_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M939 MedEvac";
@@ -2316,19 +2316,20 @@ class CfgVehicles {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
             class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cwr3\vehicles\cwr3_m939\data\truck5t_01_woodland_co.paa'];_unit setObjectTextureGlobal [1,'\cwr3\vehicles\cwr3_m939\data\truck5t_02_woodland_co.paa'];_unit setObjectTextureGlobal [2,'\cwr3\vehicles\cwr3_m939\data\truck5t_dash_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cwr3\vehicles\cwr3_m939\data\truck5t_01_merdcD_co.paa'];_unit setObjectTextureGlobal [1,'\cwr3\vehicles\cwr3_m939\data\truck5t_02_merdcD_co.paa'];_unit setObjectTextureGlobal [2,'\cwr3\vehicles\cwr3_m939\data\truck5t_dashD_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
             };
 
         };
 
         // custom attributes (do not delete)
         ALiVE_orbatCreator_owned = 1;
-        ALiVE_orbatCreator_texture = "woodland";
+        ALiVE_orbatCreator_texture = "merdc_greydesert";
 
     };
 
     class B_BNASRArmyDES_M1126_Stryker_M2_01 : CUP_B_M1126_ICV_M2_Woodland_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
+        editorSubcategory = "NASR_APCs";
         scope = 2;
         scopeCurator = 2;
         displayName = "M1126 Stryker M2";
@@ -2347,19 +2348,20 @@ class CfgVehicles {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
             class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'CUP\WheeledVehicles\CUP_WheeledVehicles_Stryker\Data\Woodland\stryker_body1_des_co.paa'];_unit setObjectTextureGlobal [1,'CUP\WheeledVehicles\CUP_WheeledVehicles_Stryker\Data\Woodland\stryker_body2_des_co.paa'];_unit setObjectTextureGlobal [2,'cup\wheeledvehicles\cup_wheeledvehicles_stryker\data\Woodland\stryker_body2_des_co.paa'];_unit setObjectTextureGlobal [3,'cup\wheeledvehicles\cup_wheeledvehicles_stryker\data\Woodland\icv_des_co.paa'];_unit setObjectTextureGlobal [4,'cup\wheeledvehicles\cup_wheeledvehicles_stryker\data\Woodland\stryker_alfa_des_co.paa'];_unit setObjectTextureGlobal [5,'cup\wheeledvehicles\cup_wheeledvehicles_stryker\data\Woodland\stryker_alfa_des_co.paa'];_unit setObjectTextureGlobal [6,'cup\wheeledvehicles\cup_wheeledvehicles_stryker\data\Woodland\slat_armor_des_co.paa'];_unit setObjectTextureGlobal [7,'cup\wheeledvehicles\cup_wheeledvehicles_stryker\data\Woodland\slat_armor_des_co.paa'];_unit setObjectTextureGlobal [8,'cup\wheeledvehicles\cup_wheeledvehicles_stryker\data\Woodland\default_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'CUP\WheeledVehicles\CUP_WheeledVehicles_Stryker\Data\stryker_body1_des_co.paa'];_unit setObjectTextureGlobal [1,'CUP\WheeledVehicles\CUP_WheeledVehicles_Stryker\Data\stryker_body2_des_co.paa'];_unit setObjectTextureGlobal [2,'cup\wheeledvehicles\cup_wheeledvehicles_stryker\data\stryker_body2_des_co.paa'];_unit setObjectTextureGlobal [3,'cup\wheeledvehicles\cup_wheeledvehicles_stryker\data\icv_des_co.paa'];_unit setObjectTextureGlobal [4,'cup\wheeledvehicles\cup_wheeledvehicles_stryker\data\stryker_alfa_des_co.paa'];_unit setObjectTextureGlobal [5,'cup\wheeledvehicles\cup_wheeledvehicles_stryker\data\stryker_alfa_des_co.paa'];_unit setObjectTextureGlobal [6,'cup\wheeledvehicles\cup_wheeledvehicles_stryker\data\slat_armor_des_co.paa'];_unit setObjectTextureGlobal [7,'cup\wheeledvehicles\cup_wheeledvehicles_stryker\data\slat_armor_des_co.paa'];_unit setObjectTextureGlobal [8,'cup\wheeledvehicles\cup_wheeledvehicles_stryker\data\default_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
             };
 
         };
 
         // custom attributes (do not delete)
         ALiVE_orbatCreator_owned = 1;
-        ALiVE_orbatCreator_texture = "Woodland";
+        ALiVE_orbatCreator_texture = "Desert";
 
     };
 
     class B_BNASRArmyDES_M1126_Stryker_Mk19_01 : CUP_B_M1126_ICV_MK19_Woodland_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
+        editorSubcategory = "NASR_APCs";
         scope = 2;
         scopeCurator = 2;
         displayName = "M1126 Stryker Mk19";
@@ -2378,18 +2380,20 @@ class CfgVehicles {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
             class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'CUP\WheeledVehicles\CUP_WheeledVehicles_Stryker\Data\stryker_body1_des_co.paa'];_unit setObjectTextureGlobal [1,'CUP\WheeledVehicles\CUP_WheeledVehicles_Stryker\Data\stryker_body2_des_co.paa'];_unit setObjectTextureGlobal [2,'cup\wheeledvehicles\cup_wheeledvehicles_stryker\data\stryker_body2_des_co.paa'];_unit setObjectTextureGlobal [3,'cup\wheeledvehicles\cup_wheeledvehicles_stryker\data\icv_des_co.paa'];_unit setObjectTextureGlobal [4,'cup\wheeledvehicles\cup_wheeledvehicles_stryker\data\stryker_alfa_des_co.paa'];_unit setObjectTextureGlobal [5,'cup\wheeledvehicles\cup_wheeledvehicles_stryker\data\stryker_alfa_des_co.paa'];_unit setObjectTextureGlobal [6,'cup\wheeledvehicles\cup_wheeledvehicles_stryker\data\slat_armor_des_co.paa'];_unit setObjectTextureGlobal [7,'cup\wheeledvehicles\cup_wheeledvehicles_stryker\data\slat_armor_des_co.paa'];_unit setObjectTextureGlobal [8,'cup\wheeledvehicles\cup_wheeledvehicles_stryker\data\default_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
             };
 
         };
 
         // custom attributes (do not delete)
         ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "Desert";
 
     };
 
     class B_BNASRArmyDES_M1126_Stryker_MGS_01 : CUP_B_M1128_MGS_Woodland_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
+        editorSubcategory = "NASR_APCs";
         scope = 2;
         scopeCurator = 2;
         displayName = "M1126 Stryker MGS";
@@ -2408,18 +2412,20 @@ class CfgVehicles {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
             class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'cup\wheeledvehicles\cup_wheeledvehicles_stryker\data\stryker_mgs_body1_des_co.paa'];_unit setObjectTextureGlobal [1,'cup\wheeledvehicles\cup_wheeledvehicles_stryker\data\stryker_body2_des_co.paa'];_unit setObjectTextureGlobal [2,'cup\wheeledvehicles\cup_wheeledvehicles_stryker\data\stryker_mgs_des_co.paa'];_unit setObjectTextureGlobal [3,'cup\wheeledvehicles\cup_wheeledvehicles_stryker\data\stryker_body2_des_co.paa'];_unit setObjectTextureGlobal [4,'cup\wheeledvehicles\cup_wheeledvehicles_stryker\data\stryker_alfa_des_co.paa'];_unit setObjectTextureGlobal [5,'cup\wheeledvehicles\cup_wheeledvehicles_stryker\data\slat_armor_des_co.paa'];_unit setObjectTextureGlobal [6,'cup\wheeledvehicles\cup_wheeledvehicles_stryker\data\default_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
             };
 
         };
 
         // custom attributes (do not delete)
         ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "Desert";
 
     };
 
     class B_BNASRArmyDES_M2_Bradley_IFV_01 : CUP_B_M2Bradley_USA_W_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
+        editorSubcategory = "NASR_APCs";
         scope = 2;
         scopeCurator = 2;
         displayName = "M2A2 Bradley IFV";
@@ -2437,19 +2443,20 @@ class CfgVehicles {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
             class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'cup\TrackedVehicles\CUP_TrackedVehicles_Bradley\data\base_wdl_co.paa'];_unit setObjectTextureGlobal [1,'cup\TrackedVehicles\CUP_TrackedVehicles_Bradley\data\a3_wdl_co.paa'];_unit setObjectTextureGlobal [2,'cup\TrackedVehicles\CUP_TrackedVehicles_Bradley\data\ultralp_wdl_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'cup\TrackedVehicles\CUP_TrackedVehicles_Bradley\data\base_co.paa'];_unit setObjectTextureGlobal [1,'cup\TrackedVehicles\CUP_TrackedVehicles_Bradley\data\a3_co.paa'];_unit setObjectTextureGlobal [2,'cup\TrackedVehicles\CUP_TrackedVehicles_Bradley\data\ultralp_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
             };
 
         };
 
         // custom attributes (do not delete)
         ALiVE_orbatCreator_owned = 1;
-        ALiVE_orbatCreator_texture = "Woodland";
+        ALiVE_orbatCreator_texture = "Desert";
 
     };
 
     class B_BNASRArmyDES_M1A2_Butler_01 : CUP_B_M1A2C_TUSK_II_Woodland_US_Army_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
+        editorSubcategory = "NASR_Tanks";
         scope = 2;
         scopeCurator = 2;
         displayName = "M1A2 Butler";
@@ -2467,19 +2474,19 @@ class CfgVehicles {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
             class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\CUP\TrackedVehicles\CUP_TrackedVehicles_M1Abrams\data\camo\US_Woodland\Hull_co.paa'];_unit setObjectTextureGlobal [1,'\CUP\TrackedVehicles\CUP_TrackedVehicles_M1Abrams\data\camo\US_Woodland\M1A2Parts_co.paa'];_unit setObjectTextureGlobal [2,'\CUP\TrackedVehicles\CUP_TrackedVehicles_M1Abrams\data\camo\US_Woodland\Turret_co.paa'];_unit setObjectTextureGlobal [3,'\CUP\TrackedVehicles\CUP_TrackedVehicles_M1Abrams\data\camo\US_Woodland\Wheels_co.paa'];_unit setObjectTextureGlobal [4,'\CUP\TrackedVehicles\CUP_TrackedVehicles_M1Abrams\data\camo\US_Woodland\TUSKkit_co.paa'];_unit setObjectTextureGlobal [5,'\CUP\TrackedVehicles\CUP_TrackedVehicles_M1Abrams\data\camo\US_Woodland\M1A1Parts_co.paa'];_unit setObjectTextureGlobal [6,'\CUP\TrackedVehicles\CUP_TrackedVehicles_M1Abrams\data\camo\US_Woodland\CType_co.paa'];_unit setObjectTextureGlobal [7,'\a3\armor_f\data\camonet_nato_green_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\CUP\TrackedVehicles\CUP_TrackedVehicles_M1Abrams\data\camo\US_Desert\Hull_co.paa'];_unit setObjectTextureGlobal [1,'\CUP\TrackedVehicles\CUP_TrackedVehicles_M1Abrams\data\camo\US_Desert\M1A2Parts_co.paa'];_unit setObjectTextureGlobal [2,'\CUP\TrackedVehicles\CUP_TrackedVehicles_M1Abrams\data\camo\US_Desert\Turret_co.paa'];_unit setObjectTextureGlobal [3,'\CUP\TrackedVehicles\CUP_TrackedVehicles_M1Abrams\data\camo\US_Desert\Wheels_co.paa'];_unit setObjectTextureGlobal [4,'\CUP\TrackedVehicles\CUP_TrackedVehicles_M1Abrams\data\camo\US_Desert\TUSKkit_co.paa'];_unit setObjectTextureGlobal [5,'\CUP\TrackedVehicles\CUP_TrackedVehicles_M1Abrams\data\camo\US_Desert\M1A1Parts_co.paa'];_unit setObjectTextureGlobal [6,'\CUP\TrackedVehicles\CUP_TrackedVehicles_M1Abrams\data\camo\US_Desert\CType_co.paa'];_unit setObjectTextureGlobal [7,'\CUP\TrackedVehicles\CUP_TrackedVehicles_M1Abrams\data\camonet\camonet_desert_us_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
             };
 
         };
 
         // custom attributes (do not delete)
         ALiVE_orbatCreator_owned = 1;
-        ALiVE_orbatCreator_texture = "USWoodland";
+        ALiVE_orbatCreator_texture = "USDesert";
 
     };
 
     class B_BNASRArmyDES_MH_6M_Unarmed_01 : CUP_B_MH6M_OBS_USA_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "MH-6M (Unarmed)";
@@ -2505,18 +2512,19 @@ class CfgVehicles {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
             class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'CUP\AirVehicles\CUP_AirVehicles_AH6\data\ah6_hull_co.paa'];_unit setObjectTextureGlobal [1,'CUP\AirVehicles\CUP_AirVehicles_AH6\data\ah6_interior_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
             };
 
         };
 
         // custom attributes (do not delete)
         ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "Black";
 
     };
 
     class B_BNASRArmyDES_AH_6M_01 : CUP_B_AH6M_USA_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "AH-6M";
@@ -2545,7 +2553,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyDES_UH_60M_Blackbird_Unarmed_01 : CUP_B_UH60M_Unarmed_US_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "UH-60M Blackbird (Unarmed)";
@@ -2577,7 +2585,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyDES_AH_64D_Souix_01 : RHS_AH64D_wd_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "AH-64D Souix";
@@ -2607,7 +2615,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyDES_UH_60M_Blackbird_MedEvac_01 : CUP_B_UH60M_Unarmed_FFV_MEV_US_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "UH-60M Blackbird (MedEvac)";
@@ -2642,7 +2650,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyDES_UH_60L_Blackbird_2Pylons_01 : CUP_B_MH60L_DAP_2x_US_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "UH-60L Blackbird (2 Pylons)";
@@ -2673,7 +2681,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyDES_UH_60L_Blackbird_4Pylons_01 : CUP_B_MH60L_DAP_4x_US_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "UH-60L Blackbird (4 Pylons)";
@@ -2704,7 +2712,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyDES_UH_60M_Blackhawk_Door_Guns_01 : CUP_B_UH60M_US_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "UH-60M Blackhawk (Door Guns)";
@@ -2735,7 +2743,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyDES_CH_47F_Chinook_Cargo_01 : CUP_B_CH47F_VIV_USA_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "CH-47F Chinook (Cargo)";
@@ -2766,7 +2774,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyDES_CH_47F_Chinook_Transport_01 : CUP_B_CH47F_USA_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "CH-47F Chinook (Transport)";
@@ -2798,7 +2806,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyDES_A10A_Thunderbolt_II_01 : CUP_B_A10_DYN_USA_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "A-10A Thunderbolt II";
@@ -2823,7 +2831,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyDES_F4E_01 : cwr3_b_f4e_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "F-4E";
@@ -2853,7 +2861,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyDES_F16C_01 : cwr3_b_f16c_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "F-16C";
@@ -2878,7 +2886,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyDES_C130E_Transport_01 : cwr3_b_c130_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "C-130E Transport";
@@ -2908,7 +2916,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyDES_C130E_Cargo_01 : cwr3_b_c130_cargo_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "C-130E Cargo";
@@ -2938,7 +2946,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyDES_F18_Multirole_01 : rhssaf_airforce_l_18_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "F-18 Multirole";
@@ -2963,7 +2971,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyDES_F18_CAP_01 : rhssaf_airforce_l_18_101_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "F-18 CAP";
@@ -2988,7 +2996,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyDES_Delta_Force_Team_Leader_01 : CUP_B_US_SpecOps_TL_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Delta Force Team Leader";
@@ -2997,20 +3005,20 @@ class CfgVehicles {
 
         identityTypes[] = {"usm_heads_generic","LanguageENG_F","CUP_G_ARMY"};
 
-        uniformClass = "CUP_U_CRYE_G3C_M81";
+        uniformClass = "CUP_U_CRYE_G3C_AOR1";
 
-        linkedItems[] = {"CUP_V_PMC_CIRAS_Black_TL","CUP_H_Ger_Beret_TankCommander_Blk","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
-        respawnlinkedItems[] = {"CUP_V_PMC_CIRAS_Black_TL","CUP_H_Ger_Beret_TankCommander_Blk","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+        linkedItems[] = {"CUP_V_PMC_CIRAS_Khaki_TL","CUP_H_Ger_Beret_TankCommander_Blk","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+        respawnlinkedItems[] = {"CUP_V_PMC_CIRAS_Khaki_TL","CUP_H_Ger_Beret_TankCommander_Blk","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
 
-        weapons[] = {"CUP_CZ_BREN2_556_8","CUP_hgun_M9_snds","CUP_SOFLAM"};
-        respawnWeapons[] = {"CUP_CZ_BREN2_556_8","CUP_hgun_M9_snds","CUP_SOFLAM"};
+        weapons[] = {"CUP_CZ_BREN2_556_8_Tan","CUP_hgun_M9_snds","CUP_SOFLAM"};
+        respawnWeapons[] = {"CUP_CZ_BREN2_556_8_Tan","CUP_hgun_M9_snds","CUP_SOFLAM"};
 
         magazines[] = {"CUP_30Rnd_556x45_Stanag","CUP_15Rnd_9x19_M9","Laserbatteries","CUP_30Rnd_556x45_Stanag","CUP_15Rnd_9x19_M9","Laserbatteries"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_Stanag","CUP_15Rnd_9x19_M9","Laserbatteries","CUP_30Rnd_556x45_Stanag","CUP_15Rnd_9x19_M9","Laserbatteries"};
 
-        backpack = "B_AssaultPack_blk";
+        backpack = "B_AssaultPack_cbr";
 
-        ALiVE_orbatCreator_loadout[] = {{"CUP_CZ_BREN2_556_8","CUP_muzzle_snds_G36_black","rhsusf_acc_anpeq15_bk_top","CUP_optic_AIMM_MICROT1_BLK",{"CUP_30Rnd_556x45_Stanag",30},{},""},{},{"CUP_hgun_M9_snds","CUP_muzzle_snds_M9","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"CUP_U_CRYE_G3C_M81",{{"CUP_NVG_1PN138",1},{"CUP_30Rnd_556x45_Stanag",3,30}}},{"CUP_V_PMC_CIRAS_Black_TL",{{"CUP_NVG_PVS15_Hide",1},{"NVGoggles_OPFOR",1},{"CUP_HandGrenade_M67",1,1},{"B_IR_Grenade",1,1},{"SmokeShellRed",1,1},{"CUP_15Rnd_9x19_M9",1,15}}},{"B_AssaultPack_blk",{{"CUP_20Rnd_762x51_B_SCAR",2,20},{"CUP_PipeBomb_M",1,1},{"CUP_HandGrenade_M67",1,1}}},"CUP_H_Ger_Beret_TankCommander_Blk","",{"CUP_SOFLAM","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
+        ALiVE_orbatCreator_loadout[] = {{"CUP_CZ_BREN2_556_8_Tan","CUP_muzzle_snds_G36_desert","rhsusf_acc_anpeq15_bk_top","CUP_optic_AIMM_MICROT1_TAN",{"CUP_30Rnd_556x45_Stanag",30},{},""},{},{"CUP_hgun_M9_snds","CUP_muzzle_snds_M9","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"CUP_U_CRYE_G3C_AOR1",{{"CUP_NVG_1PN138",1},{"CUP_30Rnd_556x45_Stanag",3,30}}},{"CUP_V_PMC_CIRAS_Khaki_TL",{{"CUP_NVG_PVS15_Hide",1},{"NVGoggles_OPFOR",1},{"CUP_HandGrenade_M67",1,1},{"B_IR_Grenade",1,1},{"SmokeShellRed",1,1},{"CUP_15Rnd_9x19_M9",1,15}}},{"B_AssaultPack_cbr",{{"CUP_20Rnd_762x51_B_SCAR",2,20},{"CUP_PipeBomb_M",1,1},{"CUP_HandGrenade_M67",1,1}}},"CUP_H_Ger_Beret_TankCommander_Blk","",{"CUP_SOFLAM","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -3029,7 +3037,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyDES_Delta_Force_Rifleman_01 : B_BNASRArmyDES_Delta_Force_Team_Leader_01 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Delta Force Rifleman";
@@ -3038,20 +3046,20 @@ class CfgVehicles {
 
         identityTypes[] = {"usm_heads_generic","LanguageENG_F","CUP_G_ARMY"};
 
-        uniformClass = "CUP_U_CRYE_G3C_M81";
+        uniformClass = "CUP_U_CRYE_G3C_AOR1";
 
-        linkedItems[] = {"CUP_V_PMC_CIRAS_Black_Patrol","rhsusf_opscore_bk_pelt","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","NVGoggles_OPFOR"};
-        respawnlinkedItems[] = {"CUP_V_PMC_CIRAS_Black_Patrol","rhsusf_opscore_bk_pelt","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","NVGoggles_OPFOR"};
+        linkedItems[] = {"CUP_V_PMC_CIRAS_Coyote_Patrol","rhsusf_opscore_aor1_pelt","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+        respawnlinkedItems[] = {"CUP_V_PMC_CIRAS_Coyote_Patrol","rhsusf_opscore_aor1_pelt","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
 
-        weapons[] = {"CUP_CZ_BREN2_556_8","CUP_hgun_M9_snds","CUP_SOFLAM"};
-        respawnWeapons[] = {"CUP_CZ_BREN2_556_8","CUP_hgun_M9_snds","CUP_SOFLAM"};
+        weapons[] = {"CUP_CZ_BREN2_556_8_Tan","CUP_hgun_M9_snds","CUP_SOFLAM"};
+        respawnWeapons[] = {"CUP_CZ_BREN2_556_8_Tan","CUP_hgun_M9_snds","CUP_SOFLAM"};
 
         magazines[] = {"CUP_30Rnd_556x45_Stanag","CUP_15Rnd_9x19_M9","Laserbatteries","CUP_30Rnd_556x45_Stanag","CUP_15Rnd_9x19_M9","Laserbatteries"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_Stanag","CUP_15Rnd_9x19_M9","Laserbatteries","CUP_30Rnd_556x45_Stanag","CUP_15Rnd_9x19_M9","Laserbatteries"};
 
-        backpack = "B_AssaultPack_blk";
+        backpack = "B_AssaultPack_cbr";
 
-        ALiVE_orbatCreator_loadout[] = {{"CUP_CZ_BREN2_556_8","CUP_muzzle_snds_G36_black","rhsusf_acc_anpeq15_bk_top","CUP_optic_AIMM_MICROT1_BLK",{"CUP_30Rnd_556x45_Stanag",30},{},""},{},{"CUP_hgun_M9_snds","CUP_muzzle_snds_M9","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"CUP_U_CRYE_G3C_M81",{{"CUP_NVG_1PN138",1},{"CUP_30Rnd_556x45_Stanag",3,30}}},{"CUP_V_PMC_CIRAS_Black_Patrol",{{"CUP_NVG_PVS15_Hide",1},{"NVGoggles_OPFOR",3},{"CUP_HandGrenade_M67",1,1},{"B_IR_Grenade",1,1},{"SmokeShellRed",1,1},{"CUP_15Rnd_9x19_M9",1,15}}},{"B_AssaultPack_blk",{{"CUP_20Rnd_762x51_B_SCAR",2,20},{"CUP_PipeBomb_M",1,1},{"CUP_HandGrenade_M67",1,1}}},"rhsusf_opscore_bk_pelt","CUP_G_Shades_Black",{"CUP_SOFLAM","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","NVGoggles_OPFOR"}};
+        ALiVE_orbatCreator_loadout[] = {{"CUP_CZ_BREN2_556_8_Tan","CUP_muzzle_snds_G36_desert","rhsusf_acc_anpeq15_bk_top","CUP_optic_AIMM_MICROT1_TAN",{"CUP_30Rnd_556x45_Stanag",30},{},""},{},{"CUP_hgun_M9_snds","CUP_muzzle_snds_M9","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"CUP_U_CRYE_G3C_AOR1",{{"CUP_NVG_1PN138",1},{"CUP_30Rnd_556x45_Stanag",3,30}}},{"CUP_V_PMC_CIRAS_Coyote_Patrol",{{"CUP_NVG_PVS15_Hide",1},{"NVGoggles_OPFOR",3},{"CUP_HandGrenade_M67",1,1},{"B_IR_Grenade",1,1},{"SmokeShellRed",1,1},{"CUP_15Rnd_9x19_M9",1,15}}},{"B_AssaultPack_cbr",{{"NVGoggles_OPFOR",1},{"CUP_20Rnd_762x51_B_SCAR",2,20},{"CUP_PipeBomb_M",1,1},{"CUP_HandGrenade_M67",1,1}}},"rhsusf_opscore_aor1_pelt","CUP_G_Shades_Black",{"CUP_SOFLAM","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -3070,7 +3078,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyDES_Delta_Force_Machine_Gunner_01 : B_BNASRArmyDES_Delta_Force_Rifleman_01 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Delta Force Machine Gunner";
@@ -3079,10 +3087,10 @@ class CfgVehicles {
 
         identityTypes[] = {"usm_heads_generic","LanguageENG_F","CUP_G_ARMY"};
 
-        uniformClass = "CUP_U_CRYE_G3C_M81_RGR";
+        uniformClass = "CUP_U_CRYE_G3C_AOR1";
 
-        linkedItems[] = {"CUP_V_PMC_CIRAS_Black_Patrol","rhsusf_opscore_bk_pelt","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","NVGoggles_OPFOR"};
-        respawnlinkedItems[] = {"CUP_V_PMC_CIRAS_Black_Patrol","rhsusf_opscore_bk_pelt","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","NVGoggles_OPFOR"};
+        linkedItems[] = {"CUP_V_PMC_CIRAS_Coyote_Patrol","rhsusf_opscore_aor1_pelt","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+        respawnlinkedItems[] = {"CUP_V_PMC_CIRAS_Coyote_Patrol","rhsusf_opscore_aor1_pelt","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
 
         weapons[] = {"CUP_lmg_minimipara","CUP_hgun_M9_snds","CUP_SOFLAM"};
         respawnWeapons[] = {"CUP_lmg_minimipara","CUP_hgun_M9_snds","CUP_SOFLAM"};
@@ -3090,9 +3098,9 @@ class CfgVehicles {
         magazines[] = {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249","CUP_15Rnd_9x19_M9","Laserbatteries","CUP_200Rnd_TE4_Red_Tracer_556x45_M249","CUP_15Rnd_9x19_M9","Laserbatteries"};
         respawnMagazines[] = {"CUP_200Rnd_TE4_Red_Tracer_556x45_M249","CUP_15Rnd_9x19_M9","Laserbatteries","CUP_200Rnd_TE4_Red_Tracer_556x45_M249","CUP_15Rnd_9x19_M9","Laserbatteries"};
 
-        backpack = "B_AssaultPack_blk";
+        backpack = "B_AssaultPack_cbr";
 
-        ALiVE_orbatCreator_loadout[] = {{"CUP_lmg_minimipara","CUP_muzzle_snds_G36_black","","",{"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",200},{},""},{},{"CUP_hgun_M9_snds","CUP_muzzle_snds_M9","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"CUP_U_CRYE_G3C_M81_RGR",{{"CUP_NVG_1PN138",1}}},{"CUP_V_PMC_CIRAS_Black_Patrol",{{"CUP_NVG_PVS15_Hide",1},{"NVGoggles_OPFOR",3},{"CUP_HandGrenade_M67",1,1},{"B_IR_Grenade",1,1},{"SmokeShellRed",1,1},{"CUP_15Rnd_9x19_M9",1,15}}},{"B_AssaultPack_blk",{{"NVGoggles_OPFOR",1},{"CUP_20Rnd_762x51_B_SCAR",2,20},{"CUP_PipeBomb_M",1,1},{"CUP_HandGrenade_M67",1,1},{"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",1,200}}},"rhsusf_opscore_bk_pelt","CUP_G_Shades_Black",{"CUP_SOFLAM","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","NVGoggles_OPFOR"}};
+        ALiVE_orbatCreator_loadout[] = {{"CUP_lmg_minimipara","CUP_muzzle_snds_G36_desert","","",{"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",200},{},""},{},{"CUP_hgun_M9_snds","CUP_muzzle_snds_M9","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"CUP_U_CRYE_G3C_AOR1",{{"CUP_NVG_1PN138",1},{"NVGoggles_OPFOR",1}}},{"CUP_V_PMC_CIRAS_Coyote_Patrol",{{"CUP_NVG_PVS15_Hide",1},{"NVGoggles_OPFOR",3},{"CUP_HandGrenade_M67",1,1},{"B_IR_Grenade",1,1},{"SmokeShellRed",1,1},{"CUP_15Rnd_9x19_M9",1,15}}},{"B_AssaultPack_cbr",{{"NVGoggles_OPFOR",1},{"CUP_20Rnd_762x51_B_SCAR",2,20},{"CUP_PipeBomb_M",1,1},{"CUP_HandGrenade_M67",1,1},{"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",1,200}}},"rhsusf_opscore_aor1_pelt","CUP_G_Shades_Black",{"CUP_SOFLAM","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -3111,7 +3119,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyDES_Delta_Force_Grenadier_01 : B_BNASRArmyDES_Delta_Force_Rifleman_01 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Delta Force Grenadier";
@@ -3120,20 +3128,20 @@ class CfgVehicles {
 
         identityTypes[] = {"usm_heads_generic","LanguageENG_F","CUP_G_ARMY"};
 
-        uniformClass = "CUP_U_CRYE_G3C_RGR";
+        uniformClass = "CUP_U_CRYE_G3C_AOR1";
 
-        linkedItems[] = {"CUP_V_PMC_CIRAS_Black_Grenadier","CUP_H_PMC_Cap_Back_PRR_Grey","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","NVGoggles_OPFOR"};
-        respawnlinkedItems[] = {"CUP_V_PMC_CIRAS_Black_Grenadier","CUP_H_PMC_Cap_Back_PRR_Grey","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","NVGoggles_OPFOR"};
+        linkedItems[] = {"CUP_V_PMC_CIRAS_Khaki_Grenadier","CUP_H_PMC_Cap_Back_PRR_Tan","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+        respawnlinkedItems[] = {"CUP_V_PMC_CIRAS_Khaki_Grenadier","CUP_H_PMC_Cap_Back_PRR_Tan","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
 
-        weapons[] = {"CUP_CZ_BREN2_556_11_GL","CUP_hgun_M9_snds","CUP_SOFLAM"};
-        respawnWeapons[] = {"CUP_CZ_BREN2_556_11_GL","CUP_hgun_M9_snds","CUP_SOFLAM"};
+        weapons[] = {"CUP_CZ_BREN2_556_11_GL_Tan","CUP_hgun_M9_snds","CUP_SOFLAM"};
+        respawnWeapons[] = {"CUP_CZ_BREN2_556_11_GL_Tan","CUP_hgun_M9_snds","CUP_SOFLAM"};
 
         magazines[] = {"CUP_30Rnd_556x45_Stanag","1Rnd_HE_Grenade_shell","CUP_15Rnd_9x19_M9","Laserbatteries","CUP_30Rnd_556x45_Stanag","1Rnd_HE_Grenade_shell","CUP_15Rnd_9x19_M9","Laserbatteries"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_Stanag","1Rnd_HE_Grenade_shell","CUP_15Rnd_9x19_M9","Laserbatteries","CUP_30Rnd_556x45_Stanag","1Rnd_HE_Grenade_shell","CUP_15Rnd_9x19_M9","Laserbatteries"};
 
-        backpack = "B_AssaultPack_blk";
+        backpack = "B_AssaultPack_cbr";
 
-        ALiVE_orbatCreator_loadout[] = {{"CUP_CZ_BREN2_556_11_GL","CUP_muzzle_snds_G36_black","rhsusf_acc_anpeq15_bk_top","CUP_optic_AIMM_MICROT1_BLK",{"CUP_30Rnd_556x45_Stanag",30},{"1Rnd_HE_Grenade_shell",1},""},{},{"CUP_hgun_M9_snds","CUP_muzzle_snds_M9","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"CUP_U_CRYE_G3C_RGR",{{"CUP_NVG_1PN138",1},{"CUP_30Rnd_556x45_Stanag",3,30}}},{"CUP_V_PMC_CIRAS_Black_Grenadier",{{"CUP_NVG_PVS15_Hide",1},{"NVGoggles_OPFOR",3},{"CUP_HandGrenade_M67",1,1},{"B_IR_Grenade",1,1},{"SmokeShellRed",1,1},{"CUP_15Rnd_9x19_M9",1,15},{"1Rnd_HE_Grenade_shell",3,1}}},{"B_AssaultPack_blk",{{"NVGoggles_OPFOR",1},{"CUP_20Rnd_762x51_B_SCAR",2,20},{"CUP_PipeBomb_M",1,1},{"CUP_HandGrenade_M67",1,1}}},"CUP_H_PMC_Cap_Back_PRR_Grey","CUP_G_Shades_Black",{"CUP_SOFLAM","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","NVGoggles_OPFOR"}};
+        ALiVE_orbatCreator_loadout[] = {{"CUP_CZ_BREN2_556_11_GL_Tan","CUP_muzzle_snds_G36_desert","rhsusf_acc_anpeq15_bk_top","CUP_optic_AIMM_MICROT1_TAN",{"CUP_30Rnd_556x45_Stanag",30},{"1Rnd_HE_Grenade_shell",1},""},{},{"CUP_hgun_M9_snds","CUP_muzzle_snds_M9","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"CUP_U_CRYE_G3C_AOR1",{{"CUP_NVG_1PN138",1},{"CUP_30Rnd_556x45_Stanag",3,30}}},{"CUP_V_PMC_CIRAS_Khaki_Grenadier",{{"CUP_NVG_PVS15_Hide",1},{"NVGoggles_OPFOR",3},{"CUP_HandGrenade_M67",1,1},{"B_IR_Grenade",1,1},{"SmokeShellRed",1,1},{"CUP_15Rnd_9x19_M9",1,15},{"1Rnd_HE_Grenade_shell",3,1}}},{"B_AssaultPack_cbr",{{"NVGoggles_OPFOR",2},{"CUP_20Rnd_762x51_B_SCAR",2,20},{"CUP_PipeBomb_M",1,1},{"CUP_HandGrenade_M67",1,1}}},"CUP_H_PMC_Cap_Back_PRR_Tan","CUP_G_Shades_Black",{"CUP_SOFLAM","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -3152,7 +3160,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyDES_Delta_Force_Marksman_01 : B_BNASRArmyDES_Delta_Force_Rifleman_01 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Delta Force Marksman";
@@ -3161,20 +3169,20 @@ class CfgVehicles {
 
         identityTypes[] = {"usm_heads_generic","LanguageENG_F","CUP_G_ARMY"};
 
-        uniformClass = "CUP_U_CRYE_BLK_Roll";
+        uniformClass = "CUP_U_CRYE_ATACSAU_Roll";
 
-        linkedItems[] = {"CUP_V_PMC_CIRAS_Black_Veh","TRYK_H_woolhat","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","NVGoggles_OPFOR"};
-        respawnlinkedItems[] = {"CUP_V_PMC_CIRAS_Black_Veh","TRYK_H_woolhat","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","NVGoggles_OPFOR"};
+        linkedItems[] = {"CUP_V_PMC_CIRAS_Khaki_Veh","TRYK_H_headset2","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+        respawnlinkedItems[] = {"CUP_V_PMC_CIRAS_Khaki_Veh","TRYK_H_headset2","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
 
-        weapons[] = {"CUP_srifle_AWM_blk","CUP_hgun_M9_snds","CUP_SOFLAM"};
-        respawnWeapons[] = {"CUP_srifle_AWM_blk","CUP_hgun_M9_snds","CUP_SOFLAM"};
+        weapons[] = {"CUP_srifle_AWM_des","CUP_hgun_M9_snds","CUP_SOFLAM"};
+        respawnWeapons[] = {"CUP_srifle_AWM_des","CUP_hgun_M9_snds","CUP_SOFLAM"};
 
         magazines[] = {"CUP_5Rnd_86x70_L115A1","CUP_15Rnd_9x19_M9","Laserbatteries","CUP_5Rnd_86x70_L115A1","CUP_15Rnd_9x19_M9","Laserbatteries"};
         respawnMagazines[] = {"CUP_5Rnd_86x70_L115A1","CUP_15Rnd_9x19_M9","Laserbatteries","CUP_5Rnd_86x70_L115A1","CUP_15Rnd_9x19_M9","Laserbatteries"};
 
-        backpack = "B_AssaultPack_blk";
+        backpack = "B_AssaultPack_cbr";
 
-        ALiVE_orbatCreator_loadout[] = {{"CUP_srifle_AWM_blk","CUP_muzzle_snds_AWM","","CUP_optic_LeupoldMk4_25x50_LRT",{"CUP_5Rnd_86x70_L115A1",5},{},"bipod_01_F_blk"},{},{"CUP_hgun_M9_snds","CUP_muzzle_snds_M9","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"CUP_U_CRYE_BLK_Roll",{{"CUP_NVG_1PN138",1},{"CUP_5Rnd_86x70_L115A1",2,5}}},{"CUP_V_PMC_CIRAS_Black_Veh",{{"CUP_NVG_PVS15_Hide",1},{"NVGoggles_OPFOR",3},{"SmokeShellRed",1,1}}},{"B_AssaultPack_blk",{{"NVGoggles_OPFOR",1},{"CUP_20Rnd_762x51_B_SCAR",2,20},{"CUP_PipeBomb_M",1,1},{"CUP_HandGrenade_M67",1,1}}},"TRYK_H_woolhat","CUP_G_Oakleys_Drk",{"CUP_SOFLAM","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","NVGoggles_OPFOR"}};
+        ALiVE_orbatCreator_loadout[] = {{"CUP_srifle_AWM_des","CUP_muzzle_snds_AWM","","CUP_optic_LeupoldMk4_25x50_LRT_DESERT",{"CUP_5Rnd_86x70_L115A1",5},{},"bipod_02_F_arid"},{},{"CUP_hgun_M9_snds","CUP_muzzle_snds_M9","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"CUP_U_CRYE_ATACSAU_Roll",{{"CUP_NVG_1PN138",1},{"CUP_5Rnd_86x70_L115A1",2,5}}},{"CUP_V_PMC_CIRAS_Khaki_Veh",{{"CUP_NVG_PVS15_Hide",1},{"NVGoggles_OPFOR",3},{"SmokeShellRed",1,1}}},{"B_AssaultPack_cbr",{{"NVGoggles_OPFOR",2},{"CUP_20Rnd_762x51_B_SCAR",2,20},{"CUP_PipeBomb_M",1,1},{"CUP_HandGrenade_M67",1,1},{"CUP_5Rnd_86x70_L115A1",1,5}}},"TRYK_H_headset2","CUP_G_Oakleys_Drk",{"CUP_SOFLAM","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -3193,7 +3201,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyDES_Delta_Force_Operator_01 : B_BNASRArmyDES_Delta_Force_Rifleman_01 {
-        author = "Rick";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Delta Force Operator";
@@ -3202,10 +3210,10 @@ class CfgVehicles {
 
         identityTypes[] = {"usm_heads_generic","LanguageENG_F","CUP_G_ARMY"};
 
-        uniformClass = "TRYK_U_B_OD_BLK_2";
+        uniformClass = "TRYK_U_B_ODTAN_Tshirt";
 
-        linkedItems[] = {"CUP_V_PMC_CIRAS_Black_Patrol","rhsusf_opscore_bk_pelt","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","NVGoggles_OPFOR"};
-        respawnlinkedItems[] = {"CUP_V_PMC_CIRAS_Black_Patrol","rhsusf_opscore_bk_pelt","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","NVGoggles_OPFOR"};
+        linkedItems[] = {"CUP_V_PMC_CIRAS_Coyote_Patrol","rhsusf_opscore_aor1_pelt","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+        respawnlinkedItems[] = {"CUP_V_PMC_CIRAS_Coyote_Patrol","rhsusf_opscore_aor1_pelt","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
 
         weapons[] = {"hlc_smg_mp5sd6","CUP_hgun_M9_snds","CUP_SOFLAM"};
         respawnWeapons[] = {"hlc_smg_mp5sd6","CUP_hgun_M9_snds","CUP_SOFLAM"};
@@ -3213,9 +3221,9 @@ class CfgVehicles {
         magazines[] = {"hlc_30Rnd_9x19_B_MP5","CUP_15Rnd_9x19_M9","Laserbatteries","hlc_30Rnd_9x19_B_MP5","CUP_15Rnd_9x19_M9","Laserbatteries"};
         respawnMagazines[] = {"hlc_30Rnd_9x19_B_MP5","CUP_15Rnd_9x19_M9","Laserbatteries","hlc_30Rnd_9x19_B_MP5","CUP_15Rnd_9x19_M9","Laserbatteries"};
 
-        backpack = "B_AssaultPack_blk";
+        backpack = "B_AssaultPack_cbr";
 
-        ALiVE_orbatCreator_loadout[] = {{"hlc_smg_mp5sd6","","","CUP_optic_AIMM_MICROT1_BLK",{"hlc_30Rnd_9x19_B_MP5",30},{},""},{},{"CUP_hgun_M9_snds","CUP_muzzle_snds_M9","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"TRYK_U_B_OD_BLK_2",{}},{"CUP_V_PMC_CIRAS_Black_Patrol",{{"CUP_NVG_PVS15_Hide",1},{"NVGoggles_OPFOR",3},{"CUP_HandGrenade_M67",1,1},{"B_IR_Grenade",1,1},{"SmokeShellRed",1,1},{"CUP_15Rnd_9x19_M9",1,15},{"hlc_30Rnd_9x19_B_MP5",1,30}}},{"B_AssaultPack_blk",{{"NVGoggles_OPFOR",1},{"CUP_20Rnd_762x51_B_SCAR",2,20},{"CUP_PipeBomb_M",1,1},{"CUP_HandGrenade_M67",1,1}}},"rhsusf_opscore_bk_pelt","CUP_G_ESS_BLK_Dark",{"CUP_SOFLAM","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","NVGoggles_OPFOR"}};
+        ALiVE_orbatCreator_loadout[] = {{"hlc_smg_mp5sd6","","","CUP_optic_AIMM_MICROT1_BLK",{"hlc_30Rnd_9x19_B_MP5",30},{},""},{},{"CUP_hgun_M9_snds","CUP_muzzle_snds_M9","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"TRYK_U_B_ODTAN_Tshirt",{{"NVGoggles_OPFOR",1}}},{"CUP_V_PMC_CIRAS_Coyote_Patrol",{{"CUP_NVG_PVS15_Hide",1},{"NVGoggles_OPFOR",3},{"CUP_HandGrenade_M67",1,1},{"B_IR_Grenade",1,1},{"SmokeShellRed",1,1},{"CUP_15Rnd_9x19_M9",1,15},{"hlc_30Rnd_9x19_B_MP5",1,30}}},{"B_AssaultPack_cbr",{{"NVGoggles_OPFOR",1},{"CUP_20Rnd_762x51_B_SCAR",2,20},{"CUP_PipeBomb_M",1,1},{"CUP_HandGrenade_M67",1,1}}},"rhsusf_opscore_aor1_pelt","CUP_G_ESS_BLK_Dark",{"CUP_SOFLAM","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -3234,7 +3242,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyDES_M270_MLRS_HE_01 : CUP_B_M270_HE_USA_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
+        editorSubcategory = "NASR_Artillery";
         scope = 2;
         scopeCurator = 2;
         displayName = "M270 MLRS (HE)";
@@ -3252,19 +3261,20 @@ class CfgVehicles {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
             class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cup\trackedvehicles\cup_trackedvehicles_m270\data\mlrs_hull_woodland_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cup\trackedvehicles\cup_trackedvehicles_m270\data\mlrs_hull_desert_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
             };
 
         };
 
         // custom attributes (do not delete)
         ALiVE_orbatCreator_owned = 1;
-        ALiVE_orbatCreator_texture = "USMC";
+        ALiVE_orbatCreator_texture = "USArmy";
 
     };
 
     class B_BNASRArmyDES_M270_MLRS_DPICM_01 : CUP_B_M270_DPICM_USA_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
+        editorSubcategory = "NASR_Artillery";
         scope = 2;
         scopeCurator = 2;
         displayName = "M270 MLRS (DPICM)";
@@ -3282,19 +3292,20 @@ class CfgVehicles {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
             class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cup\trackedvehicles\cup_trackedvehicles_m270\data\mlrs_hull_woodland_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cup\trackedvehicles\cup_trackedvehicles_m270\data\mlrs_hull_desert_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
             };
 
         };
 
         // custom attributes (do not delete)
         ALiVE_orbatCreator_owned = 1;
-        ALiVE_orbatCreator_texture = "USMC";
+        ALiVE_orbatCreator_texture = "USArmy";
 
     };
 
     class B_BNASRArmyDES_M119_01 : cwr3_b_m119_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
+        editorSubcategory = "NASR_Artillery";
         scope = 2;
         scopeCurator = 2;
         displayName = "M119";
@@ -3323,7 +3334,8 @@ class CfgVehicles {
     };
 
     class B_BNASRArmyDES_M109A6_01 : rhsusf_m109_usarmy_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
+        editorSubcategory = "NASR_Artillery";
         scope = 2;
         scopeCurator = 2;
         displayName = "M109A6";
@@ -3341,18 +3353,20 @@ class CfgVehicles {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
             class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'rhsusf\addons\rhsusf_m109\data\rhsusf_m109a6_01_d_co.paa'];_unit setObjectTextureGlobal [1,'rhsusf\addons\rhsusf_m109\data\rhsusf_m109a6_02_d_co.paa'];_unit setObjectTextureGlobal [2,'rhsusf\addons\rhsusf_m109\data\rhsusf_m109a6_03_d_co.paa'];_unit setObjectTextureGlobal [3,'rhsusf\addons\rhsusf_m109\data\rhsusf_m109a6_mesh_d_ca.paa'];_unit setObjectTextureGlobal [4,'rhsusf\addons\rhsusf_m109\data\rhsusf_m109a6_wheels_d_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
             };
 
         };
 
         // custom attributes (do not delete)
         ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "Desert";
 
     };
 
     class B_BNASRArmyDES_M252_01 : RHS_M252_WD_OCimport_02 {
-        author = "Rick";
+        author = "wlan0";
+        editorSubcategory = "NASR_Artillery";
         scope = 2;
         scopeCurator = 2;
         displayName = "M252";
