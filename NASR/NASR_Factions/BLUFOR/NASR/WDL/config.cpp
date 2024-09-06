@@ -328,7 +328,7 @@ class CfgEditorSubcategories
 
 class CfgFactionClasses {
     class B_NASRArmy_WDL {
-        displayName = "[PF] North American Socialist Republic (Woodland)";
+        displayName = "[PF] N.A.S.R. (Woodland)";
         side = 1;
         flag = "NASR_Factions\BLUFOR\NASR\data\flag.paa";
         icon = "NASR_Factions\BLUFOR\NASR\data\flag.paa";
@@ -340,7 +340,7 @@ class CfgGroups {
     class WEST {
 
         class B_NASRArmy_WDL {
-            name = "[PF] North American Socialist Republic (Woodland)";
+            name = "[PF] N.A.S.R. (Woodland)";
 
             class Infantry {
                 name = "Infantry";
