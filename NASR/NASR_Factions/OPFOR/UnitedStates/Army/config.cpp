@@ -142,7 +142,6 @@ class CfgPatches {
             "rhsusf_c_m113",
             "rhsusf_c_m1a1",
             "rhsusf_c_m1a2",
-            "m109_ukr",
             "rhs_c_a2port_armor",
             "ace_cookoff",
             "ace_logistics_uavbattery",
@@ -229,8 +228,8 @@ class CfgPatches {
             "cwr3_vehicle_lynx_uk",
             "CUP_AirVehciles_AW159"
         };
-        author = "[2LT] O'Neill (He/Him)";
-        authors[] = {"[2LT] O'Neill (He/Him)"};
+        author = "wlan0";
+        authors[] = {"wlan0"};
         addonRootClass = "NASR_Factions";
     };
 };
@@ -1172,7 +1171,7 @@ class CfgVehicles {
 
 
     class O_OUSArmyDES_Rifleman_01 : O_Soldier_F_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Rifleman";
@@ -1213,7 +1212,7 @@ class CfgVehicles {
     };
 
     class O_OUSArmyDES_Machine_Gunner_01 : O_OUSArmyDES_Rifleman_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Machine Gunner";
@@ -1253,7 +1252,7 @@ class CfgVehicles {
     };
 
     class O_OUSArmyDES_Grenadier_01 : O_OUSArmyDES_Rifleman_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Grenadier";
@@ -1291,7 +1290,7 @@ class CfgVehicles {
     };
 
     class O_OUSArmyDES_Team_Leader_01 : O_OUSArmyDES_Rifleman_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Team Leader";
@@ -1331,7 +1330,7 @@ class CfgVehicles {
     };
 
     class O_OUSArmyDES_Squad_Leader_01 : O_OUSArmyDES_Team_Leader_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Squad Leader";
@@ -1371,7 +1370,7 @@ class CfgVehicles {
     };
 
     class O_OUSArmyDES_Officer_01 : O_OUSArmyDES_Rifleman_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Officer";
@@ -1411,7 +1410,7 @@ class CfgVehicles {
     };
 
     class O_OUSArmyDES_Sniper_01 : O_OUSArmyDES_Rifleman_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Sniper";
@@ -1449,7 +1448,7 @@ class CfgVehicles {
     };
 
     class O_OUSArmyDES_Medic_01 : O_OUSArmyDES_Rifleman_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Medic";
@@ -1489,7 +1488,7 @@ class CfgVehicles {
     };
 
     class O_OUSArmyDES_Rifleman_AA_01 : O_OUSArmyDES_Rifleman_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Rifleman AA";
@@ -1529,7 +1528,7 @@ class CfgVehicles {
     };
 
     class O_OUSArmyDES_Rifleman_AT_01 : O_OUSArmyDES_Rifleman_AA_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Rifleman AT";
@@ -1569,7 +1568,7 @@ class CfgVehicles {
     };
 
     class O_OUSArmyDES_Spotter_01 : O_OUSArmyDES_Rifleman_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Spotter";
@@ -1609,7 +1608,7 @@ class CfgVehicles {
     };
 
     class O_OUSArmyDES_Crewman_01 : O_OUSArmyDES_Rifleman_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Crewman";
@@ -1647,7 +1646,7 @@ class CfgVehicles {
     };
 
     class O_OUSArmyDES_Pilot_01 : O_OUSArmyDES_Crewman_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Pilot";
@@ -1687,7 +1686,7 @@ class CfgVehicles {
     };
 
     class O_OUSArmyDES_Ammo_Bearer_01 : O_OUSArmyDES_Rifleman_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Ammo Bearer";
@@ -1727,7 +1726,7 @@ class CfgVehicles {
     };
 
     class O_OUSArmyDES_RATELO_01 : O_OUSArmyDES_Rifleman_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "RATELO";
@@ -1767,7 +1766,7 @@ class CfgVehicles {
     };
 
     class O_OUSArmyDES_M38A2_Covered_01 : O_OUSGuardOD_M38A2_Covered_01_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M38A2 (Covered)";
@@ -1798,7 +1797,7 @@ class CfgVehicles {
     };
 
     class O_OUSArmyDES_M38A2_Ammo_01 : O_OUSGuardOD_M38A2_Ammo_01_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M38A2 (Ammo)";
@@ -1823,7 +1822,7 @@ class CfgVehicles {
     };
 
     class O_OUSArmyDES_M38A2_Fuel_01 : O_OUSGuardOD_M38A2_Fuel_01_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M38A2 (Fuel)";
@@ -1848,7 +1847,7 @@ class CfgVehicles {
     };
 
     class O_OUSArmyDES_M38A2_Open_01 : O_OUSGuardOD_M38A2_Open_01_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M38A2 (Open)";
@@ -1879,7 +1878,7 @@ class CfgVehicles {
     };
 
     class O_OUSArmyDES_M223_Unarmed_01 : CUP_B_Tigr_233011_GREEN_AFU_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M223 (Unarmed)";
@@ -1912,7 +1911,7 @@ class CfgVehicles {
     };
 
     class O_OUSArmyDES_M223_Armed_01 : CUP_B_Tigr_233014_PK_GREEN_AFU_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M223 (Armed)";
@@ -1943,7 +1942,7 @@ class CfgVehicles {
     };
 
     class O_OUSArmyDES_M113A1_01 : CUP_B_M113A1_desert_USA_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M113A1";
@@ -1976,7 +1975,7 @@ class CfgVehicles {
     };
 
     class O_OUSArmyDES_M113A1_MEV_01 : CUP_B_M113A1_Med_desert_USA_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M113A1 MEV";
@@ -2005,7 +2004,7 @@ class CfgVehicles {
     };
 
     class O_OUSArmyDES_M13A2_01 : CUP_O_T90M_RU_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M13A2";
@@ -2035,7 +2034,7 @@ class CfgVehicles {
     };
 
     class O_OUSArmyDES_Pilot_Helicopter_01 : O_OUSArmyDES_Crewman_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Pilot (Helicopter)";
@@ -2073,7 +2072,7 @@ class CfgVehicles {
     };
 
     class O_OUSArmyDES_F159B_01 : rhs_l159_CDF_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "F-159B";
@@ -2097,7 +2096,7 @@ class CfgVehicles {
     };
 
     class O_OUSArmyDES_F4E_01 : cwr3_b_f4e_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "F-4E";
@@ -2127,7 +2126,7 @@ class CfgVehicles {
     };
 
     class O_OUSArmyDES_F8B_01 : CUP_B_AV8B_DYN_USMC_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "F-8B";
@@ -2152,7 +2151,7 @@ class CfgVehicles {
     };
 
     class O_OUSArmyDES_F330_Puma_01 : CUP_B_SA330_Puma_HC1_BAF_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "F-330 Puma";
@@ -2183,7 +2182,7 @@ class CfgVehicles {
     };
 
     class O_OUSArmyDES_F7_Lynx_01 : cwr3_b_uk_lynx_ah7_cas_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "F-7 Lynx";

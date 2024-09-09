@@ -99,8 +99,8 @@ class CfgPatches {
             "ace_compat_cup_vehicles_refuel",
             "CUP_WheeledVehicles_GAZTigr"
         };
-        author = "[2LT] O'Neill (He/Him)";
-        authors[] = {"[2LT] O'Neill (He/Him)"};
+        author = "wlan0";
+        authors[] = {"wlan0"};
         addonRootClass = "NASR_Factions";
     };
 };
@@ -550,7 +550,7 @@ class CfgVehicles {
 
 
     class O_USNG_Crewman_01 : O_OUSArmyDES_Crewman_01_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Crewman";
@@ -588,7 +588,7 @@ class CfgVehicles {
     };
 
     class O_USNG_Rifleman_01 : O_OUSArmyDES_Rifleman_01_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Rifleman";
@@ -626,7 +626,7 @@ class CfgVehicles {
     };
 
     class O_USGuard_Machine_Gunner_OD_01 : O_USNG_Rifleman_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Machine Gunner";
@@ -666,7 +666,7 @@ class CfgVehicles {
     };
 
     class O_USGuard_Shotgun_OD_01 : O_USGuard_Machine_Gunner_OD_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Shotgun";
@@ -704,7 +704,7 @@ class CfgVehicles {
     };
 
     class O_USGuard_Team_Leader_OD_01 : O_USNG_Rifleman_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Team Leader";
@@ -742,7 +742,7 @@ class CfgVehicles {
     };
 
     class O_USGuard_Officer_OD_01 : O_USNG_Rifleman_01 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Officer";
@@ -782,7 +782,7 @@ class CfgVehicles {
     };
 
     class O_OUSGuardOD_M38A2_Covered_01 : CUP_B_Ural_AFU_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M38A2 (Covered)";
@@ -813,7 +813,7 @@ class CfgVehicles {
     };
 
     class O_OUSGuardOD_M38A2_Ammo_01 : CUP_B_Ural_Reammo_AFU_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M38A2 (Ammo)";
@@ -838,7 +838,7 @@ class CfgVehicles {
     };
 
     class O_OUSGuardOD_M38A2_Fuel_01 : CUP_B_Ural_Refuel_AFU_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M38A2 (Fuel)";
@@ -863,7 +863,7 @@ class CfgVehicles {
     };
 
     class O_OUSGuardOD_M38A2_Open_01 : CUP_B_Ural_Open_AFU_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M38A2 (Open)";
@@ -894,7 +894,7 @@ class CfgVehicles {
     };
 
     class O_OUSGuardOD_M223_Unarmed_01 : CUP_B_Tigr_233011_GREEN_AFU_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M223 (Unarmed)";
@@ -927,7 +927,7 @@ class CfgVehicles {
     };
 
     class O_OUSGuardOD_M223_Armed_01 : CUP_B_Tigr_233014_PK_GREEN_AFU_OCimport_02 {
-        author = "[2LT] O'Neill (He/Him)";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M223 (Armed)";
