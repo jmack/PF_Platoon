@@ -1,0 +1,524 @@
+class CfgPatches {
+    class B_NASRArmy {
+        units[] = {
+            "B_BNASRArmy_Rifleman_WDL_01",
+            "B_BNASRArmy_Rifleman_DES_01",
+            "B_BNASRArmy_Rifleman_M136_WDL_01",
+            "B_BNASRArmy_Rifleman_M136_DES_01",
+            "B_BNASRArmy_Rifleman_NLAW_WDL_01",
+            "B_BNASRArmy_Rifleman_NLAW_DES_01",
+            "B_BNASRArmy_Rifleman_Stinger_WDL_01",
+            "B_BNASRArmy_Rifleman_Stinger_DES_01",
+            "B_BNASRArmy_Grenadier_WDL_01",
+            "B_BNASRArmy_Grenadier_DES_01",
+            "B_BNASRArmy_Machine_Gunner_WDL_01",
+            "B_BNASRArmy_Machine_Gunner_DES_01",
+            "B_BNASRArmy_Marksman_WDL_01",
+            "B_BNASRArmy_Marksman_DES_01"
+        };
+        weapons[] = {};
+        requiredVersion = 1.62;
+        requiredAddons[] = {
+            "A3_Characters_F",
+            "universal_uniforms",
+            "mlv_inf01",
+            "rhsusf_c_troops",
+            "lambs_danger",
+            "CUP_Creatures_Military_BAF",
+            "CUP_Creatures_Military_Germany",
+            "CUP_Creatures_Military_NAPA",
+            "CUP_Creatures_Military_PMC",
+            "CUP_Creatures_Military_Taki",
+            "CUP_Creatures_Military_TakiInsurgents",
+            "CUP_Creatures_Military_USMC",
+            "CUP_Creatures_Military_ACR",
+            "CUP_Creatures_Military_CDF",
+            "CUP_Creatures_Military_Chedaki",
+            "CUP_Creatures_Military_Delta",
+            "CUP_Creatures_Military_RACS",
+            "CUP_Creatures_Military_SLA",
+            "CUP_Creatures_Military_USArmy",
+            "CUP_Creatures_Military_HIL",
+            "CUP_Creatures_Military_Ukraine",
+            "kka3_gestures_ace",
+            "A3_Sounds_F",
+            "A3_Sounds_F_Exp",
+            "Webs_Footsteps",
+            "lambs_range",
+            "tfar_core",
+            "hlcweapons_AUG",
+            "ace_gforces",
+            "ace_movement",
+            "ace_medical_feedback",
+            "CUP_Creatures_Military_Russia",
+            "cwr3_soldiers_fia",
+            "cwr3_soldiers_ru",
+            "cwr3_soldiers_us",
+            "cwr3_expansion_uk",
+            "cwr3_hot_couple",
+            "A3_Data_F",
+            "A3_Data_F_Curator",
+            "A3_Air_F_Heli",
+            "ace_thermals",
+            "lambs_formations",
+            "zen_attributes",
+            "ace_refuel",
+            "CUP_Core",
+            "cba_xeh"
+        };
+        author = "P. Davis";
+        authors[] = {"P. Davis"};
+        addonRootClass = "NASR_Factions";
+    };
+};
+
+// -- Men (WDL | DES) -----
+// Rifleman
+// Rifleman AT (M136)
+// Rifleman AT (NLAW)
+// Rifleman AA (Stinger)
+// Grenadier
+// Machine Gunner
+// Marksman
+
+// Sniper
+// Spotter
+// Corpsman
+// RATELO
+// Team Leader
+// Squad Leader
+// Officer
+// Pilot
+// Pilot (Helicopter)
+
+// -- Men (Work Uniform) -----
+// Enlisted
+// NCO
+// Officer
+// Military Police
+
+// -- Cars (WDL | DES) -----
+// HMMWV Unarmed
+// HMMWV M2
+// HMMWV Mk19
+// HMMWV TOW
+// HMMWV MedEvac
+// HMMWV Transport
+// M939 Covered
+// M939 Open
+// M939 Ammo
+// M939 Fuel
+// M939 Repair
+// M939 Cargo
+// M939 MedEvac
+
+// -- APCs (WDL | DES) -----
+// Stryker M2
+// Stryker Mk19
+// Stryker MGS
+// Bradley IFV
+
+// -- Tanks (WDL | DES) -----
+// M1A2 Butler
+
+// -- Artillery (WDL | DES) -----
+// M270 MLRS HE
+// M270 MLRS DPICM
+// M119
+// M109A6
+// M252
+
+// -- Helicopters -----
+// MH-6M Little Bird (Unarmed)
+// AH-6M Little Bird (X Pylons)
+// UH-60M Black Hawk (Unarmed)
+// UH-60M Black Hawk (Door Guns)
+// UH-60M Black Hawk (MedEvac)
+// UH-60L Black Hawk (2 Pylons)
+// UH-60L Black Hawk (4 Pylons)
+// CH-47F Chinook (Cargo)
+// CH-47F Chinook (Transport)
+// AH-64D Apache
+
+// -- Planes -----
+// A-10A Thunderbolt II
+// F-4E
+// F-16C
+// F-18 (Multirole)
+// F-18 (CAP)
+// C-130E (Cargo)
+// C-130E (Transport)
+
+
+// Editor subcategories to override weird imported names
+class CfgEditorSubcategories
+{
+    class NASR_Men_WDL
+    {
+        DisplayName = "Men (Woodland)";
+    };
+    class NASR_Men_DES
+    {
+        DisplayName = "Men (Desert)";
+    };
+    class NASR_Men_Work
+    {
+        DisplayName = "Men (Work Uniforms)";
+    };
+    class NASR_Cars_WDL
+    {
+        DisplayName = "Cars (Woodland)";
+    };
+    class NASR_Cars_DES
+    {
+        DisplayName = "Cars (Desert)";
+    };
+    class NASR_APCs_WDL
+    {
+        DisplayName = "APCs (Woodland)";
+    };
+    class NASR_APCs_DES
+    {
+        DisplayName = "APCs (Desert)";
+    };
+    class NASR_Tanks_WDL
+    {
+        DisplayName = "Tanks (Woodland)";
+    };
+    class NASR_Tanks_DES
+    {
+        DisplayName = "Tanks (Desert)";
+    };
+    class NASR_Artillery_WDL
+    {
+        DisplayName = "Artillery (Woodland)";
+    };
+    class NASR_Artillery_DES
+    {
+        DisplayName = "Artillery (Desert)";
+    };
+    class NASR_Helicopters
+    {
+        DisplayName = "Helicopters";
+    };
+    class NASR_Planes
+    {
+        DisplayName = "Planes";
+    };
+};
+
+//////////////////////////////////////////////////////////////////////////////////
+// Config Automatically Generated by ALiVE ORBAT Creator
+// Generated with Arma 3 version 218.152405 on Stable branch
+// Generated with ALiVE version 2.1.6.2410071
+//////////////////////////////////////////////////////////////////////////////////
+class CfgFactionClasses {
+    class B_NASRArmy {
+        displayName = "[PF] N.A.S.R.";
+        side = 1;
+        flag = "NASR_Factions\BLUFOR\NASR\data\flag.paa";
+        icon = "NASR_Factions\BLUFOR\NASR\data\flag.paa";
+        priority = 0;
+    };
+};
+
+class CfgGroups {
+    class WEST {
+
+        class B_NASRArmy {
+            name = "[PF] N.A.S.R.";
+
+            class Infantry {
+                name = "Infantry";
+
+            };
+
+            class SpecOps {
+                name = "SpecOps";
+
+            };
+
+            class Motorized {
+                name = "Motorized";
+
+            };
+
+            class Motorized_MTP {
+                name = "Motorized Infantry (MTP)";
+
+            };
+
+            class Support {
+                name = "Support";
+
+            };
+
+            class Mechanized {
+                name = "Mechanized";
+
+            };
+
+            class Armored {
+                name = "Armored";
+
+            };
+
+            class Artillery {
+                name = "Artillery";
+
+            };
+
+            class Naval {
+                name = "Naval";
+
+            };
+
+            class Air {
+                name = "Air";
+
+            };
+
+
+        };
+
+    };
+};
+
+class CBA_Extended_EventHandlers_base;
+
+class CfgVehicles {
+
+    class B_soldier_F;
+    class B_soldier_F_OCimport_01 : B_soldier_F { scope = 0; class EventHandlers; };
+    class B_soldier_F_OCimport_02 : B_soldier_F_OCimport_01 { class EventHandlers; };
+
+
+    class B_BNASRArmy_Rifleman_WDL_01 : B_soldier_F_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Rifleman";
+        side = 1;
+        faction = "b_nasrarmy";
+        editorSubcategory = "NASR_Men_WDL";
+
+        identityTypes[] = {"usm_heads_generic","LanguageENG_F","CUP_G_ARMY"};
+
+        uniformClass = "TRYK_U_B_Woodland";
+
+        linkedItems[] = {"V_Simc_vest_pasgt_alice_mc_alt","H_Simc_pasgt_m81_b_SWDG","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+        respawnlinkedItems[] = {"V_Simc_vest_pasgt_alice_mc_alt","H_Simc_pasgt_m81_b_SWDG","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+
+        weapons[] = {"HLC_rifle_XM8_MWSF_Carbine_Green","CUP_hgun_M9","Rangefinder"};
+        respawnWeapons[] = {"HLC_rifle_XM8_MWSF_Carbine_Green","CUP_hgun_M9","Rangefinder"};
+
+        magazines[] = {"hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9","hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9"};
+        respawnMagazines[] = {"hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9","hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9"};
+
+        backpack = "B_simc_pack_alice_kobel_m81";
+
+        ALiVE_orbatCreator_loadout[] = {{"HLC_rifle_XM8_MWSF_Carbine_Green","","","CUP_optic_ACOG_TA01B_OD",{"hlc_30rnd_556x45_EPR_G36",30},{},""},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"TRYK_U_B_Woodland",{{"FirstAidKit",1},{"hlc_30rnd_556x45_EPR_G36",3,30},{"CUP_15Rnd_9x19_M9",1,15}}},{"V_Simc_vest_pasgt_alice_mc_alt",{{"NVGoggles",1},{"SmokeShell",1,1},{"Chemlight_green",2,1},{"HandGrenade",2,1},{"CUP_15Rnd_9x19_M9",2,15},{"hlc_30rnd_556x45_EPR_G36",7,30},{"SmokeShellBlue",1,1}}},{"B_simc_pack_alice_kobel_m81",{}},"H_Simc_pasgt_m81_b_SWDG","",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'NASR_Insignia_NASR_Subdued_Woodland'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_insignia = "NASR_Insignia_NASR_Subdued_Woodland";
+
+    };
+
+    class B_BNASRArmy_Rifleman_DES_01 : B_BNASRArmy_Rifleman_WDL_01 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Rifleman";
+        side = 1;
+        faction = "b_nasrarmy";
+        editorSubcategory = "NASR_Men_DES";
+
+        identityTypes[] = {"usm_heads_generic","LanguageENG_F","CUP_G_ARMY"};
+
+        uniformClass = "TRYK_U_B_3c";
+
+        linkedItems[] = {"V_Simc_vest_pasgt_desu_alice_mc_alt","H_Simc_pasgt_desu_b_SWDG","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+        respawnlinkedItems[] = {"V_Simc_vest_pasgt_desu_alice_mc_alt","H_Simc_pasgt_desu_b_SWDG","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+
+        weapons[] = {"HLC_rifle_XM8_MWSF_Carbine_Tan","CUP_hgun_M9","Rangefinder"};
+        respawnWeapons[] = {"HLC_rifle_XM8_MWSF_Carbine_Tan","CUP_hgun_M9","Rangefinder"};
+
+        magazines[] = {"hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9","hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9"};
+        respawnMagazines[] = {"hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9","hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9"};
+
+        backpack = "B_simc_pack_alice_kobel_desu";
+
+        ALiVE_orbatCreator_loadout[] = {{"HLC_rifle_XM8_MWSF_Carbine_Tan","","","CUP_optic_ACOG_TA01B_Coyote",{"hlc_30rnd_556x45_EPR_G36",30},{},""},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"TRYK_U_B_3c",{{"FirstAidKit",1},{"CUP_15Rnd_9x19_M9",1,15},{"hlc_30rnd_556x45_EPR_G36",3,30}}},{"V_Simc_vest_pasgt_desu_alice_mc_alt",{{"NVGoggles",1},{"SmokeShell",1,1},{"Chemlight_green",2,1},{"HandGrenade",2,1},{"CUP_15Rnd_9x19_M9",2,15},{"SmokeShellBlue",1,1}}},{"B_simc_pack_alice_kobel_desu",{}},"H_Simc_pasgt_desu_b_SWDG","",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'NASR_Insignia_NASR_Subdued_Woodland'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_insignia = "NASR_Insignia_NASR_Subdued_Woodland";
+
+    };
+
+    class B_BNASRArmy_Rifleman_M136_WDL_01 : B_BNASRArmy_Rifleman_WDL_01 {
+        displayName = "Rifleman AT (M136)";
+
+        weapons[] = {"HLC_rifle_XM8_MWSF_Carbine_Green","CUP_launch_M136","CUP_hgun_M9","Rangefinder"};
+        respawnWeapons[] = {"HLC_rifle_XM8_MWSF_Carbine_Green","CUP_launch_M136","CUP_hgun_M9","Rangefinder"};
+
+        ALiVE_orbatCreator_loadout[] = {{"HLC_rifle_XM8_MWSF_Carbine_Green","","","CUP_optic_ACOG_TA01B_OD",{"hlc_30rnd_556x45_EPR_G36",30},{},""},{"CUP_launch_M136","","","",{},{},""},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"TRYK_U_B_Woodland",{{"FirstAidKit",1},{"hlc_30rnd_556x45_EPR_G36",3,30},{"CUP_15Rnd_9x19_M9",1,15}}},{"V_Simc_vest_pasgt_alice_mc_alt",{{"NVGoggles",1},{"SmokeShell",1,1},{"Chemlight_green",2,1},{"HandGrenade",2,1},{"CUP_15Rnd_9x19_M9",2,15},{"hlc_30rnd_556x45_EPR_G36",7,30},{"SmokeShellBlue",1,1}}},{"B_simc_pack_alice_kobel_m81",{}},"H_Simc_pasgt_m81_b_SWDG","",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
+    };
+
+    class B_BNASRArmy_Rifleman_M136_DES_01 : B_BNASRArmy_Rifleman_DES_01 {
+        displayName = "Rifleman AT (M136)";
+
+        weapons[] = {"HLC_rifle_XM8_MWSF_Carbine_Tan","CUP_launch_M136","CUP_hgun_M9","Rangefinder"};
+        respawnWeapons[] = {"HLC_rifle_XM8_MWSF_Carbine_Tan","CUP_launch_M136","CUP_hgun_M9","Rangefinder"};
+
+        ALiVE_orbatCreator_loadout[] = {{"HLC_rifle_XM8_MWSF_Carbine_Tan","","","CUP_optic_ACOG_TA01B_Coyote",{"hlc_30rnd_556x45_EPR_G36",30},{},""},{"CUP_launch_M136","","","",{},{},""},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"TRYK_U_B_3c",{{"FirstAidKit",1},{"CUP_15Rnd_9x19_M9",1,15},{"hlc_30rnd_556x45_EPR_G36",3,30}}},{"V_Simc_vest_pasgt_desu_alice_mc_alt",{{"NVGoggles",1},{"SmokeShell",1,1},{"Chemlight_green",2,1},{"HandGrenade",2,1},{"CUP_15Rnd_9x19_M9",2,15},{"SmokeShellBlue",1,1}}},{"B_simc_pack_alice_kobel_desu",{}},"H_Simc_pasgt_desu_b_SWDG","",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
+    };
+
+    class B_BNASRArmy_Rifleman_NLAW_WDL_01 : B_BNASRArmy_Rifleman_WDL_01 {
+        displayName = "Rifleman AT (NLAW)";
+
+        weapons[] = {"HLC_rifle_XM8_MWSF_Carbine_Green","CUP_launch_NLAW","CUP_hgun_M9","Rangefinder"};
+        respawnWeapons[] = {"HLC_rifle_XM8_MWSF_Carbine_Green","CUP_launch_NLAW","CUP_hgun_M9","Rangefinder"};
+
+        ALiVE_orbatCreator_loadout[] = {{"HLC_rifle_XM8_MWSF_Carbine_Green","","","CUP_optic_ACOG_TA01B_OD",{"hlc_30rnd_556x45_EPR_G36",30},{},""},{"CUP_launch_NLAW","","","",{},{},""},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"TRYK_U_B_Woodland",{{"FirstAidKit",1},{"hlc_30rnd_556x45_EPR_G36",3,30},{"CUP_15Rnd_9x19_M9",1,15}}},{"V_Simc_vest_pasgt_alice_mc_alt",{{"NVGoggles",1},{"SmokeShell",1,1},{"Chemlight_green",2,1},{"HandGrenade",2,1},{"CUP_15Rnd_9x19_M9",2,15},{"hlc_30rnd_556x45_EPR_G36",7,30},{"SmokeShellBlue",1,1}}},{"B_simc_pack_alice_kobel_m81",{}},"H_Simc_pasgt_m81_b_SWDG","",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
+    };
+
+    class B_BNASRArmy_Rifleman_NLAW_DES_01 : B_BNASRArmy_Rifleman_DES_01 {
+        displayName = "Rifleman AT (NLAW)";
+
+        weapons[] = {"HLC_rifle_XM8_MWSF_Carbine_Tan","CUP_launch_NLAW","CUP_hgun_M9","Rangefinder"};
+        respawnWeapons[] = {"HLC_rifle_XM8_MWSF_Carbine_Tan","CUP_launch_NLAW","CUP_hgun_M9","Rangefinder"};
+
+        ALiVE_orbatCreator_loadout[] = {{"HLC_rifle_XM8_MWSF_Carbine_Tan","","","CUP_optic_ACOG_TA01B_Coyote",{"hlc_30rnd_556x45_EPR_G36",30},{},""},{"CUP_launch_NLAW","","","",{},{},""},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"TRYK_U_B_3c",{{"FirstAidKit",1},{"CUP_15Rnd_9x19_M9",1,15},{"hlc_30rnd_556x45_EPR_G36",3,30}}},{"V_Simc_vest_pasgt_desu_alice_mc_alt",{{"NVGoggles",1},{"SmokeShell",1,1},{"Chemlight_green",2,1},{"HandGrenade",2,1},{"CUP_15Rnd_9x19_M9",2,15},{"SmokeShellBlue",1,1}}},{"B_simc_pack_alice_kobel_desu",{}},"H_Simc_pasgt_desu_b_SWDG","",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
+    };
+
+    class B_BNASRArmy_Rifleman_Stinger_WDL_01 : B_BNASRArmy_Rifleman_WDL_01 {
+        displayName = "Rifleman AA (Stinger)";
+
+        weapons[] = {"HLC_rifle_XM8_MWSF_Carbine_Green","ASZ_Launch_Stinger","CUP_hgun_M9","Rangefinder"};
+        respawnWeapons[] = {"HLC_rifle_XM8_MWSF_Carbine_Green","ASZ_Launch_Stinger","CUP_hgun_M9","Rangefinder"};
+
+        ALiVE_orbatCreator_loadout[] = {{"HLC_rifle_XM8_MWSF_Carbine_Green","","","CUP_optic_ACOG_TA01B_OD",{"hlc_30rnd_556x45_EPR_G36",30},{},""},{"ASZ_Launch_Stinger","","","",{"ASZ_Stinger_Mag",1},{},""},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"TRYK_U_B_Woodland",{{"FirstAidKit",1},{"hlc_30rnd_556x45_EPR_G36",3,30},{"CUP_15Rnd_9x19_M9",1,15}}},{"V_Simc_vest_pasgt_alice_mc_alt",{{"NVGoggles",1},{"SmokeShell",1,1},{"Chemlight_green",2,1},{"HandGrenade",2,1},{"CUP_15Rnd_9x19_M9",2,15},{"hlc_30rnd_556x45_EPR_G36",7,30},{"SmokeShellBlue",1,1}}},{"B_simc_pack_alice_kobel_m81",{{"ASZ_Stinger_Mag",1,1}}},"H_Simc_pasgt_m81_b_SWDG","",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
+    };
+
+    class B_BNASRArmy_Rifleman_Stinger_DES_01 : B_BNASRArmy_Rifleman_DES_01 {
+        displayName = "Rifleman AA (Stinger)";
+
+        weapons[] = {"HLC_rifle_XM8_MWSF_Carbine_Tan","ASZ_Launch_Stinger","CUP_hgun_M9","Rangefinder"};
+        respawnWeapons[] = {"HLC_rifle_XM8_MWSF_Carbine_Tan","ASZ_Launch_Stinger","CUP_hgun_M9","Rangefinder"};
+
+        ALiVE_orbatCreator_loadout[] = {{"HLC_rifle_XM8_MWSF_Carbine_Tan","","","CUP_optic_ACOG_TA01B_Coyote",{"hlc_30rnd_556x45_EPR_G36",30},{},""},{"ASZ_Launch_Stinger","","","",{"ASZ_Stinger_Mag",1},{},""},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"TRYK_U_B_3c",{{"FirstAidKit",1},{"CUP_15Rnd_9x19_M9",1,15},{"hlc_30rnd_556x45_EPR_G36",3,30}}},{"V_Simc_vest_pasgt_desu_alice_mc_alt",{{"NVGoggles",1},{"SmokeShell",1,1},{"Chemlight_green",2,1},{"HandGrenade",2,1},{"CUP_15Rnd_9x19_M9",2,15},{"SmokeShellBlue",1,1}}},{"B_simc_pack_alice_kobel_desu",{{"ASZ_Stinger_Mag",1,1}}},"H_Simc_pasgt_desu_b_SWDG","",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
+    };
+
+    class B_BNASRArmy_Grenadier_WDL_01 : B_BNASRArmy_Rifleman_WDL_01 {
+        displayName = "Grenadier";
+
+        linkedItems[] = {"V_Simc_vest_pasgt_alice_mc","H_Simc_pasgt_m81_b_SWDG","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+        respawnlinkedItems[] = {"V_Simc_vest_pasgt_alice_mc","H_Simc_pasgt_m81_b_SWDG","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+
+        weapons[] = {"HLC_Rifle_XM8_MWSF_Carbine_GL_Green","CUP_hgun_M9","Rangefinder"};
+        respawnWeapons[] = {"HLC_Rifle_XM8_MWSF_Carbine_GL_Green","CUP_hgun_M9","Rangefinder"};
+
+        magazines[] = {"hlc_30rnd_556x45_EPR_G36","1Rnd_HE_Grenade_shell","CUP_15Rnd_9x19_M9","hlc_30rnd_556x45_EPR_G36","1Rnd_HE_Grenade_shell","CUP_15Rnd_9x19_M9"};
+        respawnMagazines[] = {"hlc_30rnd_556x45_EPR_G36","1Rnd_HE_Grenade_shell","CUP_15Rnd_9x19_M9","hlc_30rnd_556x45_EPR_G36","1Rnd_HE_Grenade_shell","CUP_15Rnd_9x19_M9"};
+
+        ALiVE_orbatCreator_loadout[] = {{"HLC_Rifle_XM8_MWSF_Carbine_GL_Green","","","CUP_optic_ACOG_TA01B_OD",{"hlc_30rnd_556x45_EPR_G36",30},{"1Rnd_HE_Grenade_shell",1},""},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"TRYK_U_B_Woodland",{{"FirstAidKit",1},{"CUP_15Rnd_9x19_M9",1,15},{"hlc_30rnd_556x45_EPR_G36",3,30}}},{"V_Simc_vest_pasgt_alice_mc",{{"NVGoggles",1},{"SmokeShell",1,1},{"Chemlight_green",2,1},{"HandGrenade",2,1},{"CUP_15Rnd_9x19_M9",2,15},{"SmokeShellBlue",1,1},{"1Rnd_HE_Grenade_shell",3,1}}},{"B_simc_pack_alice_kobel_m81",{}},"H_Simc_pasgt_m81_b_SWDG","",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
+    };
+
+    class B_BNASRArmy_Grenadier_DES_01 : B_BNASRArmy_Rifleman_DES_01 {
+        displayName = "Grenadier";
+
+        linkedItems[] = {"V_Simc_vest_pasgt_desu_alice_mc","H_Simc_pasgt_desu_b_SWDG","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+        respawnlinkedItems[] = {"V_Simc_vest_pasgt_desu_alice_mc","H_Simc_pasgt_desu_b_SWDG","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+
+        weapons[] = {"HLC_Rifle_XM8_MWSF_Carbine_GL_Tan","CUP_hgun_M9","Rangefinder"};
+        respawnWeapons[] = {"HLC_Rifle_XM8_MWSF_Carbine_GL_Tan","CUP_hgun_M9","Rangefinder"};
+
+        magazines[] = {"hlc_30rnd_556x45_EPR_G36","1Rnd_HE_Grenade_shell","CUP_15Rnd_9x19_M9","hlc_30rnd_556x45_EPR_G36","1Rnd_HE_Grenade_shell","CUP_15Rnd_9x19_M9"};
+        respawnMagazines[] = {"hlc_30rnd_556x45_EPR_G36","1Rnd_HE_Grenade_shell","CUP_15Rnd_9x19_M9","hlc_30rnd_556x45_EPR_G36","1Rnd_HE_Grenade_shell","CUP_15Rnd_9x19_M9"};
+
+        ALiVE_orbatCreator_loadout[] = {{"HLC_Rifle_XM8_MWSF_Carbine_GL_Tan","","","CUP_optic_ACOG_TA01B_Coyote",{"hlc_30rnd_556x45_EPR_G36",30},{"1Rnd_HE_Grenade_shell",1},""},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"TRYK_U_B_3c",{{"FirstAidKit",1},{"CUP_15Rnd_9x19_M9",1,15},{"hlc_30rnd_556x45_EPR_G36",3,30}}},{"V_Simc_vest_pasgt_desu_alice_mc",{{"NVGoggles",1},{"SmokeShell",1,1},{"Chemlight_green",2,1},{"HandGrenade",2,1},{"CUP_15Rnd_9x19_M9",2,15},{"SmokeShellBlue",1,1},{"1Rnd_HE_Grenade_shell",3,1}}},{"B_simc_pack_alice_kobel_desu",{}},"H_Simc_pasgt_desu_b_SWDG","",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
+    };
+
+    class B_BNASRArmy_Machine_Gunner_WDL_01 : B_BNASRArmy_Rifleman_WDL_01 {
+        displayName = "Machine Gunner";
+
+        linkedItems[] = {"V_Simc_vest_pasgt_alice_mc_60","H_Simc_pasgt_m81_SWDG_low_b","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+        respawnlinkedItems[] = {"V_Simc_vest_pasgt_alice_mc_60","H_Simc_pasgt_m81_SWDG_low_b","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+
+        weapons[] = {"hlc_m249_pip1","CUP_hgun_M9","Rangefinder"};
+        respawnWeapons[] = {"hlc_m249_pip1","CUP_hgun_M9","Rangefinder"};
+
+        magazines[] = {"hlc_200rnd_556x45_M_SAW","CUP_15Rnd_9x19_M9","hlc_200rnd_556x45_M_SAW","CUP_15Rnd_9x19_M9"};
+        respawnMagazines[] = {"hlc_200rnd_556x45_M_SAW","CUP_15Rnd_9x19_M9","hlc_200rnd_556x45_M_SAW","CUP_15Rnd_9x19_M9"};
+
+        ALiVE_orbatCreator_loadout[] = {{"hlc_m249_pip1","","","CUP_optic_ElcanM145",{"hlc_200rnd_556x45_M_SAW",200},{},""},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"TRYK_U_B_Woodland",{{"FirstAidKit",1},{"CUP_15Rnd_9x19_M9",1,15}}},{"V_Simc_vest_pasgt_alice_mc_60",{{"NVGoggles",1},{"SmokeShell",1,1},{"Chemlight_green",2,1},{"HandGrenade",2,1},{"CUP_15Rnd_9x19_M9",2,15},{"SmokeShellBlue",1,1},{"hlc_200rnd_556x45_M_SAW",2,200}}},{"B_simc_pack_alice_kobel_m81",{{"hlc_200rnd_556x45_M_SAW",2,200}}},"H_Simc_pasgt_m81_SWDG_low_b","",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
+    };
+
+    class B_BNASRArmy_Machine_Gunner_DES_01 : B_BNASRArmy_Rifleman_DES_01 {
+        displayName = "Machine Gunner";
+
+        linkedItems[] = {"V_Simc_vest_pasgt_desu_alice_mc_60","H_Simc_pasgt_desu_SWDG_low_b","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+        respawnlinkedItems[] = {"V_Simc_vest_pasgt_desu_alice_mc_60","H_Simc_pasgt_desu_SWDG_low_b","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+
+        weapons[] = {"hlc_m249_pip1","CUP_hgun_M9","Rangefinder"};
+        respawnWeapons[] = {"hlc_m249_pip1","CUP_hgun_M9","Rangefinder"};
+
+        magazines[] = {"hlc_200rnd_556x45_M_SAW","CUP_15Rnd_9x19_M9","hlc_200rnd_556x45_M_SAW","CUP_15Rnd_9x19_M9"};
+        respawnMagazines[] = {"hlc_200rnd_556x45_M_SAW","CUP_15Rnd_9x19_M9","hlc_200rnd_556x45_M_SAW","CUP_15Rnd_9x19_M9"};
+
+        ALiVE_orbatCreator_loadout[] = {{"hlc_m249_pip1","","","CUP_optic_ElcanM145",{"hlc_200rnd_556x45_M_SAW",200},{},""},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"TRYK_U_B_3c",{{"FirstAidKit",1},{"CUP_15Rnd_9x19_M9",1,15}}},{"V_Simc_vest_pasgt_desu_alice_mc_60",{{"NVGoggles",1},{"SmokeShell",1,1},{"Chemlight_green",2,1},{"HandGrenade",2,1},{"CUP_15Rnd_9x19_M9",2,15},{"SmokeShellBlue",1,1},{"hlc_200rnd_556x45_M_SAW",2,200}}},{"B_simc_pack_alice_kobel_desu",{{"hlc_200rnd_556x45_M_SAW",2,200}}},"H_Simc_pasgt_desu_SWDG_low_b","",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
+    };
+
+    class B_BNASRArmy_Marksman_WDL_01 : B_BNASRArmy_Rifleman_WDL_01 {
+        displayName = "Marksman";
+
+        linkedItems[] = {"V_Simc_vest_pasgt_alice_mc_alt","H_Simc_pasgt_m81_scrim_alt","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+        respawnlinkedItems[] = {"V_Simc_vest_pasgt_alice_mc_alt","H_Simc_pasgt_m81_scrim_alt","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+
+        weapons[] = {"HLC_Rifle_XM8_MWSF_DMAR_Green","CUP_hgun_M9","Rangefinder"};
+        respawnWeapons[] = {"HLC_Rifle_XM8_MWSF_DMAR_Green","CUP_hgun_M9","Rangefinder"};
+
+        magazines[] = {"hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9","hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9"};
+        respawnMagazines[] = {"hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9","hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9"};
+
+        ALiVE_orbatCreator_loadout[] = {{"HLC_Rifle_XM8_MWSF_DMAR_Green","","","FA_Leupold_Mk6",{"hlc_30rnd_556x45_EPR_G36",30},{},""},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"TRYK_U_B_Woodland",{{"FirstAidKit",1},{"CUP_15Rnd_9x19_M9",1,15},{"hlc_30rnd_556x45_EPR_G36",3,30}}},{"V_Simc_vest_pasgt_alice_mc_alt",{{"NVGoggles",1},{"SmokeShell",1,1},{"Chemlight_green",2,1},{"HandGrenade",2,1},{"CUP_15Rnd_9x19_M9",2,15},{"SmokeShellBlue",1,1}}},{"B_simc_pack_alice_kobel_m81",{}},"H_Simc_pasgt_m81_scrim_alt","",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
+    };
+
+    class B_BNASRArmy_Marksman_DES_01 : B_BNASRArmy_Rifleman_DES_01 {
+        displayName = "Marksman";
+
+        linkedItems[] = {"V_Simc_vest_pasgt_desu_alice_mc_alt","H_Simc_pasgt_desu_scrim_alt","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+        respawnlinkedItems[] = {"V_Simc_vest_pasgt_desu_alice_mc_alt","H_Simc_pasgt_desu_scrim_alt","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+
+        weapons[] = {"HLC_Rifle_XM8_MWSF_DMAR_Tan","CUP_hgun_M9","Rangefinder"};
+        respawnWeapons[] = {"HLC_Rifle_XM8_MWSF_DMAR_Tan","CUP_hgun_M9","Rangefinder"};
+
+        magazines[] = {"hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9","hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9"};
+        respawnMagazines[] = {"hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9","hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9"};
+
+        ALiVE_orbatCreator_loadout[] = {{"HLC_Rifle_XM8_MWSF_DMAR_Tan","","","FA_Leupold_Mk6",{"hlc_30rnd_556x45_EPR_G36",30},{},""},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"TRYK_U_B_3c",{{"FirstAidKit",1},{"CUP_15Rnd_9x19_M9",1,15},{"hlc_30rnd_556x45_EPR_G36",3,30}}},{"V_Simc_vest_pasgt_desu_alice_mc_alt",{{"NVGoggles",1},{"SmokeShell",1,1},{"Chemlight_green",2,1},{"HandGrenade",2,1},{"CUP_15Rnd_9x19_M9",2,15},{"SmokeShellBlue",1,1}}},{"B_simc_pack_alice_kobel_desu",{}},"H_Simc_pasgt_desu_scrim_alt","",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
+    };
+
+};
