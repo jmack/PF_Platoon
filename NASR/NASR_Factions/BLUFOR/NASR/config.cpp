@@ -76,7 +76,9 @@ class CfgPatches {
             "B_BNASRArmy_Stryker_MGS_WDL_01",
             "B_BNASRArmy_Stryker_MGS_DES_01",
             "B_BNASRArmy_M2_Bradley_WDL_01",
-            "B_BNASRArmy_M2_Bradley_DES_01"
+            "B_BNASRArmy_M2_Bradley_DES_01",
+            "B_BNASRArmy_M1A2SEP_Butler_WDL_01",
+            "B_BNASRArmy_M1A2SEP_Butler_DES_01"
         };
         weapons[] = {};
         requiredVersion = 1.62;
@@ -2191,6 +2193,79 @@ class CfgVehicles {
         faction = "B_NASRArmy";
         crew = "B_BNASRArmy_Crewman_DES_01";
         editorSubcategory = "NASR_APCs_DES";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_BNASRArmy_Crewman_DES_01"; };
+        };
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+    };
+
+    //*****************************************************
+    //*     TANKS (WDL / DES)                             *
+    //*****************************************************
+
+    class CUP_B_M1A2SEP_Woodland_US_Army;
+    class CUP_B_M1A2SEP_Woodland_US_Army_OCimport_01 : CUP_B_M1A2SEP_Woodland_US_Army { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_B_M1A2SEP_Woodland_US_Army_OCimport_02 : CUP_B_M1A2SEP_Woodland_US_Army_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+    class CUP_B_M1A2SEP_Desert_US_Army;
+    class CUP_B_M1A2SEP_Desert_US_Army_OCimport_01 : CUP_B_M1A2SEP_Desert_US_Army { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_B_M1A2SEP_Desert_US_Army_OCimport_02 : CUP_B_M1A2SEP_Desert_US_Army_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+    class B_BNASRArmy_M1A2SEP_Butler_WDL_01 : CUP_B_M1A2SEP_Woodland_US_Army_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M1A2SEP Butler";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Crewman_WDL_01";
+        editorSubcategory = "NASR_Tanks_WDL";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_BNASRArmy_Crewman_WDL_01"; };
+        };
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\CUP\TrackedVehicles\CUP_TrackedVehicles_M1Abrams\data\camo\US_Woodland\Hull_co.paa'];_unit setObjectTextureGlobal [1,'\CUP\TrackedVehicles\CUP_TrackedVehicles_M1Abrams\data\camo\US_Woodland\M1A2Parts_co.paa'];_unit setObjectTextureGlobal [2,'\CUP\TrackedVehicles\CUP_TrackedVehicles_M1Abrams\data\camo\US_Woodland\Turret_co.paa'];_unit setObjectTextureGlobal [3,'\CUP\TrackedVehicles\CUP_TrackedVehicles_M1Abrams\data\camo\US_Woodland\Wheels_co.paa'];_unit setObjectTextureGlobal [4,'\CUP\TrackedVehicles\CUP_TrackedVehicles_M1Abrams\data\camo\US_Woodland\TUSKkit_co.paa'];_unit setObjectTextureGlobal [5,'\CUP\TrackedVehicles\CUP_TrackedVehicles_M1Abrams\data\camo\US_Woodland\M1A1Parts_co.paa'];_unit setObjectTextureGlobal [6,'\CUP\TrackedVehicles\CUP_TrackedVehicles_M1Abrams\data\camo\US_Woodland\SCWS_co.paa'];_unit setObjectTextureGlobal [7,'\a3\armor_f\data\camonet_nato_green_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "USWoodland";
+    };
+
+    class B_BNASRArmy_M1A2SEP_Butler_DES_01 : CUP_B_M1A2SEP_Desert_US_Army_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M1A2SEP Butler";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Crewman_DES_01";
+        editorSubcategory = "NASR_Tanks_DES";
 
         class Turrets : Turrets {
             class MainTurret : MainTurret { gunnerType = "B_BNASRArmy_Crewman_DES_01"; };
