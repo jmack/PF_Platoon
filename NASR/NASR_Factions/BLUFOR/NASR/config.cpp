@@ -34,7 +34,12 @@ class CfgPatches {
             "B_BNASRArmy_Pilot_Helicopter_WDL_01",
             "B_BNASRArmy_Pilot_Helicopter_DES_01",
             "B_BNASRArmy_Pilot_Plane_WDL_01",
-            "B_BNASRArmy_Pilot_Plane_DES_01"
+            "B_BNASRArmy_Pilot_Plane_DES_01",
+            "B_BNASRArmy_Enlisted_Work_01",
+            "B_BNASRArmy_NCO_Work_01",
+            "B_BNASRArmy_Officer_Work_01",
+            "B_BNASRArmy_Drill_Sergeant_Work_01",
+            "B_BNASRArmy_Military_Police_Work_01",
         };
         weapons[] = {};
         requiredVersion = 1.62;
@@ -190,6 +195,10 @@ class CfgEditorSubcategories
     class NASR_Men_Work
     {
         DisplayName = "Men (Work Uniforms)";
+    };
+    class NASR_Men_Dress
+    {
+        DisplayName = "Men (Dress Uniforms)";
     };
     class NASR_Cars_WDL
     {
@@ -897,5 +906,89 @@ class CfgVehicles {
         backpack = "B_Parachute";
 
         ALiVE_orbatCreator_loadout[] = {{},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"cwr3_o_uniform_pilot",{{"CUP_15Rnd_9x19_M9",1,15}}},{"Aircrew_vest_2_NH",{{"NVGoggles",1}}},{"B_Parachute",{}},"rhs_zsh7a_alt","CUP_G_Shades_Black",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
+    };
+
+    class B_BNASRArmy_Enlisted_Work_01 : B_soldier_F_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Enlisted";
+        side = 1;
+        faction = "B_NASRArmy";
+        editorSubcategory = "NASR_Men_Work";
+
+        identityTypes[] = {"usm_heads_generic","LanguageENG_F","CUP_G_ARMY", "NoGlasses"};
+
+        uniformClass = "JAM_U_Obr88_khk";
+
+        linkedItems[] = {"JAM_V_ALICE_Belt","JAM_H_Obr88_Cap_khk","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+        respawnlinkedItems[] = {"JAM_V_ALICE_Belt","JAM_H_Obr88_Cap_khk","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+
+        weapons[] = {};
+        respawnWeapons[] = {};
+
+        magazines[] = {};
+        respawnMagazines[] = {};
+
+        ALiVE_orbatCreator_loadout[] = {{},{},{},{"JAM_U_Obr88_khk",{{"FirstAidKit",1}}},{"JAM_V_ALICE_Belt",{}},{},"JAM_H_Obr88_Cap_khk","",{"","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'NASR_Insignia_NASR'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_insignia = "NASR_Insignia_NASR";
+
+    };
+
+    class B_BNASRArmy_NCO_Work_01 : B_BNASRArmy_Enlisted_Work_01 {
+        displayName = "NCO";
+
+        linkedItems[] = {"JAM_V_ALICE_Belt","JAM_H_Obr88_Cap_khk","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+        respawnlinkedItems[] = {"JAM_V_ALICE_Belt","JAM_H_Obr88_Cap_khk","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+
+        ALiVE_orbatCreator_loadout[] = {{},{},{},{"JAM_U_Obr88_khk",{{"FirstAidKit",1}}},{"JAM_V_ALICE_Belt",{}},{},"JAM_H_Obr88_Cap_khk","mgsr_scarf_khaki",{"","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
+    };
+
+    class B_BNASRArmy_Officer_Work_01 : B_BNASRArmy_Enlisted_Work_01 {
+        displayName = "Officer";
+
+        linkedItems[] = {"JAM_V_ALICE_Belt","JAM_H_Pilotka_v1_khk","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+        respawnlinkedItems[] = {"JAM_V_ALICE_Belt","JAM_H_Pilotka_v1_khk","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+
+        ALiVE_orbatCreator_loadout[] = {{},{},{},{"JAM_U_Obr88_khk",{{"FirstAidKit",1}}},{"JAM_V_ALICE_Belt",{}},{},"JAM_H_Pilotka_v1_khk","mgsr_scarf_red",{"","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
+    };
+
+    class B_BNASRArmy_Drill_Sergeant_Work_01 : B_BNASRArmy_NCO_Work_01 {
+        displayName = "Drill Sergeant";
+
+        uniformClass = "JAM_U_Obr88_rolled_khk";
+
+        linkedItems[] = {"JAM_V_ALICE_Belt","JAM_H_Sov_Beret_01_msv","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+        respawnlinkedItems[] = {"JAM_V_ALICE_Belt","JAM_H_Sov_Beret_01_msv","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+
+        ALiVE_orbatCreator_loadout[] = {{},{},{},{"JAM_U_Obr88_rolled_khk",{{"FirstAidKit",1}}},{"JAM_V_ALICE_Belt",{}},{},"JAM_H_Sov_Beret_01_msv","mgsr_scarf_khaki",{"","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
+    };
+
+    class B_BNASRArmy_Military_Police_01 : B_BNASRArmy_NCO_Work_01 {
+        displayName = "Military Police";
+
+        linkedItems[] = {"V_Simc_Alice_lc2_45_ligt","JAM_H_Pilotka_v3_khk","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+        respawnlinkedItems[] = {"V_Simc_Alice_lc2_45_ligt","JAM_H_Pilotka_v3_khk","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+
+        weapons[] = {"CUP_hgun_M9","Rangefinder"};
+        respawnWeapons[] = {"CUP_hgun_M9","Rangefinder"};
+
+        magazines[] = {"CUP_15Rnd_9x19_M9","CUP_15Rnd_9x19_M9"};
+        respawnMagazines[] = {"CUP_15Rnd_9x19_M9","CUP_15Rnd_9x19_M9"};
+
+        ALiVE_orbatCreator_loadout[] = {{},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"JAM_U_Obr88_khk",{{"FirstAidKit",1},{"G_Armband_NVG_MP_alt_F",2},{"CUP_15Rnd_9x19_M9",3,15}}},{"V_Simc_Alice_lc2_45_ligt",{{"CUP_15Rnd_9x19_M9",7,15}}},{},"JAM_H_Pilotka_v3_khk","mgsr_scarf_black",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","G_Armband_NVG_MP_alt_F"}};
     };
 };
