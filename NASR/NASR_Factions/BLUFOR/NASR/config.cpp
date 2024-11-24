@@ -54,7 +54,21 @@ class CfgPatches {
             "B_BNASRArmy_HMMWV_MedEvac_WDL_01",
             "B_BNASRArmy_HMMWV_MedEvac_DES_01",
             "B_BNASRArmy_HMMWV_Transport_WDL_01",
-            "B_BNASRArmy_HMMWV_Transport_DES_01"
+            "B_BNASRArmy_HMMWV_Transport_DES_01",
+            "B_BNASRArmy_M939_Covered_WDL_01",
+            "B_BNASRArmy_M939_Covered_DES_01",
+            "B_BNASRArmy_M939_Ammo_WDL_01",
+            "B_BNASRArmy_M939_Ammo_DES_01",
+            "B_BNASRArmy_M939_Fuel_WDL_01",
+            "B_BNASRArmy_M939_Fuel_DES_01",
+            "B_BNASRArmy_M939_Repair_WDL_01",
+            "B_BNASRArmy_M939_Repair_DES_01",
+            "B_BNASRArmy_M939_Cargo_WDL_01",
+            "B_BNASRArmy_M939_Cargo_DES_01",
+            "B_BNASRArmy_M939_MedEvac_WDL_01",
+            "B_BNASRArmy_M939_MedEvac_DES_01",
+            "B_BNASRArmy_M939_Open_WDL_01",
+            "B_BNASRArmy_M939_Open_DES_01"
         };
         weapons[] = {};
         requiredVersion = 1.62;
@@ -123,7 +137,12 @@ class CfgPatches {
             "ace_vehicles",
             "ace_cargo",
             "A3_Armor_F_Beta",
-            "CUP_WheeledVehicles_NewM998"
+            "CUP_WheeledVehicles_NewM998",
+            "cwr3_vehicle_m939",
+            "acfaa_fmtv",
+            "A3_Soft_F_Beta_Truck_01",
+            "A3_Soft_F_Gamma_Truck_01",
+            "HAFM_Vehicles_Configs"
         };
         author = "P. Davis";
         authors[] = {"P. Davis"};
@@ -1438,4 +1457,344 @@ class CfgVehicles {
         ALiVE_orbatCreator_owned = 1;
         ALiVE_orbatCreator_texture = "MERDC_Desert";
     };
+
+    class cwr3_b_m939;
+    class cwr3_b_m939_OCimport_01 : cwr3_b_m939 { scope = 0; class EventHandlers; };
+    class cwr3_b_m939_OCimport_02 : cwr3_b_m939_OCimport_01 { scope = 0; class EventHandlers; };
+    class B_BNASRArmy_M939_Covered_WDL_01 : cwr3_b_m939_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M939 Covered";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Rifleman_WDL_01";
+        editorSubcategory = "NASR_Cars_WDL";
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cwr3\vehicles\cwr3_m939\data\truck5t_01_woodland_co.paa'];_unit setObjectTextureGlobal [1,'\cwr3\vehicles\cwr3_m939\data\truck5t_02_woodland_co.paa'];_unit setObjectTextureGlobal [2,'\cwr3\vehicles\cwr3_m939\data\truck5t_dash_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "woodland";
+
+    };
+    class B_BNASRArmy_M939_Covered_DES_01 : cwr3_b_m939_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M939 Covered";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Rifleman_DES_01";
+        editorSubcategory = "NASR_Cars_DES";
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cwr3\vehicles\cwr3_m939\data\truck5t_01_merdcD_co.paa'];_unit setObjectTextureGlobal [1,'\cwr3\vehicles\cwr3_m939\data\truck5t_02_merdcD_co.paa'];_unit setObjectTextureGlobal [2,'\cwr3\vehicles\cwr3_m939\data\truck5t_dashD_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "merdc_greydesert";
+    };
+
+    class cwr3_b_m939_reammo;
+    class cwr3_b_m939_reammo_OCimport_01 : cwr3_b_m939_reammo { scope = 0; class EventHandlers; };
+    class cwr3_b_m939_reammo_OCimport_02 : cwr3_b_m939_reammo_OCimport_01 { scope = 0; class EventHandlers; };
+    class B_BNASRArmy_M939_Ammo_WDL_01 : cwr3_b_m939_reammo_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M939 Ammo";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Rifleman_WDL_01";
+        editorSubcategory = "NASR_Cars_WDL";
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cwr3\vehicles\cwr3_m939\data\truck5t_01_woodland_co.paa'];_unit setObjectTextureGlobal [1,'\cwr3\vehicles\cwr3_m939\data\truck5t_02_woodland_co.paa'];_unit setObjectTextureGlobal [2,'\cwr3\vehicles\cwr3_m939\data\truck5t_dash_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "woodland";
+    };
+    class B_BNASRArmy_M939_Ammo_DES_01 : cwr3_b_m939_reammo_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M939 Ammo";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Rifleman_DES_01";
+        editorSubcategory = "NASR_Cars_DES";
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cwr3\vehicles\cwr3_m939\data\truck5t_01_merdcD_co.paa'];_unit setObjectTextureGlobal [1,'\cwr3\vehicles\cwr3_m939\data\truck5t_02_merdcD_co.paa'];_unit setObjectTextureGlobal [2,'\cwr3\vehicles\cwr3_m939\data\truck5t_dashD_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "merdc_greydesert";
+    };
+
+    class cwr3_b_m939_refuel;
+    class cwr3_b_m939_refuel_OCimport_01 : cwr3_b_m939_refuel { scope = 0; class EventHandlers; };
+    class cwr3_b_m939_refuel_OCimport_02 : cwr3_b_m939_refuel_OCimport_01 { scope = 0; class EventHandlers; };
+    class B_BNASRArmy_M939_Fuel_WDL_01 : cwr3_b_m939_refuel_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M939 Fuel";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Rifleman_WDL_01";
+        editorSubcategory = "NASR_Cars_WDL";
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cwr3\vehicles\cwr3_m939\data\truck5t_01_woodland_co.paa'];_unit setObjectTextureGlobal [1,'\cwr3\vehicles\cwr3_m939\data\truck5t_02_woodland_co.paa'];_unit setObjectTextureGlobal [2,'\cwr3\vehicles\cwr3_m939\data\truck5t_dash_co.paa'];_unit setObjectTextureGlobal [3,'\a3\structures_f\items\vessels\data\firebarrel_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "woodland";
+    };
+    class B_BNASRArmy_M939_Fuel_DES_01 : cwr3_b_m939_refuel_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M939 Fuel";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Rifleman_DES_01";
+        editorSubcategory = "NASR_Cars_DES";
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cwr3\vehicles\cwr3_m939\data\truck5t_01_merdcD_co.paa'];_unit setObjectTextureGlobal [1,'\cwr3\vehicles\cwr3_m939\data\truck5t_02_merdcD_co.paa'];_unit setObjectTextureGlobal [2,'\cwr3\vehicles\cwr3_m939\data\truck5t_dashD_co.paa'];_unit setObjectTextureGlobal [3,'\a3\structures_f\items\vessels\data\firebarrel_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "merdc_greydesert";
+    };
+
+    class cwr3_b_m939_repair;
+    class cwr3_b_m939_repair_OCimport_01 : cwr3_b_m939_repair { scope = 0; class EventHandlers; };
+    class cwr3_b_m939_repair_OCimport_02 : cwr3_b_m939_repair_OCimport_01 { scope = 0; class EventHandlers; };
+    class B_BNASRArmy_M939_Repair_WDL_01 : cwr3_b_m939_repair_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M939 Repair";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Rifleman_WDL_01";
+        editorSubcategory = "NASR_Cars_WDL";
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cwr3\vehicles\cwr3_m939\data\truck5t_01_woodland_co.paa'];_unit setObjectTextureGlobal [1,'\cwr3\vehicles\cwr3_m939\data\truck5t_02_woodland_co.paa'];_unit setObjectTextureGlobal [2,'\cwr3\vehicles\cwr3_m939\data\truck5t_dash_co.paa'];_unit setObjectTextureGlobal [3,'\cwr3\vehicles\cwr3_m939\data\truck5t_repair_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "woodland";
+    };
+    class B_BNASRArmy_M939_Repair_DES_01 : cwr3_b_m939_repair_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M939 Repair";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Rifleman_DES_01";
+        editorSubcategory = "NASR_Cars_DES";
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cwr3\vehicles\cwr3_m939\data\truck5t_01_merdcD_co.paa'];_unit setObjectTextureGlobal [1,'\cwr3\vehicles\cwr3_m939\data\truck5t_02_merdcD_co.paa'];_unit setObjectTextureGlobal [2,'\cwr3\vehicles\cwr3_m939\data\truck5t_dashD_co.paa'];_unit setObjectTextureGlobal [3,'\cwr3\vehicles\cwr3_m939\data\truck5t_repair_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "merdc_greydesert";
+    };
+
+    class cwr3_b_m939_empty;
+    class cwr3_b_m939_empty_OCimport_01 : cwr3_b_m939_empty { scope = 0; class EventHandlers; };
+    class cwr3_b_m939_empty_OCimport_02 : cwr3_b_m939_empty_OCimport_01 { scope = 0; class EventHandlers; };
+    class B_BNASRArmy_M939_Cargo_WDL_01 : cwr3_b_m939_empty_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M939 Cargo";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Rifleman_WDL_01";
+        editorSubcategory = "NASR_Cars_WDL";
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cwr3\vehicles\cwr3_m939\data\truck5t_01_woodland_co.paa'];_unit setObjectTextureGlobal [1,'\cwr3\vehicles\cwr3_m939\data\truck5t_02_woodland_co.paa'];_unit setObjectTextureGlobal [2,'\cwr3\vehicles\cwr3_m939\data\truck5t_dash_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "woodland";
+    };
+    class B_BNASRArmy_M939_Cargo_DES_01 : cwr3_b_m939_empty_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M939 Cargo";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Rifleman_DES_01";
+        editorSubcategory = "NASR_Cars_DES";
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cwr3\vehicles\cwr3_m939\data\truck5t_01_merdcD_co.paa'];_unit setObjectTextureGlobal [1,'\cwr3\vehicles\cwr3_m939\data\truck5t_02_merdcD_co.paa'];_unit setObjectTextureGlobal [2,'\cwr3\vehicles\cwr3_m939\data\truck5t_dashD_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "merdc_greydesert";
+    };
+
+    class cwr3_b_m939_mev;
+    class cwr3_b_m939_mev_OCimport_01 : cwr3_b_m939_mev { scope = 0; class EventHandlers; };
+    class cwr3_b_m939_mev_OCimport_02 : cwr3_b_m939_mev_OCimport_01 { scope = 0; class EventHandlers; };
+    class B_BNASRArmy_M939_MedEvac_WDL_01 : cwr3_b_m939_mev_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M939 MedEvac";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Rifleman_WDL_01";
+        editorSubcategory = "NASR_Cars_WDL";
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cwr3\vehicles\cwr3_m939\data\truck5t_01_woodland_co.paa'];_unit setObjectTextureGlobal [1,'\cwr3\vehicles\cwr3_m939\data\truck5t_02_woodland_co.paa'];_unit setObjectTextureGlobal [2,'\cwr3\vehicles\cwr3_m939\data\truck5t_dash_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "woodland";
+    };
+    class B_BNASRArmy_M939_MedEvac_DES_01 : cwr3_b_m939_mev_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M939 MedEvac";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Rifleman_DES_01";
+        editorSubcategory = "NASR_Cars_DES";
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cwr3\vehicles\cwr3_m939\data\truck5t_01_merdcD_co.paa'];_unit setObjectTextureGlobal [1,'\cwr3\vehicles\cwr3_m939\data\truck5t_02_merdcD_co.paa'];_unit setObjectTextureGlobal [2,'\cwr3\vehicles\cwr3_m939\data\truck5t_dashD_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "merdc_greydesert";
+    };
+
+    class cwr3_b_m939_open;
+    class cwr3_b_m939_open_OCimport_01 : cwr3_b_m939_open { scope = 0; class EventHandlers; };
+    class cwr3_b_m939_open_OCimport_02 : cwr3_b_m939_open_OCimport_01 { scope = 0; class EventHandlers; };
+    class B_BNASRArmy_M939_Open_WDL_01 : cwr3_b_m939_open_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M939 Open";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Rifleman_WDL_01";
+        editorSubcategory = "NASR_Cars_WDL";
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cwr3\vehicles\cwr3_m939\data\truck5t_01_woodland_co.paa'];_unit setObjectTextureGlobal [1,'\cwr3\vehicles\cwr3_m939\data\truck5t_02_woodland_co.paa'];_unit setObjectTextureGlobal [2,'\cwr3\vehicles\cwr3_m939\data\truck5t_dash_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "woodland";
+    };
+    class B_BNASRArmy_M939_Open_DES_01 : cwr3_b_m939_open_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M939 Open";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Rifleman_DES_01";
+        editorSubcategory = "NASR_Cars_DES";
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cwr3\vehicles\cwr3_m939\data\truck5t_01_merdcD_co.paa'];_unit setObjectTextureGlobal [1,'\cwr3\vehicles\cwr3_m939\data\truck5t_02_merdcD_co.paa'];_unit setObjectTextureGlobal [2,'\cwr3\vehicles\cwr3_m939\data\truck5t_dashD_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "merdc_greydesert";
+    };
+
+
 };
