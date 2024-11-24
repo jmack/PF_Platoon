@@ -980,7 +980,7 @@ class CfgVehicles {
         ALiVE_orbatCreator_loadout[] = {{},{},{},{"JAM_U_Obr88_rolled_khk",{{"FirstAidKit",1}}},{"JAM_V_ALICE_Belt",{}},{},"JAM_H_Sov_Beret_01_msv","mgsr_scarf_khaki",{"","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
     };
 
-    class B_BNASRArmy_Military_Police_01 : B_BNASRArmy_NCO_Work_01 {
+    class B_BNASRArmy_Military_Police_Work_01 : B_BNASRArmy_NCO_Work_01 {
         displayName = "Military Police";
 
         linkedItems[] = {"V_Simc_Alice_lc2_45_ligt","JAM_H_Pilotka_v3_khk","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
