@@ -252,7 +252,7 @@ class CfgEditorSubcategories
 //////////////////////////////////////////////////////////////////////////////////
 class CfgFactionClasses {
     class B_NASRArmy {
-        displayName = "[PF] N.A.S.R.";
+        displayName = "[PF] North American Socialist Republic";
         side = 1;
         flag = "NASR_Factions\BLUFOR\NASR\data\flag.paa";
         icon = "NASR_Factions\BLUFOR\NASR\data\flag.paa";
@@ -264,7 +264,7 @@ class CfgGroups {
     class WEST {
 
         class B_NASRArmy {
-            name = "[PF] N.A.S.R.";
+            name = "[PF] North American Socialist Republic";
 
             class Infantry {
                 name = "Infantry";
