@@ -14,7 +14,27 @@ class CfgPatches {
             "B_BNASRArmy_Machine_Gunner_WDL_01",
             "B_BNASRArmy_Machine_Gunner_DES_01",
             "B_BNASRArmy_Marksman_WDL_01",
-            "B_BNASRArmy_Marksman_DES_01"
+            "B_BNASRArmy_Marksman_DES_01",
+            "B_BNASRArmy_Sniper_WDL_01",
+            "B_BNASRArmy_Sniper_DES_01",
+            "B_BNASRArmy_Spotter_WDL_01",
+            "B_BNASRArmy_Spotter_DES_01",
+            "B_BNASRArmy_Corpsman_WDL_01",
+            "B_BNASRArmy_Corpsman_DES_01",
+            "B_BNASRArmy_RATELO_WDL_01",
+            "B_BNASRArmy_RATELO_DES_01",
+            "B_BNASRArmy_Team_Leader_WDL_01",
+            "B_BNASRArmy_Team_Leader_DES_01",
+            "B_BNASRArmy_Squad_Leader_WDL_01",
+            "B_BNASRArmy_Squad_Leader_DES_01",
+            "B_BNASRArmy_Officer_WDL_01",
+            "B_BNASRArmy_Officer_DES_01",
+            "B_BNASRArmy_Crewman_WDL_01",
+            "B_BNASRArmy_Crewman_DES_01",
+            "B_BNASRArmy_Pilot_Helicopter_WDL_01",
+            "B_BNASRArmy_Pilot_Helicopter_DES_01",
+            "B_BNASRArmy_Pilot_Plane_WDL_01",
+            "B_BNASRArmy_Pilot_Plane_DES_01"
         };
         weapons[] = {};
         requiredVersion = 1.62;
@@ -80,7 +100,6 @@ class CfgPatches {
 // Grenadier
 // Machine Gunner
 // Marksman
-
 // Sniper
 // Spotter
 // Corpsman
@@ -88,14 +107,21 @@ class CfgPatches {
 // Team Leader
 // Squad Leader
 // Officer
-// Pilot
+// Crewman
 // Pilot (Helicopter)
+// Pilot
 
 // -- Men (Work Uniform) -----
 // Enlisted
 // NCO
 // Officer
+// Drill Sergeant
 // Military Police
+
+// -- Men (Dress Uniform) -----
+// Enlisted
+// NCO
+// Officer
 
 // -- Cars (WDL | DES) -----
 // HMMWV Unarmed
@@ -521,4 +547,355 @@ class CfgVehicles {
         ALiVE_orbatCreator_loadout[] = {{"HLC_Rifle_XM8_MWSF_DMAR_Tan","","","FA_Leupold_Mk6",{"hlc_30rnd_556x45_EPR_G36",30},{},""},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"TRYK_U_B_3c",{{"FirstAidKit",1},{"CUP_15Rnd_9x19_M9",1,15},{"hlc_30rnd_556x45_EPR_G36",3,30}}},{"V_Simc_vest_pasgt_desu_alice_mc_alt",{{"NVGoggles",1},{"SmokeShell",1,1},{"Chemlight_green",2,1},{"HandGrenade",2,1},{"CUP_15Rnd_9x19_M9",2,15},{"SmokeShellBlue",1,1}}},{"B_simc_pack_alice_kobel_desu",{}},"H_Simc_pasgt_desu_scrim_alt","",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
     };
 
+    class B_BNASRArmy_Sniper_WDL_01 : B_BNASRArmy_Rifleman_WDL_01 {
+        displayName = "Sniper";
+
+        linkedItems[] = {"V_Simc_vest_pasgt_alice_mc_45_ligt","H_Simc_pasgt_m81_scrim_panama","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+        respawnlinkedItems[] = {"V_Simc_vest_pasgt_alice_mc_45_ligt","H_Simc_pasgt_m81_scrim_panama","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+
+        weapons[] = {"CUP_srifle_M107_Woodland","CUP_hgun_M9","Rangefinder"};
+        respawnWeapons[] = {"CUP_srifle_M107_Woodland","CUP_hgun_M9","Rangefinder"};
+
+        magazines[] = {"CUP_10Rnd_127x99_M107","CUP_15Rnd_9x19_M9","CUP_10Rnd_127x99_M107","CUP_15Rnd_9x19_M9"};
+        respawnMagazines[] = {"CUP_10Rnd_127x99_M107","CUP_15Rnd_9x19_M9","CUP_10Rnd_127x99_M107","CUP_15Rnd_9x19_M9"};
+
+        backpack = "";
+
+        ALiVE_orbatCreator_loadout[] = {{"CUP_srifle_M107_Woodland","","","CUP_optic_LeupoldMk4_25x50_LRT_WOODLAND",{"CUP_10Rnd_127x99_M107",10},{},""},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"TRYK_U_B_Woodland",{{"FirstAidKit",1},{"CUP_15Rnd_9x19_M9",1,15},{"CUP_10Rnd_127x99_M107",2,10}}},{"V_Simc_vest_pasgt_alice_mc_45_ligt",{{"NVGoggles",1},{"SmokeShell",1,1},{"Chemlight_green",2,1},{"HandGrenade",2,1},{"CUP_15Rnd_9x19_M9",2,15},{"CUP_10Rnd_127x99_M107",1,10}}},{},"H_Simc_pasgt_m81_scrim_panama","",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
+    };
+
+    class B_BNASRArmy_Sniper_DES_01 : B_BNASRArmy_Rifleman_DES_01 {
+        displayName = "Sniper";
+
+        linkedItems[] = {"V_Simc_vest_pasgt_desu_alice_mc_45_ligt","H_Simc_pasgt_desu_scrim_alt","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+        respawnlinkedItems[] = {"V_Simc_vest_pasgt_desu_alice_mc_45_ligt","H_Simc_pasgt_desu_scrim_alt","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+
+        weapons[] = {"CUP_srifle_M107_Desert","CUP_hgun_M9","Rangefinder"};
+        respawnWeapons[] = {"CUP_srifle_M107_Desert","CUP_hgun_M9","Rangefinder"};
+
+        magazines[] = {"CUP_10Rnd_127x99_M107","CUP_15Rnd_9x19_M9","CUP_10Rnd_127x99_M107","CUP_15Rnd_9x19_M9"};
+        respawnMagazines[] = {"CUP_10Rnd_127x99_M107","CUP_15Rnd_9x19_M9","CUP_10Rnd_127x99_M107","CUP_15Rnd_9x19_M9"};
+
+        backpack = "";
+
+        ALiVE_orbatCreator_loadout[] = {{"CUP_srifle_M107_Desert","","","CUP_optic_LeupoldMk4_25x50_LRT_DESERT",{"CUP_10Rnd_127x99_M107",10},{},""},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"TRYK_U_B_3c",{{"FirstAidKit",1},{"CUP_15Rnd_9x19_M9",1,15},{"CUP_10Rnd_127x99_M107",2,10}}},{"V_Simc_vest_pasgt_desu_alice_mc_45_ligt",{{"NVGoggles",1},{"SmokeShell",1,1},{"Chemlight_green",2,1},{"HandGrenade",2,1},{"CUP_15Rnd_9x19_M9",2,15},{"SmokeShellBlue",1,1},{"CUP_10Rnd_127x99_M107",1,10}}},{},"H_Simc_pasgt_desu_scrim_alt","",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
+    };
+
+    class B_BNASRArmy_Spotter_WDL_01 : B_BNASRArmy_Rifleman_WDL_01 {
+        displayName = "Spotter";
+
+        linkedItems[] = {"V_Simc_vest_pasgt_alice_mc_alt","H_Simc_pasgt_m81_scrim_alt","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+        respawnlinkedItems[] = {"V_Simc_vest_pasgt_alice_mc_alt","H_Simc_pasgt_m81_scrim_alt","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+
+        weapons[] = {"HLC_Rifle_XM8_MWSF_Compact_Green","CUP_hgun_M9","Rangefinder"};
+        respawnWeapons[] = {"HLC_Rifle_XM8_MWSF_Compact_Green","CUP_hgun_M9","Rangefinder"};
+
+        magazines[] = {"hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9","hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9"};
+        respawnMagazines[] = {"hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9","hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9"};
+
+        backpack = "";
+
+        ALiVE_orbatCreator_loadout[] = {{"HLC_Rifle_XM8_MWSF_Compact_Green","","","CUP_optic_ACOG_TA01B_OD",{"hlc_30rnd_556x45_EPR_G36",30},{},""},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"TRYK_U_B_Woodland",{{"FirstAidKit",1},{"CUP_15Rnd_9x19_M9",1,15},{"hlc_30rnd_556x45_EPR_G36",3,30}}},{"V_Simc_vest_pasgt_alice_mc_alt",{{"NVGoggles",1},{"SmokeShell",1,1},{"Chemlight_green",2,1},{"HandGrenade",2,1},{"CUP_15Rnd_9x19_M9",2,15},{"SmokeShellBlue",1,1}}},{},"H_Simc_pasgt_m81_scrim_alt","",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
+    };
+
+    class B_BNASRArmy_Spotter_DES_01 : B_BNASRArmy_Rifleman_DES_01 {
+        displayName = "Spotter";
+
+        linkedItems[] = {"V_Simc_vest_pasgt_desu_alice_mc_alt","H_Simc_pasgt_desu_scrim_SWDG","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+        respawnlinkedItems[] = {"V_Simc_vest_pasgt_desu_alice_mc_alt","H_Simc_pasgt_desu_scrim_SWDG","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+
+        weapons[] = {"HLC_Rifle_XM8_MWSF_Compact_Tan","CUP_hgun_M9","Rangefinder"};
+        respawnWeapons[] = {"HLC_Rifle_XM8_MWSF_Compact_Tan","CUP_hgun_M9","Rangefinder"};
+
+        magazines[] = {"hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9","hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9"};
+        respawnMagazines[] = {"hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9","hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9"};
+
+        backpack = "";
+
+        ALiVE_orbatCreator_loadout[] = {{"HLC_Rifle_XM8_MWSF_Compact_Tan","","","CUP_optic_ACOG_TA01B_Coyote",{"hlc_30rnd_556x45_EPR_G36",30},{},""},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"TRYK_U_B_3c",{{"FirstAidKit",1},{"CUP_15Rnd_9x19_M9",1,15},{"hlc_30rnd_556x45_EPR_G36",3,30}}},{"V_Simc_vest_pasgt_desu_alice_mc_alt",{{"NVGoggles",1},{"SmokeShell",1,1},{"Chemlight_green",2,1},{"HandGrenade",2,1},{"CUP_15Rnd_9x19_M9",2,15},{"SmokeShellBlue",1,1}}},{},"H_Simc_pasgt_desu_scrim_SWDG","",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
+    };
+
+    class B_BNASRArmy_Corpsman_WDL_01 : B_BNASRArmy_Rifleman_WDL_01 {
+        displayName = "Corpsman";
+
+        linkedItems[] = {"V_Simc_vest_pasgt_alice_mc_alt","H_Simc_pasgt_m81_b_SWDG","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","claysac_flak_addon"};
+        respawnlinkedItems[] = {"V_Simc_vest_pasgt_alice_mc_alt","H_Simc_pasgt_m81_b_SWDG","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","claysac_flak_addon"};
+
+        weapons[] = {"HLC_Rifle_XM8_MWSF_Compact_Green","CUP_hgun_M9","Rangefinder"};
+        respawnWeapons[] = {"HLC_Rifle_XM8_MWSF_Compact_Green","CUP_hgun_M9","Rangefinder"};
+
+        magazines[] = {"hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9","hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9"};
+        respawnMagazines[] = {"hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9","hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9"};
+
+        backpack = "B_simc_pack_alice_kobel_m81";
+
+        ALiVE_orbatCreator_loadout[] = {{"HLC_Rifle_XM8_MWSF_Compact_Green","","","CUP_optic_ACOG_TA01B_OD",{"hlc_30rnd_556x45_EPR_G36",30},{},""},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"TRYK_U_B_Woodland",{{"FirstAidKit",1},{"CUP_15Rnd_9x19_M9",1,15},{"hlc_30rnd_556x45_EPR_G36",3,30}}},{"V_Simc_vest_pasgt_alice_mc_alt",{{"NVGoggles",1},{"SmokeShell",1,1},{"Chemlight_green",2,1},{"HandGrenade",2,1},{"CUP_15Rnd_9x19_M9",2,15},{"SmokeShellBlue",1,1}}},{"B_simc_pack_alice_kobel_m81",{}},"H_Simc_pasgt_m81_b_SWDG","G_M17_Gasbag",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","claysac_flak_addon"}};
+    };
+
+    class B_BNASRArmy_Corpsman_DES_01 : B_BNASRArmy_Rifleman_DES_01 {
+        displayName = "Corpsman";
+
+        linkedItems[] = {"V_Simc_vest_pasgt_desu_alice_mc_alt","H_Simc_pasgt_desu_b_SWDG","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","M17_gasbag_addon"};
+        respawnlinkedItems[] = {"V_Simc_vest_pasgt_desu_alice_mc_alt","H_Simc_pasgt_desu_b_SWDG","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","M17_gasbag_addon"};
+
+        weapons[] = {"HLC_Rifle_XM8_MWSF_Compact_Tan","CUP_hgun_M9","Rangefinder"};
+        respawnWeapons[] = {"HLC_Rifle_XM8_MWSF_Compact_Tan","CUP_hgun_M9","Rangefinder"};
+
+        magazines[] = {"hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9","hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9"};
+        respawnMagazines[] = {"hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9","hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9"};
+
+        backpack = "B_simc_pack_alice_kobel_desu";
+
+        ALiVE_orbatCreator_loadout[] = {{"HLC_Rifle_XM8_MWSF_Compact_Tan","","","CUP_optic_ACOG_TA01B_Coyote",{"hlc_30rnd_556x45_EPR_G36",30},{},""},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"TRYK_U_B_3c",{{"FirstAidKit",1},{"CUP_15Rnd_9x19_M9",1,15},{"hlc_30rnd_556x45_EPR_G36",3,30}}},{"V_Simc_vest_pasgt_desu_alice_mc_alt",{{"NVGoggles",1},{"SmokeShell",1,1},{"Chemlight_green",2,1},{"HandGrenade",2,1},{"CUP_15Rnd_9x19_M9",2,15},{"SmokeShellBlue",1,1}}},{"B_simc_pack_alice_kobel_desu",{}},"H_Simc_pasgt_desu_b_SWDG","G_claysack_flak",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","M17_gasbag_addon"}};
+    };
+
+    class B_BNASRArmy_RATELO_WDL_01 : B_BNASRArmy_Rifleman_WDL_01 {
+        displayName = "RATELO";
+
+        linkedItems[] = {"V_Simc_vest_pasgt_alice_mc_alt","H_Simc_pasgt_m81_b_SWDG","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+        respawnlinkedItems[] = {"V_Simc_vest_pasgt_alice_mc_alt","H_Simc_pasgt_m81_b_SWDG","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+
+        weapons[] = {"HLC_Rifle_XM8_MWSF_Compact_Green","CUP_hgun_M9","Rangefinder"};
+        respawnWeapons[] = {"HLC_Rifle_XM8_MWSF_Compact_Green","CUP_hgun_M9","Rangefinder"};
+
+        magazines[] = {"hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9","hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9"};
+        respawnMagazines[] = {"hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9","hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9"};
+
+        backpack = "B_simc_rajio_flak_1";
+
+        ALiVE_orbatCreator_loadout[] = {{"HLC_Rifle_XM8_MWSF_Compact_Green","","","CUP_optic_ACOG_TA01B_OD",{"hlc_30rnd_556x45_EPR_G36",30},{},""},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"TRYK_U_B_Woodland",{{"FirstAidKit",1},{"CUP_15Rnd_9x19_M9",1,15},{"hlc_30rnd_556x45_EPR_G36",3,30}}},{"V_Simc_vest_pasgt_alice_mc_alt",{{"NVGoggles",1},{"SmokeShell",1,1},{"Chemlight_green",2,1},{"HandGrenade",2,1},{"CUP_15Rnd_9x19_M9",2,15},{"SmokeShellBlue",1,1}}},{"B_simc_rajio_flak_1",{}},"H_Simc_pasgt_m81_b_SWDG","",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
+    };
+
+    class B_BNASRArmy_RATELO_DES_01 : B_BNASRArmy_Rifleman_DES_01 {
+        displayName = "RATELO";
+
+        linkedItems[] = {"V_Simc_vest_pasgt_desu_alice_mc_alt","H_Simc_pasgt_desu_b_SWDG","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+        respawnlinkedItems[] = {"V_Simc_vest_pasgt_desu_alice_mc_alt","H_Simc_pasgt_desu_b_SWDG","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+
+        weapons[] = {"HLC_Rifle_XM8_MWSF_Compact_Tan","CUP_hgun_M9","Rangefinder"};
+        respawnWeapons[] = {"HLC_Rifle_XM8_MWSF_Compact_Tan","CUP_hgun_M9","Rangefinder"};
+
+        magazines[] = {"hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9","hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9"};
+        respawnMagazines[] = {"hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9","hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9"};
+
+        backpack = "B_simc_rajio_flak_1";
+
+        ALiVE_orbatCreator_loadout[] = {{"HLC_Rifle_XM8_MWSF_Compact_Tan","","","CUP_optic_ACOG_TA01B_Coyote",{"hlc_30rnd_556x45_EPR_G36",30},{},""},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"TRYK_U_B_3c",{{"FirstAidKit",1},{"CUP_15Rnd_9x19_M9",1,15},{"hlc_30rnd_556x45_EPR_G36",3,30}}},{"V_Simc_vest_pasgt_desu_alice_mc_alt",{{"NVGoggles",1},{"SmokeShell",1,1},{"Chemlight_green",2,1},{"HandGrenade",2,1},{"CUP_15Rnd_9x19_M9",2,15},{"SmokeShellBlue",1,1}}},{"B_simc_rajio_flak_1",{}},"H_Simc_pasgt_desu_b_SWDG","",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
+    };
+
+    class B_BNASRArmy_Team_Leader_WDL_01 : B_BNASRArmy_Rifleman_WDL_01 {
+        displayName = "Team Leader";
+
+        linkedItems[] = {"V_Simc_vest_pasgt_alice_mc_alt","H_Simc_pasgt_m81_b_SWDG","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","M17_gasbag_addon"};
+        respawnlinkedItems[] = {"V_Simc_vest_pasgt_alice_mc_alt","H_Simc_pasgt_m81_b_SWDG","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","M17_gasbag_addon"};
+
+        weapons[] = {"HLC_rifle_XM8_MWSF_Carbine_Green","CUP_hgun_M9","Rangefinder"};
+        respawnWeapons[] = {"HLC_rifle_XM8_MWSF_Carbine_Green","CUP_hgun_M9","Rangefinder"};
+
+        magazines[] = {"hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9","hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9"};
+        respawnMagazines[] = {"hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9","hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9"};
+
+        ALiVE_orbatCreator_loadout[] = {{"HLC_rifle_XM8_MWSF_Carbine_Green","","","CUP_optic_ACOG_TA01B_OD",{"hlc_30rnd_556x45_EPR_G36",30},{},""},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"TRYK_U_B_Woodland",{{"FirstAidKit",1},{"hlc_30rnd_556x45_EPR_G36",3,30},{"CUP_15Rnd_9x19_M9",1,15}}},{"V_Simc_vest_pasgt_alice_mc_alt",{{"NVGoggles",1},{"SmokeShell",1,1},{"Chemlight_green",2,1},{"HandGrenade",2,1},{"CUP_15Rnd_9x19_M9",2,15},{"hlc_30rnd_556x45_EPR_G36",7,30},{"SmokeShellBlue",1,1}}},{"B_simc_pack_alice_kobel_m81",{}},"H_Simc_pasgt_m81_b_SWDG","",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","M17_gasbag_addon"}};
+    };
+
+    class B_BNASRArmy_Team_Leader_DES_01 : B_BNASRArmy_Rifleman_DES_01 {
+        displayName = "Team Leader";
+
+        linkedItems[] = {"V_Simc_vest_pasgt_desu_alice_mc_alt","H_Simc_pasgt_desu_b_SWDG","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","M17_gasbag_addon"};
+        respawnlinkedItems[] = {"V_Simc_vest_pasgt_desu_alice_mc_alt","H_Simc_pasgt_desu_b_SWDG","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","M17_gasbag_addon"};
+
+        weapons[] = {"HLC_rifle_XM8_MWSF_Carbine_Tan","CUP_hgun_M9","Rangefinder"};
+        respawnWeapons[] = {"HLC_rifle_XM8_MWSF_Carbine_Tan","CUP_hgun_M9","Rangefinder"};
+
+        magazines[] = {"hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9","hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9"};
+        respawnMagazines[] = {"hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9","hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9"};
+
+        ALiVE_orbatCreator_loadout[] = {{"HLC_rifle_XM8_MWSF_Carbine_Tan","","","CUP_optic_ACOG_TA01B_Coyote",{"hlc_30rnd_556x45_EPR_G36",30},{},""},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"TRYK_U_B_3c",{{"FirstAidKit",1},{"CUP_15Rnd_9x19_M9",1,15},{"hlc_30rnd_556x45_EPR_G36",3,30}}},{"V_Simc_vest_pasgt_desu_alice_mc_alt",{{"NVGoggles",1},{"SmokeShell",1,1},{"Chemlight_green",2,1},{"HandGrenade",2,1},{"CUP_15Rnd_9x19_M9",2,15},{"SmokeShellBlue",1,1}}},{"B_simc_pack_alice_kobel_desu",{}},"H_Simc_pasgt_desu_b_SWDG","",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","M17_gasbag_addon"}};
+    };
+
+    class B_BNASRArmy_Squad_Leader_WDL_01 : B_BNASRArmy_Rifleman_WDL_01 {
+        displayName = "Squad Leader";
+
+        uniformClass = "TRYK_U_B_Woodland_Tshirt";
+
+        linkedItems[] = {"V_Simc_vest_pasgt_alice_mc_alt","H_Simc_pasgt_m81_b","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","TRYK_Headset_NV"};
+        respawnlinkedItems[] = {"V_Simc_vest_pasgt_alice_mc_alt","H_Simc_pasgt_m81_b","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","TRYK_Headset_NV"};
+
+        weapons[] = {"HLC_rifle_XM8_MWSF_Carbine_Green","CUP_hgun_M9","Rangefinder"};
+        respawnWeapons[] = {"HLC_rifle_XM8_MWSF_Carbine_Green","CUP_hgun_M9","Rangefinder"};
+
+        magazines[] = {"hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9","hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9"};
+        respawnMagazines[] = {"hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9","hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9"};
+
+        ALiVE_orbatCreator_loadout[] = {{"HLC_rifle_XM8_MWSF_Carbine_Green","","","CUP_optic_ACOG_TA01B_OD",{"hlc_30rnd_556x45_EPR_G36",30},{},""},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"TRYK_U_B_Woodland_Tshirt",{{"FirstAidKit",1},{"TRYK_US_ESS_Glasses_NV",1},{"hlc_30rnd_556x45_EPR_G36",3,30},{"CUP_15Rnd_9x19_M9",1,15}}},{"V_Simc_vest_pasgt_alice_mc_alt",{{"NVGoggles",1},{"SmokeShell",1,1},{"Chemlight_green",2,1},{"HandGrenade",2,1},{"CUP_15Rnd_9x19_M9",2,15},{"hlc_30rnd_556x45_EPR_G36",7,30},{"SmokeShellBlue",1,1}}},{"B_simc_pack_alice_kobel_m81",{}},"H_Simc_pasgt_m81_b","G_SWDG_low",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","TRYK_Headset_NV"}};
+    };
+
+    class B_BNASRArmy_Squad_Leader_DES_01 : B_BNASRArmy_Rifleman_DES_01 {
+        displayName = "Squad Leader";
+
+        uniformClass = "TRYK_U_B_3cr";
+
+        linkedItems[] = {"V_Simc_vest_pasgt_desu_alice_mc_alt","H_Simc_pasgt_desu_b","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","TRYK_Headset_NV"};
+        respawnlinkedItems[] = {"V_Simc_vest_pasgt_desu_alice_mc_alt","H_Simc_pasgt_desu_b","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","TRYK_Headset_NV"};
+
+        weapons[] = {"HLC_rifle_XM8_MWSF_Carbine_Tan","CUP_hgun_M9","Rangefinder"};
+        respawnWeapons[] = {"HLC_rifle_XM8_MWSF_Carbine_Tan","CUP_hgun_M9","Rangefinder"};
+
+        magazines[] = {"hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9","hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9"};
+        respawnMagazines[] = {"hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9","hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9"};
+
+        ALiVE_orbatCreator_loadout[] = {{"HLC_rifle_XM8_MWSF_Carbine_Tan","","","CUP_optic_ACOG_TA01B_Coyote",{"hlc_30rnd_556x45_EPR_G36",30},{},""},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"TRYK_U_B_3cr",{{"FirstAidKit",1},{"CUP_15Rnd_9x19_M9",1,15},{"hlc_30rnd_556x45_EPR_G36",3,30}}},{"V_Simc_vest_pasgt_desu_alice_mc_alt",{{"NVGoggles",1},{"SmokeShell",1,1},{"Chemlight_green",2,1},{"HandGrenade",2,1},{"CUP_15Rnd_9x19_M9",2,15},{"SmokeShellBlue",1,1}}},{"B_simc_pack_alice_kobel_desu",{}},"H_Simc_pasgt_desu_b","G_SWDG_low",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","TRYK_Headset_NV"}};
+    };
+
+    class B_BNASRArmy_Officer_WDL_01 : B_BNASRArmy_Rifleman_WDL_01 {
+        displayName = "Officer";
+
+        uniformClass = "TRYK_U_B_Woodland_Tshirt";
+
+        linkedItems[] = {"V_Simc_vest_pasgt_alice_mc_45","H_Simc_pasgt_m81_b","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+        respawnlinkedItems[] = {"V_Simc_vest_pasgt_alice_mc_45","H_Simc_pasgt_m81_b","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+
+        weapons[] = {"HLC_Rifle_XM8_MWSF_Compact_Green","CUP_hgun_M9","Rangefinder"};
+        respawnWeapons[] = {"HLC_Rifle_XM8_MWSF_Compact_Green","CUP_hgun_M9","Rangefinder"};
+
+        magazines[] = {"hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9","hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9"};
+        respawnMagazines[] = {"hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9","hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9"};
+
+        backpack = "";
+
+        ALiVE_orbatCreator_loadout[] = {{"HLC_Rifle_XM8_MWSF_Compact_Green","","","CUP_optic_ACOG_TA01B_OD",{"hlc_30rnd_556x45_EPR_G36",30},{},""},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"TRYK_U_B_Woodland_Tshirt",{{"FirstAidKit",1},{"CUP_15Rnd_9x19_M9",1,15},{"hlc_30rnd_556x45_EPR_G36",3,30}}},{"V_Simc_vest_pasgt_alice_mc_45",{{"NVGoggles",1},{"SmokeShell",1,1},{"Chemlight_green",2,1},{"HandGrenade",2,1},{"CUP_15Rnd_9x19_M9",2,15},{"SmokeShellBlue",1,1}}},{},"H_Simc_pasgt_m81_b","TRYK_headset2_glasses",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
+    };
+
+    class B_BNASRArmy_Officer_DES_01 : B_BNASRArmy_Rifleman_DES_01 {
+        displayName = "Officer";
+
+        uniformClass = "TRYK_U_B_3cr";
+
+        linkedItems[] = {"V_Simc_vest_pasgt_desu_alice_mc_45","H_Simc_pasgt_desu_b","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+        respawnlinkedItems[] = {"V_Simc_vest_pasgt_desu_alice_mc_45","H_Simc_pasgt_desu_b","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+
+        weapons[] = {"HLC_Rifle_XM8_MWSF_Compact_Tan","CUP_hgun_M9","Rangefinder"};
+        respawnWeapons[] = {"HLC_Rifle_XM8_MWSF_Compact_Tan","CUP_hgun_M9","Rangefinder"};
+
+        magazines[] = {"hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9","hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9"};
+        respawnMagazines[] = {"hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9","hlc_30rnd_556x45_EPR_G36","CUP_15Rnd_9x19_M9"};
+
+        backpack = "";
+
+        ALiVE_orbatCreator_loadout[] = {{"HLC_Rifle_XM8_MWSF_Compact_Tan","","","CUP_optic_ACOG_TA01B_Coyote",{"hlc_30rnd_556x45_EPR_G36",30},{},""},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"TRYK_U_B_3cr",{{"FirstAidKit",1},{"CUP_15Rnd_9x19_M9",1,15},{"hlc_30rnd_556x45_EPR_G36",3,30}}},{"V_Simc_vest_pasgt_desu_alice_mc_45",{{"NVGoggles",1},{"SmokeShell",1,1},{"Chemlight_green",2,1},{"HandGrenade",2,1},{"CUP_15Rnd_9x19_M9",2,15},{"SmokeShellBlue",1,1}}},{},"H_Simc_pasgt_desu_b","TRYK_headset2_glasses",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
+    };
+
+    class B_BNASRArmy_Crewman_WDL_01 : B_BNASRArmy_Rifleman_WDL_01 {
+        displayName = "Crewman";
+
+        uniformClass = "TRYK_U_B_Woodland_Tshirt";
+
+        linkedItems[] = {"V_Simc_vest_pasgt_grun_alice_45_ligt","H_Simc_CVC_G","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+        respawnlinkedItems[] = {"V_Simc_vest_pasgt_grun_alice_45_ligt","H_Simc_CVC_G","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+
+        weapons[] = {"CUP_hgun_M9","Rangefinder"};
+        respawnWeapons[] = {"CUP_hgun_M9","Rangefinder"};
+
+        magazines[] = {"CUP_15Rnd_9x19_M9","CUP_15Rnd_9x19_M9"};
+        respawnMagazines[] = {"CUP_15Rnd_9x19_M9","CUP_15Rnd_9x19_M9"};
+
+        backpack = "";
+
+        ALiVE_orbatCreator_loadout[] = {{},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"TRYK_U_B_Woodland_Tshirt",{{"FirstAidKit",1},{"CUP_15Rnd_9x19_M9",1,15}}},{"V_Simc_vest_pasgt_grun_alice_45_ligt",{{"NVGoggles",1},{"SmokeShell",1,1},{"Chemlight_green",2,1},{"HandGrenade",1,1}}},{},"H_Simc_CVC_G","G_M17_Gasbag",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
+    };
+
+    class B_BNASRArmy_Crewman_DES_01 : B_BNASRArmy_Rifleman_DES_01 {
+        displayName = "Crewman";
+
+        uniformClass = "TRYK_U_B_3cr";
+
+        linkedItems[] = {"V_Simc_vest_pasgt_grun_alice_45_ligt","H_Simc_CVC_G","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+        respawnlinkedItems[] = {"V_Simc_vest_pasgt_grun_alice_45_ligt","H_Simc_CVC_G","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+
+        weapons[] = {"CUP_hgun_M9","Rangefinder"};
+        respawnWeapons[] = {"CUP_hgun_M9","Rangefinder"};
+
+        magazines[] = {"CUP_15Rnd_9x19_M9","CUP_15Rnd_9x19_M9"};
+        respawnMagazines[] = {"CUP_15Rnd_9x19_M9","CUP_15Rnd_9x19_M9"};
+
+        backpack = "";
+
+        ALiVE_orbatCreator_loadout[] = {{},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"TRYK_U_B_3cr",{{"FirstAidKit",1},{"CUP_15Rnd_9x19_M9",1,15}}},{"V_Simc_vest_pasgt_grun_alice_45_ligt",{{"NVGoggles",1},{"SmokeShell",1,1},{"Chemlight_green",2,1},{"HandGrenade",2,1},{"CUP_15Rnd_9x19_M9",2,15},{"SmokeShellBlue",1,1}}},{},"H_Simc_CVC_G","G_M17_Gasbag",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
+    };
+
+    class B_BNASRArmy_Pilot_Helicopter_WDL_01 : B_BNASRArmy_Rifleman_WDL_01 {
+        displayName = "Pilot (Helicopter)";
+
+        uniformClass = "TRYK_U_B_Woodland";
+
+        linkedItems[] = {"CUP_V_B_PilotVest","rhsusf_hgu56p_visor","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+        respawnlinkedItems[] = {"CUP_V_B_PilotVest","rhsusf_hgu56p_visor","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+
+        weapons[] = {"CUP_hgun_M9","Rangefinder"};
+        respawnWeapons[] = {"CUP_hgun_M9","Rangefinder"};
+
+        magazines[] = {"CUP_15Rnd_9x19_M9","CUP_15Rnd_9x19_M9"};
+        respawnMagazines[] = {"CUP_15Rnd_9x19_M9","CUP_15Rnd_9x19_M9"};
+
+        backpack = "B_simc_pack_m17";
+
+        ALiVE_orbatCreator_loadout[] = {{},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"TRYK_U_B_Woodland",{{"FirstAidKit",1},{"CUP_15Rnd_9x19_M9",1,15}}},{"CUP_V_B_PilotVest",{{"NVGoggles",1}}},{"B_simc_pack_m17",{}},"rhsusf_hgu56p_visor","",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
+    };
+
+    class B_BNASRArmy_Pilot_Helicopter_DES_01 : B_BNASRArmy_Rifleman_DES_01 {
+        displayName = "Pilot (Helicopter)";
+
+        uniformClass = "TRYK_U_B_3c";
+
+        linkedItems[] = {"CUP_V_B_PilotVest","rhsusf_hgu56p_visor_tan","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+        respawnlinkedItems[] = {"CUP_V_B_PilotVest","rhsusf_hgu56p_visor_tan","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+
+        weapons[] = {"CUP_hgun_M9","Rangefinder"};
+        respawnWeapons[] = {"CUP_hgun_M9","Rangefinder"};
+
+        magazines[] = {"CUP_15Rnd_9x19_M9","CUP_15Rnd_9x19_M9"};
+        respawnMagazines[] = {"CUP_15Rnd_9x19_M9","CUP_15Rnd_9x19_M9"};
+
+        backpack = "B_simc_pack_m17";
+
+        ALiVE_orbatCreator_loadout[] = {{},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"TRYK_U_B_3c",{{"CUP_15Rnd_9x19_M9",1,15}}},{"CUP_V_B_PilotVest",{{"NVGoggles",1}}},{"B_simc_pack_m17",{{"FirstAidKit",10}}},"rhsusf_hgu56p_visor_tan","",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
+    };
+
+    class B_BNASRArmy_Pilot_Plane_WDL_01 : B_BNASRArmy_Pilot_Helicopter_WDL_01 {
+        displayName = "Pilot (Plane)";
+
+        uniformClass = "cwr3_o_uniform_pilot";
+
+        linkedItems[] = {"Aircrew_vest_2_NH","rhs_zsh7a_alt","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+        respawnlinkedItems[] = {"Aircrew_vest_2_NH","rhs_zsh7a_alt","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+
+        weapons[] = {"CUP_hgun_M9","Rangefinder"};
+        respawnWeapons[] = {"CUP_hgun_M9","Rangefinder"};
+
+        magazines[] = {"CUP_15Rnd_9x19_M9","CUP_15Rnd_9x19_M9"};
+        respawnMagazines[] = {"CUP_15Rnd_9x19_M9","CUP_15Rnd_9x19_M9"};
+
+        backpack = "B_Parachute";
+
+        ALiVE_orbatCreator_loadout[] = {{},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"cwr3_o_uniform_pilot",{{"FirstAidKit",1},{"CUP_15Rnd_9x19_M9",1,15}}},{"Aircrew_vest_2_NH",{{"NVGoggles",1}}},{"B_Parachute",{}},"rhs_zsh7a_alt","CUP_G_Shades_Black",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
+    };
+
+    class B_BNASRArmy_Pilot_Plane_DES_01 : B_BNASRArmy_Pilot_Helicopter_DES_01 {
+        displayName = "Pilot (Plane)";
+
+        uniformClass = "cwr3_o_uniform_pilot";
+
+        linkedItems[] = {"Aircrew_vest_2_NH","rhs_zsh7a_alt","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+        respawnlinkedItems[] = {"Aircrew_vest_2_NH","rhs_zsh7a_alt","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter"};
+
+        weapons[] = {"CUP_hgun_M9","Rangefinder"};
+        respawnWeapons[] = {"CUP_hgun_M9","Rangefinder"};
+
+        magazines[] = {"CUP_15Rnd_9x19_M9","CUP_15Rnd_9x19_M9"};
+        respawnMagazines[] = {"CUP_15Rnd_9x19_M9","CUP_15Rnd_9x19_M9"};
+
+        backpack = "B_Parachute";
+
+        ALiVE_orbatCreator_loadout[] = {{},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"cwr3_o_uniform_pilot",{{"CUP_15Rnd_9x19_M9",1,15}}},{"Aircrew_vest_2_NH",{{"NVGoggles",1}}},{"B_Parachute",{}},"rhs_zsh7a_alt","CUP_G_Shades_Black",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
+    };
 };
