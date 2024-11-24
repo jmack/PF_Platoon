@@ -330,6 +330,9 @@ class CfgVehicles {
     class B_soldier_F_OCimport_01 : B_soldier_F { scope = 0; class EventHandlers; };
     class B_soldier_F_OCimport_02 : B_soldier_F_OCimport_01 { class EventHandlers; };
 
+    //*****************************************************
+    //*     MEN (WDL / DES)                               *
+    //*****************************************************
 
     class B_BNASRArmy_Rifleman_WDL_01 : B_soldier_F_OCimport_02 {
         author = "P. Davis";
@@ -911,6 +914,10 @@ class CfgVehicles {
         ALiVE_orbatCreator_loadout[] = {{},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"cwr3_o_uniform_pilot",{{"CUP_15Rnd_9x19_M9",1,15}}},{"Aircrew_vest_2_NH",{{"NVGoggles",1}}},{"B_Parachute",{}},"rhs_zsh7a_alt","CUP_G_Shades_Black",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
     };
 
+    //*****************************************************
+    //*     MEN (Work Uniform)                            *
+    //*****************************************************
+
     class B_BNASRArmy_Enlisted_Work_01 : B_soldier_F_OCimport_02 {
         author = "P. Davis";
         scope = 2;
@@ -994,6 +1001,10 @@ class CfgVehicles {
 
         ALiVE_orbatCreator_loadout[] = {{},{},{"CUP_hgun_M9","","","",{"CUP_15Rnd_9x19_M9",15},{},""},{"JAM_U_Obr88_khk",{{"FirstAidKit",1},{"G_Armband_NVG_MP_alt_F",2},{"CUP_15Rnd_9x19_M9",3,15}}},{"V_Simc_Alice_lc2_45_ligt",{{"CUP_15Rnd_9x19_M9",7,15}}},{},"JAM_H_Pilotka_v3_khk","mgsr_scarf_black",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ACE_Altimeter","G_Armband_NVG_MP_alt_F"}};
     };
+
+    //*****************************************************
+    //*     MEN (Dress Uniform)                           *
+    //*****************************************************
 
     class B_BNASRArmy_Enlisted_Dress_01 : B_soldier_F_OCimport_02 {
         author = "P. Davis";
