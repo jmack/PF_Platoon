@@ -68,7 +68,15 @@ class CfgPatches {
             "B_BNASRArmy_M939_MedEvac_WDL_01",
             "B_BNASRArmy_M939_MedEvac_DES_01",
             "B_BNASRArmy_M939_Open_WDL_01",
-            "B_BNASRArmy_M939_Open_DES_01"
+            "B_BNASRArmy_M939_Open_DES_01",
+            "B_BNASRArmy_Stryker_M2_WDL_01",
+            "B_BNASRArmy_Stryker_M2_DES_01",
+            "B_BNASRArmy_Stryker_Mk19_WDL_01",
+            "B_BNASRArmy_Stryker_Mk19_DES_01",
+            "B_BNASRArmy_Stryker_MGS_WDL_01",
+            "B_BNASRArmy_Stryker_MGS_DES_01",
+            "B_BNASRArmy_M2_Bradley_WDL_01",
+            "B_BNASRArmy_M2_Bradley_DES_01"
         };
         weapons[] = {};
         requiredVersion = 1.62;
@@ -142,7 +150,127 @@ class CfgPatches {
             "acfaa_fmtv",
             "A3_Soft_F_Beta_Truck_01",
             "A3_Soft_F_Gamma_Truck_01",
-            "HAFM_Vehicles_Configs"
+            "HAFM_Vehicles_Configs",
+            "CUP_WheeledVehicles_Stryker",
+            "TFAR_IntercomDummy",
+            "CLV_Aml20",
+            "CLV_Aml90",
+            "CLV_AmlHS30",
+            "Redd_Tank_Fuchs_1A4",
+            "rnt_sppz_2a2_luchs",
+            "A3_Armor_F_Beta_APC_Wheeled_01",
+            "A3_Armor_F_Beta_APC_Wheeled_02",
+            "A3_Armor_F_Gamma_APC_Wheeled_03",
+            "A3_Armor_F_Tank_AFV_Wheeled_01",
+            "ffaa_piranhaIIIC",
+            "rhs_c_btr",
+            "rhs_c_a2port_armor",
+            "ace_cookoff",
+            "ace_vehicle_damage",
+            "rhsgref_c_a2port_armor",
+            "CUP_WheeledVehicles_Boxer",
+            "CUP_WheeledVehicles_LAV25",
+            "CUP_WheeledVehicles_Mastiff",
+            "CUP_WheeledVehicles_Ridgeback",
+            "CUP_WheeledVehicles_Vodnik",
+            "CUP_WheeledVehicles_Wolfhound",
+            "CUP_WheeledVehicles_BTR90",
+            "cwr3_vehicle_fv620_uk",
+            "CUP_TrackedVehicles_Bradley",
+            "ace_compat_cup_vehicles",
+            "acfaa_aav",
+            "A3_Armor_F_Beta_APC_Tracked_01",
+            "A3_Armor_F_Beta_APC_Tracked_02",
+            "A3_Armor_F_Gamma_MBT_01",
+            "A3_Armor_F_Gamma_MBT_02",
+            "CLV_101",
+            "CLV_107",
+            "CLV_Amx13",
+            "CLV_BEGLEITPANZER",
+            "CLV_Dragon",
+            "CLV_Kurassier",
+            "CLV_Leopard2a4",
+            "CLV_T62",
+            "CLV_TAM2C",
+            "CLV_Tam2ip",
+            "CLV_TAM",
+            "CLV_VCLM",
+            "CLV_VCPC",
+            "CLV_VCTP2IP",
+            "CLV_VCTP",
+            "leopard1",
+            "Redd_Marder_1A5",
+            "Redd_Tank_Gepard_1A2",
+            "Redd_Tank_Wiesel_1A2_TOW",
+            "Redd_Tank_Wiesel_1A4_MK20",
+            "A3_Armor_F_EPB_APC_Tracked_03",
+            "A3_Armor_F_EPB_MBT_03",
+            "MEA_MBT_1A5",
+            "acfaa_m113",
+            "A3_Armor_F_Tank_LT_01",
+            "A3_Armor_F_Tank_MBT_04",
+            "A3_Soft_F_Enoch_UGV_02",
+            "ffaa_et_toa",
+            "rhs_c_2s1",
+            "rhs_c_2s3",
+            "rhs_c_bmd",
+            "rhs_c_bmp3",
+            "rhs_c_bmp",
+            "rhs_c_pts",
+            "rhs_c_sprut",
+            "rhs_c_t14",
+            "rhs_c_t15",
+            "rhs_c_t72",
+            "rhs_c_tanks",
+            "RHS_US_A2Port_Armor",
+            "rhsusf_c_m109",
+            "rhsusf_c_m113",
+            "rhsusf_c_m1a1",
+            "rhsusf_c_m1a2",
+            "ace_logistics_uavbattery",
+            "rhssaf_c_vehicles",
+            "rhsgref_c_vehicles_ret",
+            "CUP_TrackedVehicles_MTLB",
+            "CUP_TrackedVehicles_FV510",
+            "CUP_TrackedVehicles_Leopard1",
+            "CUP_TrackedVehicles_Leopard2",
+            "CUP_TrackedVehicles_MCV80",
+            "cwr3_vehicle_mtlb",
+            "ASZ_MBT_Ariete_A3",
+            "CUP_TrackedVehicles_2S6M",
+            "CUP_TrackedVehicles_AAV",
+            "CUP_TrackedVehicles_BMP3",
+            "CUP_TrackedVehicles_BMP",
+            "CUP_TrackedVehicles_ChallengerII",
+            "CUP_TrackedVehicles_LCAC",
+            "CUP_TrackedVehicles_M113",
+            "CUP_TrackedVehicles_M1_Abrams",
+            "CUP_TrackedVehicles_M1Abrams",
+            "CUP_TrackedVehicles_M60",
+            "CUP_TrackedVehicles_NewM113",
+            "CUP_TrackedVehicles_T72",
+            "CUP_TrackedVehicles_T90",
+            "CUP_TrackedVehicles_T90M",
+            "CUP_TrackedVehicles_ZSU23",
+            "cwr3_vehicle_m113",
+            "cwr3_vehicle_m1a1",
+            "cwr3_vehicle_m41",
+            "cwr3_vehicle_t64",
+            "cwr3_vehicle_t72",
+            "CUP_TrackedVehicles_Bulldog",
+            "CUP_TrackedVehicles_M1A2Abrams",
+            "CUP_TrackedVehicles_M270",
+            "CUP_TrackedVehicles_T34",
+            "CUP_TrackedVehicles_T55",
+            "cwr3_vehicle_fv432_uk",
+            "cwr3_vehicle_fv510_uk",
+            "cwr3_vehicle_pt76",
+            "cwr3_vehicle_t55",
+            "cwr3_vehicle_fv101_uk",
+            "cwr3_vehicle_fv4030_uk",
+            "cwr3_vehicle_fv4201_uk",
+            "ASZ_Tracked_A3",
+            "ASZ_IFV_Dardo_A3"
         };
         author = "P. Davis";
         authors[] = {"P. Davis"};
@@ -1796,5 +1924,288 @@ class CfgVehicles {
         ALiVE_orbatCreator_texture = "merdc_greydesert";
     };
 
+    //*****************************************************
+    //*     APCS (WDL / DES)                              *
+    //*****************************************************
+
+    class CUP_B_M1126_ICV_M2_Woodland;
+    class CUP_B_M1126_ICV_M2_Woodland_OCimport_01 : CUP_B_M1126_ICV_M2_Woodland { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_B_M1126_ICV_M2_Woodland_OCimport_02 : CUP_B_M1126_ICV_M2_Woodland_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class ObsTurret;
+            class CargoTurret_01;
+        };
+    };
+    class CUP_B_M1126_ICV_M2_Desert;
+    class CUP_B_M1126_ICV_M2_Desert_OCimport_01 : CUP_B_M1126_ICV_M2_Desert { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_B_M1126_ICV_M2_Desert_OCimport_02 : CUP_B_M1126_ICV_M2_Desert_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class ObsTurret;
+            class CargoTurret_01;
+        };
+    };
+    class B_BNASRArmy_Stryker_M2_WDL_01 : CUP_B_M1126_ICV_M2_Woodland_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Stryker (M2)";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Crewman_WDL_01";
+        editorSubcategory = "NASR_APCs_WDL";
+
+        class Turrets : Turrets {
+            class ObsTurret : ObsTurret { gunnerType = "B_BNASRArmy_Crewman_WDL_01"; };
+            class CargoTurret_01 : CargoTurret_01 { gunnerType = "B_BNASRArmy_Crewman_WDL_01"; };
+        };
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+    };
+    class B_BNASRArmy_Stryker_M2_DES_01 : CUP_B_M1126_ICV_M2_Desert_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Stryker (M2)";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Crewman_DES_01";
+        editorSubcategory = "NASR_APCs_DES";
+
+        class Turrets : Turrets {
+            class ObsTurret : ObsTurret { gunnerType = "B_BNASRArmy_Crewman_DES_01"; };
+            class CargoTurret_01 : CargoTurret_01 { gunnerType = "B_BNASRArmy_Crewman_DES_01"; };
+        };
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+    };
+
+    class CUP_B_M1126_ICV_MK19_Woodland;
+    class CUP_B_M1126_ICV_MK19_Woodland_OCimport_01 : CUP_B_M1126_ICV_MK19_Woodland { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_B_M1126_ICV_MK19_Woodland_OCimport_02 : CUP_B_M1126_ICV_MK19_Woodland_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class ObsTurret;
+            class CargoTurret_01;
+        };
+    };
+    class CUP_B_M1126_ICV_MK19_Desert;
+    class CUP_B_M1126_ICV_MK19_Desert_OCimport_01 : CUP_B_M1126_ICV_MK19_Desert { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_B_M1126_ICV_MK19_Desert_OCimport_02 : CUP_B_M1126_ICV_MK19_Desert_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class ObsTurret;
+            class CargoTurret_01;
+        };
+    };
+    class B_BNASRArmy_Stryker_Mk19_WDL_01 : CUP_B_M1126_ICV_MK19_Woodland_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Stryker (Mk19)";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Crewman_WDL_01";
+        editorSubcategory = "NASR_APCs_WDL";
+
+        class Turrets : Turrets {
+            class ObsTurret : ObsTurret { gunnerType = "B_BNASRArmy_Crewman_WDL_01"; };
+            class CargoTurret_01 : CargoTurret_01 { gunnerType = "B_BNASRArmy_Crewman_WDL_01"; };
+        };
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+    };
+    class B_BNASRArmy_Stryker_Mk19_DES_01 : CUP_B_M1126_ICV_MK19_Desert_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Stryker (Mk19)";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Crewman_DES_01";
+        editorSubcategory = "NASR_APCs_DES";
+
+        class Turrets : Turrets {
+            class ObsTurret : ObsTurret { gunnerType = "B_BNASRArmy_Crewman_DES_01"; };
+            class CargoTurret_01 : CargoTurret_01 { gunnerType = "B_BNASRArmy_Crewman_DES_01"; };
+        };
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+    };
+
+    class CUP_B_M1128_MGS_Woodland;
+    class CUP_B_M1128_MGS_Woodland_OCimport_01 : CUP_B_M1128_MGS_Woodland { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_B_M1128_MGS_Woodland_OCimport_02 : CUP_B_M1128_MGS_Woodland_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+            class CommanderOptics;
+        };
+    };
+    class CUP_B_M1128_MGS_Desert;
+    class CUP_B_M1128_MGS_Desert_OCimport_01 : CUP_B_M1128_MGS_Desert { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_B_M1128_MGS_Desert_OCimport_02 : CUP_B_M1128_MGS_Desert_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+            class CommanderOptics;
+        };
+    };
+    class B_BNASRArmy_Stryker_MGS_WDL_01 : CUP_B_M1128_MGS_Woodland_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Stryker (MGS)";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Crewman_WDL_01";
+        editorSubcategory = "NASR_APCs_WDL";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_BNASRArmy_Crewman_WDL_01"; };
+            class CommanderOptics : CommanderOptics { gunnerType = "B_BNASRArmy_Crewman_WDL_01"; };
+        };
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+    };
+    class B_BNASRArmy_Stryker_MGS_DES_01 : CUP_B_M1128_MGS_Desert_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Stryker (MGS)";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Crewman_DES_01";
+        editorSubcategory = "NASR_APCs_DES";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_BNASRArmy_Crewman_DES_01"; };
+            class CommanderOptics : CommanderOptics { gunnerType = "B_BNASRArmy_Crewman_DES_01"; };
+        };
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+    };
+
+    class CUP_B_M2Bradley_USA_W;
+    class CUP_B_M2Bradley_USA_W_OCimport_01 : CUP_B_M2Bradley_USA_W { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_B_M2Bradley_USA_W_OCimport_02 : CUP_B_M2Bradley_USA_W_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+    class CUP_B_M2Bradley_USA_D;
+    class CUP_B_M2Bradley_USA_D_OCimport_01 : CUP_B_M2Bradley_USA_D { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_B_M2Bradley_USA_D_OCimport_02 : CUP_B_M2Bradley_USA_D_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+    class B_BNASRArmy_M2_Bradley_WDL_01 : CUP_B_M2Bradley_USA_W_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M2 Bradley";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Crewman_WDL_01";
+        editorSubcategory = "NASR_APCs_WDL";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_BNASRArmy_Crewman_WDL_01"; };
+        };
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+    };
+    class B_BNASRArmy_M2_Bradley_DES_01 : CUP_B_M2Bradley_USA_D_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M2 Bradley";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Crewman_DES_01";
+        editorSubcategory = "NASR_APCs_DES";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_BNASRArmy_Crewman_DES_01"; };
+        };
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+    };
 
 };
