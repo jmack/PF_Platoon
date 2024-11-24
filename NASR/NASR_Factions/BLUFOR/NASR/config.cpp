@@ -189,11 +189,11 @@ class CfgEditorSubcategories
 {
     class NASR_Men_WDL
     {
-        DisplayName = "Men (Woodland)";
+        DisplayName = "[WDL] Men";
     };
     class NASR_Men_DES
     {
-        DisplayName = "Men (Desert)";
+        DisplayName = "[DES] Men";
     };
     class NASR_Men_Work
     {
@@ -205,35 +205,35 @@ class CfgEditorSubcategories
     };
     class NASR_Cars_WDL
     {
-        DisplayName = "Cars (Woodland)";
+        DisplayName = "[WDL] Cars";
     };
     class NASR_Cars_DES
     {
-        DisplayName = "Cars (Desert)";
+        DisplayName = "[DES] Cars";
     };
     class NASR_APCs_WDL
     {
-        DisplayName = "APCs (Woodland)";
+        DisplayName = "[WDL] APCs";
     };
     class NASR_APCs_DES
     {
-        DisplayName = "APCs (Desert)";
+        DisplayName = "[DES] APCs";
     };
     class NASR_Tanks_WDL
     {
-        DisplayName = "Tanks (Woodland)";
+        DisplayName = "[WDL] Tanks";
     };
     class NASR_Tanks_DES
     {
-        DisplayName = "Tanks (Desert)";
+        DisplayName = "[DES] Tanks";
     };
     class NASR_Artillery_WDL
     {
-        DisplayName = "Artillery (Woodland)";
+        DisplayName = "[WDL] Artillery";
     };
     class NASR_Artillery_DES
     {
-        DisplayName = "Artillery (Desert)";
+        DisplayName = "[DES] Artillery";
     };
     class NASR_Helicopters
     {
