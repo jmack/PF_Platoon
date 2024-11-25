@@ -412,8 +412,8 @@ class CfgPatches {
             "cwr3_vehicle_f4",
             "FIR_FA18_F"
         };
-        author = "P. Davis";
-        authors[] = {"P. Davis"};
+        author = "wlan0";
+        authors[] = {"wlan0"};
         addonRootClass = "NASR_Factions";
     };
 };
@@ -656,7 +656,7 @@ class CfgVehicles {
     //*****************************************************
 
     class B_BNASRArmy_Rifleman_WDL_01 : B_soldier_F_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Rifleman";
@@ -698,7 +698,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmy_Rifleman_DES_01 : B_BNASRArmy_Rifleman_WDL_01 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Rifleman";
@@ -1240,7 +1240,7 @@ class CfgVehicles {
     //*****************************************************
 
     class B_BNASRArmy_Enlisted_Work_01 : B_soldier_F_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Enlisted";
@@ -1328,7 +1328,7 @@ class CfgVehicles {
     //*****************************************************
 
     class B_BNASRArmy_Enlisted_Dress_01 : B_soldier_F_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Enlisted";
@@ -1397,7 +1397,7 @@ class CfgVehicles {
     class cwr3_b_hmmwv_OCimport_01 : cwr3_b_hmmwv { scope = 0; class EventHandlers; };
     class cwr3_b_hmmwv_OCimport_02 : cwr3_b_hmmwv_OCimport_01 { scope = 0; class EventHandlers; };
     class B_BNASRArmy_HMMWV_Unarmed_WDL_01 : cwr3_b_hmmwv_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "HMMWV Unarmed";
@@ -1419,7 +1419,7 @@ class CfgVehicles {
         ALiVE_orbatCreator_texture = "Woodland";
     };
     class B_BNASRArmy_HMMWV_Unarmed_DES_01 : cwr3_b_hmmwv_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "HMMWV Unarmed";
@@ -1451,7 +1451,7 @@ class CfgVehicles {
         };
     };
     class B_BNASRArmy_HMMWV_M2_WDL_01 : cwr3_b_hmmwv_m2_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "HMMWV (M2)";
@@ -1478,7 +1478,7 @@ class CfgVehicles {
         ALiVE_orbatCreator_texture = "Woodland";
     };
     class B_BNASRArmy_HMMWV_M2_DES_01 : cwr3_b_hmmwv_m2_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "HMMWV (M2)";
@@ -1515,7 +1515,7 @@ class CfgVehicles {
         };
     };
     class B_BNASRArmy_HMMWV_Mk19_WDL_01 : cwr3_b_hmmwv_mk19_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "HMMWV (Mk19)";
@@ -1542,7 +1542,7 @@ class CfgVehicles {
         ALiVE_orbatCreator_texture = "Woodland";
     };
     class B_BNASRArmy_HMMWV_Mk19_DES_01 : cwr3_b_hmmwv_mk19_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "HMMWV (Mk19)";
@@ -1579,7 +1579,7 @@ class CfgVehicles {
         };
     };
     class B_BNASRArmy_HMMWV_TOW_WDL_01 : cwr3_b_hmmwv_tow_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "HMMWV (TOW)";
@@ -1606,7 +1606,7 @@ class CfgVehicles {
         ALiVE_orbatCreator_texture = "Woodland";
     };
     class B_BNASRArmy_HMMWV_TOW_DES_01 : cwr3_b_hmmwv_tow_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "HMMWV (TOW)";
@@ -1637,7 +1637,7 @@ class CfgVehicles {
     class cwr3_b_hmmwv_mev_OCimport_01 : cwr3_b_hmmwv_mev { scope = 0; class EventHandlers; };
     class cwr3_b_hmmwv_mev_OCimport_02 : cwr3_b_hmmwv_mev_OCimport_01 { scope = 0; class EventHandlers; };
     class B_BNASRArmy_HMMWV_MedEvac_WDL_01 : cwr3_b_hmmwv_mev_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "HMMWV MedEvac";
@@ -1659,7 +1659,7 @@ class CfgVehicles {
         ALiVE_orbatCreator_texture = "Woodland";
     };
     class B_BNASRArmy_HMMWV_MedEvac_DES_01 : cwr3_b_hmmwv_mev_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "HMMWV MedEvac";
@@ -1685,7 +1685,7 @@ class CfgVehicles {
     class cwr3_b_hmmwv_transport_OCimport_01 : cwr3_b_hmmwv_transport { scope = 0; class EventHandlers; };
     class cwr3_b_hmmwv_transport_OCimport_02 : cwr3_b_hmmwv_transport_OCimport_01 { scope = 0; class EventHandlers; };
     class B_BNASRArmy_HMMWV_Transport_WDL_01 : cwr3_b_hmmwv_transport_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "HMMWV Transport";
@@ -1707,7 +1707,7 @@ class CfgVehicles {
         ALiVE_orbatCreator_texture = "Woodland";
     };
     class B_BNASRArmy_HMMWV_Transport_DES_01 : cwr3_b_hmmwv_transport_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "HMMWV Transport";
@@ -1733,7 +1733,7 @@ class CfgVehicles {
     class cwr3_b_m939_OCimport_01 : cwr3_b_m939 { scope = 0; class EventHandlers; };
     class cwr3_b_m939_OCimport_02 : cwr3_b_m939_OCimport_01 { scope = 0; class EventHandlers; };
     class B_BNASRArmy_M939_Covered_WDL_01 : cwr3_b_m939_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M939 Covered";
@@ -1756,7 +1756,7 @@ class CfgVehicles {
 
     };
     class B_BNASRArmy_M939_Covered_DES_01 : cwr3_b_m939_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M939 Covered";
@@ -1782,7 +1782,7 @@ class CfgVehicles {
     class cwr3_b_m939_reammo_OCimport_01 : cwr3_b_m939_reammo { scope = 0; class EventHandlers; };
     class cwr3_b_m939_reammo_OCimport_02 : cwr3_b_m939_reammo_OCimport_01 { scope = 0; class EventHandlers; };
     class B_BNASRArmy_M939_Ammo_WDL_01 : cwr3_b_m939_reammo_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M939 Ammo";
@@ -1804,7 +1804,7 @@ class CfgVehicles {
         ALiVE_orbatCreator_texture = "woodland";
     };
     class B_BNASRArmy_M939_Ammo_DES_01 : cwr3_b_m939_reammo_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M939 Ammo";
@@ -1831,7 +1831,7 @@ class CfgVehicles {
     class cwr3_b_m939_refuel_OCimport_01 : cwr3_b_m939_refuel { scope = 0; class EventHandlers; };
     class cwr3_b_m939_refuel_OCimport_02 : cwr3_b_m939_refuel_OCimport_01 { scope = 0; class EventHandlers; };
     class B_BNASRArmy_M939_Fuel_WDL_01 : cwr3_b_m939_refuel_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M939 Fuel";
@@ -1853,7 +1853,7 @@ class CfgVehicles {
         ALiVE_orbatCreator_texture = "woodland";
     };
     class B_BNASRArmy_M939_Fuel_DES_01 : cwr3_b_m939_refuel_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M939 Fuel";
@@ -1879,7 +1879,7 @@ class CfgVehicles {
     class cwr3_b_m939_repair_OCimport_01 : cwr3_b_m939_repair { scope = 0; class EventHandlers; };
     class cwr3_b_m939_repair_OCimport_02 : cwr3_b_m939_repair_OCimport_01 { scope = 0; class EventHandlers; };
     class B_BNASRArmy_M939_Repair_WDL_01 : cwr3_b_m939_repair_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M939 Repair";
@@ -1901,7 +1901,7 @@ class CfgVehicles {
         ALiVE_orbatCreator_texture = "woodland";
     };
     class B_BNASRArmy_M939_Repair_DES_01 : cwr3_b_m939_repair_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M939 Repair";
@@ -1927,7 +1927,7 @@ class CfgVehicles {
     class cwr3_b_m939_empty_OCimport_01 : cwr3_b_m939_empty { scope = 0; class EventHandlers; };
     class cwr3_b_m939_empty_OCimport_02 : cwr3_b_m939_empty_OCimport_01 { scope = 0; class EventHandlers; };
     class B_BNASRArmy_M939_Cargo_WDL_01 : cwr3_b_m939_empty_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M939 Cargo";
@@ -1949,7 +1949,7 @@ class CfgVehicles {
         ALiVE_orbatCreator_texture = "woodland";
     };
     class B_BNASRArmy_M939_Cargo_DES_01 : cwr3_b_m939_empty_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M939 Cargo";
@@ -1975,7 +1975,7 @@ class CfgVehicles {
     class cwr3_b_m939_mev_OCimport_01 : cwr3_b_m939_mev { scope = 0; class EventHandlers; };
     class cwr3_b_m939_mev_OCimport_02 : cwr3_b_m939_mev_OCimport_01 { scope = 0; class EventHandlers; };
     class B_BNASRArmy_M939_MedEvac_WDL_01 : cwr3_b_m939_mev_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M939 MedEvac";
@@ -1997,7 +1997,7 @@ class CfgVehicles {
         ALiVE_orbatCreator_texture = "woodland";
     };
     class B_BNASRArmy_M939_MedEvac_DES_01 : cwr3_b_m939_mev_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M939 MedEvac";
@@ -2023,7 +2023,7 @@ class CfgVehicles {
     class cwr3_b_m939_open_OCimport_01 : cwr3_b_m939_open { scope = 0; class EventHandlers; };
     class cwr3_b_m939_open_OCimport_02 : cwr3_b_m939_open_OCimport_01 { scope = 0; class EventHandlers; };
     class B_BNASRArmy_M939_Open_WDL_01 : cwr3_b_m939_open_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M939 Open";
@@ -2045,7 +2045,7 @@ class CfgVehicles {
         ALiVE_orbatCreator_texture = "woodland";
     };
     class B_BNASRArmy_M939_Open_DES_01 : cwr3_b_m939_open_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M939 Open";
@@ -2090,7 +2090,7 @@ class CfgVehicles {
         };
     };
     class B_BNASRArmy_Stryker_M2_WDL_01 : CUP_B_M1126_ICV_M2_Woodland_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Stryker (M2)";
@@ -2116,7 +2116,7 @@ class CfgVehicles {
         ALiVE_orbatCreator_owned = 1;
     };
     class B_BNASRArmy_Stryker_M2_DES_01 : CUP_B_M1126_ICV_M2_Desert_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Stryker (M2)";
@@ -2161,7 +2161,7 @@ class CfgVehicles {
         };
     };
     class B_BNASRArmy_Stryker_Mk19_WDL_01 : CUP_B_M1126_ICV_MK19_Woodland_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Stryker (Mk19)";
@@ -2187,7 +2187,7 @@ class CfgVehicles {
         ALiVE_orbatCreator_owned = 1;
     };
     class B_BNASRArmy_Stryker_Mk19_DES_01 : CUP_B_M1126_ICV_MK19_Desert_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Stryker (Mk19)";
@@ -2232,7 +2232,7 @@ class CfgVehicles {
         };
     };
     class B_BNASRArmy_Stryker_MGS_WDL_01 : CUP_B_M1128_MGS_Woodland_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Stryker (MGS)";
@@ -2258,7 +2258,7 @@ class CfgVehicles {
         ALiVE_orbatCreator_owned = 1;
     };
     class B_BNASRArmy_Stryker_MGS_DES_01 : CUP_B_M1128_MGS_Desert_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "Stryker (MGS)";
@@ -2301,7 +2301,7 @@ class CfgVehicles {
         };
     };
     class B_BNASRArmy_M2_Bradley_WDL_01 : CUP_B_M2Bradley_USA_W_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M2 Bradley";
@@ -2326,7 +2326,7 @@ class CfgVehicles {
         ALiVE_orbatCreator_owned = 1;
     };
     class B_BNASRArmy_M2_Bradley_DES_01 : CUP_B_M2Bradley_USA_D_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M2 Bradley";
@@ -2372,7 +2372,7 @@ class CfgVehicles {
         };
     };
     class B_BNASRArmy_M1A2SEP_Butler_WDL_01 : CUP_B_M1A2SEP_Woodland_US_Army_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M1A2SEP Butler";
@@ -2399,7 +2399,7 @@ class CfgVehicles {
     };
 
     class B_BNASRArmy_M1A2SEP_Butler_DES_01 : CUP_B_M1A2SEP_Desert_US_Army_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M1A2SEP Butler";
@@ -2437,7 +2437,7 @@ class CfgVehicles {
         };
     };
     class B_BNASRArmy_M270_MLRS_HE_WDL_01 : CUP_B_M270_HE_USA_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M270 MLRS (HE)";
@@ -2463,7 +2463,7 @@ class CfgVehicles {
         ALiVE_orbatCreator_texture = "USMC";
     };
     class B_BNASRArmy_M270_MLRS_HE_DES_01 : CUP_B_M270_HE_USA_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M270 MLRS (HE)";
@@ -2497,7 +2497,7 @@ class CfgVehicles {
         };
     };
     class B_BNASRArmy_M270_MLRS_DPICM_WDL_01 : CUP_B_M270_DPICM_USA_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M270 MLRS (DPICM)";
@@ -2523,7 +2523,7 @@ class CfgVehicles {
         ALiVE_orbatCreator_texture = "USMC";
     };
     class B_BNASRArmy_M270_MLRS_DPICM_DES_01 : CUP_B_M270_DPICM_USA_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M270 MLRS (DPICM)";
@@ -2557,7 +2557,7 @@ class CfgVehicles {
         };
     };
     class B_BNASRArmy_M119_WDL_01 : cwr3_b_m119_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M119 Howitzer";
@@ -2582,7 +2582,7 @@ class CfgVehicles {
         ALiVE_orbatCreator_owned = 1;
     };
     class B_BNASRArmy_M119_DES_01 : cwr3_b_m119_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M119 Howitzer";
@@ -2616,7 +2616,7 @@ class CfgVehicles {
         };
     };
     class B_BNASRArmy_M109A6_WDL_01 : rhsusf_m109_usarmy_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M109A6 SPG";
@@ -2649,7 +2649,7 @@ class CfgVehicles {
         };
     };
     class B_BNASRArmy_M109A6_DES_01 : rhsusf_m109d_usarmy_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M109A6 SPG";
@@ -2683,7 +2683,7 @@ class CfgVehicles {
         };
     };
     class B_BNASRArmy_M252_WDL_01 : cwr3_b_m252_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M252 Mortar";
@@ -2716,7 +2716,7 @@ class CfgVehicles {
         };
     };
     class B_BNASRArmy_M252_DES_01 : cwr3_b_m252_desert_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M252 Mortar";
@@ -2752,7 +2752,7 @@ class CfgVehicles {
         };
     };
     class B_BNASRArmy_M1129_Mortar_Carrier_WDL_01 : CUP_B_M1129_MC_MK19_Woodland_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M1129 Mortar Carrier";
@@ -2789,7 +2789,7 @@ class CfgVehicles {
         };
     };
     class B_BNASRArmy_M1129_Mortar_Carrier_DES_01 : CUP_B_M1129_MC_MK19_Desert_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "M1129 Mortar Carrier";
@@ -2845,7 +2845,7 @@ class CfgVehicles {
         };
     };
     class B_BNASRArmy_MH_6M_Little_Bird_01 : CUP_B_MH6M_OBS_USA_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "MH-6M Little Bird";
@@ -2878,7 +2878,7 @@ class CfgVehicles {
         ALiVE_orbatCreator_owned = 1;
     };
     class B_BNASRArmy_AH_6M_Little_Bird_01 : CUP_B_AH6M_USA_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "AH-6M Little Bird";
@@ -2914,7 +2914,7 @@ class CfgVehicles {
         };
     };
     class B_BNASRArmy_UH_60M_Black_Hawk_Unarmed_01 : CUP_B_UH60M_Unarmed_US_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "UH-60M Black Hawk (Unarmed)";
@@ -2952,7 +2952,7 @@ class CfgVehicles {
         };
     };
     class B_BNASRArmy_UH_60M_Black_Hawk_Door_Guns_01 : CUP_B_UH60M_US_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "UH-60M Black Hawk (Door Guns)";
@@ -2990,7 +2990,7 @@ class CfgVehicles {
         };
     };
     class B_BNASRArmy_UH_60M_Black_Hawk_2Pylons_01 : CUP_B_MH60L_DAP_2x_US_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "UH-60M Black Hawk (2 Pylons)";
@@ -3028,7 +3028,7 @@ class CfgVehicles {
         };
     };
     class B_BNASRArmy_UH_60M_Black_Hawk_4Pylons_01 : CUP_B_MH60L_DAP_4x_US_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "UH-60M Black Hawk (4 Pylons)";
@@ -3070,7 +3070,7 @@ class CfgVehicles {
         };
     };
     class B_BNASRArmy_UH_60M_Black_Hawk_MedEvac_01 : CUP_B_UH60M_Unarmed_FFV_MEV_US_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "UH-60M Black Hawk (MedEvac)";
@@ -3112,7 +3112,7 @@ class CfgVehicles {
         };
     };
     class B_BNASRArmy_CH_47F_Chinook_Cargo_01 : RHS_CH_47F_cargo_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "CH-47F Chinook (Cargo)";
@@ -3153,7 +3153,7 @@ class CfgVehicles {
         };
     };
     class B_BNASRArmy_CH_47F_Chinook_Transport_01 : RHS_CH_47F_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "CH-47F Chinook (Transport)";
@@ -3191,7 +3191,7 @@ class CfgVehicles {
         };
     };
     class B_BNASRArmy_AH_1Cobra_01 : RHS_AH1Z_wd_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "AH-1Z Cobra";
@@ -3225,7 +3225,7 @@ class CfgVehicles {
         };
     };
     class B_BNASRArmy_AH_64D_Apache_01 : CUP_B_AH64D_DL_USA_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "AH-64D Apache";
@@ -3258,7 +3258,7 @@ class CfgVehicles {
     class FIR_A10A_Blank_OCimport_01 : FIR_A10A_Blank { scope = 0; class EventHandlers; };
     class FIR_A10A_Blank_OCimport_02 : FIR_A10A_Blank_OCimport_01 { scope = 0; class EventHandlers; };
     class B_BNASRArmy_A10A_Thunderbolt_II_01 : FIR_A10A_Blank_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "A-10A Thunderbolt II";
@@ -3288,7 +3288,7 @@ class CfgVehicles {
         };
     };
     class B_BNASRArmy_C130E_Cargo_01 : cwr3_b_c130_cargo_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "C-130E (Cargo)";
@@ -3323,7 +3323,7 @@ class CfgVehicles {
         };
     };
     class B_BNASRArmy_C130E_Transport_01 : cwr3_b_c130_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "C-130E (Transport)";
@@ -3353,7 +3353,7 @@ class CfgVehicles {
     class F117A_Nighthawk_OCimport_01 : F117A_Nighthawk { scope = 0; class EventHandlers; };
     class F117A_Nighthawk_OCimport_02 : F117A_Nighthawk_OCimport_01 { scope = 0; class EventHandlers; };
     class B_BNASRArmy_F117_Nighthawk_01 : F117A_Nighthawk_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "F-117 Nighthawk";
@@ -3384,7 +3384,7 @@ class CfgVehicles {
         };
     };
     class B_BNASRArmy_F14_Tomcat_01 : FIR_F14D_Blank_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "F-14 Tomcat";
@@ -3418,7 +3418,7 @@ class CfgVehicles {
         };
     };
     class B_BNASRArmy_F15_Eagle_01 : FIR_F15E_Blank_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "F-15 Eagle";
@@ -3452,7 +3452,7 @@ class CfgVehicles {
         };
     };
     class B_BNASRArmy_F16_Fighting_Falcon_01 : FIR_F16D_Blank_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "F-16 Fighting Falcon";
@@ -3481,7 +3481,7 @@ class CfgVehicles {
     class FIR_F22_Blank_OCimport_01 : FIR_F22_Blank { scope = 0; class EventHandlers; };
     class FIR_F22_Blank_OCimport_02 : FIR_F22_Blank_OCimport_01 { scope = 0; class EventHandlers; };
     class B_BNASRArmy_F22A_Raptor_01 : FIR_F22_Blank_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "F-22A Raptor";
@@ -3511,7 +3511,7 @@ class CfgVehicles {
         };
     };
     class B_BNASRArmy_F4G_Wild_Weasel_01 : cwr3_b_f4e_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "F-4E Wild Weasel";
@@ -3541,7 +3541,7 @@ class CfgVehicles {
     class FIR_F18C_Blank_OCimport_01 : FIR_F18C_Blank { scope = 0; class EventHandlers; };
     class FIR_F18C_Blank_OCimport_02 : FIR_F18C_Blank_OCimport_01 { scope = 0; class EventHandlers; };
     class B_BNASRArmy_FA_18_Hornet_01 : FIR_F18C_Blank_OCimport_02 {
-        author = "P. Davis";
+        author = "wlan0";
         scope = 2;
         scopeCurator = 2;
         displayName = "F/A-18 Hornet";
