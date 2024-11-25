@@ -101,7 +101,17 @@ class CfgPatches {
             "B_BNASRArmy_CH_47F_Chinook_Cargo_01",
             "B_BNASRArmy_CH_47F_Chinook_Transport_01",
             "B_BNASRArmy_AH_1Cobra_01",
-            "B_BNASRArmy_AH_64D_Apache_01"
+            "B_BNASRArmy_AH_64D_Apache_01",
+            "B_BNASRArmy_A10A_Thunderbolt_II_01",
+            "B_BNASRArmy_C130E_Cargo_01",
+            "B_BNASRArmy_C130E_Transport_01",
+            "B_BNASRArmy_F117_Nighthawk_01",
+            "B_BNASRArmy_F14_Tomcat_01",
+            "B_BNASRArmy_F15_Eagle_01",
+            "B_BNASRArmy_F16_Fighting_Falcon_01",
+            "B_BNASRArmy_F22A_Raptor_01",
+            "B_BNASRArmy_F4G_Wild_Weasel_01",
+            "B_BNASRArmy_FA_18_Hornet_01"
         };
         weapons[] = {};
         requiredVersion = 1.62;
@@ -329,7 +339,78 @@ class CfgPatches {
             "ace_aircraft",
             "ace_fastroping",
             "A3_Air_F_Beta_Heli_Attack_01",
-            "CUP_AirVehicles_AH64"
+            "CUP_AirVehicles_AH64",
+            "FIR_A10A_F",
+            "A3_Air_F_EPC_Plane_CAS_01",
+            "sab_mirageiv",
+            "sab_mystere",
+            "sab_panther",
+            "sab_pc21",
+            "sab_pc7",
+            "sab_pc9",
+            "sab_sf260",
+            "sab_t28trojan",
+            "sab_yak23",
+            "sab_alphajet",
+            "sab_an12",
+            "sab_an22",
+            "sab_baehawk",
+            "sab_c160",
+            "sab_c2a",
+            "sab_etendard",
+            "sab_f104",
+            "sab_f11tiger",
+            "sab_fiat",
+            "sab_jaguar",
+            "sab_m2000",
+            "sab_magister",
+            "sab_mb339",
+            "A3_Air_F_Beta",
+            "A3_Air_F_Gamma_Plane_Fighter_03",
+            "acfaa_c130",
+            "A4Bskyhawk",
+            "A4Cskyhawk",
+            "Dagger",
+            "F5plane",
+            "F86sabre",
+            "I_MirageIIIEA_F",
+            "Pucara_plane",
+            "A3_Air_F_EPC_Plane_CAS_02",
+            "A3_Air_F_Exp_Plane_Civil_01",
+            "A3_Air_F_Jets_Plane_Fighter_01",
+            "A3_Air_F_Jets_Plane_Fighter_02",
+            "A3_Air_F_Jets_Plane_Fighter_04",
+            "A3_Air_F_Jets_UAV_05",
+            "ffaa_f18",
+            "ffaa_ar_harrier",
+            "F117A",
+            "ffaa_ea_hercules",
+            "rhs_c_a2port_air",
+            "rhs_c_air",
+            "rhs_c_mig29",
+            "RHSGREF_c_A29",
+            "rhsgref_c_air",
+            "ASZ_Plane_A3",
+            "cwr3_vehicle_f16",
+            "CUP_AirVehicles_A10",
+            "CUP_AirVehicles_AN2",
+            "CUP_AirVehicles_C130J",
+            "CUP_AirVehciles_Cessna",
+            "CUP_AirVehicles_DC3",
+            "CUP_AirVehicles_L39",
+            "CUP_AirVehicles_MV22",
+            "cwr3_vehicle_an12",
+            "cwr3_vehicle_an2",
+            "CUP_AirVehicles_AmbientPlanes",
+            "cwr3_vehicle_c130",
+            "FIR_AirWeaponSystem_US",
+            "FIR_F14D_Skins_F",
+            "FIR_F14D_F",
+            "FIR_F15_F",
+            "FIR_F16D_F",
+            "FIR_F22_F",
+            "cwr3_vehicle_f4",
+            "FIR_FA18_F"
         };
         author = "P. Davis";
         authors[] = {"P. Davis"};
@@ -414,13 +495,15 @@ class CfgPatches {
 
 // -- Planes -----
 // A-10A Thunderbolt II
-// F-4E
-// F-16C
-// F-18 (Multirole)
-// F-18 (CAP)
 // C-130E (Cargo)
 // C-130E (Transport)
-
+// F-117 Nighthawk
+// F-14 Tomcat
+// F-15 Eagle
+// F-16 Fighting Falcoln
+// F-22A Raptor
+// F-4G Wild Weasel
+// F/A-18 Hornet
 
 // Editor subcategories to override weird imported names
 class CfgEditorSubcategories
@@ -3143,6 +3226,318 @@ class CfgVehicles {
         class Turrets : Turrets {
             class MainTurret : MainTurret { gunnerType = "B_BNASRArmy_Pilot_Helicopter_WDL_01"; };
         };
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+    };
+
+    //*****************************************************
+    //*     PLANES                                        *
+    //*****************************************************
+
+    class FIR_A10A_Blank;
+    class FIR_A10A_Blank_OCimport_01 : FIR_A10A_Blank { scope = 0; class EventHandlers; };
+    class FIR_A10A_Blank_OCimport_02 : FIR_A10A_Blank_OCimport_01 { scope = 0; class EventHandlers; };
+    class B_BNASRArmy_A10A_Thunderbolt_II_01 : FIR_A10A_Blank_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "A-10A Thunderbolt II";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Pilot_Plane_WDL_01";
+        editorSubcategory = "NASR_Planes";
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+    };
+
+    class cwr3_b_c130_cargo;
+    class cwr3_b_c130_cargo_OCimport_01 : cwr3_b_c130_cargo { scope = 0; class EventHandlers; class Turrets; };
+    class cwr3_b_c130_cargo_OCimport_02 : cwr3_b_c130_cargo_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+    class B_BNASRArmy_C130E_Cargo_01 : cwr3_b_c130_cargo_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "C-130E (Cargo)";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Pilot_Plane_WDL_01";
+        editorSubcategory = "NASR_Planes";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_BNASRArmy_Pilot_Plane_WDL_01"; };
+        };
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'CUP\AirVehicles\CUP_AirVehicles_C130J\data\c130j_body_co.paa'];_unit setObjectTextureGlobal [1,'CUP\AirVehicles\CUP_AirVehicles_C130J\data\c130j_wings_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "USMCGrey";
+    };
+
+    class cwr3_b_c130;
+    class cwr3_b_c130_OCimport_01 : cwr3_b_c130 { scope = 0; class EventHandlers; class Turrets; };
+    class cwr3_b_c130_OCimport_02 : cwr3_b_c130_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+    class B_BNASRArmy_C130E_Transport_01 : cwr3_b_c130_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "C-130E (Transport)";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Pilot_Plane_WDL_01";
+        editorSubcategory = "NASR_Planes";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_BNASRArmy_Pilot_Plane_WDL_01"; };
+        };
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'CUP\AirVehicles\CUP_AirVehicles_C130J\data\c130j_body_co.paa'];_unit setObjectTextureGlobal [1,'CUP\AirVehicles\CUP_AirVehicles_C130J\data\c130j_wings_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "USMCGrey";
+    };
+
+    class F117A_Nighthawk;
+    class F117A_Nighthawk_OCimport_01 : F117A_Nighthawk { scope = 0; class EventHandlers; };
+    class F117A_Nighthawk_OCimport_02 : F117A_Nighthawk_OCimport_01 { scope = 0; class EventHandlers; };
+    class B_BNASRArmy_F117_Nighthawk_01 : F117A_Nighthawk_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "F-117 Nighthawk";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Pilot_Plane_WDL_01";
+        editorSubcategory = "NASR_Planes";
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'a3\air_f_jets\plane_fighter_01\data\fighter_01_fuselage_01_co.paa'];_unit setObjectTextureGlobal [1,'a3\air_f_jets\plane_fighter_01\data\fighter_01_fuselage_02_co.paa'];_unit setObjectTextureGlobal [2,'a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa'];_unit setObjectTextureGlobal [3,'a3\air_f_jets\plane_fighter_01\data\fighter_01_cockpit_01_co.paa'];_unit setObjectTextureGlobal [4,'a3\air_f_jets\plane_fighter_01\data\fighter_01_cockpit_02_co.paa'];_unit setObjectTextureGlobal [5,'a3\air_f_jets\plane_fighter_01\data\fighter_01_cockpit_03_co.paa'];_unit setObjectTextureGlobal [6,'a3\air_f_jets\plane_fighter_01\data\fighter_01_cockpit_05_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "DarkGrey";
+    };
+
+    class FIR_F14D_Blank;
+    class FIR_F14D_Blank_OCimport_01 : FIR_F14D_Blank { scope = 0; class EventHandlers; class Turrets; };
+    class FIR_F14D_Blank_OCimport_02 : FIR_F14D_Blank_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+    class B_BNASRArmy_F14_Tomcat_01 : FIR_F14D_Blank_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "F-14 Tomcat";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Pilot_Plane_WDL_01";
+        editorSubcategory = "NASR_Planes";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_BNASRArmy_Pilot_Plane_WDL_01"; };
+        };
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+    };
+
+    class FIR_F15E_Blank;
+    class FIR_F15E_Blank_OCimport_01 : FIR_F15E_Blank { scope = 0; class EventHandlers; class Turrets; };
+    class FIR_F15E_Blank_OCimport_02 : FIR_F15E_Blank_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+    class B_BNASRArmy_F15_Eagle_01 : FIR_F15E_Blank_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "F-15 Eagle";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Pilot_Plane_WDL_01";
+        editorSubcategory = "NASR_Planes";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_BNASRArmy_Pilot_Plane_WDL_01"; };
+        };
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+    };
+
+    class FIR_F16D_Blank;
+    class FIR_F16D_Blank_OCimport_01 : FIR_F16D_Blank { scope = 0; class EventHandlers; class Turrets; };
+    class FIR_F16D_Blank_OCimport_02 : FIR_F16D_Blank_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+    class B_BNASRArmy_F16_Fighting_Falcon_01 : FIR_F16D_Blank_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "F-16 Fighting Falcon";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Pilot_Plane_WDL_01";
+        editorSubcategory = "NASR_Planes";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_BNASRArmy_Pilot_Plane_WDL_01"; };
+        };
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+    };
+
+    class FIR_F22_Blank;
+    class FIR_F22_Blank_OCimport_01 : FIR_F22_Blank { scope = 0; class EventHandlers; };
+    class FIR_F22_Blank_OCimport_02 : FIR_F22_Blank_OCimport_01 { scope = 0; class EventHandlers; };
+    class B_BNASRArmy_F22A_Raptor_01 : FIR_F22_Blank_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "F-22A Raptor";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Pilot_Plane_WDL_01";
+        editorSubcategory = "NASR_Planes";
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+    };
+
+    class cwr3_b_f4e;
+    class cwr3_b_f4e_OCimport_01 : cwr3_b_f4e { scope = 0; class EventHandlers; class Turrets; };
+    class cwr3_b_f4e_OCimport_02 : cwr3_b_f4e_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+    class B_BNASRArmy_F4G_Wild_Weasel_01 : cwr3_b_f4e_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "F-4E Wild Weasel";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Pilot_Plane_WDL_01";
+        editorSubcategory = "NASR_Planes";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_BNASRArmy_Pilot_Plane_WDL_01"; };
+        };
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cwr3\vehicles\cwr3_f4\tex\body_usaf_grey_co.paa'];_unit setObjectTextureGlobal [1,'\cwr3\vehicles\cwr3_f4\tex\wing_usaf_grey_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "usaf_grey";
+    };
+
+    class FIR_F18C_Blank;
+    class FIR_F18C_Blank_OCimport_01 : FIR_F18C_Blank { scope = 0; class EventHandlers; };
+    class FIR_F18C_Blank_OCimport_02 : FIR_F18C_Blank_OCimport_01 { scope = 0; class EventHandlers; };
+    class B_BNASRArmy_FA_18_Hornet_01 : FIR_F18C_Blank_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "F/A-18 Hornet";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Pilot_Plane_WDL_01";
+        editorSubcategory = "NASR_Planes";
 
         class EventHandlers : EventHandlers {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
