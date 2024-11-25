@@ -2852,6 +2852,7 @@ class CfgVehicles {
         side = 1;
         faction = "B_NASRArmy";
         crew = "B_BNASRArmy_Pilot_Helicopter_WDL_01";
+        editorSubcategory = "NASR_Helicopters";
 
         class Turrets : Turrets {
             class CopilotTurret : CopilotTurret { gunnerType = "B_BNASRArmy_Pilot_Helicopter_WDL_01"; };
@@ -2884,6 +2885,7 @@ class CfgVehicles {
         side = 1;
         faction = "B_NASRArmy";
         crew = "B_BNASRArmy_Pilot_Helicopter_WDL_01";
+        editorSubcategory = "NASR_Helicopters";
 
         class Turrets : Turrets {
             class CopilotTurret : CopilotTurret { gunnerType = "B_BNASRArmy_Pilot_Helicopter_WDL_01"; };
@@ -2919,6 +2921,7 @@ class CfgVehicles {
         side = 1;
         faction = "B_NASRArmy";
         crew = "B_BNASRArmy_Pilot_Helicopter_WDL_01";
+        editorSubcategory = "NASR_Helicopters";
 
         class Turrets : Turrets {
             class CopilotTurret : CopilotTurret { gunnerType = "B_BNASRArmy_Pilot_Helicopter_WDL_01"; };
@@ -2956,6 +2959,7 @@ class CfgVehicles {
         side = 1;
         faction = "B_NASRArmy";
         crew = "B_BNASRArmy_Pilot_Helicopter_WDL_01";
+        editorSubcategory = "NASR_Helicopters";
 
         class Turrets : Turrets {
             class CopilotTurret : CopilotTurret { gunnerType = "B_BNASRArmy_Pilot_Helicopter_WDL_01"; };
@@ -2993,6 +2997,7 @@ class CfgVehicles {
         side = 1;
         faction = "B_NASRArmy";
         crew = "B_BNASRArmy_Pilot_Helicopter_WDL_01";
+        editorSubcategory = "NASR_Helicopters";
 
         class Turrets : Turrets {
             class CopilotTurret : CopilotTurret { gunnerType = "B_BNASRArmy_Pilot_Helicopter_WDL_01"; };
@@ -3030,6 +3035,7 @@ class CfgVehicles {
         side = 1;
         faction = "B_NASRArmy";
         crew = "B_BNASRArmy_Pilot_Helicopter_WDL_01";
+        editorSubcategory = "NASR_Helicopters";
 
         class Turrets : Turrets {
             class CopilotTurret : CopilotTurret { gunnerType = "B_BNASRArmy_Pilot_Helicopter_WDL_01"; };
@@ -3071,6 +3077,7 @@ class CfgVehicles {
         side = 1;
         faction = "B_NASRArmy";
         crew = "B_BNASRArmy_Pilot_Helicopter_WDL_01";
+        editorSubcategory = "NASR_Helicopters";
 
         class Turrets : Turrets {
             class CopilotTurret : CopilotTurret { gunnerType = "B_BNASRArmy_Pilot_Helicopter_WDL_01"; };
@@ -3112,6 +3119,7 @@ class CfgVehicles {
         side = 1;
         faction = "B_NASRArmy";
         crew = "B_BNASRArmy_Pilot_Helicopter_WDL_01";
+        editorSubcategory = "NASR_Helicopters";
 
         class Turrets : Turrets {
             class CopilotTurret : CopilotTurret { gunnerType = "B_BNASRArmy_Pilot_Helicopter_WDL_01"; };
@@ -3152,6 +3160,7 @@ class CfgVehicles {
         side = 1;
         faction = "B_NASRArmy";
         crew = "B_BNASRArmy_Pilot_Helicopter_WDL_01";
+        editorSubcategory = "NASR_Helicopters";
 
         class Turrets : Turrets {
             class CopilotTurret : CopilotTurret { gunnerType = "B_BNASRArmy_Pilot_Helicopter_WDL_01"; };
@@ -3189,6 +3198,7 @@ class CfgVehicles {
         side = 1;
         faction = "B_NASRArmy";
         crew = "B_BNASRArmy_Pilot_Helicopter_WDL_01";
+        editorSubcategory = "NASR_Helicopters";
 
         class Turrets : Turrets {
             class MainTurret : MainTurret { gunnerType = "B_BNASRArmy_Pilot_Helicopter_WDL_01"; };
@@ -3222,6 +3232,7 @@ class CfgVehicles {
         side = 1;
         faction = "B_NASRArmy";
         crew = "B_BNASRArmy_Pilot_Helicopter_WDL_01";
+        editorSubcategory = "NASR_Helicopters";
 
         class Turrets : Turrets {
             class MainTurret : MainTurret { gunnerType = "B_BNASRArmy_Pilot_Helicopter_WDL_01"; };
