@@ -78,7 +78,19 @@ class CfgPatches {
             "B_BNASRArmy_M2_Bradley_WDL_01",
             "B_BNASRArmy_M2_Bradley_DES_01",
             "B_BNASRArmy_M1A2SEP_Butler_WDL_01",
-            "B_BNASRArmy_M1A2SEP_Butler_DES_01"
+            "B_BNASRArmy_M1A2SEP_Butler_DES_01",
+            "B_BNASRArmy_M270_MLRS_HE_WDL_01",
+            "B_BNASRArmy_M270_MLRS_HE_DES_01",
+            "B_BNASRArmy_M270_MLRS_DPICM_WDL_01",
+            "B_BNASRArmy_M270_MLRS_DPICM_DES_01",
+            "B_BNASRArmy_M119_WDL_01",
+            "B_BNASRArmy_M119_DES_01",
+            "B_BNASRArmy_M109A6_WDL_01",
+            "B_BNASRArmy_M109A6_DES_01",
+            "B_BNASRArmy_M252_WDL_01",
+            "B_BNASRArmy_M252_DES_01",
+            "B_BNASRArmy_M1129_Mortar_Carrier_WDL_01",
+            "B_BNASRArmy_M1129_Mortar_Carrier_DES_01"
         };
         weapons[] = {};
         requiredVersion = 1.62;
@@ -272,7 +284,21 @@ class CfgPatches {
             "cwr3_vehicle_fv4030_uk",
             "cwr3_vehicle_fv4201_uk",
             "ASZ_Tracked_A3",
-            "ASZ_IFV_Dardo_A3"
+            "ASZ_IFV_Dardo_A3",
+            "cwr3_static_weapons",
+            "CUP_Weapons_StaticWeapons",
+            "ace_compat_cup_weapons_csw",
+            "A3_Static_F",
+            "A3_Static_F_AA_01",
+            "A3_Static_F_AT_01",
+            "CUP_WarfareBuildings",
+            "ace_dragging",
+            "mlv_static02",
+            "rhs_c_heavyweapons",
+            "rhsusf_c_statics",
+            "ace_compat_rhs_usf3",
+            "ace_hunterkiller",
+            "ace_artillerytables"
         };
         author = "P. Davis";
         authors[] = {"P. Davis"};
@@ -338,9 +364,10 @@ class CfgPatches {
 // -- Artillery (WDL | DES) -----
 // M270 MLRS HE
 // M270 MLRS DPICM
-// M119
-// M109A6
-// M252
+// M119 Howitzer
+// M109A6 SPG
+// M252 Mortar
+// M1129 Mortar Carrier
 
 // -- Helicopters -----
 // MH-6M Little Bird (Unarmed)
@@ -2269,6 +2296,398 @@ class CfgVehicles {
 
         class Turrets : Turrets {
             class MainTurret : MainTurret { gunnerType = "B_BNASRArmy_Crewman_DES_01"; };
+        };
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+    };
+
+    //*****************************************************
+    //*     ARTILLERY (WDL / DES)                         *
+    //*****************************************************
+
+    class CUP_B_M270_HE_USA;
+    class CUP_B_M270_HE_USA_OCimport_01 : CUP_B_M270_HE_USA { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_B_M270_HE_USA_OCimport_02 : CUP_B_M270_HE_USA_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+    class B_BNASRArmy_M270_MLRS_HE_WDL_01 : CUP_B_M270_HE_USA_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M270 MLRS (HE)";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Crewman_WDL_01";
+        editorSubcategory = "NASR_Artillery_WDL";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_BNASRArmy_Crewman_WDL_01"; };
+        };
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cup\trackedvehicles\cup_trackedvehicles_m270\data\mlrs_hull_woodland_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "USMC";
+    };
+    class B_BNASRArmy_M270_MLRS_HE_DES_01 : CUP_B_M270_HE_USA_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M270 MLRS (HE)";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Crewman_DES_01";
+        editorSubcategory = "NASR_Artillery_DES";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_BNASRArmy_Crewman_DES_01"; };
+        };
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+    };
+
+    class CUP_B_M270_DPICM_USA;
+    class CUP_B_M270_DPICM_USA_OCimport_01 : CUP_B_M270_DPICM_USA { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_B_M270_DPICM_USA_OCimport_02 : CUP_B_M270_DPICM_USA_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+    class B_BNASRArmy_M270_MLRS_DPICM_WDL_01 : CUP_B_M270_DPICM_USA_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M270 MLRS (DPICM)";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Crewman_WDL_01";
+        editorSubcategory = "NASR_Artillery_WDL";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_BNASRArmy_Crewman_WDL_01"; };
+        };
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\cup\trackedvehicles\cup_trackedvehicles_m270\data\mlrs_hull_woodland_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "USMC";
+    };
+    class B_BNASRArmy_M270_MLRS_DPICM_DES_01 : CUP_B_M270_DPICM_USA_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M270 MLRS (DPICM)";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Crewman_DES_01";
+        editorSubcategory = "NASR_Artillery_DES";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_BNASRArmy_Crewman_DES_01"; };
+        };
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+    };
+
+    class cwr3_b_m119;
+    class cwr3_b_m119_OCimport_01 : cwr3_b_m119 { scope = 0; class EventHandlers; class Turrets; };
+    class cwr3_b_m119_OCimport_02 : cwr3_b_m119_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+    class B_BNASRArmy_M119_WDL_01 : cwr3_b_m119_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M119 Howitzer";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "cwr3_b_soldier";
+        editorSubcategory = "NASR_Artillery_WDL";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_BNASRArmy_Rifleman_WDL_01"; };
+        };
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+    };
+    class B_BNASRArmy_M119_DES_01 : cwr3_b_m119_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M119 Howitzer";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "cwr3_b_soldier";
+        editorSubcategory = "NASR_Artillery_DES";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_BNASRArmy_Rifleman_DES_01"; };
+        };
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+    };
+
+    class rhsusf_m109_usarmy;
+    class rhsusf_m109_usarmy_OCimport_01 : rhsusf_m109_usarmy { scope = 0; class EventHandlers; class Turrets; };
+    class rhsusf_m109_usarmy_OCimport_02 : rhsusf_m109_usarmy_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+    class B_BNASRArmy_M109A6_WDL_01 : rhsusf_m109_usarmy_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M109A6 SPG";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Crewman_WDL_01";
+        editorSubcategory = "NASR_Artillery_WDL";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_BNASRArmy_Crewman_WDL_01"; };
+        };
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+    };
+    class rhsusf_m109d_usarmy;
+    class rhsusf_m109d_usarmy_OCimport_01 : rhsusf_m109d_usarmy { scope = 0; class EventHandlers; class Turrets; };
+    class rhsusf_m109d_usarmy_OCimport_02 : rhsusf_m109d_usarmy_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+    class B_BNASRArmy_M109A6_DES_01 : rhsusf_m109d_usarmy_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M109A6 SPG";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Crewman_DES_01";
+        editorSubcategory = "NASR_Artillery_DES";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_BNASRArmy_Crewman_DES_01"; };
+        };
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+    };
+
+    class cwr3_b_m252;
+    class cwr3_b_m252_OCimport_01 : cwr3_b_m252 { scope = 0; class EventHandlers; class Turrets; };
+    class cwr3_b_m252_OCimport_02 : cwr3_b_m252_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+    class B_BNASRArmy_M252_WDL_01 : cwr3_b_m252_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M252 Mortar";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "cwr3_b_soldier";
+        editorSubcategory = "NASR_Artillery_WDL";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_BNASRArmy_Rifleman_WDL_01"; };
+        };
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+    };
+    class cwr3_b_m252_desert;
+    class cwr3_b_m252_desert_OCimport_01 : cwr3_b_m252_desert { scope = 0; class EventHandlers; class Turrets; };
+    class cwr3_b_m252_desert_OCimport_02 : cwr3_b_m252_desert_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+    class B_BNASRArmy_M252_DES_01 : cwr3_b_m252_desert_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M252 Mortar";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "cwr3_b_soldier_des";
+        editorSubcategory = "NASR_Artillery_DES";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_BNASRArmy_Rifleman_DES_01"; };
+        };
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+    };
+
+    class CUP_B_M1129_MC_MK19_Woodland;
+    class CUP_B_M1129_MC_MK19_Woodland_OCimport_01 : CUP_B_M1129_MC_MK19_Woodland { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_B_M1129_MC_MK19_Woodland_OCimport_02 : CUP_B_M1129_MC_MK19_Woodland_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+            class ObsTurret;
+            class CargoTurret_01;
+        };
+    };
+    class B_BNASRArmy_M1129_Mortar_Carrier_WDL_01 : CUP_B_M1129_MC_MK19_Woodland_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M1129 Mortar Carrier";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Crewman_WDL_01";
+        editorSubcategory = "NASR_Artillery_WDL";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_BNASRArmy_Crewman_WDL_01"; };
+            class ObsTurret : ObsTurret { gunnerType = "B_BNASRArmy_Crewman_WDL_01"; };
+            class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
+        };
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+    };
+    class CUP_B_M1129_MC_MK19_Desert;
+    class CUP_B_M1129_MC_MK19_Desert_OCimport_01 : CUP_B_M1129_MC_MK19_Desert { scope = 0; class EventHandlers; class Turrets; };
+    class CUP_B_M1129_MC_MK19_Desert_OCimport_02 : CUP_B_M1129_MC_MK19_Desert_OCimport_01 { 
+        class EventHandlers; 
+        class Turrets : Turrets {
+            class MainTurret;
+            class ObsTurret;
+            class CargoTurret_01;
+        };
+    };
+    class B_BNASRArmy_M1129_Mortar_Carrier_DES_01 : CUP_B_M1129_MC_MK19_Desert_OCimport_02 {
+        author = "P. Davis";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "M1129 Mortar Carrier";
+        side = 1;
+        faction = "B_NASRArmy";
+        crew = "B_BNASRArmy_Crewman_DES_01";
+        editorSubcategory = "NASR_Artillery_DES";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "B_BNASRArmy_Crewman_DES_01"; };
+            class ObsTurret : ObsTurret { gunnerType = "B_BNASRArmy_Crewman_DES_01"; };
+            class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
         };
 
         class EventHandlers : EventHandlers {
