@@ -1171,6 +1171,7 @@ class CfgVehicles {
         side = 1;
         faction = "b_nasrarmy";
         editorSubcategory = "NASR_Men_WDL";
+        genericNames = "AmericanEast";
 
         identityTypes[] = {"usm_heads_generic","LanguageENG_F","CUP_G_ARMY"};
 
@@ -1755,6 +1756,7 @@ class CfgVehicles {
         side = 1;
         faction = "B_NASRArmy";
         editorSubcategory = "NASR_Men_Work";
+        genericNames = "AmericanEast";
 
         identityTypes[] = {"usm_heads_generic","LanguageENG_F","CUP_G_ARMY", "NoGlasses"};
 
@@ -1843,6 +1845,7 @@ class CfgVehicles {
         side = 1;
         faction = "B_NASRArmy";
         editorSubcategory = "NASR_Men_Dress";
+        genericNames = "AmericanEast";
 
         identityTypes[] = {"usm_heads_generic","LanguageENG_F","CUP_G_ARMY","NoGlasses"};
 
