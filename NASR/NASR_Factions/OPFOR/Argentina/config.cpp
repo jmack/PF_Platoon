@@ -634,7 +634,7 @@ class CfgVehicles {
         faction = "o_ararmy";
         genericNames = "Argentina";
 
-        identityTypes[] = {"Head_NATO","LanguageENG_F","G_usm_generic"};
+        identityTypes[] = {"Head_TK","Language_Esp","G_usm_generic"};
 
         uniformClass = "CUP_U_B_BDUv2_roll2_dirty_ERDL_highland";
 
@@ -675,7 +675,7 @@ class CfgVehicles {
         side = 0;
         faction = "o_ararmy";
 
-        identityTypes[] = {"Head_NATO","LanguageENG_F","G_usm_generic"};
+        identityTypes[] = {"Head_TK","Language_Esp","G_usm_generic"};
 
         uniformClass = "CUP_U_B_BDUv2_roll2_dirty_ERDL_highland";
 
@@ -716,7 +716,7 @@ class CfgVehicles {
         side = 0;
         faction = "o_ararmy";
 
-        identityTypes[] = {"Head_NATO","LanguageENG_F","G_usm_generic"};
+        identityTypes[] = {"Head_TK","Language_Esp","G_usm_generic"};
 
         uniformClass = "CUP_U_B_BDUv2_roll2_dirty_ERDL_highland";
 
@@ -757,7 +757,7 @@ class CfgVehicles {
         side = 0;
         faction = "o_ararmy";
 
-        identityTypes[] = {"Head_NATO","LanguageENG_F","G_usm_generic"};
+        identityTypes[] = {"Head_TK","Language_Esp","G_usm_generic"};
 
         uniformClass = "CUP_U_B_BDUv2_roll2_dirty_ERDL_highland";
 
@@ -796,7 +796,7 @@ class CfgVehicles {
         side = 0;
         faction = "o_ararmy";
 
-        identityTypes[] = {"Head_NATO","LanguageENG_F","G_usm_generic"};
+        identityTypes[] = {"Head_TK","Language_Esp","G_usm_generic"};
 
         uniformClass = "CUP_U_B_BDUv2_roll2_dirty_ERDL_highland";
 
@@ -835,7 +835,7 @@ class CfgVehicles {
         side = 0;
         faction = "o_ararmy";
 
-        identityTypes[] = {"Head_NATO","LanguageENG_F","G_usm_generic"};
+        identityTypes[] = {"Head_TK","Language_Esp","G_usm_generic"};
 
         uniformClass = "CUP_U_B_BDUv2_roll2_dirty_ERDL_highland";
 
@@ -876,7 +876,7 @@ class CfgVehicles {
         side = 0;
         faction = "o_ararmy";
 
-        identityTypes[] = {"Head_NATO","LanguageENG_F","G_usm_generic"};
+        identityTypes[] = {"Head_TK","Language_Esp","G_usm_generic"};
 
         uniformClass = "CUP_U_B_BDUv2_roll2_dirty_ERDL_highland";
 
@@ -915,7 +915,7 @@ class CfgVehicles {
         side = 0;
         faction = "o_ararmy";
 
-        identityTypes[] = {"Head_NATO","LanguageENG_F","G_usm_generic"};
+        identityTypes[] = {"Head_TK","Language_Esp","G_usm_generic"};
 
         uniformClass = "CUP_U_B_BDUv2_gloves_dirty_DPM_OD";
 
