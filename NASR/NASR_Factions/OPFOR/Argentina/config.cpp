@@ -632,6 +632,7 @@ class CfgVehicles {
         displayName = "Rifleman";
         side = 0;
         faction = "o_ararmy";
+        genericNames = "Argentina";
 
         identityTypes[] = {"Head_NATO","LanguageENG_F","G_usm_generic"};
 
