@@ -335,8 +335,8 @@ class CfgFactionClasses {
     class O_ARArmy {
         displayName = "[PF] Argentina";
         side = 0;
-        flag = "\acfaa_data\bandera\flag_Argentina_co.paa";
-        icon = "\acfaa_data\bandera\flag_Argentina_co.paa";
+        flag = "NASR_Factions\OPFOR\Argentina\data\flag.paa";
+        icon = "NASR_Factions\OPFOR\Argentina\data\flag.paa";
         priority = 0;
     };
 };
