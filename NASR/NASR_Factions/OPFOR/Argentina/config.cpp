@@ -2,6 +2,8 @@ class CfgPatches {
     class O_ARArmy {
         units[] = {
             "O_ARArmy_Rifleman_01",
+            "O_OARArmy_Rifleman_AA_01",
+            "O_OARArmy_Rifleman_AT_01",
             "O_OARArmy_AutoRifleman_01",
             "O_OARArmy_Squad_Leader_01",
             "O_OARArmy_Officer_01",
@@ -650,6 +652,88 @@ class CfgVehicles {
         backpack = "B_simc_US_Bandoleer_flak_556_doppel_1";
 
         ALiVE_orbatCreator_loadout[] = {{"CUP_arifle_FNFAL5061_wooden","","","",{"CUP_20Rnd_762x51_FNFAL_M",20},{},""},{},{},{"CUP_U_B_BDUv2_roll2_dirty_ERDL_highland",{{"usm_dogtags",1},{"usm_bdu_boonie_des",1}}},{"cwr3_b_uk_vest_58webbing_belt_vest",{{"usm_fielddressing",1},{"SmokeShell",1,1},{"SmokeShellYellow",1,1},{"HandGrenade",1,1},{"CUP_20Rnd_762x51_FNFAL_M",8,20}}},{"B_simc_US_Bandoleer_flak_556_doppel_1",{}},"arg_boina_cazmonte","G_Anduk_1",{"Binocular","","","",{},{},""},{"ItemMap","","TFAR_anprc154","ItemCompass","Itemwatch",""}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'NASR_Insignia_Argentina'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_insignia = "NASR_Insignia_Argentina";
+
+    };
+
+    class O_OARArmy_Rifleman_AA_01 : O_ARArmy_Rifleman_01 {
+        author = "wlan0";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Rifleman (AA)";
+        side = 0;
+        faction = "O_ARArmy";
+
+        identityTypes[] = {"Head_TK","Language_Esp","G_usm_generic"};
+
+        uniformClass = "CUP_U_B_BDUv2_roll2_dirty_ERDL_highland";
+
+        linkedItems[] = {"cwr3_b_uk_vest_58webbing_belt_vest","arg_boina_cazmonte","ItemMap","TFAR_anprc154","ItemCompass","Itemwatch"};
+        respawnlinkedItems[] = {"cwr3_b_uk_vest_58webbing_belt_vest","arg_boina_cazmonte","ItemMap","TFAR_anprc154","ItemCompass","Itemwatch"};
+
+        weapons[] = {"CUP_arifle_FNFAL5061_wooden","SP_Blowpipe","Binocular"};
+        respawnWeapons[] = {"CUP_arifle_FNFAL5061_wooden","SP_Blowpipe","Binocular"};
+
+        magazines[] = {"CUP_20Rnd_762x51_FNFAL_M","SP_Blowpipe_round","CUP_20Rnd_762x51_FNFAL_M"};
+        respawnMagazines[] = {"CUP_20Rnd_762x51_FNFAL_M","SP_Blowpipe_round","CUP_20Rnd_762x51_FNFAL_M"};
+
+        backpack = "B_simc_US_Bandoleer_flak_556_doppel_1";
+
+        ALiVE_orbatCreator_loadout[] = {{"CUP_arifle_FNFAL5061_wooden","","","",{"CUP_20Rnd_762x51_FNFAL_M",20},{},""},{"SP_Blowpipe","","","",{"SP_Blowpipe_round",1},{},""},{},{"CUP_U_B_BDUv2_roll2_dirty_ERDL_highland",{{"usm_dogtags",1},{"usm_bdu_boonie_des",1}}},{"cwr3_b_uk_vest_58webbing_belt_vest",{{"usm_fielddressing",1},{"SmokeShell",1,1},{"SmokeShellYellow",1,1},{"HandGrenade",1,1},{"CUP_20Rnd_762x51_FNFAL_M",8,20}}},{"B_simc_US_Bandoleer_flak_556_doppel_1",{}},"arg_boina_cazmonte","G_Anduk_1",{"Binocular","","","",{},{},""},{"ItemMap","","TFAR_anprc154","ItemCompass","Itemwatch",""}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'NASR_Insignia_Argentina'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_insignia = "NASR_Insignia_Argentina";
+
+    };
+
+    class O_OARArmy_Rifleman_AT_01 : O_ARArmy_Rifleman_01 {
+        author = "wlan0";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Rifleman (AT)";
+        side = 0;
+        faction = "O_ARArmy";
+
+        identityTypes[] = {"Head_TK","Language_Esp","G_usm_generic"};
+
+        uniformClass = "CUP_U_B_BDUv2_roll2_dirty_ERDL_highland";
+
+        linkedItems[] = {"cwr3_b_uk_vest_58webbing_belt_vest","arg_boina_cazmonte","ItemMap","TFAR_anprc154","ItemCompass","Itemwatch"};
+        respawnlinkedItems[] = {"cwr3_b_uk_vest_58webbing_belt_vest","arg_boina_cazmonte","ItemMap","TFAR_anprc154","ItemCompass","Itemwatch"};
+
+        weapons[] = {"CUP_arifle_FNFAL5061_wooden","sp_fwa_m2_carlGustav","Binocular"};
+        respawnWeapons[] = {"CUP_arifle_FNFAL5061_wooden","sp_fwa_m2_carlGustav","Binocular"};
+
+        magazines[] = {"CUP_20Rnd_762x51_FNFAL_M","sp_fwa_carlg_1rnd_heat","CUP_20Rnd_762x51_FNFAL_M"};
+        respawnMagazines[] = {"CUP_20Rnd_762x51_FNFAL_M","sp_fwa_carlg_1rnd_heat","CUP_20Rnd_762x51_FNFAL_M"};
+
+        backpack = "B_simc_US_Bandoleer_flak_556_doppel_1";
+
+        ALiVE_orbatCreator_loadout[] = {{"CUP_arifle_FNFAL5061_wooden","","","",{"CUP_20Rnd_762x51_FNFAL_M",20},{},""},{"sp_fwa_m2_carlGustav","","","",{"sp_fwa_carlg_1rnd_heat",1},{},""},{},{"CUP_U_B_BDUv2_roll2_dirty_ERDL_highland",{{"usm_dogtags",1},{"usm_bdu_boonie_des",1}}},{"cwr3_b_uk_vest_58webbing_belt_vest",{{"usm_fielddressing",1},{"SmokeShell",1,1},{"SmokeShellYellow",1,1},{"HandGrenade",1,1},{"CUP_20Rnd_762x51_FNFAL_M",8,20}}},{"B_simc_US_Bandoleer_flak_556_doppel_1",{{"sp_fwa_carlg_1rnd_heat",2,1}}},"arg_boina_cazmonte","G_Anduk_1",{"Binocular","","","",{},{},""},{"ItemMap","","TFAR_anprc154","ItemCompass","Itemwatch",""}};
 
 
         class EventHandlers : EventHandlers {
