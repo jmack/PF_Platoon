@@ -588,7 +588,7 @@ class CfgGroups {
                 class b_bnasrarmy_infantry_wdl_grenadier_fireteam {
                     name = "Grenadier Fireteam";
                     side = 1;
-                    faction = "B_NASRArmy";
+                    faction = "b_nasrarmy";
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
                     rarityGroup = 0.5;
 
@@ -621,7 +621,7 @@ class CfgGroups {
                 class b_bnasrarmy_infantry_wdl_marksman_fireteam {
                     name = "Marksman Fireteam";
                     side = 1;
-                    faction = "B_NASRArmy";
+                    faction = "b_nasrarmy";
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
                     rarityGroup = 0.5;
 
@@ -654,7 +654,7 @@ class CfgGroups {
                 class b_bnasrarmy_infantry_wdl_patrol {
                     name = "Patrol";
                     side = 1;
-                    faction = "B_NASRArmy";
+                    faction = "b_nasrarmy";
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
                     rarityGroup = 0.5;
 
@@ -675,7 +675,7 @@ class CfgGroups {
                 class b_bnasrarmy_infantry_wdl_rifle_squad {
                     name = "Rifle Squad";
                     side = 1;
-                    faction = "B_NASRArmy";
+                    faction = "b_nasrarmy";
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
                     rarityGroup = 0.5;
 
@@ -738,7 +738,7 @@ class CfgGroups {
                 class b_bnasrarmy_infantry_wdl_sniper_team {
                     name = "Sniper Team";
                     side = 1;
-                    faction = "B_NASRArmy";
+                    faction = "b_nasrarmy";
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
                     rarityGroup = 0.5;
 
@@ -759,7 +759,7 @@ class CfgGroups {
                 class b_bnasrarmy_infantry_wdl_aa_team {
                     name = "AA Team";
                     side = 1;
-                    faction = "B_NASRArmy";
+                    faction = "b_nasrarmy";
                     icon = "\A3\ui_f\data\map\markers\nato\b_antiair.paa";
                     rarityGroup = 0.5;
 
@@ -780,7 +780,7 @@ class CfgGroups {
                 class b_bnasrarmy_infantry_wdl_at_team {
                     name = "AT Team";
                     side = 1;
-                    faction = "B_NASRArmy";
+                    faction = "b_nasrarmy";
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
                     rarityGroup = 0.5;
 
@@ -801,7 +801,7 @@ class CfgGroups {
                 class b_bnasrarmy_infantry_wdl_platoon_hq {
                     name = "Platoon HQ";
                     side = 1;
-                    faction = "B_NASRArmy";
+                    faction = "b_nasrarmy";
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
                     rarityGroup = 0.5;
 
@@ -836,7 +836,6 @@ class CfgGroups {
                         vehicle = "B_BNASRArmy_Rifleman_M136_WDL_01";
                     };
                 };
-
             };
 
             class Infantry_DES {
@@ -845,7 +844,7 @@ class CfgGroups {
                 class b_bnasrarmy_infantry_des_grenadier_fireteam {
                     name = "Grenadier Fireteam";
                     side = 1;
-                    faction = "B_NASRArmy";
+                    faction = "b_nasrarmy";
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
                     rarityGroup = 0.5;
 
@@ -878,7 +877,7 @@ class CfgGroups {
                 class b_bnasrarmy_infantry_des_marksman_fireteam {
                     name = "Marksman Fireteam";
                     side = 1;
-                    faction = "B_NASRArmy";
+                    faction = "b_nasrarmy";
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
                     rarityGroup = 0.5;
 
@@ -911,7 +910,7 @@ class CfgGroups {
                 class b_bnasrarmy_infantry_des_patrol {
                     name = "Patrol";
                     side = 1;
-                    faction = "B_NASRArmy";
+                    faction = "b_nasrarmy";
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
                     rarityGroup = 0.5;
 
@@ -932,7 +931,7 @@ class CfgGroups {
                 class b_bnasrarmy_infantry_des_rifle_squad {
                     name = "Rifle Squad";
                     side = 1;
-                    faction = "B_NASRArmy";
+                    faction = "b_nasrarmy";
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
                     rarityGroup = 0.5;
 
@@ -995,7 +994,7 @@ class CfgGroups {
                 class b_bnasrarmy_infantry_des_sniper_team {
                     name = "Sniper Team";
                     side = 1;
-                    faction = "B_NASRArmy";
+                    faction = "b_nasrarmy";
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
                     rarityGroup = 0.5;
 
@@ -1016,7 +1015,7 @@ class CfgGroups {
                 class b_bnasrarmy_infantry_des_aa_team {
                     name = "AA Team";
                     side = 1;
-                    faction = "B_NASRArmy";
+                    faction = "b_nasrarmy";
                     icon = "\A3\ui_f\data\map\markers\nato\b_antiair.paa";
                     rarityGroup = 0.5;
 
@@ -1037,7 +1036,7 @@ class CfgGroups {
                 class b_bnasrarmy_infantry_des_at_team {
                     name = "AT Team";
                     side = 1;
-                    faction = "B_NASRArmy";
+                    faction = "b_nasrarmy";
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
                     rarityGroup = 0.5;
 
@@ -1058,7 +1057,7 @@ class CfgGroups {
                 class b_bnasrarmy_infantry_des_platoon_hq {
                     name = "Platoon HQ";
                     side = 1;
-                    faction = "B_NASRArmy";
+                    faction = "b_nasrarmy";
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
                     rarityGroup = 0.5;
 
@@ -1093,61 +1092,628 @@ class CfgGroups {
                         vehicle = "B_BNASRArmy_Rifleman_M136_DES_01";
                     };
                 };
-
             };
 
             class Motorized_WDL {
-                name = "Motorized_WDL";
+                name = "[WDL] Motorized";
 
+                class b_bnasrarmy_motorized_wdl_rifle_squad {
+                    name = "Rifle Squad";
+                    side = 1;
+                    faction = "B_NASRArmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Squad_Leader_WDL_01";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Team_Leader_WDL_01";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Team_Leader_WDL_01";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Machine_Gunner_WDL_01";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Machine_Gunner_WDL_01";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Grenadier_WDL_01";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Marksman_WDL_01";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Rifleman_WDL_01";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Rifleman_WDL_01";
+                    };
+                    class Unit9 {
+                        position[] = {25,-34,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_M939_Covered_WDL_01";
+                    };
+                };
+
+                class b_bnasrarmy_motorized_wdl_rifle_squad_wescort {
+                    name = "Rifle Squad w/ Escort";
+                    side = 1;
+                    faction = "B_NASRArmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Squad_Leader_WDL_01";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Team_Leader_WDL_01";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Team_Leader_WDL_01";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Machine_Gunner_WDL_01";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Machine_Gunner_WDL_01";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Grenadier_WDL_01";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Marksman_WDL_01";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Rifleman_WDL_01";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Rifleman_WDL_01";
+                    };
+                    class Unit9 {
+                        position[] = {25,-34,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_M939_Covered_WDL_01";
+                    };
+                    class Unit10 {
+                        position[] = {-25,-34,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_HMMWV_M2_WDL_01";
+                    };
+                };
             };
 
             class Motorized_DES {
-                name = "Motorized_DES";
+                name = "[DES] Motorized";
 
+                class b_bnasrarmy_motorized_des_rifle_squad {
+                    name = "Rifle Squad";
+                    side = 1;
+                    faction = "B_NASRArmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Squad_Leader_DES_01";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Team_Leader_DES_01";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Team_Leader_DES_01";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Machine_Gunner_DES_01";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Machine_Gunner_DES_01";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Grenadier_DES_01";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Marksman_DES_01";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Rifleman_DES_01";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Rifleman_DES_01";
+                    };
+                    class Unit9 {
+                        position[] = {25,-34,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_M939_Covered_DES_01";
+                    };
+                };
+
+                class b_bnasrarmy_motorized_des_rifle_squad_wescort {
+                    name = "Rifle Squad w/ Escort";
+                    side = 1;
+                    faction = "B_NASRArmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Squad_Leader_DES_01";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Team_Leader_DES_01";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Team_Leader_DES_01";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Machine_Gunner_DES_01";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Machine_Gunner_DES_01";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Grenadier_DES_01";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Marksman_DES_01";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Rifleman_DES_01";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Rifleman_DES_01";
+                    };
+                    class Unit9 {
+                        position[] = {25,-34,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_M939_Covered_DES_01";
+                    };
+                    class Unit10 {
+                        position[] = {-25,-34,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_HMMWV_M2_DES_01";
+                    };
+                };
             };
 
             class Mechanized_WDL {
-                name = "Mechanized_WDL";
+                name = "[WDL] Mechanized";
 
+                class b_bnasrarmy_mechanized_wdl_rifle_squad {
+                    name = "Rifle Squad";
+                    side = 1;
+                    faction = "B_NASRArmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Squad_Leader_WDL_01";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Team_Leader_WDL_01";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Team_Leader_WDL_01";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Machine_Gunner_WDL_01";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Machine_Gunner_WDL_01";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Grenadier_WDL_01";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Marksman_WDL_01";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Rifleman_WDL_01";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Rifleman_WDL_01";
+                    };
+                    class Unit9 {
+                        position[] = {29,-32,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Stryker_M2_WDL_01";
+                    };
+                };
             };
 
             class Mechanized_DES {
-                name = "Mechanized_DES";
+                name = "[DES] Mechanized";
 
+                class b_bnasrarmy_mechanized_wdl_rifle_squad {
+                    name = "Rifle Squad";
+                    side = 1;
+                    faction = "B_NASRArmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Squad_Leader_DES_01";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Team_Leader_DES_01";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Team_Leader_DES_01";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Machine_Gunner_DES_01";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Machine_Gunner_DES_01";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Grenadier_DES_01";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Marksman_DES_01";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Rifleman_DES_01";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Rifleman_DES_01";
+                    };
+                    class Unit9 {
+                        position[] = {29,-32,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_Stryker_M2_DES_01";
+                    };
+                };
             };
 
             class Armored_WDL {
-                name = "Armored_WDL";
+                name = "[WDL] Armored";
 
+                class b_bnasrarmy_armored_wdl_butler_squad {
+                    name = "Butler Squad";
+                    side = 1;
+                    faction = "B_NASRArmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_armor.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_M1A2SEP_Butler_WDL_01";
+                    };
+                    class Unit1 {
+                        position[] = {9,-15,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_M1A2SEP_Butler_WDL_01";
+                    };
+                };
+
+                class b_bnasrarmy_armored_wdl_butler_platoon {
+                    name = "Butler Platoon";
+                    side = 1;
+                    faction = "B_NASRArmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_armor.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "LIEUTENANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_M1A2SEP_Butler_WDL_01";
+                    };
+                    class Unit1 {
+                        position[] = {9,-15,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_M1A2SEP_Butler_WDL_01";
+                    };
+                    class Unit2 {
+                        position[] = {-9,-15,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_M1A2SEP_Butler_WDL_01";
+                    };
+                    class Unit3 {
+                        position[] = {18,-24,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_M1A2SEP_Butler_WDL_01";
+                    };
+                };
+
+                class b_bnasrarmy_armored_wdl_armored_recon {
+                    name = "Armored Recon";
+                    side = 1;
+                    faction = "B_NASRArmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_recon.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_M2_Bradley_WDL_01";
+                    };
+                    class Unit1 {
+                        position[] = {9,-14,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_M2_Bradley_WDL_01";
+                    };
+                };
             };
 
             class Armored_DES {
-                name = "Armored_DES";
+                name = "[DES] Armored";
 
+                class b_bnasrarmy_armored_des_butler_squad {
+                    name = "Butler Squad";
+                    side = 1;
+                    faction = "B_NASRArmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_armor.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_M1A2SEP_Butler_DES_01";
+                    };
+                    class Unit1 {
+                        position[] = {9,-15,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_M1A2SEP_Butler_DES_01";
+                    };
+                };
+
+                class b_bnasrarmy_armored_des_butler_platoon {
+                    name = "Butler Platoon";
+                    side = 1;
+                    faction = "B_NASRArmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_armor.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "LIEUTENANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_M1A2SEP_Butler_DES_01";
+                    };
+                    class Unit1 {
+                        position[] = {9,-15,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_M1A2SEP_Butler_DES_01";
+                    };
+                    class Unit2 {
+                        position[] = {-9,-15,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_M1A2SEP_Butler_DES_01";
+                    };
+                    class Unit3 {
+                        position[] = {18,-24,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_M1A2SEP_Butler_DES_01";
+                    };
+                };
+
+                class b_bnasrarmy_armored_des_armored_recon {
+                    name = "Armored Recon";
+                    side = 1;
+                    faction = "B_NASRArmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_recon.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_M2_Bradley_DES_01";
+                    };
+                    class Unit1 {
+                        position[] = {9,-14,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BNASRArmy_M2_Bradley_DES_01";
+                    };
+                };
             };
 
-            class Artillery {
-                name = "Artillery";
-
-            };
-
-            class Naval {
-                name = "Naval";
-
-            };
-
-            class Air {
-                name = "Air";
-
+            class SpecOps {
+                name = "Special Forces";
             };
 
             class Support {
                 name = "Support";
-
             };
 
-        };
+            class Artillery {
+                name = "Artillery";
+            };
 
+            class Naval {
+                name = "Naval";
+            };
+
+            class Air {
+                name = "Air";
+            };
+        };
     };
 };
 
