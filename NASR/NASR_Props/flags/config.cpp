@@ -8,6 +8,7 @@ class CfgPatches
       "NASR_Props_Flags_Fash_Argentina",
       "NASR_Props_Flags_Red_Argentina",
       "NASR_Props_Flags_Fash_Spain",
+      "NASR_Props_Flags_English_Directorate",
     };
     weapons[] = { };
     requiredVersion = 0.1;
@@ -80,6 +81,20 @@ class CfgVehicles
     class EventHandlers : DefaultEventhandlers
     {
       init = "(_this select 0) setFlagTexture 'NASR_Factions\OPFOR\Spain\data\flag.paa'";
+    };
+  };
+
+  class NASR_Props_Flags_English_Directorate : Flag_White_F
+  {
+    author = "wlan0";
+    scope = 2;
+    scopeCurator = 2;
+    displayName = "Flag (English Directorate)";
+
+    class DefaultEventhandlers;
+    class EventHandlers : DefaultEventhandlers
+    {
+      init = "(_this select 0) setFlagTexture 'NASR_Factions\OPFOR\England\data\flag.paa'";
     };
   };
 };
