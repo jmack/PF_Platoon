@@ -24,6 +24,7 @@ class CfgFunctions
       file = "\WS_Core\scripts";
       class letterbox { };
       class hintAction { };
+      class holdAction { };
     };
   };
 };
