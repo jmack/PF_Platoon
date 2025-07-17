@@ -66,8 +66,8 @@ _actionIcon = "a3\ui_f\data\igui\cfg\holdactions\holdaction_search_ca.paa";
   format ["use <t color='%2'>%1</t>: %3", _actionName, _actionColor, _holdText],  // Title of the action
   _actionIcon,                                                                    // Idle icon shown on screen
   _actionIcon,                                                                    // Progress icon shown on screen
-  format ["%1 && _this distance _target < 3", _holdCondition],                    // Condition for the action to be shown
-  format ["%1 && _caller distance _target < 3", _holdCondition],                  // Condition for the action to progress
+  format ["%1 && _this distance _target < 5", _holdCondition],                    // Condition for the action to be shown
+  format ["%1 && _caller distance _target < 5", _holdCondition],                  // Condition for the action to progress
   {},                                                                             // Code executed when action starts
   {},                                                                             // Code executed on every progress tick
   _holdAction,                                                                    // Code executed on completion
