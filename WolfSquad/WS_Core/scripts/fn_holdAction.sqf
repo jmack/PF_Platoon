@@ -41,12 +41,12 @@ if (!params [
 ]) exitWith { false };
 
 _actionMap = [
-  ["search",      "[Any]",          "#ffffff",  "a3\ui_f\data\igui\cfg\holdactions\holdaction_search_ca.paa"],
-  ["hack",        "[Hacking]",      "#39b300",  "a3\ui_f\data\igui\cfg\holdactions\holdaction_hack_ca.paa"], // legacy, to be removed later
-  ["hacking",     "[Hacking]",      "#39b300",  "a3\ui_f\data\igui\cfg\holdactions\holdaction_hack_ca.paa"],
-  ["engineering", "[Engineering]",  "#3543db",  "a3\ui_f\data\igui\cfg\actions\repair_ca.paa"],
-  ["medicine",    "[Medicine]",     "#ba1414",  "a3\ui_f\data\igui\cfg\holdactions\holdaction_revivemedic_ca.paa"],
-  ["demolitions", "[Demolitions]",  "#e39309",  "a3\ui_f_oldman\data\igui\cfg\holdactions\destroy_ca.paa"]
+  ["search",      "[Any]",          "#ffffff",  "WS_Core\icons\hold_actions\search.paa"],
+  ["hack",        "[Hacking]",      "#39b300",  "WS_Core\icons\hold_actions\hacking.paa"], // legacy, to be removed later
+  ["hacking",     "[Hacking]",      "#39b300",  "WS_Core\icons\hold_actions\hacking.paa"],
+  ["engineering", "[Engineering]",  "#3543db",  "WS_Core\icons\hold_actions\engineering.paa"],
+  ["medicine",    "[Medicine]",     "#ba1414",  "WS_Core\icons\hold_actions\medicine.paa"],
+  ["demolitions", "[Demolitions]",  "#e39309",  "WS_Core\icons\hold_actions\demolitions.paa"]
 ];
 
 _actionName = "[Any]";
