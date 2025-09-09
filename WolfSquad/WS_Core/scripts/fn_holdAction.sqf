@@ -40,40 +40,60 @@ if (!params [
   ["_holdRemoveOnComplete", true, [true]]
 ]) exitWith { false };
 
-_actionMap = [
-  ["search",      "[Any]",          "#ffffff",  "WS_Core\icons\hold_actions\search.paa"],
-  ["hack",        "[Hacking]",      "#39b300",  "WS_Core\icons\hold_actions\hacking.paa"], // legacy, to be removed later
-  ["hacking",     "[Hacking]",      "#39b300",  "WS_Core\icons\hold_actions\hacking.paa"],
-  ["engineering", "[Engineering]",  "#3543db",  "WS_Core\icons\hold_actions\engineering.paa"],
-  ["medicine",    "[Medicine]",     "#ba1414",  "WS_Core\icons\hold_actions\medicine.paa"],
-  ["demolitions", "[Demolitions]",  "#e39309",  "WS_Core\icons\hold_actions\demolitions.paa"]
+_actionMap = createHashMapFromArray [
+  ["search",      ["[Any]",         "",               "#ffffff",  "WS_Core\icons\hold_actions\search"]],
+  ["interact",    ["[Any]",         "",               "#ffffff",  "WS_Core\icons\hold_actions\interact"]],
+  ["hack",        ["[Hacking]",     "isHacker",       "#39b300",  "WS_Core\icons\hold_actions\hacking"]], // legacy, to be removed later
+  ["hacking",     ["[Hacking]",     "isHacker",       "#39b300",  "WS_Core\icons\hold_actions\hacking"]],
+  ["engineering", ["[Engineering]", "isEngineer",     "#3543db",  "WS_Core\icons\hold_actions\engineering"]],
+  ["medicine",    ["[Medicine]",    "isMedic",        "#ba1414",  "WS_Core\icons\hold_actions\medicine"]],
+  ["demolitions", ["[Demolitions]", "isDemolitions",  "#e39309",  "WS_Core\icons\hold_actions\demolitions"]]
 ];
 
-_actionName = "[Any]";
-_actionColor = "#ffffff";
-_actionIcon = "a3\ui_f\data\igui\cfg\holdactions\holdaction_search_ca.paa";
+_mappedAction = _actionMap get "interact";
 
-{
-  if (_x select 0 == _holdType) then {
-    _actionName = _x select 1;
-    _actionColor = _x select 2;
-    _actionIcon = _x select 3;
-  }
-} forEach _actionMap;
+if (_holdType in _actionMap) then {
+  _mappedAction = _actionMap get _holdType;
+};
 
+_actionName = _mappedAction # 0;
+_requiredTrait = _mappedAction # 1;
+_actionColor = _mappedAction # 2;
+_actionIcon = _mappedAction # 3;
+
+// The first "true" action shown when user has the required trait
 [
   _obj,                                                                           // Object the action is attached to
   format ["use <t color='%2'>%1</t>: %3", _actionName, _actionColor, _holdText],  // Title of the action
-  _actionIcon,                                                                    // Idle icon shown on screen
-  _actionIcon,                                                                    // Progress icon shown on screen
-  format ["%1 && _this distance _target < 5", _holdCondition],                    // Condition for the action to be shown
-  format ["%1 && _caller distance _target < 5", _holdCondition],                  // Condition for the action to progress
+  format ["%1.paa", _actionIcon],                                                 // Idle icon shown on screen
+  format ["%1.paa", _actionIcon],                                                 // Progress icon shown on screen
+  format ["_this distance _target < 5 && %1 && (""%2"" == """" || player getVariable [""%2"", false])", _holdCondition, _requiredTrait], // Condition for the action to be shown
+  "_caller distance _target < 5",                                                 // Condition for the action to progress
   {},                                                                             // Code executed when action starts
   {},                                                                             // Code executed on every progress tick
   _holdAction,                                                                    // Code executed on completion
   {},                                                                             // Code executed on interrupted
   [],                                                                             // Arguments passed to the scripts as _this select 3
   _holdDuration,                                                                  // Action duration in seconds
+  0,                                                                              // Priority
+  _holdRemoveOnComplete,                                                          // Remove on completion
+  false                                                                           // Show in unconscious state
+] call BIS_fnc_holdActionAdd;
+
+// The second "disabled" action shown when the user does not have the required trait (will not progress)
+[
+  _obj,                                                                           // Object the action is attached to
+  format ["use <t color='%2'>%1: %3</t>", _actionName, "#99ffffff", _holdText], // Title of the action
+  format ["%1_disabled.paa", _actionIcon],                                        // Idle icon shown on screen
+  format ["%1_disabled.paa", _actionIcon],                                        // Progress icon shown on screen
+  format ["_this distance _target < 5 && %1 && ""%2"" != """" && !(player getVariable [""%2"", false])", _holdCondition, _requiredTrait], // Condition for the action to be shown
+  "false",                                                                        // Condition for the action to progress
+  {},                                                                             // Code executed when action starts
+  {},                                                                             // Code executed on every progress tick
+  {},                                                                             // Code executed on completion
+  {},                                                                             // Code executed on interrupted
+  [],                                                                             // Arguments passed to the scripts as _this select 3
+  10000,                                                                          // Action duration in seconds
   0,                                                                              // Priority
   _holdRemoveOnComplete,                                                          // Remove on completion
   false                                                                           // Show in unconscious state
