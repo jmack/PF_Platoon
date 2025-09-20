@@ -22,9 +22,11 @@ class CfgFunctions
     class Scripts
     {
       file = "\WS_Core\scripts";
-      class letterbox { };
       class hintAction { };
       class holdAction { };
+      class letterbox { };
+      class log { };
+      class setSpecialization { };
     };
   };
 };
