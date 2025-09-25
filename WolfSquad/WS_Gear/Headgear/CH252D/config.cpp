@@ -49,18 +49,18 @@ class XtdGearModels
 /* Helmet Definitions */
 class CfgWeapons
 {
-  class XtdGearInfo
-  {
-    model = "WS_CH252D_Helmet_Metaitem";
-    type = "standard";
-  };
-
   /* Base Item */
   class ItemCore;
   class ItemInfo;
   class HeadgearItem;
   class WS_CH252D_Helmet_Base: ItemCore
   {
+    class XtdGearInfo
+    {
+      model = "WS_CH252D_Helmet_Metaitem";
+      type = "standard";
+    };
+
     scope = 2;
     scopeArsenal = 2;
     author = "wlan0";
