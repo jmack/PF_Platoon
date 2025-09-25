@@ -6,14 +6,6 @@ if (!(Test-Path -PathType container $addonsDirPath)) {
 
 . ../vars.ps1
 
-# Preprocessor
-# Node.js check (for tic-tac generation)
-# if (Get-Command node -errorAction SilentlyContinue) {
-# 	node .\PF_Gear\tictacs\tictac-converter.js
-# } else {
-# 	Write-Host "[WARN] Node not installed in this environment. Skipping tic-tac generation" -ForegroundColor Yellow
-# }
-
 # Build
 if ($args.count -gt 0) {
 	$dirs = $args[0];
