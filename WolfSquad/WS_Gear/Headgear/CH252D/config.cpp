@@ -26,10 +26,20 @@ class XtdGearModels
         values[] =
         {
           "standard",
+          "dukova",
+          "mickelson",
         };
         class standard
         {
           label = "Standard";
+        };
+        class dukova
+        {
+          label = "L. Dukova";
+        };
+        class mickelson
+        {
+          label = "L. Mickelson";
         };
       };
     };
@@ -132,6 +142,58 @@ class CfgWeapons
     class ItemInfo: ItemInfo
     {
       uniformModel = "MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm_dp.p3d";
+    };
+  };
+
+  /* Dukova */
+  class WS_CH252D_Helmet_Dukova: WS_CH252D_Helmet_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_CH252D_Helmet_Metaitem";
+      type = "dukova";
+    };
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Headgear\CH252D\_textures\helmet_dukova.paa",
+      "WS_Gear\Headgear\CH252D\_textures\visor.paa",
+      "WS_Gear\Headgear\CH252D\_textures\balaclava.paa"
+    };
+  };
+  class WS_CH252D_Helmet_Dukova_dp: WS_CH252D_Helmet_Base_dp
+  {
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Headgear\CH252D\_textures\helmet_dukova.paa",
+      "WS_Gear\Headgear\CH252D\_textures\visor_dp.paa",
+      "WS_Gear\Headgear\CH252D\_textures\balaclava.paa"
+    };
+  };
+
+  /* Mickelson */
+  class WS_CH252D_Helmet_Mickelson: WS_CH252D_Helmet_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_CH252D_Helmet_Metaitem";
+      type = "mickelson";
+    };
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Headgear\CH252D\_textures\helmet_mickelson.paa",
+      "WS_Gear\Headgear\CH252D\_textures\visor.paa",
+      "WS_Gear\Headgear\CH252D\_textures\balaclava.paa"
+    };
+  };
+  class WS_CH252D_Helmet_Mickelson_dp: WS_CH252D_Helmet_Base_dp
+  {
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Headgear\CH252D\_textures\helmet_mickelson.paa",
+      "WS_Gear\Headgear\CH252D\_textures\visor_dp.paa",
+      "WS_Gear\Headgear\CH252D\_textures\balaclava.paa"
     };
   };
 };
