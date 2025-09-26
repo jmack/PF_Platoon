@@ -72,6 +72,8 @@ class CfgWeapons
     dlc = "WS";
     displayName = "[WS] CH252D Helmet";
     ace_hearing_protection = 1;
+    ace_hearing_lowerVolume = 0;
+    ace_hearing_hasEHP = 1;
     model = "MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm.p3d";
     picture = "WS_Images\Common\logo_color.paa";
     hiddenSelections[] =

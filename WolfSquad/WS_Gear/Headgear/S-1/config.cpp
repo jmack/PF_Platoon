@@ -57,6 +57,8 @@ class CfgWeapons
     dlc = "WS";
     displayName = "[WS] S-1/ONI Helmet";
     ace_hearing_protection = 1;
+    ace_hearing_lowerVolume = 0;
+    ace_hearing_hasEHP = 1;
     model = "MA_Armor\data\Helmets\Recon\Recon_Helmet.p3";
     picture = "WS_Images\Common\logo_color.paa";
     hiddenSelections[] =
