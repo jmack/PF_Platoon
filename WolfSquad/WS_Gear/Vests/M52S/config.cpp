@@ -130,35 +130,35 @@ class CfgWeapons
     };
     hiddenSelectionsTextures[] =
     {
-      "MA_Armor\data\Vests\M52_ODST\Color_Variants\MA_ODST_CQB_co.paa",               // Shoulder L: CQB Left
-      "MA_Armor\data\Vests\M52_ODST\Color_Variants\MA_ODST_CQB_co.paa",               // Shoulder R: CQB Right
-      "MA_Armor\data\Vests\M52_ODST\Color_Variants\MA_ODST_Marksman_co.paa",          // Shoulder L: Marksman Left
-      "MA_Armor\data\Vests\M52_ODST\Color_Variants\MA_ODST_Marksman_co.paa",          // Shoulder R: Marksman Right
-      "MA_Armor\data\Vests\M52_ODST\Color_Variants\MA_ODST_Vest_co.paa",              // Bracer L: ODST Left
-      "MA_Armor\data\Vests\M52_ODST\Color_Variants\MA_ODST_Vest_co.paa",              // Bracer R: ODST Right
-      "MA_Armor\data\Vests\M52_ODST\Color_Variants\MA_ODST_Vest_co.paa",              // Chest Plate: ODST
-      "MA_Armor\data\Vests\M52_ODST\Color_Variants\MA_ODST_Shoulders_co.paa",         // Shoulder L: ODST Left
-      "MA_Armor\data\Vests\M52_ODST\Color_Variants\MA_ODST_Shoulders_co.paa",         // Shoulder R: ODST Right
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa",            // Chest Pistol Mag L: Pistol Mag
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa",            // Chest Pistol Mag R: Pistol Mag
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa",            // Chest Pouch: ChestPouch
-      "MA_Armor\data\Backpacks\ODST_Rucksack\Attachments\Backpack_Radio_ODST_co.paa", // Shoulder Accessory L: Radio Left
-      "MA_Armor\data\Backpacks\ODST_Rucksack\Attachments\Backpack_Radio_ODST_co.paa", // Shoulder Accessory R: Radio Right
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa",            // Torso: 2x Pouch(?)
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa",            // Torso L: Pistol Mag
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa",            // Torso R: Pistol Mag
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa",            // Torso: 1x Pouch(?)
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa",            // Waist B: Pouch
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa",            // Waist SL: Grenades
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa",            // Waist SR: Grenades
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa",            // Waist FL: Pouches
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa",            // Waist FR: Pouches
-      "MA_Armor\data\Backpacks\ODST_Rucksack\Attachments\Backpack_Radio_ODST_co.paa", // Waist BL: Radio
-      "MA_Armor\data\Backpacks\ODST_Rucksack\Attachments\Backpack_Radio_ODST_co.paa", // Waist BR: Radio
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa",            // Waist SL: Smoke
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa",            // Waist SR: Smoke
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa",            // Leg L: LegPouchL
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa"             // Leg R: LegPouchR
+      "WS_Gear\Vests\M52S\_textures\base\shoulders_cqb.paa",      // Shoulder L: CQB Left
+      "WS_Gear\Vests\M52S\_textures\base\shoulders_cqb.paa",      // Shoulder R: CQB Right
+      "WS_Gear\Vests\M52S\_textures\base\shoulders_marksman.paa", // Shoulder L: Marksman Left
+      "WS_Gear\Vests\M52S\_textures\base\shoulders_marksman.paa", // Shoulder R: Marksman Right
+      "WS_Gear\Vests\M52S\_textures\base\vest_main.paa",          // Bracer L: ODST Left
+      "WS_Gear\Vests\M52S\_textures\base\vest_main.paa",          // Bracer R: ODST Right
+      "WS_Gear\Vests\M52S\_textures\base\vest_main.paa",          // Chest Plate: ODST
+      "WS_Gear\Vests\M52S\_textures\base\shoulders_odst.paa",     // Shoulder L: ODST Left
+      "WS_Gear\Vests\M52S\_textures\base\shoulders_odst.paa",     // Shoulder R: ODST Right
+      "WS_Gear\Vests\M52S\_textures\base\pouches_a.paa",          // Chest Pistol Mag L: Pistol Mag
+      "WS_Gear\Vests\M52S\_textures\base\pouches_a.paa",          // Chest Pistol Mag R: Pistol Mag
+      "WS_Gear\Vests\M52S\_textures\base\pouches_b.paa",          // Chest Pouch: ChestPouch
+      "WS_Gear\Vests\M52S\_textures\base\radio.paa",              // Shoulder Accessory L: Radio Left
+      "WS_Gear\Vests\M52S\_textures\base\radio.paa",              // Shoulder Accessory R: Radio Right
+      "WS_Gear\Vests\M52S\_textures\base\pouches_a.paa",          // Torso: 2x Pouch(?)
+      "WS_Gear\Vests\M52S\_textures\base\pouches_a.paa",          // Torso L: Pistol Mag
+      "WS_Gear\Vests\M52S\_textures\base\pouches_a.paa",          // Torso R: Pistol Mag
+      "WS_Gear\Vests\M52S\_textures\base\pouches_b.paa",          // Torso: 1x Pouch(?)
+      "WS_Gear\Vests\M52S\_textures\base\pouches_b.paa",          // Waist B: Pouch
+      "WS_Gear\Vests\M52S\_textures\base\pouches_a.paa",          // Waist SL: Grenades
+      "WS_Gear\Vests\M52S\_textures\base\pouches_a.paa",          // Waist SR: Grenades
+      "WS_Gear\Vests\M52S\_textures\base\pouches_a.paa",          // Waist FL: Pouches
+      "WS_Gear\Vests\M52S\_textures\base\pouches_a.paa",          // Waist FR: Pouches
+      "WS_Gear\Vests\M52S\_textures\base\radio.paa",              // Waist BL: Radio
+      "WS_Gear\Vests\M52S\_textures\base\radio.paa",              // Waist BR: Radio
+      "WS_Gear\Vests\M52S\_textures\base\pouches_b.paa",          // Waist SL: Smoke
+      "WS_Gear\Vests\M52S\_textures\base\pouches_b.paa",          // Waist SR: Smoke
+      "WS_Gear\Vests\M52S\_textures\base\pouches_b.paa",          // Leg L: LegPouchL
+      "WS_Gear\Vests\M52S\_textures\base\pouches_b.paa"           // Leg R: LegPouchR
     };
     class ItemInfo: VestItem
     {
@@ -226,35 +226,35 @@ class CfgWeapons
       };
       hiddenSelectionsTextures[] =
       {
-        "MA_Armor\data\Vests\M52_ODST\Color_Variants\MA_ODST_CQB_co.paa",
-        "MA_Armor\data\Vests\M52_ODST\Color_Variants\MA_ODST_CQB_co.paa",
-        "MA_Armor\data\Vests\M52_ODST\Color_Variants\MA_ODST_Marksman_co.paa",
-        "MA_Armor\data\Vests\M52_ODST\Color_Variants\MA_ODST_Marksman_co.paa",
-        "MA_Armor\data\Vests\M52_ODST\Color_Variants\MA_ODST_Vest_co.paa",
-        "MA_Armor\data\Vests\M52_ODST\Color_Variants\MA_ODST_Vest_co.paa",
-        "MA_Armor\data\Vests\M52_ODST\Color_Variants\MA_ODST_Vest_co.paa",
-        "MA_Armor\data\Vests\M52_ODST\Color_Variants\MA_ODST_Shoulders_co.paa",
-        "MA_Armor\data\Vests\M52_ODST\Color_Variants\MA_ODST_Shoulders_co.paa",
-        "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa",
-        "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa",
-        "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa",
-        "MA_Armor\data\Backpacks\ODST_Rucksack\Attachments\Backpack_Radio_ODST_co.paa",
-        "MA_Armor\data\Backpacks\ODST_Rucksack\Attachments\Backpack_Radio_ODST_co.paa",
-        "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa",
-        "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa",
-        "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa",
-        "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa",
-        "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa",
-        "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa",
-        "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa",
-        "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa",
-        "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa",
-        "MA_Armor\data\Backpacks\ODST_Rucksack\Attachments\Backpack_Radio_ODST_co.paa",
-        "MA_Armor\data\Backpacks\ODST_Rucksack\Attachments\Backpack_Radio_ODST_co.paa",
-        "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa",
-        "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa",
-        "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa",
-        "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa"
+        "WS_Gear\Vests\M52S\_textures\base\shoulders_cqb.paa",      // Shoulder L: CQB Left
+        "WS_Gear\Vests\M52S\_textures\base\shoulders_cqb.paa",      // Shoulder R: CQB Right
+        "WS_Gear\Vests\M52S\_textures\base\shoulders_marksman.paa", // Shoulder L: Marksman Left
+        "WS_Gear\Vests\M52S\_textures\base\shoulders_marksman.paa", // Shoulder R: Marksman Right
+        "WS_Gear\Vests\M52S\_textures\base\vest_main.paa",          // Bracer L: ODST Left
+        "WS_Gear\Vests\M52S\_textures\base\vest_main.paa",          // Bracer R: ODST Right
+        "WS_Gear\Vests\M52S\_textures\base\vest_main.paa",          // Chest Plate: ODST
+        "WS_Gear\Vests\M52S\_textures\base\shoulders_odst.paa",     // Shoulder L: ODST Left
+        "WS_Gear\Vests\M52S\_textures\base\shoulders_odst.paa",     // Shoulder R: ODST Right
+        "WS_Gear\Vests\M52S\_textures\base\pouches_a.paa",          // Chest Pistol Mag L: Pistol Mag
+        "WS_Gear\Vests\M52S\_textures\base\pouches_a.paa",          // Chest Pistol Mag R: Pistol Mag
+        "WS_Gear\Vests\M52S\_textures\base\pouches_b.paa",          // Chest Pouch: ChestPouch
+        "WS_Gear\Vests\M52S\_textures\base\radio.paa",              // Shoulder Accessory L: Radio Left
+        "WS_Gear\Vests\M52S\_textures\base\radio.paa",              // Shoulder Accessory R: Radio Right
+        "WS_Gear\Vests\M52S\_textures\base\pouches_a.paa",          // Torso: 2x Pouch(?)
+        "WS_Gear\Vests\M52S\_textures\base\pouches_a.paa",          // Torso L: Pistol Mag
+        "WS_Gear\Vests\M52S\_textures\base\pouches_a.paa",          // Torso R: Pistol Mag
+        "WS_Gear\Vests\M52S\_textures\base\pouches_b.paa",          // Torso: 1x Pouch(?)
+        "WS_Gear\Vests\M52S\_textures\base\pouches_b.paa",          // Waist B: Pouch
+        "WS_Gear\Vests\M52S\_textures\base\pouches_a.paa",          // Waist SL: Grenades
+        "WS_Gear\Vests\M52S\_textures\base\pouches_a.paa",          // Waist SR: Grenades
+        "WS_Gear\Vests\M52S\_textures\base\pouches_a.paa",          // Waist FL: Pouches
+        "WS_Gear\Vests\M52S\_textures\base\pouches_a.paa",          // Waist FR: Pouches
+        "WS_Gear\Vests\M52S\_textures\base\radio.paa",              // Waist BL: Radio
+        "WS_Gear\Vests\M52S\_textures\base\radio.paa",              // Waist BR: Radio
+        "WS_Gear\Vests\M52S\_textures\base\pouches_b.paa",          // Waist SL: Smoke
+        "WS_Gear\Vests\M52S\_textures\base\pouches_b.paa",          // Waist SR: Smoke
+        "WS_Gear\Vests\M52S\_textures\base\pouches_b.paa",          // Leg L: LegPouchL
+        "WS_Gear\Vests\M52S\_textures\base\pouches_b.paa"           // Leg R: LegPouchR
       };
       uniformModel = "MA_Armor\data\Vests\M52_ODST\M52_ODST_Vest.p3d";
       containerClass = "Supply200";
@@ -332,38 +332,7 @@ class CfgWeapons
 
     scope = 2;
     scopeArsenal = 2;
-    hiddenSelectionsTextures[] =
-    {
-      "MA_Armor\data\Vests\M52_ODST\Color_Variants\MA_ODST_CQB_co.paa",               // CQB Shoulder Left
-      "MA_Armor\data\Vests\M52_ODST\Color_Variants\MA_ODST_CQB_co.paa",               // CQB Shoulder Right
-      "MA_Armor\data\Vests\M52_ODST\Color_Variants\MA_ODST_Marksman_co.paa",          // Marksman Shoulder Left
-      "MA_Armor\data\Vests\M52_ODST\Color_Variants\MA_ODST_Marksman_co.paa",          // Marksman Shoulder Right
-      "MA_Armor\data\Vests\M52_ODST\Color_Variants\MA_ODST_Vest_co.paa",              // ODST Bracer Left
-      "MA_Armor\data\Vests\M52_ODST\Color_Variants\MA_ODST_Vest_co.paa",              // ODST Bracer Right
-      "MA_Armor\data\Vests\M52_ODST\Color_Variants\MA_ODST_Vest_co.paa",              // ODST Chest
-      "MA_Armor\data\Vests\M52_ODST\Color_Variants\MA_ODST_Shoulders_co.paa",         // ODST Shoulder Left
-      "MA_Armor\data\Vests\M52_ODST\Color_Variants\MA_ODST_Shoulders_co.paa",         // ODST Shoulder Right
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa",            // Chest Pistol Mag Left
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa",            // Chest Pistol Mag Right
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa",            // Chest Pouch
-      "MA_Armor\data\Backpacks\ODST_Rucksack\Attachments\Backpack_Radio_ODST_co.paa", // Shoulder Mounted Radio Left
-      "MA_Armor\data\Backpacks\ODST_Rucksack\Attachments\Backpack_Radio_ODST_co.paa", // Shoulder Mounted Radio Right
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa",            // Stomach Big Pouch
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa",            // Torso Pistol Mag Left
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa",            // Torso Pistol Mag Right
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa",            // Torso Big 2x Pouches
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa",            // Waist Back Pouch
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa",            // Waist Grenades Left
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa",            // Waist Grenades Right
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa",            // Waist Pouches Left
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa",            // Waist Pouches Right
-      "MA_Armor\data\Backpacks\ODST_Rucksack\Attachments\Backpack_Radio_ODST_co.paa", // Waist Radio Left
-      "MA_Armor\data\Backpacks\ODST_Rucksack\Attachments\Backpack_Radio_ODST_co.paa", // Waist Radio Right
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa",            // Waist Smoke Grenades Left
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa",            // Waist Smoke Grenades Right
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa",            // Leg Pouch Left
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa"             // Leg Pouch Right
-    };
+
     class ItemInfo: ItemInfo
     {
       hiddenSelections[] =
@@ -443,38 +412,7 @@ class CfgWeapons
 
     scope = 2;
     scopeArsenal = 2;
-    hiddenSelectionsTextures[] =
-    {
-      "MA_Armor\data\Vests\M52_ODST\Color_Variants\MA_ODST_CQB_co.paa",               // CQB Shoulder Left
-      "MA_Armor\data\Vests\M52_ODST\Color_Variants\MA_ODST_CQB_co.paa",               // CQB Shoulder Right
-      "MA_Armor\data\Vests\M52_ODST\Color_Variants\MA_ODST_Marksman_co.paa",          // Marksman Shoulder Left
-      "MA_Armor\data\Vests\M52_ODST\Color_Variants\MA_ODST_Marksman_co.paa",          // Marksman Shoulder Right
-      "MA_Armor\data\Vests\M52_ODST\Color_Variants\MA_ODST_Vest_co.paa",              // ODST Bracer Left
-      "MA_Armor\data\Vests\M52_ODST\Color_Variants\MA_ODST_Vest_co.paa",              // ODST Bracer Right
-      "MA_Armor\data\Vests\M52_ODST\Color_Variants\MA_ODST_Vest_co.paa",              // ODST Chest
-      "MA_Armor\data\Vests\M52_ODST\Color_Variants\MA_ODST_Shoulders_co.paa",         // ODST Shoulder Left
-      "MA_Armor\data\Vests\M52_ODST\Color_Variants\MA_ODST_Shoulders_co.paa",         // ODST Shoulder Right
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa",            // Chest Pistol Mag Left
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa",            // Chest Pistol Mag Right
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa",            // Chest Pouch
-      "MA_Armor\data\Backpacks\ODST_Rucksack\Attachments\Backpack_Radio_ODST_co.paa", // Shoulder Mounted Radio Left
-      "MA_Armor\data\Backpacks\ODST_Rucksack\Attachments\Backpack_Radio_ODST_co.paa", // Shoulder Mounted Radio Right
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa",            // Stomach Big Pouch
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa",            // Torso Pistol Mag Left
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa",            // Torso Pistol Mag Right
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa",            // Torso Big 2x Pouches
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa",            // Waist Back Pouch
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa",            // Waist Grenades Left
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa",            // Waist Grenades Right
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa",            // Waist Pouches Left
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_A_CO.paa",            // Waist Pouches Right
-      "MA_Armor\data\Backpacks\ODST_Rucksack\Attachments\Backpack_Radio_ODST_co.paa", // Waist Radio Left
-      "MA_Armor\data\Backpacks\ODST_Rucksack\Attachments\Backpack_Radio_ODST_co.paa", // Waist Radio Right
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa",            // Waist Smoke Grenades Left
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa",            // Waist Smoke Grenades Right
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa",            // Leg Pouch Left
-      "MA_Armor\data\vests\Marine_Pouches\data\MA_TrooperExtras_B_CO.paa"             // Leg Pouch Right
-    };
+
     class ItemInfo: ItemInfo
     {
       hiddenSelections[] =
