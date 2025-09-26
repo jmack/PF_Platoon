@@ -2,3 +2,4 @@
 /*/dist/addons/*.pbo
 /*/dist/addons/*.bisign
 /*/temp/
+*.excluded
