@@ -27,6 +27,7 @@ class XtdGearModels
         {
           "standard",
           "dukova",
+          "hayes",
           "mickelson",
         };
         class standard
@@ -36,6 +37,10 @@ class XtdGearModels
         class dukova
         {
           label = "L. Dukova";
+        };
+        class hayes
+        {
+          label = "S. Hayes";
         };
         class mickelson
         {
@@ -166,6 +171,32 @@ class CfgWeapons
     hiddenSelectionsTextures[] =
     {
       "WS_Gear\Headgear\CH252D\_textures\helmet_dukova.paa",
+      "WS_Gear\Headgear\CH252D\_textures\visor_dp.paa",
+      "WS_Gear\Headgear\CH252D\_textures\balaclava.paa"
+    };
+  };
+
+  /* Hayes */
+  class WS_CH252D_Helmet_Hayes: WS_CH252D_Helmet_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_CH252D_Helmet_Metaitem";
+      type = "hayes";
+    };
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Headgear\CH252D\_textures\helmet_hayes.paa",
+      "WS_Gear\Headgear\CH252D\_textures\visor.paa",
+      "WS_Gear\Headgear\CH252D\_textures\balaclava.paa"
+    };
+  };
+  class WS_CH252D_Helmet_Mickelson_dp: WS_CH252D_Helmet_Base_dp
+  {
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Headgear\CH252D\_textures\helmet_hayes.paa",
       "WS_Gear\Headgear\CH252D\_textures\visor_dp.paa",
       "WS_Gear\Headgear\CH252D\_textures\balaclava.paa"
     };
