@@ -63,7 +63,7 @@ class CfgWeapons
     displayName = "[WS] M56-E Helmet";
     ace_hearing_protection = 1;
     model = "MA_Armor\data\Helmets\H3_EOD\H3_EOD_Helmet.p3d";
-    picture = "";
+    picture = "WS_Images\Common\logo_color.paa";
     hiddenSelections[] =
     {
       "camo1",

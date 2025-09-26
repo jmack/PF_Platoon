@@ -66,7 +66,7 @@ class CfgWeapons
     dlc = "WS";
     displayName = "[WS] M52S Armor";
     model = "MA_Armor\data\Vests\M52_ODST\M52_ODST_Vest.p3d";
-    picture = "";
+    picture = "WS_Images\Common\logo_color.paa";
     hiddenSelections[] =
     {
       "Camo1",
