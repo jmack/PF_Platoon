@@ -1,6 +1,6 @@
 class CfgPatches
 {
-  class WS_M56E_Helmet
+  class WS_M52E_Helmet
   {
     author = "wlan0";
     addonRootClass = "WS_Gear";
@@ -12,9 +12,9 @@ class XtdGearModels
 {
   class CfgWeapons
   {
-    class WS_M56E_Helmet_Metaitem
+    class WS_M52E_Helmet_Metaitem
     {
-      label = "Wolf Squad M56-E";
+      label = "Wolf Squad M52-E";
       options[] =
       {
         "type",
@@ -48,11 +48,11 @@ class CfgWeapons
   class ItemCore;
   class ItemInfo;
   class HeadgearItem;
-  class WS_M56E_Helmet_Base: ItemCore
+  class WS_M52E_Helmet_Base: ItemCore
   {
     class XtdGearInfo
     {
-      model = "WS_M56E_Helmet_Metaitem";
+      model = "WS_M52E_Helmet_Metaitem";
       type = "standard";
     };
 
@@ -60,7 +60,7 @@ class CfgWeapons
     scopeArsenal = 2;
     author = "wlan0";
     dlc = "WS";
-    displayName = "[WS] M56-E Helmet";
+    displayName = "[WS] M52-E Helmet";
 
     model = "MA_Armor\data\Helmets\H3_EOD\H3_EOD_Helmet.p3d";
     picture = "WS_Images\Common\logo_color.paa";
@@ -71,8 +71,8 @@ class CfgWeapons
     };
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Headgear\M56-E\_textures\helmet_base.paa",
-      "WS_Gear\Headgear\M56-E\_textures\visor.paa"
+      "WS_Gear\Headgear\M52-E\_textures\helmet_base.paa",
+      "WS_Gear\Headgear\M52-E\_textures\visor.paa"
     };
 
     // ace hearing
@@ -109,8 +109,8 @@ class CfgWeapons
       };
       hiddenSelectionsTextures[] =
       {
-        "WS_Gear\Headgear\M56-E\_textures\helmet_base.paa",
-        "WS_Gear\Headgear\M56-E\_textures\visor.paa"
+        "WS_Gear\Headgear\M52-E\_textures\helmet_base.paa",
+        "WS_Gear\Headgear\M52-E\_textures\visor.paa"
       };
       class HitpointsProtectionInfo
       {
@@ -137,18 +137,18 @@ class CfgWeapons
   };
 
   /* Barnes */
-  class WS_M56E_Helmet_Barnes: WS_M56E_Helmet_Base
+  class WS_M52E_Helmet_Barnes: WS_M52E_Helmet_Base
   {
     class XtdGearInfo
     {
-      model = "WS_M56E_Helmet_Metaitem";
+      model = "WS_M52E_Helmet_Metaitem";
       type = "barnes";
     };
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Headgear\M56-E\_textures\helmet_barnes.paa",
-      "WS_Gear\Headgear\M56-E\_textures\visor.paa"
+      "WS_Gear\Headgear\M52-E\_textures\helmet_barnes.paa",
+      "WS_Gear\Headgear\M52-E\_textures\visor.paa"
     };
   }
 };
