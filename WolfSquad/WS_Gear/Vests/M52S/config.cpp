@@ -29,6 +29,7 @@ class XtdGearModels
           "standard",
           "cqb",
           "marksman",
+          "barnes",
         };
         class light
         {
@@ -45,6 +46,10 @@ class XtdGearModels
         class marksman
         {
           label = "Marksman";
+        };
+        class barnes
+        {
+          label = "C. Barnes";
         };
       };
     };
@@ -320,8 +325,9 @@ class CfgWeapons
     };
   };
 
-  // Start actual armor definitions
+  /* Start actual armor definitions */
 
+  // Light
   class WS_M52S_Vest_Light: WS_M52S_Vest_Base
   {
     class XtdGearInfo
@@ -338,69 +344,70 @@ class CfgWeapons
       hiddenSelections[] =
       {
         // Commenting a line out makes it visible on the model
-        "Camo1",                // CQB Shoulder Left
-        "Camo2",                // CQB Shoulder Right
-        "Camo3",                // Marksman Shoulder Left
-        "Camo4",                // Marksman Shoulder Right
-        "Camo5",                // ODST Bracer Left
-        "Camo6",                // ODST Bracer Right
-        "Camo7",                // ODST Chest
-        "Camo8",                // ODST Shoulder Left
-        "Camo9",                // ODST Shoulder Right
-        "Camo10",               // Chest Pistol Mag Left
-        "Camo11",               // Chest Pistol Mag Right
-        "Camo12",               // Chest Pouch
-        "Camo13",               // Shoulder Mounted Radio Left
-        "Camo14",               // Shoulder Mounted Radio Right
-        "Camo15",               // Stomach Big Pouch
-        "Camo16",               // Torso Pistol Mag Left
-        "Camo17",               // Torso Pistol Mag Right
-        "Camo18",               // Torso Big 2x Pouches
-        "Camo19",               // Waist Back Pouch
-        "Camo20",               // Waist Grenades Left
-        "Camo21",               // Waist Grenades Right
-        "Camo22",               // Waist Pouches Left
-        "Camo23",               // Waist Pouches Right
-        "Camo24",               // Waist Radio Left
-        "Camo25",               // Waist Radio Right
-        "Camo26",               // Waist Smoke Grenades Left
-        "Camo27",               // Waist Smoke Grenades Right
-        "Camo28",               // Leg Pouch Left
-        "Camo29",               // Leg Pouch Right
+        "Camo1",
+        "Camo2",
+        "Camo3",
+        "Camo4",
+        "Camo5",
+        "Camo6",
+        "Camo7",
+        "Camo8",
+        "Camo9",
+        "Camo10",
+        "Camo11",
+        "Camo12",
+        "Camo13",
+        "Camo14",
+        "Camo15",
+        "Camo16",
+        "Camo17",
+        "Camo18",
+        "Camo19",
+        "Camo20",
+        "Camo21",
+        "Camo22",
+        "Camo23",
+        "Camo24",
+        "Camo25",
+        "Camo26",
+        "Camo27",
+        "Camo28",
+        "Camo29",
 
-        "CQB_Left",             // CQB Shoulder Left
-        "CQB_Right",            // CQB Shoulder Right
-        "Marksman_Left",        // Marksman Shoulder Left
-        "Marksman_Right",       // Marksman Shoulder Right
-        // "ODST_Bracer_Left",     // ODST Bracer Left
-        // "ODST_Bracer_Right",    // ODST Bracer Right
-        // "ODST_Chest",           // ODST Chest
-        "ODST_Left",            // ODST Shoulder Left
-        "ODST_Right",           // ODST Shoulder Right
-        "ChestPMLeft",          // Chest Pistol Mag Left
-        "ChestPMRight",         // Chest Pistol Mag Right
-        "ChestPouch",           // Chest Pouch
-        "LShoulderRadio",       // Shoulder Mounted Radio Left
-        "RShoulderRadio",       // Shoulder Mounted Radio Right
-        "StomachPouch",         // Stomach Big Pouch
-        "TorsoPMLeft",          // Torso Pistol Mag Left
-        "TorsoPMRight",         // Torso Pistol Mag Right
-        "TorsoPouch",           // Torso Big 2x Pouches
-        "WaistBack",            // Waist Back Pouch
-        "WaistGLeft",           // Waist Grenades Left
-        "WaistGRight",          // Waist Grenades Right
-        "WaistPLeft",           // Waist Pouches Left
-        "WaistPRight",          // Waist Pouches Right
-        "WaistRLeft",           // Waist Radio Left
-        "WaistRRight",          // Waist Radio Right
-        "WaistSLeft",           // Waist Smoke Grenades Left
-        "WaistSRight",          // Waist Smoke Grenades Right
-        "LegPouchL",            // Leg Pouch Left
-        "LegPouchR"             // Leg Pouch Right
+        "CQB_Left",
+        "CQB_Right",
+        "Marksman_Left",
+        "Marksman_Right",
+        // "ODST_Bracer_Left",
+        // "ODST_Bracer_Right",
+        // "ODST_Chest",
+        "ODST_Left",
+        "ODST_Right",
+        "ChestPMLeft",
+        "ChestPMRight",
+        "ChestPouch",
+        "LShoulderRadio",
+        "RShoulderRadio",
+        "StomachPouch",
+        "TorsoPMLeft",
+        "TorsoPMRight",
+        "TorsoPouch",
+        "WaistBack",
+        "WaistGLeft",
+        "WaistGRight",
+        "WaistPLeft",
+        "WaistPRight",
+        "WaistRLeft",
+        "WaistRRight",
+        "WaistSLeft",
+        "WaistSRight",
+        "LegPouchL",
+        "LegPouchR",
       };
     };
   };
 
+  // Standard
   class WS_M52S_Vest_Standard: WS_M52S_Vest_Base
   {
     // Metaitem link
@@ -418,6 +425,87 @@ class CfgWeapons
       hiddenSelections[] =
       {
         // Commenting a line out makes it visible on the model
+        "Camo1",
+        "Camo2",
+        "Camo3",
+        "Camo4",
+        "Camo5",
+        "Camo6",
+        "Camo7",
+        "Camo8",
+        "Camo9",
+        "Camo10",
+        "Camo11",
+        "Camo12",
+        "Camo13",
+        "Camo14",
+        "Camo15",
+        "Camo16",
+        "Camo17",
+        "Camo18",
+        "Camo19",
+        "Camo20",
+        "Camo21",
+        "Camo22",
+        "Camo23",
+        "Camo24",
+        "Camo25",
+        "Camo26",
+        "Camo27",
+        "Camo28",
+        "Camo29",
+
+        "CQB_Left",
+        "CQB_Right",
+        "Marksman_Left",
+        "Marksman_Right",
+        // "ODST_Bracer_Left",
+        // "ODST_Bracer_Right",
+        // "ODST_Chest",
+        // "ODST_Left",
+        // "ODST_Right",
+        "ChestPMLeft",
+        "ChestPMRight",
+        "ChestPouch",
+        "LShoulderRadio",
+        "RShoulderRadio",
+        "StomachPouch",
+        "TorsoPMLeft",
+        "TorsoPMRight",
+        "TorsoPouch",
+        // "WaistBack",
+        "WaistGLeft",
+        "WaistGRight",
+        // "WaistPLeft",
+        "WaistPRight",
+        "WaistRLeft",
+        "WaistRRight",
+        "WaistSLeft",
+        // "WaistSRight",
+        "LegPouchL",
+        "LegPouchR",
+      };
+    };
+  };
+
+  // Barnes
+  class WS_M52S_Vest_Barnes: WS_M52S_Vest_Base
+  {
+    // Metaitem link
+    class XtdGearInfo
+    {
+      model = "WS_M52S_Vest_Metaitem";
+      type = "barnes";
+    };
+
+    scope = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      hiddenSelections[] =
+      {
+        // Commenting a line out makes it visible on the model
         "Camo1",                // CQB Shoulder Left
         "Camo2",                // CQB Shoulder Right
         "Camo3",                // Marksman Shoulder Left
@@ -429,13 +517,13 @@ class CfgWeapons
         "Camo9",                // ODST Shoulder Right
         "Camo10",               // Chest Pistol Mag Left
         "Camo11",               // Chest Pistol Mag Right
-        "Camo12",               // Chest Pouch
+        "Camo12",               // Big Stomach Pouch
         "Camo13",               // Shoulder Mounted Radio Left
         "Camo14",               // Shoulder Mounted Radio Right
-        "Camo15",               // Stomach Big Pouch
+        "Camo15",               // Stomach 2x Pouches
         "Camo16",               // Torso Pistol Mag Left
         "Camo17",               // Torso Pistol Mag Right
-        "Camo18",               // Torso Big 2x Pouches
+        "Camo18",               // Chest Big Pouch
         "Camo19",               // Waist Back Pouch
         "Camo20",               // Waist Grenades Left
         "Camo21",               // Waist Grenades Right
@@ -448,35 +536,35 @@ class CfgWeapons
         "Camo28",               // Leg Pouch Left
         "Camo29",               // Leg Pouch Right
 
-        "CQB_Left",             // CQB Shoulder Left
-        "CQB_Right",            // CQB Shoulder Right
+        // "CQB_Left",             // CQB Shoulder Left
+        // "CQB_Right",            // CQB Shoulder Right
         "Marksman_Left",        // Marksman Shoulder Left
         "Marksman_Right",       // Marksman Shoulder Right
         // "ODST_Bracer_Left",     // ODST Bracer Left
         // "ODST_Bracer_Right",    // ODST Bracer Right
         // "ODST_Chest",           // ODST Chest
-        // "ODST_Left",            // ODST Shoulder Left
-        // "ODST_Right",           // ODST Shoulder Right
-        "ChestPMLeft",          // Chest Pistol Mag Left
-        "ChestPMRight",         // Chest Pistol Mag Right
-        "ChestPouch",           // Chest Pouch
+        "ODST_Left",            // ODST Shoulder Left
+        "ODST_Right",           // ODST Shoulder Right
+        // "ChestPMLeft",          // Chest Pistol Mag Left
+        // "ChestPMRight",         // Chest Pistol Mag Right
+        // "ChestPouch",           // Big Stomach Pouch
         "LShoulderRadio",       // Shoulder Mounted Radio Left
         "RShoulderRadio",       // Shoulder Mounted Radio Right
-        "StomachPouch",         // Stomach Big Pouch
+        "StomachPouch",         // Stomach 2x Pouches
         "TorsoPMLeft",          // Torso Pistol Mag Left
         "TorsoPMRight",         // Torso Pistol Mag Right
-        "TorsoPouch",           // Torso Big 2x Pouches
-        // "WaistBack",            // Waist Back Pouch
+        "TorsoPouch",           // Chest Big Pouch
+        "WaistBack",            // Waist Back Pouch
         "WaistGLeft",           // Waist Grenades Left
-        "WaistGRight",          // Waist Grenades Right
+        // "WaistGRight",          // Waist Grenades Right
         // "WaistPLeft",           // Waist Pouches Left
-        "WaistPRight",          // Waist Pouches Right
+        // "WaistPRight",          // Waist Pouches Right
         "WaistRLeft",           // Waist Radio Left
         "WaistRRight",          // Waist Radio Right
-        "WaistSLeft",           // Waist Smoke Grenades Left
-        // "WaistSRight",          // Waist Smoke Grenades Right
-        "LegPouchL",            // Leg Pouch Left
-        "LegPouchR"             // Leg Pouch Right
+        // "WaistSLeft",           // Waist Smoke Grenades Left
+        "WaistSRight",          // Waist Smoke Grenades Right
+        // "LegPouchL",            // Leg Pouch Left
+        // "LegPouchR"             // Leg Pouch Right
       };
     };
   };
