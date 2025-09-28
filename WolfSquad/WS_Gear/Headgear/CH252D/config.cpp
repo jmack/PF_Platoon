@@ -71,9 +71,7 @@ class CfgWeapons
     author = "wlan0";
     dlc = "WS";
     displayName = "[WS] CH252D Helmet";
-    ace_hearing_protection = 1;
-    ace_hearing_lowerVolume = 0;
-    ace_hearing_hasEHP = 1;
+
     model = "MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm.p3d";
     picture = "WS_Images\Common\logo_color.paa";
     hiddenSelections[] =
@@ -88,6 +86,22 @@ class CfgWeapons
       "WS_Gear\Headgear\CH252D\_textures\visor.paa",
       "WS_Gear\Headgear\CH252D\_textures\balaclava.paa"
     };
+
+    // ace hearing
+    ace_hearing_protection = 1;
+    ace_hearing_lowerVolume = 0;
+    ace_hearing_hasEHP = 1;
+
+    // ace goggles
+    ace_color[] = {0, 0, 0};  // Post-proccess color
+    ace_tintAmount = 0;  // Amount of tint applied to the color
+    ace_resistance = 2;  // Resistance to breaking (0 or 1 or 2)
+    ace_protection = 1;  // Provides protection (0-no, 1-yes)
+    ace_overlay = "";  // (Optional) Default overlay image path ("" for none)
+    ace_overlayDirt = "A3\Ui_f\data\igui\rsctitles\HealthTextures\dust_upper_ca.paa";  // (Optional) Dirt overlay image path
+    ace_overlayCracked = "";  // (Optional) Cracked overlay image path
+    ace_dustPath = "";  // (Optional) Dust overlay image path
+
     class ItemInfo: HeadgearItem
     {
       uniformModel = "MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm.p3d";
