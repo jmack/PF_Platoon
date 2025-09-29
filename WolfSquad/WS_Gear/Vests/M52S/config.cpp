@@ -501,6 +501,39 @@ class CfgWeapons
     scope = 2;
     scopeArsenal = 2;
 
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Vests\M52S\_textures\base\shoulders_cqb.paa",        // CQB Shoulder Left
+      "WS_Gear\Vests\M52S\_textures\base\shoulders_cqb.paa",        // CQB Shoulder Right
+      "WS_Gear\Vests\M52S\_textures\base\shoulders_marksman.paa",   // Marksman Shoulder Left
+      "WS_Gear\Vests\M52S\_textures\base\shoulders_marksman.paa",   // Marksman Shoulder Right
+      "WS_Gear\Vests\M52S\_textures\base\vest_main.paa",            // ODST Bracer Left
+      "WS_Gear\Vests\M52S\_textures\base\vest_main.paa",            // ODST Bracer Right
+      "WS_Gear\Vests\M52S\_textures\barnes\vest.paa",               // ODST Chest
+      "WS_Gear\Vests\M52S\_textures\base\shoulders_odst.paa",       // ODST Shoulder Left
+      "WS_Gear\Vests\M52S\_textures\base\shoulders_odst.paa",       // ODST Shoulder Right
+      "WS_Gear\Vests\M52S\_textures\base\pouches_a.paa",            // Chest Pistol Mag Leftag
+      "WS_Gear\Vests\M52S\_textures\base\pouches_a.paa",            // Chest Pistol Mag Rightag
+      "WS_Gear\Vests\M52S\_textures\base\pouches_b.paa",            // Big Stomach Pouch
+      "WS_Gear\Vests\M52S\_textures\base\radio.paa",                // Shoulder Mounted Radio LeftLeft
+      "WS_Gear\Vests\M52S\_textures\base\radio.paa",                // Shoulder Mounted Radio RightRight
+      "WS_Gear\Vests\M52S\_textures\base\pouches_a.paa",            // Stomach 2x Pouches
+      "WS_Gear\Vests\M52S\_textures\base\pouches_a.paa",            // Torso Pistol Mag Left
+      "WS_Gear\Vests\M52S\_textures\base\pouches_a.paa",            // Torso Pistol Mag Right
+      "WS_Gear\Vests\M52S\_textures\base\pouches_b.paa",            // Chest Big Pouch
+      "WS_Gear\Vests\M52S\_textures\base\pouches_b.paa",            // Waist Back Pouch
+      "WS_Gear\Vests\M52S\_textures\base\pouches_a.paa",            // Waist Grenades Left
+      "WS_Gear\Vests\M52S\_textures\base\pouches_a.paa",            // Waist Grenades Right
+      "WS_Gear\Vests\M52S\_textures\base\pouches_a.paa",            // Waist Pouches Left
+      "WS_Gear\Vests\M52S\_textures\base\pouches_a.paa",            // Waist Pouches Right
+      "WS_Gear\Vests\M52S\_textures\base\radio.paa",                // Waist Radio Left
+      "WS_Gear\Vests\M52S\_textures\base\radio.paa",                // Waist Radio Right
+      "WS_Gear\Vests\M52S\_textures\base\pouches_b.paa",            // Waist Smoke Grenades Left
+      "WS_Gear\Vests\M52S\_textures\base\pouches_b.paa",            // Waist Smoke Grenades Right
+      "WS_Gear\Vests\M52S\_textures\base\pouches_b.paa",            // Leg Pouch Left
+      "WS_Gear\Vests\M52S\_textures\base\pouches_b.paa"             // Leg Pouch Right
+    };
+
     class ItemInfo: ItemInfo
     {
       hiddenSelections[] =
