@@ -30,6 +30,7 @@ class XtdGearModels
           "cqb",
           "marksman",
           "barnes",
+          "kuroda",
         };
         class light
         {
@@ -50,6 +51,10 @@ class XtdGearModels
         class barnes
         {
           label = "C. Barnes";
+        };
+        class kuroda
+        {
+          label = "E. Kuroda";
         };
       };
     };
@@ -598,6 +603,120 @@ class CfgWeapons
         "WaistSRight",          // Waist Smoke Grenades Right
         // "LegPouchL",            // Leg Pouch Left
         // "LegPouchR"             // Leg Pouch Right
+      };
+    };
+  };
+
+  // Kuroda
+  class WS_M52S_Vest_Kuroda: WS_M52S_Vest_Base
+  {
+    // Metaitem link
+    class XtdGearInfo
+    {
+      model = "WS_M52S_Vest_Metaitem";
+      type = "kuroda";
+    };
+
+    scope = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Vests\M52S\_textures\base\shoulders_cqb.paa",        // CQB Shoulder Left
+      "WS_Gear\Vests\M52S\_textures\base\shoulders_cqb.paa",        // CQB Shoulder Right
+      "WS_Gear\Vests\M52S\_textures\base\shoulders_marksman.paa",   // Marksman Shoulder Left
+      "WS_Gear\Vests\M52S\_textures\base\shoulders_marksman.paa",   // Marksman Shoulder Right
+      "WS_Gear\Vests\M52S\_textures\base\vest_main.paa",            // ODST Bracer Left
+      "WS_Gear\Vests\M52S\_textures\base\vest_main.paa",            // ODST Bracer Right
+      "WS_Gear\Vests\M52S\_textures\kuroda\vest.paa",               // ODST Chest
+      "WS_Gear\Vests\M52S\_textures\base\shoulders_odst.paa",       // ODST Shoulder Left
+      "WS_Gear\Vests\M52S\_textures\base\shoulders_odst.paa",       // ODST Shoulder Right
+      "WS_Gear\Vests\M52S\_textures\base\pouches_a.paa",            // Chest Pistol Mag Leftag
+      "WS_Gear\Vests\M52S\_textures\base\pouches_a.paa",            // Chest Pistol Mag Rightag
+      "WS_Gear\Vests\M52S\_textures\base\pouches_b.paa",            // Big Stomach Pouch
+      "WS_Gear\Vests\M52S\_textures\base\radio.paa",                // Shoulder Mounted Radio LeftLeft
+      "WS_Gear\Vests\M52S\_textures\base\radio.paa",                // Shoulder Mounted Radio RightRight
+      "WS_Gear\Vests\M52S\_textures\base\pouches_a.paa",            // Stomach 2x Pouches
+      "WS_Gear\Vests\M52S\_textures\base\pouches_a.paa",            // Torso Pistol Mag Left
+      "WS_Gear\Vests\M52S\_textures\base\pouches_a.paa",            // Torso Pistol Mag Right
+      "WS_Gear\Vests\M52S\_textures\base\pouches_b.paa",            // Chest Big Pouch
+      "WS_Gear\Vests\M52S\_textures\base\pouches_b.paa",            // Waist Back Pouch
+      "WS_Gear\Vests\M52S\_textures\base\pouches_a.paa",            // Waist Grenades Left
+      "WS_Gear\Vests\M52S\_textures\base\pouches_a.paa",            // Waist Grenades Right
+      "WS_Gear\Vests\M52S\_textures\base\pouches_a.paa",            // Waist Pouches Left
+      "WS_Gear\Vests\M52S\_textures\base\pouches_a.paa",            // Waist Pouches Right
+      "WS_Gear\Vests\M52S\_textures\base\radio.paa",                // Waist Radio Left
+      "WS_Gear\Vests\M52S\_textures\base\radio.paa",                // Waist Radio Right
+      "WS_Gear\Vests\M52S\_textures\base\pouches_b.paa",            // Waist Smoke Grenades Left
+      "WS_Gear\Vests\M52S\_textures\base\pouches_b.paa",            // Waist Smoke Grenades Right
+      "WS_Gear\Vests\M52S\_textures\base\pouches_b.paa",            // Leg Pouch Left
+      "WS_Gear\Vests\M52S\_textures\base\pouches_b.paa"             // Leg Pouch Right
+    };
+
+    class ItemInfo: ItemInfo
+    {
+      hiddenSelections[] =
+      {
+        // Commenting a line out makes it visible on the model
+        "Camo1",                // CQB Shoulder Left
+        "Camo2",                // CQB Shoulder Right
+        "Camo3",                // Marksman Shoulder Left
+        "Camo4",                // Marksman Shoulder Right
+        "Camo5",                // ODST Bracer Left
+        "Camo6",                // ODST Bracer Right
+        "Camo7",                // ODST Chest
+        "Camo8",                // ODST Shoulder Left
+        "Camo9",                // ODST Shoulder Right
+        "Camo10",               // Chest Pistol Mag Left
+        "Camo11",               // Chest Pistol Mag Right
+        "Camo12",               // Big Stomach Pouch
+        "Camo13",               // Shoulder Mounted Radio Left
+        "Camo14",               // Shoulder Mounted Radio Right
+        "Camo15",               // Stomach 2x Pouches
+        "Camo16",               // Torso Pistol Mag Left
+        "Camo17",               // Torso Pistol Mag Right
+        "Camo18",               // Chest Big Pouch
+        "Camo19",               // Waist Back Pouch
+        "Camo20",               // Waist Grenades Left
+        "Camo21",               // Waist Grenades Right
+        "Camo22",               // Waist Pouches Left
+        "Camo23",               // Waist Pouches Right
+        "Camo24",               // Waist Radio Left
+        "Camo25",               // Waist Radio Right
+        "Camo26",               // Waist Smoke Grenades Left
+        "Camo27",               // Waist Smoke Grenades Right
+        "Camo28",               // Leg Pouch Left
+        "Camo29",               // Leg Pouch Right
+
+        "CQB_Left",             // CQB Shoulder Left
+        "CQB_Right",            // CQB Shoulder Right
+        "Marksman_Left",        // Marksman Shoulder Left
+        "Marksman_Right",       // Marksman Shoulder Right
+        // "ODST_Bracer_Left",     // ODST Bracer Left
+        // "ODST_Bracer_Right",    // ODST Bracer Right
+        // "ODST_Chest",           // ODST Chest
+        "ODST_Left",            // ODST Shoulder Left
+        "ODST_Right",           // ODST Shoulder Right
+        "ChestPMLeft",          // Chest Pistol Mag Left
+        "ChestPMRight",         // Chest Pistol Mag Right
+        "ChestPouch",           // Big Stomach Pouch
+        "LShoulderRadio",       // Shoulder Mounted Radio Left
+        "RShoulderRadio",       // Shoulder Mounted Radio Right
+        "StomachPouch",         // Stomach 2x Pouches
+        // "TorsoPMLeft",          // Torso Pistol Mag Left
+        // "TorsoPMRight",         // Torso Pistol Mag Right
+        "TorsoPouch",           // Chest Big Pouch
+        // "WaistBack",            // Waist Back Pouch
+        "WaistGLeft",           // Waist Grenades Left
+        // "WaistGRight",          // Waist Grenades Right
+        // "WaistPLeft",           // Waist Pouches Left
+        // "WaistPRight",          // Waist Pouches Right
+        "WaistRLeft",           // Waist Radio Left
+        // "WaistRRight",          // Waist Radio Right
+        // "WaistSLeft",           // Waist Smoke Grenades Left
+        "WaistSRight",          // Waist Smoke Grenades Right
+        // "LegPouchL",            // Leg Pouch Left
+        "LegPouchR"             // Leg Pouch Right
       };
     };
   };

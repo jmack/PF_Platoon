@@ -26,10 +26,15 @@ class XtdGearModels
         values[] =
         {
           "standard",
+          "kuroda",
         };
         class standard
         {
           label = "Standard";
+        };
+        class kuroda
+        {
+          label = "E. Kuroda";
         };
       };
     };
@@ -128,6 +133,21 @@ class CfgWeapons
           passThrough = 0.1;
         };
       };
+    };
+  };
+
+  class WS_S1_Helmet_Kuroda: WS_S1_Helmet_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_S1_Helmet_Metaitem";
+      type = "kuroda";
+    };
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Headgear\S-1\_textures\helmet_kuroda.paa",
+      "WS_Gear\Headgear\S-1\_textures\visor_silver.paa"
     };
   };
 };
