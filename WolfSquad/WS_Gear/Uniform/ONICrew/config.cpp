@@ -80,12 +80,19 @@ class XtdGearModels
           "ens",
           "hnsc",
           "cpo",
+          "hmc",
           "po1",
+          "hm1",
           "po2",
+          "hm2",
           "po3",
+          "hm3",
           "cn",
           "hn",
           "ca",
+          "ha",
+          "cr",
+          "hr",
         };
         class none
         {
@@ -94,54 +101,102 @@ class XtdGearModels
         class cdr
         {
           label = "CDR";
+          description = "O-5 : Commander";
         };
         class lcdr
         {
           label = "LCDR";
+          description = "O-4 : Lieutenant Commander";
         };
         class lt
         {
           label = "LT";
+          description = "O-3 : Lieutenant";
         };
         class ltjg
         {
           label = "LTJG";
+          description = "O-2 : Lieutenant Junior Grade";
         };
         class ens
         {
           label = "ENS";
+          description = "O-1 : Ensign";
         };
         class hnsc
         {
           label = "HNSC";
+          description = "E-8 : Senior Chief Hospital Corpsman";
         };
         class cpo
         {
           label = "CPO";
+          description = "E-7 : Chief Petty Officer";
         };
+        class hmc
+        {
+          label = "HMC";
+          description = "E-7 : Chief Hospital Corpsman";
+        }
         class po1
         {
           label = "PO1";
+          description = "E-6 : Petty Officer First Class";
+        };
+        class hm1
+        {
+          label = "HM1";
+          description = "E-6 : Hospital Corpsman First Class";
         };
         class po2
         {
           label = "PO2";
+          description = "E-5 : Petty Officer Second Class";
+        };
+        class hm2
+        {
+          label = "HM2";
+          description = "E-5 : Hospital Corpsman Second Class";
         };
         class po3
         {
           label = "PO3";
+          description = "E-4 : Petty Officer Third Class";
+        };
+        class hm3
+        {
+          label = "HM3";
+          description = "E-4 : Hospital Corpsman Third Class";
         };
         class cn
         {
           label = "CN";
+          description = "E-3 : Crewman";
         };
         class hn
         {
           label = "HN";
+          description = "E-3 : Hospitalman";
         };
         class ca
         {
           label = "CA";
+          description = "E-2 : Crewman Apprentice";
+        };
+        class ha
+        {
+          label = "HA";
+          description = "E-2 : Hospitalman Apprentice";
+        };
+        class cr
+        {
+          label = "CR";
+          description = "E-1 : Crewman Recruit";
+        };
+        class hr
+        {
+          label = "HR";
+          description = "E-1 : Hospitalman Recruit";
         };
       };
     };
