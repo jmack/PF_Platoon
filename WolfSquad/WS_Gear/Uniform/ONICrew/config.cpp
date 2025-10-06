@@ -627,6 +627,37 @@ class CfgWeapons
       uniformClass = "WS_Gear_Uniform_ONICrew_F_Black_PO3";
     };
   };
+  // Black, HM3
+  class WS_Gear_Uniform_ONICrew_M_Black_HM3: WS_Gear_Uniform_ONICrew_M_Black
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "crew";
+      rank = "hm3";
+    };
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_M_Black_HM3";
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_F_Black_HM3: WS_Gear_Uniform_ONICrew_F_Black
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "crew";
+      rank = "hm3";
+    };
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_F_Black_HM3";
+    };
+  };
   // Black, CN
   class WS_Gear_Uniform_ONICrew_M_Black_CN: WS_Gear_Uniform_ONICrew_M_Black
   {
@@ -1259,6 +1290,24 @@ class CfgVehicles
     {
       "WS_Gear\Uniform\ONICrew\_textures\black\po3.paa",
       "WS_Gear\Uniform\ONICrew\_textures\black\po3.paa"
+    };
+  };
+  // Black, HM3
+  class WS_Gear_Uniform_ONICrew_M_Black_HM3: WS_Gear_Uniform_ONICrew_M_Black
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_M_Black_HM3";
+    hiddenSelectionsTextures[]=
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\black\hm3.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_F_Black_HM3: WS_Gear_Uniform_ONICrew_F_Black
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_F_Black_HM3";
+    hiddenSelectionsTextures[]=
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\black\hm3.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\black\hm3.paa"
     };
   };
   // Black, CN
