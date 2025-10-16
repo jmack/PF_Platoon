@@ -28,6 +28,9 @@ class CfgFunctions
       class letterbox { };
       class logMsg { };
       class setSpecialization { };
+      class skipBriefing {
+        preInit = 1;
+      };
     };
   };
 };
