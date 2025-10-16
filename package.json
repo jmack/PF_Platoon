@@ -1,7 +1,12 @@
 {
+  "type": "module",
   "dependencies": {
     "corepack": "^0.34.0",
-    "node-images": "^2.2.1",
+    "images": "^3.2.4",
+    "prettier": "^3.6.2",
     "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.8.0"
   }
 }
