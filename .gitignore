@@ -2,4 +2,5 @@
 /*/dist/addons/*.pbo
 /*/dist/addons/*.bisign
 /*/temp/
+node_modules
 *.excluded
