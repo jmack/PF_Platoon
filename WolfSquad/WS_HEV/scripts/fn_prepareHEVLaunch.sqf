@@ -53,6 +53,8 @@ if ((_console getVariable ["DMNS_PodsLaunchIn", -1]) > -1) exitWith {
 // Not in cooldown or already counting down: start 30 second countdown
 _console setVariable ["DMNS_PodsLaunchIn", 30, true];
 
+["WS_HEVCountdownStarted", [_console]] call CBA_fnc_globalEvent;
+
 While {(_console getVariable ["DMNS_PodsLaunchIn", -1]) > 0} do {
   _number = _console getVariable ["DMNS_PodsLaunchIn", -1];
   _console setVariable ["DMNS_PodsLaunchIn", (_number-1), true];
@@ -70,6 +72,7 @@ While {(_console getVariable ["DMNS_PodsLaunchIn", -1]) > 0} do {
 
 // If we now hit -1, it means we canceled while the countdown was going and should abort
 if ((_console getVariable ["DMNS_PodsLaunchIn", -1]) == -1) exitWith {
+  ["WS_HEVCountdownCanceled", [_console]] call CBA_fnc_globalEvent;
   playSound3d [
     "a3\missions_f_beta\data\sounds\firing_drills\checkpoint_not_clear.wss",
     _console,

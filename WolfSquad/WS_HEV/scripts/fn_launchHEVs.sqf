@@ -177,6 +177,8 @@ if (count _listOfPlayers < 1) then {
   [_launchDelay,"Launch In",_listOfPlayers,_countDownDoneEventString] remoteExecCall ["DMNS_fnc_CountDown",_listOfPlayers];
 
   {
+    ["WS_HEVLaunchPreparing", [_x]] call CBA_fnc_globalEvent;
+
     [
       {!isNull (gunner (_this select 0))},
       {
