@@ -18,13 +18,69 @@ WS_fnc_InitHEVs = {
      */
     // synchronizes a parent panel countdown (the one actually running the drop) with multiple
     // child panels (which are not) so that any of them can cancel
-    WS_fnc_SyncCountdowns = {
+    WS_fnc_StartMultiLaunch = {
       if (!params [
-        ["_parent", objNull, [objNull]],
-        ["_children", [], [[]]]
+        ["_panel", objNull, [objNull]]
       ]) exitWith { 
-        ["ERROR", format ["Bad params were passed to WS_fnc_SyncCountdown! _parent: %1, _children: %2", _parent, _children]] call WS_fnc_LogMsg;
+        ["ERROR", format ["Bad params were passed to WS_fnc_SyncCountdown! _panel: %1", _panel]] call WS_fnc_LogMsg;
         false
+      };
+
+      _panelBays = ((WS_HEV_Map get "panels") get (str _panel));
+      _childPanels = [];
+      {
+        _childPanels pushBack (((WS_HEV_Map get "bays") get _x) get "owner");
+      } forEach _panelBays;
+
+      [_panel, _childPanels] spawn {
+        params ["_panel", "_childPanels"];
+
+        _abort = false;
+        while { !_abort } do {
+          _curCount = _panel getVariable ["DMNS_PodsLaunchIn", -1];
+          _prevCount = _panel getVariable ["WS_PodsLaunchPrev", -1];
+
+          waitUntil { sleep 0.5; _curCount != -1 || _prevCount != -1 };
+
+          ["DEBUG", "-----"] call WS_fnc_LogMsg;
+          ["DEBUG", format ["cur: %1 | prev: %2", _curCount, _prevCount]] call WS_fnc_LogMsg;
+
+          // check if we've aborted the launch
+          if (_curCount == -1) then {
+            _abort = true;
+          };
+
+          // check if any of the child panels have aborted the multi launch
+          {
+            _bayCount = _x getVariable ["DMNS_PodsLaunchIn", -1];
+            ["DEBUG", format ["%1: %2", _x, _bayCount]] call WS_fnc_LogMsg;
+
+            if (_bayCount < _prevCount && _prevCount != 29 && _prevCount != -2) then {
+              ["DEBUG", format ["abort tripped by %1! _bayCount: %2, _prevCount: %3", _x, _bayCount, _prevCount]] call WS_fnc_LogMsg;
+              _abort = true;
+            };
+          } forEach _childPanels;
+
+          // if we have aborted, everything goes to -1
+          if (_abort) then {
+            _panel setVariable ["DMNS_PodsLaunchIn", -1, true];
+            _panel setVariable ["WS_PodsLaunchPrev", -1, true];
+            {
+              _x setVariable ["DMNS_PodsLaunchIn", -1, true];
+            } forEach _childPanels;
+          }
+          // otherwise, if count has changed copy our count down to our children and track our previous state
+          else {
+            {
+              if ( _x getVariable ["DMNS_PodsLaunchIn", -1] != _curCount ) then {
+                ["DEBUG", format ["setting %1 to %2", _x, _curCount]] call WS_fnc_LogMsg;
+                _x setVariable ["DMNS_PodsLaunchIn", _curCount, true];
+              };
+            } forEach _childPanels;
+
+            _panel setVariable ["WS_PodsLaunchPrev", _curCount, true];
+          };
+        };
       };
     };
     publicVariable "WS_fnc_SyncCountdowns";
@@ -52,6 +108,7 @@ WS_fnc_InitHEVs = {
       [(_bay get "owner"), _rcName, _dropLights, _roomLights] spawn {
         params ["_panel", "_rcName", "_dropLights", "_roomLights"];
         ["DEBUG", format ["inside spawn. _panel: %1, _rcName: %2, _dropLights: %3, _roomLights: %4", _panel, _rcName, _dropLights, _roomLights]] call WS_fnc_LogMsg;
+        sleep 1;
 
         while { ((_panel getVariable "DMNS_PodsLaunchIn") > -1) } do {
           ["DEBUG", format ["DMNS_PodsLaunchIn: %1", _panel getVariable "DMNS_PodsLaunchIn"]] call WS_fnc_LogMsg;
@@ -216,8 +273,8 @@ WS_fnc_InitHEVs = {
         [_panelBays#0] call WS_fnc_EnableHEVAlarms;
       } else {
         // multi-bay launch
+        [_panel] call WS_fnc_StartMultiLaunch;
         {
-          // todo: sync countdowns
           [_x] call WS_fnc_EnableHEVAlarms;
         } forEach _panelBays;
       };
@@ -226,18 +283,6 @@ WS_fnc_InitHEVs = {
     ["WS_HEVCountdownCanceled", {
       params ["_panel"];
       ["DEBUG", format ["WS_HEVCountdownCanceled: %1", _panel]] call WS_fnc_LogMsg;
-
-      // check if we're a bay owner
-        // if not, cancel all connected bays
-          // set all connected bays to -1
-          // call fnc to disable lights and sirens for all connected bays
-        // if we are, we may be in single or multi launch
-          // check all connected panels to see if any are running a countdown
-            // if they are, we're a multi launch
-              // call fnc to cancel connected bay countdown and all their connected bays countdown
-              // call fnc to cancel lights and sirens for all parent bay connected bays (including us)
-            // if they aren't, were a single launch
-              // call fnc to cancel own lights and sirens
     }] call CBA_fnc_addEventHandler
   };
 };
