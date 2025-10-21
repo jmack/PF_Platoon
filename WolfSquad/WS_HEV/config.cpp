@@ -27,6 +27,8 @@ class CfgFunctions
       class openHEVLaunchControls { };
       class prepareHEVLaunch { };
       class spawnRazorCorvette { };
+
+      class initHEVs { };
     };
   };
 };
