@@ -25,6 +25,7 @@ class CfgFunctions
       class envMsg { };
       class hintAction { };
       class holdAction { };
+      class initVehiclePad { };
       class letterbox { };
       class logMsg { };
       class setSpecialization { };
@@ -34,6 +35,8 @@ class CfgFunctions
     };
   };
 };
+
+// Clears out 1stMEU loading screens
 class CfgAddons
 {
   class PreloadAddons
