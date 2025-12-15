@@ -1,0 +1,6 @@
+briefing = 1;
+
+CAU_xChat_emojis = 0;
+CAU_xChat_deathMessages = 0;
+CAU_xChat_mentionGroups = 0;
+CAU_xChat_whisperCommand = 0;
