@@ -23,6 +23,8 @@ class CfgFunctions
     {
       file = "\WS_Core\scripts";
       class envMsg { };
+      class fileExists { };
+      class handleVehCapturePlay { };
       class hintAction { };
       class holdAction { };
       class initVehiclePad { };
