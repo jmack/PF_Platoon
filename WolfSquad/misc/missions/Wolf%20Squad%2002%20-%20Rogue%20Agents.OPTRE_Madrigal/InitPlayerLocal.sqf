@@ -6,13 +6,27 @@
     sleep 10;
     ["DEBUG", "Zero-G starting"] call WS_fnc_LogMsg;
 
-    _breathSfxLoop = 0 spawn { };
-    ["DEBUG", "_breathSfxLoop init to done"] call WS_fnc_LogMsg;
-    ["DEBUG", format ["_breathSfxLoop done? %1", scriptDone _breathSfxLoop]] call WS_fnc_LogMsg;
 
+    // Start zero-G handler
     addMissionEventHandler ["EachFrame", {
-        inZeroGZone = player getVariable ["WS_ZeroG", false];
-        player setUnitFreefallHeight 1e10;
+        player setUnitFreefallHeight 1e10; // needs to be set every frame or arma will reset it
+
+        // Are we in a Zero-G Zone?
+        inZeroGZone = false;
+        {
+            if (player inArea _x) then {
+                inZeroGZone = true;
+            };
+        } forEach WS_ZeroGAreas;
+
+        // if (!isNil "WS_ZeroGAreaHandler_Ready") then {
+        //     hintStr = "";
+        //     {
+        //         hintStr = hintStr + format ["%1: %2, ", _x, (player inArea _x)];
+        //     } forEach WS_ZeroGAreas;
+        //     hintStr = hintStr + format ["in zero G: %1 ", (player call WS_fnc_IsUnitInZeroG)];
+        //     hintSilent hintStr;
+        // };
 
         // Don't bother doing anything if we're not in a ZeroG area
         if (!inZeroGZone) then {
@@ -20,37 +34,17 @@
                 player switchMove "";
             };
 
-            hintSilent "";
+            // hintSilent "";
         };
         if (!inZeroGZone) exitWith { };
-
-        // if ((!inZeroGZone) && (animationState player == "AsdvPercMstpSnonWrflDnon")) then {
-        //     player switchmove "";
-        // };
-        // if (!inZeroGZone) exitWith {
-        //     hintSilent "";
-        //     terminate _breathLoop;
-        // };
 
         /*
         * We are in a ZeroG area
         */
-
         player playMove "AsdvPercMstpSnonWrflDnon";
-
-        // Start breathing sound loop (if it isn't already started)
-        ["DEBUG", format ["_breathSfxLoop done? %1", (scriptDone _breathSfxLoop)]] call WS_fnc_LogMsg;
-        if ((scriptDone _breathSfxLoop)) then {
-            _breathSfxLoop = [] spawn {
-                ["DEBUG", "sound would play"] call WS_fnc_LogMsg;
-                sleep 10;
-            };
-        };
-
 
         // Determine velocity changes based on keypresses
         vecupdate = [0,0,0];
-        alt = (getPosASL player) select 2;
 
         if ((inputAction "MoveForward" > 0)) then {
             _weaponVectorDir = player weaponDirection currentWeapon player;
@@ -96,9 +90,9 @@
 
         hintSilent format [
             "[%1, %2, %3]",
-            (velocity player)#0 toFixed 2,
-            (velocity player)#1 toFixed 2,
-            (velocity player)#2 toFixed 2
+            (velocity player)#0 toFixed 1,
+            (velocity player)#1 toFixed 1,
+            (velocity player)#2 toFixed 1
         ];
         
         veccurent = velocity player;
@@ -110,6 +104,40 @@
         ];
     }];
 
+    // Start zero-A(tmo) handler
+    addMissionEventHandler ["EachFrame", {
+        // Are we in a Zero-A Zone?
+        inZeroAZone = false;
+        {
+            if (player inArea _x) then {
+                inZeroAZone = true;
+            };
+        } forEach WS_ZeroAAreas;
+
+        // if (!isNil "WS_ZeroAAreaHandler_Ready") then {
+        //     hintStr = "";
+        //     {
+        //         hintStr = hintStr + format ["%1: %2\n", _x, (player inArea _x)];
+        //     } forEach WS_ZeroAAreas;
+        //     hintStr = hintStr + format ["%1\n", inZeroAZone];
+        //     hintStr = hintStr + format ["_sfx: %1", (scriptDone breathSfx)];
+        //     hintSilent hintStr;
+        // };
+
+        // Don't bother doing anything if we're not in a ZeroA area
+        if (!inZeroAZone) exitWith {
+            breathSfx = 0 spawn { };
+        };
+
+        if (scriptDone breathSfx) then {
+            breathSfx = [] spawn {
+                ["DEBUG", format ["%1: breath", player]] call WS_fnc_LogMsg;
+                sleep 10;
+            };
+        }
+    }];
+
+    // Helpers
     degtoarr = {
         _return = [0, 1, 0]; // North
         _angle = _this select 0; 
