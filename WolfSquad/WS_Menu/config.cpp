@@ -28,6 +28,7 @@ class CfgPatches {
       "A3_Music_F",
       "A3_Music_F_Exp",
       "A3_Ui_F",
+      "WS_Menu_compat_tcp",
     };
     units[] = {};
     weapons[] = {};
@@ -39,6 +40,10 @@ class CfgPatches {
 };
 
 /* Configurations */
+
+// Disable various TCP bits
+class RscTCPButtonMenu;
+
 // Main menu music
 class CfgMusic {
   class WS_mus_mnu_menuMusic {
@@ -152,6 +157,45 @@ class RscDisplayMain: RscStandardDisplay {
   onLoad="[""onLoad"",_this,""RscDisplayMain"",'WS_Menu_ScriptPath'] call (uinamespace getvariable 'BIS_fnc_initDisplay')"; // plays menu music at line 26
   onUnload="[""onUnload"",_this,""RscDisplayMain"",'WS_Menu_ScriptPath'] call (uinamespace getvariable 'BIS_fnc_initDisplay')";
   class Controls {
+    // delete TCP controls
+    delete TCP_LogoTCP;
+    delete TCP_LogoStudio;
+    delete TCP_ButtonArmaNews;
+    delete TCP_ButtonSteam;
+    delete TCP_CopyrightBohemia;
+    delete TCP_CopyrightBlackElement;
+    delete TCP_ButtonBackground;
+    delete TCP_PlayerName;
+    delete TCP_Version;
+
+    delete TCP_ButtonSingleplayerShowcases;
+    delete TCP_ButtonSingleplayerChallengees;
+    delete TCP_ButtonSingeplayerScenarios;
+    delete TCP_ButtonSingleplayerCampaigns;
+    delete TCP_ButtonSingleplayer;
+
+    delete TCP_ButtonMultiplayer;
+    delete TCP_ButtonForge;
+    delete TCP_ButtonArsenal;
+
+    delete TCP_ButtonTutorialsVR;
+    delete TCP_ButtonTutorialsFieldManual;
+    delete TCP_ButtonTutorialsCommunityGuides;
+    delete TCP_ButtonTutorialsBootcamp;
+    delete TCP_ButtonTutorials;
+
+    delete TCP_ButtonProfiles;
+
+    delete TCP_ButtonSettingsAudio;
+    delete TCP_ButtonSettingsControls;
+    delete TCP_ButtonSettingsGame;
+    delete TCP_ButtonSettingsAddons;
+    delete TCP_ButtonSettingsExpansions;
+    delete TCP_ButtonSettingsVideo;
+    delete TCP_ButtonSettings;
+
+    delete TCP_ButtonQuit;
+
     class Logo: RscActivePicture {
       shadow = 0;
       show = 1;
