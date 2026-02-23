@@ -14,27 +14,35 @@ class CfgPatches
     requiredVersion = 0.1;
   };
 };
+
+// Functions
 class CfgFunctions
 {
   class WS_Functions
   {
     tag = "WS";
+
     class Scripts
     {
-      file = "\WS_Core\scripts";
+      file = "\WS_Core\functions\scripts";
       class envMsg { };
-      class fileExists { };
       class handleVehCapturePlay { };
       class hintAction { };
       class holdAction { };
       class initVehiclePad { };
       class letterbox { };
-      class logMsg { };
       class setSpecialization { };
+    };
+    
+    class Debug
+    {
+      file = "\WS_Core\functions\debug";
+      class fileExists { };
+      class logMsg { };
       class skipBriefing {
         preInit = 1;
       };
-    };
+    }
   };
 };
 
