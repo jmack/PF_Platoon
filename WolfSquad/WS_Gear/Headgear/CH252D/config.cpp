@@ -27,6 +27,7 @@ class XtdGearModels
         {
           "standard",
           "dukova",
+          "finch",
           "hayes",
           "mickelson",
         };
@@ -37,6 +38,10 @@ class XtdGearModels
         class dukova
         {
           label = "L. Dukova";
+        };
+        class finch
+        {
+          label = "C. Finch";
         };
         class hayes
         {
@@ -187,6 +192,32 @@ class CfgWeapons
     hiddenSelectionsTextures[] =
     {
       "WS_Gear\Headgear\CH252D\_textures\helmet_dukova.paa",
+      "WS_Gear\Headgear\CH252D\_textures\visor_dp.paa",
+      "WS_Gear\Headgear\CH252D\_textures\balaclava.paa"
+    };
+  };
+
+  /* Finch */
+  class WS_CH252D_Helmet_Finch: WS_CH252D_Helmet_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_CH252D_Helmet_Metaitem";
+      type = "finch";
+    };
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Headgear\CH252D\_textures\helmet_finch.paa",
+      "WS_Gear\Headgear\CH252D\_textures\visor.paa",
+      "WS_Gear\Headgear\CH252D\_textures\balaclava.paa"
+    };
+  };
+  class WS_CH252D_Helmet_Dukova_dp: WS_CH252D_Helmet_Base_dp
+  {
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Headgear\CH252D\_textures\helmet_finch.paa",
       "WS_Gear\Headgear\CH252D\_textures\visor_dp.paa",
       "WS_Gear\Headgear\CH252D\_textures\balaclava.paa"
     };
