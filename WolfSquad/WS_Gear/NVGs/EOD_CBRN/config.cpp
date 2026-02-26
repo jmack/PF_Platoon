@@ -59,8 +59,8 @@ class CfgWeapons
     dlc = "WS";
     author = "wlan0";
     displayName = "[WS] EOD CBRN Attachment";
-    picture = "WS_Images\Common\logo_color.paa";
     model = "MA_Armor\data\Attachments\EOD_CBRN\EOD_CBRN.p3d";
+    picture = "WS_Gear\NVGs\EOD_CBRN\_data\cbrn_icon.paa";
     hiddenSelections[] =
     {
       "Camo1"

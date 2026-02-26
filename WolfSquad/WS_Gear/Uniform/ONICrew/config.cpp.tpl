@@ -37,7 +37,7 @@ class CfgWeapons
     dlc = "WS";
     author = "wlan0";
     displayName = "[WS] ONI Crew Uniform";
-    picture = "WS_Images\Common\oni.paa";
+    picture = "WS_Gear\Uniform\ONICrew\_data\onicrew_icon.paa";
 
     class ItemInfo: UniformItem
     {

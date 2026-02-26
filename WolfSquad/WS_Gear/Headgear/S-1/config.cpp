@@ -63,7 +63,7 @@ class CfgWeapons
     displayName = "[WS] S-1/ONI Helmet";
 
     model = "MA_Armor\data\Helmets\Recon\Recon_Helmet.p3";
-    picture = "WS_Images\Common\logo_color.paa";
+    picture = "WS_Gear\Headgear\S-1\_data\s1_icon.paa";
     hiddenSelections[] =
     {
       "camo1",

@@ -77,6 +77,7 @@ class CfgWeapons
     scopeCurator = 1;
     scopeArsenal = 1;
     displayName = "[WS] Generic M52 (Base)";
+    picture = "WS_Gear\Uniform\M52\_data\m52_icon.paa";
     CBRN_protectionLevel = "4 + 8";
     ACE_GForceCoef = 0.3;
 
@@ -101,7 +102,6 @@ class CfgWeapons
     scopeCurator = 2;
     scopeArsenal = 2;
     displayName = "[WS] M52 BDU";
-    picture = "WS_Images\Common\logo_color.paa";
 
     class ItemInfo: ItemInfo
     {

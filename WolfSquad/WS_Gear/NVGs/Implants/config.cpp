@@ -16,7 +16,6 @@ class CfgWeapons
     dlc = "WS";
     author = "wlan0";
     displayName = "[WS] Visual Implant";
-    picture = "WS_Images\Common\logo_color.paa";
     visionMode[] =
     {
       "Normal",

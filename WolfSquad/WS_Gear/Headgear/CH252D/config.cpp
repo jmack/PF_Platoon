@@ -78,7 +78,7 @@ class CfgWeapons
     displayName = "[WS] CH252D Helmet";
 
     model = "MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm.p3d";
-    picture = "WS_Images\Common\logo_color.paa";
+    picture = "WS_Gear\Headgear\CH252D\_data\ch252d_icon.paa";
     hiddenSelections[] =
     {
       "Camo1",

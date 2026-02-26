@@ -63,7 +63,7 @@ class CfgWeapons
     displayName = "[WS] M52-E Helmet";
 
     model = "MA_Armor\data\Helmets\H3_EOD\H3_EOD_Helmet.p3d";
-    picture = "WS_Images\Common\logo_color.paa";
+    picture = "WS_Gear\Headgear\M52-E\_data\m52e_icon.paa";
     hiddenSelections[] =
     {
       "camo1",
