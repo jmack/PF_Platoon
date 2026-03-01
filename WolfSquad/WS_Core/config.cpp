@@ -14,20 +14,39 @@ class CfgPatches
     requiredVersion = 0.1;
   };
 };
+
+// Functions
 class CfgFunctions
 {
   class WS_Functions
   {
     tag = "WS";
+
     class Scripts
     {
-      file = "\WS_Core\scripts";
-      class letterbox { };
+      file = "\WS_Core\functions\scripts";
+      class envMsg { };
+      class handleVehCapturePlay { };
       class hintAction { };
       class holdAction { };
+      class initVehiclePad { };
+      class letterbox { };
+      class setSpecialization { };
     };
+    
+    class Debug
+    {
+      file = "\WS_Core\functions\debug";
+      class fileExists { };
+      class logMsg { };
+      class skipBriefing {
+        preInit = 1;
+      };
+    }
   };
 };
+
+// Clears out 1stMEU loading screens
 class CfgAddons
 {
   class PreloadAddons

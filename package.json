@@ -1,0 +1,12 @@
+{
+  "type": "module",
+  "dependencies": {
+    "corepack": "^0.34.0",
+    "prettier": "^3.6.2",
+    "sharp": "^0.34.4",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.8.0"
+  }
+}
