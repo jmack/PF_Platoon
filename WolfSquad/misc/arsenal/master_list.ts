@@ -19,6 +19,7 @@ export default Object.freeze({
     ['M6G PDWS 12.7 mm', 'TCP_hgun_Pistol_M6G'],
     ['[MA] M363 Sticky Detonator (Gray)', 'MA_363_Sticky_Detonator_Gray'],
     ['UNSC Knife', 'UNSC_Knife'],
+    ['WRS - 2 Constrictor', 'WRS_Weapon_Revolver'],
   ],
   launcher: [
     ['[1st] M41 "Jackhammer" SSR MAV/AW', 'MEU_M41_SSR'],
@@ -157,6 +158,7 @@ export default Object.freeze({
     ['', 'OPTRE_M41_Twin_HEAT_SALH'],
     ['5Rnd SRM77 Magazine (Tracer)', 'OPTRE_5Rnd_127x99'],
     ['10Rnd SRM77 Magazine (Tracer)', 'OPTRE_10Rnd_127x99'],
+    ['6rd LTS cylinder', 'WRS_Revolver_Magazine'],
   ],
   grenade: [
     ['M2 Smoke Grenade (White)', 'OPTRE_M2_Smoke'],
