@@ -1088,8 +1088,7 @@ export default Object.freeze({
   bino: [['H-19 Smartfinder', 'OPTRE_Smartfinder']],
   map: [['Map', 'ItemMap']],
   terminal: [
-    ['MC5 Individual Data/Net Terminal', 'TCP_TACPAD'],
-    ['SRT Universal GPS', 'TCP_UGPS'],
+    ['GPS', 'ItemGPS'],
     ['UAV Terminal [NATO]', 'B_UavTerminal'],
   ],
   comms: [['AN/PRC-55 MBITR', 'TCP_ANPRC55']],
