@@ -31,6 +31,7 @@ class CfgFunctions
       class holdAction { };
       class initVehiclePad { };
       class letterbox { };
+      class setAISkill { };
       class setSpecialization { };
     };
     
