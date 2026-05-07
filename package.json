@@ -1,6 +1,7 @@
 {
   "type": "module",
   "scripts": {
+    "build:wolfsquad": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./build.ps1 ./WolfSquad/",
     "generate:oniuniform": "npx ts-node .\\WolfSquad\\WS_Gear\\Uniform\\ONICrew\\generator.ts"
   },
   "dependencies": {
