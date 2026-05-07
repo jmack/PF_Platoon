@@ -2,6 +2,8 @@ import fs from 'fs';
 import sharp from 'sharp';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
+import { exec } from 'child_process';
+import util from 'util';
 
 /**
  * This file generates the file defs for the ONICrew uniform item.
@@ -52,12 +54,12 @@ interface RankImageLocationData {
 const RankImageLocation = {
   ARM: {
     position: {
-      x: 1353,
-      y: 1329,
+      x: 1364,
+      y: 1400,
     },
     dimensions: {
-      width: 91,
-      height: 183,
+      width: 67,
+      height: 136,
     },
     rotation: 2.5,
   },
@@ -76,8 +78,8 @@ const RankImageLocation = {
 
 const RankImageColors = {
   WHITE: '#ffffff',
-  RED: '#AC0000',
-  GOLD: '#EFBF04',
+  DARKRED: '#610000',
+  OFFICERGOLD: '#EFBF04',
 } as const;
 
 const UNIFORM_MATRIX: MetaData = {
@@ -149,7 +151,7 @@ const UNIFORM_MATRIX: MetaData = {
           Description: 'O-5: Commander',
           ImgLink: `${WS_RANKS_DIR}\\navcom\\O-5 Commander.png`,
           RankLocation: RankImageLocation.EPAULETTE,
-          RankColor: RankImageColors.GOLD,
+          RankColor: RankImageColors.OFFICERGOLD,
         },
         {
           ClassName: 'navcom_lcdr',
@@ -157,7 +159,7 @@ const UNIFORM_MATRIX: MetaData = {
           Description: 'O-4: Lieutenant Commander',
           ImgLink: `${WS_RANKS_DIR}\\navcom\\O-4 Lieutenant Commander.png`,
           RankLocation: RankImageLocation.EPAULETTE,
-          RankColor: RankImageColors.GOLD,
+          RankColor: RankImageColors.OFFICERGOLD,
         },
         {
           ClassName: 'navcom_lt',
@@ -165,7 +167,7 @@ const UNIFORM_MATRIX: MetaData = {
           Description: 'O-3: Lieutenant',
           ImgLink: `${WS_RANKS_DIR}\\navcom\\O-3 Lieutenant.png`,
           RankLocation: RankImageLocation.EPAULETTE,
-          RankColor: RankImageColors.GOLD,
+          RankColor: RankImageColors.OFFICERGOLD,
         },
         {
           ClassName: 'navcom_ltjg',
@@ -173,7 +175,7 @@ const UNIFORM_MATRIX: MetaData = {
           Description: 'O-2: Lieutenant Junior Grade',
           ImgLink: `${WS_RANKS_DIR}\\navcom\\O-2 Lieutenant Junior Grade.png`,
           RankLocation: RankImageLocation.EPAULETTE,
-          RankColor: RankImageColors.GOLD,
+          RankColor: RankImageColors.OFFICERGOLD,
         },
         {
           ClassName: 'navcom_ens',
@@ -181,7 +183,7 @@ const UNIFORM_MATRIX: MetaData = {
           Description: 'O-1: Ensign',
           ImgLink: `${WS_RANKS_DIR}\\navcom\\O-1 Ensign.png`,
           RankLocation: RankImageLocation.EPAULETTE,
-          RankColor: RankImageColors.GOLD,
+          RankColor: RankImageColors.OFFICERGOLD,
         },
         {
           ClassName: 'navcom_hnsc',
@@ -189,7 +191,7 @@ const UNIFORM_MATRIX: MetaData = {
           Description: 'E-8: Senior Chief Hospital Corpsman',
           ImgLink: `${WS_RANKS_DIR}\\navcom\\E-8 Senior Chief Hospital Corpsman.png`,
           RankLocation: RankImageLocation.ARM,
-          RankColor: RankImageColors.RED,
+          RankColor: RankImageColors.DARKRED,
         },
         {
           ClassName: 'navcom_cpo',
@@ -205,7 +207,7 @@ const UNIFORM_MATRIX: MetaData = {
           Description: 'E-7: Chief Hospital Corpsman',
           ImgLink: `${WS_RANKS_DIR}\\navcom\\E-7 Chief Hospital Corpsman.png`,
           RankLocation: RankImageLocation.ARM,
-          RankColor: RankImageColors.RED,
+          RankColor: RankImageColors.DARKRED,
         },
         {
           ClassName: 'navcom_po1',
@@ -221,7 +223,7 @@ const UNIFORM_MATRIX: MetaData = {
           Description: 'E-6: Hospital Corpsman First Class',
           ImgLink: `${WS_RANKS_DIR}\\navcom\\E-6 Hospital Corpsman First Class.png`,
           RankLocation: RankImageLocation.ARM,
-          RankColor: RankImageColors.RED,
+          RankColor: RankImageColors.DARKRED,
         },
         {
           ClassName: 'navcom_po2',
@@ -237,7 +239,7 @@ const UNIFORM_MATRIX: MetaData = {
           Description: 'E-5: Hospital Corpsman Second Class',
           ImgLink: `${WS_RANKS_DIR}\\navcom\\E-5 Hospital Corpsman Second Class.png`,
           RankLocation: RankImageLocation.ARM,
-          RankColor: RankImageColors.RED,
+          RankColor: RankImageColors.DARKRED,
         },
         {
           ClassName: 'navcom_po3',
@@ -253,7 +255,7 @@ const UNIFORM_MATRIX: MetaData = {
           Description: 'E-4: Hospital Corpsman Third Class',
           ImgLink: `${WS_RANKS_DIR}\\navcom\\E-4 Hospital Corpsman Third Class.png`,
           RankLocation: RankImageLocation.ARM,
-          RankColor: RankImageColors.RED,
+          RankColor: RankImageColors.DARKRED,
         },
         {
           ClassName: 'navcom_cn',
@@ -269,7 +271,7 @@ const UNIFORM_MATRIX: MetaData = {
           Description: 'E-3: Hospitalman',
           ImgLink: `${WS_RANKS_DIR}\\navcom\\E-3 Hospitalman.png`,
           RankLocation: RankImageLocation.ARM,
-          RankColor: RankImageColors.RED,
+          RankColor: RankImageColors.DARKRED,
         },
         {
           ClassName: 'navcom_ca',
@@ -285,7 +287,7 @@ const UNIFORM_MATRIX: MetaData = {
           Description: 'E-2: Hospitalman Apprentice',
           ImgLink: `${WS_RANKS_DIR}\\navcom\\E-2 Hospitalman Apprentice.png`,
           RankLocation: RankImageLocation.ARM,
-          RankColor: RankImageColors.RED,
+          RankColor: RankImageColors.DARKRED,
         },
         {
           ClassName: 'navcom_cr',
@@ -301,7 +303,7 @@ const UNIFORM_MATRIX: MetaData = {
           Description: 'E-1: Hospitalman Recruit',
           ImgLink: `${WS_RANKS_DIR}\\navcom\\E-1 Hospitalman Recruit.png`,
           RankLocation: RankImageLocation.ARM,
-          RankColor: RankImageColors.RED,
+          RankColor: RankImageColors.DARKRED,
         },
       ],
     },
@@ -466,11 +468,28 @@ async function main() {
     fs.writeFileSync(`${SCRIPT_DIR}/config.cpp`, template);
   } catch (e) {
     console.error(e);
+    return;
   }
 
-  // and log the time it took
-  const time = Date.now() - start;
-  console.log(`Done [ ${time / 1000} seconds | ${numImages} images | ${numClasses} classes ]`);
+  // and log the time it took to generate
+  const genTime = Date.now() - start;
+
+  // then, we binarize the new files
+  const asyncExec = util.promisify(exec);
+  try {
+    const execString = `cd ${WOLF_SQUAD_ROOT_DIR}; . ..\\vars.ps1; Start-Process $imageToPAA ${SCRIPT_DIR}\\_textures\\combined\\*.png -Wait`;
+    console.log(execString);
+    const { stdout } = await asyncExec(execString, { shell: 'powershell.exe' });
+    console.log(stdout);
+  } catch (e) {
+    console.error(e);
+    return;
+  }
+  const binTime = Date.now() - start - genTime;
+
+  console.log(
+    `Done [ total ${(genTime + binTime) / 1000} seconds | generation ${genTime / 1000} seconds | binarization ${binTime / 1000} seconds | ${numImages} images | ${numClasses} classes ]`
+  );
 }
 
 /**
