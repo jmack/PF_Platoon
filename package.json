@@ -1,8 +1,8 @@
 {
   "type": "module",
   "scripts": {
-    "build:wolfsquad": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./build.ps1 ./WolfSquad/",
-    "generate:oniuniform": "npx ts-node .\\WolfSquad\\WS_Gear\\Uniform\\ONICrew\\generator.ts"
+    "build:wolf": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./build.ps1 ./WolfSquad/",
+    "generate:wolf:oniuniform": "npx ts-node .\\WolfSquad\\WS_Gear\\Uniform\\ONICrew\\generator.ts",
   },
   "dependencies": {
     "corepack": "^0.34.0",
