@@ -79,8 +79,8 @@ const RankImageLocation = {
 const RankImageColors = {
   WHITE: '#ffffff',
   DARKRED: '#610000',
-  OFFICERGOLD: '#EFBF04',
-  ARMYGOLD: '#9e841b',
+  OFFICERGOLD: '#f7c500',
+  ARMYGOLD: '#755e02',
 } as const;
 
 const UNIFORM_MATRIX: MetaData = {
@@ -679,10 +679,7 @@ async function main() {
   // then, we binarize the new files
   const asyncExec = util.promisify(exec);
   try {
-    const execString = `cd ${WOLF_SQUAD_ROOT_DIR}; . ..\\vars.ps1; Start-Process $imageToPAA ${SCRIPT_DIR}\\_textures\\combined\\*.png -Wait`;
-    console.log(execString);
-    const { stdout } = await asyncExec(execString, { shell: 'powershell.exe' });
-    console.log(stdout);
+    await asyncExec(`cd ${WOLF_SQUAD_ROOT_DIR}; . ..\\vars.ps1; Start-Process $imageToPAA ${SCRIPT_DIR}\\_textures\\combined\\*.png -Wait`, { shell: 'powershell.exe' });
   } catch (e) {
     console.error(e);
     return;
@@ -748,7 +745,7 @@ async function createUniformImage(
       .toBuffer();
 
     const rankColorBurned = await sharp(rankBlkGrey)
-      .composite([{ input: rankColorOverlay, blend: 'color-burn' }])
+      .composite([{ input: rankColorOverlay, blend: 'multiply' }])
       .toBuffer();
 
     // scale and rotate
