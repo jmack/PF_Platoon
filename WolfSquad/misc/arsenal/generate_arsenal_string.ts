@@ -6,7 +6,7 @@ import { dirname } from 'path';
 /**
  * This file generates the ACE arsenal import string.
  *
- * It can be run with "npx ts-node .\WolfSquad\misc\arsenal\generate_arsenal_string.ts" from the project root.
+ * It can be run with "npm run wolf:generate:arsenal" from the project root.
  */
 
 const arsenalItems: string[] = [];

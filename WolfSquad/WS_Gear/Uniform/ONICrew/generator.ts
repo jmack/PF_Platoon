@@ -8,7 +8,7 @@ import util from 'util';
 /**
  * This file generates the file defs for the ONICrew uniform item.
  *
- * It can be run with "npm run generate:oniuniform" from the project root.
+ * It can be run with "npm run wolf:generate:oniuniform" from the project root.
  */
 
 /**
