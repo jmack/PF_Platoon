@@ -207,6 +207,15 @@ export default Object.freeze({
 
     // Laser Designator
     ['Designator Batteries', 'Laserbatteries'],
+
+    // Mortar
+    ['[CSW] 1rnd 122mm SABOT HE', 'OPTRE_CSW_1Rnd_122mm_SABOT_81mm_Mo_shells'],
+    ['[CSW] 1rnd 122mm Cluster HE', 'OPTRE_CSW_1Rnd_122mm_Mo_Cluster_HE'],
+    ['[CSW] 1rnd 122mm Guided', 'OPTRE_CSW_1Rnd_122mm_Mo_guided'],
+    ['[CSW] 1rnd 122mm Laser Guided', 'OPTRE_CSW_1Rnd_122mm_Mo_LG'],
+    ['[CSW] 1rnd 122mm Smoke', 'OPTRE_CSW_1Rnd_122mm_Mo_Smoke_white'],
+    ['[CSW] 1rnd 122mm Flare', 'OPTRE_CSW_1Rnd_122mm_Mo_Flare_white'],
+    ['[CSW] 1rnd 122mm IR Flare', 'OPTRE_CSW_1Rnd_122mm_Mo_IR_Flare_white'],
   ],
   grenade: [
     ['M21 Smoke Grenade (White)', 'TCP_M21_Smoke'],
