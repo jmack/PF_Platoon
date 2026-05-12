@@ -5,7 +5,7 @@
     Adds a hold action to an object that requires holding the space bar
 
   Parameters:
-    _obj                  // OBJECT - the object that the action should be applied to (usually '_this' if being called from the init of an object)
+    _obj                  // OBJECT - the object that the action should be applied to (usually 'this' if being called from the init of an object)
     _holdType             // STRING - the class of action. Should be something like "hack" or "search". This will autopopulate the color and icon
     _holdText             // STRING - the text to display after the action type, i.e. "Hack: [_holdText]"
     _holdCondition        // STRING - a conditional for displaying the action (if one is required)
@@ -18,7 +18,7 @@
 
   Examples:
     [
-      _this,
+      this,
       "hack",
       "Unlock the Door",
       "canTheDoorBeUnlocked",
