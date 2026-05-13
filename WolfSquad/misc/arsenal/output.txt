@@ -157,6 +157,7 @@
 	"OPTRE_10Rnd_127x99",
 	"MEU_18Rnd_Raveager_9mm_Yellow_Mag_Stun",
 	"Laserbatteries",
+	"OPTRE_CSW_1Rnd_122mm_Mo_shells",
 	"OPTRE_CSW_1Rnd_122mm_SABOT_81mm_Mo_shells",
 	"OPTRE_CSW_1Rnd_122mm_Mo_Cluster_HE",
 	"OPTRE_CSW_1Rnd_122mm_Mo_guided",

@@ -209,6 +209,7 @@ export default Object.freeze({
     ['Designator Batteries', 'Laserbatteries'],
 
     // Mortar
+    ['[CSW] 1rnd 122mm HE', 'OPTRE_CSW_1Rnd_122mm_Mo_shells'],
     ['[CSW] 1rnd 122mm SABOT HE', 'OPTRE_CSW_1Rnd_122mm_SABOT_81mm_Mo_shells'],
     ['[CSW] 1rnd 122mm Cluster HE', 'OPTRE_CSW_1Rnd_122mm_Mo_Cluster_HE'],
     ['[CSW] 1rnd 122mm Guided', 'OPTRE_CSW_1Rnd_122mm_Mo_guided'],
@@ -326,6 +327,8 @@ export default Object.freeze({
   uniform: [
     ['[WS] M52 BDU (ODST, Collar)', 'WS_Gear_Uniform_M52_ODST'],
     ['[WS] M52 BDU (ODST, No Collar)', 'WS_Gear_Uniform_M52_ODST_NC'],
+
+    // fix this!
     ['ONI Ship Crew Uniform', 'WS_Gear_Uniform_ONICrew_masc_crew_hr'],
     ['ONI Ship Crew Uniform', 'WS_Gear_Uniform_ONICrew_masc_vehicle_hmc'],
     ['ONI Ship Crew Uniform', 'WS_Gear_Uniform_ONICrew_femme_engineering_hm2'],
