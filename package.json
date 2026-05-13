@@ -4,7 +4,8 @@
     "wolf:build": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./build.ps1 ./WolfSquad/",
     "wolf:generate:oniuniform": "npx ts-node .\\WolfSquad\\WS_Gear\\Uniform\\ONICrew\\generator.ts",
     "wolf:generate:modlist": "npx ts-node .\\WolfSquad\\modlist-generator.ts",
-    "wolf:generate:arsenal": "npx ts-node .\\WolfSquad\\misc\\arsenal\\generate_arsenal_string.ts"
+    "wolf:generate:arsenal": "npx ts-node .\\WolfSquad\\misc\\arsenal\\generate_arsenal_string.ts",
+    "wolf:generate:tictacs": "npx ts-node .\\WolfSquad\\WS_Props\\Tictacs\\generator.ts"
   },
   "dependencies": {
     "corepack": "^0.34.0",
