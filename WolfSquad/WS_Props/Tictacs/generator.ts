@@ -42,6 +42,19 @@ function main() {
       templateStrings.classes += `\n    editorPreview = "${tictac.preview}";`;
     }
 
+    if (tictac.eventHandlers) {
+      templateStrings.classes += `\n    class EventHandlers : EventHandlers\n    {`;
+      tictac.eventHandlers.forEach((handler) => {
+        const escapedValue = handler.value
+          .replaceAll(`\n`, ' ')
+          .replaceAll('"', '""')
+          .replace(/\s{2,}/g, ' ')
+          .trim();
+        templateStrings.classes += `\n      ${handler.type} = "${escapedValue}";`;
+      });
+      templateStrings.classes += `\n    }`;
+    }
+
     (Object.keys(TicTacItemTypes) as (keyof typeof TicTacItemTypes)[]).forEach((key) => {
       templateStrings.classes += GenerateTransportGroup(tictac, key);
     });
@@ -72,13 +85,23 @@ function main() {
 type TicTac = {
   name: string;
   texture?: string;
+  eventHandlers?: TicTacEvent[];
   preview?: string;
   contents: TicTacItem[];
 };
 
+type TicTacEvent = {
+  type: (typeof TicTacEventTypes)[keyof typeof TicTacEventTypes];
+  value: string;
+};
+
+const TicTacEventTypes = {
+  INIT: 'init',
+} as const;
+
 type TicTacItem = {
   class: string;
-  type: string;
+  type: (typeof TicTacItemTypes)[keyof typeof TicTacItemTypes];
   count: number;
 };
 
@@ -151,12 +174,26 @@ const TicTacs: TicTac[] = [
   {
     name: 'MA40',
     texture: 'WS_Props\\Tictacs\\_textures\\pods\\ma40.paa',
+    eventHandlers: [
+      {
+        type: TicTacEventTypes.INIT,
+        value: `
+          if (local (_this select 0)) then {
+            (_this select 0) addWeaponWithAttachmentsCargoGlobal [
+              [
+                "TCP_arifle_MA40",
+                "TCP_muzzle_brake_762_01",
+                "TCP_acc_pointer_lam_MA40",
+                "TCP_optic_EVOSJ1",
+                [],
+                [],
+                ""
+              ],
+            1];
+          };`,
+      },
+    ],
     contents: [
-      { class: 'TCP_arifle_MA40', type: TicTacItemTypes.WEAPON, count: 1 },
-      { class: 'TCP_optic_EVOSJ1', type: TicTacItemTypes.ITEM, count: 1 },
-      { class: 'TCP_acc_pointer_lam_MA40', type: TicTacItemTypes.ITEM, count: 1 },
-      { class: 'TCP_muzzle_brake_762_01', type: TicTacItemTypes.ITEM, count: 1 },
-
       { class: 'TCP_36Rnd_762x51_Mag', type: TicTacItemTypes.MAGAZINE, count: 7 },
       { class: 'TCP_36Rnd_762x51_Mag_Dual', type: TicTacItemTypes.MAGAZINE, count: 7 },
     ],
@@ -164,12 +201,26 @@ const TicTacs: TicTac[] = [
   {
     name: 'MA40 UGL',
     texture: 'WS_Props\\Tictacs\\_textures\\pods\\ma40gl.paa',
+    eventHandlers: [
+      {
+        type: TicTacEventTypes.INIT,
+        value: `
+          if (local (_this select 0)) then {
+            (_this select 0) addWeaponWithAttachmentsCargoGlobal [
+              [
+                "TCP_arifle_MA40_GL",
+                "TCP_muzzle_brake_762_01",
+                "TCP_acc_pointer_lam_MA40",
+                "TCP_optic_EVOSJ1",
+                [],
+                [],
+                ""
+              ],
+            1];
+          };`,
+      },
+    ],
     contents: [
-      { class: 'TCP_arifle_MA40_GL', type: TicTacItemTypes.WEAPON, count: 1 },
-      { class: 'TCP_optic_EVOSJ1', type: TicTacItemTypes.ITEM, count: 1 },
-      { class: 'TCP_acc_pointer_lam_MA40', type: TicTacItemTypes.ITEM, count: 1 },
-      { class: 'TCP_muzzle_brake_762_01', type: TicTacItemTypes.ITEM, count: 1 },
-
       { class: 'TCP_36Rnd_762x51_Mag', type: TicTacItemTypes.MAGAZINE, count: 4 },
       { class: 'TCP_36Rnd_762x51_Mag_Dual', type: TicTacItemTypes.MAGAZINE, count: 4 },
       { class: 'TCP_1Rnd_40_Shell_HE', type: TicTacItemTypes.MAGAZINE, count: 10 },
@@ -214,33 +265,70 @@ const TicTacs: TicTac[] = [
   {
     name: 'M7',
     texture: 'WS_Props\\Tictacs\\_textures\\pods\\m7.paa',
-    contents: [
-      { class: 'TCP_SMG_M7', type: TicTacItemTypes.WEAPON, count: 1 },
-      { class: 'TCP_optic_M5BSLSV_Blue', type: TicTacItemTypes.ITEM, count: 1 },
-      { class: 'TCP_acc_pointer_lam_M7', type: TicTacItemTypes.ITEM, count: 1 },
-      { class: 'TCP_muzzle_snds_523_01', type: TicTacItemTypes.ITEM, count: 1 },
-
-      { class: 'TCP_48Rnd_5x23_Mag_JHP', type: TicTacItemTypes.MAGAZINE, count: 7 },
-      { class: 'TCP_48Rnd_5x23_Mag_AP', type: TicTacItemTypes.MAGAZINE, count: 7 },
-      { class: 'TCP_48Rnd_5x23_Mag', type: TicTacItemTypes.MAGAZINE, count: 7 },
+    eventHandlers: [
+      {
+        type: TicTacEventTypes.INIT,
+        value: `
+          if (local (_this select 0)) then {
+            (_this select 0) addWeaponWithAttachmentsCargoGlobal [
+              [
+                "TCP_SMG_M7",
+                "TCP_muzzle_snds_523_01",
+                "TCP_acc_pointer_lam_M7",
+                "TCP_optic_M5BSLSV_Blue",
+                [],
+                [],
+                ""
+              ],
+            1];
+          };`,
+      },
     ],
+    contents: [{ class: 'TCP_48Rnd_5x23_Mag', type: TicTacItemTypes.MAGAZINE, count: 7 }],
   },
   {
     name: 'M7 | Resupply',
     texture: 'WS_Props\\Tictacs\\_textures\\pods\\m7_ammo.paa',
-    contents: [
-      { class: 'TCP_48Rnd_5x23_Mag_JHP', type: TicTacItemTypes.MAGAZINE, count: 21 },
-      { class: 'TCP_48Rnd_5x23_Mag_AP', type: TicTacItemTypes.MAGAZINE, count: 21 },
-      { class: 'TCP_48Rnd_5x23_Mag', type: TicTacItemTypes.MAGAZINE, count: 21 },
-    ],
+    contents: [{ class: 'TCP_48Rnd_5x23_Mag', type: TicTacItemTypes.MAGAZINE, count: 21 }],
   },
   //#endregion
 
   /**
    * VK78 Commando
    */
-  // VK78
-  // VK78 Resupply
+  {
+    name: 'VK78',
+    texture: 'WS_Props\\Tictacs\\_textures\\pods\\vk78.paa',
+    eventHandlers: [
+      {
+        type: TicTacEventTypes.INIT,
+        value: `
+          if (local (_this select 0)) then {
+            (_this select 0) addWeaponWithAttachmentsCargoGlobal [
+              [
+                "TCP_srifle_VK78_Gray",
+                "TCP_muzzle_brake_65_01",
+                "TCP_rail_ammoCounter_VK78",
+                "",
+                [],
+                [],
+                "TCP_bipod_Grip_VK78"
+              ],
+            1];
+          };`,
+      },
+    ],
+    contents: [{ class: 'TCP_20Rnd_65x48_Mag', type: TicTacItemTypes.MAGAZINE, count: 14 }],
+  },
+  {
+    name: 'VK78 | Resupply',
+    texture: 'WS_Props\\Tictacs\\_textures\\pods\\vk78_ammo.paa',
+    contents: [
+      { class: 'TCP_20Rnd_65x48_Mag', type: TicTacItemTypes.MAGAZINE, count: 36 },
+      { class: 'TCP_20Rnd_65x48_Mag_Tracer_Green', type: TicTacItemTypes.MAGAZINE, count: 8 },
+      { class: 'TCP_20Rnd_65x48_Mag_Tracer_DIM', type: TicTacItemTypes.MAGAZINE, count: 8 },
+    ],
+  },
 
   /**
    * BR55 Battle Rifle
@@ -266,6 +354,25 @@ const TicTacs: TicTac[] = [
   {
     name: 'M731',
     texture: 'WS_Props\\Tictacs\\_textures\\pods\\m731.paa',
+    eventHandlers: [
+      {
+        type: TicTacEventTypes.INIT,
+        value: `
+          if (local (_this select 0)) then {
+            (_this select 0) addWeaponWithAttachmentsCargoGlobal [
+              [
+                "TCP_LMG_M731",
+                "TCP_muzzle_brake_762_02",
+                "TCP_acc_carryHandle_M731",
+                "TCP_optic_EVOSM",
+                [],
+                [],
+                "bipod_01_F_blk"
+              ],
+            1];
+          };`,
+      },
+    ],
     contents: [
       { class: 'TCP_LMG_M731', type: TicTacItemTypes.WEAPON, count: 1 },
       { class: 'TCP_optic_EVOSM', type: TicTacItemTypes.ITEM, count: 1 },

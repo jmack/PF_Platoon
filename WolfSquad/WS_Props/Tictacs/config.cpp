@@ -19,6 +19,10 @@ class CfgPatches
       "WS_Props_TicTac_MA40_UGL___Resupply",
       "WS_Props_TicTac_M7",
       "WS_Props_TicTac_M7___Resupply",
+      "WS_Props_TicTac_VK78",
+      "WS_Props_TicTac_VK78___Resupply",
+      "WS_Props_TicTac_M731",
+      "WS_Props_TicTac_M731___Resupply",
       "WS_Props_TicTac_AU_44_Mortar",
       "WS_Props_TicTac_AU_44_Mortar___Ammunition",
       "WS_Props_TicTac_Medical",
@@ -31,6 +35,7 @@ class CfgPatches
 class CfgVehicles
 {
   class OPTRE_Ammo_SupplyPod_Empty;
+  class EventHandlers;
   class WS_Props_TicTac_Empty : OPTRE_Ammo_SupplyPod_Empty
   {
     scope = 1;
@@ -58,16 +63,10 @@ class CfgVehicles
     scope = 2;
     displayName = "[WS] Supply Pod (MA40)";
     hiddenSelectionsTextures[] = { "WS_Props\Tictacs\_textures\pods\ma40.paa" };
-    class TransportItems
+    class EventHandlers : EventHandlers
     {
-      class _xx_TCP_optic_EVOSJ1 { name = "TCP_optic_EVOSJ1"; count = 1; }
-      class _xx_TCP_acc_pointer_lam_MA40 { name = "TCP_acc_pointer_lam_MA40"; count = 1; }
-      class _xx_TCP_muzzle_brake_762_01 { name = "TCP_muzzle_brake_762_01"; count = 1; }
-    };
-    class TransportWeapons
-    {
-      class _xx_TCP_arifle_MA40 { weapon = "TCP_arifle_MA40"; count = 1; }
-    };
+      init = "if (local (_this select 0)) then { (_this select 0) addWeaponWithAttachmentsCargoGlobal [ [ ""TCP_arifle_MA40"", ""TCP_muzzle_brake_762_01"", ""TCP_acc_pointer_lam_MA40"", ""TCP_optic_EVOSJ1"", [], [], """" ], 1]; };";
+    }
     class TransportMagazines
     {
       class _xx_TCP_36Rnd_762x51_Mag { magazine = "TCP_36Rnd_762x51_Mag"; count = 7; }
@@ -80,16 +79,10 @@ class CfgVehicles
     scope = 2;
     displayName = "[WS] Supply Pod (MA40 UGL)";
     hiddenSelectionsTextures[] = { "WS_Props\Tictacs\_textures\pods\ma40gl.paa" };
-    class TransportItems
+    class EventHandlers : EventHandlers
     {
-      class _xx_TCP_optic_EVOSJ1 { name = "TCP_optic_EVOSJ1"; count = 1; }
-      class _xx_TCP_acc_pointer_lam_MA40 { name = "TCP_acc_pointer_lam_MA40"; count = 1; }
-      class _xx_TCP_muzzle_brake_762_01 { name = "TCP_muzzle_brake_762_01"; count = 1; }
-    };
-    class TransportWeapons
-    {
-      class _xx_TCP_arifle_MA40_GL { weapon = "TCP_arifle_MA40_GL"; count = 1; }
-    };
+      init = "if (local (_this select 0)) then { (_this select 0) addWeaponWithAttachmentsCargoGlobal [ [ ""TCP_arifle_MA40_GL"", ""TCP_muzzle_brake_762_01"", ""TCP_acc_pointer_lam_MA40"", ""TCP_optic_EVOSJ1"", [], [], """" ], 1]; };";
+    }
     class TransportMagazines
     {
       class _xx_TCP_36Rnd_762x51_Mag { magazine = "TCP_36Rnd_762x51_Mag"; count = 4; }
@@ -143,20 +136,12 @@ class CfgVehicles
     scope = 2;
     displayName = "[WS] Supply Pod (M7)";
     hiddenSelectionsTextures[] = { "WS_Props\Tictacs\_textures\pods\m7.paa" };
-    class TransportItems
+    class EventHandlers : EventHandlers
     {
-      class _xx_TCP_optic_M5BSLSV_Blue { name = "TCP_optic_M5BSLSV_Blue"; count = 1; }
-      class _xx_TCP_acc_pointer_lam_M7 { name = "TCP_acc_pointer_lam_M7"; count = 1; }
-      class _xx_TCP_muzzle_snds_523_01 { name = "TCP_muzzle_snds_523_01"; count = 1; }
-    };
-    class TransportWeapons
-    {
-      class _xx_TCP_SMG_M7 { weapon = "TCP_SMG_M7"; count = 1; }
-    };
+      init = "if (local (_this select 0)) then { (_this select 0) addWeaponWithAttachmentsCargoGlobal [ [ ""TCP_SMG_M7"", ""TCP_muzzle_snds_523_01"", ""TCP_acc_pointer_lam_M7"", ""TCP_optic_M5BSLSV_Blue"", [], [], """" ], 1]; };";
+    }
     class TransportMagazines
     {
-      class _xx_TCP_48Rnd_5x23_Mag_JHP { magazine = "TCP_48Rnd_5x23_Mag_JHP"; count = 7; }
-      class _xx_TCP_48Rnd_5x23_Mag_AP { magazine = "TCP_48Rnd_5x23_Mag_AP"; count = 7; }
       class _xx_TCP_48Rnd_5x23_Mag { magazine = "TCP_48Rnd_5x23_Mag"; count = 7; }
     };
   };
@@ -168,9 +153,75 @@ class CfgVehicles
     hiddenSelectionsTextures[] = { "WS_Props\Tictacs\_textures\pods\m7_ammo.paa" };
     class TransportMagazines
     {
-      class _xx_TCP_48Rnd_5x23_Mag_JHP { magazine = "TCP_48Rnd_5x23_Mag_JHP"; count = 21; }
-      class _xx_TCP_48Rnd_5x23_Mag_AP { magazine = "TCP_48Rnd_5x23_Mag_AP"; count = 21; }
       class _xx_TCP_48Rnd_5x23_Mag { magazine = "TCP_48Rnd_5x23_Mag"; count = 21; }
+    };
+  };
+
+  class WS_Props_TicTac_VK78: WS_Props_TicTac_Empty
+  {
+    scope = 2;
+    displayName = "[WS] Supply Pod (VK78)";
+    hiddenSelectionsTextures[] = { "WS_Props\Tictacs\_textures\pods\vk78.paa" };
+    class EventHandlers : EventHandlers
+    {
+      init = "if (local (_this select 0)) then { (_this select 0) addWeaponWithAttachmentsCargoGlobal [ [ ""TCP_srifle_VK78_Gray"", ""TCP_muzzle_brake_65_01"", ""TCP_rail_ammoCounter_VK78"", """", [], [], ""TCP_bipod_Grip_VK78"" ], 1]; };";
+    }
+    class TransportMagazines
+    {
+      class _xx_TCP_20Rnd_65x48_Mag { magazine = "TCP_20Rnd_65x48_Mag"; count = 14; }
+    };
+  };
+
+  class WS_Props_TicTac_VK78___Resupply: WS_Props_TicTac_Empty
+  {
+    scope = 2;
+    displayName = "[WS] Supply Pod (VK78 | Resupply)";
+    hiddenSelectionsTextures[] = { "WS_Props\Tictacs\_textures\pods\vk78_ammo.paa" };
+    class TransportMagazines
+    {
+      class _xx_TCP_20Rnd_65x48_Mag { magazine = "TCP_20Rnd_65x48_Mag"; count = 36; }
+      class _xx_TCP_20Rnd_65x48_Mag_Tracer_Green { magazine = "TCP_20Rnd_65x48_Mag_Tracer_Green"; count = 8; }
+      class _xx_TCP_20Rnd_65x48_Mag_Tracer_DIM { magazine = "TCP_20Rnd_65x48_Mag_Tracer_DIM"; count = 8; }
+    };
+  };
+
+  class WS_Props_TicTac_M731: WS_Props_TicTac_Empty
+  {
+    scope = 2;
+    displayName = "[WS] Supply Pod (M731)";
+    hiddenSelectionsTextures[] = { "WS_Props\Tictacs\_textures\pods\m731.paa" };
+    class EventHandlers : EventHandlers
+    {
+      init = "if (local (_this select 0)) then { (_this select 0) addWeaponWithAttachmentsCargoGlobal [ [ ""TCP_LMG_M731"", ""TCP_muzzle_brake_762_02"", ""TCP_acc_carryHandle_M731"", ""TCP_optic_EVOSM"", [], [], ""bipod_01_F_blk"" ], 1]; };";
+    }
+    class TransportItems
+    {
+      class _xx_TCP_optic_EVOSM { name = "TCP_optic_EVOSM"; count = 1; }
+      class _xx_TCP_acc_carryHandle_M731 { name = "TCP_acc_carryHandle_M731"; count = 1; }
+      class _xx_TCP_muzzle_brake_762_02 { name = "TCP_muzzle_brake_762_02"; count = 1; }
+    };
+    class TransportWeapons
+    {
+      class _xx_TCP_LMG_M731 { weapon = "TCP_LMG_M731"; count = 1; }
+    };
+    class TransportMagazines
+    {
+      class _xx_TCP_100Rnd_762x51_Mag { magazine = "TCP_100Rnd_762x51_Mag"; count = 4; }
+      class _xx_TCP_100Rnd_762x51_Mag_Tracer_Green { magazine = "TCP_100Rnd_762x51_Mag_Tracer_Green"; count = 4; }
+    };
+  };
+
+  class WS_Props_TicTac_M731___Resupply: WS_Props_TicTac_Empty
+  {
+    scope = 2;
+    displayName = "[WS] Supply Pod (M731 | Resupply)";
+    hiddenSelectionsTextures[] = { "WS_Props\Tictacs\_textures\pods\m731_ammo.paa" };
+    class TransportMagazines
+    {
+      class _xx_TCP_100Rnd_762x51_Mag { magazine = "TCP_100Rnd_762x51_Mag"; count = 12; }
+      class _xx_TCP_100Rnd_762x51_Mag_Tracer_Green { magazine = "TCP_100Rnd_762x51_Mag_Tracer_Green"; count = 12; }
+      class _xx_TCP_200Rnd_762x51_Mag { magazine = "TCP_200Rnd_762x51_Mag"; count = 6; }
+      class _xx_TCP_200Rnd_762x51_Mag_Tracer_Green { magazine = "TCP_200Rnd_762x51_Mag_Tracer_Green"; count = 6; }
     };
   };
 

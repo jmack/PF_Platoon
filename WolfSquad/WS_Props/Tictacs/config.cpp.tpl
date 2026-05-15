@@ -21,6 +21,7 @@ class CfgPatches
 class CfgVehicles
 {
   class OPTRE_Ammo_SupplyPod_Empty;
+  class EventHandlers;
   class WS_Props_TicTac_Empty : OPTRE_Ammo_SupplyPod_Empty
   {
     scope = 1;
