@@ -109,7 +109,7 @@ export default Object.freeze({
     ['9.5x40 mm 36Rnd Tracer (Green) Mag', 'TCP_36Rnd_95x40_Mag_Tracer_Green'],
     ['9.5x40 mm 36Rnd Tracer (IR) Mag', 'TCP_36Rnd_95x40_Mag_Tracer_DIM'],
 
-    // AR / LMG
+    // AR / DMR / LMG
     ['', 'TCP_15Rnd_762x51_Mag_BTHP'],
     ['', 'TCP_15Rnd_762x51_Mag_BTHP_Tracer_Green'],
     ['', 'TCP_15Rnd_762x51_Mag_BTHP_Tracer_DIM'],
@@ -117,10 +117,12 @@ export default Object.freeze({
     ['', 'TCP_15Rnd_762x51_Mag'],
     ['', 'TCP_15Rnd_762x51_Mag_Tracer_Green'],
     ['', 'TCP_15Rnd_762x51_Mag_Tracer_DIM'],
+
     ['7.62x51 mm 36Rnd Dual Purpose Mag', 'TCP_36Rnd_762x51_Mag_Dual'],
     ['7.62x51 mm 36Rnd Mag', 'TCP_36Rnd_762x51_Mag'],
     ['7.62x51 mm 36Rnd Tracer (Green) Mag', 'TCP_36Rnd_762x51_Mag_Tracer_Green'],
     ['7.62x51 mm 36Rnd Tracer (IR) Mag', 'TCP_36Rnd_762x51_Mag_Tracer_DIM'],
+
     ['', 'TCP_100Rnd_762x51_Mag'],
     ['', 'TCP_100Rnd_762x51_Mag_Tracer_Green'],
     ['', 'TCP_100Rnd_762x51_Mag_Tracer_DIM'],
@@ -129,12 +131,6 @@ export default Object.freeze({
     ['', 'TCP_200Rnd_762x51_Mag_Tracer_DIM'],
 
     // SMG
-    ['', 'TCP_48Rnd_5x23_Mag_AP'],
-    ['', 'TCP_48Rnd_5x23_Mag_AP_Tracer_Green'],
-    ['', 'TCP_48Rnd_5x23_Mag_AP_Tracer_DIM'],
-    ['', 'TCP_48Rnd_5x23_Mag_JHP'],
-    ['', 'TCP_48Rnd_5x23_Mag_JHP_Tracer_Green'],
-    ['', 'TCP_48Rnd_5x23_Mag_JHP_Tracer_DIM'],
     ['', 'TCP_48Rnd_5x23_Mag'],
     ['', 'TCP_48Rnd_5x23_Mag_Tracer_Green'],
     ['', 'TCP_48Rnd_5x23_Mag_Tracer_DIM'],
