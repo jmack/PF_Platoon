@@ -40,6 +40,10 @@ class CfgFunctions
       file = "\WS_Core\functions\debug";
       class fileExists { };
       class logMsg { };
+      class logError { };
+      class logWarn { };
+      class logInfo { };
+      class logDebug { };
       class skipBriefing {
         preInit = 1;
       };
