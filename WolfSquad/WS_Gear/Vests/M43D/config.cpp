@@ -74,8 +74,9 @@ class CfgWeapons
   class TCP_V_M43D_ODST_4_Black;
   class TCP_V_M43D_BREACHER_4_Black;
   class TCP_V_M43D_SHARPSHOOTER_4_Black;
-  class TCP_V_M43D_Light_Black;
+  class TCP_V_M43D_Light_4_Black;
   class TCP_uniformDecals;
+  class TCP_equipmentTypes;
 
   /* Base Items ---- */
   // ODST Base
@@ -292,7 +293,7 @@ class CfgWeapons
     };
   };
   // ODST Light
-  class WS_M43D_Vest_Base_Light: TCP_V_M43D_Light_Black
+  class WS_M43D_Vest_Base_Light: TCP_V_M43D_Light_4_Black
   {
     scope = 1;
     scopeArsenal = 1;
@@ -364,12 +365,18 @@ class CfgWeapons
       decalColor = "white";
     };
 
+    class TCP_equipmentTypes: TCP_equipmentTypes
+    {
+      baseEquipment = "WS_M43D_Vest_Standard";
+    };
+
     hiddenSelectionsTextures[] = 
     {
-      "\WS_Gear\Vests\M43D\_textures\base\armor_upper.paa",
+      "\WS_Gear\Vests\M43D\_textures\base\armor_m43_1.paa",
       "\WS_Gear\Vests\M43D\_textures\base\shoulders_odst.paa",
-      "\WS_Gear\Vests\M43D\_textures\base\odst_chest.paa",
-      "\WS_Gear\Vests\M43D\_textures\base\armor_lower.paa",
+      "\WS_Gear\Vests\M43D\_textures\base\armor_odst.paa",
+      "\WS_Gear\Vests\M43D\_textures\base\armor_m43_2.paa",
+      "\WS_Gear\Vests\M43D\_textures\base\armor_m43_3.paa",
       "\WS_Gear\Vests\M43D\_textures\base\decals.paa"
     };
   };
@@ -390,13 +397,19 @@ class CfgWeapons
       decalColor = "white";
     };
 
+    class TCP_equipmentTypes: TCP_equipmentTypes
+    {
+      baseEquipment = "WS_M43D_Vest_Marksman";
+    };
+
     hiddenSelectionsTextures[] = 
     {
-      "\WS_Gear\Vests\M43D\_textures\base\armor_upper.paa",
+      "\WS_Gear\Vests\M43D\_textures\base\armor_m43_1.paa",
       "\WS_Gear\Vests\M43D\_textures\base\shoulders_odst.paa",
       "\WS_Gear\Vests\M43D\_textures\base\shoulders_sharpshooter.paa",
-      "\WS_Gear\Vests\M43D\_textures\base\odst_chest.paa",
-      "\WS_Gear\Vests\M43D\_textures\base\armor_lower.paa",
+      "\WS_Gear\Vests\M43D\_textures\base\armor_odst.paa",
+      "\WS_Gear\Vests\M43D\_textures\base\armor_m43_2.paa",
+      "\WS_Gear\Vests\M43D\_textures\base\armor_m43_3.paa",
       "\WS_Gear\Vests\M43D\_textures\base\decals.paa"
     };
   };
@@ -417,13 +430,19 @@ class CfgWeapons
       decalColor = "white";
     };
 
+    class TCP_equipmentTypes: TCP_equipmentTypes
+    {
+      baseEquipment = "WS_M43D_Vest_CQB";
+    };
+
     hiddenSelectionsTextures[] = 
     {
-      "\WS_Gear\Vests\M43D\_textures\base\armor_upper.paa",
+      "\WS_Gear\Vests\M43D\_textures\base\armor_m43_1.paa",
       "\WS_Gear\Vests\M43D\_textures\base\shoulders_odst.paa",
       "\WS_Gear\Vests\M43D\_textures\base\shoulders_breacher.paa",
-      "\WS_Gear\Vests\M43D\_textures\base\odst_chest.paa",
-      "\WS_Gear\Vests\M43D\_textures\base\armor_lower.paa",
+      "\WS_Gear\Vests\M43D\_textures\base\armor_odst.paa",
+      "\WS_Gear\Vests\M43D\_textures\base\armor_m43_2.paa",
+      "\WS_Gear\Vests\M43D\_textures\base\armor_m43_3.paa",
       "\WS_Gear\Vests\M43D\_textures\base\decals.paa"
     };
   };
@@ -444,10 +463,17 @@ class CfgWeapons
       decalColor = "white";
     };
 
+    class TCP_equipmentTypes: TCP_equipmentTypes
+    {
+      baseEquipment = "WS_M43D_Vest_Light";
+    };
+
     hiddenSelectionsTextures[] = 
     {
-      "\WS_Gear\Vests\M43D\_textures\base\armor_upper.paa",
-      "\WS_Gear\Vests\M43D\_textures\base\odst_chest.paa",
+      "\WS_Gear\Vests\M43D\_textures\base\armor_m43_1.paa",
+      "\WS_Gear\Vests\M43D\_textures\base\armor_odst.paa",
+      "\WS_Gear\Vests\M43D\_textures\base\armor_m43_2.paa",
+      "\WS_Gear\Vests\M43D\_textures\base\armor_m43_3.paa",
       "\WS_Gear\Vests\M43D\_textures\base\decals.paa"
     };
   };
@@ -460,13 +486,19 @@ class CfgWeapons
       type = "barnes";
     };
 
+    class TCP_equipmentTypes: TCP_equipmentTypes
+    {
+      baseEquipment = "WS_M43D_Vest_Barnes";
+    };
+
     hiddenSelectionsTextures[] =
     {
-      "\WS_Gear\Vests\M43D\_textures\base\armor_upper.paa",
+      "\WS_Gear\Vests\M43D\_textures\base\armor_m43_1.paa",
       "\WS_Gear\Vests\M43D\_textures\base\shoulders_odst.paa",
       "\WS_Gear\Vests\M43D\_textures\base\shoulders_breacher.paa",
-      "\WS_Gear\Vests\M43D\_textures\barnes\odst_chest.paa",
-      "\WS_Gear\Vests\M43D\_textures\base\armor_lower.paa",
+      "\WS_Gear\Vests\M43D\_textures\barnes\armor_odst.paa",
+      "\WS_Gear\Vests\M43D\_textures\base\armor_m43_2.paa",
+      "\WS_Gear\Vests\M43D\_textures\base\armor_m43_3.paa",
       "\WS_Gear\Vests\M43D\_textures\base\decals.paa"
     };
   };
@@ -479,10 +511,17 @@ class CfgWeapons
       type = "kuroda";
     };
 
+    class TCP_equipmentTypes: TCP_equipmentTypes
+    {
+      baseEquipment = "WS_M43D_Vest_Kuroda";
+    };
+
     hiddenSelectionsTextures[] =
     {
-      "\WS_Gear\Vests\M43D\_textures\base\armor_upper.paa",
-      "\WS_Gear\Vests\M43D\_textures\kuroda\odst_chest.paa",
+      "\WS_Gear\Vests\M43D\_textures\base\armor_m43_1.paa",
+      "\WS_Gear\Vests\M43D\_textures\kuroda\armor_odst.paa",
+      "\WS_Gear\Vests\M43D\_textures\base\armor_m43_2.paa",
+      "\WS_Gear\Vests\M43D\_textures\base\armor_m43_3.paa",
       "\WS_Gear\Vests\M43D\_textures\base\decals.paa"
     };
   };

@@ -2,16 +2,21 @@ import fs from 'fs';
 import sharp from 'sharp';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
+import { exec } from 'child_process';
+import util from 'util';
 
 /**
  * This file generates the file defs for the ONICrew uniform item.
  *
- * It can be run with "npx ts-node .\WolfSquad\WS_Gear\Uniform\ONICrew\generator.ts" from the project root.
+ * It can be run with "npm run wolf:generate:oniuniform" from the project root.
  */
 
-const start = Date.now();
-let numImages = 0;
-let numClasses = 0;
+/**
+ * Classes, Types, and Consts
+ */
+const SCRIPT_DIR = dirname(fileURLToPath(import.meta.url));
+const WOLF_SQUAD_ROOT_DIR = SCRIPT_DIR.substring(0, SCRIPT_DIR.search('WolfSquad') + 'WolfSquad'.length);
+const WS_RANKS_DIR = `${WOLF_SQUAD_ROOT_DIR}\\WS_Ranks\\_textures`;
 
 class MetaData {
   Label: string = '';
@@ -30,7 +35,53 @@ class MetaDataOptionValue {
   Label?: string;
   Description?: string;
   ImgLink?: string;
+  RankLocation?: RankImageLocationData;
+  RankColor?: string;
 }
+
+interface RankImageLocationData {
+  position: {
+    x: number;
+    y: number;
+  };
+  dimensions: {
+    width: number;
+    height: number;
+  };
+  rotation: number;
+}
+
+const RankImageLocation = {
+  ARM: {
+    position: {
+      x: 1364,
+      y: 1400,
+    },
+    dimensions: {
+      width: 67,
+      height: 136,
+    },
+    rotation: 2.5,
+  },
+  EPAULETTE: {
+    position: {
+      x: 1762,
+      y: 1190,
+    },
+    dimensions: {
+      width: 68,
+      height: 146,
+    },
+    rotation: 2,
+  },
+} as const;
+
+const RankImageColors = {
+  WHITE: '#ffffff',
+  DARKRED: '#610000',
+  OFFICERGOLD: '#f7c500',
+  ARMYGOLD: '#755e02',
+} as const;
 
 const UNIFORM_MATRIX: MetaData = {
   Label: 'ONI Crew Uniform',
@@ -88,146 +139,394 @@ const UNIFORM_MATRIX: MetaData = {
       Label: 'Rank',
       AlwaysSelectable: false,
       Values: [
+        /**
+         * EMPTY
+         */
         {
           ClassName: 'none',
           Label: 'None',
-          ImgLink: './_textures/ranks/none.png',
+          ImgLink: `${WS_RANKS_DIR}\\blank.png`,
+          RankLocation: RankImageLocation.ARM,
+          RankColor: RankImageColors.WHITE,
         },
+        /**
+         * NAVICOM
+         */
         {
-          ClassName: 'cdr',
+          ClassName: 'navcom_cdr',
           Label: 'CDR',
           Description: 'O-5: Commander',
-          ImgLink: './_textures/ranks/cdr.png',
+          ImgLink: `${WS_RANKS_DIR}\\navcom\\O-5 Commander.png`,
+          RankLocation: RankImageLocation.EPAULETTE,
+          RankColor: RankImageColors.OFFICERGOLD,
         },
         {
-          ClassName: 'lcdr',
+          ClassName: 'navcom_lcdr',
           Label: 'LCDR',
           Description: 'O-4: Lieutenant Commander',
-          ImgLink: './_textures/ranks/lcdr.png',
+          ImgLink: `${WS_RANKS_DIR}\\navcom\\O-4 Lieutenant Commander.png`,
+          RankLocation: RankImageLocation.EPAULETTE,
+          RankColor: RankImageColors.OFFICERGOLD,
         },
         {
-          ClassName: 'lt',
+          ClassName: 'navcom_lt',
           Label: 'LT',
           Description: 'O-3: Lieutenant',
-          ImgLink: './_textures/ranks/lt.png',
+          ImgLink: `${WS_RANKS_DIR}\\navcom\\O-3 Lieutenant.png`,
+          RankLocation: RankImageLocation.EPAULETTE,
+          RankColor: RankImageColors.OFFICERGOLD,
         },
         {
-          ClassName: 'ltjg',
+          ClassName: 'navcom_ltjg',
           Label: 'LTJG',
           Description: 'O-2: Lieutenant Junior Grade',
-          ImgLink: './_textures/ranks/ltjg.png',
+          ImgLink: `${WS_RANKS_DIR}\\navcom\\O-2 Lieutenant Junior Grade.png`,
+          RankLocation: RankImageLocation.EPAULETTE,
+          RankColor: RankImageColors.OFFICERGOLD,
         },
         {
-          ClassName: 'ens',
+          ClassName: 'navcom_ens',
           Label: 'ENS',
           Description: 'O-1: Ensign',
-          ImgLink: './_textures/ranks/ens.png',
+          ImgLink: `${WS_RANKS_DIR}\\navcom\\O-1 Ensign.png`,
+          RankLocation: RankImageLocation.EPAULETTE,
+          RankColor: RankImageColors.OFFICERGOLD,
         },
         {
-          ClassName: 'hnsc',
-          Label: 'HNSC',
+          ClassName: 'navcom_hmmc',
+          Label: 'HMMC',
+          Description: 'E-9: Master Chief Hospital Corpsman',
+          ImgLink: `${WS_RANKS_DIR}\\navcom\\E-9 Master Chief Hospital Corpsman.png`,
+          RankLocation: RankImageLocation.ARM,
+          RankColor: RankImageColors.DARKRED,
+        },
+        {
+          ClassName: 'navcom_mcpo',
+          Label: 'MCPO',
+          Description: 'E-9: Master Chief Petty Officer',
+          ImgLink: `${WS_RANKS_DIR}\\navcom\\E-9 Master Chief Petty Officer.png`,
+          RankLocation: RankImageLocation.ARM,
+          RankColor: RankImageColors.WHITE,
+        },
+        {
+          ClassName: 'navcom_hmsc',
+          Label: 'HMSC',
           Description: 'E-8: Senior Chief Hospital Corpsman',
-          ImgLink: './_textures/ranks/hnsc.png',
+          ImgLink: `${WS_RANKS_DIR}\\navcom\\E-8 Senior Chief Hospital Corpsman.png`,
+          RankLocation: RankImageLocation.ARM,
+          RankColor: RankImageColors.DARKRED,
         },
         {
-          ClassName: 'cpo',
+          ClassName: 'navcom_cpo',
           Label: 'CPO',
           Description: 'E-7: Chief Petty Officer',
-          ImgLink: './_textures/ranks/cpo.png',
+          ImgLink: `${WS_RANKS_DIR}\\navcom\\E-7 Chief Petty Officer.png`,
+          RankLocation: RankImageLocation.ARM,
+          RankColor: RankImageColors.WHITE,
         },
         {
-          ClassName: 'hmc',
+          ClassName: 'navcom_hmc',
           Label: 'HMC',
           Description: 'E-7: Chief Hospital Corpsman',
-          ImgLink: './_textures/ranks/hmc.png',
+          ImgLink: `${WS_RANKS_DIR}\\navcom\\E-7 Chief Hospital Corpsman.png`,
+          RankLocation: RankImageLocation.ARM,
+          RankColor: RankImageColors.DARKRED,
         },
         {
-          ClassName: 'po1',
+          ClassName: 'navcom_po1',
           Label: 'PO1',
           Description: 'E-6: Petty Officer First Class',
-          ImgLink: './_textures/ranks/po1.png',
+          ImgLink: `${WS_RANKS_DIR}\\navcom\\E-6 Petty Officer First Class.png`,
+          RankLocation: RankImageLocation.ARM,
+          RankColor: RankImageColors.WHITE,
         },
         {
-          ClassName: 'hm1',
+          ClassName: 'navcom_hm1',
           Label: 'HM1',
           Description: 'E-6: Hospital Corpsman First Class',
-          ImgLink: './_textures/ranks/hm1.png',
+          ImgLink: `${WS_RANKS_DIR}\\navcom\\E-6 Hospital Corpsman First Class.png`,
+          RankLocation: RankImageLocation.ARM,
+          RankColor: RankImageColors.DARKRED,
         },
         {
-          ClassName: 'po2',
+          ClassName: 'navcom_po2',
           Label: 'PO2',
           Description: 'E-5: Petty Officer Second Class',
-          ImgLink: './_textures/ranks/po2.png',
+          ImgLink: `${WS_RANKS_DIR}\\navcom\\E-5 Petty Officer Second Class.png`,
+          RankLocation: RankImageLocation.ARM,
+          RankColor: RankImageColors.WHITE,
         },
         {
-          ClassName: 'hm2',
+          ClassName: 'navcom_hm2',
           Label: 'HM2',
           Description: 'E-5: Hospital Corpsman Second Class',
-          ImgLink: './_textures/ranks/hm2.png',
+          ImgLink: `${WS_RANKS_DIR}\\navcom\\E-5 Hospital Corpsman Second Class.png`,
+          RankLocation: RankImageLocation.ARM,
+          RankColor: RankImageColors.DARKRED,
         },
         {
-          ClassName: 'po3',
+          ClassName: 'navcom_po3',
           Label: 'PO3',
           Description: 'E-4: Petty Officer Third Class',
-          ImgLink: './_textures/ranks/po3.png',
+          ImgLink: `${WS_RANKS_DIR}\\navcom\\E-4 Petty Officer Third Class.png`,
+          RankLocation: RankImageLocation.ARM,
+          RankColor: RankImageColors.WHITE,
         },
         {
-          ClassName: 'hm3',
+          ClassName: 'navcom_hm3',
           Label: 'HM3',
           Description: 'E-4: Hospital Corpsman Third Class',
-          ImgLink: './_textures/ranks/hm3.png',
+          ImgLink: `${WS_RANKS_DIR}\\navcom\\E-4 Hospital Corpsman Third Class.png`,
+          RankLocation: RankImageLocation.ARM,
+          RankColor: RankImageColors.DARKRED,
         },
         {
-          ClassName: 'cn',
+          ClassName: 'navcom_cn',
           Label: 'CN',
           Description: 'E-3: Crewman',
-          ImgLink: './_textures/ranks/cn.png',
+          ImgLink: `${WS_RANKS_DIR}\\navcom\\E-3 Crewman.png`,
+          RankLocation: RankImageLocation.ARM,
+          RankColor: RankImageColors.WHITE,
         },
         {
-          ClassName: 'hn',
+          ClassName: 'navcom_hn',
           Label: 'HN',
           Description: 'E-3: Hospitalman',
-          ImgLink: './_textures/ranks/hn.png',
+          ImgLink: `${WS_RANKS_DIR}\\navcom\\E-3 Hospitalman.png`,
+          RankLocation: RankImageLocation.ARM,
+          RankColor: RankImageColors.DARKRED,
         },
         {
-          ClassName: 'ca',
+          ClassName: 'navcom_ca',
           Label: 'CA',
           Description: 'E-2: Crewman Apprentice',
-          ImgLink: './_textures/ranks/ca.png',
+          ImgLink: `${WS_RANKS_DIR}\\navcom\\E-2 Crewman Apprentice.png`,
+          RankLocation: RankImageLocation.ARM,
+          RankColor: RankImageColors.WHITE,
         },
         {
-          ClassName: 'ha',
+          ClassName: 'navcom_ha',
           Label: 'HA',
           Description: 'E-2: Hospitalman Apprentice',
-          ImgLink: './_textures/ranks/ha.png',
+          ImgLink: `${WS_RANKS_DIR}\\navcom\\E-2 Hospitalman Apprentice.png`,
+          RankLocation: RankImageLocation.ARM,
+          RankColor: RankImageColors.DARKRED,
         },
         {
-          ClassName: 'cr',
+          ClassName: 'navcom_cr',
           Label: 'CR',
           Description: 'E-1: Crewman Recruit',
-          ImgLink: './_textures/ranks/cr.png',
+          ImgLink: `${WS_RANKS_DIR}\\navcom\\E-1 Crewman Recruit.png`,
+          RankLocation: RankImageLocation.ARM,
+          RankColor: RankImageColors.WHITE,
         },
         {
-          ClassName: 'hr',
+          ClassName: 'navcom_hr',
           Label: 'HR',
           Description: 'E-1: Hospitalman Recruit',
-          ImgLink: './_textures/ranks/hr.png',
+          ImgLink: `${WS_RANKS_DIR}\\navcom\\E-1 Hospitalman Recruit.png`,
+          RankLocation: RankImageLocation.ARM,
+          RankColor: RankImageColors.DARKRED,
+        },
+        /**
+         * UNICOM
+         */
+        {
+          ClassName: 'unicom_gen',
+          Label: 'GEN',
+          Description: 'O-10: General',
+          ImgLink: `${WS_RANKS_DIR}\\unicom\\O-10 General.png`,
+          RankLocation: RankImageLocation.EPAULETTE,
+          RankColor: RankImageColors.OFFICERGOLD,
+        },
+        {
+          ClassName: 'unicom_ltgen',
+          Label: 'LTGEN',
+          Description: 'O-9: Lieutenant General',
+          ImgLink: `${WS_RANKS_DIR}\\unicom\\O-9 Lieutenant General.png`,
+          RankLocation: RankImageLocation.EPAULETTE,
+          RankColor: RankImageColors.OFFICERGOLD,
+        },
+        {
+          ClassName: 'unicom_majgen',
+          Label: 'LTGEN',
+          Description: 'O-8: Major General',
+          ImgLink: `${WS_RANKS_DIR}\\unicom\\O-8 Major General.png`,
+          RankLocation: RankImageLocation.EPAULETTE,
+          RankColor: RankImageColors.OFFICERGOLD,
+        },
+        {
+          ClassName: 'unicom_bgen',
+          Label: 'BGEN',
+          Description: 'O-7: Brigadier General',
+          ImgLink: `${WS_RANKS_DIR}\\unicom\\O-7 Brigadier General.png`,
+          RankLocation: RankImageLocation.EPAULETTE,
+          RankColor: RankImageColors.OFFICERGOLD,
+        },
+        {
+          ClassName: 'unicom_col',
+          Label: 'COL',
+          Description: 'O-6: Colonel',
+          ImgLink: `${WS_RANKS_DIR}\\unicom\\O-6 Colonel.png`,
+          RankLocation: RankImageLocation.EPAULETTE,
+          RankColor: RankImageColors.OFFICERGOLD,
+        },
+        {
+          ClassName: 'unicom_ltcol',
+          Label: 'LTCOL',
+          Description: 'O-5: Lieutenant Colonel',
+          ImgLink: `${WS_RANKS_DIR}\\unicom\\O-5 Lieutenant Colonel.png`,
+          RankLocation: RankImageLocation.EPAULETTE,
+          RankColor: RankImageColors.OFFICERGOLD,
+        },
+        {
+          ClassName: 'unicom_maj',
+          Label: 'MAJ',
+          Description: 'O-4: Major',
+          ImgLink: `${WS_RANKS_DIR}\\unicom\\O-4 Major.png`,
+          RankLocation: RankImageLocation.EPAULETTE,
+          RankColor: RankImageColors.OFFICERGOLD,
+        },
+        {
+          ClassName: 'unicom_capt',
+          Label: 'CAPT',
+          Description: 'O-3: Captain',
+          ImgLink: `${WS_RANKS_DIR}\\unicom\\O-3 Captain.png`,
+          RankLocation: RankImageLocation.EPAULETTE,
+          RankColor: RankImageColors.OFFICERGOLD,
+        },
+        {
+          ClassName: 'unicom_1lt',
+          Label: '1LT',
+          Description: 'O-2: First Lieutenant',
+          ImgLink: `${WS_RANKS_DIR}\\unicom\\O-2 First Lieutenant.png`,
+          RankLocation: RankImageLocation.EPAULETTE,
+          RankColor: RankImageColors.OFFICERGOLD,
+        },
+        {
+          ClassName: 'unicom_2lt',
+          Label: '2LT',
+          Description: 'O-1: Second Lieutenant',
+          ImgLink: `${WS_RANKS_DIR}\\unicom\\O-1 Second Lieutenant.png`,
+          RankLocation: RankImageLocation.EPAULETTE,
+          RankColor: RankImageColors.OFFICERGOLD,
+        },
+        {
+          ClassName: 'unicom_cdt',
+          Label: 'CDT',
+          Description: 'O-0: Cadet',
+          ImgLink: `${WS_RANKS_DIR}\\unicom\\O-0 Cadet.png`,
+          RankLocation: RankImageLocation.EPAULETTE,
+          RankColor: RankImageColors.OFFICERGOLD,
+        },
+        {
+          ClassName: 'unicom_sgtmaj',
+          Label: 'SGTMAJ',
+          Description: 'E-9: Sergeant Major',
+          ImgLink: `${WS_RANKS_DIR}\\unicom\\E-9 Sergeant Major.png`,
+          RankLocation: RankImageLocation.ARM,
+          RankColor: RankImageColors.ARMYGOLD,
+        },
+        {
+          ClassName: 'unicom_mgysgt',
+          Label: 'MGYSGT',
+          Description: 'E-9: Master Gunnery Sergeant',
+          ImgLink: `${WS_RANKS_DIR}\\unicom\\E-9 Master Gunnery Sergeant.png`,
+          RankLocation: RankImageLocation.ARM,
+          RankColor: RankImageColors.ARMYGOLD,
+        },
+        {
+          ClassName: 'unicom_1stsgt',
+          Label: '1SGT',
+          Description: 'E-8: First Sergeant',
+          ImgLink: `${WS_RANKS_DIR}\\unicom\\E-8 First Sergeant.png`,
+          RankLocation: RankImageLocation.ARM,
+          RankColor: RankImageColors.ARMYGOLD,
+        },
+        {
+          ClassName: 'unicom_msgt',
+          Label: 'MSGT',
+          Description: 'E-8: Master Sergeant',
+          ImgLink: `${WS_RANKS_DIR}\\unicom\\E-8 Master Sergeant.png`,
+          RankLocation: RankImageLocation.ARM,
+          RankColor: RankImageColors.ARMYGOLD,
+        },
+        {
+          ClassName: 'unicom_gysgt',
+          Label: 'GYSGT',
+          Description: 'E-7: Gunnery Sergeant',
+          ImgLink: `${WS_RANKS_DIR}\\unicom\\E-7 Gunnery Sergeant.png`,
+          RankLocation: RankImageLocation.ARM,
+          RankColor: RankImageColors.ARMYGOLD,
+        },
+        {
+          ClassName: 'unicom_ssgt',
+          Label: 'SSGT',
+          Description: 'E-6: Staff Sergeant',
+          ImgLink: `${WS_RANKS_DIR}\\unicom\\E-6 Staff Sergeant.png`,
+          RankLocation: RankImageLocation.ARM,
+          RankColor: RankImageColors.ARMYGOLD,
+        },
+        {
+          ClassName: 'unicom_sgt',
+          Label: 'SGT',
+          Description: 'E-5: Sergeant',
+          ImgLink: `${WS_RANKS_DIR}\\unicom\\E-5 Sergeant.png`,
+          RankLocation: RankImageLocation.ARM,
+          RankColor: RankImageColors.ARMYGOLD,
+        },
+        {
+          ClassName: 'unicom_cpl',
+          Label: 'CPL',
+          Description: 'E-4: Corporal',
+          ImgLink: `${WS_RANKS_DIR}\\unicom\\E-4 Corporal.png`,
+          RankLocation: RankImageLocation.ARM,
+          RankColor: RankImageColors.ARMYGOLD,
+        },
+        {
+          ClassName: 'unicom_lcpl',
+          Label: 'LCPL',
+          Description: 'E-3: Lance Corporal',
+          ImgLink: `${WS_RANKS_DIR}\\unicom\\E-3 Lance Corporal.png`,
+          RankLocation: RankImageLocation.ARM,
+          RankColor: RankImageColors.ARMYGOLD,
+        },
+        {
+          ClassName: 'unicom_pfc',
+          Label: 'PFC',
+          Description: 'E-2: Private First Class',
+          ImgLink: `${WS_RANKS_DIR}\\unicom\\E-2 Private First Class.png`,
+          RankLocation: RankImageLocation.ARM,
+          RankColor: RankImageColors.ARMYGOLD,
+        },
+        {
+          ClassName: 'unicom_pvt',
+          Label: 'PVT',
+          Description: 'E-1: Private',
+          ImgLink: `${WS_RANKS_DIR}\\unicom\\E-1 Private.png`,
+          RankLocation: RankImageLocation.ARM,
+          RankColor: RankImageColors.ARMYGOLD,
         },
       ],
     },
   ],
 };
 
-const workingDir = dirname(fileURLToPath(import.meta.url));
-
+/**
+ * Main method body
+ */
 async function main() {
+  const start = Date.now();
+  let numImages = 0;
+  let numClasses = 0;
+
   let metaitem: string = '';
   let cfgWeapons: string = '';
   let cfgVehicles: string = '';
 
   // clear out the combined dir if we're forcing a regenerate
-  fs.rmSync(`${workingDir}/_textures/combined`, { recursive: true, force: true });
-  fs.mkdirSync(`${workingDir}/_textures/combined`);
+  fs.rmSync(`${SCRIPT_DIR}/_textures/combined`, { recursive: true, force: true });
+  fs.mkdirSync(`${SCRIPT_DIR}/_textures/combined`);
 
   /**
    * Step 1: Build the MetaItem
@@ -294,7 +593,12 @@ async function main() {
         return;
       }
 
-      const texturePath = await createUniformImage(type.ImgLink, rank.ImgLink, textureName);
+      const rankTextureData = {
+        location: rank.RankLocation!,
+        color: rank.RankColor!,
+      };
+
+      const texturePath = await createUniformImage(type.ImgLink, rank.ImgLink, rankTextureData, textureName);
       if (!texturePath) {
         return;
       }
@@ -355,7 +659,7 @@ async function main() {
     })
   );
 
-  let template = fs.readFileSync(`${workingDir}/config.cpp.tpl`).toString();
+  let template = fs.readFileSync(`${SCRIPT_DIR}/config.cpp.tpl`).toString();
 
   template = template.replace('<% warning %>', 'AUTOGENERATED FILE. Edit config.cpp.tpl or generator.ts instead. Any changes to this file will be overwritten otherwise.');
   template = template.replace('<% metaitem %>', metaitem);
@@ -363,13 +667,28 @@ async function main() {
   template = template.replace('<% cfgVehicles %>', cfgVehicles);
 
   try {
-    fs.writeFileSync(`${workingDir}/config.cpp`, template);
+    fs.writeFileSync(`${SCRIPT_DIR}/config.cpp`, template);
   } catch (e) {
     console.error(e);
+    return;
   }
 
-  const time = Date.now() - start;
-  console.log(`Done [ ${time / 1000} seconds | ${numImages} images | ${numClasses} classes ]`);
+  // and log the time it took to generate
+  const genTime = Date.now() - start;
+
+  // then, we binarize the new files
+  const asyncExec = util.promisify(exec);
+  try {
+    await asyncExec(`cd ${WOLF_SQUAD_ROOT_DIR}; . ..\\vars.ps1; Start-Process $imageToPAA ${SCRIPT_DIR}\\_textures\\combined\\*.png -Wait`, { shell: 'powershell.exe' });
+  } catch (e) {
+    console.error(e);
+    return;
+  }
+  const binTime = Date.now() - start - genTime;
+
+  console.log(
+    `Done [ total ${(genTime + binTime) / 1000} seconds | generation ${genTime / 1000} seconds | binarization ${binTime / 1000} seconds | ${numImages} images | ${numClasses} classes ]`
+  );
 }
 
 /**
@@ -381,12 +700,16 @@ function t(num: number): string {
   return s;
 }
 
-async function createUniformImage(uniformRelativePath: string, rankRelativePath: string, fileOutputName: string): Promise<string | undefined> {
-  const uniformFullPath = `${workingDir}/${uniformRelativePath}`;
-  const rankFullPath = `${workingDir}/${rankRelativePath}`;
-  const outputFullPath = `${workingDir}/_textures/combined/${fileOutputName}.png`;
+async function createUniformImage(
+  uniformRelativePath: string,
+  rankFullPath: string,
+  rankTextureData: { location: RankImageLocationData; color: string },
+  fileOutputName: string
+): Promise<string | undefined> {
+  const uniformFullPath = `${SCRIPT_DIR}/${uniformRelativePath}`;
+  const outputFullPath = `${SCRIPT_DIR}/_textures/combined/${fileOutputName}.png`;
 
-  if (!fs.existsSync(uniformFullPath) || !fs.existsSync(rankFullPath)) {
+  if (!fs.existsSync(uniformFullPath)) {
     console.error(`Could not generate an image for ${fileOutputName} because ${uniformRelativePath} does not exist`);
     return;
   }
@@ -396,9 +719,50 @@ async function createUniformImage(uniformRelativePath: string, rankRelativePath:
     return;
   }
 
+  // destructure our rank transformation data
+  const {
+    location: { position: rankPosition, dimensions: rankDimensions, rotation: rankRotation },
+    color: rankColor,
+  } = rankTextureData;
+
   try {
+    // converts our "grey-grey" rank images to "black-grey" so we can tint without making it obnoxious
+    const rankBlkGrey = await sharp(rankFullPath)
+      .composite([{ input: rankFullPath, blend: 'color-burn' }])
+      .toBuffer();
+
+    // the next two create a color layer, shape it into the same shape as our rank, and merge them
+    const rankColorOverlay = await sharp({
+      create: {
+        height: 256,
+        width: 128,
+        channels: 4,
+        background: `${rankColor}ff`,
+      },
+    })
+      .png()
+      .composite([{ input: rankBlkGrey, blend: 'dest-atop' }])
+      .toBuffer();
+
+    const rankColorBurned = await sharp(rankBlkGrey)
+      .composite([{ input: rankColorOverlay, blend: 'multiply' }])
+      .toBuffer();
+
+    // scale and rotate
+    const rankFinalImg = await sharp(rankColorBurned)
+      .resize({ height: rankDimensions.height, width: rankDimensions.width })
+      .rotate(rankRotation, { background: '#00000000' })
+      .toBuffer();
+
+    // finally composite our rank over our base image and write it
     await sharp(uniformFullPath)
-      .composite([{ input: rankFullPath }])
+      .composite([
+        {
+          input: rankFinalImg,
+          left: rankPosition.x,
+          top: rankPosition.y,
+        },
+      ])
       .toFile(outputFullPath);
   } catch (e) {
     console.error(`An unknown error occurred while trying to generate ${fileOutputName}.png`, e);
@@ -408,6 +772,7 @@ async function createUniformImage(uniformRelativePath: string, rankRelativePath:
   return `WS_Gear\\Uniform\\ONICrew\\_textures\\combined\\${fileOutputName}.paa`;
 }
 
+// I have no memory of what the fuck this does anymore.
 function getProduct(a: string[], b: string[], c: string[]): string[][] {
   // @ts-expect-error: implicitly has an 'any' type.ts(7006)
   const flatMap = (xs, f) => [].concat(...xs.map(f));

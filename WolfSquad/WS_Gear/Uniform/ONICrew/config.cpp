@@ -82,130 +82,274 @@ class XtdGearModels
         values[] =
         {
           "none",
-          "cdr",
-          "lcdr",
-          "lt",
-          "ltjg",
-          "ens",
-          "hnsc",
-          "cpo",
-          "hmc",
-          "po1",
-          "hm1",
-          "po2",
-          "hm2",
-          "po3",
-          "hm3",
-          "cn",
-          "hn",
-          "ca",
-          "ha",
-          "cr",
-          "hr",
+          "navcom_cdr",
+          "navcom_lcdr",
+          "navcom_lt",
+          "navcom_ltjg",
+          "navcom_ens",
+          "navcom_hmmc",
+          "navcom_mcpo",
+          "navcom_hmsc",
+          "navcom_cpo",
+          "navcom_hmc",
+          "navcom_po1",
+          "navcom_hm1",
+          "navcom_po2",
+          "navcom_hm2",
+          "navcom_po3",
+          "navcom_hm3",
+          "navcom_cn",
+          "navcom_hn",
+          "navcom_ca",
+          "navcom_ha",
+          "navcom_cr",
+          "navcom_hr",
+          "unicom_gen",
+          "unicom_ltgen",
+          "unicom_majgen",
+          "unicom_bgen",
+          "unicom_col",
+          "unicom_ltcol",
+          "unicom_maj",
+          "unicom_capt",
+          "unicom_1lt",
+          "unicom_2lt",
+          "unicom_cdt",
+          "unicom_sgtmaj",
+          "unicom_mgysgt",
+          "unicom_1stsgt",
+          "unicom_msgt",
+          "unicom_gysgt",
+          "unicom_ssgt",
+          "unicom_sgt",
+          "unicom_cpl",
+          "unicom_lcpl",
+          "unicom_pfc",
+          "unicom_pvt",
         };
         class none
         {
           label = "None";
         };
-        class cdr
+        class navcom_cdr
         {
           label = "CDR";
           description = "O-5: Commander";
         };
-        class lcdr
+        class navcom_lcdr
         {
           label = "LCDR";
           description = "O-4: Lieutenant Commander";
         };
-        class lt
+        class navcom_lt
         {
           label = "LT";
           description = "O-3: Lieutenant";
         };
-        class ltjg
+        class navcom_ltjg
         {
           label = "LTJG";
           description = "O-2: Lieutenant Junior Grade";
         };
-        class ens
+        class navcom_ens
         {
           label = "ENS";
           description = "O-1: Ensign";
         };
-        class hnsc
+        class navcom_hmmc
         {
-          label = "HNSC";
+          label = "HMMC";
+          description = "E-9: Master Chief Hospital Corpsman";
+        };
+        class navcom_mcpo
+        {
+          label = "MCPO";
+          description = "E-9: Master Chief Petty Officer";
+        };
+        class navcom_hmsc
+        {
+          label = "HMSC";
           description = "E-8: Senior Chief Hospital Corpsman";
         };
-        class cpo
+        class navcom_cpo
         {
           label = "CPO";
           description = "E-7: Chief Petty Officer";
         };
-        class hmc
+        class navcom_hmc
         {
           label = "HMC";
           description = "E-7: Chief Hospital Corpsman";
         };
-        class po1
+        class navcom_po1
         {
           label = "PO1";
           description = "E-6: Petty Officer First Class";
         };
-        class hm1
+        class navcom_hm1
         {
           label = "HM1";
           description = "E-6: Hospital Corpsman First Class";
         };
-        class po2
+        class navcom_po2
         {
           label = "PO2";
           description = "E-5: Petty Officer Second Class";
         };
-        class hm2
+        class navcom_hm2
         {
           label = "HM2";
           description = "E-5: Hospital Corpsman Second Class";
         };
-        class po3
+        class navcom_po3
         {
           label = "PO3";
           description = "E-4: Petty Officer Third Class";
         };
-        class hm3
+        class navcom_hm3
         {
           label = "HM3";
           description = "E-4: Hospital Corpsman Third Class";
         };
-        class cn
+        class navcom_cn
         {
           label = "CN";
           description = "E-3: Crewman";
         };
-        class hn
+        class navcom_hn
         {
           label = "HN";
           description = "E-3: Hospitalman";
         };
-        class ca
+        class navcom_ca
         {
           label = "CA";
           description = "E-2: Crewman Apprentice";
         };
-        class ha
+        class navcom_ha
         {
           label = "HA";
           description = "E-2: Hospitalman Apprentice";
         };
-        class cr
+        class navcom_cr
         {
           label = "CR";
           description = "E-1: Crewman Recruit";
         };
-        class hr
+        class navcom_hr
         {
           label = "HR";
           description = "E-1: Hospitalman Recruit";
+        };
+        class unicom_gen
+        {
+          label = "GEN";
+          description = "O-10: General";
+        };
+        class unicom_ltgen
+        {
+          label = "LTGEN";
+          description = "O-9: Lieutenant General";
+        };
+        class unicom_majgen
+        {
+          label = "LTGEN";
+          description = "O-8: Major General";
+        };
+        class unicom_bgen
+        {
+          label = "BGEN";
+          description = "O-7: Brigadier General";
+        };
+        class unicom_col
+        {
+          label = "COL";
+          description = "O-6: Colonel";
+        };
+        class unicom_ltcol
+        {
+          label = "LTCOL";
+          description = "O-5: Lieutenant Colonel";
+        };
+        class unicom_maj
+        {
+          label = "MAJ";
+          description = "O-4: Major";
+        };
+        class unicom_capt
+        {
+          label = "CAPT";
+          description = "O-3: Captain";
+        };
+        class unicom_1lt
+        {
+          label = "1LT";
+          description = "O-2: First Lieutenant";
+        };
+        class unicom_2lt
+        {
+          label = "2LT";
+          description = "O-1: Second Lieutenant";
+        };
+        class unicom_cdt
+        {
+          label = "CDT";
+          description = "O-0: Cadet";
+        };
+        class unicom_sgtmaj
+        {
+          label = "SGTMAJ";
+          description = "E-9: Sergeant Major";
+        };
+        class unicom_mgysgt
+        {
+          label = "MGYSGT";
+          description = "E-9: Master Gunnery Sergeant";
+        };
+        class unicom_1stsgt
+        {
+          label = "1SGT";
+          description = "E-8: First Sergeant";
+        };
+        class unicom_msgt
+        {
+          label = "MSGT";
+          description = "E-8: Master Sergeant";
+        };
+        class unicom_gysgt
+        {
+          label = "GYSGT";
+          description = "E-7: Gunnery Sergeant";
+        };
+        class unicom_ssgt
+        {
+          label = "SSGT";
+          description = "E-6: Staff Sergeant";
+        };
+        class unicom_sgt
+        {
+          label = "SGT";
+          description = "E-5: Sergeant";
+        };
+        class unicom_cpl
+        {
+          label = "CPL";
+          description = "E-4: Corporal";
+        };
+        class unicom_lcpl
+        {
+          label = "LCPL";
+          description = "E-3: Lance Corporal";
+        };
+        class unicom_pfc
+        {
+          label = "PFC";
+          description = "E-2: Private First Class";
+        };
+        class unicom_pvt
+        {
+          label = "PVT";
+          description = "E-1: Private";
         };
       };
     };
@@ -239,6 +383,46 @@ class CfgWeapons
   };
 
   // Actual classes
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_ltjg: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "crew";
+      rank = "navcom_ltjg";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_ltjg";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_ltjg: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "crew";
+      rank = "navcom_ltjg";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_ltjg";
+    };
+  };
+
   class WS_Gear_Uniform_ONICrew_masc_crew_none: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
@@ -279,14 +463,14 @@ class CfgWeapons
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_crew_lcdr: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_lcdr: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "crew";
-      rank = "lcdr";
+      rank = "navcom_lcdr";
     };
 
     scope = 2;
@@ -295,18 +479,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_lcdr";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_lcdr";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_crew_lcdr: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_lcdr: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "crew";
-      rank = "lcdr";
+      rank = "navcom_lcdr";
     };
 
     scope = 2;
@@ -315,18 +499,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_lcdr";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_lcdr";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_crew_cdr: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_cdr: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "crew";
-      rank = "cdr";
+      rank = "navcom_cdr";
     };
 
     scope = 2;
@@ -335,18 +519,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_cdr";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_cdr";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_crew_cdr: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_cdr: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "crew";
-      rank = "cdr";
+      rank = "navcom_cdr";
     };
 
     scope = 2;
@@ -355,18 +539,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_cdr";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_cdr";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_crew_lt: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_lt: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "crew";
-      rank = "lt";
+      rank = "navcom_lt";
     };
 
     scope = 2;
@@ -375,18 +559,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_lt";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_lt";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_crew_lt: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_lt: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "crew";
-      rank = "lt";
+      rank = "navcom_lt";
     };
 
     scope = 2;
@@ -395,18 +579,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_lt";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_lt";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_crew_ltjg: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_mcpo: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "crew";
-      rank = "ltjg";
+      rank = "navcom_mcpo";
     };
 
     scope = 2;
@@ -415,18 +599,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_ltjg";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_mcpo";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_crew_ltjg: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_mcpo: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "crew";
-      rank = "ltjg";
+      rank = "navcom_mcpo";
     };
 
     scope = 2;
@@ -435,18 +619,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_ltjg";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_mcpo";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_crew_ens: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_ens: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "crew";
-      rank = "ens";
+      rank = "navcom_ens";
     };
 
     scope = 2;
@@ -455,18 +639,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_ens";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_ens";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_crew_ens: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_ens: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "crew";
-      rank = "ens";
+      rank = "navcom_ens";
     };
 
     scope = 2;
@@ -475,18 +659,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_ens";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_ens";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_crew_hnsc: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_hmmc: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "crew";
-      rank = "hnsc";
+      rank = "navcom_hmmc";
     };
 
     scope = 2;
@@ -495,18 +679,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_hnsc";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_hmmc";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_crew_hnsc: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_hmmc: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "crew";
-      rank = "hnsc";
+      rank = "navcom_hmmc";
     };
 
     scope = 2;
@@ -515,18 +699,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_hnsc";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_hmmc";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_crew_cpo: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_cpo: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "crew";
-      rank = "cpo";
+      rank = "navcom_cpo";
     };
 
     scope = 2;
@@ -535,18 +719,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_cpo";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_cpo";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_crew_cpo: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_cpo: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "crew";
-      rank = "cpo";
+      rank = "navcom_cpo";
     };
 
     scope = 2;
@@ -555,18 +739,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_cpo";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_cpo";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_crew_po1: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_po2: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "crew";
-      rank = "po1";
+      rank = "navcom_po2";
     };
 
     scope = 2;
@@ -575,18 +759,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_po1";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_po2";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_crew_po1: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_po2: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "crew";
-      rank = "po1";
+      rank = "navcom_po2";
     };
 
     scope = 2;
@@ -595,18 +779,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_po1";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_po2";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_crew_hmc: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_hmc: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "crew";
-      rank = "hmc";
+      rank = "navcom_hmc";
     };
 
     scope = 2;
@@ -615,18 +799,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_hmc";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_hmc";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_crew_hmc: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_hmc: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "crew";
-      rank = "hmc";
+      rank = "navcom_hmc";
     };
 
     scope = 2;
@@ -635,18 +819,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_hmc";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_hmc";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_crew_hm1: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_hmsc: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "crew";
-      rank = "hm1";
+      rank = "navcom_hmsc";
     };
 
     scope = 2;
@@ -655,18 +839,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_hm1";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_hmsc";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_crew_hm1: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_hmsc: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "crew";
-      rank = "hm1";
+      rank = "navcom_hmsc";
     };
 
     scope = 2;
@@ -675,18 +859,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_hm1";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_hmsc";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_crew_po2: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_po1: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "crew";
-      rank = "po2";
+      rank = "navcom_po1";
     };
 
     scope = 2;
@@ -695,18 +879,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_po2";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_po1";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_crew_po2: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_po1: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "crew";
-      rank = "po2";
+      rank = "navcom_po1";
     };
 
     scope = 2;
@@ -715,18 +899,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_po2";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_po1";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_crew_po3: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_hm1: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "crew";
-      rank = "po3";
+      rank = "navcom_hm1";
     };
 
     scope = 2;
@@ -735,18 +919,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_po3";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_hm1";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_crew_po3: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_hm1: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "crew";
-      rank = "po3";
+      rank = "navcom_hm1";
     };
 
     scope = 2;
@@ -755,18 +939,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_po3";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_hm1";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_crew_hm2: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_hm2: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "crew";
-      rank = "hm2";
+      rank = "navcom_hm2";
     };
 
     scope = 2;
@@ -775,18 +959,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_hm2";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_hm2";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_crew_hm2: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_hm2: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "crew";
-      rank = "hm2";
+      rank = "navcom_hm2";
     };
 
     scope = 2;
@@ -795,18 +979,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_hm2";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_hm2";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_crew_hm3: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_po3: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "crew";
-      rank = "hm3";
+      rank = "navcom_po3";
     };
 
     scope = 2;
@@ -815,18 +999,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_hm3";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_po3";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_crew_hm3: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_po3: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "crew";
-      rank = "hm3";
+      rank = "navcom_po3";
     };
 
     scope = 2;
@@ -835,18 +1019,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_hm3";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_po3";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_crew_cn: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_hm3: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "crew";
-      rank = "cn";
+      rank = "navcom_hm3";
     };
 
     scope = 2;
@@ -855,18 +1039,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_cn";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_hm3";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_crew_cn: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_hm3: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "crew";
-      rank = "cn";
+      rank = "navcom_hm3";
     };
 
     scope = 2;
@@ -875,18 +1059,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_cn";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_hm3";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_crew_hn: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_ha: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "crew";
-      rank = "hn";
+      rank = "navcom_ha";
     };
 
     scope = 2;
@@ -895,18 +1079,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_hn";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_ha";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_crew_hn: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_ha: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "crew";
-      rank = "hn";
+      rank = "navcom_ha";
     };
 
     scope = 2;
@@ -915,18 +1099,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_hn";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_ha";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_crew_ca: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_cn: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "crew";
-      rank = "ca";
+      rank = "navcom_cn";
     };
 
     scope = 2;
@@ -935,18 +1119,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_ca";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_cn";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_crew_ca: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_cn: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "crew";
-      rank = "ca";
+      rank = "navcom_cn";
     };
 
     scope = 2;
@@ -955,18 +1139,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_ca";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_cn";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_crew_ha: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_ca: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "crew";
-      rank = "ha";
+      rank = "navcom_ca";
     };
 
     scope = 2;
@@ -975,18 +1159,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_ha";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_ca";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_crew_ha: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_ca: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "crew";
-      rank = "ha";
+      rank = "navcom_ca";
     };
 
     scope = 2;
@@ -995,18 +1179,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_ha";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_ca";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_crew_cr: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_hn: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "crew";
-      rank = "cr";
+      rank = "navcom_hn";
     };
 
     scope = 2;
@@ -1015,18 +1199,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_cr";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_hn";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_crew_cr: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_hn: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "crew";
-      rank = "cr";
+      rank = "navcom_hn";
     };
 
     scope = 2;
@@ -1035,18 +1219,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_cr";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_hn";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_crew_hr: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_cr: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "crew";
-      rank = "hr";
+      rank = "navcom_cr";
     };
 
     scope = 2;
@@ -1055,18 +1239,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_hr";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_cr";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_crew_hr: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_cr: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "crew";
-      rank = "hr";
+      rank = "navcom_cr";
     };
 
     scope = 2;
@@ -1075,7 +1259,887 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_hr";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_cr";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_ltgen: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "crew";
+      rank = "unicom_ltgen";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_ltgen";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_ltgen: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "crew";
+      rank = "unicom_ltgen";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_ltgen";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_hr: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "crew";
+      rank = "navcom_hr";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_hr";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_hr: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "crew";
+      rank = "navcom_hr";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_hr";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_gen: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "crew";
+      rank = "unicom_gen";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_gen";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_gen: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "crew";
+      rank = "unicom_gen";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_gen";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_majgen: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "crew";
+      rank = "unicom_majgen";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_majgen";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_majgen: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "crew";
+      rank = "unicom_majgen";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_majgen";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_bgen: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "crew";
+      rank = "unicom_bgen";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_bgen";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_bgen: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "crew";
+      rank = "unicom_bgen";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_bgen";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_maj: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "crew";
+      rank = "unicom_maj";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_maj";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_maj: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "crew";
+      rank = "unicom_maj";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_maj";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_col: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "crew";
+      rank = "unicom_col";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_col";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_col: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "crew";
+      rank = "unicom_col";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_col";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_ltcol: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "crew";
+      rank = "unicom_ltcol";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_ltcol";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_ltcol: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "crew";
+      rank = "unicom_ltcol";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_ltcol";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_cdt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "crew";
+      rank = "unicom_cdt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_cdt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_cdt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "crew";
+      rank = "unicom_cdt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_cdt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_capt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "crew";
+      rank = "unicom_capt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_capt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_capt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "crew";
+      rank = "unicom_capt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_capt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_2lt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "crew";
+      rank = "unicom_2lt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_2lt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_2lt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "crew";
+      rank = "unicom_2lt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_2lt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_1lt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "crew";
+      rank = "unicom_1lt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_1lt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_1lt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "crew";
+      rank = "unicom_1lt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_1lt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_sgtmaj: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "crew";
+      rank = "unicom_sgtmaj";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_sgtmaj";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_sgtmaj: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "crew";
+      rank = "unicom_sgtmaj";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_sgtmaj";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_mgysgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "crew";
+      rank = "unicom_mgysgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_mgysgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_mgysgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "crew";
+      rank = "unicom_mgysgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_mgysgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_1stsgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "crew";
+      rank = "unicom_1stsgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_1stsgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_1stsgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "crew";
+      rank = "unicom_1stsgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_1stsgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_ssgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "crew";
+      rank = "unicom_ssgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_ssgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_ssgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "crew";
+      rank = "unicom_ssgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_ssgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_msgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "crew";
+      rank = "unicom_msgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_msgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_msgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "crew";
+      rank = "unicom_msgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_msgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_gysgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "crew";
+      rank = "unicom_gysgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_gysgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_gysgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "crew";
+      rank = "unicom_gysgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_gysgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_sgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "crew";
+      rank = "unicom_sgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_sgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_sgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "crew";
+      rank = "unicom_sgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_sgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_lcpl: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "crew";
+      rank = "unicom_lcpl";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_lcpl";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_lcpl: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "crew";
+      rank = "unicom_lcpl";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_lcpl";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_pfc: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "crew";
+      rank = "unicom_pfc";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_pfc";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_pfc: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "crew";
+      rank = "unicom_pfc";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_pfc";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_pvt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "crew";
+      rank = "unicom_pvt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_pvt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_pvt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "crew";
+      rank = "unicom_pvt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_pvt";
     };
   };
 
@@ -1119,14 +2183,54 @@ class CfgWeapons
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_odst_cdr: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_cpl: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "crew";
+      rank = "unicom_cpl";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_cpl";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_cpl: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "crew";
+      rank = "unicom_cpl";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_cpl";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_cdr: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "odst";
-      rank = "cdr";
+      rank = "navcom_cdr";
     };
 
     scope = 2;
@@ -1135,18 +2239,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_cdr";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_cdr";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_odst_cdr: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_cdr: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "odst";
-      rank = "cdr";
+      rank = "navcom_cdr";
     };
 
     scope = 2;
@@ -1155,18 +2259,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_cdr";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_cdr";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_odst_lcdr: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_lcdr: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "odst";
-      rank = "lcdr";
+      rank = "navcom_lcdr";
     };
 
     scope = 2;
@@ -1175,18 +2279,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_lcdr";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_lcdr";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_odst_lcdr: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_lcdr: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "odst";
-      rank = "lcdr";
+      rank = "navcom_lcdr";
     };
 
     scope = 2;
@@ -1195,18 +2299,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_lcdr";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_lcdr";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_odst_lt: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_ltjg: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "odst";
-      rank = "lt";
+      rank = "navcom_ltjg";
     };
 
     scope = 2;
@@ -1215,18 +2319,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_lt";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_ltjg";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_odst_lt: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_ltjg: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "odst";
-      rank = "lt";
+      rank = "navcom_ltjg";
     };
 
     scope = 2;
@@ -1235,18 +2339,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_lt";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_ltjg";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_odst_ltjg: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_ens: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "odst";
-      rank = "ltjg";
+      rank = "navcom_ens";
     };
 
     scope = 2;
@@ -1255,18 +2359,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_ltjg";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_ens";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_odst_ltjg: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_ens: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "odst";
-      rank = "ltjg";
+      rank = "navcom_ens";
     };
 
     scope = 2;
@@ -1275,18 +2379,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_ltjg";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_ens";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_odst_ens: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_lt: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "odst";
-      rank = "ens";
+      rank = "navcom_lt";
     };
 
     scope = 2;
@@ -1295,18 +2399,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_ens";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_lt";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_odst_ens: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_lt: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "odst";
-      rank = "ens";
+      rank = "navcom_lt";
     };
 
     scope = 2;
@@ -1315,18 +2419,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_ens";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_lt";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_odst_hnsc: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_mcpo: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "odst";
-      rank = "hnsc";
+      rank = "navcom_mcpo";
     };
 
     scope = 2;
@@ -1335,18 +2439,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_hnsc";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_mcpo";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_odst_hnsc: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_mcpo: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "odst";
-      rank = "hnsc";
+      rank = "navcom_mcpo";
     };
 
     scope = 2;
@@ -1355,18 +2459,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_hnsc";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_mcpo";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_odst_cpo: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_hmmc: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "odst";
-      rank = "cpo";
+      rank = "navcom_hmmc";
     };
 
     scope = 2;
@@ -1375,18 +2479,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_cpo";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_hmmc";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_odst_cpo: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_hmmc: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "odst";
-      rank = "cpo";
+      rank = "navcom_hmmc";
     };
 
     scope = 2;
@@ -1395,18 +2499,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_cpo";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_hmmc";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_odst_hmc: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_cpo: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "odst";
-      rank = "hmc";
+      rank = "navcom_cpo";
     };
 
     scope = 2;
@@ -1415,18 +2519,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_hmc";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_cpo";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_odst_hmc: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_cpo: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "odst";
-      rank = "hmc";
+      rank = "navcom_cpo";
     };
 
     scope = 2;
@@ -1435,18 +2539,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_hmc";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_cpo";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_odst_po1: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_hmsc: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "odst";
-      rank = "po1";
+      rank = "navcom_hmsc";
     };
 
     scope = 2;
@@ -1455,18 +2559,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_po1";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_hmsc";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_odst_po1: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_hmsc: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "odst";
-      rank = "po1";
+      rank = "navcom_hmsc";
     };
 
     scope = 2;
@@ -1475,18 +2579,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_po1";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_hmsc";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_odst_hm1: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_hmc: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "odst";
-      rank = "hm1";
+      rank = "navcom_hmc";
     };
 
     scope = 2;
@@ -1495,18 +2599,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_hm1";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_hmc";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_odst_hm1: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_hmc: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "odst";
-      rank = "hm1";
+      rank = "navcom_hmc";
     };
 
     scope = 2;
@@ -1515,18 +2619,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_hm1";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_hmc";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_odst_po2: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_po1: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "odst";
-      rank = "po2";
+      rank = "navcom_po1";
     };
 
     scope = 2;
@@ -1535,18 +2639,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_po2";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_po1";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_odst_po2: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_po1: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "odst";
-      rank = "po2";
+      rank = "navcom_po1";
     };
 
     scope = 2;
@@ -1555,18 +2659,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_po2";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_po1";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_odst_hm2: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_hm1: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "odst";
-      rank = "hm2";
+      rank = "navcom_hm1";
     };
 
     scope = 2;
@@ -1575,18 +2679,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_hm2";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_hm1";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_odst_hm2: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_hm1: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "odst";
-      rank = "hm2";
+      rank = "navcom_hm1";
     };
 
     scope = 2;
@@ -1595,18 +2699,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_hm2";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_hm1";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_odst_po3: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_po2: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "odst";
-      rank = "po3";
+      rank = "navcom_po2";
     };
 
     scope = 2;
@@ -1615,18 +2719,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_po3";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_po2";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_odst_po3: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_po2: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "odst";
-      rank = "po3";
+      rank = "navcom_po2";
     };
 
     scope = 2;
@@ -1635,18 +2739,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_po3";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_po2";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_odst_hm3: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_hm2: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "odst";
-      rank = "hm3";
+      rank = "navcom_hm2";
     };
 
     scope = 2;
@@ -1655,18 +2759,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_hm3";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_hm2";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_odst_hm3: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_hm2: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "odst";
-      rank = "hm3";
+      rank = "navcom_hm2";
     };
 
     scope = 2;
@@ -1675,18 +2779,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_hm3";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_hm2";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_odst_hn: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_po3: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "odst";
-      rank = "hn";
+      rank = "navcom_po3";
     };
 
     scope = 2;
@@ -1695,18 +2799,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_hn";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_po3";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_odst_hn: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_po3: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "odst";
-      rank = "hn";
+      rank = "navcom_po3";
     };
 
     scope = 2;
@@ -1715,18 +2819,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_hn";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_po3";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_odst_cn: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_hm3: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "odst";
-      rank = "cn";
+      rank = "navcom_hm3";
     };
 
     scope = 2;
@@ -1735,18 +2839,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_cn";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_hm3";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_odst_cn: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_hm3: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "odst";
-      rank = "cn";
+      rank = "navcom_hm3";
     };
 
     scope = 2;
@@ -1755,18 +2859,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_cn";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_hm3";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_odst_ca: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_cn: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "odst";
-      rank = "ca";
+      rank = "navcom_cn";
     };
 
     scope = 2;
@@ -1775,18 +2879,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_ca";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_cn";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_odst_ca: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_cn: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "odst";
-      rank = "ca";
+      rank = "navcom_cn";
     };
 
     scope = 2;
@@ -1795,18 +2899,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_ca";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_cn";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_odst_ha: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_hn: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "odst";
-      rank = "ha";
+      rank = "navcom_hn";
     };
 
     scope = 2;
@@ -1815,18 +2919,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_ha";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_hn";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_odst_ha: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_hn: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "odst";
-      rank = "ha";
+      rank = "navcom_hn";
     };
 
     scope = 2;
@@ -1835,18 +2939,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_ha";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_hn";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_odst_hr: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_ha: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "odst";
-      rank = "hr";
+      rank = "navcom_ha";
     };
 
     scope = 2;
@@ -1855,18 +2959,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_hr";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_ha";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_odst_hr: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_ha: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "odst";
-      rank = "hr";
+      rank = "navcom_ha";
     };
 
     scope = 2;
@@ -1875,18 +2979,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_hr";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_ha";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_odst_cr: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_ca: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "odst";
-      rank = "cr";
+      rank = "navcom_ca";
     };
 
     scope = 2;
@@ -1895,18 +2999,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_cr";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_ca";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_odst_cr: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_ca: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "odst";
-      rank = "cr";
+      rank = "navcom_ca";
     };
 
     scope = 2;
@@ -1915,7 +3019,927 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_cr";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_ca";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_cr: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "odst";
+      rank = "navcom_cr";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_cr";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_cr: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "odst";
+      rank = "navcom_cr";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_cr";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_hr: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "odst";
+      rank = "navcom_hr";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_hr";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_hr: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "odst";
+      rank = "navcom_hr";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_hr";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_gen: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "odst";
+      rank = "unicom_gen";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_gen";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_gen: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "odst";
+      rank = "unicom_gen";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_gen";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_ltgen: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "odst";
+      rank = "unicom_ltgen";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_ltgen";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_ltgen: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "odst";
+      rank = "unicom_ltgen";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_ltgen";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_majgen: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "odst";
+      rank = "unicom_majgen";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_majgen";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_majgen: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "odst";
+      rank = "unicom_majgen";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_majgen";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_bgen: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "odst";
+      rank = "unicom_bgen";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_bgen";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_bgen: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "odst";
+      rank = "unicom_bgen";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_bgen";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_col: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "odst";
+      rank = "unicom_col";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_col";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_col: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "odst";
+      rank = "unicom_col";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_col";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_ltcol: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "odst";
+      rank = "unicom_ltcol";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_ltcol";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_ltcol: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "odst";
+      rank = "unicom_ltcol";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_ltcol";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_maj: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "odst";
+      rank = "unicom_maj";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_maj";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_maj: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "odst";
+      rank = "unicom_maj";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_maj";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_capt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "odst";
+      rank = "unicom_capt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_capt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_capt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "odst";
+      rank = "unicom_capt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_capt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_1lt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "odst";
+      rank = "unicom_1lt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_1lt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_1lt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "odst";
+      rank = "unicom_1lt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_1lt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_cdt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "odst";
+      rank = "unicom_cdt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_cdt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_cdt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "odst";
+      rank = "unicom_cdt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_cdt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_2lt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "odst";
+      rank = "unicom_2lt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_2lt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_2lt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "odst";
+      rank = "unicom_2lt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_2lt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_sgtmaj: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "odst";
+      rank = "unicom_sgtmaj";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_sgtmaj";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_sgtmaj: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "odst";
+      rank = "unicom_sgtmaj";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_sgtmaj";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_mgysgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "odst";
+      rank = "unicom_mgysgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_mgysgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_mgysgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "odst";
+      rank = "unicom_mgysgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_mgysgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_gysgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "odst";
+      rank = "unicom_gysgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_gysgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_gysgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "odst";
+      rank = "unicom_gysgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_gysgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_1stsgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "odst";
+      rank = "unicom_1stsgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_1stsgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_1stsgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "odst";
+      rank = "unicom_1stsgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_1stsgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_msgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "odst";
+      rank = "unicom_msgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_msgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_msgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "odst";
+      rank = "unicom_msgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_msgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_ssgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "odst";
+      rank = "unicom_ssgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_ssgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_ssgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "odst";
+      rank = "unicom_ssgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_ssgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_sgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "odst";
+      rank = "unicom_sgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_sgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_sgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "odst";
+      rank = "unicom_sgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_sgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_cpl: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "odst";
+      rank = "unicom_cpl";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_cpl";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_cpl: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "odst";
+      rank = "unicom_cpl";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_cpl";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_lcpl: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "odst";
+      rank = "unicom_lcpl";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_lcpl";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_lcpl: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "odst";
+      rank = "unicom_lcpl";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_lcpl";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_pfc: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "odst";
+      rank = "unicom_pfc";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_pfc";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_pfc: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "odst";
+      rank = "unicom_pfc";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_pfc";
     };
   };
 
@@ -1959,14 +3983,14 @@ class CfgWeapons
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_medical_cdr: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_cdr: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "medical";
-      rank = "cdr";
+      rank = "navcom_cdr";
     };
 
     scope = 2;
@@ -1975,18 +3999,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_cdr";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_cdr";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_medical_cdr: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_cdr: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "medical";
-      rank = "cdr";
+      rank = "navcom_cdr";
     };
 
     scope = 2;
@@ -1995,18 +4019,58 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_cdr";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_cdr";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_medical_lcdr: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_pvt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "odst";
+      rank = "unicom_pvt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_pvt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_pvt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "odst";
+      rank = "unicom_pvt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_pvt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_lcdr: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "medical";
-      rank = "lcdr";
+      rank = "navcom_lcdr";
     };
 
     scope = 2;
@@ -2015,18 +4079,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_lcdr";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_lcdr";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_medical_lcdr: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_lcdr: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "medical";
-      rank = "lcdr";
+      rank = "navcom_lcdr";
     };
 
     scope = 2;
@@ -2035,18 +4099,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_lcdr";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_lcdr";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_medical_lt: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_ltjg: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "medical";
-      rank = "lt";
+      rank = "navcom_ltjg";
     };
 
     scope = 2;
@@ -2055,18 +4119,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_lt";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_ltjg";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_medical_lt: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_ltjg: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "medical";
-      rank = "lt";
+      rank = "navcom_ltjg";
     };
 
     scope = 2;
@@ -2075,18 +4139,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_lt";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_ltjg";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_medical_ltjg: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_lt: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "medical";
-      rank = "ltjg";
+      rank = "navcom_lt";
     };
 
     scope = 2;
@@ -2095,18 +4159,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_ltjg";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_lt";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_medical_ltjg: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_lt: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "medical";
-      rank = "ltjg";
+      rank = "navcom_lt";
     };
 
     scope = 2;
@@ -2115,18 +4179,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_ltjg";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_lt";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_medical_ens: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_ens: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "medical";
-      rank = "ens";
+      rank = "navcom_ens";
     };
 
     scope = 2;
@@ -2135,18 +4199,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_ens";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_ens";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_medical_ens: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_ens: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "medical";
-      rank = "ens";
+      rank = "navcom_ens";
     };
 
     scope = 2;
@@ -2155,18 +4219,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_ens";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_ens";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_medical_hnsc: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_mcpo: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "medical";
-      rank = "hnsc";
+      rank = "navcom_mcpo";
     };
 
     scope = 2;
@@ -2175,18 +4239,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_hnsc";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_mcpo";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_medical_hnsc: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_mcpo: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "medical";
-      rank = "hnsc";
+      rank = "navcom_mcpo";
     };
 
     scope = 2;
@@ -2195,18 +4259,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_hnsc";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_mcpo";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_medical_cpo: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_hmmc: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "medical";
-      rank = "cpo";
+      rank = "navcom_hmmc";
     };
 
     scope = 2;
@@ -2215,18 +4279,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_cpo";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_hmmc";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_medical_cpo: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_hmmc: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "medical";
-      rank = "cpo";
+      rank = "navcom_hmmc";
     };
 
     scope = 2;
@@ -2235,18 +4299,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_cpo";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_hmmc";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_medical_hmc: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_cpo: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "medical";
-      rank = "hmc";
+      rank = "navcom_cpo";
     };
 
     scope = 2;
@@ -2255,18 +4319,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_hmc";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_cpo";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_medical_hmc: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_cpo: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "medical";
-      rank = "hmc";
+      rank = "navcom_cpo";
     };
 
     scope = 2;
@@ -2275,18 +4339,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_hmc";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_cpo";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_medical_po1: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_hmsc: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "medical";
-      rank = "po1";
+      rank = "navcom_hmsc";
     };
 
     scope = 2;
@@ -2295,18 +4359,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_po1";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_hmsc";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_medical_po1: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_hmsc: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "medical";
-      rank = "po1";
+      rank = "navcom_hmsc";
     };
 
     scope = 2;
@@ -2315,18 +4379,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_po1";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_hmsc";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_medical_po2: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_hmc: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "medical";
-      rank = "po2";
+      rank = "navcom_hmc";
     };
 
     scope = 2;
@@ -2335,18 +4399,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_po2";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_hmc";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_medical_po2: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_hmc: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "medical";
-      rank = "po2";
+      rank = "navcom_hmc";
     };
 
     scope = 2;
@@ -2355,18 +4419,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_po2";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_hmc";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_medical_hm1: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_po1: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "medical";
-      rank = "hm1";
+      rank = "navcom_po1";
     };
 
     scope = 2;
@@ -2375,18 +4439,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_hm1";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_po1";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_medical_hm1: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_po1: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "medical";
-      rank = "hm1";
+      rank = "navcom_po1";
     };
 
     scope = 2;
@@ -2395,18 +4459,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_hm1";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_po1";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_medical_hm2: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_hm1: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "medical";
-      rank = "hm2";
+      rank = "navcom_hm1";
     };
 
     scope = 2;
@@ -2415,18 +4479,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_hm2";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_hm1";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_medical_hm2: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_hm1: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "medical";
-      rank = "hm2";
+      rank = "navcom_hm1";
     };
 
     scope = 2;
@@ -2435,18 +4499,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_hm2";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_hm1";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_medical_po3: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_po2: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "medical";
-      rank = "po3";
+      rank = "navcom_po2";
     };
 
     scope = 2;
@@ -2455,18 +4519,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_po3";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_po2";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_medical_po3: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_po2: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "medical";
-      rank = "po3";
+      rank = "navcom_po2";
     };
 
     scope = 2;
@@ -2475,18 +4539,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_po3";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_po2";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_medical_hm3: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_hm2: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "medical";
-      rank = "hm3";
+      rank = "navcom_hm2";
     };
 
     scope = 2;
@@ -2495,18 +4559,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_hm3";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_hm2";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_medical_hm3: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_hm2: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "medical";
-      rank = "hm3";
+      rank = "navcom_hm2";
     };
 
     scope = 2;
@@ -2515,18 +4579,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_hm3";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_hm2";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_medical_cn: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_hm3: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "medical";
-      rank = "cn";
+      rank = "navcom_hm3";
     };
 
     scope = 2;
@@ -2535,18 +4599,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_cn";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_hm3";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_medical_cn: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_hm3: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "medical";
-      rank = "cn";
+      rank = "navcom_hm3";
     };
 
     scope = 2;
@@ -2555,18 +4619,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_cn";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_hm3";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_medical_hn: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_po3: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "medical";
-      rank = "hn";
+      rank = "navcom_po3";
     };
 
     scope = 2;
@@ -2575,18 +4639,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_hn";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_po3";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_medical_hn: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_po3: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "medical";
-      rank = "hn";
+      rank = "navcom_po3";
     };
 
     scope = 2;
@@ -2595,18 +4659,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_hn";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_po3";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_medical_ca: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_cn: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "medical";
-      rank = "ca";
+      rank = "navcom_cn";
     };
 
     scope = 2;
@@ -2615,18 +4679,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_ca";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_cn";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_medical_ca: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_cn: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "medical";
-      rank = "ca";
+      rank = "navcom_cn";
     };
 
     scope = 2;
@@ -2635,18 +4699,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_ca";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_cn";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_medical_ha: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_ca: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "medical";
-      rank = "ha";
+      rank = "navcom_ca";
     };
 
     scope = 2;
@@ -2655,18 +4719,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_ha";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_ca";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_medical_ha: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_ca: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "medical";
-      rank = "ha";
+      rank = "navcom_ca";
     };
 
     scope = 2;
@@ -2675,18 +4739,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_ha";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_ca";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_medical_cr: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_hn: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "medical";
-      rank = "cr";
+      rank = "navcom_hn";
     };
 
     scope = 2;
@@ -2695,18 +4759,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_cr";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_hn";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_medical_cr: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_hn: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "medical";
-      rank = "cr";
+      rank = "navcom_hn";
     };
 
     scope = 2;
@@ -2715,18 +4779,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_cr";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_hn";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_medical_hr: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_ha: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "medical";
-      rank = "hr";
+      rank = "navcom_ha";
     };
 
     scope = 2;
@@ -2735,18 +4799,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_hr";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_ha";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_medical_hr: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_ha: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "medical";
-      rank = "hr";
+      rank = "navcom_ha";
     };
 
     scope = 2;
@@ -2755,7 +4819,927 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_hr";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_ha";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_cr: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "medical";
+      rank = "navcom_cr";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_cr";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_cr: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "medical";
+      rank = "navcom_cr";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_cr";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_hr: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "medical";
+      rank = "navcom_hr";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_hr";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_hr: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "medical";
+      rank = "navcom_hr";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_hr";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_gen: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "medical";
+      rank = "unicom_gen";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_gen";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_gen: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "medical";
+      rank = "unicom_gen";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_gen";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_ltgen: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "medical";
+      rank = "unicom_ltgen";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_ltgen";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_ltgen: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "medical";
+      rank = "unicom_ltgen";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_ltgen";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_majgen: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "medical";
+      rank = "unicom_majgen";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_majgen";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_majgen: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "medical";
+      rank = "unicom_majgen";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_majgen";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_bgen: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "medical";
+      rank = "unicom_bgen";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_bgen";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_bgen: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "medical";
+      rank = "unicom_bgen";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_bgen";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_col: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "medical";
+      rank = "unicom_col";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_col";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_col: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "medical";
+      rank = "unicom_col";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_col";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_ltcol: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "medical";
+      rank = "unicom_ltcol";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_ltcol";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_ltcol: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "medical";
+      rank = "unicom_ltcol";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_ltcol";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_maj: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "medical";
+      rank = "unicom_maj";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_maj";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_maj: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "medical";
+      rank = "unicom_maj";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_maj";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_1lt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "medical";
+      rank = "unicom_1lt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_1lt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_1lt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "medical";
+      rank = "unicom_1lt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_1lt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_capt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "medical";
+      rank = "unicom_capt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_capt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_capt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "medical";
+      rank = "unicom_capt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_capt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_2lt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "medical";
+      rank = "unicom_2lt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_2lt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_2lt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "medical";
+      rank = "unicom_2lt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_2lt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_cdt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "medical";
+      rank = "unicom_cdt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_cdt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_cdt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "medical";
+      rank = "unicom_cdt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_cdt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_mgysgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "medical";
+      rank = "unicom_mgysgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_mgysgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_mgysgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "medical";
+      rank = "unicom_mgysgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_mgysgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_sgtmaj: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "medical";
+      rank = "unicom_sgtmaj";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_sgtmaj";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_sgtmaj: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "medical";
+      rank = "unicom_sgtmaj";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_sgtmaj";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_msgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "medical";
+      rank = "unicom_msgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_msgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_msgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "medical";
+      rank = "unicom_msgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_msgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_1stsgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "medical";
+      rank = "unicom_1stsgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_1stsgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_1stsgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "medical";
+      rank = "unicom_1stsgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_1stsgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_gysgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "medical";
+      rank = "unicom_gysgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_gysgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_gysgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "medical";
+      rank = "unicom_gysgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_gysgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_ssgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "medical";
+      rank = "unicom_ssgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_ssgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_ssgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "medical";
+      rank = "unicom_ssgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_ssgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_sgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "medical";
+      rank = "unicom_sgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_sgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_sgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "medical";
+      rank = "unicom_sgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_sgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_cpl: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "medical";
+      rank = "unicom_cpl";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_cpl";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_cpl: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "medical";
+      rank = "unicom_cpl";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_cpl";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_lcpl: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "medical";
+      rank = "unicom_lcpl";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_lcpl";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_lcpl: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "medical";
+      rank = "unicom_lcpl";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_lcpl";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_pfc: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "medical";
+      rank = "unicom_pfc";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_pfc";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_pfc: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "medical";
+      rank = "unicom_pfc";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_pfc";
     };
   };
 
@@ -2799,14 +5783,54 @@ class CfgWeapons
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_vehicle_cdr: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_pvt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "medical";
+      rank = "unicom_pvt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_pvt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_pvt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "medical";
+      rank = "unicom_pvt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_pvt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_lcdr: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "vehicle";
-      rank = "cdr";
+      rank = "navcom_lcdr";
     };
 
     scope = 2;
@@ -2815,18 +5839,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_cdr";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_lcdr";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_vehicle_cdr: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_lcdr: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "vehicle";
-      rank = "cdr";
+      rank = "navcom_lcdr";
     };
 
     scope = 2;
@@ -2835,18 +5859,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_cdr";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_lcdr";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_vehicle_lcdr: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_cdr: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "vehicle";
-      rank = "lcdr";
+      rank = "navcom_cdr";
     };
 
     scope = 2;
@@ -2855,18 +5879,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_lcdr";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_cdr";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_vehicle_lcdr: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_cdr: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "vehicle";
-      rank = "lcdr";
+      rank = "navcom_cdr";
     };
 
     scope = 2;
@@ -2875,18 +5899,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_lcdr";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_cdr";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_vehicle_lt: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_ltjg: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "vehicle";
-      rank = "lt";
+      rank = "navcom_ltjg";
     };
 
     scope = 2;
@@ -2895,18 +5919,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_lt";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_ltjg";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_vehicle_lt: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_ltjg: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "vehicle";
-      rank = "lt";
+      rank = "navcom_ltjg";
     };
 
     scope = 2;
@@ -2915,18 +5939,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_lt";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_ltjg";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_vehicle_ltjg: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_lt: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "vehicle";
-      rank = "ltjg";
+      rank = "navcom_lt";
     };
 
     scope = 2;
@@ -2935,18 +5959,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_ltjg";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_lt";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_vehicle_ltjg: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_lt: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "vehicle";
-      rank = "ltjg";
+      rank = "navcom_lt";
     };
 
     scope = 2;
@@ -2955,18 +5979,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_ltjg";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_lt";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_vehicle_ens: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_hmmc: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "vehicle";
-      rank = "ens";
+      rank = "navcom_hmmc";
     };
 
     scope = 2;
@@ -2975,18 +5999,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_ens";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_hmmc";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_vehicle_ens: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_hmmc: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "vehicle";
-      rank = "ens";
+      rank = "navcom_hmmc";
     };
 
     scope = 2;
@@ -2995,18 +6019,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_ens";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_hmmc";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_vehicle_hnsc: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_hmsc: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "vehicle";
-      rank = "hnsc";
+      rank = "navcom_hmsc";
     };
 
     scope = 2;
@@ -3015,18 +6039,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_hnsc";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_hmsc";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_vehicle_hnsc: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_hmsc: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "vehicle";
-      rank = "hnsc";
+      rank = "navcom_hmsc";
     };
 
     scope = 2;
@@ -3035,18 +6059,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_hnsc";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_hmsc";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_vehicle_cpo: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_ens: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "vehicle";
-      rank = "cpo";
+      rank = "navcom_ens";
     };
 
     scope = 2;
@@ -3055,18 +6079,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_cpo";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_ens";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_vehicle_cpo: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_ens: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "vehicle";
-      rank = "cpo";
+      rank = "navcom_ens";
     };
 
     scope = 2;
@@ -3075,18 +6099,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_cpo";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_ens";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_vehicle_hmc: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_mcpo: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "vehicle";
-      rank = "hmc";
+      rank = "navcom_mcpo";
     };
 
     scope = 2;
@@ -3095,18 +6119,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_hmc";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_mcpo";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_vehicle_hmc: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_mcpo: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "vehicle";
-      rank = "hmc";
+      rank = "navcom_mcpo";
     };
 
     scope = 2;
@@ -3115,18 +6139,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_hmc";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_mcpo";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_vehicle_hm1: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_hmc: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "vehicle";
-      rank = "hm1";
+      rank = "navcom_hmc";
     };
 
     scope = 2;
@@ -3135,18 +6159,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_hm1";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_hmc";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_vehicle_hm1: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_hmc: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "vehicle";
-      rank = "hm1";
+      rank = "navcom_hmc";
     };
 
     scope = 2;
@@ -3155,18 +6179,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_hm1";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_hmc";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_vehicle_po1: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_cpo: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "vehicle";
-      rank = "po1";
+      rank = "navcom_cpo";
     };
 
     scope = 2;
@@ -3175,18 +6199,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_po1";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_cpo";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_vehicle_po1: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_cpo: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "vehicle";
-      rank = "po1";
+      rank = "navcom_cpo";
     };
 
     scope = 2;
@@ -3195,18 +6219,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_po1";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_cpo";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_vehicle_po2: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_hm1: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "vehicle";
-      rank = "po2";
+      rank = "navcom_hm1";
     };
 
     scope = 2;
@@ -3215,18 +6239,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_po2";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_hm1";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_vehicle_po2: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_hm1: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "vehicle";
-      rank = "po2";
+      rank = "navcom_hm1";
     };
 
     scope = 2;
@@ -3235,18 +6259,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_po2";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_hm1";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_vehicle_hm2: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_po1: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "vehicle";
-      rank = "hm2";
+      rank = "navcom_po1";
     };
 
     scope = 2;
@@ -3255,18 +6279,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_hm2";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_po1";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_vehicle_hm2: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_po1: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "vehicle";
-      rank = "hm2";
+      rank = "navcom_po1";
     };
 
     scope = 2;
@@ -3275,18 +6299,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_hm2";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_po1";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_vehicle_po3: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_hm2: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "vehicle";
-      rank = "po3";
+      rank = "navcom_hm2";
     };
 
     scope = 2;
@@ -3295,18 +6319,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_po3";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_hm2";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_vehicle_po3: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_hm2: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "vehicle";
-      rank = "po3";
+      rank = "navcom_hm2";
     };
 
     scope = 2;
@@ -3315,18 +6339,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_po3";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_hm2";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_vehicle_hm3: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_po2: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "vehicle";
-      rank = "hm3";
+      rank = "navcom_po2";
     };
 
     scope = 2;
@@ -3335,18 +6359,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_hm3";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_po2";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_vehicle_hm3: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_po2: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "vehicle";
-      rank = "hm3";
+      rank = "navcom_po2";
     };
 
     scope = 2;
@@ -3355,18 +6379,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_hm3";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_po2";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_vehicle_cn: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_po3: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "vehicle";
-      rank = "cn";
+      rank = "navcom_po3";
     };
 
     scope = 2;
@@ -3375,18 +6399,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_cn";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_po3";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_vehicle_cn: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_po3: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "vehicle";
-      rank = "cn";
+      rank = "navcom_po3";
     };
 
     scope = 2;
@@ -3395,18 +6419,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_cn";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_po3";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_vehicle_hn: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_hm3: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "vehicle";
-      rank = "hn";
+      rank = "navcom_hm3";
     };
 
     scope = 2;
@@ -3415,18 +6439,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_hn";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_hm3";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_vehicle_hn: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_hm3: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "vehicle";
-      rank = "hn";
+      rank = "navcom_hm3";
     };
 
     scope = 2;
@@ -3435,18 +6459,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_hn";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_hm3";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_vehicle_ca: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_hn: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "vehicle";
-      rank = "ca";
+      rank = "navcom_hn";
     };
 
     scope = 2;
@@ -3455,18 +6479,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_ca";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_hn";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_vehicle_ca: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_hn: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "vehicle";
-      rank = "ca";
+      rank = "navcom_hn";
     };
 
     scope = 2;
@@ -3475,18 +6499,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_ca";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_hn";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_vehicle_ha: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_ha: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "vehicle";
-      rank = "ha";
+      rank = "navcom_ha";
     };
 
     scope = 2;
@@ -3495,18 +6519,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_ha";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_ha";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_vehicle_ha: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_ha: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "vehicle";
-      rank = "ha";
+      rank = "navcom_ha";
     };
 
     scope = 2;
@@ -3515,18 +6539,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_ha";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_ha";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_vehicle_cr: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_cn: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "vehicle";
-      rank = "cr";
+      rank = "navcom_cn";
     };
 
     scope = 2;
@@ -3535,18 +6559,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_cr";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_cn";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_vehicle_cr: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_cn: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "vehicle";
-      rank = "cr";
+      rank = "navcom_cn";
     };
 
     scope = 2;
@@ -3555,18 +6579,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_cr";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_cn";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_vehicle_hr: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_ca: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "vehicle";
-      rank = "hr";
+      rank = "navcom_ca";
     };
 
     scope = 2;
@@ -3575,18 +6599,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_hr";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_ca";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_vehicle_hr: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_ca: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "vehicle";
-      rank = "hr";
+      rank = "navcom_ca";
     };
 
     scope = 2;
@@ -3595,7 +6619,967 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_hr";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_ca";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_cr: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "vehicle";
+      rank = "navcom_cr";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_cr";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_cr: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "vehicle";
+      rank = "navcom_cr";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_cr";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_hr: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "vehicle";
+      rank = "navcom_hr";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_hr";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_hr: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "vehicle";
+      rank = "navcom_hr";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_hr";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_gen: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "vehicle";
+      rank = "unicom_gen";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_gen";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_gen: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "vehicle";
+      rank = "unicom_gen";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_gen";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_ltgen: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "vehicle";
+      rank = "unicom_ltgen";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_ltgen";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_ltgen: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "vehicle";
+      rank = "unicom_ltgen";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_ltgen";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_majgen: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "vehicle";
+      rank = "unicom_majgen";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_majgen";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_majgen: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "vehicle";
+      rank = "unicom_majgen";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_majgen";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_bgen: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "vehicle";
+      rank = "unicom_bgen";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_bgen";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_bgen: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "vehicle";
+      rank = "unicom_bgen";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_bgen";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_ltcol: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "vehicle";
+      rank = "unicom_ltcol";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_ltcol";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_ltcol: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "vehicle";
+      rank = "unicom_ltcol";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_ltcol";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_col: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "vehicle";
+      rank = "unicom_col";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_col";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_col: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "vehicle";
+      rank = "unicom_col";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_col";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_maj: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "vehicle";
+      rank = "unicom_maj";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_maj";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_maj: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "vehicle";
+      rank = "unicom_maj";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_maj";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_capt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "vehicle";
+      rank = "unicom_capt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_capt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_capt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "vehicle";
+      rank = "unicom_capt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_capt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_2lt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "vehicle";
+      rank = "unicom_2lt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_2lt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_2lt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "vehicle";
+      rank = "unicom_2lt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_2lt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_1lt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "vehicle";
+      rank = "unicom_1lt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_1lt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_1lt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "vehicle";
+      rank = "unicom_1lt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_1lt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_cdt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "vehicle";
+      rank = "unicom_cdt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_cdt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_cdt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "vehicle";
+      rank = "unicom_cdt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_cdt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_mgysgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "vehicle";
+      rank = "unicom_mgysgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_mgysgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_mgysgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "vehicle";
+      rank = "unicom_mgysgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_mgysgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_sgtmaj: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "vehicle";
+      rank = "unicom_sgtmaj";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_sgtmaj";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_sgtmaj: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "vehicle";
+      rank = "unicom_sgtmaj";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_sgtmaj";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_1stsgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "vehicle";
+      rank = "unicom_1stsgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_1stsgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_1stsgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "vehicle";
+      rank = "unicom_1stsgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_1stsgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_msgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "vehicle";
+      rank = "unicom_msgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_msgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_msgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "vehicle";
+      rank = "unicom_msgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_msgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_ssgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "vehicle";
+      rank = "unicom_ssgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_ssgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_ssgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "vehicle";
+      rank = "unicom_ssgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_ssgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_gysgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "vehicle";
+      rank = "unicom_gysgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_gysgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_gysgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "vehicle";
+      rank = "unicom_gysgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_gysgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_sgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "vehicle";
+      rank = "unicom_sgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_sgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_sgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "vehicle";
+      rank = "unicom_sgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_sgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_cpl: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "vehicle";
+      rank = "unicom_cpl";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_cpl";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_cpl: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "vehicle";
+      rank = "unicom_cpl";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_cpl";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_lcpl: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "vehicle";
+      rank = "unicom_lcpl";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_lcpl";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_lcpl: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "vehicle";
+      rank = "unicom_lcpl";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_lcpl";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_pfc: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "vehicle";
+      rank = "unicom_pfc";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_pfc";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_pfc: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "vehicle";
+      rank = "unicom_pfc";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_pfc";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_pvt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "vehicle";
+      rank = "unicom_pvt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_pvt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_pvt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "vehicle";
+      rank = "unicom_pvt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_pvt";
     };
   };
 
@@ -3639,14 +7623,14 @@ class CfgWeapons
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_engineering_cdr: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_cdr: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "engineering";
-      rank = "cdr";
+      rank = "navcom_cdr";
     };
 
     scope = 2;
@@ -3655,18 +7639,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_cdr";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_cdr";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_engineering_cdr: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_cdr: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "engineering";
-      rank = "cdr";
+      rank = "navcom_cdr";
     };
 
     scope = 2;
@@ -3675,18 +7659,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_cdr";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_cdr";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_engineering_lcdr: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_lt: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "engineering";
-      rank = "lcdr";
+      rank = "navcom_lt";
     };
 
     scope = 2;
@@ -3695,18 +7679,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_lcdr";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_lt";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_engineering_lcdr: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_lt: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "engineering";
-      rank = "lcdr";
+      rank = "navcom_lt";
     };
 
     scope = 2;
@@ -3715,18 +7699,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_lcdr";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_lt";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_engineering_lt: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_lcdr: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "engineering";
-      rank = "lt";
+      rank = "navcom_lcdr";
     };
 
     scope = 2;
@@ -3735,18 +7719,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_lt";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_lcdr";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_engineering_lt: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_lcdr: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "engineering";
-      rank = "lt";
+      rank = "navcom_lcdr";
     };
 
     scope = 2;
@@ -3755,18 +7739,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_lt";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_lcdr";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_engineering_ltjg: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_ltjg: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "engineering";
-      rank = "ltjg";
+      rank = "navcom_ltjg";
     };
 
     scope = 2;
@@ -3775,18 +7759,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_ltjg";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_ltjg";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_engineering_ltjg: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_ltjg: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "engineering";
-      rank = "ltjg";
+      rank = "navcom_ltjg";
     };
 
     scope = 2;
@@ -3795,18 +7779,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_ltjg";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_ltjg";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_engineering_ens: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_ens: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "engineering";
-      rank = "ens";
+      rank = "navcom_ens";
     };
 
     scope = 2;
@@ -3815,18 +7799,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_ens";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_ens";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_engineering_ens: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_ens: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "engineering";
-      rank = "ens";
+      rank = "navcom_ens";
     };
 
     scope = 2;
@@ -3835,18 +7819,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_ens";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_ens";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_engineering_hnsc: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_hmmc: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "engineering";
-      rank = "hnsc";
+      rank = "navcom_hmmc";
     };
 
     scope = 2;
@@ -3855,18 +7839,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_hnsc";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_hmmc";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_engineering_hnsc: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_hmmc: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "engineering";
-      rank = "hnsc";
+      rank = "navcom_hmmc";
     };
 
     scope = 2;
@@ -3875,18 +7859,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_hnsc";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_hmmc";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_engineering_cpo: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_mcpo: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "engineering";
-      rank = "cpo";
+      rank = "navcom_mcpo";
     };
 
     scope = 2;
@@ -3895,18 +7879,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_cpo";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_mcpo";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_engineering_cpo: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_mcpo: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "engineering";
-      rank = "cpo";
+      rank = "navcom_mcpo";
     };
 
     scope = 2;
@@ -3915,18 +7899,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_cpo";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_mcpo";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_engineering_hmc: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_hmsc: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "engineering";
-      rank = "hmc";
+      rank = "navcom_hmsc";
     };
 
     scope = 2;
@@ -3935,18 +7919,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_hmc";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_hmsc";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_engineering_hmc: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_hmsc: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "engineering";
-      rank = "hmc";
+      rank = "navcom_hmsc";
     };
 
     scope = 2;
@@ -3955,18 +7939,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_hmc";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_hmsc";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_engineering_po1: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_cpo: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "engineering";
-      rank = "po1";
+      rank = "navcom_cpo";
     };
 
     scope = 2;
@@ -3975,18 +7959,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_po1";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_cpo";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_engineering_po1: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_cpo: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "engineering";
-      rank = "po1";
+      rank = "navcom_cpo";
     };
 
     scope = 2;
@@ -3995,18 +7979,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_po1";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_cpo";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_engineering_hm1: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_hmc: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "engineering";
-      rank = "hm1";
+      rank = "navcom_hmc";
     };
 
     scope = 2;
@@ -4015,18 +7999,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_hm1";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_hmc";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_engineering_hm1: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_hmc: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "engineering";
-      rank = "hm1";
+      rank = "navcom_hmc";
     };
 
     scope = 2;
@@ -4035,18 +8019,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_hm1";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_hmc";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_engineering_po2: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_po1: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "engineering";
-      rank = "po2";
+      rank = "navcom_po1";
     };
 
     scope = 2;
@@ -4055,18 +8039,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_po2";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_po1";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_engineering_po2: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_po1: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "engineering";
-      rank = "po2";
+      rank = "navcom_po1";
     };
 
     scope = 2;
@@ -4075,18 +8059,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_po2";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_po1";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_engineering_hm2: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_hm1: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "engineering";
-      rank = "hm2";
+      rank = "navcom_hm1";
     };
 
     scope = 2;
@@ -4095,18 +8079,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_hm2";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_hm1";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_engineering_hm2: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_hm1: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "engineering";
-      rank = "hm2";
+      rank = "navcom_hm1";
     };
 
     scope = 2;
@@ -4115,18 +8099,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_hm2";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_hm1";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_engineering_po3: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_po2: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "engineering";
-      rank = "po3";
+      rank = "navcom_po2";
     };
 
     scope = 2;
@@ -4135,18 +8119,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_po3";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_po2";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_engineering_po3: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_po2: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "engineering";
-      rank = "po3";
+      rank = "navcom_po2";
     };
 
     scope = 2;
@@ -4155,18 +8139,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_po3";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_po2";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_engineering_hm3: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_hm2: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "engineering";
-      rank = "hm3";
+      rank = "navcom_hm2";
     };
 
     scope = 2;
@@ -4175,18 +8159,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_hm3";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_hm2";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_engineering_hm3: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_hm2: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "engineering";
-      rank = "hm3";
+      rank = "navcom_hm2";
     };
 
     scope = 2;
@@ -4195,18 +8179,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_hm3";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_hm2";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_engineering_cn: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_po3: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "engineering";
-      rank = "cn";
+      rank = "navcom_po3";
     };
 
     scope = 2;
@@ -4215,18 +8199,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_cn";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_po3";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_engineering_cn: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_po3: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "engineering";
-      rank = "cn";
+      rank = "navcom_po3";
     };
 
     scope = 2;
@@ -4235,18 +8219,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_cn";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_po3";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_engineering_hn: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_hm3: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "engineering";
-      rank = "hn";
+      rank = "navcom_hm3";
     };
 
     scope = 2;
@@ -4255,18 +8239,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_hn";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_hm3";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_engineering_hn: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_hm3: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "engineering";
-      rank = "hn";
+      rank = "navcom_hm3";
     };
 
     scope = 2;
@@ -4275,18 +8259,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_hn";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_hm3";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_engineering_ca: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_cn: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "engineering";
-      rank = "ca";
+      rank = "navcom_cn";
     };
 
     scope = 2;
@@ -4295,18 +8279,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_ca";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_cn";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_engineering_ca: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_cn: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "engineering";
-      rank = "ca";
+      rank = "navcom_cn";
     };
 
     scope = 2;
@@ -4315,18 +8299,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_ca";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_cn";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_engineering_ha: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_ca: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "engineering";
-      rank = "ha";
+      rank = "navcom_ca";
     };
 
     scope = 2;
@@ -4335,18 +8319,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_ha";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_ca";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_engineering_ha: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_ca: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "engineering";
-      rank = "ha";
+      rank = "navcom_ca";
     };
 
     scope = 2;
@@ -4355,18 +8339,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_ha";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_ca";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_engineering_cr: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_hn: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "engineering";
-      rank = "cr";
+      rank = "navcom_hn";
     };
 
     scope = 2;
@@ -4375,18 +8359,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_cr";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_hn";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_engineering_cr: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_hn: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "engineering";
-      rank = "cr";
+      rank = "navcom_hn";
     };
 
     scope = 2;
@@ -4395,18 +8379,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_cr";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_hn";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_masc_engineering_hr: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_ha: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "masc";
       type = "engineering";
-      rank = "hr";
+      rank = "navcom_ha";
     };
 
     scope = 2;
@@ -4415,18 +8399,18 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_hr";
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_ha";
     };
   };
 
-  class WS_Gear_Uniform_ONICrew_femme_engineering_hr: WS_Gear_Uniform_ONICrew_Base
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_ha: WS_Gear_Uniform_ONICrew_Base
   {
     class XtdGearInfo
     {
       model = "WS_Gear_Uniform_ONICrew_Metaitem";
       bodytype = "femme";
       type = "engineering";
-      rank = "hr";
+      rank = "navcom_ha";
     };
 
     scope = 2;
@@ -4435,7 +8419,967 @@ class CfgWeapons
 
     class ItemInfo: ItemInfo
     {
-      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_hr";
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_ha";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_hr: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "engineering";
+      rank = "navcom_hr";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_hr";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_hr: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "engineering";
+      rank = "navcom_hr";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_hr";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_gen: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "engineering";
+      rank = "unicom_gen";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_gen";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_gen: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "engineering";
+      rank = "unicom_gen";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_gen";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_cr: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "engineering";
+      rank = "navcom_cr";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_cr";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_cr: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "engineering";
+      rank = "navcom_cr";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_cr";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_ltgen: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "engineering";
+      rank = "unicom_ltgen";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_ltgen";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_ltgen: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "engineering";
+      rank = "unicom_ltgen";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_ltgen";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_bgen: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "engineering";
+      rank = "unicom_bgen";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_bgen";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_bgen: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "engineering";
+      rank = "unicom_bgen";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_bgen";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_majgen: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "engineering";
+      rank = "unicom_majgen";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_majgen";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_majgen: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "engineering";
+      rank = "unicom_majgen";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_majgen";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_col: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "engineering";
+      rank = "unicom_col";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_col";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_col: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "engineering";
+      rank = "unicom_col";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_col";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_ltcol: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "engineering";
+      rank = "unicom_ltcol";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_ltcol";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_ltcol: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "engineering";
+      rank = "unicom_ltcol";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_ltcol";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_capt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "engineering";
+      rank = "unicom_capt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_capt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_capt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "engineering";
+      rank = "unicom_capt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_capt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_1lt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "engineering";
+      rank = "unicom_1lt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_1lt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_1lt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "engineering";
+      rank = "unicom_1lt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_1lt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_2lt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "engineering";
+      rank = "unicom_2lt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_2lt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_2lt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "engineering";
+      rank = "unicom_2lt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_2lt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_maj: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "engineering";
+      rank = "unicom_maj";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_maj";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_maj: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "engineering";
+      rank = "unicom_maj";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_maj";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_sgtmaj: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "engineering";
+      rank = "unicom_sgtmaj";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_sgtmaj";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_sgtmaj: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "engineering";
+      rank = "unicom_sgtmaj";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_sgtmaj";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_1stsgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "engineering";
+      rank = "unicom_1stsgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_1stsgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_1stsgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "engineering";
+      rank = "unicom_1stsgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_1stsgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_mgysgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "engineering";
+      rank = "unicom_mgysgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_mgysgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_mgysgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "engineering";
+      rank = "unicom_mgysgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_mgysgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_cdt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "engineering";
+      rank = "unicom_cdt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_cdt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_cdt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "engineering";
+      rank = "unicom_cdt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_cdt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_msgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "engineering";
+      rank = "unicom_msgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_msgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_msgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "engineering";
+      rank = "unicom_msgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_msgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_ssgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "engineering";
+      rank = "unicom_ssgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_ssgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_ssgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "engineering";
+      rank = "unicom_ssgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_ssgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_sgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "engineering";
+      rank = "unicom_sgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_sgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_sgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "engineering";
+      rank = "unicom_sgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_sgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_gysgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "engineering";
+      rank = "unicom_gysgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_gysgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_gysgt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "engineering";
+      rank = "unicom_gysgt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_gysgt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_pfc: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "engineering";
+      rank = "unicom_pfc";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_pfc";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_pfc: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "engineering";
+      rank = "unicom_pfc";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_pfc";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_cpl: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "engineering";
+      rank = "unicom_cpl";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_cpl";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_cpl: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "engineering";
+      rank = "unicom_cpl";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_cpl";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_pvt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "engineering";
+      rank = "unicom_pvt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_pvt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_pvt: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "engineering";
+      rank = "unicom_pvt";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_pvt";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_lcpl: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "masc";
+      type = "engineering";
+      rank = "unicom_lcpl";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_lcpl";
+    };
+  };
+
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_lcpl: WS_Gear_Uniform_ONICrew_Base
+  {
+    class XtdGearInfo
+    {
+      model = "WS_Gear_Uniform_ONICrew_Metaitem";
+      bodytype = "femme";
+      type = "engineering";
+      rank = "unicom_lcpl";
+    };
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    class ItemInfo: ItemInfo
+    {
+      uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_lcpl";
     };
   };
 
@@ -4477,6 +9421,33 @@ class CfgVehicles
   };
 
   // Actual classes
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_ltjg: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_ltjg";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_ltjg.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_ltjg: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_ltjg";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_ltjg.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_ltjg.paa"
+    };
+  };
   class WS_Gear_Uniform_ONICrew_masc_crew_none: WS_Gear_Uniform_ONICrew_Base_masc
   {
     uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_none";
@@ -4504,9 +9475,9 @@ class CfgVehicles
       "WS_Gear\Uniform\ONICrew\_textures\combined\crew_none.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_crew_lcdr: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_lcdr: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_lcdr";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_lcdr";
 
     scope = 2;
     scopeCurator = 2;
@@ -4514,12 +9485,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_lcdr.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_lcdr.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_crew_lcdr: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_lcdr: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_lcdr";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_lcdr";
 
     scope = 2;
     scopeCurator = 2;
@@ -4527,13 +9498,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_lcdr.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_lcdr.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_lcdr.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_lcdr.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_crew_cdr: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_cdr: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_cdr";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_cdr";
 
     scope = 2;
     scopeCurator = 2;
@@ -4541,12 +9512,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_cdr.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_cdr.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_crew_cdr: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_cdr: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_cdr";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_cdr";
 
     scope = 2;
     scopeCurator = 2;
@@ -4554,13 +9525,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_cdr.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_cdr.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_cdr.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_cdr.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_crew_lt: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_lt: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_lt";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_lt";
 
     scope = 2;
     scopeCurator = 2;
@@ -4568,12 +9539,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_lt.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_lt.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_crew_lt: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_lt: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_lt";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_lt";
 
     scope = 2;
     scopeCurator = 2;
@@ -4581,13 +9552,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_lt.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_lt.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_lt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_lt.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_crew_ltjg: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_mcpo: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_ltjg";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_mcpo";
 
     scope = 2;
     scopeCurator = 2;
@@ -4595,12 +9566,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_ltjg.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_mcpo.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_crew_ltjg: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_mcpo: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_ltjg";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_mcpo";
 
     scope = 2;
     scopeCurator = 2;
@@ -4608,13 +9579,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_ltjg.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_ltjg.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_mcpo.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_mcpo.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_crew_ens: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_ens: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_ens";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_ens";
 
     scope = 2;
     scopeCurator = 2;
@@ -4622,12 +9593,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_ens.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_ens.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_crew_ens: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_ens: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_ens";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_ens";
 
     scope = 2;
     scopeCurator = 2;
@@ -4635,13 +9606,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_ens.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_ens.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_ens.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_ens.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_crew_hnsc: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_hmmc: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_hnsc";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_hmmc";
 
     scope = 2;
     scopeCurator = 2;
@@ -4649,12 +9620,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_hnsc.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_hmmc.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_crew_hnsc: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_hmmc: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_hnsc";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_hmmc";
 
     scope = 2;
     scopeCurator = 2;
@@ -4662,13 +9633,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_hnsc.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_hnsc.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_hmmc.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_hmmc.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_crew_cpo: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_cpo: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_cpo";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_cpo";
 
     scope = 2;
     scopeCurator = 2;
@@ -4676,12 +9647,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_cpo.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_cpo.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_crew_cpo: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_cpo: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_cpo";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_cpo";
 
     scope = 2;
     scopeCurator = 2;
@@ -4689,13 +9660,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_cpo.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_cpo.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_cpo.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_cpo.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_crew_po1: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_po2: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_po1";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_po2";
 
     scope = 2;
     scopeCurator = 2;
@@ -4703,12 +9674,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_po1.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_po2.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_crew_po1: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_po2: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_po1";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_po2";
 
     scope = 2;
     scopeCurator = 2;
@@ -4716,13 +9687,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_po1.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_po1.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_po2.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_po2.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_crew_hmc: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_hmc: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_hmc";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_hmc";
 
     scope = 2;
     scopeCurator = 2;
@@ -4730,12 +9701,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_hmc.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_hmc.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_crew_hmc: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_hmc: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_hmc";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_hmc";
 
     scope = 2;
     scopeCurator = 2;
@@ -4743,13 +9714,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_hmc.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_hmc.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_hmc.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_hmc.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_crew_hm1: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_hmsc: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_hm1";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_hmsc";
 
     scope = 2;
     scopeCurator = 2;
@@ -4757,12 +9728,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_hm1.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_hmsc.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_crew_hm1: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_hmsc: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_hm1";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_hmsc";
 
     scope = 2;
     scopeCurator = 2;
@@ -4770,13 +9741,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_hm1.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_hm1.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_hmsc.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_hmsc.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_crew_po2: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_po1: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_po2";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_po1";
 
     scope = 2;
     scopeCurator = 2;
@@ -4784,12 +9755,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_po2.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_po1.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_crew_po2: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_po1: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_po2";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_po1";
 
     scope = 2;
     scopeCurator = 2;
@@ -4797,13 +9768,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_po2.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_po2.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_po1.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_po1.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_crew_po3: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_hm1: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_po3";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_hm1";
 
     scope = 2;
     scopeCurator = 2;
@@ -4811,12 +9782,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_po3.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_hm1.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_crew_po3: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_hm1: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_po3";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_hm1";
 
     scope = 2;
     scopeCurator = 2;
@@ -4824,13 +9795,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_po3.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_po3.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_hm1.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_hm1.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_crew_hm2: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_hm2: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_hm2";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_hm2";
 
     scope = 2;
     scopeCurator = 2;
@@ -4838,12 +9809,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_hm2.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_hm2.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_crew_hm2: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_hm2: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_hm2";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_hm2";
 
     scope = 2;
     scopeCurator = 2;
@@ -4851,13 +9822,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_hm2.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_hm2.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_hm2.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_hm2.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_crew_hm3: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_po3: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_hm3";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_po3";
 
     scope = 2;
     scopeCurator = 2;
@@ -4865,12 +9836,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_hm3.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_po3.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_crew_hm3: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_po3: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_hm3";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_po3";
 
     scope = 2;
     scopeCurator = 2;
@@ -4878,13 +9849,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_hm3.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_hm3.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_po3.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_po3.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_crew_cn: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_hm3: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_cn";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_hm3";
 
     scope = 2;
     scopeCurator = 2;
@@ -4892,12 +9863,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_cn.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_hm3.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_crew_cn: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_hm3: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_cn";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_hm3";
 
     scope = 2;
     scopeCurator = 2;
@@ -4905,13 +9876,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_cn.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_cn.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_hm3.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_hm3.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_crew_hn: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_ha: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_hn";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_ha";
 
     scope = 2;
     scopeCurator = 2;
@@ -4919,12 +9890,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_hn.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_ha.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_crew_hn: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_ha: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_hn";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_ha";
 
     scope = 2;
     scopeCurator = 2;
@@ -4932,13 +9903,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_hn.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_hn.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_ha.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_ha.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_crew_ca: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_cn: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_ca";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_cn";
 
     scope = 2;
     scopeCurator = 2;
@@ -4946,12 +9917,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_ca.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_cn.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_crew_ca: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_cn: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_ca";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_cn";
 
     scope = 2;
     scopeCurator = 2;
@@ -4959,13 +9930,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_ca.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_ca.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_cn.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_cn.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_crew_ha: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_ca: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_ha";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_ca";
 
     scope = 2;
     scopeCurator = 2;
@@ -4973,12 +9944,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_ha.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_ca.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_crew_ha: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_ca: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_ha";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_ca";
 
     scope = 2;
     scopeCurator = 2;
@@ -4986,13 +9957,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_ha.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_ha.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_ca.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_ca.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_crew_cr: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_hn: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_cr";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_hn";
 
     scope = 2;
     scopeCurator = 2;
@@ -5000,12 +9971,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_cr.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_hn.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_crew_cr: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_hn: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_cr";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_hn";
 
     scope = 2;
     scopeCurator = 2;
@@ -5013,13 +9984,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_cr.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_cr.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_hn.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_hn.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_crew_hr: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_cr: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_hr";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_cr";
 
     scope = 2;
     scopeCurator = 2;
@@ -5027,12 +9998,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_hr.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_cr.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_crew_hr: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_cr: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_hr";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_cr";
 
     scope = 2;
     scopeCurator = 2;
@@ -5040,8 +10011,602 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_hr.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_hr.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_cr.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_cr.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_ltgen: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_ltgen";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_ltgen.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_ltgen: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_ltgen";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_ltgen.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_ltgen.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_crew_navcom_hr: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_navcom_hr";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_hr.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_crew_navcom_hr: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_navcom_hr";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_hr.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_navcom_hr.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_gen: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_gen";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_gen.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_gen: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_gen";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_gen.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_gen.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_majgen: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_majgen";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_majgen.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_majgen: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_majgen";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_majgen.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_majgen.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_bgen: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_bgen";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_bgen.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_bgen: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_bgen";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_bgen.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_bgen.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_maj: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_maj";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_maj.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_maj: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_maj";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_maj.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_maj.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_col: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_col";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_col.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_col: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_col";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_col.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_col.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_ltcol: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_ltcol";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_ltcol.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_ltcol: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_ltcol";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_ltcol.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_ltcol.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_cdt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_cdt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_cdt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_cdt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_cdt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_cdt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_cdt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_capt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_capt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_capt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_capt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_capt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_capt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_capt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_2lt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_2lt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_2lt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_2lt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_2lt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_2lt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_2lt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_1lt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_1lt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_1lt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_1lt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_1lt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_1lt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_1lt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_sgtmaj: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_sgtmaj";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_sgtmaj.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_sgtmaj: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_sgtmaj";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_sgtmaj.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_sgtmaj.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_mgysgt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_mgysgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_mgysgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_mgysgt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_mgysgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_mgysgt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_mgysgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_1stsgt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_1stsgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_1stsgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_1stsgt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_1stsgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_1stsgt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_1stsgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_ssgt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_ssgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_ssgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_ssgt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_ssgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_ssgt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_ssgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_msgt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_msgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_msgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_msgt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_msgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_msgt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_msgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_gysgt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_gysgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_gysgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_gysgt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_gysgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_gysgt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_gysgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_sgt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_sgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_sgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_sgt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_sgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_sgt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_sgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_lcpl: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_lcpl";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_lcpl.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_lcpl: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_lcpl";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_lcpl.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_lcpl.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_pfc: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_pfc";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_pfc.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_pfc: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_pfc";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_pfc.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_pfc.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_pvt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_pvt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_pvt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_pvt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_pvt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_pvt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_pvt.paa"
     };
   };
   class WS_Gear_Uniform_ONICrew_masc_odst_none: WS_Gear_Uniform_ONICrew_Base_masc
@@ -5071,9 +10636,9 @@ class CfgVehicles
       "WS_Gear\Uniform\ONICrew\_textures\combined\odst_none.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_odst_cdr: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_crew_unicom_cpl: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_cdr";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_crew_unicom_cpl";
 
     scope = 2;
     scopeCurator = 2;
@@ -5081,12 +10646,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_cdr.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_cpl.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_odst_cdr: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_crew_unicom_cpl: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_cdr";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_crew_unicom_cpl";
 
     scope = 2;
     scopeCurator = 2;
@@ -5094,13 +10659,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_cdr.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_cdr.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_cpl.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\crew_unicom_cpl.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_odst_lcdr: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_cdr: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_lcdr";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_cdr";
 
     scope = 2;
     scopeCurator = 2;
@@ -5108,12 +10673,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_lcdr.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_cdr.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_odst_lcdr: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_cdr: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_lcdr";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_cdr";
 
     scope = 2;
     scopeCurator = 2;
@@ -5121,13 +10686,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_lcdr.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_lcdr.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_cdr.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_cdr.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_odst_lt: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_lcdr: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_lt";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_lcdr";
 
     scope = 2;
     scopeCurator = 2;
@@ -5135,12 +10700,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_lt.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_lcdr.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_odst_lt: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_lcdr: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_lt";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_lcdr";
 
     scope = 2;
     scopeCurator = 2;
@@ -5148,13 +10713,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_lt.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_lt.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_lcdr.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_lcdr.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_odst_ltjg: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_ltjg: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_ltjg";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_ltjg";
 
     scope = 2;
     scopeCurator = 2;
@@ -5162,12 +10727,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_ltjg.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_ltjg.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_odst_ltjg: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_ltjg: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_ltjg";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_ltjg";
 
     scope = 2;
     scopeCurator = 2;
@@ -5175,13 +10740,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_ltjg.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_ltjg.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_ltjg.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_ltjg.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_odst_ens: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_ens: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_ens";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_ens";
 
     scope = 2;
     scopeCurator = 2;
@@ -5189,12 +10754,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_ens.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_ens.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_odst_ens: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_ens: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_ens";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_ens";
 
     scope = 2;
     scopeCurator = 2;
@@ -5202,13 +10767,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_ens.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_ens.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_ens.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_ens.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_odst_hnsc: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_lt: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_hnsc";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_lt";
 
     scope = 2;
     scopeCurator = 2;
@@ -5216,12 +10781,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_hnsc.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_lt.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_odst_hnsc: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_lt: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_hnsc";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_lt";
 
     scope = 2;
     scopeCurator = 2;
@@ -5229,13 +10794,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_hnsc.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_hnsc.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_lt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_lt.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_odst_cpo: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_mcpo: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_cpo";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_mcpo";
 
     scope = 2;
     scopeCurator = 2;
@@ -5243,12 +10808,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_cpo.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_mcpo.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_odst_cpo: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_mcpo: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_cpo";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_mcpo";
 
     scope = 2;
     scopeCurator = 2;
@@ -5256,13 +10821,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_cpo.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_cpo.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_mcpo.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_mcpo.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_odst_hmc: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_hmmc: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_hmc";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_hmmc";
 
     scope = 2;
     scopeCurator = 2;
@@ -5270,12 +10835,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_hmc.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_hmmc.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_odst_hmc: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_hmmc: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_hmc";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_hmmc";
 
     scope = 2;
     scopeCurator = 2;
@@ -5283,13 +10848,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_hmc.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_hmc.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_hmmc.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_hmmc.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_odst_po1: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_cpo: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_po1";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_cpo";
 
     scope = 2;
     scopeCurator = 2;
@@ -5297,12 +10862,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_po1.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_cpo.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_odst_po1: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_cpo: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_po1";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_cpo";
 
     scope = 2;
     scopeCurator = 2;
@@ -5310,13 +10875,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_po1.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_po1.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_cpo.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_cpo.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_odst_hm1: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_hmsc: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_hm1";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_hmsc";
 
     scope = 2;
     scopeCurator = 2;
@@ -5324,12 +10889,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_hm1.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_hmsc.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_odst_hm1: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_hmsc: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_hm1";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_hmsc";
 
     scope = 2;
     scopeCurator = 2;
@@ -5337,13 +10902,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_hm1.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_hm1.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_hmsc.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_hmsc.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_odst_po2: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_hmc: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_po2";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_hmc";
 
     scope = 2;
     scopeCurator = 2;
@@ -5351,12 +10916,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_po2.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_hmc.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_odst_po2: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_hmc: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_po2";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_hmc";
 
     scope = 2;
     scopeCurator = 2;
@@ -5364,13 +10929,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_po2.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_po2.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_hmc.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_hmc.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_odst_hm2: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_po1: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_hm2";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_po1";
 
     scope = 2;
     scopeCurator = 2;
@@ -5378,12 +10943,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_hm2.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_po1.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_odst_hm2: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_po1: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_hm2";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_po1";
 
     scope = 2;
     scopeCurator = 2;
@@ -5391,13 +10956,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_hm2.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_hm2.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_po1.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_po1.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_odst_po3: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_hm1: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_po3";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_hm1";
 
     scope = 2;
     scopeCurator = 2;
@@ -5405,12 +10970,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_po3.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_hm1.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_odst_po3: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_hm1: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_po3";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_hm1";
 
     scope = 2;
     scopeCurator = 2;
@@ -5418,13 +10983,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_po3.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_po3.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_hm1.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_hm1.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_odst_hm3: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_po2: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_hm3";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_po2";
 
     scope = 2;
     scopeCurator = 2;
@@ -5432,12 +10997,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_hm3.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_po2.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_odst_hm3: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_po2: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_hm3";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_po2";
 
     scope = 2;
     scopeCurator = 2;
@@ -5445,13 +11010,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_hm3.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_hm3.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_po2.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_po2.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_odst_hn: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_hm2: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_hn";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_hm2";
 
     scope = 2;
     scopeCurator = 2;
@@ -5459,12 +11024,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_hn.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_hm2.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_odst_hn: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_hm2: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_hn";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_hm2";
 
     scope = 2;
     scopeCurator = 2;
@@ -5472,13 +11037,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_hn.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_hn.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_hm2.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_hm2.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_odst_cn: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_po3: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_cn";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_po3";
 
     scope = 2;
     scopeCurator = 2;
@@ -5486,12 +11051,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_cn.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_po3.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_odst_cn: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_po3: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_cn";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_po3";
 
     scope = 2;
     scopeCurator = 2;
@@ -5499,13 +11064,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_cn.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_cn.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_po3.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_po3.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_odst_ca: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_hm3: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_ca";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_hm3";
 
     scope = 2;
     scopeCurator = 2;
@@ -5513,12 +11078,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_ca.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_hm3.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_odst_ca: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_hm3: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_ca";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_hm3";
 
     scope = 2;
     scopeCurator = 2;
@@ -5526,13 +11091,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_ca.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_ca.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_hm3.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_hm3.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_odst_ha: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_cn: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_ha";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_cn";
 
     scope = 2;
     scopeCurator = 2;
@@ -5540,12 +11105,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_ha.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_cn.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_odst_ha: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_cn: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_ha";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_cn";
 
     scope = 2;
     scopeCurator = 2;
@@ -5553,13 +11118,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_ha.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_ha.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_cn.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_cn.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_odst_hr: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_hn: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_hr";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_hn";
 
     scope = 2;
     scopeCurator = 2;
@@ -5567,12 +11132,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_hr.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_hn.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_odst_hr: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_hn: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_hr";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_hn";
 
     scope = 2;
     scopeCurator = 2;
@@ -5580,13 +11145,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_hr.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_hr.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_hn.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_hn.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_odst_cr: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_ha: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_cr";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_ha";
 
     scope = 2;
     scopeCurator = 2;
@@ -5594,12 +11159,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_cr.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_ha.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_odst_cr: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_ha: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_cr";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_ha";
 
     scope = 2;
     scopeCurator = 2;
@@ -5607,8 +11172,656 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_cr.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_cr.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_ha.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_ha.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_ca: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_ca";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_ca.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_ca: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_ca";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_ca.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_ca.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_cr: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_cr";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_cr.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_cr: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_cr";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_cr.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_cr.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_odst_navcom_hr: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_navcom_hr";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_hr.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_odst_navcom_hr: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_navcom_hr";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_hr.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_navcom_hr.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_gen: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_gen";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_gen.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_gen: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_gen";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_gen.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_gen.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_ltgen: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_ltgen";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_ltgen.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_ltgen: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_ltgen";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_ltgen.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_ltgen.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_majgen: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_majgen";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_majgen.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_majgen: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_majgen";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_majgen.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_majgen.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_bgen: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_bgen";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_bgen.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_bgen: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_bgen";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_bgen.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_bgen.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_col: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_col";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_col.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_col: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_col";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_col.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_col.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_ltcol: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_ltcol";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_ltcol.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_ltcol: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_ltcol";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_ltcol.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_ltcol.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_maj: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_maj";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_maj.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_maj: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_maj";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_maj.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_maj.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_capt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_capt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_capt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_capt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_capt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_capt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_capt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_1lt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_1lt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_1lt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_1lt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_1lt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_1lt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_1lt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_cdt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_cdt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_cdt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_cdt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_cdt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_cdt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_cdt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_2lt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_2lt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_2lt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_2lt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_2lt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_2lt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_2lt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_sgtmaj: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_sgtmaj";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_sgtmaj.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_sgtmaj: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_sgtmaj";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_sgtmaj.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_sgtmaj.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_mgysgt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_mgysgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_mgysgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_mgysgt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_mgysgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_mgysgt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_mgysgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_gysgt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_gysgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_gysgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_gysgt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_gysgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_gysgt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_gysgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_1stsgt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_1stsgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_1stsgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_1stsgt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_1stsgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_1stsgt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_1stsgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_msgt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_msgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_msgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_msgt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_msgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_msgt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_msgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_ssgt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_ssgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_ssgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_ssgt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_ssgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_ssgt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_ssgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_sgt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_sgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_sgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_sgt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_sgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_sgt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_sgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_cpl: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_cpl";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_cpl.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_cpl: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_cpl";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_cpl.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_cpl.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_lcpl: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_lcpl";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_lcpl.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_lcpl: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_lcpl";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_lcpl.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_lcpl.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_pfc: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_pfc";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_pfc.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_pfc: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_pfc";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_pfc.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_pfc.paa"
     };
   };
   class WS_Gear_Uniform_ONICrew_masc_medical_none: WS_Gear_Uniform_ONICrew_Base_masc
@@ -5638,9 +11851,9 @@ class CfgVehicles
       "WS_Gear\Uniform\ONICrew\_textures\combined\medical_none.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_medical_cdr: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_cdr: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_cdr";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_cdr";
 
     scope = 2;
     scopeCurator = 2;
@@ -5648,12 +11861,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_cdr.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_cdr.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_medical_cdr: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_cdr: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_cdr";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_cdr";
 
     scope = 2;
     scopeCurator = 2;
@@ -5661,13 +11874,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_cdr.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_cdr.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_cdr.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_cdr.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_medical_lcdr: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_odst_unicom_pvt: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_lcdr";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_odst_unicom_pvt";
 
     scope = 2;
     scopeCurator = 2;
@@ -5675,12 +11888,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_lcdr.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_pvt.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_medical_lcdr: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_odst_unicom_pvt: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_lcdr";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_odst_unicom_pvt";
 
     scope = 2;
     scopeCurator = 2;
@@ -5688,13 +11901,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_lcdr.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_lcdr.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_pvt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\odst_unicom_pvt.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_medical_lt: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_lcdr: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_lt";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_lcdr";
 
     scope = 2;
     scopeCurator = 2;
@@ -5702,12 +11915,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_lt.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_lcdr.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_medical_lt: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_lcdr: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_lt";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_lcdr";
 
     scope = 2;
     scopeCurator = 2;
@@ -5715,13 +11928,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_lt.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_lt.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_lcdr.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_lcdr.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_medical_ltjg: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_ltjg: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_ltjg";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_ltjg";
 
     scope = 2;
     scopeCurator = 2;
@@ -5729,12 +11942,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_ltjg.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_ltjg.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_medical_ltjg: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_ltjg: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_ltjg";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_ltjg";
 
     scope = 2;
     scopeCurator = 2;
@@ -5742,13 +11955,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_ltjg.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_ltjg.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_ltjg.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_ltjg.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_medical_ens: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_lt: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_ens";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_lt";
 
     scope = 2;
     scopeCurator = 2;
@@ -5756,12 +11969,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_ens.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_lt.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_medical_ens: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_lt: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_ens";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_lt";
 
     scope = 2;
     scopeCurator = 2;
@@ -5769,13 +11982,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_ens.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_ens.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_lt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_lt.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_medical_hnsc: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_ens: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_hnsc";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_ens";
 
     scope = 2;
     scopeCurator = 2;
@@ -5783,12 +11996,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_hnsc.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_ens.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_medical_hnsc: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_ens: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_hnsc";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_ens";
 
     scope = 2;
     scopeCurator = 2;
@@ -5796,13 +12009,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_hnsc.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_hnsc.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_ens.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_ens.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_medical_cpo: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_mcpo: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_cpo";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_mcpo";
 
     scope = 2;
     scopeCurator = 2;
@@ -5810,12 +12023,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_cpo.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_mcpo.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_medical_cpo: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_mcpo: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_cpo";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_mcpo";
 
     scope = 2;
     scopeCurator = 2;
@@ -5823,13 +12036,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_cpo.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_cpo.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_mcpo.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_mcpo.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_medical_hmc: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_hmmc: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_hmc";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_hmmc";
 
     scope = 2;
     scopeCurator = 2;
@@ -5837,12 +12050,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_hmc.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_hmmc.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_medical_hmc: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_hmmc: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_hmc";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_hmmc";
 
     scope = 2;
     scopeCurator = 2;
@@ -5850,13 +12063,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_hmc.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_hmc.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_hmmc.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_hmmc.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_medical_po1: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_cpo: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_po1";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_cpo";
 
     scope = 2;
     scopeCurator = 2;
@@ -5864,12 +12077,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_po1.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_cpo.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_medical_po1: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_cpo: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_po1";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_cpo";
 
     scope = 2;
     scopeCurator = 2;
@@ -5877,13 +12090,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_po1.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_po1.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_cpo.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_cpo.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_medical_po2: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_hmsc: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_po2";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_hmsc";
 
     scope = 2;
     scopeCurator = 2;
@@ -5891,12 +12104,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_po2.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_hmsc.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_medical_po2: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_hmsc: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_po2";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_hmsc";
 
     scope = 2;
     scopeCurator = 2;
@@ -5904,13 +12117,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_po2.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_po2.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_hmsc.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_hmsc.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_medical_hm1: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_hmc: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_hm1";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_hmc";
 
     scope = 2;
     scopeCurator = 2;
@@ -5918,12 +12131,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_hm1.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_hmc.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_medical_hm1: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_hmc: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_hm1";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_hmc";
 
     scope = 2;
     scopeCurator = 2;
@@ -5931,13 +12144,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_hm1.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_hm1.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_hmc.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_hmc.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_medical_hm2: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_po1: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_hm2";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_po1";
 
     scope = 2;
     scopeCurator = 2;
@@ -5945,12 +12158,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_hm2.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_po1.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_medical_hm2: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_po1: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_hm2";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_po1";
 
     scope = 2;
     scopeCurator = 2;
@@ -5958,13 +12171,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_hm2.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_hm2.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_po1.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_po1.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_medical_po3: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_hm1: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_po3";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_hm1";
 
     scope = 2;
     scopeCurator = 2;
@@ -5972,12 +12185,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_po3.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_hm1.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_medical_po3: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_hm1: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_po3";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_hm1";
 
     scope = 2;
     scopeCurator = 2;
@@ -5985,13 +12198,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_po3.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_po3.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_hm1.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_hm1.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_medical_hm3: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_po2: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_hm3";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_po2";
 
     scope = 2;
     scopeCurator = 2;
@@ -5999,12 +12212,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_hm3.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_po2.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_medical_hm3: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_po2: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_hm3";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_po2";
 
     scope = 2;
     scopeCurator = 2;
@@ -6012,13 +12225,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_hm3.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_hm3.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_po2.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_po2.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_medical_cn: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_hm2: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_cn";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_hm2";
 
     scope = 2;
     scopeCurator = 2;
@@ -6026,12 +12239,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_cn.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_hm2.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_medical_cn: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_hm2: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_cn";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_hm2";
 
     scope = 2;
     scopeCurator = 2;
@@ -6039,13 +12252,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_cn.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_cn.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_hm2.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_hm2.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_medical_hn: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_hm3: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_hn";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_hm3";
 
     scope = 2;
     scopeCurator = 2;
@@ -6053,12 +12266,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_hn.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_hm3.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_medical_hn: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_hm3: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_hn";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_hm3";
 
     scope = 2;
     scopeCurator = 2;
@@ -6066,13 +12279,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_hn.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_hn.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_hm3.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_hm3.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_medical_ca: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_po3: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_ca";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_po3";
 
     scope = 2;
     scopeCurator = 2;
@@ -6080,12 +12293,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_ca.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_po3.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_medical_ca: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_po3: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_ca";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_po3";
 
     scope = 2;
     scopeCurator = 2;
@@ -6093,13 +12306,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_ca.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_ca.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_po3.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_po3.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_medical_ha: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_cn: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_ha";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_cn";
 
     scope = 2;
     scopeCurator = 2;
@@ -6107,12 +12320,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_ha.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_cn.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_medical_ha: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_cn: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_ha";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_cn";
 
     scope = 2;
     scopeCurator = 2;
@@ -6120,13 +12333,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_ha.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_ha.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_cn.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_cn.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_medical_cr: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_ca: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_cr";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_ca";
 
     scope = 2;
     scopeCurator = 2;
@@ -6134,12 +12347,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_cr.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_ca.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_medical_cr: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_ca: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_cr";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_ca";
 
     scope = 2;
     scopeCurator = 2;
@@ -6147,13 +12360,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_cr.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_cr.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_ca.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_ca.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_medical_hr: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_hn: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_hr";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_hn";
 
     scope = 2;
     scopeCurator = 2;
@@ -6161,12 +12374,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_hr.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_hn.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_medical_hr: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_hn: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_hr";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_hn";
 
     scope = 2;
     scopeCurator = 2;
@@ -6174,8 +12387,656 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_hr.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_hr.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_hn.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_hn.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_ha: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_ha";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_ha.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_ha: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_ha";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_ha.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_ha.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_cr: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_cr";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_cr.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_cr: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_cr";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_cr.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_cr.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_medical_navcom_hr: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_navcom_hr";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_hr.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_medical_navcom_hr: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_navcom_hr";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_hr.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_navcom_hr.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_gen: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_gen";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_gen.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_gen: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_gen";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_gen.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_gen.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_ltgen: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_ltgen";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_ltgen.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_ltgen: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_ltgen";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_ltgen.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_ltgen.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_majgen: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_majgen";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_majgen.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_majgen: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_majgen";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_majgen.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_majgen.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_bgen: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_bgen";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_bgen.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_bgen: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_bgen";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_bgen.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_bgen.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_col: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_col";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_col.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_col: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_col";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_col.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_col.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_ltcol: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_ltcol";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_ltcol.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_ltcol: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_ltcol";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_ltcol.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_ltcol.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_maj: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_maj";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_maj.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_maj: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_maj";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_maj.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_maj.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_1lt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_1lt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_1lt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_1lt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_1lt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_1lt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_1lt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_capt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_capt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_capt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_capt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_capt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_capt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_capt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_2lt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_2lt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_2lt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_2lt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_2lt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_2lt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_2lt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_cdt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_cdt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_cdt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_cdt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_cdt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_cdt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_cdt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_mgysgt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_mgysgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_mgysgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_mgysgt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_mgysgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_mgysgt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_mgysgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_sgtmaj: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_sgtmaj";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_sgtmaj.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_sgtmaj: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_sgtmaj";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_sgtmaj.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_sgtmaj.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_msgt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_msgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_msgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_msgt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_msgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_msgt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_msgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_1stsgt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_1stsgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_1stsgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_1stsgt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_1stsgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_1stsgt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_1stsgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_gysgt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_gysgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_gysgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_gysgt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_gysgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_gysgt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_gysgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_ssgt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_ssgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_ssgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_ssgt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_ssgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_ssgt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_ssgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_sgt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_sgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_sgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_sgt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_sgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_sgt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_sgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_cpl: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_cpl";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_cpl.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_cpl: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_cpl";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_cpl.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_cpl.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_lcpl: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_lcpl";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_lcpl.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_lcpl: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_lcpl";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_lcpl.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_lcpl.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_pfc: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_pfc";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_pfc.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_pfc: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_pfc";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_pfc.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_pfc.paa"
     };
   };
   class WS_Gear_Uniform_ONICrew_masc_vehicle_none: WS_Gear_Uniform_ONICrew_Base_masc
@@ -6205,9 +13066,9 @@ class CfgVehicles
       "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_none.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_vehicle_cdr: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_medical_unicom_pvt: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_cdr";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_medical_unicom_pvt";
 
     scope = 2;
     scopeCurator = 2;
@@ -6215,12 +13076,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_cdr.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_pvt.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_vehicle_cdr: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_medical_unicom_pvt: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_cdr";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_medical_unicom_pvt";
 
     scope = 2;
     scopeCurator = 2;
@@ -6228,13 +13089,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_cdr.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_cdr.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_pvt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\medical_unicom_pvt.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_vehicle_lcdr: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_lcdr: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_lcdr";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_lcdr";
 
     scope = 2;
     scopeCurator = 2;
@@ -6242,12 +13103,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_lcdr.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_lcdr.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_vehicle_lcdr: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_lcdr: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_lcdr";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_lcdr";
 
     scope = 2;
     scopeCurator = 2;
@@ -6255,13 +13116,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_lcdr.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_lcdr.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_lcdr.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_lcdr.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_vehicle_lt: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_cdr: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_lt";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_cdr";
 
     scope = 2;
     scopeCurator = 2;
@@ -6269,12 +13130,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_lt.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_cdr.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_vehicle_lt: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_cdr: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_lt";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_cdr";
 
     scope = 2;
     scopeCurator = 2;
@@ -6282,13 +13143,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_lt.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_lt.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_cdr.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_cdr.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_vehicle_ltjg: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_ltjg: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_ltjg";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_ltjg";
 
     scope = 2;
     scopeCurator = 2;
@@ -6296,12 +13157,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_ltjg.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_ltjg.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_vehicle_ltjg: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_ltjg: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_ltjg";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_ltjg";
 
     scope = 2;
     scopeCurator = 2;
@@ -6309,13 +13170,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_ltjg.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_ltjg.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_ltjg.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_ltjg.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_vehicle_ens: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_lt: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_ens";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_lt";
 
     scope = 2;
     scopeCurator = 2;
@@ -6323,12 +13184,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_ens.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_lt.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_vehicle_ens: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_lt: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_ens";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_lt";
 
     scope = 2;
     scopeCurator = 2;
@@ -6336,13 +13197,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_ens.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_ens.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_lt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_lt.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_vehicle_hnsc: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_hmmc: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_hnsc";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_hmmc";
 
     scope = 2;
     scopeCurator = 2;
@@ -6350,12 +13211,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_hnsc.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_hmmc.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_vehicle_hnsc: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_hmmc: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_hnsc";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_hmmc";
 
     scope = 2;
     scopeCurator = 2;
@@ -6363,13 +13224,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_hnsc.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_hnsc.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_hmmc.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_hmmc.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_vehicle_cpo: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_hmsc: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_cpo";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_hmsc";
 
     scope = 2;
     scopeCurator = 2;
@@ -6377,12 +13238,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_cpo.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_hmsc.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_vehicle_cpo: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_hmsc: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_cpo";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_hmsc";
 
     scope = 2;
     scopeCurator = 2;
@@ -6390,13 +13251,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_cpo.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_cpo.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_hmsc.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_hmsc.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_vehicle_hmc: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_ens: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_hmc";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_ens";
 
     scope = 2;
     scopeCurator = 2;
@@ -6404,12 +13265,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_hmc.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_ens.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_vehicle_hmc: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_ens: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_hmc";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_ens";
 
     scope = 2;
     scopeCurator = 2;
@@ -6417,13 +13278,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_hmc.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_hmc.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_ens.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_ens.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_vehicle_hm1: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_mcpo: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_hm1";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_mcpo";
 
     scope = 2;
     scopeCurator = 2;
@@ -6431,12 +13292,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_hm1.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_mcpo.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_vehicle_hm1: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_mcpo: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_hm1";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_mcpo";
 
     scope = 2;
     scopeCurator = 2;
@@ -6444,13 +13305,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_hm1.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_hm1.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_mcpo.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_mcpo.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_vehicle_po1: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_hmc: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_po1";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_hmc";
 
     scope = 2;
     scopeCurator = 2;
@@ -6458,12 +13319,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_po1.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_hmc.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_vehicle_po1: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_hmc: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_po1";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_hmc";
 
     scope = 2;
     scopeCurator = 2;
@@ -6471,13 +13332,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_po1.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_po1.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_hmc.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_hmc.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_vehicle_po2: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_cpo: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_po2";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_cpo";
 
     scope = 2;
     scopeCurator = 2;
@@ -6485,12 +13346,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_po2.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_cpo.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_vehicle_po2: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_cpo: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_po2";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_cpo";
 
     scope = 2;
     scopeCurator = 2;
@@ -6498,13 +13359,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_po2.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_po2.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_cpo.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_cpo.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_vehicle_hm2: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_hm1: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_hm2";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_hm1";
 
     scope = 2;
     scopeCurator = 2;
@@ -6512,12 +13373,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_hm2.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_hm1.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_vehicle_hm2: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_hm1: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_hm2";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_hm1";
 
     scope = 2;
     scopeCurator = 2;
@@ -6525,13 +13386,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_hm2.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_hm2.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_hm1.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_hm1.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_vehicle_po3: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_po1: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_po3";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_po1";
 
     scope = 2;
     scopeCurator = 2;
@@ -6539,12 +13400,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_po3.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_po1.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_vehicle_po3: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_po1: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_po3";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_po1";
 
     scope = 2;
     scopeCurator = 2;
@@ -6552,13 +13413,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_po3.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_po3.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_po1.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_po1.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_vehicle_hm3: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_hm2: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_hm3";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_hm2";
 
     scope = 2;
     scopeCurator = 2;
@@ -6566,12 +13427,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_hm3.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_hm2.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_vehicle_hm3: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_hm2: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_hm3";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_hm2";
 
     scope = 2;
     scopeCurator = 2;
@@ -6579,13 +13440,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_hm3.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_hm3.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_hm2.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_hm2.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_vehicle_cn: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_po2: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_cn";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_po2";
 
     scope = 2;
     scopeCurator = 2;
@@ -6593,12 +13454,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_cn.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_po2.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_vehicle_cn: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_po2: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_cn";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_po2";
 
     scope = 2;
     scopeCurator = 2;
@@ -6606,13 +13467,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_cn.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_cn.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_po2.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_po2.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_vehicle_hn: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_po3: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_hn";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_po3";
 
     scope = 2;
     scopeCurator = 2;
@@ -6620,12 +13481,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_hn.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_po3.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_vehicle_hn: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_po3: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_hn";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_po3";
 
     scope = 2;
     scopeCurator = 2;
@@ -6633,13 +13494,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_hn.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_hn.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_po3.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_po3.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_vehicle_ca: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_hm3: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_ca";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_hm3";
 
     scope = 2;
     scopeCurator = 2;
@@ -6647,12 +13508,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_ca.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_hm3.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_vehicle_ca: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_hm3: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_ca";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_hm3";
 
     scope = 2;
     scopeCurator = 2;
@@ -6660,13 +13521,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_ca.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_ca.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_hm3.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_hm3.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_vehicle_ha: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_hn: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_ha";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_hn";
 
     scope = 2;
     scopeCurator = 2;
@@ -6674,12 +13535,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_ha.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_hn.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_vehicle_ha: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_hn: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_ha";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_hn";
 
     scope = 2;
     scopeCurator = 2;
@@ -6687,13 +13548,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_ha.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_ha.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_hn.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_hn.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_vehicle_cr: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_ha: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_cr";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_ha";
 
     scope = 2;
     scopeCurator = 2;
@@ -6701,12 +13562,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_cr.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_ha.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_vehicle_cr: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_ha: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_cr";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_ha";
 
     scope = 2;
     scopeCurator = 2;
@@ -6714,13 +13575,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_cr.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_cr.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_ha.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_ha.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_vehicle_hr: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_cn: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_hr";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_cn";
 
     scope = 2;
     scopeCurator = 2;
@@ -6728,12 +13589,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_hr.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_cn.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_vehicle_hr: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_cn: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_hr";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_cn";
 
     scope = 2;
     scopeCurator = 2;
@@ -6741,8 +13602,683 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_hr.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_hr.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_cn.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_cn.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_ca: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_ca";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_ca.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_ca: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_ca";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_ca.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_ca.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_cr: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_cr";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_cr.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_cr: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_cr";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_cr.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_cr.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_hr: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_navcom_hr";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_hr.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_hr: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_navcom_hr";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_hr.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_navcom_hr.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_gen: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_gen";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_gen.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_gen: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_gen";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_gen.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_gen.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_ltgen: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_ltgen";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_ltgen.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_ltgen: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_ltgen";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_ltgen.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_ltgen.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_majgen: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_majgen";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_majgen.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_majgen: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_majgen";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_majgen.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_majgen.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_bgen: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_bgen";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_bgen.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_bgen: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_bgen";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_bgen.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_bgen.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_ltcol: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_ltcol";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_ltcol.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_ltcol: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_ltcol";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_ltcol.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_ltcol.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_col: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_col";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_col.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_col: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_col";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_col.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_col.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_maj: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_maj";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_maj.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_maj: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_maj";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_maj.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_maj.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_capt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_capt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_capt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_capt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_capt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_capt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_capt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_2lt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_2lt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_2lt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_2lt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_2lt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_2lt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_2lt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_1lt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_1lt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_1lt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_1lt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_1lt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_1lt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_1lt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_cdt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_cdt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_cdt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_cdt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_cdt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_cdt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_cdt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_mgysgt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_mgysgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_mgysgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_mgysgt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_mgysgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_mgysgt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_mgysgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_sgtmaj: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_sgtmaj";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_sgtmaj.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_sgtmaj: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_sgtmaj";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_sgtmaj.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_sgtmaj.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_1stsgt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_1stsgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_1stsgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_1stsgt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_1stsgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_1stsgt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_1stsgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_msgt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_msgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_msgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_msgt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_msgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_msgt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_msgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_ssgt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_ssgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_ssgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_ssgt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_ssgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_ssgt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_ssgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_gysgt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_gysgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_gysgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_gysgt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_gysgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_gysgt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_gysgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_sgt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_sgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_sgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_sgt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_sgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_sgt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_sgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_cpl: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_cpl";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_cpl.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_cpl: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_cpl";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_cpl.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_cpl.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_lcpl: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_lcpl";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_lcpl.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_lcpl: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_lcpl";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_lcpl.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_lcpl.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_pfc: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_pfc";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_pfc.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_pfc: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_pfc";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_pfc.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_pfc.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_pvt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_vehicle_unicom_pvt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_pvt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_pvt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_vehicle_unicom_pvt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_pvt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\vehicle_unicom_pvt.paa"
     };
   };
   class WS_Gear_Uniform_ONICrew_masc_engineering_none: WS_Gear_Uniform_ONICrew_Base_masc
@@ -6772,9 +14308,9 @@ class CfgVehicles
       "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_none.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_engineering_cdr: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_cdr: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_cdr";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_cdr";
 
     scope = 2;
     scopeCurator = 2;
@@ -6782,12 +14318,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_cdr.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_cdr.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_engineering_cdr: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_cdr: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_cdr";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_cdr";
 
     scope = 2;
     scopeCurator = 2;
@@ -6795,13 +14331,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_cdr.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_cdr.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_cdr.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_cdr.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_engineering_lcdr: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_lt: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_lcdr";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_lt";
 
     scope = 2;
     scopeCurator = 2;
@@ -6809,12 +14345,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_lcdr.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_lt.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_engineering_lcdr: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_lt: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_lcdr";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_lt";
 
     scope = 2;
     scopeCurator = 2;
@@ -6822,13 +14358,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_lcdr.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_lcdr.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_lt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_lt.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_engineering_lt: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_lcdr: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_lt";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_lcdr";
 
     scope = 2;
     scopeCurator = 2;
@@ -6836,12 +14372,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_lt.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_lcdr.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_engineering_lt: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_lcdr: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_lt";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_lcdr";
 
     scope = 2;
     scopeCurator = 2;
@@ -6849,13 +14385,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_lt.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_lt.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_lcdr.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_lcdr.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_engineering_ltjg: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_ltjg: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_ltjg";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_ltjg";
 
     scope = 2;
     scopeCurator = 2;
@@ -6863,12 +14399,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_ltjg.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_ltjg.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_engineering_ltjg: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_ltjg: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_ltjg";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_ltjg";
 
     scope = 2;
     scopeCurator = 2;
@@ -6876,13 +14412,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_ltjg.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_ltjg.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_ltjg.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_ltjg.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_engineering_ens: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_ens: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_ens";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_ens";
 
     scope = 2;
     scopeCurator = 2;
@@ -6890,12 +14426,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_ens.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_ens.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_engineering_ens: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_ens: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_ens";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_ens";
 
     scope = 2;
     scopeCurator = 2;
@@ -6903,13 +14439,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_ens.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_ens.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_ens.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_ens.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_engineering_hnsc: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_hmmc: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_hnsc";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_hmmc";
 
     scope = 2;
     scopeCurator = 2;
@@ -6917,12 +14453,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_hnsc.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_hmmc.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_engineering_hnsc: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_hmmc: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_hnsc";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_hmmc";
 
     scope = 2;
     scopeCurator = 2;
@@ -6930,13 +14466,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_hnsc.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_hnsc.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_hmmc.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_hmmc.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_engineering_cpo: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_mcpo: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_cpo";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_mcpo";
 
     scope = 2;
     scopeCurator = 2;
@@ -6944,12 +14480,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_cpo.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_mcpo.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_engineering_cpo: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_mcpo: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_cpo";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_mcpo";
 
     scope = 2;
     scopeCurator = 2;
@@ -6957,13 +14493,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_cpo.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_cpo.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_mcpo.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_mcpo.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_engineering_hmc: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_hmsc: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_hmc";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_hmsc";
 
     scope = 2;
     scopeCurator = 2;
@@ -6971,12 +14507,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_hmc.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_hmsc.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_engineering_hmc: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_hmsc: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_hmc";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_hmsc";
 
     scope = 2;
     scopeCurator = 2;
@@ -6984,13 +14520,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_hmc.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_hmc.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_hmsc.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_hmsc.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_engineering_po1: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_cpo: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_po1";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_cpo";
 
     scope = 2;
     scopeCurator = 2;
@@ -6998,12 +14534,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_po1.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_cpo.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_engineering_po1: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_cpo: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_po1";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_cpo";
 
     scope = 2;
     scopeCurator = 2;
@@ -7011,13 +14547,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_po1.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_po1.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_cpo.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_cpo.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_engineering_hm1: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_hmc: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_hm1";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_hmc";
 
     scope = 2;
     scopeCurator = 2;
@@ -7025,12 +14561,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_hm1.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_hmc.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_engineering_hm1: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_hmc: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_hm1";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_hmc";
 
     scope = 2;
     scopeCurator = 2;
@@ -7038,13 +14574,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_hm1.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_hm1.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_hmc.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_hmc.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_engineering_po2: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_po1: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_po2";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_po1";
 
     scope = 2;
     scopeCurator = 2;
@@ -7052,12 +14588,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_po2.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_po1.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_engineering_po2: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_po1: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_po2";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_po1";
 
     scope = 2;
     scopeCurator = 2;
@@ -7065,13 +14601,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_po2.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_po2.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_po1.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_po1.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_engineering_hm2: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_hm1: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_hm2";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_hm1";
 
     scope = 2;
     scopeCurator = 2;
@@ -7079,12 +14615,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_hm2.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_hm1.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_engineering_hm2: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_hm1: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_hm2";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_hm1";
 
     scope = 2;
     scopeCurator = 2;
@@ -7092,13 +14628,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_hm2.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_hm2.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_hm1.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_hm1.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_engineering_po3: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_po2: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_po3";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_po2";
 
     scope = 2;
     scopeCurator = 2;
@@ -7106,12 +14642,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_po3.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_po2.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_engineering_po3: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_po2: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_po3";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_po2";
 
     scope = 2;
     scopeCurator = 2;
@@ -7119,13 +14655,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_po3.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_po3.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_po2.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_po2.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_engineering_hm3: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_hm2: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_hm3";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_hm2";
 
     scope = 2;
     scopeCurator = 2;
@@ -7133,12 +14669,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_hm3.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_hm2.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_engineering_hm3: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_hm2: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_hm3";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_hm2";
 
     scope = 2;
     scopeCurator = 2;
@@ -7146,13 +14682,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_hm3.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_hm3.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_hm2.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_hm2.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_engineering_cn: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_po3: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_cn";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_po3";
 
     scope = 2;
     scopeCurator = 2;
@@ -7160,12 +14696,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_cn.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_po3.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_engineering_cn: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_po3: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_cn";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_po3";
 
     scope = 2;
     scopeCurator = 2;
@@ -7173,13 +14709,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_cn.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_cn.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_po3.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_po3.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_engineering_hn: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_hm3: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_hn";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_hm3";
 
     scope = 2;
     scopeCurator = 2;
@@ -7187,12 +14723,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_hn.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_hm3.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_engineering_hn: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_hm3: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_hn";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_hm3";
 
     scope = 2;
     scopeCurator = 2;
@@ -7200,13 +14736,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_hn.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_hn.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_hm3.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_hm3.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_engineering_ca: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_cn: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_ca";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_cn";
 
     scope = 2;
     scopeCurator = 2;
@@ -7214,12 +14750,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_ca.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_cn.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_engineering_ca: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_cn: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_ca";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_cn";
 
     scope = 2;
     scopeCurator = 2;
@@ -7227,13 +14763,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_ca.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_ca.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_cn.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_cn.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_engineering_ha: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_ca: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_ha";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_ca";
 
     scope = 2;
     scopeCurator = 2;
@@ -7241,12 +14777,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_ha.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_ca.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_engineering_ha: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_ca: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_ha";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_ca";
 
     scope = 2;
     scopeCurator = 2;
@@ -7254,13 +14790,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_ha.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_ha.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_ca.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_ca.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_engineering_cr: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_hn: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_cr";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_hn";
 
     scope = 2;
     scopeCurator = 2;
@@ -7268,12 +14804,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_cr.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_hn.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_engineering_cr: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_hn: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_cr";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_hn";
 
     scope = 2;
     scopeCurator = 2;
@@ -7281,13 +14817,13 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_cr.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_cr.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_hn.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_hn.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_masc_engineering_hr: WS_Gear_Uniform_ONICrew_Base_masc
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_ha: WS_Gear_Uniform_ONICrew_Base_masc
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_hr";
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_ha";
 
     scope = 2;
     scopeCurator = 2;
@@ -7295,12 +14831,12 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_hr.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_ha.paa"
     };
   };
-  class WS_Gear_Uniform_ONICrew_femme_engineering_hr: WS_Gear_Uniform_ONICrew_Base_femme
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_ha: WS_Gear_Uniform_ONICrew_Base_femme
   {
-    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_hr";
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_ha";
 
     scope = 2;
     scopeCurator = 2;
@@ -7308,8 +14844,656 @@ class CfgVehicles
 
     hiddenSelectionsTextures[] =
     {
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_hr.paa",
-      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_hr.paa"
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_ha.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_ha.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_hr: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_hr";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_hr.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_hr: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_hr";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_hr.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_hr.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_gen: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_gen";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_gen.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_gen: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_gen";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_gen.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_gen.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_engineering_navcom_cr: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_navcom_cr";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_cr.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_engineering_navcom_cr: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_navcom_cr";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_cr.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_navcom_cr.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_ltgen: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_ltgen";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_ltgen.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_ltgen: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_ltgen";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_ltgen.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_ltgen.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_bgen: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_bgen";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_bgen.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_bgen: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_bgen";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_bgen.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_bgen.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_majgen: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_majgen";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_majgen.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_majgen: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_majgen";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_majgen.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_majgen.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_col: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_col";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_col.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_col: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_col";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_col.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_col.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_ltcol: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_ltcol";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_ltcol.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_ltcol: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_ltcol";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_ltcol.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_ltcol.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_capt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_capt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_capt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_capt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_capt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_capt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_capt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_1lt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_1lt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_1lt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_1lt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_1lt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_1lt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_1lt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_2lt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_2lt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_2lt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_2lt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_2lt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_2lt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_2lt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_maj: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_maj";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_maj.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_maj: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_maj";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_maj.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_maj.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_sgtmaj: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_sgtmaj";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_sgtmaj.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_sgtmaj: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_sgtmaj";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_sgtmaj.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_sgtmaj.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_1stsgt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_1stsgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_1stsgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_1stsgt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_1stsgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_1stsgt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_1stsgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_mgysgt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_mgysgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_mgysgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_mgysgt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_mgysgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_mgysgt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_mgysgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_cdt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_cdt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_cdt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_cdt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_cdt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_cdt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_cdt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_msgt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_msgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_msgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_msgt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_msgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_msgt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_msgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_ssgt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_ssgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_ssgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_ssgt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_ssgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_ssgt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_ssgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_sgt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_sgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_sgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_sgt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_sgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_sgt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_sgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_gysgt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_gysgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_gysgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_gysgt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_gysgt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_gysgt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_gysgt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_pfc: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_pfc";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_pfc.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_pfc: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_pfc";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_pfc.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_pfc.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_cpl: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_cpl";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_cpl.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_cpl: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_cpl";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_cpl.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_cpl.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_pvt: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_pvt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_pvt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_pvt: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_pvt";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_pvt.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_pvt.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_masc_engineering_unicom_lcpl: WS_Gear_Uniform_ONICrew_Base_masc
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_masc_engineering_unicom_lcpl";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_lcpl.paa"
+    };
+  };
+  class WS_Gear_Uniform_ONICrew_femme_engineering_unicom_lcpl: WS_Gear_Uniform_ONICrew_Base_femme
+  {
+    uniformClass = "WS_Gear_Uniform_ONICrew_femme_engineering_unicom_lcpl";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    hiddenSelectionsTextures[] =
+    {
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_lcpl.paa",
+      "WS_Gear\Uniform\ONICrew\_textures\combined\engineering_unicom_lcpl.paa"
     };
   };
 };

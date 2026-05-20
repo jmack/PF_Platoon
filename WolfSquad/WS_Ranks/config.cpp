@@ -201,13 +201,13 @@ class etr_ranks_insignias
     class e1_crewman_recruit
     {
       name = "E-1 Crewman Recruit";
-      icon = "WS_Ranks\_textures\blank.paa";
+      icon = "WS_Ranks\_textures\navcom\E-1 Crewman Recruit.paa";
       rank = -1;
     };
     class e1_hospitalman_recruit
     {
       name = "E-1 Hospitalman Recruit";
-      icon = "WS_Ranks\_textures\blank.paa";
+      icon = "WS_Ranks\_textures\navcom\E-1 Hospitalman Recruit.paa";
       rank = -1;
     };
     class e2_crewman_apprentice

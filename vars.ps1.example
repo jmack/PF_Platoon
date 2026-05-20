@@ -1,3 +1,5 @@
-$addonBuilder = "<path to your arma 3 tools addonbuilder.exe"; # Path to your Arma 3 Tools AddonBuilder.exe
-$destination = "dist\addons"  | Resolve-Path;                  # Destination path for build addons (leave this as is unless there are special circumstances)
-$privKey = "<path to your generated private key>";             # Create a new priv/pub keypair using Arma 3 Tools > DSUtils. Used for automatically signing pbofiles
+$armaToolsRoot = "<path to your arma 3 tools folder>";              # Path to your Arma 3 Tools folder (you can find this by opening Arma 3 Tools and hitting View > Open Arma 3 Tools Directory). No trailing slash!
+$addonBuilder = $armaToolsRoot + "\AddonBuilder\AddonBuilder.exe";  # Path to your Arma 3 Tools AddonBuilder.exe. This can usually be left alone
+$imageToPAA = $armaToolsRoot + "\ImageToPAA\ImageToPAA.exe";        # Path to your Arma 3 Tools ImageToPAA.exe. This can usually be left alone
+$destination = "dist\addons"  | Resolve-Path;                       # Destination path for build addons (leave this as is unless there are special circumstances)
+$privKey = "<path to your generated private key>";                  # Create a new priv/pub keypair using Arma 3 Tools > DSUtils. Used for automatically signing pbofiles
