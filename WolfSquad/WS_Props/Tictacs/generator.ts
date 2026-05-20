@@ -293,9 +293,7 @@ const TicTacs: TicTac[] = [
   },
   //#endregion
 
-  /**
-   * VK78 Commando
-   */
+  //#region VK78 Commando
   {
     name: 'VK78',
     texture: 'WS_Props\\Tictacs\\_textures\\pods\\vk78.paa',
@@ -329,7 +327,7 @@ const TicTacs: TicTac[] = [
       { class: 'TCP_20Rnd_65x48_Mag_Tracer_DIM', type: TicTacItemTypes.MAGAZINE, count: 8 },
     ],
   },
-
+  //#endregion
   /**
    * BR55 Battle Rifle
    */
