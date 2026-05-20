@@ -1,6 +1,6 @@
 name = "Wolf Squad Quartermaster"
 prefix = "WS"
-mainPrefix = ""
+mainprefix = "z"
 
 [version]
 major = 1
