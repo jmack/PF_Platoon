@@ -5,3 +5,7 @@
 node_modules
 *.excluded
 /WolfSquad/Arma 3 Preset Wolf Squad.html
+
+# hemtt
+/*/.hemttout
+/*/.hemtt/keys
