@@ -1,0 +1,10 @@
+name          = "Wolf Squad Quartermaster";
+author        = "wlan0";
+tooltipOwned  = "Wolf Squad Quartermaster";
+overview      = "Wolf Squad Quartermaster";
+logo          = "logo_ca.paa";
+logoOver      = "logo_ca.paa";
+logoSmall     = "logo_ca.paa";
+picture       = "logo_ca.paa";
+hideName      = 0;
+hidePicture   = 0;

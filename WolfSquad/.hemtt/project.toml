@@ -1,0 +1,27 @@
+name = "Wolf Squad Quartermaster"
+prefix = "WS"
+mainPrefix = ""
+
+[version]
+major = 1
+minor = 0
+patch = 4
+
+[properties]
+author = "wlan0"
+
+[files]
+include = [
+  "mod.cpp",
+  "logo_ca.paa",
+  "logo_co.png"
+]
+exclude = [
+  "*.ts",
+  "*.js",
+  "*.json",
+  "*.png"
+]
+
+[hemtt.release]
+archive = false
