@@ -69,6 +69,12 @@ const RankImageColors = {
   OFFICERGOLD: '#f7c500',
   ARMYGOLD: '#755e02',
 } as const;
+
+interface TemplateStrings {
+  metaitem: string;
+  cfgWeapons: Map<string, string>;
+  cfgVehicles: Map<string, string>;
+}
 // #endregion
 
 export class ONICrewUniformGenerator extends BaseGenerator {
@@ -611,10 +617,10 @@ class CfgVehicles
   }
 
   protected async generate(params: any[]): Promise<void> {
-    const templateStrings = {
+    const templateStrings: TemplateStrings = {
       metaitem: '',
-      cfgWeapons: '',
-      cfgVehicles: '',
+      cfgWeapons: new Map<string, string>(),
+      cfgVehicles: new Map<string, string>(),
     };
 
     // clear out the combined dir since we'll force a regen/rebinarize
@@ -711,43 +717,47 @@ class CfgVehicles
           const { long: classLong, short: classShort, texture: textureName } = this.className(body, type, rank);
 
           // CfgWeapons first
-          templateStrings.cfgWeapons += `${this.t(1)}class ${classLong}: WS_Gear_Uniform_ONICrew_Base\n${this.t(1)}{\n`;
+          let cfgWeapons = '';
+          cfgWeapons += `${this.t(1)}class ${classLong}: WS_Gear_Uniform_ONICrew_Base\n${this.t(1)}{\n`;
           // link between CfgWeapons def and CfgVehicles def
-          templateStrings.cfgWeapons += `${this.t(2)}class XtdGearInfo\n${this.t(2)}{\n`;
-          templateStrings.cfgWeapons += `${this.t(3)}model = "WS_Gear_Uniform_ONICrew_Metaitem";\n`;
-          templateStrings.cfgWeapons += `${this.t(3)}bodytype = "${body.ClassName}";\n`;
-          templateStrings.cfgWeapons += `${this.t(3)}type = "${type.ClassName}";\n`;
-          templateStrings.cfgWeapons += `${this.t(3)}rank = "${rank.ClassName}";\n`;
-          templateStrings.cfgWeapons += `${this.t(2)}};\n\n`;
+          cfgWeapons += `${this.t(2)}class XtdGearInfo\n${this.t(2)}{\n`;
+          cfgWeapons += `${this.t(3)}model = "WS_Gear_Uniform_ONICrew_Metaitem";\n`;
+          cfgWeapons += `${this.t(3)}bodytype = "${body.ClassName}";\n`;
+          cfgWeapons += `${this.t(3)}type = "${type.ClassName}";\n`;
+          cfgWeapons += `${this.t(3)}rank = "${rank.ClassName}";\n`;
+          cfgWeapons += `${this.t(2)}};\n\n`;
 
-          templateStrings.cfgWeapons += `${this.t(2)}scope = 2;\n`;
-          templateStrings.cfgWeapons += `${this.t(2)}scopeCurator = 2;\n`;
-          templateStrings.cfgWeapons += `${this.t(2)}scopeArsenal = 2;\n\n`;
+          cfgWeapons += `${this.t(2)}scope = 2;\n`;
+          cfgWeapons += `${this.t(2)}scopeCurator = 2;\n`;
+          cfgWeapons += `${this.t(2)}scopeArsenal = 2;\n\n`;
 
-          templateStrings.cfgWeapons += `${this.t(2)}class ItemInfo: ItemInfo\n${this.t(2)}{\n`;
-          templateStrings.cfgWeapons += `${this.t(3)}uniformClass = "${classLong}";\n`;
-          templateStrings.cfgWeapons += `${this.t(2)}};\n`;
+          cfgWeapons += `${this.t(2)}class ItemInfo: ItemInfo\n${this.t(2)}{\n`;
+          cfgWeapons += `${this.t(3)}uniformClass = "${classLong}";\n`;
+          cfgWeapons += `${this.t(2)}};\n`;
 
-          templateStrings.cfgWeapons += `${this.t(1)}};\n\n`;
+          cfgWeapons += `${this.t(1)}};\n\n`;
+          templateStrings.cfgWeapons.set(classLong, cfgWeapons);
 
           // CfgVehicles next
-          templateStrings.cfgVehicles += `${this.t(1)}class ${classLong}: WS_Gear_Uniform_ONICrew_Base_${body.ClassName}\n${this.t(1)}{\n`;
-          templateStrings.cfgVehicles += `${this.t(2)}uniformClass = "${classLong}";\n\n`;
+          let cfgVehicles = '';
+          cfgVehicles += `${this.t(1)}class ${classLong}: WS_Gear_Uniform_ONICrew_Base_${body.ClassName}\n${this.t(1)}{\n`;
+          cfgVehicles += `${this.t(2)}uniformClass = "${classLong}";\n\n`;
 
-          templateStrings.cfgVehicles += `${this.t(2)}scope = 2;\n`;
-          templateStrings.cfgVehicles += `${this.t(2)}scopeCurator = 2;\n`;
-          templateStrings.cfgVehicles += `${this.t(2)}scopeArsenal = 2;\n\n`;
+          cfgVehicles += `${this.t(2)}scope = 2;\n`;
+          cfgVehicles += `${this.t(2)}scopeCurator = 2;\n`;
+          cfgVehicles += `${this.t(2)}scopeArsenal = 2;\n\n`;
 
-          templateStrings.cfgVehicles += `${this.t(2)}hiddenSelectionsTextures[] =\n`;
-          templateStrings.cfgVehicles += `${this.t(2)}{\n`;
+          cfgVehicles += `${this.t(2)}hiddenSelectionsTextures[] =\n`;
+          cfgVehicles += `${this.t(2)}{\n`;
 
           if (body.ClassName === 'femme') {
             // femme model has 2 textures, just duplicate ours twice
-            templateStrings.cfgVehicles += `${this.t(3)}"${texturePath}",\n`;
+            cfgVehicles += `${this.t(3)}"${texturePath}",\n`;
           }
-          templateStrings.cfgVehicles += `${this.t(3)}"${texturePath}"\n`;
-          templateStrings.cfgVehicles += `${this.t(2)}};\n`;
-          templateStrings.cfgVehicles += `${this.t(1)}};\n`;
+          cfgVehicles += `${this.t(3)}"${texturePath}"\n`;
+          cfgVehicles += `${this.t(2)}};\n`;
+          cfgVehicles += `${this.t(1)}};\n`;
+          templateStrings.cfgVehicles.set(classLong, cfgVehicles);
         });
 
         // record progress
@@ -760,7 +770,19 @@ class CfgVehicles
      * Step 4: Write our files out
      */
     (Object.keys(templateStrings) as (keyof typeof templateStrings)[]).forEach((key) => {
-      this.template = this.template.replace(`<% ${key} %>`, templateStrings[key]);
+      let templateString = '';
+
+      if (['cfgWeapons', 'cfgVehicles'].includes(key)) {
+        const rawMap = templateStrings[key] as Map<string, string>;
+        const sortedArray = [...rawMap.keys()].sort();
+        sortedArray.forEach((key) => {
+          templateString += rawMap.get(key) ?? '';
+        });
+      } else {
+        templateString = templateStrings[key].toString();
+      }
+
+      this.template = this.template.replace(`<% ${key} %>`, templateString);
     });
 
     try {
