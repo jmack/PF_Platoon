@@ -922,6 +922,3 @@ class CfgVehicles
 
   // #endregion
 }
-
-// fires when called via ts-node directly
-new ONICrewUniformGenerator().execute();

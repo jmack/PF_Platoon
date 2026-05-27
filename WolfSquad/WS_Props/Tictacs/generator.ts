@@ -567,6 +567,3 @@ class CfgVehicles
     return transportGroupString;
   }
 }
-
-// fires when called via ts-node directly
-new TicTacGenerator().execute();
