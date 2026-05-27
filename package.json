@@ -2,10 +2,12 @@
   "type": "module",
   "scripts": {
     "wolf:build": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./build.ps1 ./WolfSquad/",
-    "wolf:generate:oniuniform": "npx ts-node .\\WolfSquad\\WS_Gear\\Uniform\\ONICrew\\generator.ts",
+    "wolf:build:release": "npm run wolf:generate & npm run wolf:build",
+    "wolf:generate": "npx ts-node .\\WolfSquad\\misc\\scripts\\generator-factory.ts",
+    "wolf:generate:oniuniform": "npx ts-node .\\WolfSquad\\misc\\scripts\\generator-factory.ts onicrew",
     "wolf:generate:modlist": "npx ts-node .\\WolfSquad\\modlist-generator.ts",
     "wolf:generate:arsenal": "npx ts-node .\\WolfSquad\\misc\\arsenal\\generate_arsenal_string.ts",
-    "wolf:generate:tictacs": "npx ts-node .\\WolfSquad\\WS_Props\\Tictacs\\generator.ts"
+    "wolf:generate:tictacs": "npx ts-node .\\WolfSquad\\misc\\scripts\\generator-factory.ts tictac"
   },
   "dependencies": {
     "corepack": "^0.34.0",
@@ -14,6 +16,6 @@
     "ts-node": "^10.9.2"
   },
   "devDependencies": {
-    "@types/node": "^24.8.0"
+    "@types/node": "^24.12.4"
   }
 }
