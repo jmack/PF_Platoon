@@ -13,12 +13,12 @@ export abstract class BaseGenerator {
     this.scriptDir = dirname(fileURLToPath(url));
   }
 
-  protected abstract generate(params?: any[]): void;
+  protected abstract generate(params?: any[]): Promise<void>;
 
-  public execute(params: any[] = []): void {
+  public async execute(params: any[] = []): Promise<void> {
     process.stdout.write(`${this.constructor.name}:   0%`);
     this.startTime = Date.now();
-    this.generate(params);
+    await this.generate(params);
     this.endTime = Date.now();
     this.showCompleted();
   }

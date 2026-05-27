@@ -473,7 +473,7 @@ class CfgVehicles
     super(import.meta.url);
   }
 
-  protected generate(params: any[]): void {
+  protected async generate(params: any[]): Promise<void> {
     const templateStrings = {
       exports: '',
       classes: '',
@@ -568,4 +568,5 @@ class CfgVehicles
   }
 }
 
+// fires when called via ts-node directly
 new TicTacGenerator().execute();
