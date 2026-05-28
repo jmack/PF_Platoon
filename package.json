@@ -5,7 +5,7 @@
     "wolf:build:release": "npm run wolf:generate & npm run wolf:build",
     "wolf:generate": "npx ts-node .\\WolfSquad\\misc\\scripts\\generator-factory.ts",
     "wolf:generate:oniuniform": "npx ts-node .\\WolfSquad\\misc\\scripts\\generator-factory.ts onicrew",
-    "wolf:generate:modlist": "npx ts-node .\\WolfSquad\\modlist-generator.ts",
+    "wolf:generate:modlist": "npx ts-node .\\WolfSquad\\misc\\scripts\\generator-factory.ts modlist",
     "wolf:generate:arsenal": "npx ts-node .\\WolfSquad\\misc\\arsenal\\generate_arsenal_string.ts",
     "wolf:generate:tictacs": "npx ts-node .\\WolfSquad\\misc\\scripts\\generator-factory.ts tictac"
   },
