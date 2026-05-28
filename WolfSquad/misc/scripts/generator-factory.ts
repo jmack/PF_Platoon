@@ -66,4 +66,7 @@ const endTick = Date.now();
 
 // when finished, move cursor to end and newline
 process.stdout.cursorTo(0, curLine + toRun.length + 1);
-process.stdout.write(`\nDone in ${(endTick - startTick) / 1000}s\n`);
+
+if (toRun.length > 1) {
+  process.stdout.write(`\nDone in ${(endTick - startTick) / 1000}s\n`);
+}
