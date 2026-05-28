@@ -1,5 +1,4 @@
-import fs from 'fs';
-import { BaseGenerator } from '../scripts/types/generator.class.ts';
+import { BaseGenerator, type GeneratorConstructorOptions } from '../scripts/types/generator.class.ts';
 
 export class ModlistGenerator extends BaseGenerator {
   template = '';
@@ -7,8 +6,8 @@ export class ModlistGenerator extends BaseGenerator {
   private fileInputName = 'Arma 3 Preset Wolf Squad.html';
   private fileOutputName = 'Arma 3 Wolf Squad Modlist.html';
 
-  constructor() {
-    super(import.meta.url);
+  constructor(options: GeneratorConstructorOptions) {
+    super(import.meta.url, options);
   }
 
   protected async generate(): Promise<void> {

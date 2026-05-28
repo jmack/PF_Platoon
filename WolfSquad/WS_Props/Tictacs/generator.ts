@@ -1,5 +1,4 @@
-import { BaseGenerator } from '../../misc/scripts/types/generator.class.ts';
-import fs from 'fs';
+import { BaseGenerator, type GeneratorConstructorOptions } from '../../misc/scripts/types/generator.class.ts';
 
 // #region Types & Maps
 type TicTac = {
@@ -469,8 +468,8 @@ class CfgVehicles
   ];
   // #endregion
 
-  constructor() {
-    super(import.meta.url);
+  constructor(options: GeneratorConstructorOptions) {
+    super(import.meta.url, options);
   }
 
   protected async generate(params: any[]): Promise<void> {

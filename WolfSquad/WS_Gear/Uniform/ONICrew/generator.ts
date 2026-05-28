@@ -1,4 +1,4 @@
-import { BaseGenerator } from '../../../misc/scripts/types/generator.class.ts';
+import { BaseGenerator, type GeneratorConstructorOptions } from '../../../misc/scripts/types/generator.class.ts';
 import fs from 'fs';
 import sharp from 'sharp';
 import util from 'util';
@@ -610,8 +610,8 @@ class CfgVehicles
   };
   // #endregion
 
-  constructor() {
-    super(import.meta.url);
+  constructor(options: GeneratorConstructorOptions) {
+    super(import.meta.url, options);
     this.wolfSquadRootDir = this.scriptDir.substring(0, this.scriptDir.search('WolfSquad') + 'WolfSquad'.length);
     this.wsRankDir = `${this.wolfSquadRootDir}\\WS_Ranks\\_textures`;
   }

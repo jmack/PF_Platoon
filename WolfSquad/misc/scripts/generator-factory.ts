@@ -1,3 +1,6 @@
+// @ts-ignore
+import getCursorPosition from 'get-cursor-position';
+
 import { ONICrewUniformGenerator } from '../../WS_Gear/Uniform/ONICrew/generator.ts';
 import { TicTacGenerator } from '../../WS_Props/Tictacs/generator.ts';
 import { ModlistGenerator } from '../modlist/generator.ts';
@@ -40,9 +43,27 @@ if (!!possibleSingleFlag && generatorNames.includes(possibleSingleFlag)) {
   params = allArgs.slice(2);
 }
 
+// print enough lines for each toRun generator
+toRun.forEach(() => console.log());
+
+// find current position - length of toRun to get starting row
+let curLine: number = getCursorPosition.sync().row - toRun.length - 1;
+
+// find longest generator name
+const maxLength = toRun.reduce((prev, curr) => {
+  return prev > curr.name.length ? prev : curr.name.length;
+}, 0);
+
 // run all generators needed
-for (let i = 0; i < toRun.length; i++) {
-  const generator = toRun[i]!;
-  const instantiatedGenerator = new generator();
-  await instantiatedGenerator.execute();
-}
+const startTick = Date.now();
+await Promise.all(
+  toRun.map((genType: GeneratorType, idx: number) => {
+    const generator = new genType({ lineRow: curLine + idx, statusCol: maxLength + 3 });
+    return generator.execute();
+  })
+);
+const endTick = Date.now();
+
+// when finished, move cursor to end and newline
+process.stdout.cursorTo(0, curLine + toRun.length + 1);
+process.stdout.write(`\nDone in ${(endTick - startTick) / 1000}s\n`);
