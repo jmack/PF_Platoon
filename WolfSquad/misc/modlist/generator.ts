@@ -18,8 +18,7 @@ export class ModlistGenerator extends BaseGenerator {
       currentBlockEnd: 0,
     };
     const modMap: { name: string; block: string }[] = [];
-
-    let fileContents = fs.readFileSync(`${this.scriptDir}/${this.fileInputName}`).toString();
+    let fileContents = this.getFileContents(`${this.scriptDir}/${this.fileInputName}`);
 
     // loop through our mods until we run out
     indexes.firstBlockStart = fileContents.search(/ *<tr data-type="ModContainer">/g);
@@ -55,14 +54,6 @@ export class ModlistGenerator extends BaseGenerator {
 
     // and write our now sorted file
     fileContents = fileContents.slice(0, indexes.firstBlockStart) + modString + fileContents.slice(indexes.firstBlockStart + 1);
-    try {
-      fs.rmSync(`${this.scriptDir}/${this.fileOutputName}`);
-    } catch (e) {
-      // -4058 is "no such file" which we're okay ignoring.
-      if ((e as any)['errno'] != -4058) {
-        throw e;
-      }
-    }
-    fs.writeFileSync(`${this.scriptDir}/${this.fileOutputName}`, fileContents);
+    this.writeFileContents(`${this.scriptDir}/${this.fileOutputName}`, fileContents);
   }
 }

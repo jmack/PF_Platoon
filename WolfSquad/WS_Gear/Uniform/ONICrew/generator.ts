@@ -785,22 +785,7 @@ class CfgVehicles
       this.template = this.template.replace(`<% ${key} %>`, templateString);
     });
 
-    try {
-      fs.writeFileSync(`${this.scriptDir}/config.cpp`, this.template);
-    } catch (err) {
-      throw err;
-    }
-
-    /**
-     * Step 5: Binarize the new files (TODO move this into individual section)
-     */
-    // const asyncExec = util.promisify(exec);
-    // try {
-    //   await asyncExec(`cd ${this.wolfSquadRootDir}; . ..\\vars.ps1; Start-Process $imageToPAA ${this.scriptDir}\\_textures\\combined\\*.png -Wait`, { shell: 'powershell.exe' });
-    // } catch (e) {
-    //   console.error(e);
-    //   return;
-    // }
+    this.writeFileContents(`${this.scriptDir}/config.cpp`, this.template);
   }
 
   // #region Helpers
@@ -816,12 +801,11 @@ class CfgVehicles
   }
 
   /**
-   * Generates a composited uniform/rank image and outputs it with a given name.
-   * TODO: and binarize it here
+   * Generates a composited uniform/rank image and outputs it (and its binarized counterpart) with a given name.
    * @param uniformRelativePath path of the uniform base image relative to the script
    * @param rankFullPath path of the rank image, absolute path
    * @param rankTextureData information about how the rank should show (location and color)
-   * @param fileOutputName what to output the file(s) as
+   * @param fileOutputName what to output the file(s) as, without file extension
    * @returns a string of the full file output path
    */
   private async createUniformImage(

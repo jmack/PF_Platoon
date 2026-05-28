@@ -529,11 +529,7 @@ class CfgVehicles
       this.template = this.template.replace(`<% ${key} %>`, templateStrings[key]);
     });
 
-    try {
-      fs.writeFileSync(`${this.scriptDir}/config.cpp`, this.template);
-    } catch (err) {
-      throw err;
-    }
+    this.writeFileContents(`${this.scriptDir}/config.cpp`, this.template);
   }
 
   /**
