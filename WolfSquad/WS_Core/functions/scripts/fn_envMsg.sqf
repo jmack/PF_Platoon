@@ -18,18 +18,15 @@ if (!params [
   ["_msg", "", [""]]
 ]) exitWith { false };
 
-["DEBUG", format ["WS_fnc_LogMsg called with _msg = %1", _msg]] call WS_fnc_LogMsg;
-
 // Check if we've initialized an env channel yet (if not, do first time set up)
 _channelID = missionNamespace getVariable ["WS_EnvChanID", 0];
 if (_channelID <= 0) then {
-  ["INFO", "Environment channel does not exist. Initializing"] call WS_fnc_LogMsg;
 
   _channelID = radioChannelCreate [
     [1, 0, 0, 1],
     "Environment",
     "%CHANNEL_LABEL",
-    []
+    allPlayers
   ];
 
   if (_channelID == 0) exitWith {
@@ -37,15 +34,14 @@ if (_channelID <= 0) then {
   };
 
   missionNamespace setVariable ["WS_EnvChanID", _channelID, true];
-  ["INFO", format ["Environment channel ID created on channel %1", _channelID]] call WS_fnc_LogMsg;
 };
 
-// Check if player is already in the env channel (if not, add them)
+// Check if player is already in the env channel (if not, this is JIP issue. add them)
 _channelInfo = radioChannelInfo _channelID;
+
 if (!(player in _channelInfo#3)) then {
-  ["INFO", format ["Registering player %1 with env channel", player]] call WS_fnc_LogMsg;
   _channelID radioChannelAdd [player];
 };
 
 // Write message to env channel
-driver vehicle player customChat [_channelID, _msg];
+player customChat [_channelID, _msg];
