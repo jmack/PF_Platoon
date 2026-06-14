@@ -62,6 +62,13 @@ class CfgWeapons
     dlc = "WS";
     displayName = "[WS] S-1/ONI Helmet";
 
+    TCP_visrRscTitlesClass="RscTCPVisrODST";
+    TCP_visrClasses[]=
+    {
+      "WS_S1_Helmet_Base",
+      "WS_S1_Helmet_Base"
+    };
+
     model = "MA_Armor\data\Helmets\Recon\Recon_Helmet.p3";
     picture = "WS_Gear\Headgear\S-1\_data\s1_icon.paa";
     hiddenSelections[] =
@@ -142,6 +149,12 @@ class CfgWeapons
     {
       model = "WS_S1_Helmet_Metaitem";
       type = "kuroda";
+    };
+
+    TCP_visrClasses[]=
+    {
+      "WS_S1_Helmet_Kuroda",
+      "WS_S1_Helmet_Kuroda"
     };
 
     hiddenSelectionsTextures[] =

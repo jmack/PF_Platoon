@@ -77,6 +77,13 @@ class CfgWeapons
     dlc = "WS";
     displayName = "[WS] CH252D Helmet";
 
+    TCP_visrRscTitlesClass="RscTCPVisrODST";
+    TCP_visrClasses[]=
+    {
+      "WS_CH252D_Helmet_Base",
+      "WS_CH252D_Helmet_Base_dp"
+    };
+
     model = "MA_Armor\data\Helmets\Human_ODST\Reach_ODST_Helm.p3d";
     picture = "WS_Gear\Headgear\CH252D\_data\ch252d_icon.paa";
     hiddenSelections[] =
@@ -159,6 +166,13 @@ class CfgWeapons
   {
     scope = 1;
     scopeArsenal = 1;
+
+    TCP_visrClasses[]=
+    {
+      "WS_CH252D_Helmet_Base",
+      "WS_CH252D_Helmet_Base_dp"
+    };
+
     hiddenSelectionsTextures[] =
     {
       "WS_Gear\Headgear\CH252D\_textures\helmet_base.paa",
@@ -180,6 +194,12 @@ class CfgWeapons
       type = "dukova";
     };
 
+    TCP_visrClasses[]=
+    {
+      "WS_CH252D_Helmet_Dukova",
+      "WS_CH252D_Helmet_Dukova_dp"
+    };
+
     hiddenSelectionsTextures[] =
     {
       "WS_Gear\Headgear\CH252D\_textures\helmet_dukova.paa",
@@ -189,6 +209,12 @@ class CfgWeapons
   };
   class WS_CH252D_Helmet_Dukova_dp: WS_CH252D_Helmet_Base_dp
   {
+    TCP_visrClasses[]=
+    {
+      "WS_CH252D_Helmet_Dukova",
+      "WS_CH252D_Helmet_Dukova_dp"
+    };
+
     hiddenSelectionsTextures[] =
     {
       "WS_Gear\Headgear\CH252D\_textures\helmet_dukova.paa",
@@ -204,6 +230,12 @@ class CfgWeapons
     {
       model = "WS_CH252D_Helmet_Metaitem";
       type = "finch";
+    };
+
+    TCP_visrClasses[]=
+    {
+      "WS_CH252D_Helmet_Finch",
+      "WS_CH252D_Helmet_Finch_dp"
     };
 
     hiddenSelectionsTextures[] =
@@ -232,6 +264,12 @@ class CfgWeapons
       type = "hayes";
     };
 
+    TCP_visrClasses[]=
+    {
+      "WS_CH252D_Helmet_Hayes",
+      "WS_CH252D_Helmet_Hayes_dp"
+    };
+
     hiddenSelectionsTextures[] =
     {
       "WS_Gear\Headgear\CH252D\_textures\helmet_hayes.paa",
@@ -241,6 +279,12 @@ class CfgWeapons
   };
   class WS_CH252D_Helmet_Mickelson_dp: WS_CH252D_Helmet_Base_dp
   {
+    TCP_visrClasses[]=
+    {
+      "WS_CH252D_Helmet_Hayes",
+      "WS_CH252D_Helmet_Hayes_dp"
+    };
+
     hiddenSelectionsTextures[] =
     {
       "WS_Gear\Headgear\CH252D\_textures\helmet_hayes.paa",
@@ -258,6 +302,12 @@ class CfgWeapons
       type = "mickelson";
     };
 
+    TCP_visrClasses[]=
+    {
+      "WS_CH252D_Helmet_Mickelson",
+      "WS_CH252D_Helmet_Mickelson_dp"
+    };
+
     hiddenSelectionsTextures[] =
     {
       "WS_Gear\Headgear\CH252D\_textures\helmet_mickelson.paa",
@@ -267,6 +317,12 @@ class CfgWeapons
   };
   class WS_CH252D_Helmet_Mickelson_dp: WS_CH252D_Helmet_Base_dp
   {
+    TCP_visrClasses[]=
+    {
+      "WS_CH252D_Helmet_Mickelson",
+      "WS_CH252D_Helmet_Mickelson_dp"
+    };
+
     hiddenSelectionsTextures[] =
     {
       "WS_Gear\Headgear\CH252D\_textures\helmet_mickelson.paa",

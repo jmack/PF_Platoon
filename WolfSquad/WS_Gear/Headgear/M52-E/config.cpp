@@ -62,6 +62,14 @@ class CfgWeapons
     dlc = "WS";
     displayName = "[WS] M52-E Helmet";
 
+    TCP_visrRscTitlesClass="RscTCPVisrODST";
+    TCP_visrClasses[]=
+    {
+      "WS_M52E_Helmet_Base",
+      "WS_M52E_Helmet_Base"
+    };
+
+
     model = "MA_Armor\data\Helmets\H3_EOD\H3_EOD_Helmet.p3d";
     picture = "WS_Gear\Headgear\M52-E\_data\m52e_icon.paa";
     hiddenSelections[] =
@@ -143,6 +151,12 @@ class CfgWeapons
     {
       model = "WS_M52E_Helmet_Metaitem";
       type = "barnes";
+    };
+
+    TCP_visrClasses[]=
+    {
+      "WS_M52E_Helmet_Barnes",
+      "WS_M52E_Helmet_Barnes"
     };
 
     hiddenSelectionsTextures[] =
