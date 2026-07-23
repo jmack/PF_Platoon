@@ -21,6 +21,10 @@ class CfgPatches
       "WS_O_BHT_Soldier_Autorifleman",
       "WS_O_BHT_Soldier_Asst_Autorifleman",
       "WS_O_BHT_Soldier_Ammo_Bearer",
+      "WS_O_BHT_Soldier_Anti_Air",
+      "WS_O_BHT_Soldier_Asst_Anti_Air",
+      "WS_O_BHT_Soldier_Sniper",
+      "WS_O_BHT_Soldier_Spotter",
     };
     weapons[] = { };
   };
@@ -155,6 +159,46 @@ class CfgWeapons
       {
         slot = "MuzzleSlot";
         item = "TCP_muzzle_brake_762_02";
+      };
+      class LinkedItemsUnder
+      {
+        slot = "UnderBarrelSlot";
+        item = "TCP_bipod_01";
+      };
+    };
+  };
+
+  class MEU_OPTRE_SRS99C;
+  class WS_O_BHT_Weapon_SRS99C: MEU_OPTRE_SRS99C
+  {
+    baseWeapon = "MEU_OPTRE_SRS99C";
+
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+        slot = "CowsSlot";
+        item = "MEU_OPTRE_SRS99C_Scope";
+      };
+    };
+  };
+
+  class TCP_srifle_M392;
+  class WS_O_BHT_Weapon_M392_Spotter: TCP_srifle_M392
+  {
+    baseWeapon = "TCP_srifle_M392";
+
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+        slot = "CowsSlot";
+        item = "TCP_optic_M43RCO_CRS_CUP";
+      };
+      class LinkedItemsMuzzle
+      {
+        slot = "MuzzleSlot";
+        item = "TCP_muzzle_flash_762_01";
       };
       class LinkedItemsUnder
       {
@@ -654,6 +698,179 @@ class CfgVehicles
     class TransportWeapons { };
   };
 
+  class TCP_B_Rifleman_2_M35_Buttpack_Olive;
+  class WS_O_BHT_Backpack_Anti_Air: TCP_B_Rifleman_2_M35_Buttpack_Olive
+  {
+    scope = 1;
+    class TransportMagazines
+    {
+      class _xx_TCP_48Rnd_5x23_Mag
+      {
+        magazine = "TCP_48Rnd_5x23_Mag";
+        count = 4;
+      };
+      class _xx_OPTRE_M41_Twin_HEAT_G_AA
+      {
+        magazine = "OPTRE_M41_Twin_HEAT_G_AA";
+        count = 2;
+      };
+    };
+    class TransportItems
+    {
+      class _xx_Biofoam
+      {
+        name = "TCP_ACE_BiomedicalFoam";
+        count = 1;
+      };
+      class _xx_BonePolymer
+      {
+        name = "TCP_BoneKnittingPolymer";
+        count = 1;
+      };
+      class _xx_Medigel
+      {
+        name = "TCP_ACE_Medigel";
+        count = 2;
+      };
+    };
+    class TransportWeapons { };
+  };
+
+  class TCP_B_Rifleman_4_M43_Medium_Rucksack_M35_Buttpack_Olive;
+  class WS_O_BHT_Backpack_Asst_Anti_Air: TCP_B_Rifleman_4_M43_Medium_Rucksack_M35_Buttpack_Olive
+  {
+    scope = 1;
+    class TransportMagazines
+    {
+      class _xx_TCP_32Rnd_762x51_Mag
+      {
+        magazine = "TCP_32Rnd_762x51_Mag";
+        count = 3;
+      };
+      class _xx_OPTRE_M41_Twin_HEAT_G_AA
+      {
+        magazine = "OPTRE_M41_Twin_HEAT_G_AA";
+        count = 4;
+      };
+    };
+    class TransportItems
+    {
+      class _xx_Biofoam
+      {
+        name = "TCP_ACE_BiomedicalFoam";
+        count = 1;
+      };
+      class _xx_BonePolymer
+      {
+        name = "TCP_BoneKnittingPolymer";
+        count = 1;
+      };
+      class _xx_Medigel
+      {
+        name = "TCP_ACE_Medigel";
+        count = 2;
+      };
+      class _xx_CableTie
+      {
+        name = "ACE_CableTie";
+        count = 2;
+      };
+    };
+    class TransportWeapons { };
+  };
+
+  class TCP_B_Sniper_1_M35_Buttpack_Olive;
+  class WS_O_BHT_Backpack_Sniper: TCP_B_Sniper_1_M35_Buttpack_Olive
+  {
+    scope = 1;
+    class TransportMagazines
+    {
+      class _xx_OPTRE_4Rnd_145x114_APFSDS_Mag
+      {
+        magazine = "OPTRE_4Rnd_145x114_APFSDS_Mag";
+        count = 6;
+      };
+    };
+    class TransportItems
+    {
+      class _xx_Biofoam
+      {
+        name = "TCP_ACE_BiomedicalFoam";
+        count = 1;
+      };
+      class _xx_BonePolymer
+      {
+        name = "TCP_BoneKnittingPolymer";
+        count = 1;
+      };
+      class _xx_Medigel
+      {
+        name = "TCP_ACE_Medigel";
+        count = 2;
+      };
+      class _xx_CableTie
+      {
+        name = "ACE_CableTie";
+        count = 2;
+      };
+    };
+    class TransportWeapons { };
+  };
+
+  class TCP_B_Rifleman_4_ANPRC171_Patrol_M35_Buttpack_Olive;
+  class WS_O_BHT_Backpack_Spotter: TCP_B_Rifleman_4_ANPRC171_Patrol_M35_Buttpack_Olive
+  {
+    scope = 1;
+    class TransportMagazines
+    {
+      class _xx_TCP_32Rnd_762x51_Mag
+      {
+        magazine = "TCP_15Rnd_762x51_Mag";
+        count = 4;
+      };
+    };
+    class TransportItems
+    {
+      class _xx_Biofoam
+      {
+        name = "TCP_ACE_BiomedicalFoam";
+        count = 1;
+      };
+      class _xx_BonePolymer
+      {
+        name = "TCP_BoneKnittingPolymer";
+        count = 1;
+      };
+      class _xx_Medigel
+      {
+        name = "TCP_ACE_Medigel";
+        count = 2;
+      };
+      class _xx_CableTie
+      {
+        name = "ACE_CableTie";
+        count = 2;
+      };
+      class _xx_RavenDrone
+      {
+        name = "MEU_Raven_Drone_Item";
+        count = 1;
+      };
+      class _xx_DroneBattery
+      {
+        name = "ACE_UAVBattery";
+        count = 2;
+      };
+      class _xx_SpottingScope
+      {
+        name = "ACE_SpottingScope";
+        count = 1;
+      };
+    };
+    class TransportWeapons { };
+  };
+
+
   /*******************************************
    *     ACTUAL SOLDIER UNIT DEFINITIONS     *
    *******************************************/
@@ -847,7 +1064,7 @@ class CfgVehicles
   };
 
   // Marksman
-  class WS_O_BHT_Soldier_Marksman: WS_O_BHT_Soldier_Base_OD_Black_Blue
+  class WS_O_BHT_Soldier_Marksman: WS_O_BHT_Soldier_Base_OD_Black_Blue 
   {
     scope = 2;
     scopeCurator = 2;
@@ -1594,11 +1811,305 @@ class CfgVehicles
     };
   };
 
-  // TODO: Missile Specialist (AA)
-  // TODO: Asst. Missile Specialist (AA)
+  // Anti-Air Specialist
+  class WS_O_BHT_Soldier_Anti_Air: WS_O_BHT_Soldier_Base_OD_Black_Blue
+  {
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
 
-  // TODO: Sharpshooter
-  // TODO: Spotter
+    editorCategory = "WS_O_BHT";
+    editorSubcategory = "WS_O_BHT_Infantry";
+
+    displayName = "Anti-Air Specialist";
+    role = "MissileSpecialist";
+    icon = "iconManAT";
+
+    backpack = "WS_O_BHT_Backpack_Anti_Air";
+
+    weapons[] = {
+      "WS_O_BHT_Weapon_M7",
+      "WS_O_BHT_Weapon_M6G2",
+      "MEU_M41_SSR",
+      "Throw",
+      "Put",
+    };
+    respawnWeapons[] =
+    {
+      "WS_O_BHT_Weapon_M7",
+      "WS_O_BHT_Weapon_M6G2",
+      "MEU_M41_SSR",
+      "Throw",
+      "Put",
+    };
+
+    magazines[] =
+    {
+      "TCP_48Rnd_5x23_Mag",
+      "TCP_48Rnd_5x23_Mag",
+      "TCP_48Rnd_5x23_Mag",
+      "TCP_48Rnd_5x23_Mag",
+      "TCP_8Rnd_127x30_46_Mag",
+      "TCP_8Rnd_127x30_46_Mag",
+      "OPTRE_M41_Twin_HEAT_G_AA",
+      "OPTRE_M41_Twin_HEAT_G_AA",
+      "ACE_Chemlight_HiBlue",
+      "ACE_Chemlight_HiBlue",
+    };
+    respawnMagazines[] =
+    {
+      "TCP_48Rnd_5x23_Mag",
+      "TCP_48Rnd_5x23_Mag",
+      "TCP_48Rnd_5x23_Mag",
+      "TCP_48Rnd_5x23_Mag",
+      "TCP_8Rnd_127x30_46_Mag",
+      "TCP_8Rnd_127x30_46_Mag",
+      "OPTRE_M41_Twin_HEAT_G_AA",
+      "OPTRE_M41_Twin_HEAT_G_AA",
+      "ACE_Chemlight_HiBlue",
+      "ACE_Chemlight_HiBlue",
+    };
+
+    linkedItems[] =
+    {
+      "WOLFoT_TcP_UNSC_V_M43A_OD",
+      "H_Cap_headphones",
+      "G_Tactical_camo",
+      "ItemMap",
+      "ItemGPS",
+      "TFAR_fadak",
+      "ItemCompass",
+      "TCP_Watch",
+    };
+    respawnLinkedItems[] =
+    {
+      "WOLFoT_TcP_UNSC_V_M43A_OD",
+      "H_Cap_headphones",
+      "G_Tactical_camo",
+      "ItemMap",
+      "ItemGPS",
+      "TFAR_fadak",
+      "ItemCompass",
+      "TCP_Watch",
+    };
+
+    items[] =
+    {
+      "ACE_Flashlight_XL50",
+    };
+    respawnItems[] =
+    {
+      "ACE_Flashlight_XL50",
+    };
+  };
+
+  // Asst. Missile Specialist (AA)
+  class WS_O_BHT_Soldier_Asst_Anti_Air: WS_O_BHT_Soldier_Rifleman
+  {
+    displayName = "Asst. Anti-Air Specialist";
+    role = "Rifleman";
+
+    backpack = "WS_O_BHT_Backpack_Asst_Anti_Air";
+  };
+
+  // Sniper
+  class WS_O_BHT_Soldier_Sniper: WS_O_BHT_Soldier_Base_Surplus_Black
+  {
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    editorCategory = "WS_O_BHT";
+    editorSubcategory = "WS_O_BHT_Infantry";
+
+    displayName = "Sniper";
+    role = "Marksman";
+
+    backpack = "WS_O_BHT_Backpack_Sniper";
+
+    weapons[] = {
+      "WS_O_BHT_Weapon_SRS99C",
+      "WS_O_BHT_Weapon_M6G2",
+      "Throw",
+      "Put",
+    };
+    respawnWeapons[] =
+    {
+      "WS_O_BHT_Weapon_SRS99C",
+      "WS_O_BHT_Weapon_M6G2",
+      "Throw",
+      "Put",
+    };
+
+    magazines[] =
+    {
+      "OPTRE_4Rnd_145x114_APFSDS_Mag",
+      "OPTRE_4Rnd_145x114_APFSDS_Mag",
+      "OPTRE_4Rnd_145x114_APFSDS_Mag",
+      "OPTRE_4Rnd_145x114_APFSDS_Mag",
+      "OPTRE_4Rnd_145x114_APFSDS_Mag",
+      "TCP_8Rnd_127x30_46_Mag",
+      "TCP_8Rnd_127x30_46_Mag",
+      "TCP_8Rnd_127x30_46_Mag",
+      "TCP_M21_Smoke",
+      "TCP_M21_Smoke",
+      "ACE_Chemlight_HiBlue",
+      "ACE_Chemlight_HiBlue",
+    };
+    respawnMagazines[] =
+    {
+      "OPTRE_4Rnd_145x114_APFSDS_Mag",
+      "OPTRE_4Rnd_145x114_APFSDS_Mag",
+      "OPTRE_4Rnd_145x114_APFSDS_Mag",
+      "OPTRE_4Rnd_145x114_APFSDS_Mag",
+      "OPTRE_4Rnd_145x114_APFSDS_Mag",
+      "TCP_8Rnd_127x30_46_Mag",
+      "TCP_8Rnd_127x30_46_Mag",
+      "TCP_8Rnd_127x30_46_Mag",
+      "TCP_M21_Smoke",
+      "TCP_M21_Smoke",
+      "ACE_Chemlight_HiBlue",
+      "ACE_Chemlight_HiBlue",
+    };
+
+    linkedItems[] =
+    {
+      "WOLFoT_TcP_UNSC_V_M43A_L_OD",
+      "TKE_BoonieHatScrimHSFCFCamo",
+      "G_Aviator",
+      "ItemMap",
+      "ItemGPS",
+      "TFAR_fadak",
+      "ItemCompass",
+      "ACE_Altimeter",
+    };
+    respawnLinkedItems[] =
+    {
+      "WOLFoT_TcP_UNSC_V_M43A_L_OD",
+      "TKE_BoonieHatScrimHSFCFCamo",
+      "G_Aviator",
+      "ItemMap",
+      "ItemGPS",
+      "TFAR_fadak",
+      "ItemCompass",
+      "ACE_Altimeter",
+    };
+
+    items[] =
+    {
+      "ACE_Flashlight_XL50",
+      "ACE_Kestrel4500",
+      "ACE_RangeCard",
+    };
+    respawnItems[] =
+    {
+      "ACE_Flashlight_XL50",
+      "ACE_Kestrel4500",
+      "ACE_RangeCard",
+    };
+  };
+
+  // Spotter
+  class WS_O_BHT_Soldier_Spotter: WS_O_BHT_Soldier_Base_Surplus_Black
+  {
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    editorCategory = "WS_O_BHT";
+    editorSubcategory = "WS_O_BHT_Infantry";
+
+    displayName = "Spotter";
+    role = "Marksman";
+
+    backpack = "WS_O_BHT_Backpack_Spotter";
+
+    weapons[] =
+    {
+      "WS_O_BHT_Weapon_M392_Spotter",
+      "WS_O_BHT_Weapon_M6G2",
+      "Throw",
+      "Put",
+      "TCP_binoculars_M98",
+    };
+    respawnWeapons[] =
+    {
+      "WS_O_BHT_Weapon_M392_Spotter",
+      "WS_O_BHT_Weapon_M6G2",
+      "Throw",
+      "Put",
+      "TCP_binoculars_M98",
+    };
+
+    magazines[] =
+    {
+      "TCP_15Rnd_762x51_Mag",
+      "TCP_15Rnd_762x51_Mag",
+      "TCP_15Rnd_762x51_Mag",
+      "TCP_15Rnd_762x51_Mag",
+      "TCP_15Rnd_762x51_Mag",
+      "TCP_15Rnd_762x51_Mag",
+      "TCP_15Rnd_762x51_Mag",
+      "TCP_8Rnd_127x30_46_Mag",
+      "TCP_8Rnd_127x30_46_Mag",
+      "TCP_M21_Smoke",
+      "TCP_M21_Smoke",
+      "ACE_Chemlight_HiBlue",
+      "ACE_Chemlight_HiBlue",
+    };
+    respawnMagazines[] =
+    {
+      "TCP_15Rnd_762x51_Mag",
+      "TCP_15Rnd_762x51_Mag",
+      "TCP_15Rnd_762x51_Mag",
+      "TCP_15Rnd_762x51_Mag",
+      "TCP_15Rnd_762x51_Mag",
+      "TCP_15Rnd_762x51_Mag",
+      "TCP_15Rnd_762x51_Mag",
+      "TCP_8Rnd_127x30_46_Mag",
+      "TCP_8Rnd_127x30_46_Mag",
+      "TCP_M21_Smoke",
+      "TCP_M21_Smoke",
+      "ACE_Chemlight_HiBlue",
+      "ACE_Chemlight_HiBlue",
+    };
+
+    linkedItems[] =
+    {
+      "WOLFoT_TcP_UNSC_V_M43A_L_OD",
+      "TKE_BoonieHatScrimFCFCamo",
+      "G_Aviator",
+      "ItemMap",
+      "O_UavTerminal",
+      "TFAR_fadak",
+      "ItemCompass",
+      "ACE_Altimeter",
+    };
+    respawnLinkedItems[] =
+    {
+      "WOLFoT_TcP_UNSC_V_M43A_L_OD",
+      "TKE_BoonieHatScrimFCFCamo",
+      "G_Aviator",
+      "ItemMap",
+      "O_UavTerminal",
+      "TFAR_fadak",
+      "ItemCompass",
+      "ACE_Altimeter",
+    };
+
+    items[] =
+    {
+      "ACE_Flashlight_XL50",
+      "ACE_Kestrel4500",
+      "ACE_RangeCard",
+    };
+    respawnItems[] =
+    {
+      "ACE_Flashlight_XL50",
+      "ACE_Kestrel4500",
+      "ACE_RangeCard",
+    };
+  };
 
   // TODO: Vehicle Crewman
 
@@ -1712,7 +2223,7 @@ class CfgGroups
         };
 
         // Infantry Team - Squad Lead Element
-        class WS_O_BHT_GRP_InfTeam_SquadLead
+        class WS_O_BHT_GRP_InfTeam_SquadLead 
         {
           name = "Infantry Team - Squad Lead";
           side = 0;
@@ -1820,6 +2331,53 @@ class CfgGroups
           };
         };
 
+        // Specialist Team - AA
+        class WS_O_BHT_GRP_SpecTeam_AA
+        {
+          name = "Specialist Team - Anti-Air";
+          side = 0;
+          faction = "WS_O_BHT";
+          icon = "\A3\ui_f\data\map\markers\nato\o_antiair.paa";
+
+          class Unit0
+          {
+            side = 0;
+            vehicle = "WS_O_BHT_Soldier_Anti_Air";
+            rank = "SERGEANT";
+            position[] = { 0, 0, 0 };
+          };
+          class Unit1
+          {
+            side = 0;
+            vehicle = "WS_O_BHT_Soldier_Asst_Anti_Air";
+            rank = "CORPORAL";
+            position[] = { 2, 0, 0 };
+          };
+        };
+
+        // Specialist Team - Sniper
+        class WS_O_BHT_GRP_SpecTeam_Sniper
+        {
+          name = "Specialist Team - Sniper";
+          side = 0;
+          faction = "WS_O_BHT";
+          icon = "\A3\ui_f\data\map\markers\nato\o_recon.paa";
+
+          class Unit0
+          {
+            side = 0;
+            vehicle = "WS_O_BHT_Soldier_Sniper";
+            rank = "SERGEANT";
+            position[] = { 0, 0, 0 };
+          };
+          class Unit1
+          {
+            side = 0;
+            vehicle = "WS_O_BHT_Soldier_Spotter";
+            rank = "SERGEANT";
+            position[] = { 2, 0, 0 };
+          };
+        };
       };
     };
   };
