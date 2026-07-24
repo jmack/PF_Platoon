@@ -25,6 +25,9 @@ class CfgPatches
       "WS_O_BHT_Soldier_Asst_Anti_Air",
       "WS_O_BHT_Soldier_Sniper",
       "WS_O_BHT_Soldier_Spotter",
+      "WS_O_BHT_Soldier_RTO",
+      "WS_O_BHT_Soldier_Support_Armored",
+      "WS_O_BHT_Soldier_Support_Unarmored",
     };
     weapons[] = { };
   };
@@ -870,6 +873,109 @@ class CfgVehicles
     class TransportWeapons { };
   };
 
+  class TCP_B_Rifleman_2_ANPRC171_M35_Buttpack_Olive;
+  class WS_O_BHT_Backpack_RTO: TCP_B_Rifleman_2_ANPRC171_M35_Buttpack_Olive
+  {
+    scope = 1;
+    class TransportMagazines
+    {
+      class _xx_TCP_48Rnd_5x23_Mag
+      {
+        magazine = "TCP_48Rnd_5x23_Mag";
+        count = 5;
+      };
+    };
+    class TransportItems
+    {
+      class _xx_Biofoam
+      {
+        name = "TCP_ACE_BiomedicalFoam";
+        count = 1;
+      };
+      class _xx_BonePolymer
+      {
+        name = "TCP_BoneKnittingPolymer";
+        count = 1;
+      };
+      class _xx_Medigel
+      {
+        name = "TCP_ACE_Medigel";
+        count = 2;
+      };
+      class _xx_CableTie
+      {
+        name = "ACE_CableTie";
+        count = 2;
+      };
+    };
+    class TransportWeapons { };
+  };
+
+  class TCP_B_Rifleman_5_M35_Buttpack_Olive;
+  class WS_O_BHT_Backpack_Support_Armored: TCP_B_Rifleman_5_M35_Buttpack_Olive
+  {
+    scope = 1;
+    class TransportMagazines
+    {
+      class _xx_TCP_8Rnd_127x30_46_Mag
+      {
+        magazine = "TCP_8Rnd_127x30_46_Mag";
+        count = 5;
+      };
+    };
+    class TransportItems
+    {
+      class _xx_Biofoam
+      {
+        name = "TCP_ACE_BiomedicalFoam";
+        count = 1;
+      };
+      class _xx_BonePolymer
+      {
+        name = "TCP_BoneKnittingPolymer";
+        count = 1;
+      };
+      class _xx_Medigel
+      {
+        name = "TCP_ACE_Medigel";
+        count = 2;
+      };
+    };
+    class TransportWeapons { };
+  };
+
+  class TCP_B_M35_Hydration_Pack_Olive;
+  class WS_O_BHT_Backpack_Support_Unarmored: TCP_B_M35_Hydration_Pack_Olive
+  {
+    scope = 1;
+    class TransportMagazines
+    {
+      class _xx_TCP_8Rnd_127x30_46_Mag
+      {
+        magazine = "TCP_8Rnd_127x30_46_Mag";
+        count = 5;
+      };
+    };
+    class TransportItems
+    {
+      class _xx_Biofoam
+      {
+        name = "TCP_ACE_BiomedicalFoam";
+        count = 1;
+      };
+      class _xx_BonePolymer
+      {
+        name = "TCP_BoneKnittingPolymer";
+        count = 1;
+      };
+      class _xx_Medigel
+      {
+        name = "TCP_ACE_Medigel";
+        count = 2;
+      };
+    };
+    class TransportWeapons { };
+  };
 
   /*******************************************
    *     ACTUAL SOLDIER UNIT DEFINITIONS     *
@@ -2108,6 +2214,259 @@ class CfgVehicles
       "ACE_Flashlight_XL50",
       "ACE_Kestrel4500",
       "ACE_RangeCard",
+    };
+  };
+
+  // RTO / Forward Observer
+  class WS_O_BHT_Soldier_RTO: WS_O_BHT_Soldier_Base_OD_Black_White
+  {
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    editorCategory = "WS_O_BHT";
+    editorSubcategory = "WS_O_BHT_Infantry";
+
+    displayName = "RTO";
+    role = "Assistant";
+
+    backpack = "WS_O_BHT_Backpack_RTO";
+
+    weapons[] = {
+      "WS_O_BHT_Weapon_M7",
+      "WS_O_BHT_Weapon_M6G2",
+      "Throw",
+      "Put",
+      "TCP_binoculars_M98",
+    };
+    respawnWeapons[] =
+    {
+      "WS_O_BHT_Weapon_M7",
+      "WS_O_BHT_Weapon_M6G2",
+      "Throw",
+      "Put",
+      "TCP_binoculars_M98",
+    };
+
+    magazines[] =
+    {
+      "TCP_48Rnd_5x23_Mag",
+      "TCP_48Rnd_5x23_Mag",
+      "TCP_48Rnd_5x23_Mag",
+      "TCP_48Rnd_5x23_Mag",
+      "TCP_8Rnd_127x30_46_Mag",
+      "TCP_8Rnd_127x30_46_Mag",
+      "TCP_8Rnd_127x30_46_Mag",
+      "TCP_M21_Smoke",
+      "TCP_M21_Smoke",
+      "ACE_Chemlight_HiBlue",
+      "ACE_Chemlight_HiBlue",
+    };
+    respawnMagazines[] =
+    {
+      "TCP_48Rnd_5x23_Mag",
+      "TCP_48Rnd_5x23_Mag",
+      "TCP_48Rnd_5x23_Mag",
+      "TCP_48Rnd_5x23_Mag",
+      "TCP_8Rnd_127x30_46_Mag",
+      "TCP_8Rnd_127x30_46_Mag",
+      "TCP_8Rnd_127x30_46_Mag",
+      "TCP_M21_Smoke",
+      "TCP_M21_Smoke",
+      "ACE_Chemlight_HiBlue",
+      "ACE_Chemlight_HiBlue",
+    };
+
+    linkedItems[] =
+    {
+      "WOLFoT_TcP_UNSC_V_M43A_L_OD",
+      "H_Cap_headphones",
+      "G_Aviator",
+      "ItemMap",
+      "ItemGPS",
+      "TFAR_fadak",
+      "ItemCompass",
+      "TCP_Watch",
+    };
+    respawnLinkedItems[] =
+    {
+      "WOLFoT_TcP_UNSC_V_M43A_L_OD",
+      "H_Cap_headphones",
+      "G_Aviator",
+      "ItemMap",
+      "ItemGPS",
+      "TFAR_fadak",
+      "ItemCompass",
+      "TCP_Watch",
+    };
+
+    items[] =
+    {
+      "ACE_Flashlight_XL50",
+    };
+    respawnItems[] =
+    {
+      "ACE_Flashlight_XL50",
+    };
+  };
+
+  // Support - Armored
+  class WS_O_BHT_Soldier_Support_Armored: WS_O_BHT_Soldier_Base_OD_Black_Crimson
+  {
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    editorCategory = "WS_O_BHT";
+    editorSubcategory = "WS_O_BHT_Infantry";
+
+    displayName = "Support - Armored";
+    role = "Assistant";
+
+    backpack = "WS_O_BHT_Backpack_Support_Armored";
+
+    weapons[] =
+    {
+      "WS_O_BHT_Weapon_M6G2",
+      "Throw",
+      "Put",
+    };
+    respawnWeapons[] =
+    {
+      "WS_O_BHT_Weapon_M6G2",
+      "Throw",
+      "Put",
+    };
+
+    magazines[] =
+    {
+      "TCP_8Rnd_127x30_46_Mag",
+      "TCP_8Rnd_127x30_46_Mag",
+      "TCP_8Rnd_127x30_46_Mag",
+      "TCP_8Rnd_127x30_46_Mag",
+      "ACE_Chemlight_HiBlue",
+      "ACE_Chemlight_HiBlue",
+    };
+    respawnMagazines[] =
+    {
+      "TCP_8Rnd_127x30_46_Mag",
+      "TCP_8Rnd_127x30_46_Mag",
+      "TCP_8Rnd_127x30_46_Mag",
+      "TCP_8Rnd_127x30_46_Mag",
+      "ACE_Chemlight_HiBlue",
+      "ACE_Chemlight_HiBlue",
+    };
+
+    linkedItems[] =
+    {
+      "WOLFoT_TcP_UNSC_V_M43A_OD",
+      "H_Cap_oli_hs",
+      "G_Aviator",
+      "ItemMap",
+      "ItemGPS",
+      "TFAR_fadak",
+      "ItemCompass",
+      "TCP_Watch",
+    };
+    respawnLinkedItems[] =
+    {
+      "WOLFoT_TcP_UNSC_V_M43A_OD",
+      "H_Cap_oli_hs",
+      "G_Aviator",
+      "ItemMap",
+      "ItemGPS",
+      "TFAR_fadak",
+      "ItemCompass",
+      "TCP_Watch",
+    };
+
+    items[] =
+    {
+      "ACE_Flashlight_XL50",
+    };
+    respawnItems[] =
+    {
+      "ACE_Flashlight_XL50",
+    };
+  };
+
+  // Support - Unarmored
+  class WS_O_BHT_Soldier_Support_Unarmored: WS_O_BHT_Soldier_Base_OD_Black_Blue
+  {
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    editorCategory = "WS_O_BHT";
+    editorSubcategory = "WS_O_BHT_Infantry";
+
+    displayName = "Support - Unarmored";
+    role = "Assistant";
+
+    backpack = "WS_O_BHT_Backpack_Support_Unarmored";
+
+    weapons[] =
+    {
+      "WS_O_BHT_Weapon_M6G2",
+      "Throw",
+      "Put",
+    };
+    respawnWeapons[] =
+    {
+      "WS_O_BHT_Weapon_M6G2",
+      "Throw",
+      "Put",
+    };
+
+    magazines[] =
+    {
+      "TCP_8Rnd_127x30_46_Mag",
+      "TCP_8Rnd_127x30_46_Mag",
+      "TCP_8Rnd_127x30_46_Mag",
+      "TCP_8Rnd_127x30_46_Mag",
+      "ACE_Chemlight_HiBlue",
+      "ACE_Chemlight_HiBlue",
+    };
+    respawnMagazines[] =
+    {
+      "TCP_8Rnd_127x30_46_Mag",
+      "TCP_8Rnd_127x30_46_Mag",
+      "TCP_8Rnd_127x30_46_Mag",
+      "TCP_8Rnd_127x30_46_Mag",
+      "ACE_Chemlight_HiBlue",
+      "ACE_Chemlight_HiBlue",
+    };
+
+    linkedItems[] =
+    {
+      "V_Rangemaster_belt_woodland",
+      "H_Cap_oli_hs",
+      "G_Aviator",
+      "ItemMap",
+      "ItemGPS",
+      "TFAR_fadak",
+      "ItemCompass",
+      "TCP_Watch",
+    };
+    respawnLinkedItems[] =
+    {
+      "V_Rangemaster_belt_woodland",
+      "H_Cap_oli_hs",
+      "G_Aviator",
+      "ItemMap",
+      "ItemGPS",
+      "TFAR_fadak",
+      "ItemCompass",
+      "TCP_Watch",
+    };
+
+    items[] =
+    {
+      "ACE_Flashlight_XL50",
+    };
+    respawnItems[] =
+    {
+      "ACE_Flashlight_XL50",
     };
   };
 
