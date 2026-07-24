@@ -1903,7 +1903,7 @@ class CfgVehicles
     };
   };
 
-  // Asst. Missile Specialist (AA)
+  // Asst. Anti-Air Specialist
   class WS_O_BHT_Soldier_Asst_Anti_Air: WS_O_BHT_Soldier_Rifleman
   {
     displayName = "Asst. Anti-Air Specialist";
