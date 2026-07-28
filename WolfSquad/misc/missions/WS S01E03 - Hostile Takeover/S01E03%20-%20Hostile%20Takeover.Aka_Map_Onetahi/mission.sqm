@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=11903;
+		nextID=11616;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1668;
+		nextID=1620;
 	};
 	class Camera
 	{
-		pos[]={5442.7026,26.219255,11951.925};
-		dir[]={-0.69464684,-0.35402393,-0.62621015};
-		up[]={-0.26295212,0.93523598,-0.23704579};
-		aside[]={-0.66957414,-8.8301022e-08,0.74275011};
+		pos[]={1632.8401,26.55545,1943.8287};
+		dir[]={-0.92473245,-0.22369103,0.30794841};
+		up[]={-0.21223231,0.9746601,0.070676222};
+		aside[]={0.31595466,7.4505806e-09,0.94877428};
 	};
 };
 binarizationWanted=0;
@@ -70,35 +70,65 @@ addons[]=
 	"WSD_MisriahAdditions",
 	"A3_Characters_F_Globe_Headgear",
 	"TCP_Characters_BLUFOR_UNSC_Army_Uniforms_CBUU",
-	"A3_expEden_Characters_Vests",
+	"TCP_Characters_BLUFOR_UNSC_Army_Vests_M43A",
+	"1st_MEU_patch_weapons_grenades",
+	"OPTRE_ACE_Compat_Medical",
 	"1st_MEU_patch_weapons_meu_rework_smg",
 	"OPTRE_Weapons_SMG",
 	"TCP_Characters_BLUFOR_UNSC_Army_Facewear_tacticalGlasses",
 	"TCP_Characters_BLUFOR_UNSC_Army_Headgear_helmet_CH43A",
-	"TCP_Characters_BLUFOR_UNSC_Army_Vests_M43A",
-	"1st_MEU_patch_weapons_grenades",
-	"OPTRE_ACE_Compat_Medical",
 	"A3_Modules_F_Curator_Curator",
 	"rubicon_gen3_spartaniv",
+	"TCP_Weapons_SMGs_M7",
+	"TCP_Compat_ACE_Weapons_SMGs_M7",
+	"TCP_Weapons_Acc_Optic_M5BSLSV",
+	"TCP_Weapons_Acc_Rail_LAM_M7",
+	"TCP_Weapons_Ammo_5x23_Ball",
 	"TCP_Weapons_Pistols_M6C2",
 	"TCP_Compat_ACE_Weapons_Pistols_M6C2",
 	"TCP_Weapons_Acc_Muzzle_snds_127_01",
 	"TCP_Weapons_Acc_Rail_LAM_M6C2",
 	"TCP_Weapons_Acc_Bipod_Guard_M6G2",
 	"TCP_Weapons_Ammo_127x30_Ball",
-	"PLP_ImmersiveHair",
-	"PLP_RemasteredHair",
-	"ace_hearing",
-	"Rogue_ODST",
+	"A3_Drones_F_Weapons_F_Gamma_Items",
 	"WS_Gear_NVG_Implant",
-	"WS_CH252D_Helmet",
+	"WS_S1_Helmet",
 	"WS_Gear_Uniform_M52",
+	"ace_trenches",
+	"ace_explosives",
+	"ace_flashlights",
+	"ace_maptools",
+	"A3_Weapons_F_Orange",
+	"ace_arsenal",
+	"ace_captives",
+	"ace_attach",
+	"tsp_breach",
 	"WS_M43D_Vest",
+	"TCP_Weapons_Grenades_M9I",
+	"TCP_Weapons_Grenades_M21",
+	"tsp_flashbang",
+	"ace_chemlights",
+	"tsp_breach_block",
+	"tsp_breach_popper",
+	"OPTRE_Vehicles_OQ40_Minibee",
+	"ace_logistics_rope",
+	"ace_logistics_uavbattery",
+	"Rogue_ODST",
+	"WS_CH252D_Helmet",
 	"HSim_Characters_H_Woman_Uniforms",
 	"WS_Gear_NVG_EODCBRN",
 	"WS_M52E_Helmet",
 	"sss_cas",
 	"sss_logistics",
+	"TCP_Characters_BLUFOR_UNSC_ARMY_Units_B_UNSC_A_T",
+	"TCP_Weapons_Pistols_Flaregun",
+	"TCP_Weapons_Ammo_12Gauge_Signal",
+	"TCP_Characters_BLUFOR_UNSC_Marines_Facewear_Neck_Vacseal",
+	"TCP_Characters_BLUFOR_UNSC_Army_Headgear_helmet_ECH43A",
+	"A3_Weapons_F_Items",
+	"ace_medical_treatment",
+	"TCP_Weapons_Grenades_M9R",
+	"OPTRE_Hud",
 	"OPTRE_Vehicles_SOCOM_Pelican",
 	"A3_Ui_F",
 	"A3_Ui_F_Globe",
@@ -131,9 +161,6 @@ addons[]=
 	"WOLFoT_TcP_UNSC_Army",
 	"TCP_Compat_ACE_Medical_Treatment",
 	"ace_intelitems",
-	"ace_flashlights",
-	"A3_Weapons_F_Items",
-	"ace_arsenal",
 	"ace_gforces",
 	"V_FZ_Armor",
 	"tfar_external_intercom"
@@ -142,7 +169,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=65;
+		items=79;
 		class Item0
 		{
 			className="FDNDRY_light_vehicles";
@@ -342,210 +369,302 @@ class AddonsMetaData
 		};
 		class Item32
 		{
-			className="PLP_ImmersiveHair";
-			name="PLP_ImmersiveHair";
+			className="A3_Drones_F";
+			name="Arma 3 Beta - Drones";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
 		};
 		class Item33
-		{
-			className="PLP_RemasteredHair";
-			name="PLP_RemasteredHair";
-		};
-		class Item34
-		{
-			className="ace_hearing";
-			name="ACE3 - Hearing";
-			author="ACE-Team";
-			url="https://ace3.acemod.org/";
-		};
-		class Item35
-		{
-			className="Rogue_ODST";
-			name="Rogue_ODST";
-		};
-		class Item36
 		{
 			className="WS_Gear";
 			name="WS_Gear_NVG_Implant";
 			author="wlan0";
 		};
-		class Item37
+		class Item34
 		{
-			className="HSim_Characters_H_Woman_Uniforms";
-			name="HSim_Characters_H_Woman_Uniforms";
-			author="Jove Chiere";
-		};
-		class Item38
-		{
-			className="sss_cas";
-			name="cas";
-			author="Simplex Team";
-			url="https://github.com/SceptreOfficial/Simplex-Support-Services";
-		};
-		class Item39
-		{
-			className="sss_logistics";
-			name="logistics";
-			author="Simplex Team";
-			url="https://github.com/SceptreOfficial/Simplex-Support-Services";
-		};
-		class Item40
-		{
-			className="OPTRE_Vehicles_Air";
-			name="OPTRE_Vehicles_SOCOM_Pelican";
-			author="Article 2 Studios";
-		};
-		class Item41
-		{
-			className="A3_Ui_F";
-			name="Arma 3 - User Interface";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item42
-		{
-			className="A3_Ui_F_Globe";
-			name="O&T Expansion Eden - User Interface";
-			author="Trager";
-			url="https://steamcommunity.com/workshop/filedetails/?id=1923321700";
-		};
-		class Item43
-		{
-			className="TCF_OPFOR";
-			name="TCF_OPFOR";
-			author="TCF";
-		};
-		class Item44
-		{
-			className="SFSM_fipo";
-			name="sfsm_fipo";
-		};
-		class Item45
-		{
-			className="A3_Soft_F_Gamma";
-			name="Arma 3 - Unarmored Land Vehicles";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item46
-		{
-			className="A3_Characters_F";
-			name="Arma 3 Alpha - Characters and Clothing";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item47
-		{
-			className="TKE_Ext_Core_V";
-			name="TKE_Ext_Core_V";
-			author="Luca";
-		};
-		class Item48
-		{
-			className="A3_Soft_F_Exp";
-			name="Arma 3 Apex - Unarmored Land Vehicles";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item49
-		{
-			className="ep_ground_textures";
-			name="EP Ground Textures";
-			author="colemanerik";
-			url="http://www.twitch.tv/colemanerik";
-		};
-		class Item50
-		{
-			className="ep_ground_textures2";
-			name="EP Ground Textures 2";
-			author="colemanerik";
-			url="http://www.twitch.tv/colemanerik";
-		};
-		class Item51
-		{
-			className="ep_ground_textures4";
-			name="EP Ground Textures 4";
-			author="colemanerik";
-			url="http://www.twitch.tv/colemanerik";
-		};
-		class Item52
-		{
-			className="CUP_Buildings_Config";
-			name="CUP_Buildings_Config";
-		};
-		class Item53
-		{
-			className="A3_Structures_F_Exp";
-			name="Arma 3 Apex - Buildings and Structures";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item54
-		{
-			className="A3_Structures_F_Argo";
-			name="Arma 3 Malden - Buildings and Structures";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item55
-		{
-			className="sss_artillery";
-			name="artillery";
-			author="Simplex Team";
-			url="https://github.com/SceptreOfficial/Simplex-Support-Services";
-		};
-		class Item56
-		{
-			className="A3_Modules_F";
-			name="Arma 3 Alpha - Scripted Modules";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item57
-		{
-			className="plp_containers";
-			name="plp_containers";
-		};
-		class Item58
-		{
-			className="A3_Structures_F_Globe";
-			name="O&T Expansion Eden - Buildings and Structures";
-			author="Trager";
-			url="https://steamcommunity.com/workshop/filedetails/?id=1923321700";
-		};
-		class Item59
-		{
-			className="WOLFoT_TcP_UNSC_Army";
-			name="WOLFoT_TcP_UNSC_Army";
-		};
-		class Item60
-		{
-			className="ace_intelitems";
-			name="ACE3 - Intel Items";
+			className="ace_trenches";
+			name="ACE3 - Trenches";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item61
+		class Item35
+		{
+			className="ace_explosives";
+			name="ACE3 - Explosives";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item36
 		{
 			className="ace_flashlights";
 			name="ACE3 - Flashlights";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item62
+		class Item37
+		{
+			className="ace_maptools";
+			name="ACE3 - Map Tools";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item38
+		{
+			className="A3_Weapons_F_Orange";
+			name="Arma 3 Orange - Weapons and Accessories";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item39
 		{
 			className="ace_arsenal";
 			name="ACE3 - Arsenal";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
+		class Item40
+		{
+			className="ace_captives";
+			name="ACE3 - Captives";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item41
+		{
+			className="ace_attach";
+			name="ACE3 - Attach";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item42
+		{
+			className="tsp_breach";
+			name="tsp_breach";
+		};
+		class Item43
+		{
+			className="tsp_flashbang";
+			name="tsp_flashbang";
+		};
+		class Item44
+		{
+			className="ace_chemlights";
+			name="ACE3 - Chemlights";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item45
+		{
+			className="tsp_breach_block";
+			name="tsp_breach_block";
+		};
+		class Item46
+		{
+			className="tsp_breach_popper";
+			name="tsp_breach_popper";
+		};
+		class Item47
+		{
+			className="OPTRE_Vehicles_Air_Drone";
+			name="OPTRE_Vehicles_OQ40_Minibee";
+			author="Article 2 Studios";
+		};
+		class Item48
+		{
+			className="ace_logistics_rope";
+			name="ACE3 - Rope";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item49
+		{
+			className="ace_logistics_uavbattery";
+			name="ACE3 - Logistics UAV Battery";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item50
+		{
+			className="Rogue_ODST";
+			name="Rogue_ODST";
+		};
+		class Item51
+		{
+			className="HSim_Characters_H_Woman_Uniforms";
+			name="HSim_Characters_H_Woman_Uniforms";
+			author="Jove Chiere";
+		};
+		class Item52
+		{
+			className="sss_cas";
+			name="cas";
+			author="Simplex Team";
+			url="https://github.com/SceptreOfficial/Simplex-Support-Services";
+		};
+		class Item53
+		{
+			className="sss_logistics";
+			name="logistics";
+			author="Simplex Team";
+			url="https://github.com/SceptreOfficial/Simplex-Support-Services";
+		};
+		class Item54
+		{
+			className="ace_medical_treatment";
+			name="ACE3 - Medical Treatment";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item55
+		{
+			className="OPTRE_Hud";
+			name="OPTRE_Hud";
+			author="Article 2 Studios";
+		};
+		class Item56
+		{
+			className="OPTRE_Vehicles_Air";
+			name="OPTRE_Vehicles_SOCOM_Pelican";
+			author="Article 2 Studios";
+		};
+		class Item57
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item58
+		{
+			className="A3_Ui_F_Globe";
+			name="O&T Expansion Eden - User Interface";
+			author="Trager";
+			url="https://steamcommunity.com/workshop/filedetails/?id=1923321700";
+		};
+		class Item59
+		{
+			className="TCF_OPFOR";
+			name="TCF_OPFOR";
+			author="TCF";
+		};
+		class Item60
+		{
+			className="SFSM_fipo";
+			name="sfsm_fipo";
+		};
+		class Item61
+		{
+			className="A3_Soft_F_Gamma";
+			name="Arma 3 - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item62
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 		class Item63
+		{
+			className="TKE_Ext_Core_V";
+			name="TKE_Ext_Core_V";
+			author="Luca";
+		};
+		class Item64
+		{
+			className="A3_Soft_F_Exp";
+			name="Arma 3 Apex - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item65
+		{
+			className="ep_ground_textures";
+			name="EP Ground Textures";
+			author="colemanerik";
+			url="http://www.twitch.tv/colemanerik";
+		};
+		class Item66
+		{
+			className="ep_ground_textures2";
+			name="EP Ground Textures 2";
+			author="colemanerik";
+			url="http://www.twitch.tv/colemanerik";
+		};
+		class Item67
+		{
+			className="ep_ground_textures4";
+			name="EP Ground Textures 4";
+			author="colemanerik";
+			url="http://www.twitch.tv/colemanerik";
+		};
+		class Item68
+		{
+			className="CUP_Buildings_Config";
+			name="CUP_Buildings_Config";
+		};
+		class Item69
+		{
+			className="A3_Structures_F_Exp";
+			name="Arma 3 Apex - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item70
+		{
+			className="A3_Structures_F_Argo";
+			name="Arma 3 Malden - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item71
+		{
+			className="sss_artillery";
+			name="artillery";
+			author="Simplex Team";
+			url="https://github.com/SceptreOfficial/Simplex-Support-Services";
+		};
+		class Item72
+		{
+			className="A3_Modules_F";
+			name="Arma 3 Alpha - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item73
+		{
+			className="plp_containers";
+			name="plp_containers";
+		};
+		class Item74
+		{
+			className="A3_Structures_F_Globe";
+			name="O&T Expansion Eden - Buildings and Structures";
+			author="Trager";
+			url="https://steamcommunity.com/workshop/filedetails/?id=1923321700";
+		};
+		class Item75
+		{
+			className="WOLFoT_TcP_UNSC_Army";
+			name="WOLFoT_TcP_UNSC_Army";
+		};
+		class Item76
+		{
+			className="ace_intelitems";
+			name="ACE3 - Intel Items";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item77
 		{
 			className="V_FZ_Armor";
 			name="A2D: Fireteam Zulu";
 			author="Fireteam Zulu";
 			url="https://discord.gg/fa7Cguk";
 		};
-		class Item64
+		class Item78
 		{
 			className="tfar_external_intercom";
 			name="TFAR - Intercom Phone";
@@ -87467,7 +87586,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=10;
+		items=9;
 		class Item0
 		{
 			dataType="Layer";
@@ -106436,7 +106555,7 @@ class Mission
 													flags=1;
 													class Attributes
 													{
-														init="if (!isServer) exitWith { };" \n "" \n "this addAction [" \n "  ""Start Mission""," \n "  {" \n "    if (!isServer) exitWith { };" \n "" \n "" \n "    ""// 1: Fade to Black"";" \n "    missionNamespace setVariable [" \n "      ""ace_hearing_disableVolumeUpdate""," \n "      true," \n "      true" \n "    ];" \n "    [0, ""BLACK"", 0.2] remoteExec [""BIS_fnc_fadeEffect""];" \n "    [0.2, 0] remoteExec [""fadeSound""];" \n "" \n "" \n "    ""// 2: Teleport Players"";" \n "    sleep 2;" \n "    _allPlayers = call BIS_fnc_listPlayers;" \n "    {" \n "      if (vehicle _x != _x) then {" \n "        moveOut _x;" \n "      };" \n "      _x moveInCargo intro_pelican;" \n "    } forEach _allPlayers;" \n "" \n "" \n "    ""// 3: Play recording"";" \n "[[intro_pelican],""intro_in.sqf""] remoteExec [""BIS_fnc_execVM"",0,false];" \n "" \n "" \n "    ""// 4: Fade back in"";" \n "    sleep 2;" \n "    setTimeMultiplier 1;" \n "    [1, ""BLACK"", 3] remoteExec [""BIS_fnc_fadeEffect""];" \n "    [3, 1] remoteExec [""fadeSound""];" \n "    sleep 3;" \n "    missionNamespace setVariable [" \n "      ""ace_hearing_disableVolumeUpdate""," \n "      false," \n "      true" \n "    ];" \n "  }," \n "  []," \n "  100," \n "  true," \n "  true," \n "  """"," \n "  ""true""," \n "  3" \n "];";
+														init="if (!isServer) exitWith { };" \n "" \n "this addAction [" \n "  ""Start Mission""," \n "  {" \n "    if (!isServer) exitWith { };" \n "" \n "" \n "    ""// 1: Fade to Black"";" \n "    missionNamespace setVariable [" \n "      ""ace_hearing_disableVolumeUpdate""," \n "      true," \n "      true" \n "    ];" \n "    [0, ""BLACK"", 0.2] remoteExec [""BIS_fnc_fadeEffect""];" \n "    [0.2, 0] remoteExec [""fadeSound""];" \n "" \n "" \n "    ""// 2: Teleport Players"";" \n "    sleep 2;" \n "    _allPlayers = call BIS_fnc_listPlayers;" \n "    {" \n "      if (vehicle _x != _x) then {" \n "        moveOut _x;" \n "      };" \n "      _x moveInCargo intro_pelican;" \n "    } forEach _allPlayers;" \n "" \n "" \n "    ""// 3: Play recording"";" \n "[[intro_pelican],""intro_in.sqf""] remoteExec [""BIS_fnc_execVM"",0,false];" \n "" \n "" \n "    ""// 4: Fade back in"";" \n "    sleep 2;" \n "    [1, ""BLACK"", 3] remoteExec [""BIS_fnc_fadeEffect""];" \n "    [3, 1] remoteExec [""fadeSound""];" \n "    sleep 3;" \n "    missionNamespace setVariable [" \n "      ""ace_hearing_disableVolumeUpdate""," \n "      false," \n "      true" \n "    ];" \n "  }," \n "  []," \n "  100," \n "  true," \n "  true," \n "  """"," \n "  ""true""," \n "  3" \n "];";
 														name="cic_presenter_tablet";
 														disableSimulation=1;
 													};
@@ -109644,7 +109763,7 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={1351.004,6049.9604,1696.9591};
+												position[]={1351.0042,6049.9604,1696.9587};
 											};
 											side="West";
 											flags=6;
@@ -109677,13 +109796,32 @@ class Mission
 													};
 													class uniform
 													{
-														typeName="TCP_U_B_CBUU_FieldTop_Full_Unzipped_Black";
+														typeName="TCP_U_B_CBUU_TacShirt_Full_Unzipped_Black";
 														isBackpack=0;
 													};
 													class vest
 													{
-														typeName="V_Rangemaster_belt_black";
+														typeName="TCP_V_M43A_Light_1_Black";
 														isBackpack=0;
+														class MagazineCargo
+														{
+															items=1;
+															class Item0
+															{
+																name="MEU_9bang_Mag";
+																count=2;
+																ammoLeft=1;
+															};
+														};
+														class ItemCargo
+														{
+															items=1;
+															class Item0
+															{
+																name="OPTRE_Biofoam";
+																count=3;
+															};
+														};
 													};
 													map="ItemMap";
 													compass="ItemCompass";
@@ -109701,14 +109839,14 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowSprint";
-													expression="[_this, _value] remoteExec ['allowSprint', _this]";
+													property="ENH_disableAI_path";
+													expression="if (_value && local _this) then {[_this, 'PATH'] remoteExec ['disableAI', 0]}";
 													class Value
 													{
 														class data
 														{
 															singleType="BOOL";
-															value=0;
+															value=1;
 														};
 													};
 												};
@@ -109786,7 +109924,7 @@ class Mission
 														class data
 														{
 															singleType="STRING";
-															value="TCP_ONI";
+															value="OPTRE_Insignia_oni";
 														};
 													};
 												};
@@ -109948,14 +110086,14 @@ class Mission
 												};
 												class Attribute14
 												{
-													property="ENH_disableAI_path";
-													expression="if (_value && local _this) then {[_this, 'PATH'] remoteExec ['disableAI', 0]}";
+													property="ENH_allowSprint";
+													expression="[_this, _value] remoteExec ['allowSprint', _this]";
 													class Value
 													{
 														class data
 														{
 															singleType="BOOL";
-															value=1;
+															value=0;
 														};
 													};
 												};
@@ -109967,7 +110105,7 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={1355.4189,6049.9604,1698.416};
+												position[]={1355.4192,6049.9604,1698.4158};
 												angles[]={0,5.3955112,0};
 											};
 											side="West";
@@ -110013,7 +110151,7 @@ class Mission
 													};
 													class uniform
 													{
-														typeName="TCP_U_B_CBUU_TacShirt_Full_Gloves_Bloused_Black";
+														typeName="TCP_U_B_CBUU_TacShirt_Full_Gloves_Bloused_Unzipped_Black";
 														isBackpack=0;
 													};
 													class vest
@@ -110199,7 +110337,7 @@ class Mission
 																	class data
 																	{
 																		singleType="STRING";
-																		value="RELAX_2";
+																		value="RELAX_1";
 																	};
 																};
 																class Item1
@@ -110215,7 +110353,7 @@ class Mission
 																				class data
 																				{
 																					singleType="STRING";
-																					value="Acts_Ambient_Relax_2";
+																					value="Acts_Ambient_Relax_1";
 																				};
 																			};
 																		};
@@ -110334,7 +110472,7 @@ class Mission
 														class data
 														{
 															singleType="STRING";
-															value="TCP_ONI";
+															value="OPTRE_Insignia_oni";
 														};
 													};
 												};
@@ -110472,13 +110610,25 @@ class Mission
 												isPlayer=1;
 												class Inventory
 												{
+													class primaryWeapon
+													{
+														name="TCP_SMG_M7";
+														optics="TCP_optic_M5BSLSV";
+														muzzle="OPTRE_M7_silencer";
+														flashlight="TCP_acc_pointer_lam_M7";
+														firemode="TCP_SMG_M7:FullAuto";
+														class primaryMuzzleMag
+														{
+															name="TCP_48Rnd_5x23_Mag";
+															ammoLeft=48;
+														};
+													};
 													class handgun
 													{
 														name="TCP_hgun_Pistol_M6C2";
 														muzzle="TCP_muzzle_snds_127_01";
 														flashlight="TCP_acc_pointer_lam_M6C2";
-														underBarrel="TCP_bipod_triggerGuard_M6G2_blk";
-														firemode="TCP_hgun_Pistol_M6C2:Single";
+														underBarrel="TCP_bipod_handGuard_M6G2_blk";
 														class primaryMuzzleMag
 														{
 															name="TCP_12Rnd_127x30_52_Mag";
@@ -110496,45 +110646,161 @@ class Mission
 													};
 													class uniform
 													{
-														typeName="TCP_U_B_CBUU_FieldTop_HalfRoll_Unzipped_Black";
+														typeName="WS_Gear_Uniform_M52_ODST";
 														isBackpack=0;
+														class ItemCargo
+														{
+															items=10;
+															class Item0
+															{
+																name="OPTRE_Biofoam";
+																count=10;
+															};
+															class Item1
+															{
+																name="ACE_EntrenchingTool";
+																count=1;
+															};
+															class Item2
+															{
+																name="ACE_Clacker";
+																count=1;
+															};
+															class Item3
+															{
+																name="ACE_Flashlight_XL50";
+																count=1;
+															};
+															class Item4
+															{
+																name="ACE_MapTools";
+																count=1;
+															};
+															class Item5
+															{
+																name="ACE_DefusalKit";
+																count=1;
+															};
+															class Item6
+															{
+																name="MineDetector";
+																count=1;
+															};
+															class Item7
+															{
+																name="ACE_CableTie";
+																count=5;
+															};
+															class Item8
+															{
+																name="ACE_IR_Strobe_Item";
+																count=2;
+															};
+															class Item9
+															{
+																name="tsp_lockpick";
+																count=1;
+															};
+														};
 													};
 													class vest
 													{
-														typeName="V_Rangemaster_belt_black";
+														typeName="WS_M43D_Vest_Kuroda";
 														isBackpack=0;
 														class MagazineCargo
 														{
-															items=1;
+															items=7;
 															class Item0
 															{
 																name="TCP_12Rnd_127x30_52_Mag";
 																count=3;
 																ammoLeft=12;
 															};
+															class Item1
+															{
+																name="TCP_48Rnd_5x23_Mag";
+																count=9;
+																ammoLeft=48;
+															};
+															class Item2
+															{
+																name="TCP_M9I_Frag";
+																count=3;
+																ammoLeft=1;
+															};
+															class Item3
+															{
+																name="TCP_M21_Smoke";
+																count=2;
+																ammoLeft=1;
+															};
+															class Item4
+															{
+																name="tsp_flashbang_m84";
+																count=2;
+																ammoLeft=1;
+															};
+															class Item5
+															{
+																name="ACE_Chemlight_UltraHiOrange";
+																count=2;
+																ammoLeft=1;
+															};
+															class Item6
+															{
+																name="ACE_Chemlight_HiGreen";
+																count=2;
+																ammoLeft=1;
+															};
 														};
 													};
 													class backpack
 													{
-														typeName="TCP_B_ANPRC171_Black";
+														typeName="TCP_B_Assaulter_2_EM39_MLBE_Hardcase_M2_Buttpack_Black_M43D";
 														isBackpack=1;
-														class ItemCargo
+														class MagazineCargo
 														{
-															items=1;
+															items=2;
 															class Item0
 															{
-																name="ACE_EHP";
+																name="tsp_breach_block_mag";
+																count=3;
+																ammoLeft=1;
+															};
+															class Item1
+															{
+																name="tsp_breach_popper_mag";
+																count=4;
+																ammoLeft=1;
+															};
+														};
+														class ItemCargo
+														{
+															items=3;
+															class Item0
+															{
+																name="OPTRE_OQ40_Minibee_Drone_Black_Item";
 																count=1;
+															};
+															class Item1
+															{
+																name="ACE_rope36";
+																count=1;
+															};
+															class Item2
+															{
+																name="ACE_UAVBattery";
+																count=2;
 															};
 														};
 													};
 													map="ItemMap";
 													compass="ItemCompass";
-													watch="ACE_Altimeter";
 													radio="TFAR_anprc152";
-													gps="ItemGPS";
-													goggles="PLP_IH_Glass_Hair01_black";
-													headgear="PLP_RH_Hair_08_black";
+													gps="B_UavTerminal";
+													goggles="TKE_FaceCoverGrey";
+													hmd="WS_Gear_NVG_Implant";
+													headgear="WS_S1_Helmet_Kuroda";
 												};
 											};
 											id=8096;
@@ -110590,7 +110856,7 @@ class Mission
 														class data
 														{
 															singleType="STRING";
-															value="Face08";
+															value="Patrickdixon";
 														};
 													};
 												};
@@ -110629,7 +110895,7 @@ class Mission
 														class data
 														{
 															singleType="STRING";
-															value="E. Kuroda";
+															value="Cam-G087";
 														};
 													};
 												};
@@ -110719,19 +110985,6 @@ class Mission
 												};
 												class Attribute12
 												{
-													property="unitInsignia";
-													expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-													class Value
-													{
-														class data
-														{
-															singleType="STRING";
-															value="TCP_ONI";
-														};
-													};
-												};
-												class Attribute13
-												{
 													property="SR_StaticRadioFrequency";
 													expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 													class Value
@@ -110743,7 +110996,7 @@ class Mission
 														};
 													};
 												};
-												nAttributes=14;
+												nAttributes=13;
 											};
 										};
 									};
@@ -114567,7 +114820,6 @@ class Mission
 		{
 			dataType="Layer";
 			name="2. Ingress";
-			state=1;
 			class Entities
 			{
 				items=6;
@@ -114575,11 +114827,11 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={3340.042,21.938999,6587.749};
-					angle=3.5123353;
+					angle=3.5123346;
 					class Attributes
 					{
-						text="1. 5 klicks out";
-						onActivation="[] spawn {" \n "  [""A Day At The Beach""] call WS_fnc_letterbox;" \n "  0 fadeMusic 1;" \n "" \n "  sleep 0.5;" \n "  'AUDIO: ""5 klicks out. Get ready""' call WS_fnc_LogDebug;" \n "" \n "  sleep 1.5;" \n "  intro_pelican animate [""cargoDoor_1"",1];" \n "  intro_pelican animate [""cargoDoor_2"",1];" \n "};" \n "" \n "" \n "" \n "" \n "" \n "";
+						text="5 klicks out";
+						onActivation="[""A Day At The Beach""] call WS_fnc_letterbox;" \n "0 fadeMusic 1;" \n "" \n "sleep 0.5;" \n "'AUDIO: ""5 klicks out. Get ready""' call WS_fnc_LogDebug;" \n "" \n "sleep 1.5;" \n "intro_pelican animate [""cargoDoor_1"",1];" \n "intro_pelican animate [""cargoDoor_2"",1];" \n "" \n "" \n "" \n "" \n "";
 						sizeA=300;
 						sizeB=200;
 						sizeC=50;
@@ -114643,14 +114895,608 @@ class Mission
 				};
 				class Item2
 				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=2;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={5433.2798,18.656439,11973.322};
+								angles[]={0,3.5123355,0};
+							};
+							side="West";
+							flags=7;
+							class Attributes
+							{
+								name="intro_pilot_2";
+								ignoreByDynSimulGrid=1;
+								class Inventory
+								{
+									class handgun
+									{
+										name="TCP_hgun_Pistol_FlareGun";
+										firemode="TCP_hgun_Pistol_FlareGun:Single";
+										class primaryMuzzleMag
+										{
+											name="TCP_1Rnd_12Gauge_Shell_Signal_Red";
+											ammoLeft=1;
+										};
+									};
+									class binocular
+									{
+										name="OPTRE_Smartfinder";
+										class primaryMuzzleMag
+										{
+											name="Laserbatteries";
+											ammoLeft=1;
+										};
+									};
+									class uniform
+									{
+										typeName="TCP_U_B_CBUU_TacShirt_Full_Gloves_Bloused_Kneepads_Black";
+										isBackpack=0;
+										class ItemCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="FirstAidKit";
+												count=1;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="TCP_V_M43A_Light_Black";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=3;
+											class Item0
+											{
+												name="TCP_M9R_Frag";
+												count=1;
+												ammoLeft=1;
+											};
+											class Item1
+											{
+												name="TCP_M21_Smoke";
+												count=1;
+												ammoLeft=1;
+											};
+											class Item2
+											{
+												name="Chemlight_green";
+												count=2;
+												ammoLeft=1;
+											};
+										};
+									};
+									class backpack
+									{
+										typeName="TCP_B_Rifleman_6_EM39_Buttpack_Black_M43A";
+										isBackpack=1;
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ACE_Altimeter";
+									radio="TFAR_anprc152";
+									gps="ItemGPS";
+									goggles="TCP_G_Neck_Vacseal_Black";
+									hmd="WS_Gear_NVG_Implant";
+									headgear="TCP_H_Helmet_ECH43A_Black_Gold";
+								};
+							};
+							id=11306;
+							type="TCP_B_UNSC_A_T_HeliPilot";
+							atlOffset=0.020595551;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=0;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="ObjectCollision";
+									expression="[_this, 	(			[false,true] select (if 		(_value in [true,false]) 	then 	{parseNumber _value} else {_value # 0}		 ) ) 	] remoteExecCall ['setPhysicsCollisionFlag', 0, _this];";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=1;
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="attachMarker";
+									expression="if (_value isNotEqualTo '') then {[_this, _value] spawn expEden_fnc_markerAttachToObject}";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="";
+										};
+									};
+								};
+								class Attribute3
+								{
+									property="face";
+									expression="_this setface _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="";
+										};
+									};
+								};
+								class Attribute4
+								{
+									property="ENH_doStop";
+									expression="if (!is3DEN && _value) then {doStop _this}";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=1;
+										};
+									};
+								};
+								class Attribute5
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=1;
+										};
+									};
+								};
+								class Attribute6
+								{
+									property="etr_ranks_insigniaFaction";
+									expression="false";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="default_faction";
+										};
+									};
+								};
+								class Attribute7
+								{
+									property="speaker";
+									expression="_this setspeaker _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="Male10ENG";
+										};
+									};
+								};
+								class Attribute8
+								{
+									property="etr_ranks_insigniaIcon";
+									expression="_this setVariable ['etr_ranks_insigniaIcon', _value];";
+									class Value
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="STRING";
+														value="default_faction";
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="STRING";
+														value="default_rank";
+													};
+												};
+											};
+										};
+									};
+								};
+								class Attribute9
+								{
+									property="SR_StaticRadioFrequency";
+									expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=50;
+										};
+									};
+								};
+								class Attribute10
+								{
+									property="enableStamina";
+									expression="_this enablestamina _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=0;
+										};
+									};
+								};
+								class Attribute11
+								{
+									property="ENH_allowSprint";
+									expression="[_this, _value] remoteExec ['allowSprint', _this]";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=0;
+										};
+									};
+								};
+								nAttributes=12;
+							};
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={5433.2798,18.656439,11973.322};
+								angles[]={0,3.5123355,0};
+							};
+							side="West";
+							flags=5;
+							class Attributes
+							{
+								name="intro_pilot_1";
+								ignoreByDynSimulGrid=1;
+								class Inventory
+								{
+									class handgun
+									{
+										name="TCP_hgun_Pistol_FlareGun";
+										firemode="TCP_hgun_Pistol_FlareGun:Single";
+										class primaryMuzzleMag
+										{
+											name="TCP_1Rnd_12Gauge_Shell_Signal_Red";
+											ammoLeft=1;
+										};
+									};
+									class binocular
+									{
+										name="OPTRE_Smartfinder";
+										class primaryMuzzleMag
+										{
+											name="Laserbatteries";
+											ammoLeft=1;
+										};
+									};
+									class uniform
+									{
+										typeName="TCP_U_B_CBUU_TacShirt_Full_Gloves_Bloused_Kneepads_Black";
+										isBackpack=0;
+										class ItemCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="FirstAidKit";
+												count=1;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="TCP_V_M43A_Light_Black";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=3;
+											class Item0
+											{
+												name="TCP_M9R_Frag";
+												count=1;
+												ammoLeft=1;
+											};
+											class Item1
+											{
+												name="TCP_M21_Smoke";
+												count=1;
+												ammoLeft=1;
+											};
+											class Item2
+											{
+												name="Chemlight_green";
+												count=2;
+												ammoLeft=1;
+											};
+										};
+									};
+									class backpack
+									{
+										typeName="TCP_B_Rifleman_6_EM39_Buttpack_Black_M43A";
+										isBackpack=1;
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ACE_Altimeter";
+									radio="TFAR_anprc152";
+									gps="ItemGPS";
+									goggles="TCP_G_Neck_Vacseal_Black";
+									hmd="WS_Gear_NVG_Implant";
+									headgear="TCP_H_Helmet_ECH43A_Black_Gold";
+								};
+							};
+							id=11308;
+							type="TCP_B_UNSC_A_T_HeliPilot";
+							atlOffset=0.020595551;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=0;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="ObjectCollision";
+									expression="[_this, 	(			[false,true] select (if 		(_value in [true,false]) 	then 	{parseNumber _value} else {_value # 0}		 ) ) 	] remoteExecCall ['setPhysicsCollisionFlag', 0, _this];";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=1;
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="attachMarker";
+									expression="if (_value isNotEqualTo '') then {[_this, _value] spawn expEden_fnc_markerAttachToObject}";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="";
+										};
+									};
+								};
+								class Attribute3
+								{
+									property="face";
+									expression="_this setface _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="";
+										};
+									};
+								};
+								class Attribute4
+								{
+									property="ENH_doStop";
+									expression="if (!is3DEN && _value) then {doStop _this}";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=1;
+										};
+									};
+								};
+								class Attribute5
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=1;
+										};
+									};
+								};
+								class Attribute6
+								{
+									property="etr_ranks_insigniaFaction";
+									expression="false";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="default_faction";
+										};
+									};
+								};
+								class Attribute7
+								{
+									property="speaker";
+									expression="_this setspeaker _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="Male10ENG";
+										};
+									};
+								};
+								class Attribute8
+								{
+									property="etr_ranks_insigniaIcon";
+									expression="_this setVariable ['etr_ranks_insigniaIcon', _value];";
+									class Value
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="STRING";
+														value="default_faction";
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="STRING";
+														value="default_rank";
+													};
+												};
+											};
+										};
+									};
+								};
+								class Attribute9
+								{
+									property="SR_StaticRadioFrequency";
+									expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=50;
+										};
+									};
+								};
+								class Attribute10
+								{
+									property="enableStamina";
+									expression="_this enablestamina _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=0;
+										};
+									};
+								};
+								class Attribute11
+								{
+									property="ENH_allowSprint";
+									expression="[_this, _value] remoteExec ['allowSprint', _this]";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=0;
+										};
+									};
+								};
+								nAttributes=12;
+							};
+						};
+					};
+					class Attributes
+					{
+					};
+					class CrewLinks
+					{
+						class LinkIDProvider
+						{
+							nextID=2;
+						};
+						class Links
+						{
+							items=2;
+							class Item0
+							{
+								linkID=0;
+								item0=11306;
+								item1=11331;
+								class CustomData
+								{
+									role=1;
+								};
+							};
+							class Item1
+							{
+								linkID=1;
+								item0=11308;
+								item1=11331;
+								class CustomData
+								{
+									role=2;
+									turretPath[]={0};
+								};
+							};
+						};
+					};
+					id=11304;
+					atlOffset=0.020595551;
+				};
+				class Item3
+				{
 					dataType="Object";
 					class PositionInfo
 					{
 						position[]={5433.2798,22.804773,11973.271};
 						angles[]={0,3.5123355,0};
 					};
-					side="Empty";
-					flags=4;
+					side="West";
+					flags=6;
 					class Attributes
 					{
 						name="intro_pelican";
@@ -114854,14 +115700,14 @@ class Mission
 						nAttributes=10;
 					};
 				};
-				class Item3
+				class Item4
 				{
 					dataType="Trigger";
-					position[]={2253.0481,21.938999,3791.3931};
+					position[]={2253.0479,21.938999,3791.3931};
 					angle=3.5123346;
 					class Attributes
 					{
-						text="2. 2 klicks out";
+						text="2 klicks out";
 						onActivation="'AUDIO: ""2 klicks out.""' call WS_fnc_LogDebug;";
 						sizeA=300;
 						sizeB=200;
@@ -114873,16 +115719,15 @@ class Mission
 					type="EmptyDetectorArea10x10";
 					atlOffset=31.858999;
 				};
-				class Item4
+				class Item5
 				{
 					dataType="Trigger";
-					position[]={1540.589,-5.0717754,1958.551};
+					position[]={1540.589,1.189415,1958.551};
 					angle=3.5123353;
 					class Attributes
 					{
-						name="pelicanHold";
-						text="3. go go go (transition to hold)";
-						onActivation="[] spawn {" \n "  'AUDIO: ""Go, go, go""' call WS_fnc_LogDebug;" \n "" \n "  intro_pelican setVariable [""RNL_PLAYBACK_DONE"", true, true];" \n "" \n "  _driver = (((fullCrew [intro_pelican, ""driver""]) # 0) # 0);" \n "  _gunner = (((fullCrew [intro_pelican, ""gunner""]) # 0) # 0);" \n "" \n "  intro_pelican deleteVehicleCrew _driver;" \n "  intro_pelican deleteVehicleCrew _gunner;" \n "" \n "  [[intro_pelican],""intro_hold.sqf""]" \n "    remoteExec [""BIS_fnc_execVM"",0,false];" \n "" \n "  sleep 2;" \n "  missionNamespace setVariable [""WS_pelicanCanExit"", true, true];" \n "};" \n "";
+						text="go go go (transition to hold)";
+						onActivation="'AUDIO: ""Go, go, go""' call WS_fnc_LogDebug;" \n "" \n "[[intro_pelican],""intro_hold.sqf""] remoteExec [""BIS_fnc_execVM"",0,false];";
 						sizeA=61.042999;
 						sizeB=50.988998;
 						sizeC=10;
@@ -114892,31 +115737,11 @@ class Mission
 					};
 					id=11558;
 					type="EmptyDetectorArea10x10";
-					atlOffset=-2.8279998;
-				};
-				class Item5
-				{
-					dataType="Trigger";
-					position[]={1540.589,-5.0717754,1958.551};
-					angle=3.5123353;
-					class Attributes
-					{
-						text="4. I'm out (pelican exit)";
-						condition="(missionNamespace getVariable [""WS_pelicanCanExit"", false]) && {" \n "  (" \n "    (count (fullCrew [intro_pelican, ""cargo""])) +" \n "    (count (fullCrew [intro_pelican, ""turret""]))" \n "  ) == 0 }";
-						onActivation="[] spawn {" \n "  'AUDIO: ""Alright, I''m out. Good luck troopers.""' call WS_fnc_LogDebug;" \n "" \n "  intro_pelican setVariable [""RNL_PLAYBACK_DONE"", true, true];" \n "" \n "  _driver = (((fullCrew [intro_pelican, ""driver""]) # 0) # 0);" \n "  _gunner = (((fullCrew [intro_pelican, ""gunner""]) # 0) # 0);" \n "" \n "  intro_pelican deleteVehicleCrew _driver;" \n "  intro_pelican deleteVehicleCrew _gunner;" \n "" \n "  [[intro_pelican],""intro_out.sqf""]" \n "    remoteExec [""BIS_fnc_execVM"",0,false];" \n "" \n "  sleep 4;" \n "  intro_pelican animate [""cargoDoor_1"", 0];" \n "  intro_pelican animate [""cargoDoor_2"", 0];" \n "" \n "  sleep 2;" \n "  intro_pelican setVariable [""RNL_wipeOut"", true, true];" \n "};" \n "" \n "" \n "" \n "";
-						sizeA=61.042999;
-						sizeB=50.988998;
-						sizeC=10;
-						isRectangle=1;
-						isServerOnly=1;
-					};
-					id=11768;
-					type="EmptyDetectorArea10x10";
-					atlOffset=-2.8279998;
+					atlOffset=3.4331906;
 				};
 			};
 			id=11509;
-			atlOffset=11.277918;
+			atlOffset=20.750708;
 		};
 		class Item2
 		{
@@ -115158,7 +115983,7 @@ class Mission
 												class data
 												{
 													singleType="SCALAR";
-													value=0.86366284;
+													value=0.8636626;
 												};
 											};
 										};
@@ -120526,14 +121351,14 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="SR_StaticRadioFrequency";
-									expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+									property="ENH_doStop";
+									expression="if (!is3DEN && _value) then {doStop _this}";
 									class Value
 									{
 										class data
 										{
-											singleType="SCALAR";
-											value=50;
+											singleType="BOOL";
+											value=1;
 										};
 									};
 								};
@@ -120552,14 +121377,14 @@ class Mission
 								};
 								class Attribute2
 								{
-									property="ENH_doStop";
-									expression="if (!is3DEN && _value) then {doStop _this}";
+									property="SR_StaticRadioFrequency";
+									expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 									class Value
 									{
 										class data
 										{
-											singleType="BOOL";
-											value=1;
+											singleType="SCALAR";
+											value=50;
 										};
 									};
 								};
@@ -120587,14 +121412,14 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="SR_StaticRadioFrequency";
-									expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+									property="ENH_doStop";
+									expression="if (!is3DEN && _value) then {doStop _this}";
 									class Value
 									{
 										class data
 										{
-											singleType="SCALAR";
-											value=50;
+											singleType="BOOL";
+											value=1;
 										};
 									};
 								};
@@ -120613,14 +121438,14 @@ class Mission
 								};
 								class Attribute2
 								{
-									property="ENH_doStop";
-									expression="if (!is3DEN && _value) then {doStop _this}";
+									property="SR_StaticRadioFrequency";
+									expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 									class Value
 									{
 										class data
 										{
-											singleType="BOOL";
-											value=1;
+											singleType="SCALAR";
+											value=50;
 										};
 									};
 								};
@@ -120656,14 +121481,14 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="SR_StaticRadioFrequency";
-									expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+									property="ENH_doStop";
+									expression="if (!is3DEN && _value) then {doStop _this}";
 									class Value
 									{
 										class data
 										{
-											singleType="SCALAR";
-											value=50;
+											singleType="BOOL";
+											value=1;
 										};
 									};
 								};
@@ -120682,14 +121507,14 @@ class Mission
 								};
 								class Attribute2
 								{
-									property="ENH_doStop";
-									expression="if (!is3DEN && _value) then {doStop _this}";
+									property="SR_StaticRadioFrequency";
+									expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 									class Value
 									{
 										class data
 										{
-											singleType="BOOL";
-											value=1;
+											singleType="SCALAR";
+											value=50;
 										};
 									};
 								};
@@ -125392,14 +126217,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -125418,14 +126243,14 @@ class Mission
 										};
 										class Attribute4
 										{
-											property="hideObject";
-											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -125515,14 +126340,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -125541,14 +126366,14 @@ class Mission
 										};
 										class Attribute4
 										{
-											property="hideObject";
-											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -125637,14 +126462,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -125663,14 +126488,14 @@ class Mission
 										};
 										class Attribute4
 										{
-											property="hideObject";
-											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -125770,14 +126595,14 @@ class Mission
 										};
 										class Attribute2
 										{
-											property="SR_StaticRadioFrequency";
-											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
-													value=50;
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -125796,14 +126621,14 @@ class Mission
 										};
 										class Attribute4
 										{
-											property="hideObject";
-											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											property="SR_StaticRadioFrequency";
+											expression="if !([_this] call SR_fnc_isStaticRadioObject) exitWith {}; private _srValue = _value; if !(_srValue isEqualType 0) then {_srValue = parseNumber str _srValue;}; if (_srValue > 0) then {_this setVariable ['SR_frequency', _srValue, true];} else {_this setVariable ['SR_frequency', nil, true];}; _this setVariable ['SR_channel', 1, true]; _this setVariable ['SR_frequencies', nil, true];";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="SCALAR";
+													value=50;
 												};
 											};
 										};
@@ -125896,29 +126721,15 @@ class Mission
 		};
 		class Item7
 		{
-			dataType="Trigger";
-			position[]={1595.277,1.1154164,1891.09};
-			class Attributes
-			{
-				condition="true";
-				onActivation="[] spawn {" \n "  while { true } do " \n "  { " \n "    hintSilent (format [""%1"", (fullCrew [intro_pelican, """"])]);" \n "  };" \n "};";
-				sizeA=0;
-				sizeB=0;
-			};
-			id=11807;
-			type="EmptyDetector";
-		};
-		class Item8
-		{
 			dataType="Group";
 			side="East";
 			class Attributes
 			{
 			};
-			id=11865;
+			id=11578;
 			atlOffset=4;
 		};
-		class Item9
+		class Item8
 		{
 			dataType="Group";
 			side="East";
@@ -125938,7 +126749,7 @@ class Mission
 					{
 						init="this setVariable ['fipo_ind', true]; deleteVehicle this;";
 					};
-					id=11885;
+					id=11598;
 					type="O_Soldier_VR_F";
 				};
 				class Item1
@@ -125954,7 +126765,7 @@ class Mission
 					{
 						init="this setVariable ['fipo_ind', true]; deleteVehicle this;";
 					};
-					id=11886;
+					id=11599;
 					type="O_Soldier_VR_F";
 				};
 				class Item2
@@ -125970,7 +126781,7 @@ class Mission
 					{
 						init="this setVariable ['fipo_ind', true]; deleteVehicle this;";
 					};
-					id=11887;
+					id=11600;
 					type="O_Soldier_VR_F";
 				};
 				class Item3
@@ -125986,7 +126797,7 @@ class Mission
 					{
 						init="this setVariable ['fipo_ind', true]; deleteVehicle this;";
 					};
-					id=11888;
+					id=11601;
 					type="O_Soldier_VR_F";
 				};
 				class Item4
@@ -126002,7 +126813,7 @@ class Mission
 					{
 						init="this setVariable ['fipo_ind', true]; deleteVehicle this;";
 					};
-					id=11889;
+					id=11602;
 					type="O_Soldier_VR_F";
 				};
 				class Item5
@@ -126018,7 +126829,7 @@ class Mission
 					{
 						init="this setVariable ['fipo_ind', true]; deleteVehicle this;";
 					};
-					id=11890;
+					id=11603;
 					type="O_Soldier_VR_F";
 				};
 				class Item6
@@ -126034,7 +126845,7 @@ class Mission
 					{
 						init="this setVariable ['fipo_ind', true]; deleteVehicle this;";
 					};
-					id=11891;
+					id=11604;
 					type="O_Soldier_VR_F";
 				};
 				class Item7
@@ -126050,7 +126861,7 @@ class Mission
 					{
 						init="this setVariable ['fipo_ind', true]; deleteVehicle this;";
 					};
-					id=11892;
+					id=11605;
 					type="O_Soldier_VR_F";
 				};
 				class Item8
@@ -126066,7 +126877,7 @@ class Mission
 					{
 						init="this setVariable ['fipo_ind', true]; deleteVehicle this;";
 					};
-					id=11893;
+					id=11606;
 					type="O_Soldier_VR_F";
 				};
 				class Item9
@@ -126082,7 +126893,7 @@ class Mission
 					{
 						init="this setVariable ['fipo_ind', true]; deleteVehicle this;";
 					};
-					id=11894;
+					id=11607;
 					type="O_Soldier_VR_F";
 				};
 				class Item10
@@ -126098,7 +126909,7 @@ class Mission
 					{
 						init="this setVariable ['fipo_ind', true]; deleteVehicle this;";
 					};
-					id=11895;
+					id=11608;
 					type="O_Soldier_VR_F";
 				};
 				class Item11
@@ -126114,7 +126925,7 @@ class Mission
 					{
 						init="this setVariable ['fipo_ind', true]; deleteVehicle this;";
 					};
-					id=11896;
+					id=11609;
 					type="O_Soldier_VR_F";
 				};
 				class Item12
@@ -126130,7 +126941,7 @@ class Mission
 					{
 						init="this setVariable ['fipo_ind', true]; deleteVehicle this;";
 					};
-					id=11897;
+					id=11610;
 					type="O_Soldier_VR_F";
 				};
 				class Item13
@@ -126146,7 +126957,7 @@ class Mission
 					{
 						init="this setVariable ['fipo_ind', true]; deleteVehicle this;";
 					};
-					id=11898;
+					id=11611;
 					type="O_Soldier_VR_F";
 				};
 				class Item14
@@ -126162,7 +126973,7 @@ class Mission
 					{
 						init="this setVariable ['fipo_ind', true]; deleteVehicle this;";
 					};
-					id=11899;
+					id=11612;
 					type="O_Soldier_VR_F";
 				};
 				class Item15
@@ -126178,7 +126989,7 @@ class Mission
 					{
 						init="this setVariable ['fipo_ind', true]; deleteVehicle this;";
 					};
-					id=11900;
+					id=11613;
 					type="O_Soldier_VR_F";
 				};
 				class Item16
@@ -126194,7 +127005,7 @@ class Mission
 					{
 						init="this setVariable ['fipo_ind', true]; deleteVehicle this;";
 					};
-					id=11901;
+					id=11614;
 					type="O_Soldier_VR_F";
 				};
 				class Item17
@@ -126210,14 +127021,14 @@ class Mission
 					{
 						init="this setVariable ['fipo_ind', true]; deleteVehicle this;";
 					};
-					id=11902;
+					id=11615;
 					type="O_Soldier_VR_F";
 				};
 			};
 			class Attributes
 			{
 			};
-			id=11884;
+			id=11597;
 		};
 	};
 	class Connections
