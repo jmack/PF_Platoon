@@ -38,7 +38,7 @@ class CfgWeapons
 
     class ItemInfo: CBA_MiscItem_ItemInfo
     {
-      mass = 3;
+      mass = 7;
     };
   };
 };
