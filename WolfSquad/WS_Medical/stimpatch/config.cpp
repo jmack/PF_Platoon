@@ -73,7 +73,7 @@ class ACE_Medical_Treatment_Actions
     displayName = "Apply Stim-Patch";
     displayNameProgress = "Applying Stim-Patch...";
     items[] = { "WS_Medical_Stimpatch" };
-    callbackSuccess = "ace_medical_treatment_fnc_medication";
+    callbackSuccess = "WS_fnc_Medication";
 
     treatmentTime = 10;
     treatmentTimeTrained = 3;

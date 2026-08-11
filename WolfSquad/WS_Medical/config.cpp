@@ -29,6 +29,7 @@ class CfgFunctions
       class medicalBandageAndPain { };
       class medicalPain { };
       class medicalPainLocal { };
+      class medication { };
     };
   };
 };
