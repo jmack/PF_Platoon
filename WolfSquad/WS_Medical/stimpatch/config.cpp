@@ -4,9 +4,6 @@ class CfgPatches
   {
     addonRootClass = "WS_Medical";
 
-    author = "wlan0";
-    dlc = "WS";
-
     units[] = { };
     weapons[] =
     {
@@ -16,7 +13,7 @@ class CfgPatches
     requiredVersion = 1;
     requiredAddons[] =
     {
-      "OPTRE_ACE_Compat_Medical",
+      "WS_Medical",
     };
   }
 };
@@ -30,9 +27,8 @@ class CfgWeapons
   {
     scope = 2;
     author = "wlan0";
-    dlc = "WS";
 
-    displayName = "[WS] Stim-patch";
+    displayName = "Stim-patch";
     descriptionShort = "Short term stimulant used to wake a patient from unconsciousness";
     descriptionUse = "";
 
@@ -77,8 +73,9 @@ class ACE_Medical_Treatment_Actions
     displayName = "Apply Stim-Patch";
     displayNameProgress = "Applying Stim-Patch...";
     items[] = { "WS_Medical_Stimpatch" };
-
-    treatmentTime = "if ([_medic] call ace_medical_treatment_fnc_isMedic) then {3} else {10}";
     callbackSuccess = "ace_medical_treatment_fnc_medication";
+
+    treatmentTime = 10;
+    treatmentTimeTrained = 3;
   };
 };

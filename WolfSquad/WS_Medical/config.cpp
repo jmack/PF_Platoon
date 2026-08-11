@@ -10,7 +10,10 @@ class CfgPatches
     requiredVersion = 1;
     requiredAddons[] =
     {
-      "OPTRE_Core", // Medigel, Biofoam
+      "ace_medical",
+      "ace_medical_treatment",
+      "OPTRE_Core",
+      "OPTRE_ACE_Compat_Medical",
     };
     skipWhenMissingDependencies = 1;
   };
@@ -24,6 +27,7 @@ class CfgFunctions
     {
       file = "WS_Medical\_functions";
       class medicalBandageAndPain { };
+      class medicalPain { };
       class medicalPainLocal { };
     };
   };

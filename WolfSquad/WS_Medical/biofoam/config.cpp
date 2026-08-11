@@ -4,9 +4,6 @@ class CfgPatches
   {
     addonRootClass = "WS_Medical";
 
-    author = "wlan0";
-    dlc = "WS";
-
     units[] = { };
     weapons[] =
     {
@@ -14,7 +11,10 @@ class CfgPatches
     };
 
     requiredVersion = 1;
-    requiredAddons[] = { };
+    requiredAddons[] =
+    {
+      "WS_Medical",
+    };
   }
 };
 
@@ -27,10 +27,9 @@ class CfgWeapons
   {
     scope = 2;
     author = "wlan0";
-    dlc = "WS";
 
-    displayName = "[WS] Biofoam";
-    descriptionShort = "Self-sealing coagulant foam to stop bleeding and haemorrhaging";
+    displayName = "Biofoam";
+    descriptionShort = "Self-sealing coagulant foam to stop large scale bleeding and haemorrhaging";
     descriptionUse = "";
 
     picture = "\WS_Medical\_icons\biofoam.paa";
@@ -50,166 +49,138 @@ class ACE_Medical_Treatment
     class ElasticBandage;
     class WS_Medical_Biofoam: ElasticBandage
     {
-      // Abrasion
-      class Abrasion
+      class Base
       {
-        effectiveness = 2;
+        effectiveness = 0;
         reopeningChance = 0;
         reopeningMinDelay = 0;
         reopeningMaxDelay = 0;
       };
-      class AbrasionMinor: Abrasion { };
-      class AbrasionMedium: Abrasion
+
+      // Abrasion
+      class AbrasionMinor: Base
       {
-        effectiveness = 1.5;
+        effectiveness = 0;
       };
-      class AbrasionLarge: Abrasion
+      class AbrasionMedium: AbrasionMinor
+      {
+        effectiveness = 0;
+      };
+      class AbrasionLarge: AbrasionMinor
       {
         effectiveness = 1;
       };
 
       // Avulsion
-      class Avulsions
+      class AvulsionMinor: Base
       {
-        effectiveness = 5;
-        reopeningChance = 0;
-        reopeningMinDelay = 0;
-        reopeningMaxDelay = 0;
+        effectiveness = 3;
       };
-      class AvulsionMinor: Avulsions { };
-      class AvulsionMedium: Avulsions
+      class AvulsionMedium: AvulsionMinor
       {
         effectiveness = 4;
       };
-      class AvulsionLarge: Avulsions
+      class AvulsionLarge: AvulsionMinor
       {
-        effectiveness = 3;
+        effectiveness = 5;
       };
 
       // Contusion
-      class Contusions
+      class ContusionMinor: Base
       {
-        effectiveness = 2;
-        reopeningChance = 0;
-        reopeningMinDelay = 0;
-        reopeningMaxDelay = 0;
+        effectiveness = 0;
       };
-      class ContusionMinor: Contusions { };
-      class ContusionMedium: Contusions
+      class ContusionMedium: ContusionMinor
       {
-        effectiveness = 1.5;
+        effectiveness = 0;
       };
-      class ContusionLarge: Contusions
+      class ContusionLarge: ContusionMinor
       {
-        effectiveness = 1;
+        effectiveness = 0;
       };
 
       // Crush
-      class Crushes
+      class CrushMinor: Base
       {
-        effectiveness = 2;
-        reopeningChance = 0;
-        reopeningMinDelay = 0;
-        reopeningMaxDelay = 0;
+        effectiveness = 0;
       };
-      class CrushMinor: Crushes { };
-      class CrushMedium: Crushes
+      class CrushMedium: CrushMinor
       {
-        effectiveness = 1.5;
+        effectiveness = 0;
       };
-      class CrushLarge: Crushes
+      class CrushLarge: CrushMinor
       {
-        effectiveness = 1;
+        effectiveness = 0;
       };
 
       // Cut
-      class Cuts
+      class CutMinor: Base
       {
-        effectiveness = 3;
-        reopeningChance = 0;
-        reopeningMinDelay = 0;
-        reopeningMaxDelay = 0;
+        effectiveness = 0.5;
       };
-      class CutMinor: Cuts { };
-      class CutMedium: Cuts
+      class CutMedium: CutMinor
       {
         effectiveness = 2;
       };
-      class CutLarge: Cuts
+      class CutLarge: CutMinor
       {
-        effectiveness = 1;
+        effectiveness = 4;
       };
 
       // Laceration
-      class Lacerations
+      class LacerationMinor: Base
       {
-        effectiveness = 3;
-        reopeningChance = 0;
-        reopeningMinDelay = 0;
-        reopeningMaxDelay = 0;
+        effectiveness = 0.2;
       };
-      class LacerationMinor: Lacerations { };
-      class LacerationMedium: Lacerations
-      {
-        effectiveness = 2.5;
-      };
-      class LacerationLarge: Lacerations
+      class LacerationMedium: LacerationMinor
       {
         effectiveness = 2;
+      };
+      class LacerationLarge: LacerationMinor
+      {
+        effectiveness = 4;
       };
 
       // Velocity Wound
-      class VelocityWounds
+      class VelocityWoundMinor: Base
+      {
+        effectiveness = 2;
+      };
+      class VelocityWoundMedium: VelocityWoundMinor
+      {
+        effectiveness = 3.5;
+      };
+      class VelocityWoundLarge: VelocityWoundMinor
       {
         effectiveness = 5;
-        reopeningChance = 0;
-        reopeningMinDelay = 0;
-        reopeningMaxDelay = 0;
-      };
-      class VelocityWoundMinor: VelocityWounds { };
-      class VelocityWoundMedium: VelocityWounds
-      {
-        effectiveness = 4;
-      };
-      class VelocityWoundLarge: VelocityWounds
-      {
-        effectiveness = 3;
       };
 
       // Plasma
-      class Plasma
+      class PlasmaMinor: Base
       {
         effectiveness = 2;
-        reopeningChance = 0;
-        reopeningMinDelay = 0;
-        reopeningMaxDelay = 0;
       };
-      class PlasmaMinor: Plasma { };
-      class PlasmaMedium: Plasma
-      {
-        effectiveness = 1.5;
-      };
-      class plasmaLarge: Plasma
+      class PlasmaMedium: PlasmaMinor
       {
         effectiveness = 1;
       };
+      class plasmaLarge: PlasmaMinor
+      {
+        effectiveness = 0.25;
+      };
 
       // Puncture Wound
-      class PunctureWounds
+      class PunctureWoundMinor: Base
       {
-        effectiveness = 5;
-        reopeningChance = 0;
-        reopeningMinDelay = 0;
-        reopeningMaxDelay = 0;
+        effectiveness = 3;
       };
-      class PunctureWoundMinor: PunctureWounds { };
-      class PunctureWoundMedium: PunctureWounds
+      class PunctureWoundMedium: PunctureWoundMinor
       {
         effectiveness = 4;
       };
-      class PunctureWoundLarge: PunctureWounds
+      class PunctureWoundLarge: PunctureWoundMinor
       {
-        effectiveness = 3;
+        effectiveness = 5;
       };
     };
   }
@@ -225,8 +196,10 @@ class ACE_Medical_Treatment_Actions
     displayNameProgress = "Injecting Biofoam...";
     items[] = { "WS_Medical_Biofoam" };
     callbackSuccess = "WS_fnc_MedicalBandageAndPain";
-
-    treatmentTime = "if ([_medic] call ace_medical_treatment_fnc_isMedic) then { 5 } else { 10 }";
+    
+    treatmentTime = 10;
+    treatmentTimeTrained = 5;
+    
     litter[] = { { }, { "ACE_MedicalLitter_Biofoam" } };
   };
 };

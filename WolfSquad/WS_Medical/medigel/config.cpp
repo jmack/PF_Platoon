@@ -4,9 +4,6 @@ class CfgPatches
   {
     addonRootClass = "WS_Medical";
 
-    author = "wlan0";
-    dlc = "WS";
-
     units[] = { };
     weapons[] =
     {
@@ -14,7 +11,10 @@ class CfgPatches
     };
 
     requiredVersion = 1;
-    requiredAddons[] = { };
+    requiredAddons[] =
+    {
+      "WS_Medical",
+    };
   }
 };
 
@@ -27,9 +27,8 @@ class CfgWeapons
   {
     scope = 2;
     author = "wlan0";
-    dlc = "WS";
 
-    displayName = "[WS] Medigel";
+    displayName = "Medigel";
     descriptionShort = "Topical healing agent that can treat a variety of minor wounds from blunt trauma to plasma burns.";
     descriptionUse = "";
 
@@ -50,164 +49,136 @@ class ACE_Medical_Treatment
     class ElasticBandage;
     class WS_Medical_Medigel: ElasticBandage
     {
-      // Abrasion
-      class Abrasion
+      class Base
       {
-        effectiveness = 5;
+        effectiveness = 0;
         reopeningChance = 0;
         reopeningMinDelay = 0;
         reopeningMaxDelay = 0;
       };
-      class AbrasionMinor: Abrasion { };
-      class AbrasionMedium: Abrasion
+
+      // Abrasion
+      class AbrasionMinor: Base
+      {
+        effectiveness = 5;
+      };
+      class AbrasionMedium: AbrasionMinor
       {
         effectiveness = 4;
       };
-      class AbrasionLarge: Abrasion
+      class AbrasionLarge: AbrasionMinor
       {
         effectiveness = 3;
       };
 
       // Avulsion
-      class Avulsions
+      class AvulsionMinor: Base
       {
         effectiveness = 2;
-        reopeningChance = 0;
-        reopeningMinDelay = 0;
-        reopeningMaxDelay = 0;
       };
-      class AvulsionMinor: Avulsions { };
-      class AvulsionMedium: Avulsions
-      {
-        effectiveness = 1.5;
-      };
-      class AvulsionLarge: Avulsions
+      class AvulsionMedium: AvulsionMinor
       {
         effectiveness = 1;
       };
+      class AvulsionLarge: AvulsionMinor
+      {
+        effectiveness = 0;
+      };
 
       // Contusion
-      class Contusions
+      class ContusionMinor: Base
       {
         effectiveness = 5;
-        reopeningChance = 0;
-        reopeningMinDelay = 0;
-        reopeningMaxDelay = 0;
       };
-      class ContusionMinor: Contusions { };
-      class ContusionMedium: Contusions
+      class ContusionMedium: ContusionMinor
       {
         effectiveness = 4;
       };
-      class ContusionLarge: Contusions
+      class ContusionLarge: ContusionMinor
       {
         effectiveness = 3;
       };
 
       // Crush
-      class Crushes
+      class CrushMinor: Base
+      {
+        effectiveness = 5;
+      };
+      class CrushMedium: CrushMinor
       {
         effectiveness = 4;
-        reopeningChance = 0;
-        reopeningMinDelay = 0;
-        reopeningMaxDelay = 0;
       };
-      class CrushMinor: Crushes { };
-      class CrushMedium: Crushes
+      class CrushLarge: CrushMinor
       {
         effectiveness = 3;
-      };
-      class CrushLarge: Crushes
-      {
-        effectiveness = 2;
       };
 
       // Cut
-      class Cuts
+      class CutMinor: Base
       {
         effectiveness = 4;
-        reopeningChance = 0;
-        reopeningMinDelay = 0;
-        reopeningMaxDelay = 0;
       };
-      class CutMinor: Cuts { };
-      class CutMedium: Cuts
+      class CutMedium: CutMinor
+      {
+        effectiveness = 2;
+      };
+      class CutLarge: CutMinor
+      {
+        effectiveness = 0.5;
+      };
+
+      // Laceration
+      class LacerationMinor: Base
+      {
+        effectiveness = 4;
+      };
+      class LacerationMedium: LacerationMinor
+      {
+        effectiveness = 2;
+      };
+      class LacerationLarge: LacerationMinor
+      {
+        effectiveness = 0.5;
+      };
+
+      // Velocity Wound
+      class VelocityWoundMinor: Base
       {
         effectiveness = 3;
       };
-      class CutLarge: Cuts
+      class VelocityWoundMedium: VelocityWoundMinor
+      {
+        effectiveness = 1;
+      };
+      class VelocityWoundLarge: VelocityWoundMinor
+      {
+        effectiveness = 0;
+      };
+
+      // Plasma
+      class PlasmaMinor: Base
+      {
+        effectiveness = 4;
+      };
+      class PlasmaMedium: PlasmaMinor
+      {
+        effectiveness = 3;
+      };
+      class plasmaLarge: PlasmaMinor
       {
         effectiveness = 2;
       };
 
-      // Laceration
-      class Lacerations
-      {
-        effectiveness = 4;
-        reopeningChance = 0;
-        reopeningMinDelay = 0;
-        reopeningMaxDelay = 0;
-      };
-      class LacerationMinor: Lacerations { };
-      class LacerationMedium: Lacerations
-      {
-        effectiveness = 3;
-      };
-      class LacerationLarge: Lacerations
-      {
-        effectiveness = 2.75;
-      };
-
-      // Velocity Wound
-      class VelocityWounds
-      {
-        effectiveness = 3;
-        reopeningChance = 0;
-        reopeningMinDelay = 0;
-        reopeningMaxDelay = 0;
-      };
-      class VelocityWoundMinor: VelocityWounds { };
-      class VelocityWoundMedium: VelocityWounds
-      {
-        effectiveness = 1;
-      };
-      class VelocityWoundLarge: VelocityWounds
-      {
-        effectiveness = 0.25;
-      };
-
-      // Plasma
-      class Plasma
-      {
-        effectiveness = 5;
-        reopeningChance = 0;
-        reopeningMinDelay = 0;
-        reopeningMaxDelay = 0;
-      };
-      class PlasmaMinor: Plasma { };
-      class PlasmaMedium: Plasma
-      {
-        effectiveness = 4;
-      };
-      class plasmaLarge: Plasma
-      {
-        effectiveness = 3;
-      };
-
       // Puncture Wound
-      class PunctureWounds
+      class PunctureWoundMinor: Base
       {
         effectiveness = 3;
-        reopeningChance = 0;
-        reopeningMinDelay = 0;
-        reopeningMaxDelay = 0;
       };
-      class PunctureWoundMinor: PunctureWounds { };
-      class PunctureWoundMedium: PunctureWounds
+      class PunctureWoundMedium: PunctureWoundMinor
       {
         effectiveness = 1;
       };
-      class PunctureWoundLarge: PunctureWounds
+      class PunctureWoundLarge: PunctureWoundMinor
       {
         effectiveness = 0.25;
       };
@@ -226,7 +197,9 @@ class ACE_Medical_Treatment_Actions
     items[] = { "WS_Medical_Medigel" };
     callbackSuccess = "WS_fnc_MedicalBandageAndPain";
 
-    treatmentTime = "if ([_medic] call ace_medical_treatment_fnc_isMedic) then { 8 } else { 15 }";
+    treatmentTime = 15; 
+    treatmentTimeTrained = 5;
+
     litter[] = { { }, { "ACE_MedicalLitter_Medigel" } };
   };
 };

@@ -4,9 +4,6 @@ class CfgPatches
   {
     addonRootClass = "WS_Medical";
 
-    author = "wlan0";
-    dlc = "WS";
-
     units[] = { };
     weapons[] =
     {
@@ -16,7 +13,7 @@ class CfgPatches
     requiredVersion = 1;
     requiredAddons[] =
     {
-      "OPTRE_ACE_Compat_Medical",
+      "WS_Medical",
     };
   }
 };
@@ -30,9 +27,8 @@ class CfgWeapons
   {
     scope = 2;
     author = "wlan0";
-    dlc = "WS";
 
-    displayName = "[WS] Morphine Autoinjector";
+    displayName = "Morphine Autoinjector";
     descriptionShort = "A venerable analgesic used to greatly reduce pain from injuries";
     descriptionUse = "";
 
@@ -52,7 +48,7 @@ class ACE_Medical_Treatment
   {
     class WS_Medical_Morphine
     {
-      painReduce = 0.75;
+      painReduce = 0.7;
 
       hrIncreaseLow[] = { 0, 0 };
       hrIncreaseNormal[] = { 0, 0 };
@@ -60,7 +56,8 @@ class ACE_Medical_Treatment
 
       timeInSystem = 450;
       timeTillMaxEffect = 30;
-      maxDose = 999;
+      maxDose = -1;
+      dose = 0;
       viscosityChange = 0;
       onOverdose = "";
     };
@@ -76,8 +73,9 @@ class ACE_Medical_Treatment_Actions
     displayName = "Inject Morphine";
     displayNameProgress = "Injecting Morphine...";
     items[] = { "WS_Medical_Morphine" };
+    callbackSuccess = "WS_fnc_medicalPain";
 
-    treatmentTime = "if ([_medic] call ace_medical_treatment_fnc_isMedic) then {3} else {10}";
-    callbackSuccess = "ace_medical_treatment_fnc_medication";
+    treatmentTime = 10;
+    treatmentTimeTrained = 3;
   };
 };
