@@ -1,0 +1,10 @@
+name          = "Butler Brigade Quartermaster";
+author        = "wlan0";
+tooltipOwned  = "Butler Brigade Quartermaster";
+overview      = "Butler Brigade Quartermaster";
+logo          = "files\dlclogo.paa";
+logoOver      = "files\dlclogo.paa";
+logoSmall     = "files\dlclogo.paa";
+picture       = "files\dlclogo.paa";
+hideName      = 0;
+hidePicture   = 0;
