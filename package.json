@@ -1,14 +1,14 @@
 {
   "type": "module",
   "scripts": {
-    "wolf:build": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./build.ps1 ./WolfSquad/",
+    "wolf:build": "node .\\build\\build.ts --dir=WolfSquad",
     "wolf:build:release": "npm run wolf:generate & npm run wolf:build",
     "wolf:generate": "npx ts-node .\\WolfSquad\\misc\\scripts\\generator-factory.ts",
     "wolf:generate:oniuniform": "npx ts-node .\\WolfSquad\\misc\\scripts\\generator-factory.ts onicrew",
     "wolf:generate:modlist": "npx ts-node .\\WolfSquad\\misc\\scripts\\generator-factory.ts modlist",
     "wolf:generate:arsenal": "npx ts-node .\\WolfSquad\\misc\\arsenal\\generate_arsenal_string.ts",
     "wolf:generate:tictacs": "npx ts-node .\\WolfSquad\\misc\\scripts\\generator-factory.ts tictac",
-    "bb:build": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./build.ps1 ./ButlerBrigade/"
+    "bb:build": "node .\\build\\build.ts --dir=ButlerBrigade"
   },
   "dependencies": {
     "corepack": "^0.34.0",
