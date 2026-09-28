@@ -83,7 +83,7 @@ async function build() {
       join(dirRoot, addon),
       resolve(dirRoot, env.destination),
       `-sign=${env.privKey}`,
-      `-include=${resolve(dirRoot, '..', 'addonBuilderWhitelist.txt')}`,
+      `-include=${resolve(dirRoot, '..', 'build/addonBuilderWhitelist.txt')}`,
       '-binarizeFullLogs',
       '-binarizeAllTextures',
       '-clear',
