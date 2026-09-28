@@ -1,8 +1,9 @@
 import { parseArgs } from 'node:util';
-import { execSync } from 'node:child_process';
+import { execFileSync, execSync } from 'node:child_process';
 import { resolve, join } from 'node:path';
 import { pathToFileURL } from 'node:url';
-import { stat, mkdir, rename } from 'node:fs/promises';
+import { stat, mkdir, rename, readdir } from 'node:fs/promises';
+import env from './env.constants.ts';
 
 const ARG_OPTIONS = {
   dir: {
@@ -71,7 +72,28 @@ async function build() {
   });
 
   // Build
-  await new Promise((resolve) => setTimeout(resolve, 5000)); // 5s sleep
+  const dirContents = await readdir(dirRoot, { withFileTypes: true });
+  const addons = dirContents
+    .filter((entry) => entry.isDirectory())
+    .filter((entry) => entry.name.startsWith(`${config.prefix}_`))
+    .map((entry) => entry.name);
+
+  for (const addon of addons) {
+    const args = [
+      join(dirRoot, addon),
+      resolve(dirRoot, env.destination),
+      `-sign=${env.privKey}`,
+      `-include=${resolve(dirRoot, '..', 'addonBuilderWhitelist.txt')}`,
+      '-binarizeFullLogs',
+      '-binarizeAllTextures',
+      '-clear',
+    ];
+
+    execFileSync(env.addonBuilder, args, {
+      stdio: 'inherit',
+      encoding: 'utf-8',
+    });
+  }
 
   // Rename all our excluded pngs back to normal
   pngsToExclude.forEach(async (file) => {
