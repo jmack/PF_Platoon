@@ -1,7 +1,7 @@
 {
   "type": "module",
   "scripts": {
-    "wolf:build": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./build.ps1 ./WolfSquad/",
+    "wolf:build": "node .\\build\\build.ts --dir=WolfSquad",
     "wolf:build:release": "npm run wolf:generate & npm run wolf:build",
     "wolf:generate": "npx ts-node .\\WolfSquad\\misc\\scripts\\generator-factory.ts",
     "wolf:generate:oniuniform": "npx ts-node .\\WolfSquad\\misc\\scripts\\generator-factory.ts onicrew",
