@@ -64,7 +64,18 @@ if (!params [
     ctrlCommitted _borderBottom
   };
 
-  [_title, .95, 1.2, 1.8, 0.2, 0, 789] spawn BIS_fnc_dynamicText;
+  [
+    format ["<t align='right'>%1</t>", _title],   // text
+    [
+      safeZoneX,  // pos x
+      safeZoneW   // ctrl width
+    ],
+    1.2,      // pos y
+    1.8,      // duration
+    0.2,      // fade in time
+    0,        // delta y
+    789       // rscLayer
+  ] spawn BIS_fnc_dynamicText;
 
   sleep 3;
 
