@@ -4,6 +4,8 @@ import { resolve, join } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { stat, mkdir, rename, readdir } from 'node:fs/promises';
 import env from './env.constants.ts';
+import type { GeneratorPayloadDefinition } from './generators/generator.type.ts';
+import { GeneratorFactory } from './generators/generator.factory.ts';
 
 const ARG_OPTIONS = {
   dir: {
@@ -11,7 +13,7 @@ const ARG_OPTIONS = {
     short: 'd',
   },
   generate: {
-    type: 'boolean',
+    type: 'string',
     short: 'g',
   },
 } as const;
@@ -19,7 +21,7 @@ const ARG_OPTIONS = {
 async function build() {
   const { values: args } = parseArgs({
     options: ARG_OPTIONS,
-    strict: true,
+    strict: false,
   });
 
   // Validation
@@ -45,6 +47,74 @@ async function build() {
   // Load module configuration (if present) or throw error
   const modConfigUrl = pathToFileURL(modConfigPath).href;
   const config = (await import(modConfigUrl)).default;
+
+  // Generator run block, if we have the flag declared
+  const rawArgs = process.argv.slice(2);
+  const hasBareGenerateFlag = rawArgs.includes('--generate') || rawArgs.includes('-g');
+
+  if (hasBareGenerateFlag || args.generate !== undefined) {
+    console.log('Scanning for generator payloads ...');
+
+    // Find all files matching the target extension anywhere in the root directory
+    const payloadFiles = execSync(`git ls-files --cached --others --exclude-standard ":(glob)**/*.generator-payload.ts"`, { cwd: dirRoot, encoding: 'utf-8' })
+      .split('\n')
+      .map((file) => file.trim())
+      .filter((file) => !!file)
+      .map((file) => join(dirRoot, file)); // Map relative git paths to absolute file paths
+
+    const loadedPayloads: GeneratorPayloadDefinition[] = [];
+
+    // Dynamically import all located payloads
+    for (const file of payloadFiles) {
+      try {
+        const fileUrl = pathToFileURL(file).href;
+        const payloadModule = (await import(fileUrl)).default;
+        if (payloadModule && payloadModule.header) {
+          loadedPayloads.push(payloadModule as GeneratorPayloadDefinition);
+        }
+      } catch (err: any) {
+        console.warn(`Warning: Failed to import payload file at ${file}:`, err.message);
+      }
+    }
+
+    // Determine target execution criteria
+    let payloadsToRun = loadedPayloads;
+    const targetName = typeof args.generate === 'string' ? args.generate.trim() : '';
+    const isTargetedRun = targetName.length > 0;
+
+    if (isTargetedRun) {
+      const regexPattern =
+        '^' +
+        targetName
+          .replace(/[.+^\${}()|[\]\\]/g, '\\$&') // Escape regex special chars
+          .replace(/\*/g, '.*') + // Convert wildcards to regex match-alls
+        '\$';
+      const filterRegex = new RegExp(regexPattern, 'i'); // 'i' flag for case-insensitive matching
+
+      payloadsToRun = loadedPayloads.filter((p) => filterRegex.test(p.header.name));
+      console.log(`Filtering execution queue down to matched target: "${targetName}"`);
+    } else {
+      console.log(`Discovered ${payloadsToRun.length} total payload(s) to execute globally.`);
+    }
+
+    if (payloadsToRun.length === 0 && isTargetedRun) {
+      console.error(`ERR: Target generator payload "${args.generate}" was requested but could not be located!`);
+      process.exit(1);
+    }
+
+    // Process matching payloads sequentially
+    for (const payload of payloadsToRun) {
+      try {
+        console.log(`Running Generator: [${payload.header.name}] (${payload.header.generatorType})`);
+        const generatorInstance = await GeneratorFactory.GetGenerator(dirRoot, payload);
+        await generatorInstance.process();
+      } catch (err: any) {
+        console.error(`ERR: Pipeline failed execution on generator "${payload.header.name}":`, err.message);
+        process.exit(1);
+      }
+    }
+    console.log('Generator pipeline processing phase completed successfully.\n');
+  }
 
   // Create addons folder if it doesn't exist already
   const distFolderPath = `${dirRoot}\\dist`;
