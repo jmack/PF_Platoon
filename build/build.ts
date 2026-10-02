@@ -4,7 +4,7 @@ import { resolve, join } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { stat, mkdir, rename, readdir } from 'node:fs/promises';
 import env from './env.constants.ts';
-import type { GeneratorPayloadDefinition } from './generators/generator.type.ts';
+import type { GeneratorPayloadDefinition } from './generators/generator.types.ts';
 import { GeneratorFactory } from './generators/generator.factory.ts';
 
 const ARG_OPTIONS = {
@@ -62,15 +62,17 @@ async function build() {
       .filter((file) => !!file)
       .map((file) => join(dirRoot, file)); // Map relative git paths to absolute file paths
 
-    const loadedPayloads: GeneratorPayloadDefinition[] = [];
+    const loadedPayloads: { path: string; payload: GeneratorPayloadDefinition }[] = [];
 
     // Dynamically import all located payloads
     for (const file of payloadFiles) {
+      console.log(file);
       try {
         const fileUrl = pathToFileURL(file).href;
+        const folderPath = file.slice(0, file.lastIndexOf('\\')) + '\\';
         const payloadModule = (await import(fileUrl)).default;
         if (payloadModule && payloadModule.header) {
-          loadedPayloads.push(payloadModule as GeneratorPayloadDefinition);
+          loadedPayloads.push({ path: folderPath, payload: payloadModule as GeneratorPayloadDefinition });
         }
       } catch (err: any) {
         console.warn(`Warning: Failed to import payload file at ${file}:`, err.message);
@@ -91,7 +93,7 @@ async function build() {
         '\$';
       const filterRegex = new RegExp(regexPattern, 'i'); // 'i' flag for case-insensitive matching
 
-      payloadsToRun = loadedPayloads.filter((p) => filterRegex.test(p.header.name));
+      payloadsToRun = loadedPayloads.filter((p) => filterRegex.test(p.payload.header.name));
       console.log(`Filtering execution queue down to matched target: "${targetName}"`);
     } else {
       console.log(`Discovered ${payloadsToRun.length} total payload(s) to execute globally.`);
@@ -105,11 +107,11 @@ async function build() {
     // Process matching payloads sequentially
     for (const payload of payloadsToRun) {
       try {
-        console.log(`Running Generator: [${payload.header.name}] (${payload.header.generatorType})`);
-        const generatorInstance = await GeneratorFactory.GetGenerator(dirRoot, payload);
+        console.log(`Running Generator: [${payload.payload.header.name}] (${payload.payload.header.generatorType})`);
+        const generatorInstance = await GeneratorFactory.GetGenerator(payload.path, payload.payload);
         await generatorInstance.process();
       } catch (err: any) {
-        console.error(`ERR: Pipeline failed execution on generator "${payload.header.name}":`, err.message);
+        console.error(`ERR: Pipeline failed execution on generator "${payload.payload.header.name}":`, err.message);
         process.exit(1);
       }
     }

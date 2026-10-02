@@ -1,11 +1,13 @@
-import type { GeneratorHeader, GeneratorPayloadDefinition } from './generator.type.ts';
+import type { GeneratorHeader, GeneratorPayloadDefinition } from './generator.types.ts';
 
 export abstract class Generator {
-  private header: GeneratorHeader;
-  private body: any;
+  protected runPath: string;
+  protected header: GeneratorHeader;
+  protected body: any;
   abstract template: string;
 
-  constructor(payload: GeneratorPayloadDefinition) {
+  constructor(runPath: string, payload: GeneratorPayloadDefinition) {
+    this.runPath = runPath;
     this.header = payload.header;
     this.body = payload.body;
   }
