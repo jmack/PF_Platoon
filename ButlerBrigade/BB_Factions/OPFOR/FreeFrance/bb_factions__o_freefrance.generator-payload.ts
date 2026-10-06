@@ -143,6 +143,7 @@ const body: FactionGeneratorPayloadBody = {
   units: [
     // Rifleman
     {
+      uniqueSlug: 'Infantry_Basic_Rifleman',
       baseSoldier: 'Base',
       editorSubcategory: FactionEditorSubcategories.INFANTRY,
       displayName: 'Rifleman',
@@ -170,6 +171,7 @@ const body: FactionGeneratorPayloadBody = {
     },
     // Grenadier
     {
+      uniqueSlug: 'Infantry_Basic_Grenadier',
       baseSoldier: 'Base',
       editorSubcategory: FactionEditorSubcategories.INFANTRY,
       displayName: 'Grenadier',
@@ -208,6 +210,7 @@ const body: FactionGeneratorPayloadBody = {
     },
     // Anti-Tank
     {
+      uniqueSlug: 'Infantry_Basic_AT',
       baseSoldier: 'Base',
       editorSubcategory: FactionEditorSubcategories.INFANTRY,
       displayName: 'Anti-Tank',
@@ -249,6 +252,7 @@ const body: FactionGeneratorPayloadBody = {
     },
     // Marksman
     {
+      uniqueSlug: 'Infantry_Basic_Marksman',
       baseSoldier: 'Base',
       editorSubcategory: FactionEditorSubcategories.INFANTRY,
       displayName: 'Marksman',

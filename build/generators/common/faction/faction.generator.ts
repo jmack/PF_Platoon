@@ -168,7 +168,7 @@ export default class FactionGenerator extends Generator {
       // And where a backpack entry is found, build our imports and defs
       importedBackpacks.add(unit.backpack.class);
 
-      const backpackClassName = `${this.header.name}__Backpack_${this.GetPropertyByValue(FactionEditorSubcategories, unit.editorSubcategory)}_${this.ConvertToArmaClassSafeString(unit.displayName)}`;
+      const backpackClassName = `${this.header.name}__Backpack_${unit.uniqueSlug}`;
 
       // prettier-ignore
       let backpackDef =

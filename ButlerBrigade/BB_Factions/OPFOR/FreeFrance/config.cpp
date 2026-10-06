@@ -57,7 +57,7 @@ class CfgVehicles
 {
   // * Backpacks ***
   class F1_Sac;
-  class BB_Factions__O_FreeFrance__Backpack_INFANTRY_Rifleman
+  class BB_Factions__O_FreeFrance__Backpack_Infantry_Basic_Rifleman
   {
     scope = 1;
     class TransportItems
@@ -104,7 +104,7 @@ class CfgVehicles
       };
     };
   };
-  class BB_Factions__O_FreeFrance__Backpack_INFANTRY_Grenadier
+  class BB_Factions__O_FreeFrance__Backpack_Infantry_Basic_Grenadier
   {
     scope = 1;
     class TransportItems
@@ -159,7 +159,7 @@ class CfgVehicles
       };
     };
   };
-  class BB_Factions__O_FreeFrance__Backpack_INFANTRY_AntiTank
+  class BB_Factions__O_FreeFrance__Backpack_Infantry_Basic_AT
   {
     scope = 1;
     class TransportItems
@@ -214,7 +214,7 @@ class CfgVehicles
       };
     };
   };
-  class BB_Factions__O_FreeFrance__Backpack_INFANTRY_Marksman
+  class BB_Factions__O_FreeFrance__Backpack_Infantry_Basic_Marksman
   {
     scope = 1;
     class TransportItems

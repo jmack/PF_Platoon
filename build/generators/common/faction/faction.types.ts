@@ -113,6 +113,7 @@ export type FactionBaseSoldier = {
 };
 
 export type FactionUnit = {
+  uniqueSlug: string;
   baseSoldier: string;
   editorSubcategory: FactionEditorSubcategory;
   displayName: string;
