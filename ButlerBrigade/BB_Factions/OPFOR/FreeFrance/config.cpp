@@ -45,8 +45,7 @@ class CfgEditorCategories
 class CfgWeapons
 {
   class AMF_RFF2_01_F;
-
-  class BB_Factions__O_FreeFrance__Weapon_AMF_RFF2_01_F__ScromeJ8_NoCover
+  class BB_Factions__O_FreeFrance__Weapon_AMF_RFF2_01_F__ScromeJ8_NoCover: AMF_RFF2_01_F
   {
     scope = 0;
     baseWeapon = "BB_Factions__O_FreeFrance__Weapon_AMF_RFF2_01_F__ScromeJ8_NoCover";
@@ -66,7 +65,7 @@ class CfgVehicles
 {
   // * Backpacks ***
   class F1_Sac;
-  class BB_Factions__O_FreeFrance__Backpack_Infantry_Basic_Rifleman
+  class BB_Factions__O_FreeFrance__Backpack_Infantry_Basic_Rifleman: F1_Sac
   {
     scope = 1;
     class TransportItems
@@ -113,7 +112,7 @@ class CfgVehicles
       };
     };
   };
-  class BB_Factions__O_FreeFrance__Backpack_Infantry_Basic_Grenadier
+  class BB_Factions__O_FreeFrance__Backpack_Infantry_Basic_Grenadier: F1_Sac
   {
     scope = 1;
     class TransportItems
@@ -168,7 +167,7 @@ class CfgVehicles
       };
     };
   };
-  class BB_Factions__O_FreeFrance__Backpack_Infantry_Basic_AT
+  class BB_Factions__O_FreeFrance__Backpack_Infantry_Basic_AT: F1_Sac
   {
     scope = 1;
     class TransportItems
@@ -223,7 +222,7 @@ class CfgVehicles
       };
     };
   };
-  class BB_Factions__O_FreeFrance__Backpack_Infantry_Basic_Marksman
+  class BB_Factions__O_FreeFrance__Backpack_Infantry_Basic_Marksman: F1_Sac
   {
     scope = 1;
     class TransportItems

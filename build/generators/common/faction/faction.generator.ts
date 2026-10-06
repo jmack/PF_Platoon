@@ -140,7 +140,7 @@ export default class FactionGenerator extends Generator {
           `\n    class LinkedItems` +
           `\n    {`;
 
-        weaponDefBody = `\n  class ` + weaponDefClassname + weaponDefBodyTop + weaponDefBody + '\n    };\n  };';
+        weaponDefBody = `\n  class ${weaponDefClassname}: ${weapon.baseType}${weaponDefBodyTop}${weaponDefBody}\n    };\n  };`;
 
         // Add this weapon def if it's not in our list already (weapon defs are deterministic)
         weaponDefs.add(weaponDefBody);
@@ -152,10 +152,10 @@ export default class FactionGenerator extends Generator {
 
     // Convert our imports and weapon defs into a full template string
     const importString = Array.from(importedWeapons.values())
-      .map((impWep) => `  class ${impWep};`)
-      .join('\n');
+      .map((impWep) => `\n  class ${impWep};`)
+      .join('');
     const weaponString = Array.from(weaponDefs.values()).join('\n');
-    values.cfg_weapons = `\n${importString}\n${weaponString}\n`;
+    values.cfg_weapons = `${importString}${weaponString}\n`;
   }
 
   /**
@@ -180,7 +180,7 @@ export default class FactionGenerator extends Generator {
 
       // prettier-ignore
       let backpackDef =
-        `\n  class ${backpackClassName}` +
+        `\n  class ${backpackClassName}: ${unit.backpack.class}` +
         `\n  {` +
         `\n    scope = 1;`;
 
