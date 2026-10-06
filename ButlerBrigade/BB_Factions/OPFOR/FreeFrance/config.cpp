@@ -3,9 +3,9 @@ class CfgPatches {
     addonRootClass = "BB_Factions";
     author = "wlan0",
     requiredVersion = 1.0;
-    requiredAddons[] = {  };
+    requiredAddons[] = {};
     weapons[] = { };
-    units[] = {  };
+    units[] = {};
   };
 };
 

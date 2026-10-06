@@ -3,9 +3,9 @@ class CfgPatches {
     addonRootClass = "<% root_class %>";
     author = "<% author %>",
     requiredVersion = 1.0;
-    requiredAddons[] = { <% required_addons %> };
+    requiredAddons[] = {<% required_addons %>};
     weapons[] = { };
-    units[] = { <% exported_units %> };
+    units[] = {<% exported_units %>};
   };
 };
 
