@@ -8,6 +8,9 @@ import {
   FactionUnitBackpackItem,
   FactionUnitBackpackItemType,
   FactionUnitBackpackItemTypes,
+  FactionUnitItem,
+  FactionUnitItemType,
+  FactionUnitItemTypes,
 } from './faction.types.ts';
 
 export default class FactionGenerator extends Generator {
@@ -245,14 +248,50 @@ export default class FactionGenerator extends Generator {
     });
 
     // And finally return our base class def
-    values.cfg_vehicles_base_soldiers = `\n  // * Base Units ***${baseDefs}\n  // ***`;
+    values.cfg_vehicles_base_soldiers = `\n  // * Base Units ***${baseDefs}\n  // ***\n`;
   }
 
   /**
-   *
-   * @param values
+   * Scans all body.units entries and turns them into cfg entries.
+   * **ALL PREVIOUS MUTATIONS SHOULD HAVE RUN BEFORE THIS OR IT WILL EXPLODE.**
+   * @param values The current template values. Mutated to pass back cfg_vehicles_soldiers
    */
-  private GenerateSoldiers(values: FactionTemplateValues): void {}
+  private GenerateSoldiers(values: FactionTemplateValues): void {
+    let soldierDef = '';
+
+    (this.body.units as FactionUnit[]).forEach((unit) => {
+      // prettier-ignore
+      soldierDef +=
+        `\n  class ${this.header.name}__Soldier_${unit.uniqueSlug}: ${unit.baseSoldier}` +
+        `\n  {` +
+        `\n    displayName = "${unit.displayName}";` +
+        `\n    role = "${unit.role}";` +
+        `\n` +
+        `\n    scope = 2;` +
+        `\n    scopeCurator = 2;` +
+        `\n    scopeArsenal = 2;` +
+        `\n` +
+        `\n    editorCategory = "${this.header.name}";` +
+        `\n    editorSubcategory = "${unit.editorSubcategory}";` +
+        `\n`;
+
+      if (unit.backpack) {
+        soldierDef += `\n    backpack = "${unit.backpack}";\n`;
+      }
+
+      // Weapons
+      soldierDef += `${this.CreateSoldierWeaponDefs((unit.weapons as string[]).concat(['Throw', 'Put']))}\n`;
+
+      // Magazines, LinkedItems, & Items
+      soldierDef += `${this.CreateSoldierGearDef(FactionUnitItemTypes.MAGAZINE, unit.gear)}\n`;
+      soldierDef += `${this.CreateSoldierGearDef(FactionUnitItemTypes.EQUIPPED, unit.gear)}\n`;
+      soldierDef += `${this.CreateSoldierGearDef(FactionUnitItemTypes.CARRIED, unit.gear)}\n`;
+
+      soldierDef += `  };`;
+    });
+
+    values.cfg_vehicles_soldiers = `\n  // * Soldiers ***\n${soldierDef}\n  // ***`;
+  }
 
   /**
    *
@@ -325,7 +364,56 @@ export default class FactionGenerator extends Generator {
     return def;
   }
 
-  private GetPropertyByValue<T extends object>(obj: T, value: T[keyof T]): keyof T | undefined {
-    return (Object.keys(obj) as Array<keyof T>).find((key) => obj[key] === value);
+  /**
+   * Returns a string representing the weapons on a soldier entry
+   * @param items The items to have in the weapons/respawnWeapons pair
+   * @returns The formatted string, ready for insertion into the def
+   */
+  private CreateSoldierWeaponDefs(items: string[]): string {
+    return this.CreateSoldierItemDefs('weapons', items);
+  }
+
+  /**
+   * Returns a string representing the gear on a soldier entry
+   * @param type The type of items to list in this def (linkedItems, magazines, items)
+   * @param items The total item list. The method will filter by types matching passed type
+   * @returns The formatted string, ready for insertion into the def
+   */
+  private CreateSoldierGearDef(type: FactionUnitItemType, items: FactionUnitItem[]): string {
+    const gearObjects = items.filter((item) => item.type == type);
+    const gearStrings: string[] = [];
+
+    // Arma is weird in that for gear on a soldier not in a backpack it just duplicates the
+    // whole string for every entry, instead of having a count
+    gearObjects.forEach((gear) => {
+      for (let i = 0; i < (gear.count ?? 1); i++) {
+        gearStrings.push(gear.class);
+      }
+    });
+
+    return this.CreateSoldierItemDefs(type, gearStrings);
+  }
+
+  /**
+   * Returns a string representing gear on a soldier entry (weapons, magazines, etc)
+   * @param property The name of the base property (NOT the respawn property)
+   * @param items The items to have in the item/respawnitem pair
+   * @returns The formatted string, ready for insertion into the def
+   */
+  private CreateSoldierItemDefs(property: string, items: string[]): string {
+    const listString = items.map((item) => `      "${item}",`).join('\n');
+
+    // prettier-ignore
+    const returnString =
+      `\n    ${property}[] =` +
+      `\n    {` +
+      `\n${listString}` +
+      `\n    };` +
+      `\n    respawn${property[0]?.toUpperCase()}${property.slice(1)}[] =` +
+      `\n    {` +
+      `\n${listString}` +
+      `\n    };`;
+
+    return returnString;
   }
 }
