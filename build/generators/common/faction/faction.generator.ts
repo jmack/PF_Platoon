@@ -1,51 +1,162 @@
 import { Generator } from '../../generator.class.ts';
 import { readFileSync, rmSync, writeFileSync } from 'fs';
+import { FactionTemplateValues, FactionUnit } from './faction.types.ts';
 
 export default class FactionGenerator extends Generator {
   template = './build/generators/common/faction/faction.template.tpl';
 
   private FACTION_SIDE_NAMES = ['East', 'West', 'Ind', 'Civ'];
 
-  public async process(): Promise<void> {
-    const templateString = readFileSync(this.template).toString();
+  private TemplateValues = {};
 
-    const templateValues: any = {
+  public async process(): Promise<void> {
+    // Initialize the template values
+    const values: FactionTemplateValues = {
       faction_class: this.header.name,
-      // exported_units: [],
-      // required_addons: [],
-      author: this.body.meta.author,
       root_class: this.header.name.slice(0, this.header.name.indexOf('__')),
+      author: this.body.meta.author,
+      required_addons: '',
+      exported_units: '',
       faction_name: this.body.meta.displayName,
       priority: this.body.meta.priority,
       faction_side_number: this.body.meta.side,
-      faction_side_name: this.FACTION_SIDE_NAMES[this.body.meta.side],
-    };
-    const workingValues: any = {
-      exported_units: [],
-      required_addons: [],
+      faction_side_name: this.FACTION_SIDE_NAMES[this.body.meta.side] ?? 'West',
+      cfg_weapons: '',
     };
 
-    // Do the work
+    // 1. Weapons
+    this.GenerateAndTransformWeapons(values);
 
-    // Convert our working arrays back
+    // 2. Backpacks
+    this.GenerateAndTransformBackpacks(values);
+
+    // 3a. Base Soldiers
+    this.GenerateAndTransformBaseClasses(values);
+
+    // 3b. Faction Soldiers
+    this.GenerateSoldiers(values);
+
+    // 4. Groups
+    this.GenerateGroups(values);
 
     // Fill and save the template
-    const filledTemplateString = this.applyTemplateValues(templateString, templateValues);
-    try {
-      rmSync(`${this.runPath}/config.cpp`);
-      writeFileSync(`${this.runPath}/config.cpp`, filledTemplateString);
-    } catch (e) {
-      console.error(e);
-    }
+    this.FillAndSaveTemplate(values);
   }
 
-  private applyTemplateValues(templateString: string, values: any): string {
-    let filledTemplateString = templateString;
+  /**
+   * Scans all body.units[].weapons[] for complex weapons, turns them into CfgWeapons entries, and then replaces
+   * the complex weapons entries with the basic names for the new weapons
+   * @param values
+   */
+  private GenerateAndTransformWeapons(values: FactionTemplateValues): void {
+    const importedWeapons = new Set<string>();
+    const weaponDefs = new Set<string>();
 
-    Object.getOwnPropertyNames(values).forEach((key) => {
-      filledTemplateString = filledTemplateString.replaceAll(`<% ${key} %>`, values[key]);
+    // First, scan all weapons for complex weapons
+    (this.body.units as FactionUnit[]).forEach((unit) => {
+      unit.weapons.forEach((weapon, index) => {
+        if (typeof weapon === 'string' || weapon instanceof String) {
+          return;
+        }
+
+        // Add base weapon type to import
+        importedWeapons.add(weapon.baseType);
+
+        // Transform this complex weapon into a weapon def
+        let weaponDefClassname = `${this.header.name}__${weapon.baseType}`;
+
+        // prettier-ignore
+        let weaponDefBody =
+          `\n  {` +
+          `\n    baseWeapon = "${weapon.baseType}";` +
+          `\n` +
+          `\n    class LinkedItems` +
+          `\n    {`;
+
+        if (weapon.optic) {
+          weaponDefClassname += `__${weapon.optic}`;
+          // prettier-ignore
+          weaponDefBody += 
+            `\n      class LinkedItemsOptic` +
+            `\n      {` +
+            `\n        slot = "CowsSlot";` +
+            `\n        item = "${weapon.optic}";` +
+            `\n      };`;
+        }
+
+        if (weapon.pointer) {
+          weaponDefClassname += `__${weapon.pointer}`;
+          // prettier-ignore
+          weaponDefBody += 
+            `\n      class LinkedItemsAcc` +
+            `\n      {` +
+            `\n        slot = "PointerSlot";` +
+            `\n        item = "${weapon.pointer}";` +
+            `\n      };`;
+        }
+
+        if (weapon.underbarrel) {
+          weaponDefClassname += `__${weapon.underbarrel}`;
+          // prettier-ignore
+          weaponDefBody += 
+            `\n      class LinkedItemsUnder` +
+            `\n      {` +
+            `\n        slot = "UnderBarrelSlot";` +
+            `\n        item = "${weapon.underbarrel}";` +
+            `\n      };`;
+        }
+
+        if (weapon.muzzle) {
+          weaponDefClassname += `__${weapon.muzzle}`;
+          // prettier-ignore
+          weaponDefBody += 
+            `\n      class LinkedItemsMuzzle` +
+            `\n      {` +
+            `\n        slot = "MuzzleSlot";` +
+            `\n        item = "${weapon.muzzle}";` +
+            `\n      };`;
+        }
+
+        weaponDefBody = `\n  class ` + weaponDefClassname + weaponDefBody + '\n    };\n  };';
+        console.log(weaponDefBody);
+
+        // Add this weapon def if it's not in our list already (weapon defs are deterministic)
+        weaponDefs.add(weaponDefBody);
+
+        // Apply the new weapon def where our complex weapon used to be on the unit
+        unit.weapons[index] = weaponDefClassname;
+      });
     });
 
-    return filledTemplateString;
+    // Convert our imports and weapon defs into a full template string
+    const importString = Array.from(importedWeapons.values())
+      .map((impWep) => `  class ${impWep};`)
+      .join('\n');
+    const weaponString = Array.from(weaponDefs.values()).join('\n');
+    values.cfg_weapons = `\n${importString}\n${weaponString}\n`;
   }
+
+  /**
+   *
+   * @param values
+   */
+  private GenerateAndTransformBackpacks(values: FactionTemplateValues): void {}
+
+  /**
+   *
+   * @param values
+   */
+  private GenerateAndTransformBaseClasses(values: FactionTemplateValues): void {}
+
+  /**
+   *
+   * @param values
+   */
+  private GenerateSoldiers(values: FactionTemplateValues): void {}
+
+  /**
+   *
+   * @param values
+   */
+  private GenerateGroups(values: FactionTemplateValues): void {}
 }

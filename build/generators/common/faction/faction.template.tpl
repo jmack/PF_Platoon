@@ -1,11 +1,11 @@
 class CfgPatches {
   class <% faction_class %> {
-    units[] = { <% exported_units %> };
-    weapons[] = { };
+    addonRootClass = "<% root_class %>";
+    author = "<% author %>",
     requiredVersion = 1.0;
     requiredAddons[] = { <% required_addons %> };
-    author = "<% author %>",
-    addonRootClass = "<% root_class %>";
+    weapons[] = { };
+    units[] = { <% exported_units %> };
   };
 };
 
@@ -28,9 +28,7 @@ class CfgEditorCategories
 };
 
 class CfgWeapons
-{
-
-};
+{ <% cfg_weapons %>};
 
 class CfgVehicles
 {
