@@ -1,6 +1,13 @@
 import { Generator } from '../../generator.class.ts';
 import { readFileSync, rmSync, writeFileSync } from 'fs';
-import { FactionTemplateValues, FactionUnit } from './faction.types.ts';
+import {
+  FactionEditorSubcategories,
+  FactionTemplateValues,
+  FactionUnit,
+  FactionUnitBackpackItem,
+  FactionUnitBackpackItemType,
+  FactionUnitBackpackItemTypes,
+} from './faction.types.ts';
 
 export default class FactionGenerator extends Generator {
   template = './build/generators/common/faction/faction.template.tpl';
@@ -142,10 +149,54 @@ export default class FactionGenerator extends Generator {
   }
 
   /**
-   *
-   * @param values
+   * Scans all body.units[] for backpack entries, turns them into cfg entries, and then swaps the object for a string
+   * referencing the newly created backpack entry
+   * @param values The current template values, mutated to pass back cfg_vehicles_backpacks
    */
-  private GenerateAndTransformBackpacks(values: FactionTemplateValues): void {}
+  private GenerateAndTransformBackpacks(values: FactionTemplateValues): void {
+    const importedBackpacks = new Set<string>();
+    const backpackDefs = new Set<string>();
+
+    // Scan all units for backpacks
+    (this.body.units as FactionUnit[]).forEach((unit) => {
+      if (!unit.backpack || typeof unit.backpack === 'string' || unit.backpack instanceof String) {
+        return;
+      }
+
+      // And where a backpack entry is found, build our imports and defs
+      importedBackpacks.add(unit.backpack.class);
+
+      const backpackClassName = `${this.header.name}__Backpack_${this.GetPropertyByValue(FactionEditorSubcategories, unit.editorSubcategory)}_${this.ConvertToArmaClassSafeString(unit.displayName)}`;
+
+      // prettier-ignore
+      let backpackDef =
+        `\n  class ${backpackClassName}` +
+        `\n  {` +
+        `\n    scope = 1;`;
+
+      backpackDef += this.CreateBackpackItemDefs(FactionUnitBackpackItemTypes.ITEM, unit.backpack.items);
+      backpackDef += this.CreateBackpackItemDefs(FactionUnitBackpackItemTypes.MAGAZINE, unit.backpack.items);
+      backpackDef += this.CreateBackpackItemDefs(FactionUnitBackpackItemTypes.WEAPON, unit.backpack.items);
+
+      backpackDef += '\n  };';
+
+      if (backpackDefs.has(backpackDef)) {
+        throw new Error(`BACKPACK_DEF_COLLISION: ${backpackClassName} was generated twice!`);
+      }
+
+      backpackDefs.add(backpackDef);
+
+      // Last, change our backpack def in the unit to now be this backpack classname
+      unit.backpack = backpackClassName;
+    });
+
+    // Convert our imports and backpack defs into a full template string
+    const importString = Array.from(importedBackpacks.values())
+      .map((impBpk) => `  class ${impBpk};`)
+      .join('\n');
+    const backpackString = Array.from(backpackDefs.values()).join('\n');
+    values.cfg_vehicles_backpacks = `\n${importString}\n${backpackString}\n`;
+  }
 
   /**
    *
@@ -164,4 +215,73 @@ export default class FactionGenerator extends Generator {
    * @param values
    */
   private GenerateGroups(values: FactionTemplateValues): void {}
+
+  /**
+   * SUB-HELPERS
+   */
+
+  /**
+   * Converts strings to something that's safe to be used as an Arma class name
+   * @param input The string to convert
+   * @returns A string safe to use as an Arma class name
+   */
+  private ConvertToArmaClassSafeString(input: string): string {
+    return input.replaceAll(' ', '_').replaceAll('-', '');
+  }
+
+  /**
+   * Returns a string representing either TransportMagazines, TransportItems, or TransportWeapons,
+   * depending on what type was selected
+   * @param items A set of items of a to build the string for. Only items of the given type will be considered
+   */
+  private CreateBackpackItemDefs(type: FactionUnitBackpackItemType, items: FactionUnitBackpackItem[]): string {
+    // Filter to just our given type
+    const filteredItems = items.filter((item) => item.type == type);
+
+    if (!filteredItems.length) {
+      return '';
+    }
+
+    const typePropertyMap = {
+      [FactionUnitBackpackItemTypes.ITEM]: {
+        transportClass: 'TransportItems',
+        propertyName: 'name',
+      },
+      [FactionUnitBackpackItemTypes.MAGAZINE]: {
+        transportClass: 'TransportMagazines',
+        propertyName: 'magazine',
+      },
+      [FactionUnitBackpackItemTypes.WEAPON]: {
+        transportClass: 'TransportWeapons',
+        propertyName: 'name',
+      },
+    };
+
+    const typeProperties = typePropertyMap[type];
+    let def = '';
+    // Each sorted item gets its own entry in its transport class. Names can technically be anything but for consistency
+    // we just use _xx_{item class name}
+    // prettier-ignore
+    def +=
+      `\n    class ${typeProperties.transportClass}` +
+      `\n    {`;
+
+    filteredItems.forEach((item) => {
+      // prettier-ignore
+      def +=
+        `\n      class _xx_${item.class}` +
+        `\n      {` +
+        `\n        ${typeProperties.propertyName} = "${item.class}";` +
+        `\n        count = ${item.count};` +
+        `\n      };`
+    });
+
+    def += '\n    };';
+
+    return def;
+  }
+
+  private GetPropertyByValue<T extends object>(obj: T, value: T[keyof T]): keyof T | undefined {
+    return (Object.keys(obj) as Array<keyof T>).find((key) => obj[key] === value);
+  }
 }

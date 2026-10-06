@@ -119,7 +119,7 @@ export type FactionUnit = {
   role: FactionUnitRole;
   weapons: (FactionUnitWeapon | string)[];
   gear: FactionUnitItem[];
-  backpack?: FactionUnitBackpack;
+  backpack?: FactionUnitBackpack | string;
 };
 
 export type FactionGroup = {};
