@@ -1,3 +1,10 @@
+/**
+ * WARNING: THIS FILE HAS BEEN AUTOMATICALLY GENERATED. DO NOT EDIT IT DIRECTLY OR YOU WILL
+ * LOSE YOUR CHANGES THE NEXT TIME THE FILE IS GENERATED.
+ * If you need to make changes, edit the .generator-payload.ts file that should be alongside
+ * this config.cpp.
+ */
+
 class CfgPatches {
   class <% faction_class %> {
     addonRootClass = "<% root_class %>";
@@ -31,7 +38,8 @@ class CfgWeapons
 {<% cfg_weapons %>};
 
 class CfgVehicles
-{<% cfg_vehicles_backpacks %><% cfg_vehicles_base_soldiers %><% cfg_vehicles_soldiers %><% cfg_vehicles_vehicles %>};
+{<% cfg_vehicles_backpacks %><% cfg_vehicles_base_soldiers %><% cfg_vehicles_soldiers %><% cfg_vehicles_vehicles %>
+};
 
 class CfgGroups
 {
