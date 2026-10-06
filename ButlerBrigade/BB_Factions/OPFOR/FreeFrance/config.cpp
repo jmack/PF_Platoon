@@ -28,10 +28,10 @@ class CfgEditorCategories
 };
 
 class CfgWeapons
-{ 
+{
   class AMF_RFF2_01_F;
 
-  class BB_Factions__O_FreeFrance__AMF_RFF2_01_F__ScromeJ8_NoCover
+  class BB_Factions__O_FreeFrance__Weapon_AMF_RFF2_01_F__ScromeJ8_NoCover
   {
     baseWeapon = "AMF_RFF2_01_F";
 

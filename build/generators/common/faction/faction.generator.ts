@@ -7,8 +7,6 @@ export default class FactionGenerator extends Generator {
 
   private FACTION_SIDE_NAMES = ['East', 'West', 'Ind', 'Civ'];
 
-  private TemplateValues = {};
-
   public async process(): Promise<void> {
     // Initialize the template values
     const values: FactionTemplateValues = {
@@ -44,9 +42,13 @@ export default class FactionGenerator extends Generator {
   }
 
   /**
+   * STEP HELPERS
+   */
+
+  /**
    * Scans all body.units[].weapons[] for complex weapons, turns them into CfgWeapons entries, and then replaces
    * the complex weapons entries with the basic names for the new weapons
-   * @param values
+   * @param values The current template values, mutated to pass back cfg_weapons
    */
   private GenerateAndTransformWeapons(values: FactionTemplateValues): void {
     const importedWeapons = new Set<string>();
@@ -63,7 +65,7 @@ export default class FactionGenerator extends Generator {
         importedWeapons.add(weapon.baseType);
 
         // Transform this complex weapon into a weapon def
-        let weaponDefClassname = `${this.header.name}__${weapon.baseType}`;
+        let weaponDefClassname = `${this.header.name}__Weapon_${weapon.baseType}`;
 
         // prettier-ignore
         let weaponDefBody =
@@ -118,7 +120,6 @@ export default class FactionGenerator extends Generator {
         }
 
         weaponDefBody = `\n  class ` + weaponDefClassname + weaponDefBody + '\n    };\n  };';
-        console.log(weaponDefBody);
 
         // Add this weapon def if it's not in our list already (weapon defs are deterministic)
         weaponDefs.add(weaponDefBody);

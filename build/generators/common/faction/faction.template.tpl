@@ -28,7 +28,7 @@ class CfgEditorCategories
 };
 
 class CfgWeapons
-{ <% cfg_weapons %>};
+{<% cfg_weapons %>};
 
 class CfgVehicles
 {
