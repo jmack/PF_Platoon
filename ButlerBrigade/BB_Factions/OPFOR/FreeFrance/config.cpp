@@ -1,3 +1,10 @@
+/**
+ * WARNING: THIS FILE HAS BEEN AUTOMATICALLY GENERATED. DO NOT EDIT IT DIRECTLY OR YOU WILL
+ * LOSE YOUR CHANGES THE NEXT TIME THE FILE IS GENERATED.
+ * If you need to make changes, edit the .generator-payload.ts file that should be alongside
+ * this config.cpp.
+ */
+
 class CfgPatches {
   class BB_Factions__O_FreeFrance {
     addonRootClass = "BB_Factions";
@@ -48,8 +55,8 @@ class CfgWeapons
 
 class CfgVehicles
 {
+  // * Backpacks ***
   class F1_Sac;
-
   class BB_Factions__O_FreeFrance__Backpack_INFANTRY_Rifleman
   {
     scope = 1;
@@ -97,7 +104,6 @@ class CfgVehicles
       };
     };
   };
-
   class BB_Factions__O_FreeFrance__Backpack_INFANTRY_Grenadier
   {
     scope = 1;
@@ -153,7 +159,6 @@ class CfgVehicles
       };
     };
   };
-
   class BB_Factions__O_FreeFrance__Backpack_INFANTRY_AntiTank
   {
     scope = 1;
@@ -209,7 +214,6 @@ class CfgVehicles
       };
     };
   };
-
   class BB_Factions__O_FreeFrance__Backpack_INFANTRY_Marksman
   {
     scope = 1;
@@ -267,6 +271,29 @@ class CfgVehicles
       };
     };
   };
+  // ***
+
+  // * Base Units ***
+  class O_Soldier_Base_F;
+  class BB_Factions__O_FreeFrance__Base_Base: O_Soldier_Base_F
+  {
+    scope = 0;
+    faction = "BB_Factions__O_FreeFrance";
+    uniformClass = "Mle_F1_uniform_lizard";
+    uniformAccessories[] = { };
+    nakedUniform = "U_BasicBody";
+    identityTypes[] =
+    {
+      "LanguageFRE_F",
+      "Head_Tanoan",
+      "Head_African",
+      "Head_Euro",
+      "G_CIV_exp",
+      "G_CIVIL_male",
+      "NoGlasses",
+    };
+  };
+  // ***
 };
 
 class CfgGroups

@@ -1,6 +1,7 @@
 import { Generator } from '../../generator.class.ts';
 import { readFileSync, rmSync, writeFileSync } from 'fs';
 import {
+  FactionBaseSoldier,
   FactionEditorSubcategories,
   FactionTemplateValues,
   FactionUnit,
@@ -13,6 +14,7 @@ export default class FactionGenerator extends Generator {
   template = './build/generators/common/faction/faction.template.tpl';
 
   private FACTION_SIDE_NAMES = ['East', 'West', 'Ind', 'Civ'];
+  private FACTION_SIDE_LETTER = ['O', 'B', 'I', 'C'];
 
   public async process(): Promise<void> {
     // Initialize the template values
@@ -59,7 +61,7 @@ export default class FactionGenerator extends Generator {
   /**
    * Scans all body.units[].weapons[] for complex weapons, turns them into CfgWeapons entries, and then replaces
    * the complex weapons entries with the basic names for the new weapons
-   * @param values The current template values, mutated to pass back cfg_weapons
+   * @param values The current template values. Mutated to pass back cfg_weapons
    */
   private GenerateAndTransformWeapons(values: FactionTemplateValues): void {
     const importedWeapons = new Set<string>();
@@ -151,7 +153,7 @@ export default class FactionGenerator extends Generator {
   /**
    * Scans all body.units[] for backpack entries, turns them into cfg entries, and then swaps the object for a string
    * referencing the newly created backpack entry
-   * @param values The current template values, mutated to pass back cfg_vehicles_backpacks
+   * @param values The current template values. Mutated to pass back cfg_vehicles_backpacks
    */
   private GenerateAndTransformBackpacks(values: FactionTemplateValues): void {
     const importedBackpacks = new Set<string>();
@@ -194,15 +196,57 @@ export default class FactionGenerator extends Generator {
     const importString = Array.from(importedBackpacks.values())
       .map((impBpk) => `  class ${impBpk};`)
       .join('\n');
-    const backpackString = Array.from(backpackDefs.values()).join('\n');
-    values.cfg_vehicles_backpacks = `\n${importString}\n${backpackString}\n`;
+    const backpackString = Array.from(backpackDefs.values()).join('');
+    values.cfg_vehicles_backpacks = `\n  // * Backpacks ***\n${importString}${backpackString}\n  // ***\n`;
   }
 
   /**
-   *
-   * @param values
+   * Scans all body.baseSoldiers entries, turns them into cfg entries, and then swaps the string reference per soldier
+   * for the new generated name
+   * @param values The current template values. Mutated to pass back cfg_vehicles_base_soldiers
    */
-  private GenerateAndTransformBaseClasses(values: FactionTemplateValues): void {}
+  private GenerateAndTransformBaseClasses(values: FactionTemplateValues): void {
+    const generatedUnits: any = {};
+
+    // All base soldiers inherit from X_Soldier_Base_F (for now)
+    const baseImport = `${this.FACTION_SIDE_LETTER[this.body.meta.side]}_Soldier_Base_F`;
+    let baseDefs = `\n  class ${baseImport};`;
+
+    (this.body.baseSoldiers as FactionBaseSoldier[]).forEach((baseClass) => {
+      const classname = `${this.header.name}__Base_${this.ConvertToArmaClassSafeString(baseClass.name)}`;
+
+      if (generatedUnits[baseClass.name]) {
+        throw new Error(`BASE_SOLDIER_COLLISION: ${classname} was generated twice!`);
+      }
+
+      generatedUnits[baseClass.name] = classname;
+
+      // prettier-ignore
+      baseDefs +=
+        `\n  class ${classname}: ${baseImport}` +
+        `\n  {` +
+        `\n    scope = 0;` +
+        `\n    faction = "${this.header.name}";` +
+        `\n    uniformClass = "${baseClass.uniformClass}";` +
+        `\n    uniformAccessories[] = { };` +
+        `\n    nakedUniform = "${baseClass.nakedUniform}";` +
+        `\n    identityTypes[] =` +
+        `\n    {` +
+        `\n` + baseClass.identityTypes.map(idt => `      "${idt}",`).join('\n') +
+        `\n    };` +
+        `\n  };`;
+    });
+
+    // Rewrite baseSoldiers for all units that match up with our generated bases
+    (this.body.units as FactionUnit[]).forEach((unit) => {
+      if (generatedUnits[unit.baseSoldier]) {
+        unit.baseSoldier = generatedUnits[unit.baseSoldier];
+      }
+    });
+
+    // And finally return our base class def
+    values.cfg_vehicles_base_soldiers = `\n  // * Base Units ***${baseDefs}\n  // ***`;
+  }
 
   /**
    *
