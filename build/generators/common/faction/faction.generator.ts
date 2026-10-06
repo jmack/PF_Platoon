@@ -20,6 +20,10 @@ export default class FactionGenerator extends Generator {
       faction_side_number: this.body.meta.side,
       faction_side_name: this.FACTION_SIDE_NAMES[this.body.meta.side] ?? 'West',
       cfg_weapons: '',
+      cfg_vehicles_backpacks: '',
+      cfg_vehicles_base_soldiers: '',
+      cfg_vehicles_soldiers: '',
+      cfg_vehicles_vehicles: '',
     };
 
     // 1. Weapons

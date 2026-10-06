@@ -140,4 +140,9 @@ export type FactionTemplateValues = {
   faction_side_name: string;
 
   cfg_weapons: string;
+
+  cfg_vehicles_backpacks: string;
+  cfg_vehicles_base_soldiers: string;
+  cfg_vehicles_soldiers: string;
+  cfg_vehicles_vehicles: string;
 };

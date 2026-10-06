@@ -31,12 +31,7 @@ class CfgWeapons
 {<% cfg_weapons %>};
 
 class CfgVehicles
-{
-  // Backpacks
-  // Base Soldiers
-  // Soldiers
-  // Vehicles
-};
+{<% cfg_vehicles_backpacks %><% cfg_vehicles_base_soldiers %><% cfg_vehicles_soldiers %><% cfg_vehicles_vehicles %>};
 
 class CfgGroups
 {
