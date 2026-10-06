@@ -8,11 +8,19 @@
 class CfgPatches {
   class BB_Factions__O_FreeFrance {
     addonRootClass = "BB_Factions";
-    author = "wlan0",
+    author = "wlan0";
     requiredVersion = 1.0;
-    requiredAddons[] = {};
+    requiredAddons[] =
+    {
+    };
     weapons[] = { };
-    units[] = {};
+    units[] =
+    {
+      "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_Rifleman",
+      "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_Grenadier",
+      "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_AT",
+      "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_Marksman",
+    };
   };
 };
 
@@ -40,7 +48,8 @@ class CfgWeapons
 
   class BB_Factions__O_FreeFrance__Weapon_AMF_RFF2_01_F__ScromeJ8_NoCover
   {
-    baseWeapon = "AMF_RFF2_01_F";
+    scope = 0;
+    baseWeapon = "BB_Factions__O_FreeFrance__Weapon_AMF_RFF2_01_F__ScromeJ8_NoCover";
 
     class LinkedItems
     {
@@ -288,8 +297,6 @@ class CfgVehicles
       "Head_Tanoan",
       "Head_African",
       "Head_Euro",
-      "G_CIV_exp",
-      "G_CIVIL_male",
       "NoGlasses",
     };
   };

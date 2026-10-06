@@ -83,13 +83,9 @@ export default class FactionGenerator extends Generator {
         // Transform this complex weapon into a weapon def
         let weaponDefClassname = `${this.header.name}__Weapon_${weapon.baseType}`;
 
-        // prettier-ignore
-        let weaponDefBody =
-          `\n  {` +
-          `\n    baseWeapon = "${weapon.baseType}";` +
-          `\n` +
-          `\n    class LinkedItems` +
-          `\n    {`;
+        // We have to be weird about how we do the body and header def because the classname we
+        // need for baseWeapon isn't filled until *after* we've generated our body.
+        let weaponDefBody = '';
 
         if (weapon.optic) {
           weaponDefClassname += `__${weapon.optic}`;
@@ -135,7 +131,16 @@ export default class FactionGenerator extends Generator {
             `\n      };`;
         }
 
-        weaponDefBody = `\n  class ` + weaponDefClassname + weaponDefBody + '\n    };\n  };';
+        // prettier-ignore
+        const weaponDefBodyTop =
+          `\n  {` +
+          `\n    scope = 0;` +
+          `\n    baseWeapon = "${weaponDefClassname}";` +
+          `\n` +
+          `\n    class LinkedItems` +
+          `\n    {`;
+
+        weaponDefBody = `\n  class ` + weaponDefClassname + weaponDefBodyTop + weaponDefBody + '\n    };\n  };';
 
         // Add this weapon def if it's not in our list already (weapon defs are deterministic)
         weaponDefs.add(weaponDefBody);
@@ -260,9 +265,10 @@ export default class FactionGenerator extends Generator {
     let soldierDef = '';
 
     (this.body.units as FactionUnit[]).forEach((unit) => {
+      const classname = `${this.header.name}__Soldier_${unit.uniqueSlug}`;
       // prettier-ignore
       soldierDef +=
-        `\n  class ${this.header.name}__Soldier_${unit.uniqueSlug}: ${unit.baseSoldier}` +
+        `\n  class ${classname}: ${unit.baseSoldier}` +
         `\n  {` +
         `\n    displayName = "${unit.displayName}";` +
         `\n    role = "${unit.role}";` +
@@ -288,6 +294,9 @@ export default class FactionGenerator extends Generator {
       soldierDef += `${this.CreateSoldierGearDef(FactionUnitItemTypes.CARRIED, unit.gear)}\n`;
 
       soldierDef += `  };`;
+
+      // Add our new unit to the export list
+      values.exported_units += `\n      "${classname}",`;
     });
 
     values.cfg_vehicles_soldiers = `\n  // * Soldiers ***\n${soldierDef}\n  // ***`;

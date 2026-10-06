@@ -8,11 +8,15 @@
 class CfgPatches {
   class <% faction_class %> {
     addonRootClass = "<% root_class %>";
-    author = "<% author %>",
+    author = "<% author %>";
     requiredVersion = 1.0;
-    requiredAddons[] = {<% required_addons %>};
+    requiredAddons[] =
+    {<% required_addons %>
+    };
     weapons[] = { };
-    units[] = {<% exported_units %>};
+    units[] =
+    {<% exported_units %>
+    };
   };
 };
 

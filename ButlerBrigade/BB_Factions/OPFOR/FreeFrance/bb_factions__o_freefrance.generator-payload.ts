@@ -137,7 +137,7 @@ const body: FactionGeneratorPayloadBody = {
       name: 'Base',
       uniformClass: 'Mle_F1_uniform_lizard',
       nakedUniform: 'U_BasicBody',
-      identityTypes: ['LanguageFRE_F', 'Head_Tanoan', 'Head_African', 'Head_Euro', 'G_CIV_exp', 'G_CIVIL_male', 'NoGlasses'],
+      identityTypes: ['LanguageFRE_F', 'Head_Tanoan', 'Head_African', 'Head_Euro', 'NoGlasses'],
     },
   ],
   units: [
