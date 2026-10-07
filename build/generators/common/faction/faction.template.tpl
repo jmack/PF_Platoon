@@ -52,6 +52,7 @@ class CfgGroups
     class <% faction_class %>
     {
       name = "<% faction_name %>";
+<% cfg_groups %>
     };
   };
 };

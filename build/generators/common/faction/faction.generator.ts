@@ -1,8 +1,7 @@
 import { Generator } from '../../generator.class.ts';
-import { readFileSync, rmSync, writeFileSync } from 'fs';
 import {
   FactionBaseSoldier,
-  FactionEditorSubcategories,
+  FactionGroupCategory,
   FactionTemplateValues,
   FactionUnit,
   FactionUnitBackpackItem,
@@ -12,6 +11,9 @@ import {
   FactionUnitItemType,
   FactionUnitItemTypes,
 } from './faction.types.ts';
+
+// TODO: Vehicles
+// TODO: RequiredAddons
 
 export default class FactionGenerator extends Generator {
   template = './build/generators/common/faction/faction.template.tpl';
@@ -36,6 +38,7 @@ export default class FactionGenerator extends Generator {
       cfg_vehicles_base_soldiers: '',
       cfg_vehicles_soldiers: '',
       cfg_vehicles_vehicles: '',
+      cfg_groups: '',
     };
 
     // 1. Weapons
@@ -178,7 +181,7 @@ export default class FactionGenerator extends Generator {
       // And where a backpack entry is found, build our imports and defs
       importedBackpacks.add(unit.backpack.class);
 
-      const backpackClassName = `${this.header.name}__Backpack_${unit.uniqueSlug}`;
+      const backpackClassName = `${this.header.name}__Backpack_${this.ConvertToArmaClassSafeString(unit.uniqueSlug)}`;
 
       // prettier-ignore
       let backpackDef =
@@ -267,7 +270,7 @@ export default class FactionGenerator extends Generator {
     let soldierDef = '';
 
     (this.body.units as FactionUnit[]).forEach((unit) => {
-      const classname = `${this.header.name}__Soldier_${unit.uniqueSlug}`;
+      const classname = this.ConvertUnitSlugIntoClassString(unit.uniqueSlug);
       // prettier-ignore
       soldierDef +=
         `\n  class ${classname}: ${unit.baseSoldier}` +
@@ -308,11 +311,80 @@ export default class FactionGenerator extends Generator {
    *
    * @param values
    */
-  private GenerateGroups(values: FactionTemplateValues): void {}
+  private GenerateGroups(values: FactionTemplateValues): void {
+    const categories: string[] = [];
+
+    (this.body.groups as FactionGroupCategory[]).forEach((category) => {
+      const groups: string[] = [];
+
+      category.groups.forEach((group) => {
+        const units: string[] = [];
+
+        group.units.forEach((unit) => {
+          // Convert each unit into a proper entry and insert into units[]
+          // prettier-ignore
+          units.push(
+            `\n          class Unit${units.length}` +
+            `\n          {` +
+            `\n            side = ${this.body.meta.side};` +
+            `\n            vehicle = "${this.ConvertUnitSlugIntoClassString(unit.unitSlug)}";` +
+            `\n            rank = "${unit.rank}";` +
+            `\n            position[] = { ${unit.pos.x}, ${unit.pos.y}, ${unit.pos.z} };` +
+            `\n          };`
+          );
+        });
+
+        // wrap units with group entry and insert into groups[]
+        // prettier-ignore
+        let groupString =
+          `\n        class ${this.header.name}__Group_${this.ConvertToArmaClassSafeString(group.name)}` +
+          `\n        {` +
+          `\n          name = "${group.name}";` +
+          `\n          side = ${this.body.meta.side};` +
+          `\n          faction = "${this.header.name}";`;
+
+        if (group.icon) {
+          groupString += `\n          icon = "${group.icon}";`;
+        }
+
+        // prettier-ignore
+        groupString +=
+          '\n' +
+          units.join('') +
+          '\n        };';
+
+        groups.push(groupString);
+      });
+
+      // wrap groups with category entry and insert into categories[]
+      // prettier-ignore
+      categories.push(
+        `\n      class ${this.ConvertToArmaClassSafeString(category.name)}` +
+        `\n      {` +
+        `\n        name = "${category.name}";` +
+        `\n` +
+        groups.join('') +
+        `\n      };`
+      );
+    });
+
+    // merge categories and set on values.cfg_groups;
+    values.cfg_groups = categories.join('');
+  }
 
   /**
    * SUB-HELPERS
    */
+
+  /**
+   * A common utility method for soldier unit class strings, so that we can change this in only
+   * one location if needed in the future
+   * @param slug The unique soldier unit slug
+   * @returns The full classname of the soldier unit
+   */
+  private ConvertUnitSlugIntoClassString(slug: string): string {
+    return `${this.header.name}__Soldier_${this.ConvertToArmaClassSafeString(slug)}`;
+  }
 
   /**
    * Converts strings to something that's safe to be used as an Arma class name
@@ -320,7 +392,9 @@ export default class FactionGenerator extends Generator {
    * @returns A string safe to use as an Arma class name
    */
   private ConvertToArmaClassSafeString(input: string): string {
-    return input.replaceAll(' ', '_').replaceAll('-', '');
+    return input
+      .replaceAll(/[^\w\s]/g, '') // Special characters get removed
+      .replaceAll(/\s+/g, '_'); // Any number of spaces becomes single underscore
   }
 
   /**

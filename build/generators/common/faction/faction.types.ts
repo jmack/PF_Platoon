@@ -18,7 +18,7 @@ export type FactionGeneratorPayloadBody = {
   };
   baseSoldiers: FactionBaseSoldier[];
   units: FactionUnit[];
-  groups: FactionGroup[];
+  groups: FactionGroupCategory[];
 };
 
 /**
@@ -58,6 +58,16 @@ export const FactionUnitRoles = {
   UNARMED: 'Unarmed',
 } as const;
 export type FactionUnitRole = (typeof FactionUnitRoles)[keyof typeof FactionUnitRoles];
+
+export const FactionUnitRanks = {
+  PRIVATE: 'PRIVATE',
+  CORPORAL: 'CORPORAL',
+  SERGEANT: 'SERGEANT',
+  LIEUTENANT: 'LIEUTENANT',
+  CAPTAIN: 'CAPTAIN',
+  COLONEL: 'COLONEL',
+} as const;
+export type FactionUnitRank = (typeof FactionUnitRanks)[keyof typeof FactionUnitRanks];
 
 /**
  * Items and Weapons
@@ -123,7 +133,26 @@ export type FactionUnit = {
   backpack?: FactionUnitBackpack | string;
 };
 
-export type FactionGroup = {};
+export type FactionGroupCategory = {
+  name: string;
+  groups: FactionGroup[];
+};
+
+export type FactionGroup = {
+  name: string;
+  icon?: string;
+  units: FactionGroupUnit[];
+};
+
+export type FactionGroupUnit = {
+  unitSlug: string;
+  rank: FactionUnitRank;
+  pos: {
+    x: number;
+    y: number;
+    z: number;
+  };
+};
 
 /**
  * Templating Defs
@@ -146,4 +175,6 @@ export type FactionTemplateValues = {
   cfg_vehicles_base_soldiers: string;
   cfg_vehicles_soldiers: string;
   cfg_vehicles_vehicles: string;
+
+  cfg_groups: string;
 };
