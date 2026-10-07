@@ -47,7 +47,9 @@ class CfgWeapons
   class AMF_RFF2_01_F;
   class BB_Factions__O_FreeFrance__Weapon_AMF_RFF2_01_F__ScromeJ8_NoCover: AMF_RFF2_01_F
   {
-    scope = 0;
+    scope = 1;
+    scopeCurator = 1;
+    scopeArsenal = 1;
     baseWeapon = "BB_Factions__O_FreeFrance__Weapon_AMF_RFF2_01_F__ScromeJ8_NoCover";
 
     class LinkedItems

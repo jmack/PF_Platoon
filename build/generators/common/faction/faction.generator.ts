@@ -134,7 +134,9 @@ export default class FactionGenerator extends Generator {
         // prettier-ignore
         const weaponDefBodyTop =
           `\n  {` +
-          `\n    scope = 0;` +
+          `\n    scope = 1;` +
+          `\n    scopeCurator = 1;` +
+          `\n    scopeArsenal = 1;` +
           `\n    baseWeapon = "${weaponDefClassname}";` +
           `\n` +
           `\n    class LinkedItems` +
