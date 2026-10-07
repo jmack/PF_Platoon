@@ -1,15 +1,14 @@
 import { Generator } from '../../generator.class.ts';
 import {
-  FactionBaseSoldier,
-  FactionGroupCategory,
+  FactionGeneratorPayloadBody,
   FactionTemplateValues,
-  FactionUnit,
   FactionUnitBackpackItem,
   FactionUnitBackpackItemType,
   FactionUnitBackpackItemTypes,
   FactionUnitItem,
   FactionUnitItemType,
   FactionUnitItemTypes,
+  FactionVehicle,
 } from './faction.types.ts';
 
 // TODO: Unit Icons
@@ -19,6 +18,10 @@ import {
 export default class FactionGenerator extends Generator {
   template = './build/generators/common/faction/faction.template.tpl';
 
+  // To have typing present in the IDE
+  private typedBody: FactionGeneratorPayloadBody = this.body;
+
+  // Utility consts
   private FACTION_SIDE_NAMES = ['East', 'West', 'Ind', 'Civ'];
   private FACTION_SIDE_LETTER = ['O', 'B', 'I', 'C'];
 
@@ -27,13 +30,13 @@ export default class FactionGenerator extends Generator {
     const values: FactionTemplateValues = {
       faction_class: this.header.name,
       root_class: this.header.name.slice(0, this.header.name.indexOf('__')),
-      author: this.body.meta.author,
+      author: this.typedBody.meta.author,
       required_addons: '',
       exported_units: '',
-      faction_name: this.body.meta.displayName,
-      priority: this.body.meta.priority,
-      faction_side_number: this.body.meta.side,
-      faction_side_name: this.FACTION_SIDE_NAMES[this.body.meta.side] ?? 'West',
+      faction_name: this.typedBody.meta.displayName,
+      priority: this.typedBody.meta.priority,
+      faction_side_number: this.typedBody.meta.side,
+      faction_side_name: this.FACTION_SIDE_NAMES[this.typedBody.meta.side] ?? 'West',
       cfg_weapons: '',
       cfg_vehicles_backpacks: '',
       cfg_vehicles_base_soldiers: '',
@@ -75,7 +78,7 @@ export default class FactionGenerator extends Generator {
     const weaponDefs = new Set<string>();
 
     // First, scan all weapons for complex weapons
-    (this.body.units as FactionUnit[]).forEach((unit) => {
+    this.typedBody.units.forEach((unit) => {
       unit.weapons.forEach((weapon, index) => {
         if (typeof weapon === 'string' || weapon instanceof String) {
           return;
@@ -174,7 +177,7 @@ export default class FactionGenerator extends Generator {
     const backpackDefs = new Set<string>();
 
     // Scan all units for backpacks
-    (this.body.units as FactionUnit[]).forEach((unit) => {
+    this.typedBody.units.forEach((unit) => {
       if (!unit.backpack || typeof unit.backpack === 'string' || unit.backpack instanceof String) {
         return;
       }
@@ -223,10 +226,10 @@ export default class FactionGenerator extends Generator {
     const generatedUnits: any = {};
 
     // All base soldiers inherit from X_Soldier_Base_F (for now)
-    const baseImport = `${this.FACTION_SIDE_LETTER[this.body.meta.side]}_Soldier_Base_F`;
+    const baseImport = `${this.FACTION_SIDE_LETTER[this.typedBody.meta.side]}_Soldier_Base_F`;
     let baseDefs = `\n  class ${baseImport};`;
 
-    (this.body.baseSoldiers as FactionBaseSoldier[]).forEach((baseClass) => {
+    this.typedBody.baseSoldiers.forEach((baseClass) => {
       const classname = `${this.header.name}__Base_${this.ConvertToArmaClassSafeString(baseClass.name)}`;
 
       if (generatedUnits[baseClass.name]) {
@@ -252,7 +255,7 @@ export default class FactionGenerator extends Generator {
     });
 
     // Rewrite baseSoldiers for all units that match up with our generated bases
-    (this.body.units as FactionUnit[]).forEach((unit) => {
+    this.typedBody.units.forEach((unit) => {
       if (generatedUnits[unit.baseSoldier]) {
         unit.baseSoldier = generatedUnits[unit.baseSoldier];
       }
@@ -270,7 +273,7 @@ export default class FactionGenerator extends Generator {
   private GenerateSoldiers(values: FactionTemplateValues): void {
     let soldierDef = '';
 
-    (this.body.units as FactionUnit[]).forEach((unit) => {
+    this.typedBody.units.forEach((unit) => {
       const classname = this.ConvertUnitSlugIntoClassString(unit.uniqueSlug);
       // prettier-ignore
       soldierDef +=
@@ -315,7 +318,7 @@ export default class FactionGenerator extends Generator {
   private GenerateGroups(values: FactionTemplateValues): void {
     const categories: string[] = [];
 
-    (this.body.groups as FactionGroupCategory[]).forEach((category) => {
+    this.typedBody.groups.forEach((category) => {
       const groups: string[] = [];
 
       category.groups.forEach((group) => {
@@ -327,7 +330,7 @@ export default class FactionGenerator extends Generator {
           units.push(
             `\n          class Unit${units.length}` +
             `\n          {` +
-            `\n            side = ${this.body.meta.side};` +
+            `\n            side = ${this.typedBody.meta.side};` +
             `\n            vehicle = "${this.ConvertUnitSlugIntoClassString(unit.unitSlug)}";` +
             `\n            rank = "${unit.rank}";` +
             `\n            position[] = { ${unit.pos.x}, ${unit.pos.y}, ${unit.pos.z} };` +
@@ -341,7 +344,7 @@ export default class FactionGenerator extends Generator {
           `\n        class ${this.header.name}__Group_${this.ConvertToArmaClassSafeString(group.name)}` +
           `\n        {` +
           `\n          name = "${group.name}";` +
-          `\n          side = ${this.body.meta.side};` +
+          `\n          side = ${this.typedBody.meta.side};` +
           `\n          faction = "${this.header.name}";`;
 
         if (group.icon) {

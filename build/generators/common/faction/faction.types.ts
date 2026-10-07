@@ -10,7 +10,6 @@ export type FactionPayloadDefinition = {
 
 export type FactionGeneratorPayloadBody = {
   meta: {
-    //classSlug: string;
     displayName: string;
     author: string;
     priority: number;
@@ -167,7 +166,7 @@ export type FactionTemplateValues = {
 
   faction_name: string;
   priority: number;
-  faction_side_number: string;
+  faction_side_number: number;
   faction_side_name: string;
 
   cfg_weapons: string;
