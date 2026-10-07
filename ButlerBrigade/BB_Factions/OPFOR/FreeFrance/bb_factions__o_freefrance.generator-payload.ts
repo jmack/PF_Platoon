@@ -179,11 +179,31 @@ const body: FactionGeneratorPayloadBody = {
     requiredAddons: [],
   },
   baseSoldiers: [
+    // Standard
     {
       name: 'Base',
       uniformClass: 'Mle_F1_uniform_lizard',
       nakedUniform: 'U_BasicBody',
       identityTypes: ['LanguageFRE_F', 'Head_Tanoan', 'Head_African', 'Head_TK', 'NoGlasses'],
+    },
+    {
+      name: 'Base_Rolled',
+      uniformClass: 'Mle_F1_uniform_lizard_roll',
+      nakedUniform: 'U_BasicBody',
+      identityTypes: ['LanguageFRE_F', 'Head_Tanoan', 'Head_African', 'Head_TK', 'NoGlasses'],
+    },
+    // Head_Euro makes these bases much more white. Because colonial white supremacy.
+    {
+      name: 'White',
+      uniformClass: 'Mle_F1_uniform_lizard',
+      nakedUniform: 'U_BasicBody',
+      identityTypes: ['LanguageFRE_F', 'Head_Tanoan', 'Head_African', 'Head_TK', 'Head_Euro', 'NoGlasses'],
+    },
+    {
+      name: 'White_Rolled',
+      uniformClass: 'Mle_F1_uniform_lizard_roll',
+      nakedUniform: 'U_BasicBody',
+      identityTypes: ['LanguageFRE_F', 'Head_Tanoan', 'Head_African', 'Head_TK', 'Head_Euro', 'NoGlasses'],
     },
   ],
   units: [
@@ -445,6 +465,7 @@ const body: FactionGeneratorPayloadBody = {
       weapons: [
         'Famas_F1_PGMP', // Famas Rifle
         'AMF_Pamas', // PAMAS G1 Pistol
+        'AMF_APX_M241', // APX M241 Binos
       ],
       gear: [
         ...INF_LEADER_WORN,
@@ -465,13 +486,14 @@ const body: FactionGeneratorPayloadBody = {
     // Squad Leader
     {
       uniqueSlug: 'Infantry_Basic_SquadLeader',
-      baseSoldier: 'Base',
+      baseSoldier: 'White',
       editorSubcategory: FactionEditorSubcategories.INFANTRY,
       displayName: 'Squad Leader',
       role: FactionUnitRoles.RIFLEMAN,
       weapons: [
         'Famas_F1_PGMP', // Famas Rifle
         'AMF_Pamas', // PAMAS G1 Pistol
+        'AMF_APX_M241', // APX M241 Binos
       ],
       gear: [
         ...INF_LEADER_WORN,
@@ -490,10 +512,96 @@ const body: FactionGeneratorPayloadBody = {
       },
     },
     // Officer
-    // Vehicle Driver
-    // Vehicle Commander
-    // Vehicle Gunner
     // Vehicle Crew
+    {
+      uniqueSlug: 'Infantry_Basic_Vehicle_Crew',
+      baseSoldier: 'Base_Rolled',
+      editorSubcategory: FactionEditorSubcategories.INFANTRY,
+      displayName: 'Vehicle Crew',
+      role: FactionUnitRoles.CREWMAN,
+      weapons: [
+        'AMF_Pamas', // PAMAS G1 Pistol
+        'AMF_APX_M241', // APX M241 Binos
+      ],
+      gear: [
+        {
+          class: 'cwr3_b_headgear_cvc',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        {
+          class: 'ItemCompass',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        {
+          class: 'ItemWatch',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        {
+          class: 'V_Simc_flak_alice_45_ligt',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        {
+          class: 'TFAR_fadak',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        {
+          class: 'ItemGPS',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        {
+          class: 'ItemMap',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        ...INF_PAMAS_MAGS,
+        ...INF_LEADER_CARRIED_GEAR,
+        ...INF_STANDARD_MEDICAL,
+      ],
+    },
+    // Vehicle Commander
+    {
+      uniqueSlug: 'Infantry_Basic_Vehicle_Commander',
+      baseSoldier: 'White_Rolled',
+      editorSubcategory: FactionEditorSubcategories.INFANTRY,
+      displayName: 'Vehicle Commander',
+      role: FactionUnitRoles.CREWMAN,
+      weapons: [
+        'AMF_Pamas', // PAMAS G1 Pistol
+        'AMF_APX_M241', // APX M241 Binos
+      ],
+      gear: [
+        {
+          class: 'cwr3_b_headgear_cvc_goggles',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        {
+          class: 'ItemCompass',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        {
+          class: 'ItemWatch',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        {
+          class: 'V_Simc_flak_alice_45_ligt',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        {
+          class: 'TFAR_fadak',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        {
+          class: 'ItemGPS',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        {
+          class: 'ItemMap',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        ...INF_PAMAS_MAGS,
+        ...INF_LEADER_CARRIED_GEAR,
+        ...INF_STANDARD_MEDICAL,
+      ],
+    },
     // Helicopter Pilot
     // Helicopter Crew
     // Aircraft Pilot
