@@ -18,6 +18,7 @@ export type FactionGeneratorPayloadBody = {
   };
   baseSoldiers: FactionBaseSoldier[];
   units: FactionUnit[];
+  vehicles: FactionVehicle[];
   groups: FactionGroupCategory[];
 };
 
@@ -131,6 +132,20 @@ export type FactionUnit = {
   weapons: (FactionUnitWeapon | string)[];
   gear: FactionUnitItem[];
   backpack?: FactionUnitBackpack | string;
+};
+
+export type FactionVehicle = {
+  uniqueSlug: string;
+  vehicleClass: string;
+  editorSubcategory: FactionEditorSubcategory;
+  displayName: string;
+  driverSlug: string;
+  turrets?: FactionVehicleTurret[];
+};
+
+export type FactionVehicleTurret = {
+  turretType: string;
+  gunnerSlug: string;
 };
 
 export type FactionGroupCategory = {

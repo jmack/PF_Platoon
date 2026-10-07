@@ -12,7 +12,6 @@ import {
 } from './faction.types.ts';
 
 // TODO: Unit Icons
-// TODO: Vehicles
 // TODO: RequiredAddons
 
 export default class FactionGenerator extends Generator {
@@ -57,7 +56,10 @@ export default class FactionGenerator extends Generator {
     // 3b. Faction Soldiers
     this.GenerateSoldiers(values);
 
-    // 4. Groups
+    // 4. Vehicles
+    this.GenerateVehicles(values);
+
+    // 5. Groups
     this.GenerateGroups(values);
 
     // Fill and save the template
@@ -308,7 +310,67 @@ export default class FactionGenerator extends Generator {
       values.exported_units += `\n      "${classname}",`;
     });
 
-    values.cfg_vehicles_soldiers = `\n  // * Soldiers ***\n${soldierDef}\n  // ***`;
+    values.cfg_vehicles_soldiers = `\n  // * Soldiers ***${soldierDef}\n  // ***`;
+  }
+
+  private GenerateVehicles(values: FactionTemplateValues): void {
+    const importedVehicles = new Set<string>();
+    let vehicleDef = '';
+
+    this.typedBody.vehicles.forEach((vehicle) => {
+      const classname = this.ConvertUnitSlugIntoClassString(vehicle.uniqueSlug);
+      importedVehicles.add(vehicle.vehicleClass);
+
+      // If turrets are present, we need to do some really fucky stuff
+      if (vehicle.turrets?.length) {
+        // prettier-ignore
+        vehicleDef +=
+          `\n  class ${classname}_subimport_1: ${vehicle.vehicleClass} { scope = 0; class Turrets; };` +
+          `\n  class ${classname}_subimport_2: ${classname}_subimport_1 {` +
+          `\n    class Turrets: Turrets {` +
+          vehicle.turrets.map(turret => `\n      class ${turret.turretType};`).join('') +
+          `\n    };` +
+          `\n  };` +
+          `\n  class ${classname}: ${classname}_subimport_2`;
+      } else {
+        vehicleDef += `\n  class ${classname}: ${vehicle.vehicleClass}`;
+      }
+
+      // prettier-ignore
+      vehicleDef +=
+        `\n  {` +
+        `\n    displayName = "${vehicle.displayName}";` +
+        `\n` +
+        `\n    scope = 2;` +
+        `\n    scopeCurator = 2;` +
+        `\n` +
+        `\n    side = ${this.typedBody.meta.side};` +
+        `\n    faction = "${this.header.name}";` +
+        `\n` +
+        `\n    editorCategory = "${this.header.name}";` +
+        `\n    editorSubcategry = "${vehicle.editorSubcategory}";` +
+        `\n` +
+        `\n    crew = "${this.ConvertUnitSlugIntoClassString(vehicle.driverSlug)}";`;
+
+      if (vehicle.turrets?.length) {
+        vehicleDef += '\n\n    class Turrets: Turrets\n    {';
+        vehicle.turrets.forEach((turret) => {
+          vehicleDef += `\n      class ${turret.turretType}: ${turret.turretType} { gunnerType = "${this.ConvertUnitSlugIntoClassString(turret.gunnerSlug)}"; };`;
+        });
+        vehicleDef += '\n    };';
+      }
+
+      vehicleDef += '\n  };';
+
+      // Add our new vehicle to the export list
+      values.exported_units += `\n      "${classname}",`;
+    });
+
+    // Convert our imports and weapon defs into a full string for export
+    const importString = Array.from(importedVehicles.values())
+      .map((veh) => `\n  class ${veh};`)
+      .join('');
+    values.cfg_vehicles_vehicles = `\n\n  // * Vehicles ***${importString}${vehicleDef}\n  // ***`;
   }
 
   /**

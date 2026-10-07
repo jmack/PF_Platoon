@@ -27,6 +27,7 @@ class CfgPatches {
       "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_SquadLeader",
       "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_Vehicle_Crew",
       "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_Vehicle_Commander",
+      "BB_Factions__O_FreeFrance__Soldier_Wheeled_Basic_VAB_12x7",
     };
   };
 };
@@ -450,7 +451,6 @@ class CfgVehicles
   // ***
 
   // * Soldiers ***
-
   class BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_Rifleman: BB_Factions__O_FreeFrance__Base_Base
   {
     displayName = "Rifleman";
@@ -1478,6 +1478,25 @@ class CfgVehicles
       "ACE_tourniquet",
       "ACE_morphine",
     };
+  };
+  // ***
+
+  // * Vehicles ***
+  class B_AMF_VAB_ULTIMA_X8_F;
+  class BB_Factions__O_FreeFrance__Soldier_Wheeled_Basic_VAB_12x7: B_AMF_VAB_ULTIMA_X8_F
+  {
+    displayName = "VAB (12.7mm)";
+
+    scope = 2;
+    scopeCurator = 2;
+
+    side = 0;
+    faction = "BB_Factions__O_FreeFrance";
+
+    editorCategory = "BB_Factions__O_FreeFrance";
+    editorSubcategry = "BB_Factions_EdSubcat_Wheeled";
+
+    crew = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_Vehicle_Crew";
   };
   // ***
 };

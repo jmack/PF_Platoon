@@ -606,9 +606,17 @@ const body: FactionGeneratorPayloadBody = {
     // Helicopter Crew
     // Aircraft Pilot
     // Aircraft Crew
-
+  ],
+  vehicles: [
     // Wheeled: GBC 180 Transport de troupes
     // Wheeled: VAB Ultima 12.7
+    {
+      uniqueSlug: 'Wheeled_Basic_VAB_12x7',
+      vehicleClass: 'B_AMF_VAB_ULTIMA_X8_F',
+      editorSubcategory: FactionEditorSubcategories.WHEELED,
+      displayName: 'VAB (12.7mm)',
+      driverSlug: 'Infantry_Basic_Vehicle_Crew',
+    },
     // Wheeled: VB2L - MAG-58
 
     // Tracked: VBCI Equipage Francais
