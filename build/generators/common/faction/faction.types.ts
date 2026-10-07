@@ -15,6 +15,7 @@ export type FactionGeneratorPayloadBody = {
     author: string;
     priority: number;
     side: FactionSideType;
+    requiredAddons: string[];
   };
   baseSoldiers: FactionBaseSoldier[];
   units: FactionUnit[];

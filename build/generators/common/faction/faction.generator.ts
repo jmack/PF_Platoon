@@ -12,6 +12,7 @@ import {
   FactionUnitItemTypes,
 } from './faction.types.ts';
 
+// TODO: Unit Icons
 // TODO: Vehicles
 // TODO: RequiredAddons
 

@@ -4,6 +4,7 @@ import {
   FactionSideTypes,
   FactionUnitBackpackItemTypes,
   FactionUnitItemTypes,
+  FactionUnitRanks,
   FactionUnitRoles,
 } from '../../../../build/generators/common/faction/faction.types.ts';
 import type { GeneratorHeader, GeneratorPayloadDefinition } from '../../../../build/generators/generator.types';
@@ -18,15 +19,27 @@ const INF_STANDARD_WORN = [
     type: FactionUnitItemTypes.EQUIPPED,
   },
   {
-    class: 'TFAR_fadak',
-    type: FactionUnitItemTypes.EQUIPPED,
-  },
-  {
     class: 'ItemCompass',
     type: FactionUnitItemTypes.EQUIPPED,
   },
   {
     class: 'ItemWatch',
+    type: FactionUnitItemTypes.EQUIPPED,
+  },
+];
+
+const INF_LEADER_WORN = [
+  ...INF_STANDARD_WORN,
+  {
+    class: 'TFAR_fadak',
+    type: FactionUnitItemTypes.EQUIPPED,
+  },
+  {
+    class: 'ItemGPS',
+    type: FactionUnitItemTypes.EQUIPPED,
+  },
+  {
+    class: 'ItemMap',
     type: FactionUnitItemTypes.EQUIPPED,
   },
 ];
@@ -40,9 +53,21 @@ const INF_STANDARD_CARRIED_GEAR = [
     class: 'ACE_Flashlight_XL50',
     type: FactionUnitItemTypes.CARRIED,
   },
+  {
+    class: 'ACE_EarPlugs',
+    type: FactionUnitItemTypes.CARRIED,
+  },
 ];
 
-const INF_FAMAS_CARRIED_MAGS = [
+const INF_LEADER_CARRIED_GEAR = [
+  ...INF_STANDARD_CARRIED_GEAR,
+  {
+    class: 'ACE_MapTools',
+    type: FactionUnitItemTypes.CARRIED,
+  },
+];
+
+const INF_FAMAS_MAGS = [
   {
     class: 'AMF_25Rnd_BO_MEN_SS109',
     type: FactionUnitItemTypes.MAGAZINE,
@@ -50,7 +75,7 @@ const INF_FAMAS_CARRIED_MAGS = [
   },
 ];
 
-const INF_PAMAS_CARRIED_MAGS = [
+const INF_PAMAS_MAGS = [
   {
     class: 'AMF_15Rnd_9x19_PAMAS',
     type: FactionUnitItemTypes.MAGAZINE,
@@ -71,20 +96,35 @@ const INF_STANDARD_GRENADES = [
   },
 ];
 
-const INF_STANDARD_BACKPACK_GEAR = [
+const INF_STANDARD_MEDICAL = [
   {
-    class: 'ACE_EarPlugs',
-    type: FactionUnitBackpackItemTypes.ITEM,
+    class: 'ACE_elasticBandage',
+    type: FactionUnitItemTypes.CARRIED,
     count: 1,
   },
   {
-    class: 'AMF_MSC_GOGGLES_BLK',
-    type: FactionUnitBackpackItemTypes.ITEM,
+    class: 'ACE_packingBandage',
+    type: FactionUnitItemTypes.CARRIED,
     count: 1,
   },
   {
-    class: 'ACE_MapTools',
-    type: FactionUnitBackpackItemTypes.ITEM,
+    class: 'ACE_quikclot',
+    type: FactionUnitItemTypes.CARRIED,
+    count: 1,
+  },
+  {
+    class: 'ACE_painkillers',
+    type: FactionUnitItemTypes.CARRIED,
+    count: 2,
+  },
+  {
+    class: 'ACE_tourniquet',
+    type: FactionUnitItemTypes.CARRIED,
+    count: 1,
+  },
+  {
+    class: 'ACE_morphine',
+    type: FactionUnitItemTypes.CARRIED,
     count: 1,
   },
 ];
@@ -108,10 +148,15 @@ const INF_STANDARD_BACKPACK_MEDICAL = [
   {
     class: 'ACE_painkillers',
     type: FactionUnitBackpackItemTypes.ITEM,
-    count: 1,
+    count: 2,
   },
   {
     class: 'ACE_tourniquet',
+    type: FactionUnitBackpackItemTypes.ITEM,
+    count: 1,
+  },
+  {
+    class: 'ACE_morphine',
     type: FactionUnitBackpackItemTypes.ITEM,
     count: 1,
   },
@@ -131,13 +176,14 @@ const body: FactionGeneratorPayloadBody = {
     author: 'wlan0',
     priority: 5,
     side: FactionSideTypes.OPFOR,
+    requiredAddons: [],
   },
   baseSoldiers: [
     {
       name: 'Base',
       uniformClass: 'Mle_F1_uniform_lizard',
       nakedUniform: 'U_BasicBody',
-      identityTypes: ['LanguageFRE_F', 'Head_Tanoan', 'Head_African', 'Head_Euro', 'NoGlasses'],
+      identityTypes: ['LanguageFRE_F', 'Head_Tanoan', 'Head_African', 'Head_TK', 'NoGlasses'],
     },
   ],
   units: [
@@ -151,7 +197,6 @@ const body: FactionGeneratorPayloadBody = {
       weapons: [
         'Famas_F1_PGMP', // Famas Rifle
         'AMF_Pamas', // PAMAS G1 Pistol
-        'AMF_APX_M241', // APX M241 Binos
       ],
       gear: [
         ...INF_STANDARD_WORN,
@@ -159,14 +204,14 @@ const body: FactionGeneratorPayloadBody = {
           class: 'V_Simc_flak_alice',
           type: FactionUnitItemTypes.EQUIPPED,
         },
-        ...INF_FAMAS_CARRIED_MAGS,
-        ...INF_PAMAS_CARRIED_MAGS,
+        ...INF_FAMAS_MAGS,
+        ...INF_PAMAS_MAGS,
         ...INF_STANDARD_GRENADES,
         ...INF_STANDARD_CARRIED_GEAR,
       ],
       backpack: {
         class: 'F1_Sac',
-        items: [...INF_STANDARD_BACKPACK_GEAR, ...INF_STANDARD_BACKPACK_MEDICAL],
+        items: [...INF_STANDARD_BACKPACK_MEDICAL],
       },
     },
     // Grenadier
@@ -179,7 +224,6 @@ const body: FactionGeneratorPayloadBody = {
       weapons: [
         'Famas_F1_PGMP', // Famas Rifle
         'AMF_Pamas', // PAMAS G1 Pistol
-        'AMF_APX_M241', // APX M241 Binos
       ],
       gear: [
         ...INF_STANDARD_WORN,
@@ -187,7 +231,7 @@ const body: FactionGeneratorPayloadBody = {
           class: 'V_Simc_flak_alice_60',
           type: FactionUnitItemTypes.EQUIPPED,
         },
-        ...INF_FAMAS_CARRIED_MAGS,
+        ...INF_FAMAS_MAGS,
         ...INF_STANDARD_CARRIED_GEAR,
         {
           class: 'AMF_RFG_APAV40',
@@ -198,7 +242,6 @@ const body: FactionGeneratorPayloadBody = {
       backpack: {
         class: 'F1_Sac',
         items: [
-          ...INF_STANDARD_BACKPACK_GEAR,
           ...INF_STANDARD_BACKPACK_MEDICAL,
           {
             class: 'AMF_RFG_APAV40',
@@ -227,8 +270,8 @@ const body: FactionGeneratorPayloadBody = {
           class: 'V_Simc_flak_alice',
           type: FactionUnitItemTypes.EQUIPPED,
         },
-        ...INF_FAMAS_CARRIED_MAGS,
-        ...INF_PAMAS_CARRIED_MAGS,
+        ...INF_FAMAS_MAGS,
+        ...INF_PAMAS_MAGS,
         ...INF_STANDARD_GRENADES,
         ...INF_STANDARD_CARRIED_GEAR,
         {
@@ -240,7 +283,6 @@ const body: FactionGeneratorPayloadBody = {
       backpack: {
         class: 'F1_Sac',
         items: [
-          ...INF_STANDARD_BACKPACK_GEAR,
           ...INF_STANDARD_BACKPACK_MEDICAL,
           {
             class: 'AMF_AC89mm_F1',
@@ -276,13 +318,12 @@ const body: FactionGeneratorPayloadBody = {
           type: FactionUnitItemTypes.MAGAZINE,
           count: 5,
         },
-        ...INF_PAMAS_CARRIED_MAGS,
+        ...INF_PAMAS_MAGS,
         ...INF_STANDARD_CARRIED_GEAR,
       ],
       backpack: {
         class: 'F1_Sac',
         items: [
-          ...INF_STANDARD_BACKPACK_GEAR,
           ...INF_STANDARD_BACKPACK_MEDICAL,
           {
             class: 'ACE_Kestrel4500',
@@ -298,12 +339,165 @@ const body: FactionGeneratorPayloadBody = {
       },
     },
     // Machine Gunner
+    {
+      uniqueSlug: 'Infantry_Basic_MachineGunner',
+      baseSoldier: 'Base',
+      editorSubcategory: FactionEditorSubcategories.INFANTRY,
+      displayName: 'Machine Gunner',
+      role: FactionUnitRoles.MACHINE_GUNNER,
+      weapons: [
+        'FN_Minimi_F1', // FN Minimi Para
+        'AMF_Pamas', // PAMAS G1 Pistol
+      ],
+      gear: [
+        ...INF_STANDARD_WORN,
+        {
+          class: 'V_Simc_flak_alice_60',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        {
+          class: 'AMF_100Rnd_556x45_Minimi_BO_SS109_DCP',
+          type: FactionUnitItemTypes.MAGAZINE,
+          count: 3,
+        },
+        ...INF_PAMAS_MAGS,
+        ...INF_STANDARD_GRENADES,
+        ...INF_STANDARD_CARRIED_GEAR,
+        ...INF_STANDARD_MEDICAL,
+      ],
+    },
     // Asst. Machine Gunner
+    {
+      uniqueSlug: 'Infantry_Basic_AsstMachineGunner',
+      baseSoldier: 'Base',
+      editorSubcategory: FactionEditorSubcategories.INFANTRY,
+      displayName: 'Asst. Machine Gunner',
+      role: FactionUnitRoles.ASSISTANT,
+      weapons: [
+        'Famas_F1_PGMP', // Famas Rifle
+        'AMF_Pamas', // PAMAS G1 Pistol
+      ],
+      gear: [
+        ...INF_STANDARD_WORN,
+        {
+          class: 'V_Simc_flak_alice',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        ...INF_FAMAS_MAGS,
+        ...INF_PAMAS_MAGS,
+        ...INF_STANDARD_GRENADES,
+        ...INF_STANDARD_CARRIED_GEAR,
+      ],
+      backpack: {
+        class: 'F1_Sac',
+        items: [
+          ...INF_STANDARD_BACKPACK_MEDICAL,
+          {
+            class: 'AMF_100Rnd_556x45_Minimi_BO_SS109_DCP',
+            type: FactionUnitBackpackItemTypes.MAGAZINE,
+            count: 5,
+          },
+          {
+            class: 'ACE_SpareBarrel',
+            type: FactionUnitBackpackItemTypes.ITEM,
+            count: 2,
+          },
+        ],
+      },
+    },
     // RTO
+    {
+      uniqueSlug: 'Infantry_Basic_RTO',
+      baseSoldier: 'Base',
+      editorSubcategory: FactionEditorSubcategories.INFANTRY,
+      displayName: 'RTO',
+      role: FactionUnitRoles.RADIO_OPERATOR,
+      weapons: [
+        'Famas_F1_PGMP', // Famas Rifle
+        'AMF_Pamas', // PAMAS G1 Pistol
+        'AMF_APX_M241', // APX M241 Binos
+      ],
+      gear: [
+        ...INF_LEADER_WORN,
+        {
+          class: 'V_Simc_flak_alice',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        ...INF_FAMAS_MAGS,
+        ...INF_PAMAS_MAGS,
+        ...INF_STANDARD_GRENADES,
+        ...INF_STANDARD_MEDICAL,
+        ...INF_LEADER_CARRIED_GEAR,
+      ],
+      backpack: {
+        class: 'Radio_PRC_10',
+        items: [],
+      },
+    },
+    // Medic
     // Team Leader
+    {
+      uniqueSlug: 'Infantry_Basic_TeamLeader',
+      baseSoldier: 'Base',
+      editorSubcategory: FactionEditorSubcategories.INFANTRY,
+      displayName: 'Team Leader',
+      role: FactionUnitRoles.RIFLEMAN,
+      weapons: [
+        'Famas_F1_PGMP', // Famas Rifle
+        'AMF_Pamas', // PAMAS G1 Pistol
+      ],
+      gear: [
+        ...INF_LEADER_WORN,
+        {
+          class: 'V_Simc_flak_alice',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        ...INF_FAMAS_MAGS,
+        ...INF_PAMAS_MAGS,
+        ...INF_STANDARD_GRENADES,
+        ...INF_LEADER_CARRIED_GEAR,
+      ],
+      backpack: {
+        class: 'F1_Sac',
+        items: [...INF_STANDARD_BACKPACK_MEDICAL],
+      },
+    },
     // Squad Leader
+    {
+      uniqueSlug: 'Infantry_Basic_SquadLeader',
+      baseSoldier: 'Base',
+      editorSubcategory: FactionEditorSubcategories.INFANTRY,
+      displayName: 'Squad Leader',
+      role: FactionUnitRoles.RIFLEMAN,
+      weapons: [
+        'Famas_F1_PGMP', // Famas Rifle
+        'AMF_Pamas', // PAMAS G1 Pistol
+      ],
+      gear: [
+        ...INF_LEADER_WORN,
+        {
+          class: 'V_Simc_flak_alice',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        ...INF_FAMAS_MAGS,
+        ...INF_PAMAS_MAGS,
+        ...INF_STANDARD_GRENADES,
+        ...INF_LEADER_CARRIED_GEAR,
+      ],
+      backpack: {
+        class: 'F1_Sac',
+        items: [...INF_STANDARD_BACKPACK_MEDICAL],
+      },
+    },
+    // Officer
     // Vehicle Driver
+    // Vehicle Commander
     // Vehicle Gunner
+    // Vehicle Crew
+    // Helicopter Pilot
+    // Helicopter Crew
+    // Aircraft Pilot
+    // Aircraft Crew
 
     // Wheeled: GBC 180 Transport de troupes
     // Wheeled: VAB Ultima 12.7
@@ -314,6 +508,9 @@ const body: FactionGeneratorPayloadBody = {
 
     // Artillery: MO-120-RT F1
     // Artillery: ARQUUS CAESAR
+
+    // Helicopter: ???
+    // Jet: ???
   ],
   groups: [],
 };
