@@ -272,7 +272,7 @@ const body: FactionGeneratorPayloadBody = {
           type: FactionUnitItemTypes.EQUIPPED,
         },
         {
-          class: 'AMF_10Rnd_762x51_BO_F2',
+          class: 'AMF_10Rnd_762x51_BO_F3',
           type: FactionUnitItemTypes.MAGAZINE,
           count: 5,
         },

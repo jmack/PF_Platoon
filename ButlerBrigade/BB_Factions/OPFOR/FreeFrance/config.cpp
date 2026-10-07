@@ -606,22 +606,22 @@ class CfgVehicles
 
     magazines[] =
     {
-      "AMF_10Rnd_762x51_BO_F2",
-      "AMF_10Rnd_762x51_BO_F2",
-      "AMF_10Rnd_762x51_BO_F2",
-      "AMF_10Rnd_762x51_BO_F2",
-      "AMF_10Rnd_762x51_BO_F2",
+      "AMF_10Rnd_762x51_BO_F3",
+      "AMF_10Rnd_762x51_BO_F3",
+      "AMF_10Rnd_762x51_BO_F3",
+      "AMF_10Rnd_762x51_BO_F3",
+      "AMF_10Rnd_762x51_BO_F3",
       "AMF_15Rnd_9x19_PAMAS",
       "AMF_15Rnd_9x19_PAMAS",
       "AMF_15Rnd_9x19_PAMAS",
     };
     respawnMagazines[] =
     {
-      "AMF_10Rnd_762x51_BO_F2",
-      "AMF_10Rnd_762x51_BO_F2",
-      "AMF_10Rnd_762x51_BO_F2",
-      "AMF_10Rnd_762x51_BO_F2",
-      "AMF_10Rnd_762x51_BO_F2",
+      "AMF_10Rnd_762x51_BO_F3",
+      "AMF_10Rnd_762x51_BO_F3",
+      "AMF_10Rnd_762x51_BO_F3",
+      "AMF_10Rnd_762x51_BO_F3",
+      "AMF_10Rnd_762x51_BO_F3",
       "AMF_15Rnd_9x19_PAMAS",
       "AMF_15Rnd_9x19_PAMAS",
       "AMF_15Rnd_9x19_PAMAS",
