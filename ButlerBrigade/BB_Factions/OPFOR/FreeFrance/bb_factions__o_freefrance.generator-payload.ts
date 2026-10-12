@@ -628,7 +628,72 @@ const body: FactionGeneratorPayloadBody = {
     // Helicopter: ???
     // Jet: ???
   ],
-  groups: [],
+  groups: [
+    {
+      name: 'Mechanized Infantry',
+      groups: [
+        {
+          name: 'Rifle Squad',
+          units: [
+            // Lead Squad
+            {
+              unitSlug: 'Infantry_Basic_SquadLeader',
+              rank: FactionUnitRanks.SERGEANT,
+              pos: { x: 2, y: 3, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_RTO',
+              rank: FactionUnitRanks.CORPORAL,
+              pos: { x: 2, y: 1, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_Marksman',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 2, y: -1, z: 0 },
+            },
+            // Rifle Team A
+            {
+              unitSlug: 'Infantry_Basic_TeamLeader',
+              rank: FactionUnitRanks.CORPORAL,
+              pos: { x: 0, y: 1, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_AT',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 0, y: -1, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_Grenadier',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 0, y: -3, z: 0 },
+            },
+            // Rifle Team B
+            {
+              unitSlug: 'Infantry_Basic_TeamLeader',
+              rank: FactionUnitRanks.CORPORAL,
+              pos: { x: -2, y: 1, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_AT',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: -2, y: -1, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_Grenadier',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: -2, y: -3, z: 0 },
+            },
+            // Vehicle
+            {
+              unitSlug: 'Wheeled_Basic_VAB_12x7',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 5, y: 0, z: 0 },
+            },
+          ],
+        },
+      ],
+    },
+  ],
 };
 
 export default {

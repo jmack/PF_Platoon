@@ -1509,36 +1509,85 @@ class CfgGroups
     {
       name = "Free France";
 
-      class Infantry_Test
+      class Mechanized_Infantry
       {
-        name = "Infantry Test";
+        name = "Mechanized Infantry";
 
-        class BB_Factions__O_FreeFrance__Group_Test_Group
+        class BB_Factions__O_FreeFrance__Group_Rifle_Squad
         {
-          name = "Test Group";
+          name = "Rifle Squad";
           side = 0;
           faction = "BB_Factions__O_FreeFrance";
 
           class Unit0
           {
             side = 0;
-            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_Rifleman";
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_SquadLeader";
             rank = "SERGEANT";
-            position[] = { 0, 0, 0 };
+            position[] = { 2, 3, 0 };
           };
           class Unit1
           {
             side = 0;
-            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_Grenadier";
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_RTO";
             rank = "CORPORAL";
-            position[] = { 2, -2, 0 };
+            position[] = { 2, 1, 0 };
           };
           class Unit2
           {
             side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_Marksman";
+            rank = "PRIVATE";
+            position[] = { 2, -1, 0 };
+          };
+          class Unit3
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_TeamLeader";
+            rank = "CORPORAL";
+            position[] = { 0, 1, 0 };
+          };
+          class Unit4
+          {
+            side = 0;
             vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_AT";
             rank = "PRIVATE";
-            position[] = { -2, -2, 0 };
+            position[] = { 0, -1, 0 };
+          };
+          class Unit5
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_Grenadier";
+            rank = "PRIVATE";
+            position[] = { 0, -3, 0 };
+          };
+          class Unit6
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_TeamLeader";
+            rank = "CORPORAL";
+            position[] = { -2, 1, 0 };
+          };
+          class Unit7
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_AT";
+            rank = "PRIVATE";
+            position[] = { -2, -1, 0 };
+          };
+          class Unit8
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_Grenadier";
+            rank = "PRIVATE";
+            position[] = { -2, -3, 0 };
+          };
+          class Unit9
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Wheeled_Basic_VAB_12x7";
+            rank = "PRIVATE";
+            position[] = { 5, 0, 0 };
           };
         };
       };
