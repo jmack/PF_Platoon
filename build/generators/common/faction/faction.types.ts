@@ -139,13 +139,7 @@ export type FactionVehicle = {
   vehicleClass: string;
   editorSubcategory: FactionEditorSubcategory;
   displayName: string;
-  driverSlug: string;
-  turrets?: FactionVehicleTurret[];
-};
-
-export type FactionVehicleTurret = {
-  turretType: string;
-  gunnerSlug: string;
+  crewSlug: string;
 };
 
 export type FactionGroupCategory = {

@@ -615,7 +615,7 @@ const body: FactionGeneratorPayloadBody = {
       vehicleClass: 'B_AMF_VAB_ULTIMA_X8_F',
       editorSubcategory: FactionEditorSubcategories.WHEELED,
       displayName: 'VAB (12.7mm)',
-      driverSlug: 'Infantry_Basic_Vehicle_Crew',
+      crewSlug: 'Infantry_Basic_Vehicle_Commander',
     },
     // Wheeled: VB2L - MAG-58
 

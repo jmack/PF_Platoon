@@ -321,23 +321,9 @@ export default class FactionGenerator extends Generator {
       const classname = this.ConvertUnitSlugIntoClassString(vehicle.uniqueSlug);
       importedVehicles.add(vehicle.vehicleClass);
 
-      // If turrets are present, we need to do some really fucky stuff
-      if (vehicle.turrets?.length) {
-        // prettier-ignore
-        vehicleDef +=
-          `\n  class ${classname}_subimport_1: ${vehicle.vehicleClass} { scope = 0; class Turrets; };` +
-          `\n  class ${classname}_subimport_2: ${classname}_subimport_1 {` +
-          `\n    class Turrets: Turrets {` +
-          vehicle.turrets.map(turret => `\n      class ${turret.turretType};`).join('') +
-          `\n    };` +
-          `\n  };` +
-          `\n  class ${classname}: ${classname}_subimport_2`;
-      } else {
-        vehicleDef += `\n  class ${classname}: ${vehicle.vehicleClass}`;
-      }
-
       // prettier-ignore
       vehicleDef +=
+        `\n  class ${classname}: ${vehicle.vehicleClass}` +
         `\n  {` +
         `\n    displayName = "${vehicle.displayName}";` +
         `\n` +
@@ -350,17 +336,8 @@ export default class FactionGenerator extends Generator {
         `\n    editorCategory = "${this.header.name}";` +
         `\n    editorSubcategry = "${vehicle.editorSubcategory}";` +
         `\n` +
-        `\n    crew = "${this.ConvertUnitSlugIntoClassString(vehicle.driverSlug)}";`;
-
-      if (vehicle.turrets?.length) {
-        vehicleDef += '\n\n    class Turrets: Turrets\n    {';
-        vehicle.turrets.forEach((turret) => {
-          vehicleDef += `\n      class ${turret.turretType}: ${turret.turretType} { gunnerType = "${this.ConvertUnitSlugIntoClassString(turret.gunnerSlug)}"; };`;
-        });
-        vehicleDef += '\n    };';
-      }
-
-      vehicleDef += '\n  };';
+        `\n    crew = "${this.ConvertUnitSlugIntoClassString(vehicle.crewSlug)}";` +
+        `\n  };`;
 
       // Add our new vehicle to the export list
       values.exported_units += `\n      "${classname}",`;
