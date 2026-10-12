@@ -455,6 +455,7 @@ class CfgVehicles
   {
     displayName = "Rifleman";
     role = "Rifleman";
+    icon = "iconMan";
 
     scope = 2;
     scopeCurator = 2;
@@ -545,6 +546,7 @@ class CfgVehicles
   {
     displayName = "Grenadier";
     role = "Grenadier";
+    icon = "iconMan";
 
     scope = 2;
     scopeCurator = 2;
@@ -625,6 +627,7 @@ class CfgVehicles
   {
     displayName = "Anti-Tank";
     role = "MissileSpecialist";
+    icon = "iconManAT";
 
     scope = 2;
     scopeCurator = 2;
@@ -721,6 +724,7 @@ class CfgVehicles
   {
     displayName = "Marksman";
     role = "Marksman";
+    icon = "iconMan";
 
     scope = 2;
     scopeCurator = 2;
@@ -803,6 +807,7 @@ class CfgVehicles
   {
     displayName = "Machine Gunner";
     role = "MachineGunner";
+    icon = "iconManMG";
 
     scope = 2;
     scopeCurator = 2;
@@ -899,6 +904,7 @@ class CfgVehicles
   {
     displayName = "Asst. Machine Gunner";
     role = "Assistant";
+    icon = "iconMan";
 
     scope = 2;
     scopeCurator = 2;
@@ -989,6 +995,7 @@ class CfgVehicles
   {
     displayName = "RTO";
     role = "RadioOperator";
+    icon = "iconMan";
 
     scope = 2;
     scopeCurator = 2;
@@ -1103,6 +1110,7 @@ class CfgVehicles
   {
     displayName = "Team Leader";
     role = "Rifleman";
+    icon = "iconManLeader";
 
     scope = 2;
     scopeCurator = 2;
@@ -1203,6 +1211,7 @@ class CfgVehicles
   {
     displayName = "Squad Leader";
     role = "Rifleman";
+    icon = "iconManLeader";
 
     scope = 2;
     scopeCurator = 2;
@@ -1303,6 +1312,7 @@ class CfgVehicles
   {
     displayName = "Vehicle Crew";
     role = "Crewman";
+    icon = "iconMan";
 
     scope = 2;
     scopeCurator = 2;
@@ -1393,6 +1403,7 @@ class CfgVehicles
   {
     displayName = "Vehicle Commander";
     role = "Crewman";
+    icon = "iconManLeader";
 
     scope = 2;
     scopeCurator = 2;

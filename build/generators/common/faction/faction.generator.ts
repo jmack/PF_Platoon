@@ -8,10 +8,8 @@ import {
   FactionUnitItem,
   FactionUnitItemType,
   FactionUnitItemTypes,
-  FactionVehicle,
 } from './faction.types.ts';
 
-// TODO: Unit Icons
 // TODO: RequiredAddons
 
 export default class FactionGenerator extends Generator {
@@ -283,6 +281,7 @@ export default class FactionGenerator extends Generator {
         `\n  {` +
         `\n    displayName = "${unit.displayName}";` +
         `\n    role = "${unit.role}";` +
+        `\n    icon = "${unit.icon ?? 'iconMan' }";` +
         `\n` +
         `\n    scope = 2;` +
         `\n    scopeCurator = 2;` +

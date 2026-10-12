@@ -4,6 +4,7 @@ import {
   FactionGroupIcons,
   FactionSideTypes,
   FactionUnitBackpackItemTypes,
+  FactionUnitIcons,
   FactionUnitItemTypes,
   FactionUnitRanks,
   FactionUnitRoles,
@@ -278,6 +279,7 @@ const body: FactionGeneratorPayloadBody = {
       baseSoldier: 'Base',
       editorSubcategory: FactionEditorSubcategories.INFANTRY,
       displayName: 'Anti-Tank',
+      icon: FactionUnitIcons.AT,
       role: FactionUnitRoles.MISSILE_SPECIALIST,
       weapons: [
         'Famas_F1_PGMP', // Famas Rifle
@@ -365,6 +367,7 @@ const body: FactionGeneratorPayloadBody = {
       baseSoldier: 'Base',
       editorSubcategory: FactionEditorSubcategories.INFANTRY,
       displayName: 'Machine Gunner',
+      icon: FactionUnitIcons.MG,
       role: FactionUnitRoles.MACHINE_GUNNER,
       weapons: [
         'FN_Minimi_F1', // FN Minimi Para
@@ -462,6 +465,7 @@ const body: FactionGeneratorPayloadBody = {
       baseSoldier: 'Base',
       editorSubcategory: FactionEditorSubcategories.INFANTRY,
       displayName: 'Team Leader',
+      icon: FactionUnitIcons.LEADER,
       role: FactionUnitRoles.RIFLEMAN,
       weapons: [
         'Famas_F1_PGMP', // Famas Rifle
@@ -490,6 +494,7 @@ const body: FactionGeneratorPayloadBody = {
       baseSoldier: 'White',
       editorSubcategory: FactionEditorSubcategories.INFANTRY,
       displayName: 'Squad Leader',
+      icon: FactionUnitIcons.LEADER,
       role: FactionUnitRoles.RIFLEMAN,
       weapons: [
         'Famas_F1_PGMP', // Famas Rifle
@@ -564,6 +569,7 @@ const body: FactionGeneratorPayloadBody = {
       baseSoldier: 'White_Rolled',
       editorSubcategory: FactionEditorSubcategories.INFANTRY,
       displayName: 'Vehicle Commander',
+      icon: FactionUnitIcons.LEADER,
       role: FactionUnitRoles.CREWMAN,
       weapons: [
         'AMF_Pamas', // PAMAS G1 Pistol

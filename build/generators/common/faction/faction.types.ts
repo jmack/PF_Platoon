@@ -70,7 +70,16 @@ export const FactionUnitRanks = {
 } as const;
 export type FactionUnitRank = (typeof FactionUnitRanks)[keyof typeof FactionUnitRanks];
 
-export const FactionUnitIcons = {} as const;
+export const FactionUnitIcons = {
+  AT: 'iconManAT',
+  ENGINEER: 'iconManEngineer',
+  EXPLOSIVE: 'iconManExplosive',
+  LEADER: 'iconManLeader',
+  MEDIC: 'iconManMedic',
+  MG: 'iconManMG',
+  OFFICER: 'iconManOfficer',
+  RECON: 'iconManRecon',
+} as const;
 export type FactionUnitIcon = (typeof FactionUnitIcons)[keyof typeof FactionUnitIcons];
 
 export const FactionGroupIcons = {
@@ -154,6 +163,7 @@ export type FactionUnit = {
   baseSoldier: string;
   editorSubcategory: FactionEditorSubcategory;
   displayName: string;
+  icon?: FactionUnitIcon;
   role: FactionUnitRole;
   weapons: (FactionUnitWeapon | string)[];
   gear: FactionUnitItem[];
