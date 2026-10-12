@@ -70,6 +70,32 @@ export const FactionUnitRanks = {
 } as const;
 export type FactionUnitRank = (typeof FactionUnitRanks)[keyof typeof FactionUnitRanks];
 
+export const FactionUnitIcons = {} as const;
+export type FactionUnitIcon = (typeof FactionUnitIcons)[keyof typeof FactionUnitIcons];
+
+export const FactionGroupIcons = {
+  AIR: 'A3\\ui_f\\data\\map\\markers\\nato\\<%s%>_air.paa',
+  ANTI_AIR: 'A3\\ui_f\\data\\map\\markers\\nato\\<%s%>_antiair.paa',
+  ARMOR: 'A3\\ui_f\\data\\map\\markers\\nato\\<%s%>_armor.paa',
+  ARTILLERY: 'A3\\ui_f\\data\\map\\markers\\nato\\<%s%>_art.paa',
+  HQ: 'A3\\ui_f\\data\\map\\markers\\nato\\<%s%>_hq.paa',
+  INFANTRY: 'A3\\ui_f\\data\\map\\markers\\nato\\<%s%>_inf.paa',
+  INSTALLATION: 'A3\\ui_f\\data\\map\\markers\\nato\\<%s%>_installation.paa',
+  MAINTENANCE: 'A3\\ui_f\\data\\map\\markers\\nato\\<%s%>_maint.paa',
+  MECHANIZED_INFANTRY: 'A3\\ui_f\\data\\map\\markers\\nato\\<%s%>_mech_inf.paa',
+  MEDICAL: 'A3\\ui_f\\data\\map\\markers\\nato\\<%s%>_med.paa',
+  MORTAR: 'A3\\ui_f\\data\\map\\markers\\nato\\<%s%>_mortar.paa',
+  MOTORIZED_INFANTRY: 'A3\\ui_f\\data\\map\\markers\\nato\\<%s%>_motor_inf.paa',
+  NAVAL: 'A3\\ui_f\\data\\map\\markers\\nato\\<%s%>_naval.paa',
+  PLANE: 'A3\\ui_f\\data\\map\\markers\\nato\\<%s%>_plane.paa',
+  RECON: 'A3\\ui_f\\data\\map\\markers\\nato\\<%s%>_recon.paa',
+  SERVICE: 'A3\\ui_f\\data\\map\\markers\\nato\\<%s%>_service.paa',
+  SUPPORT: 'A3\\ui_f\\data\\map\\markers\\nato\\<%s%>_support.paa',
+  UAV: 'A3\\ui_f\\data\\map\\markers\\nato\\<%s%>_uav.paa',
+  UNKNOWN: 'A3\\ui_f\\data\\map\\markers\\nato\\<%s%>_unknown.paa',
+} as const;
+export type FactionGroupIcon = (typeof FactionGroupIcons)[keyof typeof FactionGroupIcons];
+
 /**
  * Items and Weapons
  */
@@ -149,7 +175,7 @@ export type FactionGroupCategory = {
 
 export type FactionGroup = {
   name: string;
-  icon?: string;
+  icon?: FactionGroupIcon;
   units: FactionGroupUnit[];
 };
 

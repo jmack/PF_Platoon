@@ -386,8 +386,14 @@ export default class FactionGenerator extends Generator {
           `\n          side = ${this.typedBody.meta.side};` +
           `\n          faction = "${this.header.name}";`;
 
-        if (group.icon) {
-          groupString += `\n          icon = "${group.icon}";`;
+        if (group.icon && this.FACTION_SIDE_LETTER[this.typedBody.meta.side] !== undefined) {
+          // Icon contains <%s%> which should be converted to the side shortcode
+          let convertedIcon = group.icon as string;
+          const sideLetter = this.FACTION_SIDE_LETTER[this.typedBody.meta.side];
+          if (sideLetter !== undefined) {
+            convertedIcon = convertedIcon.replace('<%s%>', sideLetter.toLowerCase());
+            groupString += `\n          icon = "${convertedIcon}";`;
+          }
         }
 
         // prettier-ignore

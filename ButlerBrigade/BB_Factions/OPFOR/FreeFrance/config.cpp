@@ -1518,6 +1518,7 @@ class CfgGroups
           name = "Rifle Squad";
           side = 0;
           faction = "BB_Factions__O_FreeFrance";
+          icon = "A3\ui_f\data\map\markers\nato\o_motor_inf.paa";
 
           class Unit0
           {

@@ -1,6 +1,7 @@
 import {
   FactionEditorSubcategories,
   FactionGeneratorPayloadBody,
+  FactionGroupIcons,
   FactionSideTypes,
   FactionUnitBackpackItemTypes,
   FactionUnitItemTypes,
@@ -634,6 +635,7 @@ const body: FactionGeneratorPayloadBody = {
       groups: [
         {
           name: 'Rifle Squad',
+          icon: FactionGroupIcons.MOTORIZED_INFANTRY,
           units: [
             // Lead Squad
             {
