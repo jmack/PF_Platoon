@@ -83,7 +83,7 @@ export const FactionUnitIcons = {
 export type FactionUnitIcon = (typeof FactionUnitIcons)[keyof typeof FactionUnitIcons];
 
 export const FactionGroupIcons = {
-  AIR: 'A3\\ui_f\\data\\map\\markers\\nato\\<%s%>_air.paa',
+  HELICOPTER: 'A3\\ui_f\\data\\map\\markers\\nato\\<%s%>_air.paa',
   ANTI_AIR: 'A3\\ui_f\\data\\map\\markers\\nato\\<%s%>_antiair.paa',
   ARMOR: 'A3\\ui_f\\data\\map\\markers\\nato\\<%s%>_armor.paa',
   ARTILLERY: 'A3\\ui_f\\data\\map\\markers\\nato\\<%s%>_art.paa',
