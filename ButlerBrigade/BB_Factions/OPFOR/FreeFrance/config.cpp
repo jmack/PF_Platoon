@@ -23,8 +23,11 @@ class CfgPatches {
       "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_MachineGunner",
       "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_AsstMachineGunner",
       "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_RTO",
+      "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_ATGM_Gunner",
+      "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_Asst_ATGM_Gunner",
       "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_TeamLeader",
       "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_SquadLeader",
+      "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_Officer",
       "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_Vehicle_Crew",
       "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_Vehicle_Commander",
       "BB_Factions__O_FreeFrance__Soldier_Wheeled_Basic_VAB_12x7",
@@ -75,7 +78,6 @@ class CfgVehicles
 {
   // * Backpacks ***
   class F1_Sac;
-  class Radio_PRC_10;
   class BB_Factions__O_FreeFrance__Backpack_Infantry_Basic_Rifleman: F1_Sac
   {
     scope = 1;
@@ -300,9 +302,42 @@ class CfgVehicles
       };
     };
   };
-  class BB_Factions__O_FreeFrance__Backpack_Infantry_Basic_RTO: Radio_PRC_10
+  class BB_Factions__O_FreeFrance__Backpack_Infantry_Basic_Asst_ATGM_Gunner: F1_Sac
   {
     scope = 1;
+    class TransportItems
+    {
+      class _xx_ACE_elasticBandage
+      {
+        name = "ACE_elasticBandage";
+        count = 1;
+      };
+      class _xx_ACE_packingBandage
+      {
+        name = "ACE_packingBandage";
+        count = 1;
+      };
+      class _xx_ACE_quikclot
+      {
+        name = "ACE_quikclot";
+        count = 1;
+      };
+      class _xx_ACE_painkillers
+      {
+        name = "ACE_painkillers";
+        count = 2;
+      };
+      class _xx_ACE_tourniquet
+      {
+        name = "ACE_tourniquet";
+        count = 1;
+      };
+      class _xx_ACE_morphine
+      {
+        name = "ACE_morphine";
+        count = 1;
+      };
+    };
   };
   class BB_Factions__O_FreeFrance__Backpack_Infantry_Basic_TeamLeader: F1_Sac
   {
@@ -342,6 +377,43 @@ class CfgVehicles
     };
   };
   class BB_Factions__O_FreeFrance__Backpack_Infantry_Basic_SquadLeader: F1_Sac
+  {
+    scope = 1;
+    class TransportItems
+    {
+      class _xx_ACE_elasticBandage
+      {
+        name = "ACE_elasticBandage";
+        count = 1;
+      };
+      class _xx_ACE_packingBandage
+      {
+        name = "ACE_packingBandage";
+        count = 1;
+      };
+      class _xx_ACE_quikclot
+      {
+        name = "ACE_quikclot";
+        count = 1;
+      };
+      class _xx_ACE_painkillers
+      {
+        name = "ACE_painkillers";
+        count = 2;
+      };
+      class _xx_ACE_tourniquet
+      {
+        name = "ACE_tourniquet";
+        count = 1;
+      };
+      class _xx_ACE_morphine
+      {
+        name = "ACE_morphine";
+        count = 1;
+      };
+    };
+  };
+  class BB_Factions__O_FreeFrance__Backpack_Infantry_Basic_Officer: F1_Sac
   {
     scope = 1;
     class TransportItems
@@ -1004,7 +1076,7 @@ class CfgVehicles
     editorCategory = "BB_Factions__O_FreeFrance";
     editorSubcategory = "BB_Factions_EdSubcat_Infantry";
 
-    backpack = "BB_Factions__O_FreeFrance__Backpack_Infantry_Basic_RTO";
+    backpack = "Radio_PRC_10";
 
     weapons[] =
     {
@@ -1100,6 +1172,204 @@ class CfgVehicles
       "ACE_painkillers",
       "ACE_tourniquet",
       "ACE_morphine",
+      "ACE_EntrenchingTool",
+      "ACE_Flashlight_XL50",
+      "ACE_EarPlugs",
+      "ACE_MapTools",
+    };
+  };
+  class BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_ATGM_Gunner: BB_Factions__O_FreeFrance__Base_Base_Rolled
+  {
+    displayName = "ATGM Gunner";
+    role = "MissileSpecialist";
+    icon = "iconManAT";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    editorCategory = "BB_Factions__O_FreeFrance";
+    editorSubcategory = "BB_Factions_EdSubcat_Infantry";
+
+    backpack = "MILAN_tripod_80";
+
+    weapons[] =
+    {
+      "Famas_F1_PGMP",
+      "AMF_Pamas",
+      "AMF_VectorIV",
+      "Throw",
+      "Put",
+    };
+    respawnWeapons[] =
+    {
+      "Famas_F1_PGMP",
+      "AMF_Pamas",
+      "AMF_VectorIV",
+      "Throw",
+      "Put",
+    };
+
+    magazines[] =
+    {
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_15Rnd_9x19_PAMAS",
+      "AMF_15Rnd_9x19_PAMAS",
+      "AMF_15Rnd_9x19_PAMAS",
+    };
+    respawnMagazines[] =
+    {
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_15Rnd_9x19_PAMAS",
+      "AMF_15Rnd_9x19_PAMAS",
+      "AMF_15Rnd_9x19_PAMAS",
+    };
+
+    linkedItems[] =
+    {
+      "cwr3_b_headgear_m1_olive",
+      "ItemCompass",
+      "ItemWatch",
+      "TFAR_fadak",
+      "ItemGPS",
+      "ItemMap",
+      "V_Simc_flak_alice",
+      "nomex_1_lang_addon",
+    };
+    respawnLinkedItems[] =
+    {
+      "cwr3_b_headgear_m1_olive",
+      "ItemCompass",
+      "ItemWatch",
+      "TFAR_fadak",
+      "ItemGPS",
+      "ItemMap",
+      "V_Simc_flak_alice",
+      "nomex_1_lang_addon",
+    };
+
+    items[] =
+    {
+      "ACE_EntrenchingTool",
+      "ACE_Flashlight_XL50",
+      "ACE_EarPlugs",
+      "ACE_MapTools",
+    };
+    respawnItems[] =
+    {
+      "ACE_EntrenchingTool",
+      "ACE_Flashlight_XL50",
+      "ACE_EarPlugs",
+      "ACE_MapTools",
+    };
+  };
+  class BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_Asst_ATGM_Gunner: BB_Factions__O_FreeFrance__Base_Base_Rolled
+  {
+    displayName = "Asst. ATGM Gunner";
+    role = "Rifleman";
+    icon = "iconMan";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    editorCategory = "BB_Factions__O_FreeFrance";
+    editorSubcategory = "BB_Factions_EdSubcat_Infantry";
+
+    backpack = "BB_Factions__O_FreeFrance__Backpack_Infantry_Basic_Asst_ATGM_Gunner";
+
+    weapons[] =
+    {
+      "Famas_F1_PGMP",
+      "AMF_Pamas",
+      "AMF_VectorIV",
+      "Throw",
+      "Put",
+    };
+    respawnWeapons[] =
+    {
+      "Famas_F1_PGMP",
+      "AMF_Pamas",
+      "AMF_VectorIV",
+      "Throw",
+      "Put",
+    };
+
+    magazines[] =
+    {
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_15Rnd_9x19_PAMAS",
+      "AMF_15Rnd_9x19_PAMAS",
+      "AMF_15Rnd_9x19_PAMAS",
+      "HandGrenade",
+      "HandGrenade",
+      "SmokeShell",
+      "SmokeShell",
+    };
+    respawnMagazines[] =
+    {
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_15Rnd_9x19_PAMAS",
+      "AMF_15Rnd_9x19_PAMAS",
+      "AMF_15Rnd_9x19_PAMAS",
+      "HandGrenade",
+      "HandGrenade",
+      "SmokeShell",
+      "SmokeShell",
+    };
+
+    linkedItems[] =
+    {
+      "cwr3_b_headgear_m1_olive",
+      "ItemCompass",
+      "ItemWatch",
+      "TFAR_fadak",
+      "ItemGPS",
+      "ItemMap",
+      "V_Simc_flak_alice",
+      "nomex_1_lang_addon",
+    };
+    respawnLinkedItems[] =
+    {
+      "cwr3_b_headgear_m1_olive",
+      "ItemCompass",
+      "ItemWatch",
+      "TFAR_fadak",
+      "ItemGPS",
+      "ItemMap",
+      "V_Simc_flak_alice",
+      "nomex_1_lang_addon",
+    };
+
+    items[] =
+    {
+      "ACE_EntrenchingTool",
+      "ACE_Flashlight_XL50",
+      "ACE_EarPlugs",
+      "ACE_MapTools",
+    };
+    respawnItems[] =
+    {
       "ACE_EntrenchingTool",
       "ACE_Flashlight_XL50",
       "ACE_EarPlugs",
@@ -1291,6 +1561,109 @@ class CfgVehicles
       "ItemGPS",
       "ItemMap",
       "V_Simc_flak_alice",
+    };
+
+    items[] =
+    {
+      "ACE_EntrenchingTool",
+      "ACE_Flashlight_XL50",
+      "ACE_EarPlugs",
+      "ACE_MapTools",
+    };
+    respawnItems[] =
+    {
+      "ACE_EntrenchingTool",
+      "ACE_Flashlight_XL50",
+      "ACE_EarPlugs",
+      "ACE_MapTools",
+    };
+  };
+  class BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_Officer: BB_Factions__O_FreeFrance__Base_White
+  {
+    displayName = "Officer";
+    role = "Rifleman";
+    icon = "iconManLeader";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    editorCategory = "BB_Factions__O_FreeFrance";
+    editorSubcategory = "BB_Factions_EdSubcat_Infantry";
+
+    backpack = "BB_Factions__O_FreeFrance__Backpack_Infantry_Basic_Officer";
+
+    weapons[] =
+    {
+      "Famas_F1_PGMP",
+      "AMF_Pamas",
+      "AMF_VectorIV",
+      "Throw",
+      "Put",
+    };
+    respawnWeapons[] =
+    {
+      "Famas_F1_PGMP",
+      "AMF_Pamas",
+      "AMF_VectorIV",
+      "Throw",
+      "Put",
+    };
+
+    magazines[] =
+    {
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_15Rnd_9x19_PAMAS",
+      "AMF_15Rnd_9x19_PAMAS",
+      "AMF_15Rnd_9x19_PAMAS",
+      "HandGrenade",
+      "HandGrenade",
+      "SmokeShell",
+      "SmokeShell",
+    };
+    respawnMagazines[] =
+    {
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_15Rnd_9x19_PAMAS",
+      "AMF_15Rnd_9x19_PAMAS",
+      "AMF_15Rnd_9x19_PAMAS",
+      "HandGrenade",
+      "HandGrenade",
+      "SmokeShell",
+      "SmokeShell",
+    };
+
+    linkedItems[] =
+    {
+      "cwr3_b_headgear_m1_olive",
+      "ItemCompass",
+      "ItemWatch",
+      "TFAR_fadak",
+      "ItemGPS",
+      "ItemMap",
+      "V_Simc_flak_alice",
+      "CUP_G_PMC_RadioHeadset",
+    };
+    respawnLinkedItems[] =
+    {
+      "cwr3_b_headgear_m1_olive",
+      "ItemCompass",
+      "ItemWatch",
+      "TFAR_fadak",
+      "ItemGPS",
+      "ItemMap",
+      "V_Simc_flak_alice",
+      "CUP_G_PMC_RadioHeadset",
     };
 
     items[] =
@@ -1524,12 +1897,12 @@ class CfgGroups
       {
         name = "Mechanized Infantry";
 
-        class BB_Factions__O_FreeFrance__Group_Rifle_Squad
+        class BB_Factions__O_FreeFrance__Group_Rifle_Squad_with_VAB
         {
-          name = "Rifle Squad";
+          name = "Rifle Squad (with VAB)";
           side = 0;
           faction = "BB_Factions__O_FreeFrance";
-          icon = "A3\ui_f\data\map\markers\nato\o_motor_inf.paa";
+          icon = "A3\ui_f\data\map\markers\nato\o_mech_inf.paa";
 
           class Unit0
           {
@@ -1600,6 +1973,307 @@ class CfgGroups
             vehicle = "BB_Factions__O_FreeFrance__Soldier_Wheeled_Basic_VAB_12x7";
             rank = "PRIVATE";
             position[] = { 5, 0, 0 };
+          };
+        };
+        class BB_Factions__O_FreeFrance__Group_Rifle_Squad
+        {
+          name = "Rifle Squad";
+          side = 0;
+          faction = "BB_Factions__O_FreeFrance";
+          icon = "A3\ui_f\data\map\markers\nato\o_mech_inf.paa";
+
+          class Unit0
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_SquadLeader";
+            rank = "SERGEANT";
+            position[] = { 2, 3, 0 };
+          };
+          class Unit1
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_RTO";
+            rank = "CORPORAL";
+            position[] = { 2, 1, 0 };
+          };
+          class Unit2
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_Marksman";
+            rank = "PRIVATE";
+            position[] = { 2, -1, 0 };
+          };
+          class Unit3
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_TeamLeader";
+            rank = "CORPORAL";
+            position[] = { 0, 1, 0 };
+          };
+          class Unit4
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_AT";
+            rank = "PRIVATE";
+            position[] = { 0, -1, 0 };
+          };
+          class Unit5
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_Grenadier";
+            rank = "PRIVATE";
+            position[] = { 0, -3, 0 };
+          };
+          class Unit6
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_TeamLeader";
+            rank = "CORPORAL";
+            position[] = { -2, 1, 0 };
+          };
+          class Unit7
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_AT";
+            rank = "PRIVATE";
+            position[] = { -2, -1, 0 };
+          };
+          class Unit8
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_Grenadier";
+            rank = "PRIVATE";
+            position[] = { -2, -3, 0 };
+          };
+        };
+        class BB_Factions__O_FreeFrance__Group_Rifle_Squad_Lead_Element
+        {
+          name = "Rifle Squad Lead Element";
+          side = 0;
+          faction = "BB_Factions__O_FreeFrance";
+          icon = "A3\ui_f\data\map\markers\nato\o_mech_inf.paa";
+
+          class Unit0
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_SquadLeader";
+            rank = "SERGEANT";
+            position[] = { 0, 2, 0 };
+          };
+          class Unit1
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_RTO";
+            rank = "CORPORAL";
+            position[] = { 0, 0, 0 };
+          };
+          class Unit2
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_Marksman";
+            rank = "PRIVATE";
+            position[] = { 0, -2, 0 };
+          };
+        };
+        class BB_Factions__O_FreeFrance__Group_Rifle_Squad_Fire_Team
+        {
+          name = "Rifle Squad Fire Team";
+          side = 0;
+          faction = "BB_Factions__O_FreeFrance";
+          icon = "A3\ui_f\data\map\markers\nato\o_mech_inf.paa";
+
+          class Unit0
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_TeamLeader";
+            rank = "CORPORAL";
+            position[] = { 0, 2, 0 };
+          };
+          class Unit1
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_AT";
+            rank = "PRIVATE";
+            position[] = { 0, 0, 0 };
+          };
+          class Unit2
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_Grenadier";
+            rank = "PRIVATE";
+            position[] = { 0, -2, 0 };
+          };
+        };
+        class BB_Factions__O_FreeFrance__Group_Platoon_HQ_with_VAB
+        {
+          name = "Platoon HQ (with VAB)";
+          side = 0;
+          faction = "BB_Factions__O_FreeFrance";
+          icon = "A3\ui_f\data\map\markers\nato\o_hq.paa";
+
+          class Unit0
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_Officer";
+            rank = "LIEUTENANT";
+            position[] = { 2, 2, 0 };
+          };
+          class Unit1
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_TeamLeader";
+            rank = "SERGEANT";
+            position[] = { 2, 0, 0 };
+          };
+          class Unit2
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_RTO";
+            rank = "CORPORAL";
+            position[] = { 2, -2, 0 };
+          };
+          class Unit3
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_ATGM_Gunner";
+            rank = "SERGEANT";
+            position[] = { 0, 0, 0 };
+          };
+          class Unit4
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_Asst_ATGM_Gunner";
+            rank = "PRIVATE";
+            position[] = { 0, -2, 0 };
+          };
+          class Unit5
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_ATGM_Gunner";
+            rank = "CORPORAL";
+            position[] = { -2, 0, 0 };
+          };
+          class Unit6
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_Asst_ATGM_Gunner";
+            rank = "PRIVATE";
+            position[] = { -2, -2, 0 };
+          };
+          class Unit7
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Wheeled_Basic_VAB_12x7";
+            rank = "PRIVATE";
+            position[] = { 1, -7, 0 };
+          };
+        };
+        class BB_Factions__O_FreeFrance__Group_Platoon_HQ
+        {
+          name = "Platoon HQ";
+          side = 0;
+          faction = "BB_Factions__O_FreeFrance";
+          icon = "A3\ui_f\data\map\markers\nato\o_hq.paa";
+
+          class Unit0
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_Officer";
+            rank = "LIEUTENANT";
+            position[] = { 2, 2, 0 };
+          };
+          class Unit1
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_TeamLeader";
+            rank = "SERGEANT";
+            position[] = { 2, 0, 0 };
+          };
+          class Unit2
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_RTO";
+            rank = "CORPORAL";
+            position[] = { 2, -2, 0 };
+          };
+          class Unit3
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_ATGM_Gunner";
+            rank = "SERGEANT";
+            position[] = { 0, 0, 0 };
+          };
+          class Unit4
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_Asst_ATGM_Gunner";
+            rank = "PRIVATE";
+            position[] = { 0, -2, 0 };
+          };
+          class Unit5
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_ATGM_Gunner";
+            rank = "CORPORAL";
+            position[] = { -2, 0, 0 };
+          };
+          class Unit6
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_Asst_ATGM_Gunner";
+            rank = "PRIVATE";
+            position[] = { -2, -2, 0 };
+          };
+        };
+        class BB_Factions__O_FreeFrance__Group_Platoon_Lead_Element
+        {
+          name = "Platoon Lead Element";
+          side = 0;
+          faction = "BB_Factions__O_FreeFrance";
+          icon = "A3\ui_f\data\map\markers\nato\o_hq.paa";
+
+          class Unit0
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_Officer";
+            rank = "LIEUTENANT";
+            position[] = { 0, 2, 0 };
+          };
+          class Unit1
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_TeamLeader";
+            rank = "SERGEANT";
+            position[] = { 0, 0, 0 };
+          };
+          class Unit2
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_RTO";
+            rank = "CORPORAL";
+            position[] = { 0, -2, 0 };
+          };
+        };
+        class BB_Factions__O_FreeFrance__Group_ATGM_Team
+        {
+          name = "ATGM Team";
+          side = 0;
+          faction = "BB_Factions__O_FreeFrance";
+          icon = "A3\ui_f\data\map\markers\nato\o_mech_inf.paa";
+
+          class Unit0
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_ATGM_Gunner";
+            rank = "CORPORAL";
+            position[] = { 0, 1, 0 };
+          };
+          class Unit1
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_Asst_ATGM_Gunner";
+            rank = "PRIVATE";
+            position[] = { 0, -1, 0 };
           };
         };
       };

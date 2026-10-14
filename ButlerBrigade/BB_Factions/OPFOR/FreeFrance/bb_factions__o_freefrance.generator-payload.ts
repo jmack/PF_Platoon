@@ -453,12 +453,73 @@ const body: FactionGeneratorPayloadBody = {
         ...INF_STANDARD_MEDICAL,
         ...INF_LEADER_CARRIED_GEAR,
       ],
-      backpack: {
-        class: 'Radio_PRC_10',
-        items: [],
-      },
+      backpack: 'Radio_PRC_10',
     },
     // Medic
+    // Mortar Team (Tube)
+    // Mortar Team (Baseplate)
+    // Mortar Ammo Bearer
+    // ATGM Gunner
+    {
+      uniqueSlug: 'Infantry_Basic_ATGM_Gunner',
+      baseSoldier: 'Base_Rolled',
+      editorSubcategory: FactionEditorSubcategories.INFANTRY,
+      displayName: 'ATGM Gunner',
+      icon: FactionUnitIcons.AT,
+      role: FactionUnitRoles.MISSILE_SPECIALIST,
+      weapons: [
+        'Famas_F1_PGMP', // Famas Rifle
+        'AMF_Pamas', // PAMAS G1 Pistol
+        'AMF_VectorIV', // Leica Vector IV
+      ],
+      gear: [
+        ...INF_LEADER_WORN,
+        {
+          class: 'V_Simc_flak_alice',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        {
+          class: 'nomex_1_lang_addon',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        ...INF_FAMAS_MAGS,
+        ...INF_PAMAS_MAGS,
+        ...INF_LEADER_CARRIED_GEAR,
+      ],
+      backpack: 'MILAN_tripod_80',
+    },
+    // Asst. ATGM Gunner
+    {
+      uniqueSlug: 'Infantry_Basic_Asst_ATGM_Gunner',
+      baseSoldier: 'Base_Rolled',
+      editorSubcategory: FactionEditorSubcategories.INFANTRY,
+      displayName: 'Asst. ATGM Gunner',
+      role: FactionUnitRoles.RIFLEMAN,
+      weapons: [
+        'Famas_F1_PGMP', // Famas Rifle
+        'AMF_Pamas', // PAMAS G1 Pistol
+        'AMF_VectorIV', // Leica Vector IV
+      ],
+      gear: [
+        ...INF_LEADER_WORN,
+        {
+          class: 'V_Simc_flak_alice',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        {
+          class: 'nomex_1_lang_addon',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        ...INF_FAMAS_MAGS,
+        ...INF_PAMAS_MAGS,
+        ...INF_STANDARD_GRENADES,
+        ...INF_LEADER_CARRIED_GEAR,
+      ],
+      backpack: {
+        class: 'F1_Sac',
+        items: [...INF_STANDARD_BACKPACK_MEDICAL],
+      },
+    },
     // Team Leader
     {
       uniqueSlug: 'Infantry_Basic_TeamLeader',
@@ -518,6 +579,38 @@ const body: FactionGeneratorPayloadBody = {
       },
     },
     // Officer
+    {
+      uniqueSlug: 'Infantry_Basic_Officer',
+      baseSoldier: 'White',
+      editorSubcategory: FactionEditorSubcategories.INFANTRY,
+      displayName: 'Officer',
+      icon: FactionUnitIcons.LEADER,
+      role: FactionUnitRoles.RIFLEMAN,
+      weapons: [
+        'Famas_F1_PGMP', // Famas Rifle
+        'AMF_Pamas', // PAMAS G1 Pistol
+        'AMF_VectorIV', // Leica Vector IV
+      ],
+      gear: [
+        ...INF_LEADER_WORN,
+        {
+          class: 'V_Simc_flak_alice',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        {
+          class: 'CUP_G_PMC_RadioHeadset',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        ...INF_FAMAS_MAGS,
+        ...INF_PAMAS_MAGS,
+        ...INF_STANDARD_GRENADES,
+        ...INF_LEADER_CARRIED_GEAR,
+      ],
+      backpack: {
+        class: 'F1_Sac',
+        items: [...INF_STANDARD_BACKPACK_MEDICAL],
+      },
+    },
     // Vehicle Crew
     {
       uniqueSlug: 'Infantry_Basic_Vehicle_Crew',
@@ -639,9 +732,10 @@ const body: FactionGeneratorPayloadBody = {
     {
       name: 'Mechanized Infantry',
       groups: [
+        // Rifle Squad
         {
-          name: 'Rifle Squad',
-          icon: FactionGroupIcons.MOTORIZED_INFANTRY,
+          name: 'Rifle Squad (with VAB)',
+          icon: FactionGroupIcons.MECHANIZED_INFANTRY,
           units: [
             // Lead Squad
             {
@@ -696,6 +790,238 @@ const body: FactionGeneratorPayloadBody = {
               unitSlug: 'Wheeled_Basic_VAB_12x7',
               rank: FactionUnitRanks.PRIVATE,
               pos: { x: 5, y: 0, z: 0 },
+            },
+          ],
+        },
+        {
+          name: 'Rifle Squad',
+          icon: FactionGroupIcons.MECHANIZED_INFANTRY,
+          units: [
+            // Lead Squad
+            {
+              unitSlug: 'Infantry_Basic_SquadLeader',
+              rank: FactionUnitRanks.SERGEANT,
+              pos: { x: 2, y: 3, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_RTO',
+              rank: FactionUnitRanks.CORPORAL,
+              pos: { x: 2, y: 1, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_Marksman',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 2, y: -1, z: 0 },
+            },
+            // Rifle Team A
+            {
+              unitSlug: 'Infantry_Basic_TeamLeader',
+              rank: FactionUnitRanks.CORPORAL,
+              pos: { x: 0, y: 1, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_AT',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 0, y: -1, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_Grenadier',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 0, y: -3, z: 0 },
+            },
+            // Rifle Team B
+            {
+              unitSlug: 'Infantry_Basic_TeamLeader',
+              rank: FactionUnitRanks.CORPORAL,
+              pos: { x: -2, y: 1, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_AT',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: -2, y: -1, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_Grenadier',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: -2, y: -3, z: 0 },
+            },
+          ],
+        },
+        // Squad Lead Element
+        {
+          name: 'Rifle Squad Lead Element',
+          icon: FactionGroupIcons.MECHANIZED_INFANTRY,
+          units: [
+            {
+              unitSlug: 'Infantry_Basic_SquadLeader',
+              rank: FactionUnitRanks.SERGEANT,
+              pos: { x: 0, y: 2, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_RTO',
+              rank: FactionUnitRanks.CORPORAL,
+              pos: { x: 0, y: 0, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_Marksman',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 0, y: -2, z: 0 },
+            },
+          ],
+        },
+        // Squad Fire Team
+        {
+          name: 'Rifle Squad Fire Team',
+          icon: FactionGroupIcons.MECHANIZED_INFANTRY,
+          units: [
+            {
+              unitSlug: 'Infantry_Basic_TeamLeader',
+              rank: FactionUnitRanks.CORPORAL,
+              pos: { x: 0, y: 2, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_AT',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 0, y: 0, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_Grenadier',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 0, y: -2, z: 0 },
+            },
+          ],
+        },
+        // Platoon HQ
+        {
+          name: 'Platoon HQ (with VAB)',
+          icon: FactionGroupIcons.HQ,
+          units: [
+            // Platoon Lead
+            {
+              unitSlug: 'Infantry_Basic_Officer',
+              rank: FactionUnitRanks.LIEUTENANT,
+              pos: { x: 2, y: 2, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_TeamLeader',
+              rank: FactionUnitRanks.SERGEANT,
+              pos: { x: 2, y: 0, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_RTO',
+              rank: FactionUnitRanks.CORPORAL,
+              pos: { x: 2, y: -2, z: 0 },
+            },
+            // ATGM Team A
+            {
+              unitSlug: 'Infantry_Basic_ATGM_Gunner',
+              rank: FactionUnitRanks.SERGEANT,
+              pos: { x: 0, y: 0, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_Asst_ATGM_Gunner',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 0, y: -2, z: 0 },
+            },
+            // ATGM Team B
+            {
+              unitSlug: 'Infantry_Basic_ATGM_Gunner',
+              rank: FactionUnitRanks.CORPORAL,
+              pos: { x: -2, y: 0, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_Asst_ATGM_Gunner',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: -2, y: -2, z: 0 },
+            },
+            // Vehicle
+            {
+              unitSlug: 'Wheeled_Basic_VAB_12x7',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 1, y: -7, z: 0 },
+            },
+          ],
+        },
+        {
+          name: 'Platoon HQ',
+          icon: FactionGroupIcons.HQ,
+          units: [
+            // Platoon Lead
+            {
+              unitSlug: 'Infantry_Basic_Officer',
+              rank: FactionUnitRanks.LIEUTENANT,
+              pos: { x: 2, y: 2, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_TeamLeader',
+              rank: FactionUnitRanks.SERGEANT,
+              pos: { x: 2, y: 0, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_RTO',
+              rank: FactionUnitRanks.CORPORAL,
+              pos: { x: 2, y: -2, z: 0 },
+            },
+            // ATGM Team A
+            {
+              unitSlug: 'Infantry_Basic_ATGM_Gunner',
+              rank: FactionUnitRanks.SERGEANT,
+              pos: { x: 0, y: 0, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_Asst_ATGM_Gunner',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 0, y: -2, z: 0 },
+            },
+            // ATGM Team B
+            {
+              unitSlug: 'Infantry_Basic_ATGM_Gunner',
+              rank: FactionUnitRanks.CORPORAL,
+              pos: { x: -2, y: 0, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_Asst_ATGM_Gunner',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: -2, y: -2, z: 0 },
+            },
+          ],
+        },
+        // Platoon Lead Element
+        {
+          name: 'Platoon Lead Element',
+          icon: FactionGroupIcons.HQ,
+          units: [
+            {
+              unitSlug: 'Infantry_Basic_Officer',
+              rank: FactionUnitRanks.LIEUTENANT,
+              pos: { x: 0, y: 2, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_TeamLeader',
+              rank: FactionUnitRanks.SERGEANT,
+              pos: { x: 0, y: 0, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_RTO',
+              rank: FactionUnitRanks.CORPORAL,
+              pos: { x: 0, y: -2, z: 0 },
+            },
+          ],
+        },
+        // ATGM Team
+        {
+          name: 'ATGM Team',
+          icon: FactionGroupIcons.MECHANIZED_INFANTRY,
+          units: [
+            {
+              unitSlug: 'Infantry_Basic_ATGM_Gunner',
+              rank: FactionUnitRanks.CORPORAL,
+              pos: { x: 0, y: 1, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_Asst_ATGM_Gunner',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 0, y: -1, z: 0 },
             },
           ],
         },
