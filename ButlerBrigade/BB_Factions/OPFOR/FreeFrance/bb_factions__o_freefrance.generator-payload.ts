@@ -994,10 +994,182 @@ const body: FactionGeneratorPayloadBody = {
       backpack: 'Radio_PRC_10',
     },
     // ATGM Gunner
+    {
+      uniqueSlug: 'Infantry_Parachute_ATGM_Gunner',
+      baseSoldier: 'Base_Rolled',
+      editorSubcategory: FactionEditorSubcategories.CUSTOM,
+      customSubcategoryName: EDITOR_SUBCATEGORY_PARACHUTE_INFANTRY,
+      displayName: 'ATGM Gunner',
+      icon: FactionUnitIcons.AT,
+      role: FactionUnitRoles.MISSILE_SPECIALIST,
+      weapons: [
+        'Famas_F1_PGMP', // Famas Rifle
+        'AMF_Pamas', // PAMAS G1 Pistol
+        'AMF_VectorIV', // Leica Vector IV
+      ],
+      gear: [
+        ...PARA_SQUADLEAD_GEAR,
+        {
+          class: 'V_Simc_Alice_ligt',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        {
+          class: 'nomex_1_lang_addon',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        ...INF_FAMAS_MAGS,
+        ...INF_PAMAS_MAGS,
+        ...INF_STANDARD_MEDICAL,
+      ],
+      backpack: 'MILAN_tripod_80',
+    },
     // Asst. ATGM Gunner
+    {
+      uniqueSlug: 'Infantry_Parachute_Asst_ATGM_Gunner',
+      baseSoldier: 'Base_Rolled',
+      editorSubcategory: FactionEditorSubcategories.CUSTOM,
+      customSubcategoryName: EDITOR_SUBCATEGORY_PARACHUTE_INFANTRY,
+      displayName: 'Asst. ATGM Gunner',
+      role: FactionUnitRoles.RIFLEMAN,
+      weapons: [
+        'Famas_F1_PGMP', // Famas Rifle
+        'AMF_Pamas', // PAMAS G1 Pistol
+        'AMF_VectorIV', // Leica Vector IV
+      ],
+      gear: [
+        ...PARA_TEAMLEAD_GEAR,
+        {
+          class: 'V_Simc_Alice_mc',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        {
+          class: 'nomex_1_lang_addon',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        ...INF_FAMAS_MAGS,
+        ...INF_PAMAS_MAGS,
+        ...INF_STANDARD_GRENADES,
+      ],
+      backpack: {
+        class: 'F1_Sac',
+        items: [...INF_STANDARD_BACKPACK_MEDICAL],
+      },
+    },
     // Machine Gunner
+    {
+      uniqueSlug: 'Infantry_Parachute_MMG_Gunner',
+      baseSoldier: 'Base',
+      editorSubcategory: FactionEditorSubcategories.CUSTOM,
+      customSubcategoryName: EDITOR_SUBCATEGORY_PARACHUTE_INFANTRY,
+      displayName: 'Machine Gunner',
+      role: FactionUnitRoles.MACHINE_GUNNER,
+      icon: FactionUnitIcons.MG,
+      weapons: [
+        {
+          baseType: 'amf_mag58_01_f', // FN Mag 58 MMG
+          optic: 'ScromeJ4_RIS_NoCover',
+        },
+        'AMF_Pamas', // PAMAS G1 Pistol,
+        'AMF_APX_M241', // APX M241 Binos
+      ],
+      gear: [
+        ...PARA_SQUADLEAD_GEAR,
+        {
+          class: 'V_Simc_Alice_60',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        {
+          class: 'AMF_200Rnd_762x51_MAG58_BO_F3',
+          type: FactionUnitItemTypes.MAGAZINE,
+          count: 2,
+        },
+        ...INF_PAMAS_MAGS,
+        ...INF_STANDARD_MEDICAL,
+      ],
+    },
     // Asst. Machine Gunner
+    {
+      uniqueSlug: 'Infantry_Parachute_Asst_MMG_Gunner',
+      baseSoldier: 'Base',
+      editorSubcategory: FactionEditorSubcategories.CUSTOM,
+      customSubcategoryName: EDITOR_SUBCATEGORY_PARACHUTE_INFANTRY,
+      displayName: 'Asst. Machine Gunner',
+      role: FactionUnitRoles.RIFLEMAN,
+      weapons: [
+        'Famas_F1_PGMP', // Famas Rifle
+        'AMF_Pamas', // PAMAS G1 Pistol
+        'AMF_APX_M241', // APX M241 Binos
+      ],
+      gear: [
+        ...PARA_TEAMLEAD_GEAR,
+        {
+          class: 'V_Simc_Alice_alt',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        ...INF_FAMAS_MAGS,
+        ...INF_PAMAS_MAGS,
+        ...INF_STANDARD_GRENADES,
+      ],
+      backpack: {
+        class: 'F1_Sac',
+        items: [
+          ...INF_STANDARD_BACKPACK_MEDICAL,
+          {
+            class: 'AMF_200Rnd_762x51_MAG58_BO_F3',
+            type: FactionUnitBackpackItemTypes.MAGAZINE,
+            count: 1,
+          },
+          {
+            class: 'ACE_SpareBarrel',
+            type: FactionUnitBackpackItemTypes.ITEM,
+            count: 2,
+          },
+        ],
+      },
+    },
     // Machine Gun Ammo Bearer
+    {
+      uniqueSlug: 'Infantry_Parachute_MMG_AmmoBearer',
+      baseSoldier: 'Base',
+      editorSubcategory: FactionEditorSubcategories.CUSTOM,
+      customSubcategoryName: EDITOR_SUBCATEGORY_PARACHUTE_INFANTRY,
+      displayName: 'MG Ammo Bearer',
+      role: FactionUnitRoles.RIFLEMAN,
+      weapons: [
+        'Famas_F1_PGMP', // Famas Rifle
+        'AMF_Pamas', // PAMAS G1 Pistol
+      ],
+      gear: [
+        ...PARA_STANDARD_GEAR,
+        {
+          class: 'V_Simc_Alice_sekop',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        {
+          class: 'G_simc_US_Bandoleer_60',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        ...INF_FAMAS_MAGS,
+        ...INF_PAMAS_MAGS,
+        ...INF_STANDARD_GRENADES,
+      ],
+      backpack: {
+        class: 'gm_ge_army_backpack_90_oli',
+        items: [
+          ...INF_STANDARD_BACKPACK_MEDICAL,
+          {
+            class: 'AMF_200Rnd_762x51_MAG58_BO_F3',
+            type: FactionUnitBackpackItemTypes.MAGAZINE,
+            count: 2,
+          },
+          {
+            class: 'ACE_SpareBarrel',
+            type: FactionUnitBackpackItemTypes.ITEM,
+            count: 2,
+          },
+        ],
+      },
+    },
     // Mortarman
     // Asst. Mortarman
     // Mortar Ammo Bearer

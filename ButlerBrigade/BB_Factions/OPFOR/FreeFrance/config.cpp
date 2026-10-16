@@ -36,6 +36,11 @@ class CfgPatches {
       "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_Marksman",
       "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_AutoRifleman",
       "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_RTO",
+      "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_ATGM_Gunner",
+      "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_Asst_ATGM_Gunner",
+      "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_MMG_Gunner",
+      "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_Asst_MMG_Gunner",
+      "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_MMG_AmmoBearer",
       "BB_Factions__O_FreeFrance__Soldier_Wheeled_Basic_VAB_12x7",
     };
   };
@@ -71,6 +76,7 @@ class CfgWeapons
 {
   class AMF_RFF2_01_F;
   class FN_Minimi_F1;
+  class amf_mag58_01_f;
   class BB_Factions__O_FreeFrance__Weapon_AMF_RFF2_01_F__ScromeJ8_NoCover: AMF_RFF2_01_F
   {
     scope = 1;
@@ -104,12 +110,30 @@ class CfgWeapons
       };
     };
   };
+
+  class BB_Factions__O_FreeFrance__Weapon_amf_mag58_01_f__ScromeJ4_RIS_NoCover: amf_mag58_01_f
+  {
+    scope = 1;
+    scopeCurator = 1;
+    scopeArsenal = 1;
+    baseWeapon = "BB_Factions__O_FreeFrance__Weapon_amf_mag58_01_f__ScromeJ4_RIS_NoCover";
+
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+        slot = "CowsSlot";
+        item = "ScromeJ4_RIS_NoCover";
+      };
+    };
+  };
 };
 
 class CfgVehicles
 {
   // * Backpacks ***
   class F1_Sac;
+  class gm_ge_army_backpack_90_oli;
   class BB_Factions__O_FreeFrance__Backpack_Infantry_Basic_Rifleman: F1_Sac
   {
     scope = 1;
@@ -698,6 +722,143 @@ class CfgVehicles
       {
         magazine = "AMF_100Rnd_556x45_Minimi_BO_SS109_DCP";
         count = 3;
+      };
+    };
+  };
+  class BB_Factions__O_FreeFrance__Backpack_Infantry_Parachute_Asst_ATGM_Gunner: F1_Sac
+  {
+    scope = 1;
+    class TransportItems
+    {
+      class _xx_ACE_elasticBandage
+      {
+        name = "ACE_elasticBandage";
+        count = 1;
+      };
+      class _xx_ACE_packingBandage
+      {
+        name = "ACE_packingBandage";
+        count = 1;
+      };
+      class _xx_ACE_quikclot
+      {
+        name = "ACE_quikclot";
+        count = 1;
+      };
+      class _xx_ACE_painkillers
+      {
+        name = "ACE_painkillers";
+        count = 2;
+      };
+      class _xx_ACE_tourniquet
+      {
+        name = "ACE_tourniquet";
+        count = 1;
+      };
+      class _xx_ACE_morphine
+      {
+        name = "ACE_morphine";
+        count = 1;
+      };
+    };
+  };
+  class BB_Factions__O_FreeFrance__Backpack_Infantry_Parachute_Asst_MMG_Gunner: F1_Sac
+  {
+    scope = 1;
+    class TransportItems
+    {
+      class _xx_ACE_elasticBandage
+      {
+        name = "ACE_elasticBandage";
+        count = 1;
+      };
+      class _xx_ACE_packingBandage
+      {
+        name = "ACE_packingBandage";
+        count = 1;
+      };
+      class _xx_ACE_quikclot
+      {
+        name = "ACE_quikclot";
+        count = 1;
+      };
+      class _xx_ACE_painkillers
+      {
+        name = "ACE_painkillers";
+        count = 2;
+      };
+      class _xx_ACE_tourniquet
+      {
+        name = "ACE_tourniquet";
+        count = 1;
+      };
+      class _xx_ACE_morphine
+      {
+        name = "ACE_morphine";
+        count = 1;
+      };
+      class _xx_ACE_SpareBarrel
+      {
+        name = "ACE_SpareBarrel";
+        count = 2;
+      };
+    };
+    class TransportMagazines
+    {
+      class _xx_AMF_200Rnd_762x51_MAG58_BO_F3
+      {
+        magazine = "AMF_200Rnd_762x51_MAG58_BO_F3";
+        count = 1;
+      };
+    };
+  };
+  class BB_Factions__O_FreeFrance__Backpack_Infantry_Parachute_MMG_AmmoBearer: gm_ge_army_backpack_90_oli
+  {
+    scope = 1;
+    class TransportItems
+    {
+      class _xx_ACE_elasticBandage
+      {
+        name = "ACE_elasticBandage";
+        count = 1;
+      };
+      class _xx_ACE_packingBandage
+      {
+        name = "ACE_packingBandage";
+        count = 1;
+      };
+      class _xx_ACE_quikclot
+      {
+        name = "ACE_quikclot";
+        count = 1;
+      };
+      class _xx_ACE_painkillers
+      {
+        name = "ACE_painkillers";
+        count = 2;
+      };
+      class _xx_ACE_tourniquet
+      {
+        name = "ACE_tourniquet";
+        count = 1;
+      };
+      class _xx_ACE_morphine
+      {
+        name = "ACE_morphine";
+        count = 1;
+      };
+      class _xx_ACE_SpareBarrel
+      {
+        name = "ACE_SpareBarrel";
+        count = 2;
+      };
+    };
+    class TransportMagazines
+    {
+      class _xx_AMF_200Rnd_762x51_MAG58_BO_F3
+      {
+        magazine = "AMF_200Rnd_762x51_MAG58_BO_F3";
+        count = 2;
       };
     };
   };
@@ -2688,6 +2849,509 @@ class CfgVehicles
       "ACE_painkillers",
       "ACE_tourniquet",
       "ACE_morphine",
+    };
+  };
+  class BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_ATGM_Gunner: BB_Factions__O_FreeFrance__Base_Base_Rolled
+  {
+    displayName = "ATGM Gunner";
+    role = "MissileSpecialist";
+    icon = "iconManAT";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    editorCategory = "BB_Factions__O_FreeFrance";
+    editorSubcategory = "BB_Factions__O_FreeFrance__EditorSubcategories_Parachute_Infantry";
+
+    backpack = "MILAN_tripod_80";
+
+    weapons[] =
+    {
+      "Famas_F1_PGMP",
+      "AMF_Pamas",
+      "AMF_VectorIV",
+      "Throw",
+      "Put",
+    };
+    respawnWeapons[] =
+    {
+      "Famas_F1_PGMP",
+      "AMF_Pamas",
+      "AMF_VectorIV",
+      "Throw",
+      "Put",
+    };
+
+    magazines[] =
+    {
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_15Rnd_9x19_PAMAS",
+      "AMF_15Rnd_9x19_PAMAS",
+      "AMF_15Rnd_9x19_PAMAS",
+    };
+    respawnMagazines[] =
+    {
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_15Rnd_9x19_PAMAS",
+      "AMF_15Rnd_9x19_PAMAS",
+      "AMF_15Rnd_9x19_PAMAS",
+    };
+
+    linkedItems[] =
+    {
+      "AMF_BERET_MARINE_PARA",
+      "ItemCompass",
+      "ItemMap",
+      "ACE_Altimeter",
+      "ItemGPS",
+      "TFAR_fadak",
+      "V_Simc_Alice_ligt",
+      "nomex_1_lang_addon",
+    };
+    respawnLinkedItems[] =
+    {
+      "AMF_BERET_MARINE_PARA",
+      "ItemCompass",
+      "ItemMap",
+      "ACE_Altimeter",
+      "ItemGPS",
+      "TFAR_fadak",
+      "V_Simc_Alice_ligt",
+      "nomex_1_lang_addon",
+    };
+
+    items[] =
+    {
+      "ACE_MapTools",
+      "ACE_EntrenchingTool",
+      "ACE_Flashlight_XL50",
+      "ACE_EarPlugs",
+      "ACE_elasticBandage",
+      "ACE_packingBandage",
+      "ACE_quikclot",
+      "ACE_painkillers",
+      "ACE_painkillers",
+      "ACE_tourniquet",
+      "ACE_morphine",
+    };
+    respawnItems[] =
+    {
+      "ACE_MapTools",
+      "ACE_EntrenchingTool",
+      "ACE_Flashlight_XL50",
+      "ACE_EarPlugs",
+      "ACE_elasticBandage",
+      "ACE_packingBandage",
+      "ACE_quikclot",
+      "ACE_painkillers",
+      "ACE_painkillers",
+      "ACE_tourniquet",
+      "ACE_morphine",
+    };
+  };
+  class BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_Asst_ATGM_Gunner: BB_Factions__O_FreeFrance__Base_Base_Rolled
+  {
+    displayName = "Asst. ATGM Gunner";
+    role = "Rifleman";
+    icon = "iconMan";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    editorCategory = "BB_Factions__O_FreeFrance";
+    editorSubcategory = "BB_Factions__O_FreeFrance__EditorSubcategories_Parachute_Infantry";
+
+    backpack = "BB_Factions__O_FreeFrance__Backpack_Infantry_Parachute_Asst_ATGM_Gunner";
+
+    weapons[] =
+    {
+      "Famas_F1_PGMP",
+      "AMF_Pamas",
+      "AMF_VectorIV",
+      "Throw",
+      "Put",
+    };
+    respawnWeapons[] =
+    {
+      "Famas_F1_PGMP",
+      "AMF_Pamas",
+      "AMF_VectorIV",
+      "Throw",
+      "Put",
+    };
+
+    magazines[] =
+    {
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_15Rnd_9x19_PAMAS",
+      "AMF_15Rnd_9x19_PAMAS",
+      "AMF_15Rnd_9x19_PAMAS",
+      "HandGrenade",
+      "HandGrenade",
+      "SmokeShell",
+      "SmokeShell",
+    };
+    respawnMagazines[] =
+    {
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_15Rnd_9x19_PAMAS",
+      "AMF_15Rnd_9x19_PAMAS",
+      "AMF_15Rnd_9x19_PAMAS",
+      "HandGrenade",
+      "HandGrenade",
+      "SmokeShell",
+      "SmokeShell",
+    };
+
+    linkedItems[] =
+    {
+      "AMF_BERET_MARINE_PARA",
+      "ItemCompass",
+      "ItemMap",
+      "ACE_Altimeter",
+      "ItemGPS",
+      "V_Simc_Alice_mc",
+      "nomex_1_lang_addon",
+    };
+    respawnLinkedItems[] =
+    {
+      "AMF_BERET_MARINE_PARA",
+      "ItemCompass",
+      "ItemMap",
+      "ACE_Altimeter",
+      "ItemGPS",
+      "V_Simc_Alice_mc",
+      "nomex_1_lang_addon",
+    };
+
+    items[] =
+    {
+      "ACE_MapTools",
+      "ACE_EntrenchingTool",
+      "ACE_Flashlight_XL50",
+      "ACE_EarPlugs",
+    };
+    respawnItems[] =
+    {
+      "ACE_MapTools",
+      "ACE_EntrenchingTool",
+      "ACE_Flashlight_XL50",
+      "ACE_EarPlugs",
+    };
+  };
+  class BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_MMG_Gunner: BB_Factions__O_FreeFrance__Base_Base
+  {
+    displayName = "Machine Gunner";
+    role = "MachineGunner";
+    icon = "iconManMG";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    editorCategory = "BB_Factions__O_FreeFrance";
+    editorSubcategory = "BB_Factions__O_FreeFrance__EditorSubcategories_Parachute_Infantry";
+
+    weapons[] =
+    {
+      "BB_Factions__O_FreeFrance__Weapon_amf_mag58_01_f__ScromeJ4_RIS_NoCover",
+      "AMF_Pamas",
+      "AMF_APX_M241",
+      "Throw",
+      "Put",
+    };
+    respawnWeapons[] =
+    {
+      "BB_Factions__O_FreeFrance__Weapon_amf_mag58_01_f__ScromeJ4_RIS_NoCover",
+      "AMF_Pamas",
+      "AMF_APX_M241",
+      "Throw",
+      "Put",
+    };
+
+    magazines[] =
+    {
+      "AMF_200Rnd_762x51_MAG58_BO_F3",
+      "AMF_200Rnd_762x51_MAG58_BO_F3",
+      "AMF_15Rnd_9x19_PAMAS",
+      "AMF_15Rnd_9x19_PAMAS",
+      "AMF_15Rnd_9x19_PAMAS",
+    };
+    respawnMagazines[] =
+    {
+      "AMF_200Rnd_762x51_MAG58_BO_F3",
+      "AMF_200Rnd_762x51_MAG58_BO_F3",
+      "AMF_15Rnd_9x19_PAMAS",
+      "AMF_15Rnd_9x19_PAMAS",
+      "AMF_15Rnd_9x19_PAMAS",
+    };
+
+    linkedItems[] =
+    {
+      "AMF_BERET_MARINE_PARA",
+      "ItemCompass",
+      "ItemMap",
+      "ACE_Altimeter",
+      "ItemGPS",
+      "TFAR_fadak",
+      "V_Simc_Alice_60",
+    };
+    respawnLinkedItems[] =
+    {
+      "AMF_BERET_MARINE_PARA",
+      "ItemCompass",
+      "ItemMap",
+      "ACE_Altimeter",
+      "ItemGPS",
+      "TFAR_fadak",
+      "V_Simc_Alice_60",
+    };
+
+    items[] =
+    {
+      "ACE_MapTools",
+      "ACE_EntrenchingTool",
+      "ACE_Flashlight_XL50",
+      "ACE_EarPlugs",
+      "ACE_elasticBandage",
+      "ACE_packingBandage",
+      "ACE_quikclot",
+      "ACE_painkillers",
+      "ACE_painkillers",
+      "ACE_tourniquet",
+      "ACE_morphine",
+    };
+    respawnItems[] =
+    {
+      "ACE_MapTools",
+      "ACE_EntrenchingTool",
+      "ACE_Flashlight_XL50",
+      "ACE_EarPlugs",
+      "ACE_elasticBandage",
+      "ACE_packingBandage",
+      "ACE_quikclot",
+      "ACE_painkillers",
+      "ACE_painkillers",
+      "ACE_tourniquet",
+      "ACE_morphine",
+    };
+  };
+  class BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_Asst_MMG_Gunner: BB_Factions__O_FreeFrance__Base_Base
+  {
+    displayName = "Asst. Machine Gunner";
+    role = "Rifleman";
+    icon = "iconMan";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    editorCategory = "BB_Factions__O_FreeFrance";
+    editorSubcategory = "BB_Factions__O_FreeFrance__EditorSubcategories_Parachute_Infantry";
+
+    backpack = "BB_Factions__O_FreeFrance__Backpack_Infantry_Parachute_Asst_MMG_Gunner";
+
+    weapons[] =
+    {
+      "Famas_F1_PGMP",
+      "AMF_Pamas",
+      "AMF_APX_M241",
+      "Throw",
+      "Put",
+    };
+    respawnWeapons[] =
+    {
+      "Famas_F1_PGMP",
+      "AMF_Pamas",
+      "AMF_APX_M241",
+      "Throw",
+      "Put",
+    };
+
+    magazines[] =
+    {
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_15Rnd_9x19_PAMAS",
+      "AMF_15Rnd_9x19_PAMAS",
+      "AMF_15Rnd_9x19_PAMAS",
+      "HandGrenade",
+      "HandGrenade",
+      "SmokeShell",
+      "SmokeShell",
+    };
+    respawnMagazines[] =
+    {
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_15Rnd_9x19_PAMAS",
+      "AMF_15Rnd_9x19_PAMAS",
+      "AMF_15Rnd_9x19_PAMAS",
+      "HandGrenade",
+      "HandGrenade",
+      "SmokeShell",
+      "SmokeShell",
+    };
+
+    linkedItems[] =
+    {
+      "AMF_BERET_MARINE_PARA",
+      "ItemCompass",
+      "ItemMap",
+      "ACE_Altimeter",
+      "ItemGPS",
+      "V_Simc_Alice_alt",
+    };
+    respawnLinkedItems[] =
+    {
+      "AMF_BERET_MARINE_PARA",
+      "ItemCompass",
+      "ItemMap",
+      "ACE_Altimeter",
+      "ItemGPS",
+      "V_Simc_Alice_alt",
+    };
+
+    items[] =
+    {
+      "ACE_MapTools",
+      "ACE_EntrenchingTool",
+      "ACE_Flashlight_XL50",
+      "ACE_EarPlugs",
+    };
+    respawnItems[] =
+    {
+      "ACE_MapTools",
+      "ACE_EntrenchingTool",
+      "ACE_Flashlight_XL50",
+      "ACE_EarPlugs",
+    };
+  };
+  class BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_MMG_AmmoBearer: BB_Factions__O_FreeFrance__Base_Base
+  {
+    displayName = "MG Ammo Bearer";
+    role = "Rifleman";
+    icon = "iconMan";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    editorCategory = "BB_Factions__O_FreeFrance";
+    editorSubcategory = "BB_Factions__O_FreeFrance__EditorSubcategories_Parachute_Infantry";
+
+    backpack = "BB_Factions__O_FreeFrance__Backpack_Infantry_Parachute_MMG_AmmoBearer";
+
+    weapons[] =
+    {
+      "Famas_F1_PGMP",
+      "AMF_Pamas",
+      "Throw",
+      "Put",
+    };
+    respawnWeapons[] =
+    {
+      "Famas_F1_PGMP",
+      "AMF_Pamas",
+      "Throw",
+      "Put",
+    };
+
+    magazines[] =
+    {
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_15Rnd_9x19_PAMAS",
+      "AMF_15Rnd_9x19_PAMAS",
+      "AMF_15Rnd_9x19_PAMAS",
+      "HandGrenade",
+      "HandGrenade",
+      "SmokeShell",
+      "SmokeShell",
+    };
+    respawnMagazines[] =
+    {
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_25Rnd_BO_MEN_SS109",
+      "AMF_15Rnd_9x19_PAMAS",
+      "AMF_15Rnd_9x19_PAMAS",
+      "AMF_15Rnd_9x19_PAMAS",
+      "HandGrenade",
+      "HandGrenade",
+      "SmokeShell",
+      "SmokeShell",
+    };
+
+    linkedItems[] =
+    {
+      "AMF_BERET_MARINE_PARA",
+      "ItemCompass",
+      "ItemMap",
+      "ACE_Altimeter",
+      "V_Simc_Alice_sekop",
+      "G_simc_US_Bandoleer_60",
+    };
+    respawnLinkedItems[] =
+    {
+      "AMF_BERET_MARINE_PARA",
+      "ItemCompass",
+      "ItemMap",
+      "ACE_Altimeter",
+      "V_Simc_Alice_sekop",
+      "G_simc_US_Bandoleer_60",
+    };
+
+    items[] =
+    {
+      "ACE_MapTools",
+      "ACE_EntrenchingTool",
+      "ACE_Flashlight_XL50",
+      "ACE_EarPlugs",
+    };
+    respawnItems[] =
+    {
+      "ACE_MapTools",
+      "ACE_EntrenchingTool",
+      "ACE_Flashlight_XL50",
+      "ACE_EarPlugs",
     };
   };
   // ***
