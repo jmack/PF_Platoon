@@ -37,7 +37,7 @@ class CfgEditorCategories
     displayName = "<% faction_name %>";
   };
 };
-
+<% cfg_editorsubcategories %>
 class CfgWeapons
 {<% cfg_weapons %>};
 

@@ -41,6 +41,7 @@ export const FactionEditorSubcategories = {
   TRACKED: 'BB_Factions_EdSubcat_Tracked',
   HELICOPTERS: 'BB_Factions_EdSubcat_Helicopters',
   PLANES: 'BB_Factions_EdSubcat_Planes',
+  CUSTOM: 'CUSTOM',
 } as const;
 export type FactionEditorSubcategory = (typeof FactionEditorSubcategories)[keyof typeof FactionEditorSubcategories];
 
@@ -162,6 +163,7 @@ export type FactionUnit = {
   uniqueSlug: string;
   baseSoldier: string;
   editorSubcategory: FactionEditorSubcategory;
+  customSubcategoryName?: string;
   displayName: string;
   icon?: FactionUnitIcon;
   role: FactionUnitRole;
@@ -213,6 +215,8 @@ export type FactionTemplateValues = {
   priority: number;
   faction_side_number: number;
   faction_side_name: string;
+
+  cfg_editorsubcategories: string;
 
   cfg_weapons: string;
 

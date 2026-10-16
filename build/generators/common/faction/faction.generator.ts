@@ -1,5 +1,7 @@
 import { Generator } from '../../generator.class.ts';
 import {
+  FactionEditorSubcategories,
+  FactionEditorSubcategory,
   FactionGeneratorPayloadBody,
   FactionTemplateValues,
   FactionUnitBackpackItem,
@@ -34,6 +36,7 @@ export default class FactionGenerator extends Generator {
       priority: this.typedBody.meta.priority,
       faction_side_number: this.typedBody.meta.side,
       faction_side_name: this.FACTION_SIDE_NAMES[this.typedBody.meta.side] ?? 'West',
+      cfg_editorsubcategories: '',
       cfg_weapons: '',
       cfg_vehicles_backpacks: '',
       cfg_vehicles_base_soldiers: '',
@@ -42,22 +45,25 @@ export default class FactionGenerator extends Generator {
       cfg_groups: '',
     };
 
-    // 1. Weapons
+    // 1. Editor Categories
+    this.GenerateAndTransformCustomEditorSubcategories(values);
+
+    // 2. Weapons
     this.GenerateAndTransformWeapons(values);
 
-    // 2. Backpacks
+    // 3. Backpacks
     this.GenerateAndTransformBackpacks(values);
 
-    // 3a. Base Soldiers
+    // 4. Base Soldiers
     this.GenerateAndTransformBaseClasses(values);
 
-    // 3b. Faction Soldiers
+    // 5. Faction Soldiers
     this.GenerateSoldiers(values);
 
-    // 4. Vehicles
+    // 6. Vehicles
     this.GenerateVehicles(values);
 
-    // 5. Groups
+    // 7. Groups
     this.GenerateGroups(values);
 
     // Fill and save the template
@@ -67,6 +73,50 @@ export default class FactionGenerator extends Generator {
   /**
    * STEP HELPERS
    */
+
+  /**
+   *
+   * @param values
+   */
+  private GenerateAndTransformCustomEditorSubcategories(values: FactionTemplateValues): void {
+    const generatedSubcategories: Set<{ className: string; displayName: string }> = new Set();
+
+    // Search all units for CUSTOM editor subcat & filled custom name
+    this.typedBody.units.forEach((unit) => {
+      if (unit.editorSubcategory !== FactionEditorSubcategories.CUSTOM || !unit.customSubcategoryName) {
+        return;
+      }
+
+      // Create our subcat entry and push it automatically. Since generatedSubcategories is a set it will automatically
+      // dedupe any duplicate entries
+      const className = `${this.header.name}__EditorSubcategories_${this.ConvertToArmaClassSafeString(unit.customSubcategoryName)}`;
+      generatedSubcategories.add({
+        displayName: unit.customSubcategoryName,
+        className,
+      });
+
+      // Write back the new classname for the unit
+      unit.editorSubcategory = className as FactionEditorSubcategory;
+    });
+
+    // Write subcat entry to values
+    const generatedArray = Array.from(generatedSubcategories);
+
+    if (generatedArray.length) {
+      // prettier-ignore
+      values.cfg_editorsubcategories =
+        `\nclass CfgEditorSubcategories` +
+        `\n{` +
+        generatedArray.map(entry => 
+          `\n  class ${entry.className}` +
+          `\n  {` +
+          `\n    displayName = "${entry.displayName}";` +
+          `\n  };`
+        ).join('') +
+        `\n};` +
+        `\n`;
+    }
+  }
 
   /**
    * Scans all body.units[].weapons[] for complex weapons, turns them into CfgWeapons entries, and then replaces
