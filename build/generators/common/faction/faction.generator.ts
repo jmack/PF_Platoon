@@ -79,7 +79,7 @@ export default class FactionGenerator extends Generator {
    * @param values
    */
   private GenerateAndTransformCustomEditorSubcategories(values: FactionTemplateValues): void {
-    const generatedSubcategories: Set<{ className: string; displayName: string }> = new Set();
+    const generatedSubcategories = new Map<string, string>();
 
     // Search all units for CUSTOM editor subcat & filled custom name
     this.typedBody.units.forEach((unit) => {
@@ -87,30 +87,24 @@ export default class FactionGenerator extends Generator {
         return;
       }
 
-      // Create our subcat entry and push it automatically. Since generatedSubcategories is a set it will automatically
-      // dedupe any duplicate entries
+      // Create our subcat entry and push it automatically. generatedSubcategories being a map ensure we will always only have copy of each class
       const className = `${this.header.name}__EditorSubcategories_${this.ConvertToArmaClassSafeString(unit.customSubcategoryName)}`;
-      generatedSubcategories.add({
-        displayName: unit.customSubcategoryName,
-        className,
-      });
+      generatedSubcategories.set(className, unit.customSubcategoryName);
 
       // Write back the new classname for the unit
       unit.editorSubcategory = className as FactionEditorSubcategory;
     });
 
     // Write subcat entry to values
-    const generatedArray = Array.from(generatedSubcategories);
-
-    if (generatedArray.length) {
+    if (generatedSubcategories.size) {
       // prettier-ignore
       values.cfg_editorsubcategories =
         `\nclass CfgEditorSubcategories` +
         `\n{` +
-        generatedArray.map(entry => 
-          `\n  class ${entry.className}` +
+        Array.from(generatedSubcategories).map(([key, value]) => 
+          `\n  class ${key}` +
           `\n  {` +
-          `\n    displayName = "${entry.displayName}";` +
+          `\n    displayName = "${value}";` +
           `\n  };`
         ).join('') +
         `\n};` +
