@@ -333,7 +333,7 @@ export default class FactionGenerator extends Generator {
         `\n    faction = "${this.header.name}";` +
         `\n` +
         `\n    editorCategory = "${this.header.name}";` +
-        `\n    editorSubcategry = "${vehicle.editorSubcategory}";` +
+        `\n    editorSubcategory = "${vehicle.editorSubcategory}";` +
         `\n` +
         `\n    crew = "${this.ConvertUnitSlugIntoClassString(vehicle.crewSlug)}";` +
         `\n  };`;

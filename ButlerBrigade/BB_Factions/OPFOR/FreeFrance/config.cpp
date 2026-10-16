@@ -1878,7 +1878,7 @@ class CfgVehicles
     faction = "BB_Factions__O_FreeFrance";
 
     editorCategory = "BB_Factions__O_FreeFrance";
-    editorSubcategry = "BB_Factions_EdSubcat_Wheeled";
+    editorSubcategory = "BB_Factions_EdSubcat_Wheeled";
 
     crew = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_Vehicle_Commander";
   };
