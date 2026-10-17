@@ -389,7 +389,6 @@ export default class FactionGenerator extends Generator {
         // prettier-ignore
         vehicleDef +=
           `\n` +
-          `\n    crew = "";` +
           `\n    hasDriver = 0;` +
           `\n    hasGunner = 0;` +
           `\n    hasCommander = 0;` +
