@@ -1354,7 +1354,7 @@ const body: FactionGeneratorPayloadBody = {
     // Officer
     {
       uniqueSlug: 'Infantry_Parachute_OfficerLeader',
-      baseSoldier: 'Base',
+      baseSoldier: 'White',
       editorSubcategory: FactionEditorSubcategories.CUSTOM,
       customSubcategoryName: EDITOR_SUBCATEGORY_PARACHUTE_INFANTRY,
       displayName: 'Officer',

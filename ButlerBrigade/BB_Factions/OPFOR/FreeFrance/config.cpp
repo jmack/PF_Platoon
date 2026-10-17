@@ -4144,7 +4144,7 @@ class CfgVehicles
       "ACE_EarPlugs",
     };
   };
-  class BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_OfficerLeader: BB_Factions__O_FreeFrance__Base_Base
+  class BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_OfficerLeader: BB_Factions__O_FreeFrance__Base_White
   {
     displayName = "Officer";
     role = "Rifleman";
