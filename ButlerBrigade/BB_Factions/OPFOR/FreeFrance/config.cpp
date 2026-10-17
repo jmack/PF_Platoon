@@ -4278,7 +4278,6 @@ class CfgVehicles
     editorCategory = "BB_Factions__O_FreeFrance";
     editorSubcategory = "BB_Factions_EdSubcat_Wheeled";
 
-    crew = "";
     hasDriver = 0;
     hasGunner = 0;
     hasCommander = 0;
@@ -4691,6 +4690,412 @@ class CfgGroups
             vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Basic_Asst_ATGM_Gunner";
             rank = "PRIVATE";
             position[] = { 0, -1, 0 };
+          };
+        };
+      };
+      class Parachute_Infantry
+      {
+        name = "Parachute Infantry";
+
+        class BB_Factions__O_FreeFrance__Group_Rifle_Squad
+        {
+          name = "Rifle Squad";
+          side = 0;
+          faction = "BB_Factions__O_FreeFrance";
+          icon = "A3\ui_f\data\map\markers\nato\o_inf.paa";
+
+          class Unit0
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_SquadLeader";
+            rank = "SERGEANT";
+            position[] = { 0, 5, 0 };
+          };
+          class Unit1
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_TeamLeader_AT";
+            rank = "CORPORAL";
+            position[] = { 2, 3, 0 };
+          };
+          class Unit2
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_AT";
+            rank = "PRIVATE";
+            position[] = { 2, 1, 0 };
+          };
+          class Unit3
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_Grenadier";
+            rank = "PRIVATE";
+            position[] = { 2, -1, 0 };
+          };
+          class Unit4
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_TeamLeader";
+            rank = "CORPORAL";
+            position[] = { 0, 3, 0 };
+          };
+          class Unit5
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_Marksman";
+            rank = "PRIVATE";
+            position[] = { 0, 1, 0 };
+          };
+          class Unit6
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_AutoRifleman";
+            rank = "PRIVATE";
+            position[] = { 0, -1, 0 };
+          };
+          class Unit7
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_TeamLeader";
+            rank = "CORPORAL";
+            position[] = { -2, 3, 0 };
+          };
+          class Unit8
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_Rifleman";
+            rank = "PRIVATE";
+            position[] = { -2, 1, 0 };
+          };
+          class Unit9
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_Rifleman";
+            rank = "PRIVATE";
+            position[] = { -2, -1, 0 };
+          };
+          class Unit10
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_Rifleman";
+            rank = "PRIVATE";
+            position[] = { -2, -3, 0 };
+          };
+          class Unit11
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_Rifleman";
+            rank = "PRIVATE";
+            position[] = { -2, -5, 0 };
+          };
+          class Unit12
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Wheeled_Basic_GBC_180_TroopTransport_Uncrewed";
+            rank = "PRIVATE";
+            position[] = { 1, -6, 0 };
+          };
+        };
+        class BB_Factions__O_FreeFrance__Group_Grenadier_Team
+        {
+          name = "Grenadier Team";
+          side = 0;
+          faction = "BB_Factions__O_FreeFrance";
+          icon = "A3\ui_f\data\map\markers\nato\o_inf.paa";
+
+          class Unit0
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_TeamLeader_AT";
+            rank = "CORPORAL";
+            position[] = { 0, 2, 0 };
+          };
+          class Unit1
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_AT";
+            rank = "PRIVATE";
+            position[] = { 0, 0, 0 };
+          };
+          class Unit2
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_Grenadier";
+            rank = "PRIVATE";
+            position[] = { 0, -2, 0 };
+          };
+        };
+        class BB_Factions__O_FreeFrance__Group_Support_Team
+        {
+          name = "Support Team";
+          side = 0;
+          faction = "BB_Factions__O_FreeFrance";
+          icon = "A3\ui_f\data\map\markers\nato\o_inf.paa";
+
+          class Unit0
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_TeamLeader";
+            rank = "CORPORAL";
+            position[] = { 0, 2, 0 };
+          };
+          class Unit1
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_Marksman";
+            rank = "PRIVATE";
+            position[] = { 0, 0, 0 };
+          };
+          class Unit2
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_AutoRifleman";
+            rank = "PRIVATE";
+            position[] = { 0, -2, 0 };
+          };
+        };
+        class BB_Factions__O_FreeFrance__Group_Manuever_Team
+        {
+          name = "Manuever Team";
+          side = 0;
+          faction = "BB_Factions__O_FreeFrance";
+          icon = "A3\ui_f\data\map\markers\nato\o_inf.paa";
+
+          class Unit0
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_TeamLeader";
+            rank = "CORPORAL";
+            position[] = { 0, 4, 0 };
+          };
+          class Unit1
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_Rifleman";
+            rank = "PRIVATE";
+            position[] = { 0, 2, 0 };
+          };
+          class Unit2
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_Rifleman";
+            rank = "PRIVATE";
+            position[] = { 0, 0, 0 };
+          };
+          class Unit3
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_Rifleman";
+            rank = "PRIVATE";
+            position[] = { 0, -2, 0 };
+          };
+          class Unit4
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_Rifleman";
+            rank = "PRIVATE";
+            position[] = { 0, -4, 0 };
+          };
+        };
+        class BB_Factions__O_FreeFrance__Group_Platoon_HQ
+        {
+          name = "Platoon HQ";
+          side = 0;
+          faction = "BB_Factions__O_FreeFrance";
+          icon = "A3\ui_f\data\map\markers\nato\o_hq.paa";
+
+          class Unit0
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_OfficerLeader";
+            rank = "LIEUTENANT";
+            position[] = { 3, 3, 0 };
+          };
+          class Unit1
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_TeamLeader";
+            rank = "SERGEANT";
+            position[] = { 3, 1, 0 };
+          };
+          class Unit2
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_RTO";
+            rank = "PRIVATE";
+            position[] = { 3, -1, 0 };
+          };
+          class Unit3
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_ATGM_Gunner";
+            rank = "CORPORAL";
+            position[] = { 1, 1, 0 };
+          };
+          class Unit4
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_Asst_ATGM_Gunner";
+            rank = "PRIVATE";
+            position[] = { 1, -1, 0 };
+          };
+          class Unit5
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_MMG_Gunner";
+            rank = "CORPORAL";
+            position[] = { -1, 1, 0 };
+          };
+          class Unit6
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_Asst_MMG_Gunner";
+            rank = "PRIVATE";
+            position[] = { -1, -1, 0 };
+          };
+          class Unit7
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_MMG_AmmoBearer";
+            rank = "PRIVATE";
+            position[] = { -1, -3, 0 };
+          };
+          class Unit8
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_Mortar_Commander";
+            rank = "CORPORAL";
+            position[] = { -3, 1, 0 };
+          };
+          class Unit9
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_Mortar_Crew";
+            rank = "PRIVATE";
+            position[] = { -3, -1, 0 };
+          };
+          class Unit10
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_Mortar_AmmoBearer";
+            rank = "PRIVATE";
+            position[] = { -3, -3, 0 };
+          };
+          class Unit11
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Wheeled_Basic_GBC_180_TroopTransport_Uncrewed";
+            rank = "PRIVATE";
+            position[] = { 2, -6, 0 };
+          };
+        };
+        class BB_Factions__O_FreeFrance__Group_Command_Element
+        {
+          name = "Command Element";
+          side = 0;
+          faction = "BB_Factions__O_FreeFrance";
+          icon = "A3\ui_f\data\map\markers\nato\o_hq.paa";
+
+          class Unit0
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_OfficerLeader";
+            rank = "LIEUTENANT";
+            position[] = { 0, 2, 0 };
+          };
+          class Unit1
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_TeamLeader";
+            rank = "SERGEANT";
+            position[] = { 0, 0, 0 };
+          };
+          class Unit2
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_RTO";
+            rank = "PRIVATE";
+            position[] = { 0, -2, 0 };
+          };
+        };
+        class BB_Factions__O_FreeFrance__Group_ATGM_Team
+        {
+          name = "ATGM Team";
+          side = 0;
+          faction = "BB_Factions__O_FreeFrance";
+          icon = "A3\ui_f\data\map\markers\nato\o_inf.paa";
+
+          class Unit0
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_ATGM_Gunner";
+            rank = "CORPORAL";
+            position[] = { 0, 1, 0 };
+          };
+          class Unit1
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_Asst_ATGM_Gunner";
+            rank = "PRIVATE";
+            position[] = { 0, -1, 0 };
+          };
+        };
+        class BB_Factions__O_FreeFrance__Group_MMG_Team
+        {
+          name = "MMG Team";
+          side = 0;
+          faction = "BB_Factions__O_FreeFrance";
+          icon = "A3\ui_f\data\map\markers\nato\o_inf.paa";
+
+          class Unit0
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_MMG_Gunner";
+            rank = "CORPORAL";
+            position[] = { 0, 2, 0 };
+          };
+          class Unit1
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_Asst_MMG_Gunner";
+            rank = "PRIVATE";
+            position[] = { 0, 0, 0 };
+          };
+          class Unit2
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_MMG_AmmoBearer";
+            rank = "PRIVATE";
+            position[] = { 0, -2, 0 };
+          };
+        };
+        class BB_Factions__O_FreeFrance__Group_Mortar_Team
+        {
+          name = "Mortar Team";
+          side = 0;
+          faction = "BB_Factions__O_FreeFrance";
+          icon = "A3\ui_f\data\map\markers\nato\o_mortar.paa";
+
+          class Unit0
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_Mortar_Commander";
+            rank = "CORPORAL";
+            position[] = { 0, 2, 0 };
+          };
+          class Unit1
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_Mortar_Crew";
+            rank = "PRIVATE";
+            position[] = { 0, 0, 0 };
+          };
+          class Unit2
+          {
+            side = 0;
+            vehicle = "BB_Factions__O_FreeFrance__Soldier_Infantry_Parachute_Mortar_AmmoBearer";
+            rank = "PRIVATE";
+            position[] = { 0, -2, 0 };
           };
         };
       };

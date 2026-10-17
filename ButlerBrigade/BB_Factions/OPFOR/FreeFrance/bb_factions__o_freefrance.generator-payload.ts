@@ -1720,6 +1720,320 @@ const body: FactionGeneratorPayloadBody = {
         },
       ],
     },
+    {
+      name: 'Parachute Infantry',
+      groups: [
+        // Rifle Squad
+        {
+          name: 'Rifle Squad',
+          icon: FactionGroupIcons.INFANTRY,
+          units: [
+            // Squad Lead
+            {
+              unitSlug: 'Infantry_Parachute_SquadLeader',
+              rank: FactionUnitRanks.SERGEANT,
+              pos: { x: 0, y: 5, z: 0 },
+            },
+            // Grenadier Team
+            {
+              unitSlug: 'Infantry_Parachute_TeamLeader_AT',
+              rank: FactionUnitRanks.CORPORAL,
+              pos: { x: 2, y: 3, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Parachute_AT',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 2, y: 1, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Parachute_Grenadier',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 2, y: -1, z: 0 },
+            },
+            // Support Team
+            {
+              unitSlug: 'Infantry_Parachute_TeamLeader',
+              rank: FactionUnitRanks.CORPORAL,
+              pos: { x: 0, y: 3, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Parachute_Marksman',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 0, y: 1, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Parachute_AutoRifleman',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 0, y: -1, z: 0 },
+            },
+            // Manuever Team
+            {
+              unitSlug: 'Infantry_Parachute_TeamLeader',
+              rank: FactionUnitRanks.CORPORAL,
+              pos: { x: -2, y: 3, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Parachute_Rifleman',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: -2, y: 1, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Parachute_Rifleman',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: -2, y: -1, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Parachute_Rifleman',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: -2, y: -3, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Parachute_Rifleman',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: -2, y: -5, z: 0 },
+            },
+            // Vehicle
+            {
+              unitSlug: 'Wheeled_Basic_GBC_180_TroopTransport_Uncrewed',
+              rank: FactionUnitRanks.PRIVATE, // doesn't matter, uncrewed vehicle
+              pos: { x: 1, y: -6, z: 0 },
+            },
+          ],
+        },
+        // Grenadier Team
+        {
+          name: 'Grenadier Team',
+          icon: FactionGroupIcons.INFANTRY,
+          units: [
+            // Grenadier Team
+            {
+              unitSlug: 'Infantry_Parachute_TeamLeader_AT',
+              rank: FactionUnitRanks.CORPORAL,
+              pos: { x: 0, y: 2, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Parachute_AT',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 0, y: 0, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Parachute_Grenadier',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 0, y: -2, z: 0 },
+            },
+          ],
+        },
+        // Support Team
+        {
+          name: 'Support Team',
+          icon: FactionGroupIcons.INFANTRY,
+          units: [
+            {
+              unitSlug: 'Infantry_Parachute_TeamLeader',
+              rank: FactionUnitRanks.CORPORAL,
+              pos: { x: 0, y: 2, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Parachute_Marksman',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 0, y: 0, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Parachute_AutoRifleman',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 0, y: -2, z: 0 },
+            },
+          ],
+        },
+        // Manuever Team
+        {
+          name: 'Manuever Team',
+          icon: FactionGroupIcons.INFANTRY,
+          units: [
+            {
+              unitSlug: 'Infantry_Parachute_TeamLeader',
+              rank: FactionUnitRanks.CORPORAL,
+              pos: { x: 0, y: 4, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Parachute_Rifleman',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 0, y: 2, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Parachute_Rifleman',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 0, y: 0, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Parachute_Rifleman',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 0, y: -2, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Parachute_Rifleman',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 0, y: -4, z: 0 },
+            },
+          ],
+        },
+        // Platoon HQ
+        {
+          name: 'Platoon HQ',
+          icon: FactionGroupIcons.HQ,
+          units: [
+            // Command Element
+            {
+              unitSlug: 'Infantry_Parachute_OfficerLeader',
+              rank: FactionUnitRanks.LIEUTENANT,
+              pos: { x: 3, y: 3, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Parachute_TeamLeader',
+              rank: FactionUnitRanks.SERGEANT,
+              pos: { x: 3, y: 1, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Parachute_RTO',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 3, y: -1, z: 0 },
+            },
+            // ATGM Team
+            {
+              unitSlug: 'Infantry_Parachute_ATGM_Gunner',
+              rank: FactionUnitRanks.CORPORAL,
+              pos: { x: 1, y: 1, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Parachute_Asst_ATGM_Gunner',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 1, y: -1, z: 0 },
+            },
+            // MMG Team
+            {
+              unitSlug: 'Infantry_Parachute_MMG_Gunner',
+              rank: FactionUnitRanks.CORPORAL,
+              pos: { x: -1, y: 1, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Parachute_Asst_MMG_Gunner',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: -1, y: -1, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Parachute_MMG_AmmoBearer',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: -1, y: -3, z: 0 },
+            },
+            // Mortar Team
+            {
+              unitSlug: 'Infantry_Parachute_Mortar_Commander',
+              rank: FactionUnitRanks.CORPORAL,
+              pos: { x: -3, y: 1, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Parachute_Mortar_Crew',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: -3, y: -1, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Parachute_Mortar_AmmoBearer',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: -3, y: -3, z: 0 },
+            },
+            // Vehicle
+            {
+              unitSlug: 'Wheeled_Basic_GBC_180_TroopTransport_Uncrewed',
+              rank: FactionUnitRanks.PRIVATE, // doesn't matter, uncrewed vehicle
+              pos: { x: 2, y: -6, z: 0 },
+            },
+          ],
+        },
+        // Command Element
+        {
+          name: 'Command Element',
+          icon: FactionGroupIcons.HQ,
+          units: [
+            {
+              unitSlug: 'Infantry_Parachute_OfficerLeader',
+              rank: FactionUnitRanks.LIEUTENANT,
+              pos: { x: 0, y: 2, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Parachute_TeamLeader',
+              rank: FactionUnitRanks.SERGEANT,
+              pos: { x: 0, y: 0, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Parachute_RTO',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 0, y: -2, z: 0 },
+            },
+          ],
+        },
+        // ATGM Team
+        {
+          name: 'ATGM Team',
+          icon: FactionGroupIcons.INFANTRY,
+          units: [
+            {
+              unitSlug: 'Infantry_Parachute_ATGM_Gunner',
+              rank: FactionUnitRanks.CORPORAL,
+              pos: { x: 0, y: 1, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Parachute_Asst_ATGM_Gunner',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 0, y: -1, z: 0 },
+            },
+          ],
+        },
+        // MMG Team
+        {
+          name: 'MMG Team',
+          icon: FactionGroupIcons.INFANTRY,
+          units: [
+            {
+              unitSlug: 'Infantry_Parachute_MMG_Gunner',
+              rank: FactionUnitRanks.CORPORAL,
+              pos: { x: 0, y: 2, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Parachute_Asst_MMG_Gunner',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 0, y: 0, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Parachute_MMG_AmmoBearer',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 0, y: -2, z: 0 },
+            },
+          ],
+        },
+        // Mortar Team
+        {
+          name: 'Mortar Team',
+          icon: FactionGroupIcons.MORTAR,
+          units: [
+            {
+              unitSlug: 'Infantry_Parachute_Mortar_Commander',
+              rank: FactionUnitRanks.CORPORAL,
+              pos: { x: 0, y: 2, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Parachute_Mortar_Crew',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 0, y: 0, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Parachute_Mortar_AmmoBearer',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 0, y: -2, z: 0 },
+            },
+          ],
+        },
+      ],
+    },
   ],
 };
 
