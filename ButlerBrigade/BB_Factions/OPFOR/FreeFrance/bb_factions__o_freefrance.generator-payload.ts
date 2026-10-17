@@ -1170,17 +1170,238 @@ const body: FactionGeneratorPayloadBody = {
         ],
       },
     },
-    // Mortarman
-    // Asst. Mortarman
+    // Mortar Commander
+    {
+      uniqueSlug: 'Infantry_Parachute_Mortar_Commander',
+      baseSoldier: 'Base_Rolled',
+      editorSubcategory: FactionEditorSubcategories.CUSTOM,
+      customSubcategoryName: EDITOR_SUBCATEGORY_PARACHUTE_INFANTRY,
+      displayName: 'Mortar Commander',
+      role: FactionUnitRoles.RIFLEMAN,
+      weapons: [
+        'Famas_F1_PGMP', // Famas Rifle
+        'AMF_Pamas', // PAMAS G1 Pistol
+        'ace_csw_staticMortarCarry', // Mk6 Mortar Tube
+        'AMF_VectorIV', // Leica Vector IV
+      ],
+      gear: [
+        ...PARA_SQUADLEAD_GEAR,
+        {
+          class: 'V_Simc_Alice_alt',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        ...INF_FAMAS_MAGS,
+        ...INF_PAMAS_MAGS,
+        ...INF_STANDARD_MEDICAL,
+      ],
+    },
+    // Mortar Crew
+    {
+      uniqueSlug: 'Infantry_Parachute_Mortar_Crew',
+      baseSoldier: 'Base_Rolled',
+      editorSubcategory: FactionEditorSubcategories.CUSTOM,
+      customSubcategoryName: EDITOR_SUBCATEGORY_PARACHUTE_INFANTRY,
+      displayName: 'Mortar Crew',
+      role: FactionUnitRoles.RIFLEMAN,
+      weapons: [
+        'Famas_F1_PGMP', // Famas Rifle
+        'AMF_Pamas', // PAMAS G1 Pistol
+        'ace_csw_carryMortarBaseplate', // Mk6 Mortar Baseplate
+        'AMF_VectorIV', // Leica Vector IV
+      ],
+      gear: [
+        ...PARA_TEAMLEAD_GEAR,
+        {
+          class: 'V_Simc_Alice_alt',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        ...INF_FAMAS_MAGS,
+        ...INF_PAMAS_MAGS,
+        ...INF_STANDARD_MEDICAL,
+      ],
+    },
     // Mortar Ammo Bearer
+    {
+      uniqueSlug: 'Infantry_Parachute_Mortar_AmmoBearer',
+      baseSoldier: 'Base',
+      editorSubcategory: FactionEditorSubcategories.CUSTOM,
+      customSubcategoryName: EDITOR_SUBCATEGORY_PARACHUTE_INFANTRY,
+      displayName: 'Mortar Ammo Bearer',
+      role: FactionUnitRoles.RIFLEMAN,
+      weapons: [
+        'Famas_F1_PGMP', // Famas Rifle
+        'AMF_Pamas', // PAMAS G1 Pistol
+      ],
+      gear: [
+        ...PARA_STANDARD_GEAR,
+        {
+          class: 'V_Simc_Alice_alt',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        ...INF_FAMAS_MAGS,
+        ...INF_PAMAS_MAGS,
+        ...INF_STANDARD_MEDICAL,
+      ],
+      backpack: {
+        class: 'B_simc_packboard_mortar_1',
+        items: [
+          {
+            class: 'ACE_1Rnd_82mm_Mo_HE',
+            type: FactionUnitBackpackItemTypes.MAGAZINE,
+            count: 4,
+          },
+        ],
+      },
+    },
     // Team Leader
+    {
+      uniqueSlug: 'Infantry_Parachute_TeamLeader',
+      baseSoldier: 'Base',
+      editorSubcategory: FactionEditorSubcategories.CUSTOM,
+      customSubcategoryName: EDITOR_SUBCATEGORY_PARACHUTE_INFANTRY,
+      displayName: 'Team Leader',
+      role: FactionUnitRoles.RIFLEMAN,
+      icon: FactionUnitIcons.LEADER,
+      weapons: [
+        'Famas_F1_PGMP', // Famas Rifle
+        'AMF_Pamas', // PAMAS G1 Pistol
+      ],
+      gear: [
+        ...PARA_TEAMLEAD_GEAR,
+        {
+          class: 'V_Simc_Alice_alt',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        ...INF_FAMAS_MAGS,
+        ...INF_PAMAS_MAGS,
+        ...INF_STANDARD_GRENADES,
+      ],
+      backpack: {
+        class: 'F1_Sac',
+        items: [...INF_STANDARD_BACKPACK_MEDICAL],
+      },
+    },
     // Team Leader w/ AT
+    {
+      uniqueSlug: 'Infantry_Parachute_TeamLeader_AT',
+      baseSoldier: 'Base',
+      editorSubcategory: FactionEditorSubcategories.CUSTOM,
+      customSubcategoryName: EDITOR_SUBCATEGORY_PARACHUTE_INFANTRY,
+      displayName: 'Team Leader (AT)',
+      role: FactionUnitRoles.MISSILE_SPECIALIST,
+      icon: FactionUnitIcons.LEADER,
+      weapons: [
+        'Famas_F1_PGMP', // Famas Rifle
+        'AMF_Pamas', // PAMAS G1 Pistol
+        'AMF_LRAC89_F', // LRAC 89mm Mle
+        'AMF_APX_M241', // APX M241 Binos
+      ],
+      gear: [
+        ...PARA_TEAMLEAD_GEAR,
+        {
+          class: 'V_Simc_Alice_alt',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        ...INF_FAMAS_MAGS,
+        ...INF_PAMAS_MAGS,
+        ...INF_STANDARD_GRENADES,
+        {
+          class: 'AMF_AC89mm_F1',
+          type: FactionUnitItemTypes.MAGAZINE,
+          count: 1,
+        },
+      ],
+      backpack: {
+        class: 'F1_Sac',
+        items: [
+          ...INF_STANDARD_BACKPACK_MEDICAL,
+          {
+            class: 'AMF_AC89mm_F1',
+            type: FactionUnitBackpackItemTypes.MAGAZINE,
+            count: 1,
+          },
+        ],
+      },
+    },
     // Squad Leader
+    {
+      uniqueSlug: 'Infantry_Parachute_SquadLeader',
+      baseSoldier: 'Base',
+      editorSubcategory: FactionEditorSubcategories.CUSTOM,
+      customSubcategoryName: EDITOR_SUBCATEGORY_PARACHUTE_INFANTRY,
+      displayName: 'Squad Leader',
+      role: FactionUnitRoles.RIFLEMAN,
+      icon: FactionUnitIcons.LEADER,
+      weapons: [
+        'Famas_F1_PGMP', // Famas Rifle
+        'AMF_Pamas', // PAMAS G1 Pistol
+      ],
+      gear: [
+        ...PARA_SQUADLEAD_GEAR,
+        {
+          class: 'V_Simc_Alice_alt',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        ...INF_FAMAS_MAGS,
+        ...INF_PAMAS_MAGS,
+        ...INF_STANDARD_GRENADES,
+      ],
+      backpack: {
+        class: 'F1_Sac',
+        items: [...INF_STANDARD_BACKPACK_MEDICAL],
+      },
+    },
     // Officer
+    {
+      uniqueSlug: 'Infantry_Parachute_OfficerLeader',
+      baseSoldier: 'Base',
+      editorSubcategory: FactionEditorSubcategories.CUSTOM,
+      customSubcategoryName: EDITOR_SUBCATEGORY_PARACHUTE_INFANTRY,
+      displayName: 'Officer',
+      role: FactionUnitRoles.RIFLEMAN,
+      icon: FactionUnitIcons.LEADER,
+      weapons: [
+        'Famas_F1_PGMP', // Famas Rifle
+        'AMF_Pamas', // PAMAS G1 Pistol
+      ],
+      gear: [
+        ...PARA_SQUADLEAD_GEAR,
+        {
+          class: 'V_Simc_Alice_alt',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        {
+          class: 'CUP_G_PMC_RadioHeadset',
+          type: FactionUnitItemTypes.EQUIPPED,
+        },
+        ...INF_FAMAS_MAGS,
+        ...INF_PAMAS_MAGS,
+        ...INF_STANDARD_GRENADES,
+      ],
+      backpack: {
+        class: 'F1_Sac',
+        items: [...INF_STANDARD_BACKPACK_MEDICAL],
+      },
+    },
   ],
   vehicles: [
     // Wheeled: GBC 180 Transport de troupes
+    {
+      uniqueSlug: 'Wheeled_Basic_GBC_180_TroopTransport',
+      vehicleClass: 'AMF_GBC180_PERS_01',
+      editorSubcategory: FactionEditorSubcategories.WHEELED,
+      displayName: 'GBC 180 Troop Transport',
+      crewSlug: 'Infantry_Basic_Rifleman',
+    },
     // Wheeled: GBC 180 Transport de troupes (Uncrewed for compositions)
+    {
+      uniqueSlug: 'Wheeled_Basic_GBC_180_TroopTransport_Uncrewed',
+      vehicleClass: 'AMF_GBC180_PERS_01',
+      editorSubcategory: FactionEditorSubcategories.WHEELED,
+      displayName: 'GBC 180 Troop Transport',
+      crewSlug: '',
+      hidden: true,
+    },
     // Wheeled: VAB Ultima 12.7
     {
       uniqueSlug: 'Wheeled_Basic_VAB_12x7',
