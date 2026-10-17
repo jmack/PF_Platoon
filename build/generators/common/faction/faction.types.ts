@@ -178,6 +178,7 @@ export type FactionVehicle = {
   editorSubcategory: FactionEditorSubcategory;
   displayName: string;
   crewSlug: string;
+  hidden?: boolean;
 };
 
 export type FactionGroupCategory = {

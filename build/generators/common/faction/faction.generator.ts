@@ -370,17 +370,33 @@ export default class FactionGenerator extends Generator {
         `\n  {` +
         `\n    displayName = "${vehicle.displayName}";` +
         `\n` +
-        `\n    scope = 2;` +
-        `\n    scopeCurator = 2;` +
+        `\n    scope = ${vehicle.hidden ? '1' : '2'};` +
+        `\n    scopeCurator = ${vehicle.hidden ? '1' : '2'};` +
         `\n` +
         `\n    side = ${this.typedBody.meta.side};` +
         `\n    faction = "${this.header.name}";` +
         `\n` +
         `\n    editorCategory = "${this.header.name}";` +
-        `\n    editorSubcategory = "${vehicle.editorSubcategory}";` +
-        `\n` +
-        `\n    crew = "${this.ConvertUnitSlugIntoClassString(vehicle.crewSlug)}";` +
-        `\n  };`;
+        `\n    editorSubcategory = "${vehicle.editorSubcategory}";`;
+
+      // An empty vehicle crew slug means this is a forced uncrewed variant
+      if (vehicle.crewSlug) {
+        // prettier-ignore
+        vehicleDef +=
+          `\n` +
+          `\n    crew = "${this.ConvertUnitSlugIntoClassString(vehicle.crewSlug)}";`;
+      } else {
+        // prettier-ignore
+        vehicleDef +=
+          `\n` +
+          `\n    crew = "";` +
+          `\n    hasDriver = 0;` +
+          `\n    hasGunner = 0;` +
+          `\n    hasCommander = 0;` +
+          `\n    dontCreateAI = 1;`;
+      }
+
+      vehicleDef += `\n  };`;
 
       // Add our new vehicle to the export list
       values.exported_units += `\n      "${classname}",`;
