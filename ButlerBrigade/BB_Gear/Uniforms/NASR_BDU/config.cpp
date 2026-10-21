@@ -21,7 +21,6 @@ class XtdGearModels
       label = "M87 BDU";
       options[] = {
         "bodytype",
-        "sleeves",
         "pattern",
       };
       class bodytype
@@ -40,22 +39,6 @@ class XtdGearModels
         class femme
         {
           label = "Femme";
-        };
-      };
-      class sleeves
-      {
-        label = "Sleeves";
-        values[] = {
-          "unrolled",
-          "rolled",
-        };
-        class unrolled
-        {
-          label = "Unrolled";
-        };
-        class rolled
-        {
-          label = "Rolled";
         };
       };
       class pattern
