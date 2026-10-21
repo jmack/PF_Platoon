@@ -161,13 +161,29 @@ async function runBuildPipeline(dirRoot: string, prefix: string, buildFilter: st
   const pngsToExclude: string[] = [];
   for (const addon of addons) {
     try {
-      const pattern = `:(glob)${addon}/**/*.png`;
-      const discoveredPngs = execSync(`git ls-files --cached --others --exclude-standard "${pattern}"`, { cwd: dirRoot, encoding: 'utf-8' })
+      const posixAddonPath = addon.replace(/\\/g, '/');
+      const pattern = `:(glob)${posixAddonPath}/**/*.png`;
+
+      // 1. Get ONLY clean, tracked files (excludes untracked new files!)
+      const trackedPngsRaw = execSync(`git ls-files --cached "${pattern}"`, { cwd: dirRoot, encoding: 'utf-8' });
+      const trackedPngs = trackedPngsRaw
         .split('\n')
         .map((file) => file.trim())
-        .filter((file) => !!file);
+        .filter(Boolean);
 
-      pngsToExclude.push(...discoveredPngs);
+      // 2. Get files that have active local unstaged modifications
+      const modifiedPngsRaw = execSync(`git ls-files --modified "${pattern}"`, { cwd: dirRoot, encoding: 'utf-8' });
+      const modifiedPngs = new Set(
+        modifiedPngsRaw
+          .split('\n')
+          .map((file) => file.trim())
+          .filter(Boolean)
+      );
+
+      // 3. Filter down to assets that are tracked AND completely untouched
+      const cleanTrackedPngs = trackedPngs.filter((file) => !modifiedPngs.has(file));
+
+      pngsToExclude.push(...cleanTrackedPngs);
     } catch (err: any) {
       console.warn(`Warning: Failed to extract git files for module ${addon}:`, err.message);
     }
