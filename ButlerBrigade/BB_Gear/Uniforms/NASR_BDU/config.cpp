@@ -130,6 +130,9 @@ class CfgVehicles
     hiddenSelectionsTextures[] = {
       "\BB_Gear\Uniforms\NASR_BDU\data\patterns\woodland.paa",
     };
+    hiddenSelectionsMaterials[] = {
+      "\BB_Gear\Uniforms\NASR_BDU\data\nasr_bdu.rvmat",
+    };
   };
 
   // Femme
@@ -148,6 +151,9 @@ class CfgVehicles
     };
     hiddenSelectionsTextures[] = {
       "\BB_Gear\Uniforms\NASR_BDU\data\patterns\woodland.paa",
+    };
+    hiddenSelectionsMaterials[] = {
+      "\BB_Gear\Uniforms\NASR_BDU\data\nasr_bdu.rvmat",
     };
     class eventhandlers
     {
