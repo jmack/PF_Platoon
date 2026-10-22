@@ -128,7 +128,7 @@ class CfgVehicles
       "camo",
     };
     hiddenSelectionsTextures[] = {
-      "\BB_Gear\Uniforms\NASR_BDU\data\woodland.paa",
+      "\BB_Gear\Uniforms\NASR_BDU\data\patterns\woodland.paa",
     };
   };
 
@@ -147,7 +147,7 @@ class CfgVehicles
       "camo",
     };
     hiddenSelectionsTextures[] = {
-      "\BB_Gear\Uniforms\NASR_BDU\data\woodland.paa",
+      "\BB_Gear\Uniforms\NASR_BDU\data\patterns\woodland.paa",
     };
     class eventhandlers
     {
