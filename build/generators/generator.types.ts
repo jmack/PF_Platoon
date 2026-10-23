@@ -11,7 +11,7 @@ export type GeneratorHeader = {
   customGeneratorRelativePath?: string;
 };
 
-export type GeneratorPayloadDefinition = {
+export type GeneratorPayloadDefinition<TBody = any> = {
   header: GeneratorHeader;
-  body: any;
+  body: TBody;
 };

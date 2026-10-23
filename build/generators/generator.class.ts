@@ -1,16 +1,23 @@
 import { readFileSync, rmSync, writeFileSync } from 'node:fs';
 import type { GeneratorHeader, GeneratorPayloadDefinition } from './generator.types.ts';
 
-export abstract class Generator {
+export abstract class Generator<TBody = any> {
   protected runPath: string;
-  protected header: GeneratorHeader;
-  protected body: any;
+  protected payload: GeneratorPayloadDefinition<TBody>;
+
   abstract template: string;
 
-  constructor(runPath: string, payload: GeneratorPayloadDefinition) {
+  constructor(runPath: string, payload: GeneratorPayloadDefinition<TBody>) {
     this.runPath = runPath;
-    this.header = payload.header;
-    this.body = payload.body;
+    this.payload = payload;
+  }
+
+  protected get header() {
+    return this.payload.header;
+  }
+
+  protected get body(): TBody {
+    return this.payload.body;
   }
 
   public abstract process(): Promise<void>;

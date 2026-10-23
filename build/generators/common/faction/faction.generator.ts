@@ -14,11 +14,8 @@ import {
 
 // TODO: RequiredAddons
 
-export default class FactionGenerator extends Generator {
+export default class FactionGenerator extends Generator<FactionGeneratorPayloadBody> {
   template = './build/generators/common/faction/faction.template.tpl';
-
-  // To have typing present in the IDE
-  private typedBody: FactionGeneratorPayloadBody = this.body;
 
   // Utility consts
   private FACTION_SIDE_NAMES = ['East', 'West', 'Ind', 'Civ'];
@@ -29,13 +26,13 @@ export default class FactionGenerator extends Generator {
     const values: FactionTemplateValues = {
       faction_class: this.header.name,
       root_class: this.header.name.slice(0, this.header.name.indexOf('__')),
-      author: this.typedBody.meta.author,
+      author: this.body.meta.author,
       required_addons: '',
       exported_units: '',
-      faction_name: this.typedBody.meta.displayName,
-      priority: this.typedBody.meta.priority,
-      faction_side_number: this.typedBody.meta.side,
-      faction_side_name: this.FACTION_SIDE_NAMES[this.typedBody.meta.side] ?? 'West',
+      faction_name: this.body.meta.displayName,
+      priority: this.body.meta.priority,
+      faction_side_number: this.body.meta.side,
+      faction_side_name: this.FACTION_SIDE_NAMES[this.body.meta.side] ?? 'West',
       cfg_editorsubcategories: '',
       cfg_weapons: '',
       cfg_vehicles_backpacks: '',
@@ -82,7 +79,7 @@ export default class FactionGenerator extends Generator {
     const generatedSubcategories = new Map<string, string>();
 
     // Search all units for CUSTOM editor subcat & filled custom name
-    this.typedBody.units.forEach((unit) => {
+    this.body.units.forEach((unit) => {
       if (unit.editorSubcategory !== FactionEditorSubcategories.CUSTOM || !unit.customSubcategoryName) {
         return;
       }
@@ -122,7 +119,7 @@ export default class FactionGenerator extends Generator {
     const weaponDefs = new Set<string>();
 
     // First, scan all weapons for complex weapons
-    this.typedBody.units.forEach((unit) => {
+    this.body.units.forEach((unit) => {
       unit.weapons.forEach((weapon, index) => {
         if (typeof weapon === 'string' || weapon instanceof String) {
           return;
@@ -221,7 +218,7 @@ export default class FactionGenerator extends Generator {
     const backpackDefs = new Set<string>();
 
     // Scan all units for backpacks
-    this.typedBody.units.forEach((unit) => {
+    this.body.units.forEach((unit) => {
       if (!unit.backpack || typeof unit.backpack === 'string' || unit.backpack instanceof String) {
         return;
       }
@@ -270,10 +267,10 @@ export default class FactionGenerator extends Generator {
     const generatedUnits: any = {};
 
     // All base soldiers inherit from X_Soldier_Base_F (for now)
-    const baseImport = `${this.FACTION_SIDE_LETTER[this.typedBody.meta.side]}_Soldier_Base_F`;
+    const baseImport = `${this.FACTION_SIDE_LETTER[this.body.meta.side]}_Soldier_Base_F`;
     let baseDefs = `\n  class ${baseImport};`;
 
-    this.typedBody.baseSoldiers.forEach((baseClass) => {
+    this.body.baseSoldiers.forEach((baseClass) => {
       const classname = `${this.header.name}__Base_${this.ConvertToArmaClassSafeString(baseClass.name)}`;
 
       if (generatedUnits[baseClass.name]) {
@@ -299,7 +296,7 @@ export default class FactionGenerator extends Generator {
     });
 
     // Rewrite baseSoldiers for all units that match up with our generated bases
-    this.typedBody.units.forEach((unit) => {
+    this.body.units.forEach((unit) => {
       if (generatedUnits[unit.baseSoldier]) {
         unit.baseSoldier = generatedUnits[unit.baseSoldier];
       }
@@ -317,7 +314,7 @@ export default class FactionGenerator extends Generator {
   private GenerateSoldiers(values: FactionTemplateValues): void {
     let soldierDef = '';
 
-    this.typedBody.units.forEach((unit) => {
+    this.body.units.forEach((unit) => {
       const classname = this.ConvertUnitSlugIntoClassString(unit.uniqueSlug);
       // prettier-ignore
       soldierDef +=
@@ -360,7 +357,7 @@ export default class FactionGenerator extends Generator {
     const importedVehicles = new Set<string>();
     let vehicleDef = '';
 
-    this.typedBody.vehicles.forEach((vehicle) => {
+    this.body.vehicles.forEach((vehicle) => {
       const classname = this.ConvertUnitSlugIntoClassString(vehicle.uniqueSlug);
       importedVehicles.add(vehicle.vehicleClass);
 
@@ -373,7 +370,7 @@ export default class FactionGenerator extends Generator {
         `\n    scope = ${vehicle.hidden ? '1' : '2'};` +
         `\n    scopeCurator = ${vehicle.hidden ? '1' : '2'};` +
         `\n` +
-        `\n    side = ${this.typedBody.meta.side};` +
+        `\n    side = ${this.body.meta.side};` +
         `\n    faction = "${this.header.name}";` +
         `\n` +
         `\n    editorCategory = "${this.header.name}";` +
@@ -415,7 +412,7 @@ export default class FactionGenerator extends Generator {
   private GenerateGroups(values: FactionTemplateValues): void {
     const categories: string[] = [];
 
-    this.typedBody.groups.forEach((category) => {
+    this.body.groups.forEach((category) => {
       const groups: string[] = [];
 
       category.groups.forEach((group) => {
@@ -427,7 +424,7 @@ export default class FactionGenerator extends Generator {
           units.push(
             `\n          class Unit${units.length}` +
             `\n          {` +
-            `\n            side = ${this.typedBody.meta.side};` +
+            `\n            side = ${this.body.meta.side};` +
             `\n            vehicle = "${this.ConvertUnitSlugIntoClassString(unit.unitSlug)}";` +
             `\n            rank = "${unit.rank}";` +
             `\n            position[] = { ${unit.pos.x}, ${unit.pos.y}, ${unit.pos.z} };` +
@@ -441,13 +438,13 @@ export default class FactionGenerator extends Generator {
           `\n        class ${this.header.name}__Group_${this.ConvertToArmaClassSafeString(group.name)}` +
           `\n        {` +
           `\n          name = "${group.name}";` +
-          `\n          side = ${this.typedBody.meta.side};` +
+          `\n          side = ${this.body.meta.side};` +
           `\n          faction = "${this.header.name}";`;
 
-        if (group.icon && this.FACTION_SIDE_LETTER[this.typedBody.meta.side] !== undefined) {
+        if (group.icon && this.FACTION_SIDE_LETTER[this.body.meta.side] !== undefined) {
           // Icon contains <%s%> which should be converted to the side shortcode
           let convertedIcon = group.icon as string;
-          const sideLetter = this.FACTION_SIDE_LETTER[this.typedBody.meta.side];
+          const sideLetter = this.FACTION_SIDE_LETTER[this.body.meta.side];
           if (sideLetter !== undefined) {
             convertedIcon = convertedIcon.replace('<%s%>', sideLetter.toLowerCase());
             groupString += `\n          icon = "${convertedIcon}";`;
