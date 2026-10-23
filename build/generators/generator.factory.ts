@@ -4,6 +4,7 @@ import FactionGenerator from './common/faction/faction.generator.ts';
 import { Generator } from './generator.class.ts';
 import type { GeneratorPayloadDefinition } from './generator.types.ts';
 import { GeneratorTypes } from './generator.types.ts';
+import NamesGenerator from './common/names/names.generator.ts';
 
 export class GeneratorFactory {
   /**
@@ -15,6 +16,9 @@ export class GeneratorFactory {
     switch (payload.header.generatorType) {
       case GeneratorTypes.FACTION:
         return new FactionGenerator(folderPath, payload);
+
+      case GeneratorTypes.NAMES:
+        return new NamesGenerator(folderPath, payload);
 
       case GeneratorTypes.CUSTOM:
         if (!payload.header.customGeneratorRelativePath) {

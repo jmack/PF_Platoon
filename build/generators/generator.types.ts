@@ -1,6 +1,7 @@
 export const GeneratorTypes = {
   CUSTOM: 'CUSTOM',
   FACTION: 'FACTION',
+  NAMES: 'NAMES',
 } as const;
 
 export type GeneratorType = keyof typeof GeneratorTypes;
