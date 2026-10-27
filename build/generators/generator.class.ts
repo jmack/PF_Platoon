@@ -36,7 +36,9 @@ export abstract class Generator<TBody = any> {
       });
 
       // 4. Save template
-      rmSync(`${this.runPath}/config.cpp`);
+      try {
+        rmSync(`${this.runPath}/config.cpp`);
+      } catch (e) {}
       writeFileSync(`${this.runPath}/config.cpp`, templateString);
     } catch (e) {
       console.error(e);
