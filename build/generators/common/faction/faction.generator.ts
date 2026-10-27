@@ -288,6 +288,7 @@ export default class FactionGenerator extends Generator<FactionGeneratorPayloadB
         `\n    uniformClass = "${baseClass.uniformClass}";` +
         `\n    uniformAccessories[] = { };` +
         `\n    nakedUniform = "${baseClass.nakedUniform}";` +
+        (baseClass.genericNames ? `\n    genericNames = "${baseClass.genericNames}";` : '') +
         `\n    identityTypes[] =` +
         `\n    {` +
         `\n` + baseClass.identityTypes.map(idt => `      "${idt}",`).join('\n') +

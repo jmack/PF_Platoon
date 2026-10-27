@@ -157,6 +157,7 @@ export type FactionBaseSoldier = {
   identityTypes: string[];
   uniformClass: string;
   nakedUniform: string;
+  genericNames?: string;
 };
 
 export type FactionUnit = {
