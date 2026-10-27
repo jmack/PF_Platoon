@@ -13,14 +13,43 @@ const ARG_OPTIONS = {
     short: 'd',
   },
   build: {
-    type: 'string',
+    type: 'boolean',
     short: 'b',
   },
   generate: {
-    type: 'string',
+    type: 'boolean',
     short: 'g',
   },
 } as const;
+
+/**
+ * Helper to safely extract explicit values passed to boolean flags via process.argv
+ */
+function getOptionalFlagValue(shortFlag: string, longFlag: string): string | undefined {
+  const args = process.argv.slice(2);
+
+  for (let i = 0; i < args.length; i++) {
+    const arg = args[i];
+
+    // Check for inline assignment style: --build=BB_Factions or -b=BB_Factions
+    if (arg?.startsWith(`${longFlag}=`)) {
+      return arg.split('=')[1];
+    }
+    if (arg?.startsWith(`${shortFlag}=`)) {
+      return arg.split('=')[1];
+    }
+
+    // Check for standard positional pairing style: -b BB_Factions
+    if (arg === shortFlag || arg === longFlag) {
+      const nextArg = args[i + 1];
+      // Ensure the next item isn't another flag config
+      if (nextArg && !nextArg.startsWith('-')) {
+        return nextArg;
+      }
+    }
+  }
+  return undefined;
+}
 
 async function build() {
   const { values: args } = parseArgs({
@@ -51,12 +80,14 @@ async function build() {
   const modConfigUrl = pathToFileURL(modConfigPath).href;
   const config = (await import(modConfigUrl)).default;
 
-  if ('generate' in args) {
-    await runGeneratorPipeline(dirRoot, typeof args.generate === 'string' ? args.generate.trim() : undefined);
+  if (args.generate) {
+    const rawValue = getOptionalFlagValue('-g', '--generate');
+    await runGeneratorPipeline(dirRoot, rawValue?.trim());
   }
 
-  if ('build' in args) {
-    await runBuildPipeline(dirRoot, config.prefix, typeof args.build === 'string' ? args.build.trim() : undefined);
+  if (args.build) {
+    const rawValue = getOptionalFlagValue('-b', '--build');
+    await runBuildPipeline(dirRoot, config.prefix, rawValue?.trim());
   }
 }
 
@@ -144,7 +175,7 @@ async function runBuildPipeline(dirRoot: string, prefix: string, buildFilter: st
     .filter((entry) => entry.name.startsWith(`${prefix}_`))
     .map((entry) => entry.name);
 
-  if (buildFilter !== undefined) {
+  if (buildFilter !== undefined && buildFilter.length > 0) {
     const buildQuery = buildFilter.toLowerCase();
     addons = addons.filter((addon) => addon.toLowerCase().includes(buildQuery));
 
