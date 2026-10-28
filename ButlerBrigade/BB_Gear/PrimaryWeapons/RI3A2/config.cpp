@@ -22,7 +22,7 @@ class CfgPatches
 
 class CfgWeapons
 {
-  // Rifle (Individual) Model 3 Version 2
+  // Rifle (Individual) Model 3 Revision 2
   class hlc_rifle_ak12;
   class BB_Gear_PrimaryWeapons_RI3A2: hlc_rifle_ak12
   {
@@ -49,7 +49,7 @@ class CfgWeapons
     baseWeapon = "BB_Gear_PrimaryWeapons_RI3A2GL";
   };
 
-  // Rifle (Individual) Model 3 Version 2 (Carbine)
+  // Rifle (Individual) Model 3 Revision 2 (Carbine)
   class hlc_rifle_aku12;
   class BB_Gear_PrimaryWeapons_RI3A2C: hlc_rifle_aku12
   {
@@ -63,7 +63,7 @@ class CfgWeapons
     baseWeapon = "BB_Gear_PrimaryWeapons_RI3A2C";
   };
 
-  // Rifle (Individual) Model 3 Version 2 (Squad Support Weapon)
+  // Rifle (Individual) Model 3 Revision 2 (Squad Support Weapon)
   class hlc_rifle_RPK12;
   class BB_Gear_PrimaryWeapons_RI3A2S: hlc_rifle_RPK12
   {

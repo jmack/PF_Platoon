@@ -10,13 +10,15 @@ class CfgPatches
       "BB_Gear_PrimaryWeapons_RM2A3",
     };
     requiredVersion = 1;
-    requiredAddons[] = { };
+    requiredAddons[] = {
+      "rhs_weapons",
+    };
   };
 };
 
 class CfgWeapons
 {
-  // Rifle (Marksman) Model 2 Version 3
+  // Rifle (Marksman) Model 2 Revision 3
   class rhs_weap_svds;
   class BB_Gear_PrimaryWeapons_RM2A3: rhs_weap_svds
   {
