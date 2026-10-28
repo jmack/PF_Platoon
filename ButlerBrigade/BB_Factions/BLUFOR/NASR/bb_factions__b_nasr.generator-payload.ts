@@ -336,7 +336,7 @@ const Rifleman_M: FactionUnit = {
     IFAK,
   ],
 };
-const Rifleman_F = ConvertMascToFemme(Rifleman_M);
+const Rifleman_F = TransThem(Rifleman_M);
 
 // Grenadier
 const Grenadier_M: FactionUnit = {
@@ -365,7 +365,7 @@ const Grenadier_M: FactionUnit = {
     IFAK,
   ],
 };
-const Grenadier_F = ConvertMascToFemme(Grenadier_M);
+const Grenadier_F = TransThem(Grenadier_M);
 
 // Autorifleman
 const Autorifleman_M: FactionUnit = {
@@ -395,7 +395,7 @@ const Autorifleman_M: FactionUnit = {
     IFAK,
   ],
 };
-const Autorifleman_F = ConvertMascToFemme(Autorifleman_M);
+const Autorifleman_F = TransThem(Autorifleman_M);
 
 // Rifleman (AT)
 const RiflemanAT_M: FactionUnit = {
@@ -406,7 +406,7 @@ const RiflemanAT_M: FactionUnit = {
   icon: FactionUnitIcons.AT,
   weapons: [...Rifleman_M.weapons, WEAPONS.ANTITANK.AT4],
 };
-const RiflemanAT_F = ConvertMascToFemme(RiflemanAT_M);
+const RiflemanAT_F = TransThem(RiflemanAT_M);
 
 // Rifleman (AA)
 const RiflemanAA_M: FactionUnit = {
@@ -421,7 +421,7 @@ const RiflemanAA_M: FactionUnit = {
     items: [MAGAZINES.STINGER_LOAD.IN_BACKPACK],
   },
 };
-const RiflemanAA_F = ConvertMascToFemme(RiflemanAA_M);
+const RiflemanAA_F = TransThem(RiflemanAA_M);
 
 // Marksman
 const Marksman_M: FactionUnit = {
@@ -451,7 +451,7 @@ const Marksman_M: FactionUnit = {
     IFAK,
   ],
 };
-const Marksman_F = ConvertMascToFemme(Marksman_M);
+const Marksman_F = TransThem(Marksman_M);
 
 // MMG Gunner
 // Asst. MMG Gunner
@@ -468,7 +468,7 @@ const Marksman_F = ConvertMascToFemme(Marksman_M);
 /**
  * HELPER METHODS
  */
-function ConvertMascToFemme(input: FactionUnit): FactionUnit {
+function TransThem(input: FactionUnit): FactionUnit {
   return {
     ...input,
     uniqueSlug: input.uniqueSlug.slice(0, -1) + 'F',
