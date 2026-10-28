@@ -34,8 +34,10 @@ const WEAPONS = {
     },
   },
   MACHINE_GUNS: {
-    // RS3 (RPK12) (maybe?)
-    // RS2A3 (RPK) (maybe?)
+    RS2A1_MMG: {
+      baseType: 'BB_Gear_PrimaryWeapons_RS2A1',
+      optic: 'rhsusf_acc_ELCAN',
+    },
   },
   MARKSMAN_RIFLES: {
     RM2A3: {
@@ -136,6 +138,11 @@ const MAGAZINES = {
     type: FactionUnitItemTypes.MAGAZINE,
     count: 15,
   },
+  RS2A1_75RND_LOAD: {
+    class: 'hlc_75Rnd_762x39_m_rpk',
+    type: FactionUnitItemTypes.MAGAZINE,
+    count: 7,
+  },
   GRENADIER_LOAD: [
     {
       class: 'hlc_VOG25_AK',
@@ -196,6 +203,18 @@ const GRENADES = {
         count: 3,
       },
     ],
+    NONLETHAL: [
+      {
+        class: 'rhs_mag_m18_purple',
+        type: FactionUnitItemTypes.MAGAZINE,
+        count: 2,
+      },
+      {
+        class: 'Chemlight_green',
+        type: FactionUnitItemTypes.MAGAZINE,
+        count: 3,
+      },
+    ],
   },
 };
 
@@ -220,13 +239,33 @@ const IFAK = {
   type: FactionUnitItemTypes.CARRIED,
 };
 
+const AFAK_BACKPACK = {
+  class: 'efak_AFAK',
+  type: FactionUnitBackpackItemTypes.ITEM,
+};
+
+const MFAKP_BACKPACK = {
+  class: 'efak_MFAKPlus',
+  type: FactionUnitBackpackItemTypes.ITEM,
+};
+
 const SWDG_LOW_FACE_SLOT = {
   class: 'G_SWDG_low',
   type: FactionUnitItemTypes.EQUIPPED,
 };
 
+const SWDG_WORN_FACE_SLOT = {
+  class: 'G_SWDG',
+  type: FactionUnitItemTypes.EQUIPPED,
+};
+
 const NOMEX_CUT_FACE_SLOT = {
   class: 'G_Nomex_1_fold_cut',
+  type: FactionUnitItemTypes.EQUIPPED,
+};
+
+const CANTEEN_RIGHT_FACE_SLOT = {
+  class: 'G_botol_regt',
   type: FactionUnitItemTypes.EQUIPPED,
 };
 
@@ -454,15 +493,145 @@ const Marksman_M: FactionUnit = {
 const Marksman_F = TransThem(Marksman_M);
 
 // MMG Gunner
+const MMGGunner_M: FactionUnit = {
+  uniqueSlug: 'Infantry_Basic_MMGGunner_M',
+  baseSoldier: BASE_M.name,
+  editorSubcategory: FactionEditorSubcategories.INFANTRY,
+  displayName: '[M] MMG Gunner',
+  role: FactionUnitRoles.MACHINE_GUNNER,
+  icon: FactionUnitIcons.MG,
+  weapons: [WEAPONS.MACHINE_GUNS.RS2A1_MMG, BINOS.BASIC],
+  gear: [
+    // Worn
+    HELMETS.INFANTRY.BASIC,
+    VESTS.MACHINE_GUN,
+    SWDG_WORN_FACE_SLOT,
+    NOMEX_NVG_SLOT,
+    MAP,
+    COMPASS,
+    WATCHES.BASIC,
+    // Magazines
+    MAGAZINES.RS2A1_75RND_LOAD,
+    // Carried
+    EARPLUGS,
+    ENTRENCHING_TOOL,
+    FULTON_MX991,
+    IFAK,
+  ],
+};
+const MMGGunner_F = TransThem(MMGGunner_M);
+
 // Asst. MMG Gunner
+const AsstMMGGunner_M: FactionUnit = {
+  uniqueSlug: 'Infantry_Basic_AsstMMGGunner_M',
+  baseSoldier: BASE_M.name,
+  editorSubcategory: FactionEditorSubcategories.INFANTRY,
+  displayName: '[M] Asst. MMG Gunner',
+  role: FactionUnitRoles.RIFLEMAN,
+  weapons: [WEAPONS.RIFLES.RI3A2_STANDARD, BINOS.RANGEFINDER],
+  gear: [
+    // Worn
+    HELMETS.INFANTRY.BASIC,
+    VESTS.RIFLEMAN,
+    SWDG_LOW_FACE_SLOT,
+    NOMEX_NVG_SLOT,
+    MAP,
+    COMPASS,
+    WATCHES.BASIC,
+    // Magazines
+    MAGAZINES.RI3A2_30RND_STANDARD_LOAD,
+    ...GRENADES.INFANTRY.STANDARD,
+    // Carried
+    EARPLUGS,
+    ENTRENCHING_TOOL,
+    FULTON_MX991,
+    IFAK,
+    {
+      class: 'ACE_SpareBarrel',
+      type: FactionUnitItemTypes.CARRIED,
+      count: 2,
+    },
+  ],
+};
+const AsstMMGGunner_F = TransThem(AsstMMGGunner_M);
+
 // MMG Ammo Bearer
+const MMGAmmoBearer_M: FactionUnit = {
+  uniqueSlug: 'Infantry_Basic_MMGAmmoBearer_M',
+  baseSoldier: BASE_M.name,
+  editorSubcategory: FactionEditorSubcategories.INFANTRY,
+  displayName: '[M] MMG Ammo Bearer',
+  role: FactionUnitRoles.RIFLEMAN,
+  weapons: [WEAPONS.RIFLES.RI3A2_STANDARD, BINOS.BASIC],
+  gear: [
+    // Worn
+    HELMETS.INFANTRY.GOGGLES,
+    VESTS.MACHINE_GUN,
+    NOMEX_NVG_SLOT,
+    MAP,
+    COMPASS,
+    WATCHES.BASIC,
+    // Magazines
+    MAGAZINES.RI3A2_30RND_STANDARD_LOAD,
+    ...GRENADES.INFANTRY.STANDARD,
+    // Carried
+    EARPLUGS,
+    ENTRENCHING_TOOL,
+    FULTON_MX991,
+    IFAK,
+  ],
+  backpack: {
+    class: 'B_simc_pack_alice_frame_1',
+    items: [
+      {
+        class: 'hlc_75Rnd_762x39_m_rpk',
+        type: FactionUnitBackpackItemTypes.MAGAZINE,
+        count: 10,
+      },
+    ],
+  },
+};
+const MMGAmmoBearer_F = TransThem(MMGAmmoBearer_M);
+
 // Combat Medic
+
 // Forward Observer
+
 // RTO
+
 // Team Leader
+
 // Squad Leader
+
 // Officer
+
 // Vehicle Crew
+const VehicleCrew_M: FactionUnit = {
+  uniqueSlug: 'Infantry_Basic_VehicleCrew_M',
+  baseSoldier: BASE_M.name,
+  editorSubcategory: FactionEditorSubcategories.INFANTRY,
+  displayName: '[M] Vehicle Crew',
+  role: FactionUnitRoles.CREWMAN,
+  weapons: [WEAPONS.RIFLES.RI3A2_CARBINE, BINOS.BASIC],
+  gear: [
+    // Worn
+    HELMETS.CREW.VEHICLE,
+    VESTS.PISTOL,
+    CANTEEN_RIGHT_FACE_SLOT,
+    MAP,
+    COMPASS,
+    WATCHES.BASIC,
+    // Magazines
+    MAGAZINES.RI3A2_30RND_LIGHT_LOAD,
+    ...GRENADES.INFANTRY.NONLETHAL,
+    // Carried
+    EARPLUGS,
+    FULTON_MX991,
+    IFAK,
+  ],
+};
+const VehicleCrew_F = TransThem(VehicleCrew_M);
+
 /***/
 
 /**
@@ -494,7 +663,28 @@ const body: FactionGeneratorPayloadBody = {
     requiredAddons: [],
   },
   baseSoldiers: [BASE_M, BASE_F],
-  units: [Rifleman_M, Rifleman_F, Grenadier_M, Grenadier_F, Autorifleman_M, Autorifleman_F, RiflemanAT_M, RiflemanAT_F, RiflemanAA_M, RiflemanAA_F, Marksman_M, Marksman_F],
+  units: [
+    Rifleman_M,
+    Rifleman_F,
+    Grenadier_M,
+    Grenadier_F,
+    Autorifleman_M,
+    Autorifleman_F,
+    RiflemanAT_M,
+    RiflemanAT_F,
+    RiflemanAA_M,
+    RiflemanAA_F,
+    Marksman_M,
+    Marksman_F,
+    MMGGunner_M,
+    MMGGunner_F,
+    AsstMMGGunner_M,
+    AsstMMGGunner_F,
+    MMGAmmoBearer_M,
+    MMGAmmoBearer_F,
+    VehicleCrew_M,
+    VehicleCrew_F,
+  ],
   vehicles: [],
   groups: [],
 };
