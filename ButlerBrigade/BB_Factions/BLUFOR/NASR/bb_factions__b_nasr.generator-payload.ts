@@ -2,12 +2,15 @@ import {
   FactionBaseSoldier,
   FactionEditorSubcategories,
   FactionGeneratorPayloadBody,
+  FactionGroupIcons,
   FactionSideTypes,
   FactionUnit,
   FactionUnitBackpackItemTypes,
   FactionUnitIcons,
   FactionUnitItemTypes,
+  FactionUnitRanks,
   FactionUnitRoles,
+  FactionVehicle,
 } from '../../../../build/generators/common/faction/faction.types';
 import { GeneratorHeader, GeneratorPayloadDefinition, GeneratorTypes } from '../../../../build/generators/generator.types';
 
@@ -234,6 +237,16 @@ const FULTON_MX991 = {
   type: FactionUnitItemTypes.CARRIED,
 };
 
+const MAP_TOOLS = {
+  class: 'ACE_MapTools',
+  type: FactionUnitItemTypes.CARRIED,
+};
+
+const NOTEPAD = {
+  class: 'acex_intelitems_notepad',
+  type: FactionUnitItemTypes.CARRIED,
+};
+
 const IFAK = {
   class: 'efak_IFAK',
   type: FactionUnitItemTypes.CARRIED,
@@ -242,11 +255,13 @@ const IFAK = {
 const AFAK_BACKPACK = {
   class: 'efak_AFAK',
   type: FactionUnitBackpackItemTypes.ITEM,
+  count: 1,
 };
 
 const MFAKP_BACKPACK = {
   class: 'efak_MFAKPlus',
   type: FactionUnitBackpackItemTypes.ITEM,
+  count: 1,
 };
 
 const SWDG_LOW_FACE_SLOT = {
@@ -594,16 +609,194 @@ const MMGAmmoBearer_M: FactionUnit = {
 const MMGAmmoBearer_F = TransThem(MMGAmmoBearer_M);
 
 // Combat Medic
+const CombatMedic_M: FactionUnit = {
+  ...Rifleman_M,
+  uniqueSlug: 'Infantry_Basic_CombatMedic_M',
+  displayName: '[M] Combat Medic',
+  role: FactionUnitRoles.MEDIC,
+  icon: FactionUnitIcons.MEDIC,
+  backpack: {
+    class: 'cwr3_b_backpack_alice_medic_empty',
+    items: [MFAKP_BACKPACK, AFAK_BACKPACK, AFAK_BACKPACK],
+  },
+};
+const CombatMedic_F = TransThem(CombatMedic_M);
 
 // Forward Observer
+const ForwardObserver_M: FactionUnit = {
+  uniqueSlug: 'Infantry_Basic_ForwardObserver_M',
+  baseSoldier: BASE_M.name,
+  editorSubcategory: FactionEditorSubcategories.INFANTRY,
+  displayName: '[M] Forward Observer',
+  role: FactionUnitRoles.RADIO_OPERATOR,
+  icon: FactionUnitIcons.RECON,
+  weapons: [WEAPONS.RIFLES.RI3A2_STANDARD, BINOS.RANGEFINDER],
+  gear: [
+    // Worn
+    HELMETS.INFANTRY.SCRIM,
+    VESTS.RIFLEMAN,
+    SWDG_LOW_FACE_SLOT,
+    NOMEX_NVG_SLOT,
+    MAP,
+    COMPASS,
+    GPS,
+    ANPRC152,
+    WATCHES.ALTIMETER,
+    // Magazines
+    MAGAZINES.RI3A2_30RND_LIGHT_LOAD,
+    ...GRENADES.INFANTRY.STANDARD,
+    ...GRENADES.INFANTRY.NONLETHAL,
+    // Carried
+    EARPLUGS,
+    ENTRENCHING_TOOL,
+    FULTON_MX991,
+    MAP_TOOLS,
+    NOTEPAD,
+    IFAK,
+    {
+      class: 'ACE_PlottingBoard',
+      type: FactionUnitItemTypes.CARRIED,
+    },
+  ],
+  backpack: {
+    class: 'B_simc_rajio_base',
+    items: [],
+  },
+};
+const ForwardObserver_F = TransThem(ForwardObserver_M);
 
 // RTO
+const RTO_M: FactionUnit = {
+  uniqueSlug: 'Infantry_Basic_RTO_M',
+  baseSoldier: BASE_M.name,
+  editorSubcategory: FactionEditorSubcategories.INFANTRY,
+  displayName: '[M] RTO',
+  role: FactionUnitRoles.RADIO_OPERATOR,
+  weapons: [WEAPONS.RIFLES.RI3A2_STANDARD, BINOS.RANGEFINDER],
+  gear: [
+    // Worn
+    HELMETS.INFANTRY.GOGGLES,
+    VESTS.RADIO,
+    NOMEX_NVG_SLOT,
+    MAP,
+    COMPASS,
+    GPS,
+    ANPRC152,
+    WATCHES.BASIC,
+    // Magazines
+    MAGAZINES.RI3A2_30RND_LIGHT_LOAD,
+    ...GRENADES.INFANTRY.STANDARD,
+    // Carried
+    EARPLUGS,
+    ENTRENCHING_TOOL,
+    FULTON_MX991,
+    MAP_TOOLS,
+    NOTEPAD,
+    IFAK,
+  ],
+  backpack: {
+    class: 'B_simc_rajio_base',
+    items: [],
+  },
+};
+const RTO_F = TransThem(RTO_M);
 
 // Team Leader
+const TeamLeader_M: FactionUnit = {
+  uniqueSlug: 'Infantry_Basic_TeamLeader_M',
+  baseSoldier: BASE_M.name,
+  editorSubcategory: FactionEditorSubcategories.INFANTRY,
+  displayName: '[M] Team Leader',
+  role: FactionUnitRoles.RIFLEMAN,
+  icon: FactionUnitIcons.LEADER,
+  weapons: [WEAPONS.RIFLES.RI3A2_STANDARD, BINOS.BASIC],
+  gear: [
+    // Worn
+    HELMETS.INFANTRY.BASIC,
+    VESTS.RIFLEMAN,
+    SWDG_LOW_FACE_SLOT,
+    NOMEX_NVG_SLOT,
+    MAP,
+    COMPASS,
+    WATCHES.BASIC,
+    // Magazines
+    MAGAZINES.RI3A2_30RND_STANDARD_LOAD,
+    ...GRENADES.INFANTRY.STANDARD,
+    // Carried
+    EARPLUGS,
+    ENTRENCHING_TOOL,
+    FULTON_MX991,
+    IFAK,
+  ],
+};
+const TeamLeader_F = TransThem(TeamLeader_M);
 
 // Squad Leader
+const SquadLeader_M: FactionUnit = {
+  uniqueSlug: 'Infantry_Basic_SquadLeader_M',
+  baseSoldier: BASE_M.name,
+  editorSubcategory: FactionEditorSubcategories.INFANTRY,
+  displayName: '[M] Squad Leader',
+  role: FactionUnitRoles.RIFLEMAN,
+  icon: FactionUnitIcons.LEADER,
+  weapons: [WEAPONS.RIFLES.RI3A2_STANDARD, WEAPONS.PISTOLS.M9, BINOS.RANGEFINDER],
+  gear: [
+    // Worn
+    HELMETS.INFANTRY.GOGGLES,
+    VESTS.RADIO,
+    NOMEX_NVG_SLOT,
+    MAP,
+    COMPASS,
+    GPS,
+    ANPRC152,
+    WATCHES.ALTIMETER,
+    // Magazines
+    MAGAZINES.RI3A2_30RND_STANDARD_LOAD,
+    MAGAZINES.M9_LOAD,
+    ...GRENADES.INFANTRY.STANDARD,
+    // Carried
+    EARPLUGS,
+    ENTRENCHING_TOOL,
+    FULTON_MX991,
+    NOTEPAD,
+    IFAK,
+  ],
+};
+const SquadLeader_F = TransThem(SquadLeader_M);
 
 // Officer
+const Officer_M: FactionUnit = {
+  uniqueSlug: 'Infantry_Basic_Officer_M',
+  baseSoldier: BASE_M.name,
+  editorSubcategory: FactionEditorSubcategories.INFANTRY,
+  displayName: '[M] Officer',
+  role: FactionUnitRoles.RIFLEMAN,
+  icon: FactionUnitIcons.OFFICER,
+  weapons: [WEAPONS.RIFLES.RI3A2_STANDARD, WEAPONS.PISTOLS.M1911, BINOS.RANGEFINDER],
+  gear: [
+    // Worn
+    HELMETS.INFANTRY.GOGGLES,
+    VESTS.RADIO,
+    NOMEX_NVG_SLOT,
+    MAP,
+    COMPASS,
+    GPS,
+    ANPRC152,
+    WATCHES.ALTIMETER,
+    // Magazines
+    MAGAZINES.RI3A2_30RND_STANDARD_LOAD,
+    MAGAZINES.M1911_LOAD,
+    ...GRENADES.INFANTRY.STANDARD,
+    // Carried
+    EARPLUGS,
+    ENTRENCHING_TOOL,
+    FULTON_MX991,
+    MAP_TOOLS,
+    NOTEPAD,
+    IFAK,
+  ],
+};
+const Officer_F = TransThem(Officer_M);
 
 // Vehicle Crew
 const VehicleCrew_M: FactionUnit = {
@@ -631,8 +824,42 @@ const VehicleCrew_M: FactionUnit = {
   ],
 };
 const VehicleCrew_F = TransThem(VehicleCrew_M);
-
 /***/
+
+/**
+ * VEHICLE DEFS
+ */
+const Humvee_Unarmed: FactionVehicle = {
+  uniqueSlug: 'Wheeled_Basic_M1025A2_Unarmed',
+  vehicleClass: 'rhsusf_m1025_w',
+  editorSubcategory: FactionEditorSubcategories.WHEELED,
+  displayName: 'M1025A2 (Unarmed)',
+  crewSlug: 'Infantry_Basic_Rifleman_M',
+};
+
+const Humvee_Flatbed: FactionVehicle = {
+  uniqueSlug: 'Wheeled_Basic_M1097A2_Half',
+  vehicleClass: 'rhsusf_m998_w_2dr_halftop',
+  editorSubcategory: FactionEditorSubcategories.WHEELED,
+  displayName: 'M1097A2 (Open bed)',
+  crewSlug: 'Infantry_Basic_Rifleman_M',
+};
+
+const Humvee_M2: FactionVehicle = {
+  uniqueSlug: 'Wheeled_Basic_M1025A2_M2',
+  vehicleClass: 'rhsusf_m1025_w_m2',
+  editorSubcategory: FactionEditorSubcategories.WHEELED,
+  displayName: 'M1025A2 (M2)',
+  crewSlug: 'Infantry_Basic_Rifleman_M',
+};
+
+const Humvee_TOW: FactionVehicle = {
+  uniqueSlug: 'Wheeled_Basic_M1045_TOW',
+  vehicleClass: 'rhsusf_m1045_w',
+  editorSubcategory: FactionEditorSubcategories.WHEELED,
+  displayName: 'M1045A2 (M220A2)',
+  crewSlug: 'Infantry_Basic_Rifleman_M',
+};
 
 /**
  * HELPER METHODS
@@ -684,9 +911,235 @@ const body: FactionGeneratorPayloadBody = {
     MMGAmmoBearer_F,
     VehicleCrew_M,
     VehicleCrew_F,
+    CombatMedic_M,
+    CombatMedic_F,
+    ForwardObserver_M,
+    ForwardObserver_F,
+    RTO_M,
+    RTO_F,
+    TeamLeader_M,
+    TeamLeader_F,
+    SquadLeader_M,
+    SquadLeader_F,
+    Officer_M,
+    Officer_F,
   ],
-  vehicles: [],
-  groups: [],
+  vehicles: [Humvee_Unarmed, Humvee_Flatbed, Humvee_M2, Humvee_TOW],
+  groups: [
+    {
+      name: 'Motorized Infantry',
+      groups: [
+        // Platoon HQ
+        {
+          name: 'Platoon HQ',
+          icon: FactionGroupIcons.HQ,
+          units: [
+            {
+              unitSlug: 'Infantry_Basic_Officer_M',
+              rank: FactionUnitRanks.LIEUTENANT,
+              pos: { x: 0, y: 0, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_SquadLeader_F',
+              rank: FactionUnitRanks.SERGEANT,
+              pos: { x: 0, y: -2, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_RTO_M',
+              rank: FactionUnitRanks.CORPORAL,
+              pos: { x: 0, y: -4, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_ForwardObserver_M',
+              rank: FactionUnitRanks.SERGEANT,
+              pos: { x: 0, y: -6, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_CombatMedic_F',
+              rank: FactionUnitRanks.CORPORAL,
+              pos: { x: 0, y: -8, z: 0 },
+            },
+          ],
+        },
+        // Rifle Squad
+        {
+          name: 'Rifle Squad',
+          icon: FactionGroupIcons.MOTORIZED_INFANTRY,
+          units: [
+            {
+              unitSlug: 'Infantry_Basic_SquadLeader_M',
+              rank: FactionUnitRanks.SERGEANT,
+              pos: { x: 1, y: 0, z: 0 },
+            },
+            // AT Fireteam
+            {
+              unitSlug: 'Infantry_Basic_TeamLeader_M',
+              rank: FactionUnitRanks.CORPORAL,
+              pos: { x: 1, y: -2, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_Autorifleman_F',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 1, y: -4, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_Grenadier_M',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 1, y: -6, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_Rifleman_AT_F',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 1, y: -8, z: 0 },
+            },
+            // Marksman Fireteam
+            {
+              unitSlug: 'Infantry_Basic_TeamLeader_M',
+              rank: FactionUnitRanks.CORPORAL,
+              pos: { x: -1, y: -2, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_Autorifleman_M',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: -1, y: -4, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_Grenadier_M',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: -1, y: -6, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_Marksman_M',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: -1, y: -8, z: 0 },
+            },
+          ],
+        },
+        // Rifle Squad Fireteam (AT)
+        {
+          name: 'Rifle Squad Fireteam (AT)',
+          icon: FactionGroupIcons.MOTORIZED_INFANTRY,
+          units: [
+            // AT Fireteam
+            {
+              unitSlug: 'Infantry_Basic_TeamLeader_M',
+              rank: FactionUnitRanks.CORPORAL,
+              pos: { x: 0, y: 0, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_Autorifleman_F',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 0, y: -2, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_Grenadier_M',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 0, y: -4, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_Rifleman_AT_F',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 0, y: -6, z: 0 },
+            },
+          ],
+        },
+        // Rifle Squad Fireteam (Marksman)
+        {
+          name: 'Rifle Squad Fireteam (Marksman)',
+          icon: FactionGroupIcons.MOTORIZED_INFANTRY,
+          units: [
+            // Marksman Fireteam
+            {
+              unitSlug: 'Infantry_Basic_TeamLeader_M',
+              rank: FactionUnitRanks.CORPORAL,
+              pos: { x: 0, y: 0, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_Autorifleman_M',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 0, y: -2, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_Grenadier_M',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 0, y: -4, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_Marksman_M',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 0, y: -6, z: 0 },
+            },
+          ],
+        },
+        // Weapons Squad
+        {
+          name: 'Weapons Squad',
+          icon: FactionGroupIcons.MOTORIZED_INFANTRY,
+          units: [
+            {
+              unitSlug: 'Infantry_Basic_SquadLeader_F',
+              rank: FactionUnitRanks.SERGEANT,
+              pos: { x: 0, y: 0, z: 0 },
+            },
+            // Team 1
+            {
+              unitSlug: 'Infantry_Basic_MMGGunner_M',
+              rank: FactionUnitRanks.CORPORAL,
+              pos: { x: 1, y: -2, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_AsstMMGGunner_M',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 1, y: -4, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_MMGAmmoBearer_F',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 1, y: -6, z: 0 },
+            },
+            // Team 2
+            {
+              unitSlug: 'Infantry_Basic_MMGGunner_M',
+              rank: FactionUnitRanks.CORPORAL,
+              pos: { x: -1, y: -2, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_AsstMMGGunner_F',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: -1, y: -4, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_MMGAmmoBearer_M',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: -1, y: -6, z: 0 },
+            },
+          ],
+        },
+        // MMG Team
+        {
+          name: 'MMG Team',
+          icon: FactionGroupIcons.MOTORIZED_INFANTRY,
+          units: [
+            {
+              unitSlug: 'Infantry_Basic_MMGGunner_M',
+              rank: FactionUnitRanks.CORPORAL,
+              pos: { x: 0, y: 0, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_AsstMMGGunner_M',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 0, y: -2, z: 0 },
+            },
+            {
+              unitSlug: 'Infantry_Basic_MMGAmmoBearer_F',
+              rank: FactionUnitRanks.PRIVATE,
+              pos: { x: 0, y: -4, z: 0 },
+            },
+          ],
+        },
+      ],
+    },
+  ],
 };
 
 export default {

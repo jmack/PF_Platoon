@@ -36,6 +36,22 @@ class CfgPatches {
       "BB_Factions__B_NASR__Soldier_Infantry_Basic_MMGAmmoBearer_F",
       "BB_Factions__B_NASR__Soldier_Infantry_Basic_VehicleCrew_M",
       "BB_Factions__B_NASR__Soldier_Infantry_Basic_VehicleCrew_F",
+      "BB_Factions__B_NASR__Soldier_Infantry_Basic_CombatMedic_M",
+      "BB_Factions__B_NASR__Soldier_Infantry_Basic_CombatMedic_F",
+      "BB_Factions__B_NASR__Soldier_Infantry_Basic_ForwardObserver_M",
+      "BB_Factions__B_NASR__Soldier_Infantry_Basic_ForwardObserver_F",
+      "BB_Factions__B_NASR__Soldier_Infantry_Basic_RTO_M",
+      "BB_Factions__B_NASR__Soldier_Infantry_Basic_RTO_F",
+      "BB_Factions__B_NASR__Soldier_Infantry_Basic_TeamLeader_M",
+      "BB_Factions__B_NASR__Soldier_Infantry_Basic_TeamLeader_F",
+      "BB_Factions__B_NASR__Soldier_Infantry_Basic_SquadLeader_M",
+      "BB_Factions__B_NASR__Soldier_Infantry_Basic_SquadLeader_F",
+      "BB_Factions__B_NASR__Soldier_Infantry_Basic_Officer_M",
+      "BB_Factions__B_NASR__Soldier_Infantry_Basic_Officer_F",
+      "BB_Factions__B_NASR__Soldier_Wheeled_Basic_M1025A2_Unarmed",
+      "BB_Factions__B_NASR__Soldier_Wheeled_Basic_M1097A2_Half",
+      "BB_Factions__B_NASR__Soldier_Wheeled_Basic_M1025A2_M2",
+      "BB_Factions__B_NASR__Soldier_Wheeled_Basic_M1045_TOW",
     };
   };
 };
@@ -174,6 +190,8 @@ class CfgVehicles
   // * Backpacks ***
   class B_simc_pack_alice_flak_0;
   class B_simc_pack_alice_frame_1;
+  class cwr3_b_backpack_alice_medic_empty;
+  class B_simc_rajio_base;
   class BB_Factions__B_NASR__Backpack_Infantry_Basic_Rifleman_AA_M: B_simc_pack_alice_flak_0
   {
     scope = 1;
@@ -221,6 +239,66 @@ class CfgVehicles
         count = 10;
       };
     };
+  };
+  class BB_Factions__B_NASR__Backpack_Infantry_Basic_CombatMedic_M: cwr3_b_backpack_alice_medic_empty
+  {
+    scope = 1;
+    class TransportItems
+    {
+      class _xx_efak_MFAKPlus
+      {
+        name = "efak_MFAKPlus";
+        count = 1;
+      };
+      class _xx_efak_AFAK
+      {
+        name = "efak_AFAK";
+        count = 1;
+      };
+      class _xx_efak_AFAK
+      {
+        name = "efak_AFAK";
+        count = 1;
+      };
+    };
+  };
+  class BB_Factions__B_NASR__Backpack_Infantry_Basic_CombatMedic_F: cwr3_b_backpack_alice_medic_empty
+  {
+    scope = 1;
+    class TransportItems
+    {
+      class _xx_efak_MFAKPlus
+      {
+        name = "efak_MFAKPlus";
+        count = 1;
+      };
+      class _xx_efak_AFAK
+      {
+        name = "efak_AFAK";
+        count = 1;
+      };
+      class _xx_efak_AFAK
+      {
+        name = "efak_AFAK";
+        count = 1;
+      };
+    };
+  };
+  class BB_Factions__B_NASR__Backpack_Infantry_Basic_ForwardObserver_M: B_simc_rajio_base
+  {
+    scope = 1;
+  };
+  class BB_Factions__B_NASR__Backpack_Infantry_Basic_ForwardObserver_F: B_simc_rajio_base
+  {
+    scope = 1;
+  };
+  class BB_Factions__B_NASR__Backpack_Infantry_Basic_RTO_M: B_simc_rajio_base
+  {
+    scope = 1;
+  };
+  class BB_Factions__B_NASR__Backpack_Infantry_Basic_RTO_F: B_simc_rajio_base
+  {
+    scope = 1;
   };
   // ***
 
@@ -2436,9 +2514,1429 @@ class CfgVehicles
       "efak_IFAK",
     };
   };
+  class BB_Factions__B_NASR__Soldier_Infantry_Basic_CombatMedic_M: BB_Factions__B_NASR__Base_Masc
+  {
+    displayName = "[M] Combat Medic";
+    role = "CombatLifeSaver";
+    icon = "iconManMedic";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    editorCategory = "BB_Factions__B_NASR";
+    editorSubcategory = "BB_Factions_EdSubcat_Infantry";
+
+    backpack = "BB_Factions__B_NASR__Backpack_Infantry_Basic_CombatMedic_M";
+
+    weapons[] =
+    {
+      "BB_Factions__B_NASR__Weapon_BB_Gear_PrimaryWeapons_RI3A2__rhs_acc_1p87",
+      "rhsusf_bino_m24",
+      "Throw",
+      "Put",
+    };
+    respawnWeapons[] =
+    {
+      "BB_Factions__B_NASR__Weapon_BB_Gear_PrimaryWeapons_RI3A2__rhs_acc_1p87",
+      "rhsusf_bino_m24",
+      "Throw",
+      "Put",
+    };
+
+    magazines[] =
+    {
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "rhs_mag_m67",
+      "rhs_mag_m67",
+      "rhs_mag_mk84",
+      "rhs_mag_mk84",
+      "Chemlight_green",
+      "Chemlight_green",
+      "Chemlight_green",
+    };
+    respawnMagazines[] =
+    {
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "rhs_mag_m67",
+      "rhs_mag_m67",
+      "rhs_mag_mk84",
+      "rhs_mag_mk84",
+      "Chemlight_green",
+      "Chemlight_green",
+      "Chemlight_green",
+    };
+
+    linkedItems[] =
+    {
+      "usm_helmet_pasgt_ceswd_wdl",
+      "usm_vest_pasgt_lbe_rm",
+      "nomex_1_fold_addon",
+      "ItemMap",
+      "ItemCompass",
+      "ItemWatch",
+    };
+    respawnLinkedItems[] =
+    {
+      "usm_helmet_pasgt_ceswd_wdl",
+      "usm_vest_pasgt_lbe_rm",
+      "nomex_1_fold_addon",
+      "ItemMap",
+      "ItemCompass",
+      "ItemWatch",
+    };
+
+    items[] =
+    {
+      "ACE_EarPlugs",
+      "ACE_EntrenchingTool",
+      "ACE_Flashlight_MX991",
+      "efak_IFAK",
+    };
+    respawnItems[] =
+    {
+      "ACE_EarPlugs",
+      "ACE_EntrenchingTool",
+      "ACE_Flashlight_MX991",
+      "efak_IFAK",
+    };
+  };
+  class BB_Factions__B_NASR__Soldier_Infantry_Basic_CombatMedic_F: BB_Factions__B_NASR__Base_Femme
+  {
+    displayName = "[F] Combat Medic";
+    role = "CombatLifeSaver";
+    icon = "iconManMedic";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    editorCategory = "BB_Factions__B_NASR";
+    editorSubcategory = "BB_Factions_EdSubcat_Infantry";
+
+    backpack = "BB_Factions__B_NASR__Backpack_Infantry_Basic_CombatMedic_F";
+
+    weapons[] =
+    {
+      "BB_Factions__B_NASR__Weapon_BB_Gear_PrimaryWeapons_RI3A2__rhs_acc_1p87",
+      "rhsusf_bino_m24",
+      "Throw",
+      "Put",
+    };
+    respawnWeapons[] =
+    {
+      "BB_Factions__B_NASR__Weapon_BB_Gear_PrimaryWeapons_RI3A2__rhs_acc_1p87",
+      "rhsusf_bino_m24",
+      "Throw",
+      "Put",
+    };
+
+    magazines[] =
+    {
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "rhs_mag_m67",
+      "rhs_mag_m67",
+      "rhs_mag_mk84",
+      "rhs_mag_mk84",
+      "Chemlight_green",
+      "Chemlight_green",
+      "Chemlight_green",
+    };
+    respawnMagazines[] =
+    {
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "rhs_mag_m67",
+      "rhs_mag_m67",
+      "rhs_mag_mk84",
+      "rhs_mag_mk84",
+      "Chemlight_green",
+      "Chemlight_green",
+      "Chemlight_green",
+    };
+
+    linkedItems[] =
+    {
+      "usm_helmet_pasgt_ceswd_wdl",
+      "usm_vest_pasgt_lbe_rm",
+      "nomex_1_fold_addon",
+      "ItemMap",
+      "ItemCompass",
+      "ItemWatch",
+    };
+    respawnLinkedItems[] =
+    {
+      "usm_helmet_pasgt_ceswd_wdl",
+      "usm_vest_pasgt_lbe_rm",
+      "nomex_1_fold_addon",
+      "ItemMap",
+      "ItemCompass",
+      "ItemWatch",
+    };
+
+    items[] =
+    {
+      "ACE_EarPlugs",
+      "ACE_EntrenchingTool",
+      "ACE_Flashlight_MX991",
+      "efak_IFAK",
+    };
+    respawnItems[] =
+    {
+      "ACE_EarPlugs",
+      "ACE_EntrenchingTool",
+      "ACE_Flashlight_MX991",
+      "efak_IFAK",
+    };
+  };
+  class BB_Factions__B_NASR__Soldier_Infantry_Basic_ForwardObserver_M: BB_Factions__B_NASR__Base_Masc
+  {
+    displayName = "[M] Forward Observer";
+    role = "RadioOperator";
+    icon = "iconManRecon";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    editorCategory = "BB_Factions__B_NASR";
+    editorSubcategory = "BB_Factions_EdSubcat_Infantry";
+
+    backpack = "BB_Factions__B_NASR__Backpack_Infantry_Basic_ForwardObserver_M";
+
+    weapons[] =
+    {
+      "BB_Factions__B_NASR__Weapon_BB_Gear_PrimaryWeapons_RI3A2__rhs_acc_1p87",
+      "rhsusf_bino_lerca_1200_black",
+      "Throw",
+      "Put",
+    };
+    respawnWeapons[] =
+    {
+      "BB_Factions__B_NASR__Weapon_BB_Gear_PrimaryWeapons_RI3A2__rhs_acc_1p87",
+      "rhsusf_bino_lerca_1200_black",
+      "Throw",
+      "Put",
+    };
+
+    magazines[] =
+    {
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "rhs_mag_m67",
+      "rhs_mag_m67",
+      "rhs_mag_mk84",
+      "rhs_mag_mk84",
+      "Chemlight_green",
+      "Chemlight_green",
+      "Chemlight_green",
+      "rhs_mag_m18_purple",
+      "rhs_mag_m18_purple",
+      "Chemlight_green",
+      "Chemlight_green",
+      "Chemlight_green",
+    };
+    respawnMagazines[] =
+    {
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "rhs_mag_m67",
+      "rhs_mag_m67",
+      "rhs_mag_mk84",
+      "rhs_mag_mk84",
+      "Chemlight_green",
+      "Chemlight_green",
+      "Chemlight_green",
+      "rhs_mag_m18_purple",
+      "rhs_mag_m18_purple",
+      "Chemlight_green",
+      "Chemlight_green",
+      "Chemlight_green",
+    };
+
+    linkedItems[] =
+    {
+      "usm_helmet_pasgt_scrim_wdl",
+      "usm_vest_pasgt_lbe_rm",
+      "G_SWDG_low",
+      "nomex_1_fold_addon",
+      "ItemMap",
+      "ItemCompass",
+      "ItemGPS",
+      "TFAR_anprc152",
+      "ACE_Altimeter",
+    };
+    respawnLinkedItems[] =
+    {
+      "usm_helmet_pasgt_scrim_wdl",
+      "usm_vest_pasgt_lbe_rm",
+      "G_SWDG_low",
+      "nomex_1_fold_addon",
+      "ItemMap",
+      "ItemCompass",
+      "ItemGPS",
+      "TFAR_anprc152",
+      "ACE_Altimeter",
+    };
+
+    items[] =
+    {
+      "ACE_EarPlugs",
+      "ACE_EntrenchingTool",
+      "ACE_Flashlight_MX991",
+      "ACE_MapTools",
+      "acex_intelitems_notepad",
+      "efak_IFAK",
+      "ACE_PlottingBoard",
+    };
+    respawnItems[] =
+    {
+      "ACE_EarPlugs",
+      "ACE_EntrenchingTool",
+      "ACE_Flashlight_MX991",
+      "ACE_MapTools",
+      "acex_intelitems_notepad",
+      "efak_IFAK",
+      "ACE_PlottingBoard",
+    };
+  };
+  class BB_Factions__B_NASR__Soldier_Infantry_Basic_ForwardObserver_F: BB_Factions__B_NASR__Base_Femme
+  {
+    displayName = "[F] Forward Observer";
+    role = "RadioOperator";
+    icon = "iconManRecon";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    editorCategory = "BB_Factions__B_NASR";
+    editorSubcategory = "BB_Factions_EdSubcat_Infantry";
+
+    backpack = "BB_Factions__B_NASR__Backpack_Infantry_Basic_ForwardObserver_F";
+
+    weapons[] =
+    {
+      "BB_Factions__B_NASR__Weapon_BB_Gear_PrimaryWeapons_RI3A2__rhs_acc_1p87",
+      "rhsusf_bino_lerca_1200_black",
+      "Throw",
+      "Put",
+    };
+    respawnWeapons[] =
+    {
+      "BB_Factions__B_NASR__Weapon_BB_Gear_PrimaryWeapons_RI3A2__rhs_acc_1p87",
+      "rhsusf_bino_lerca_1200_black",
+      "Throw",
+      "Put",
+    };
+
+    magazines[] =
+    {
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "rhs_mag_m67",
+      "rhs_mag_m67",
+      "rhs_mag_mk84",
+      "rhs_mag_mk84",
+      "Chemlight_green",
+      "Chemlight_green",
+      "Chemlight_green",
+      "rhs_mag_m18_purple",
+      "rhs_mag_m18_purple",
+      "Chemlight_green",
+      "Chemlight_green",
+      "Chemlight_green",
+    };
+    respawnMagazines[] =
+    {
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "rhs_mag_m67",
+      "rhs_mag_m67",
+      "rhs_mag_mk84",
+      "rhs_mag_mk84",
+      "Chemlight_green",
+      "Chemlight_green",
+      "Chemlight_green",
+      "rhs_mag_m18_purple",
+      "rhs_mag_m18_purple",
+      "Chemlight_green",
+      "Chemlight_green",
+      "Chemlight_green",
+    };
+
+    linkedItems[] =
+    {
+      "usm_helmet_pasgt_scrim_wdl",
+      "usm_vest_pasgt_lbe_rm",
+      "G_SWDG_low",
+      "nomex_1_fold_addon",
+      "ItemMap",
+      "ItemCompass",
+      "ItemGPS",
+      "TFAR_anprc152",
+      "ACE_Altimeter",
+    };
+    respawnLinkedItems[] =
+    {
+      "usm_helmet_pasgt_scrim_wdl",
+      "usm_vest_pasgt_lbe_rm",
+      "G_SWDG_low",
+      "nomex_1_fold_addon",
+      "ItemMap",
+      "ItemCompass",
+      "ItemGPS",
+      "TFAR_anprc152",
+      "ACE_Altimeter",
+    };
+
+    items[] =
+    {
+      "ACE_EarPlugs",
+      "ACE_EntrenchingTool",
+      "ACE_Flashlight_MX991",
+      "ACE_MapTools",
+      "acex_intelitems_notepad",
+      "efak_IFAK",
+      "ACE_PlottingBoard",
+    };
+    respawnItems[] =
+    {
+      "ACE_EarPlugs",
+      "ACE_EntrenchingTool",
+      "ACE_Flashlight_MX991",
+      "ACE_MapTools",
+      "acex_intelitems_notepad",
+      "efak_IFAK",
+      "ACE_PlottingBoard",
+    };
+  };
+  class BB_Factions__B_NASR__Soldier_Infantry_Basic_RTO_M: BB_Factions__B_NASR__Base_Masc
+  {
+    displayName = "[M] RTO";
+    role = "RadioOperator";
+    icon = "iconMan";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    editorCategory = "BB_Factions__B_NASR";
+    editorSubcategory = "BB_Factions_EdSubcat_Infantry";
+
+    backpack = "BB_Factions__B_NASR__Backpack_Infantry_Basic_RTO_M";
+
+    weapons[] =
+    {
+      "BB_Factions__B_NASR__Weapon_BB_Gear_PrimaryWeapons_RI3A2__rhs_acc_1p87",
+      "rhsusf_bino_lerca_1200_black",
+      "Throw",
+      "Put",
+    };
+    respawnWeapons[] =
+    {
+      "BB_Factions__B_NASR__Weapon_BB_Gear_PrimaryWeapons_RI3A2__rhs_acc_1p87",
+      "rhsusf_bino_lerca_1200_black",
+      "Throw",
+      "Put",
+    };
+
+    magazines[] =
+    {
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "rhs_mag_m67",
+      "rhs_mag_m67",
+      "rhs_mag_mk84",
+      "rhs_mag_mk84",
+      "Chemlight_green",
+      "Chemlight_green",
+      "Chemlight_green",
+    };
+    respawnMagazines[] =
+    {
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "rhs_mag_m67",
+      "rhs_mag_m67",
+      "rhs_mag_mk84",
+      "rhs_mag_mk84",
+      "Chemlight_green",
+      "Chemlight_green",
+      "Chemlight_green",
+    };
+
+    linkedItems[] =
+    {
+      "usm_helmet_pasgt_ceswd_wdl",
+      "usm_vest_pasgt_lbe_rmpr",
+      "nomex_1_fold_addon",
+      "ItemMap",
+      "ItemCompass",
+      "ItemGPS",
+      "TFAR_anprc152",
+      "ItemWatch",
+    };
+    respawnLinkedItems[] =
+    {
+      "usm_helmet_pasgt_ceswd_wdl",
+      "usm_vest_pasgt_lbe_rmpr",
+      "nomex_1_fold_addon",
+      "ItemMap",
+      "ItemCompass",
+      "ItemGPS",
+      "TFAR_anprc152",
+      "ItemWatch",
+    };
+
+    items[] =
+    {
+      "ACE_EarPlugs",
+      "ACE_EntrenchingTool",
+      "ACE_Flashlight_MX991",
+      "ACE_MapTools",
+      "acex_intelitems_notepad",
+      "efak_IFAK",
+    };
+    respawnItems[] =
+    {
+      "ACE_EarPlugs",
+      "ACE_EntrenchingTool",
+      "ACE_Flashlight_MX991",
+      "ACE_MapTools",
+      "acex_intelitems_notepad",
+      "efak_IFAK",
+    };
+  };
+  class BB_Factions__B_NASR__Soldier_Infantry_Basic_RTO_F: BB_Factions__B_NASR__Base_Femme
+  {
+    displayName = "[F] RTO";
+    role = "RadioOperator";
+    icon = "iconMan";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    editorCategory = "BB_Factions__B_NASR";
+    editorSubcategory = "BB_Factions_EdSubcat_Infantry";
+
+    backpack = "BB_Factions__B_NASR__Backpack_Infantry_Basic_RTO_F";
+
+    weapons[] =
+    {
+      "BB_Factions__B_NASR__Weapon_BB_Gear_PrimaryWeapons_RI3A2__rhs_acc_1p87",
+      "rhsusf_bino_lerca_1200_black",
+      "Throw",
+      "Put",
+    };
+    respawnWeapons[] =
+    {
+      "BB_Factions__B_NASR__Weapon_BB_Gear_PrimaryWeapons_RI3A2__rhs_acc_1p87",
+      "rhsusf_bino_lerca_1200_black",
+      "Throw",
+      "Put",
+    };
+
+    magazines[] =
+    {
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "rhs_mag_m67",
+      "rhs_mag_m67",
+      "rhs_mag_mk84",
+      "rhs_mag_mk84",
+      "Chemlight_green",
+      "Chemlight_green",
+      "Chemlight_green",
+    };
+    respawnMagazines[] =
+    {
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "rhs_mag_m67",
+      "rhs_mag_m67",
+      "rhs_mag_mk84",
+      "rhs_mag_mk84",
+      "Chemlight_green",
+      "Chemlight_green",
+      "Chemlight_green",
+    };
+
+    linkedItems[] =
+    {
+      "usm_helmet_pasgt_ceswd_wdl",
+      "usm_vest_pasgt_lbe_rmpr",
+      "nomex_1_fold_addon",
+      "ItemMap",
+      "ItemCompass",
+      "ItemGPS",
+      "TFAR_anprc152",
+      "ItemWatch",
+    };
+    respawnLinkedItems[] =
+    {
+      "usm_helmet_pasgt_ceswd_wdl",
+      "usm_vest_pasgt_lbe_rmpr",
+      "nomex_1_fold_addon",
+      "ItemMap",
+      "ItemCompass",
+      "ItemGPS",
+      "TFAR_anprc152",
+      "ItemWatch",
+    };
+
+    items[] =
+    {
+      "ACE_EarPlugs",
+      "ACE_EntrenchingTool",
+      "ACE_Flashlight_MX991",
+      "ACE_MapTools",
+      "acex_intelitems_notepad",
+      "efak_IFAK",
+    };
+    respawnItems[] =
+    {
+      "ACE_EarPlugs",
+      "ACE_EntrenchingTool",
+      "ACE_Flashlight_MX991",
+      "ACE_MapTools",
+      "acex_intelitems_notepad",
+      "efak_IFAK",
+    };
+  };
+  class BB_Factions__B_NASR__Soldier_Infantry_Basic_TeamLeader_M: BB_Factions__B_NASR__Base_Masc
+  {
+    displayName = "[M] Team Leader";
+    role = "Rifleman";
+    icon = "iconManLeader";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    editorCategory = "BB_Factions__B_NASR";
+    editorSubcategory = "BB_Factions_EdSubcat_Infantry";
+
+    weapons[] =
+    {
+      "BB_Factions__B_NASR__Weapon_BB_Gear_PrimaryWeapons_RI3A2__rhs_acc_1p87",
+      "rhsusf_bino_m24",
+      "Throw",
+      "Put",
+    };
+    respawnWeapons[] =
+    {
+      "BB_Factions__B_NASR__Weapon_BB_Gear_PrimaryWeapons_RI3A2__rhs_acc_1p87",
+      "rhsusf_bino_m24",
+      "Throw",
+      "Put",
+    };
+
+    magazines[] =
+    {
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "rhs_mag_m67",
+      "rhs_mag_m67",
+      "rhs_mag_mk84",
+      "rhs_mag_mk84",
+      "Chemlight_green",
+      "Chemlight_green",
+      "Chemlight_green",
+    };
+    respawnMagazines[] =
+    {
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "rhs_mag_m67",
+      "rhs_mag_m67",
+      "rhs_mag_mk84",
+      "rhs_mag_mk84",
+      "Chemlight_green",
+      "Chemlight_green",
+      "Chemlight_green",
+    };
+
+    linkedItems[] =
+    {
+      "usm_helmet_pasgt_ce_wdl",
+      "usm_vest_pasgt_lbe_rm",
+      "G_SWDG_low",
+      "nomex_1_fold_addon",
+      "ItemMap",
+      "ItemCompass",
+      "ItemWatch",
+    };
+    respawnLinkedItems[] =
+    {
+      "usm_helmet_pasgt_ce_wdl",
+      "usm_vest_pasgt_lbe_rm",
+      "G_SWDG_low",
+      "nomex_1_fold_addon",
+      "ItemMap",
+      "ItemCompass",
+      "ItemWatch",
+    };
+
+    items[] =
+    {
+      "ACE_EarPlugs",
+      "ACE_EntrenchingTool",
+      "ACE_Flashlight_MX991",
+      "efak_IFAK",
+    };
+    respawnItems[] =
+    {
+      "ACE_EarPlugs",
+      "ACE_EntrenchingTool",
+      "ACE_Flashlight_MX991",
+      "efak_IFAK",
+    };
+  };
+  class BB_Factions__B_NASR__Soldier_Infantry_Basic_TeamLeader_F: BB_Factions__B_NASR__Base_Femme
+  {
+    displayName = "[F] Team Leader";
+    role = "Rifleman";
+    icon = "iconManLeader";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    editorCategory = "BB_Factions__B_NASR";
+    editorSubcategory = "BB_Factions_EdSubcat_Infantry";
+
+    weapons[] =
+    {
+      "BB_Factions__B_NASR__Weapon_BB_Gear_PrimaryWeapons_RI3A2__rhs_acc_1p87",
+      "rhsusf_bino_m24",
+      "Throw",
+      "Put",
+    };
+    respawnWeapons[] =
+    {
+      "BB_Factions__B_NASR__Weapon_BB_Gear_PrimaryWeapons_RI3A2__rhs_acc_1p87",
+      "rhsusf_bino_m24",
+      "Throw",
+      "Put",
+    };
+
+    magazines[] =
+    {
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "rhs_mag_m67",
+      "rhs_mag_m67",
+      "rhs_mag_mk84",
+      "rhs_mag_mk84",
+      "Chemlight_green",
+      "Chemlight_green",
+      "Chemlight_green",
+    };
+    respawnMagazines[] =
+    {
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "rhs_mag_m67",
+      "rhs_mag_m67",
+      "rhs_mag_mk84",
+      "rhs_mag_mk84",
+      "Chemlight_green",
+      "Chemlight_green",
+      "Chemlight_green",
+    };
+
+    linkedItems[] =
+    {
+      "usm_helmet_pasgt_ce_wdl",
+      "usm_vest_pasgt_lbe_rm",
+      "G_SWDG_low",
+      "nomex_1_fold_addon",
+      "ItemMap",
+      "ItemCompass",
+      "ItemWatch",
+    };
+    respawnLinkedItems[] =
+    {
+      "usm_helmet_pasgt_ce_wdl",
+      "usm_vest_pasgt_lbe_rm",
+      "G_SWDG_low",
+      "nomex_1_fold_addon",
+      "ItemMap",
+      "ItemCompass",
+      "ItemWatch",
+    };
+
+    items[] =
+    {
+      "ACE_EarPlugs",
+      "ACE_EntrenchingTool",
+      "ACE_Flashlight_MX991",
+      "efak_IFAK",
+    };
+    respawnItems[] =
+    {
+      "ACE_EarPlugs",
+      "ACE_EntrenchingTool",
+      "ACE_Flashlight_MX991",
+      "efak_IFAK",
+    };
+  };
+  class BB_Factions__B_NASR__Soldier_Infantry_Basic_SquadLeader_M: BB_Factions__B_NASR__Base_Masc
+  {
+    displayName = "[M] Squad Leader";
+    role = "Rifleman";
+    icon = "iconManLeader";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    editorCategory = "BB_Factions__B_NASR";
+    editorSubcategory = "BB_Factions_EdSubcat_Infantry";
+
+    weapons[] =
+    {
+      "BB_Factions__B_NASR__Weapon_BB_Gear_PrimaryWeapons_RI3A2__rhs_acc_1p87",
+      "rhsusf_weap_m9",
+      "rhsusf_bino_lerca_1200_black",
+      "Throw",
+      "Put",
+    };
+    respawnWeapons[] =
+    {
+      "BB_Factions__B_NASR__Weapon_BB_Gear_PrimaryWeapons_RI3A2__rhs_acc_1p87",
+      "rhsusf_weap_m9",
+      "rhsusf_bino_lerca_1200_black",
+      "Throw",
+      "Put",
+    };
+
+    magazines[] =
+    {
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "rhsusf_mag_15Rnd_9x19_JHP",
+      "rhsusf_mag_15Rnd_9x19_JHP",
+      "rhsusf_mag_15Rnd_9x19_JHP",
+      "rhsusf_mag_15Rnd_9x19_JHP",
+      "rhs_mag_m67",
+      "rhs_mag_m67",
+      "rhs_mag_mk84",
+      "rhs_mag_mk84",
+      "Chemlight_green",
+      "Chemlight_green",
+      "Chemlight_green",
+    };
+    respawnMagazines[] =
+    {
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "rhsusf_mag_15Rnd_9x19_JHP",
+      "rhsusf_mag_15Rnd_9x19_JHP",
+      "rhsusf_mag_15Rnd_9x19_JHP",
+      "rhsusf_mag_15Rnd_9x19_JHP",
+      "rhs_mag_m67",
+      "rhs_mag_m67",
+      "rhs_mag_mk84",
+      "rhs_mag_mk84",
+      "Chemlight_green",
+      "Chemlight_green",
+      "Chemlight_green",
+    };
+
+    linkedItems[] =
+    {
+      "usm_helmet_pasgt_ceswd_wdl",
+      "usm_vest_pasgt_lbe_rmpr",
+      "nomex_1_fold_addon",
+      "ItemMap",
+      "ItemCompass",
+      "ItemGPS",
+      "TFAR_anprc152",
+      "ACE_Altimeter",
+    };
+    respawnLinkedItems[] =
+    {
+      "usm_helmet_pasgt_ceswd_wdl",
+      "usm_vest_pasgt_lbe_rmpr",
+      "nomex_1_fold_addon",
+      "ItemMap",
+      "ItemCompass",
+      "ItemGPS",
+      "TFAR_anprc152",
+      "ACE_Altimeter",
+    };
+
+    items[] =
+    {
+      "ACE_EarPlugs",
+      "ACE_EntrenchingTool",
+      "ACE_Flashlight_MX991",
+      "acex_intelitems_notepad",
+      "efak_IFAK",
+    };
+    respawnItems[] =
+    {
+      "ACE_EarPlugs",
+      "ACE_EntrenchingTool",
+      "ACE_Flashlight_MX991",
+      "acex_intelitems_notepad",
+      "efak_IFAK",
+    };
+  };
+  class BB_Factions__B_NASR__Soldier_Infantry_Basic_SquadLeader_F: BB_Factions__B_NASR__Base_Femme
+  {
+    displayName = "[F] Squad Leader";
+    role = "Rifleman";
+    icon = "iconManLeader";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    editorCategory = "BB_Factions__B_NASR";
+    editorSubcategory = "BB_Factions_EdSubcat_Infantry";
+
+    weapons[] =
+    {
+      "BB_Factions__B_NASR__Weapon_BB_Gear_PrimaryWeapons_RI3A2__rhs_acc_1p87",
+      "rhsusf_weap_m9",
+      "rhsusf_bino_lerca_1200_black",
+      "Throw",
+      "Put",
+    };
+    respawnWeapons[] =
+    {
+      "BB_Factions__B_NASR__Weapon_BB_Gear_PrimaryWeapons_RI3A2__rhs_acc_1p87",
+      "rhsusf_weap_m9",
+      "rhsusf_bino_lerca_1200_black",
+      "Throw",
+      "Put",
+    };
+
+    magazines[] =
+    {
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "rhsusf_mag_15Rnd_9x19_JHP",
+      "rhsusf_mag_15Rnd_9x19_JHP",
+      "rhsusf_mag_15Rnd_9x19_JHP",
+      "rhsusf_mag_15Rnd_9x19_JHP",
+      "rhs_mag_m67",
+      "rhs_mag_m67",
+      "rhs_mag_mk84",
+      "rhs_mag_mk84",
+      "Chemlight_green",
+      "Chemlight_green",
+      "Chemlight_green",
+    };
+    respawnMagazines[] =
+    {
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "rhsusf_mag_15Rnd_9x19_JHP",
+      "rhsusf_mag_15Rnd_9x19_JHP",
+      "rhsusf_mag_15Rnd_9x19_JHP",
+      "rhsusf_mag_15Rnd_9x19_JHP",
+      "rhs_mag_m67",
+      "rhs_mag_m67",
+      "rhs_mag_mk84",
+      "rhs_mag_mk84",
+      "Chemlight_green",
+      "Chemlight_green",
+      "Chemlight_green",
+    };
+
+    linkedItems[] =
+    {
+      "usm_helmet_pasgt_ceswd_wdl",
+      "usm_vest_pasgt_lbe_rmpr",
+      "nomex_1_fold_addon",
+      "ItemMap",
+      "ItemCompass",
+      "ItemGPS",
+      "TFAR_anprc152",
+      "ACE_Altimeter",
+    };
+    respawnLinkedItems[] =
+    {
+      "usm_helmet_pasgt_ceswd_wdl",
+      "usm_vest_pasgt_lbe_rmpr",
+      "nomex_1_fold_addon",
+      "ItemMap",
+      "ItemCompass",
+      "ItemGPS",
+      "TFAR_anprc152",
+      "ACE_Altimeter",
+    };
+
+    items[] =
+    {
+      "ACE_EarPlugs",
+      "ACE_EntrenchingTool",
+      "ACE_Flashlight_MX991",
+      "acex_intelitems_notepad",
+      "efak_IFAK",
+    };
+    respawnItems[] =
+    {
+      "ACE_EarPlugs",
+      "ACE_EntrenchingTool",
+      "ACE_Flashlight_MX991",
+      "acex_intelitems_notepad",
+      "efak_IFAK",
+    };
+  };
+  class BB_Factions__B_NASR__Soldier_Infantry_Basic_Officer_M: BB_Factions__B_NASR__Base_Masc
+  {
+    displayName = "[M] Officer";
+    role = "Rifleman";
+    icon = "iconManOfficer";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    editorCategory = "BB_Factions__B_NASR";
+    editorSubcategory = "BB_Factions_EdSubcat_Infantry";
+
+    weapons[] =
+    {
+      "BB_Factions__B_NASR__Weapon_BB_Gear_PrimaryWeapons_RI3A2__rhs_acc_1p87",
+      "rhsusf_weap_m1911a1",
+      "rhsusf_bino_lerca_1200_black",
+      "Throw",
+      "Put",
+    };
+    respawnWeapons[] =
+    {
+      "BB_Factions__B_NASR__Weapon_BB_Gear_PrimaryWeapons_RI3A2__rhs_acc_1p87",
+      "rhsusf_weap_m1911a1",
+      "rhsusf_bino_lerca_1200_black",
+      "Throw",
+      "Put",
+    };
+
+    magazines[] =
+    {
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "rhsusf_mag_7x45acp_MHP",
+      "rhsusf_mag_7x45acp_MHP",
+      "rhsusf_mag_7x45acp_MHP",
+      "rhsusf_mag_7x45acp_MHP",
+      "rhs_mag_m67",
+      "rhs_mag_m67",
+      "rhs_mag_mk84",
+      "rhs_mag_mk84",
+      "Chemlight_green",
+      "Chemlight_green",
+      "Chemlight_green",
+    };
+    respawnMagazines[] =
+    {
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "rhsusf_mag_7x45acp_MHP",
+      "rhsusf_mag_7x45acp_MHP",
+      "rhsusf_mag_7x45acp_MHP",
+      "rhsusf_mag_7x45acp_MHP",
+      "rhs_mag_m67",
+      "rhs_mag_m67",
+      "rhs_mag_mk84",
+      "rhs_mag_mk84",
+      "Chemlight_green",
+      "Chemlight_green",
+      "Chemlight_green",
+    };
+
+    linkedItems[] =
+    {
+      "usm_helmet_pasgt_ceswd_wdl",
+      "usm_vest_pasgt_lbe_rmpr",
+      "nomex_1_fold_addon",
+      "ItemMap",
+      "ItemCompass",
+      "ItemGPS",
+      "TFAR_anprc152",
+      "ACE_Altimeter",
+    };
+    respawnLinkedItems[] =
+    {
+      "usm_helmet_pasgt_ceswd_wdl",
+      "usm_vest_pasgt_lbe_rmpr",
+      "nomex_1_fold_addon",
+      "ItemMap",
+      "ItemCompass",
+      "ItemGPS",
+      "TFAR_anprc152",
+      "ACE_Altimeter",
+    };
+
+    items[] =
+    {
+      "ACE_EarPlugs",
+      "ACE_EntrenchingTool",
+      "ACE_Flashlight_MX991",
+      "ACE_MapTools",
+      "acex_intelitems_notepad",
+      "efak_IFAK",
+    };
+    respawnItems[] =
+    {
+      "ACE_EarPlugs",
+      "ACE_EntrenchingTool",
+      "ACE_Flashlight_MX991",
+      "ACE_MapTools",
+      "acex_intelitems_notepad",
+      "efak_IFAK",
+    };
+  };
+  class BB_Factions__B_NASR__Soldier_Infantry_Basic_Officer_F: BB_Factions__B_NASR__Base_Femme
+  {
+    displayName = "[F] Officer";
+    role = "Rifleman";
+    icon = "iconManOfficer";
+
+    scope = 2;
+    scopeCurator = 2;
+    scopeArsenal = 2;
+
+    editorCategory = "BB_Factions__B_NASR";
+    editorSubcategory = "BB_Factions_EdSubcat_Infantry";
+
+    weapons[] =
+    {
+      "BB_Factions__B_NASR__Weapon_BB_Gear_PrimaryWeapons_RI3A2__rhs_acc_1p87",
+      "rhsusf_weap_m1911a1",
+      "rhsusf_bino_lerca_1200_black",
+      "Throw",
+      "Put",
+    };
+    respawnWeapons[] =
+    {
+      "BB_Factions__B_NASR__Weapon_BB_Gear_PrimaryWeapons_RI3A2__rhs_acc_1p87",
+      "rhsusf_weap_m1911a1",
+      "rhsusf_bino_lerca_1200_black",
+      "Throw",
+      "Put",
+    };
+
+    magazines[] =
+    {
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "rhsusf_mag_7x45acp_MHP",
+      "rhsusf_mag_7x45acp_MHP",
+      "rhsusf_mag_7x45acp_MHP",
+      "rhsusf_mag_7x45acp_MHP",
+      "rhs_mag_m67",
+      "rhs_mag_m67",
+      "rhs_mag_mk84",
+      "rhs_mag_mk84",
+      "Chemlight_green",
+      "Chemlight_green",
+      "Chemlight_green",
+    };
+    respawnMagazines[] =
+    {
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "hlc_30Rnd_545x39_EP_ak_Black",
+      "rhsusf_mag_7x45acp_MHP",
+      "rhsusf_mag_7x45acp_MHP",
+      "rhsusf_mag_7x45acp_MHP",
+      "rhsusf_mag_7x45acp_MHP",
+      "rhs_mag_m67",
+      "rhs_mag_m67",
+      "rhs_mag_mk84",
+      "rhs_mag_mk84",
+      "Chemlight_green",
+      "Chemlight_green",
+      "Chemlight_green",
+    };
+
+    linkedItems[] =
+    {
+      "usm_helmet_pasgt_ceswd_wdl",
+      "usm_vest_pasgt_lbe_rmpr",
+      "nomex_1_fold_addon",
+      "ItemMap",
+      "ItemCompass",
+      "ItemGPS",
+      "TFAR_anprc152",
+      "ACE_Altimeter",
+    };
+    respawnLinkedItems[] =
+    {
+      "usm_helmet_pasgt_ceswd_wdl",
+      "usm_vest_pasgt_lbe_rmpr",
+      "nomex_1_fold_addon",
+      "ItemMap",
+      "ItemCompass",
+      "ItemGPS",
+      "TFAR_anprc152",
+      "ACE_Altimeter",
+    };
+
+    items[] =
+    {
+      "ACE_EarPlugs",
+      "ACE_EntrenchingTool",
+      "ACE_Flashlight_MX991",
+      "ACE_MapTools",
+      "acex_intelitems_notepad",
+      "efak_IFAK",
+    };
+    respawnItems[] =
+    {
+      "ACE_EarPlugs",
+      "ACE_EntrenchingTool",
+      "ACE_Flashlight_MX991",
+      "ACE_MapTools",
+      "acex_intelitems_notepad",
+      "efak_IFAK",
+    };
+  };
   // ***
 
   // * Vehicles ***
+  class rhsusf_m1025_w;
+  class rhsusf_m998_w_2dr_halftop;
+  class rhsusf_m1025_w_m2;
+  class rhsusf_m1045_w;
+  class BB_Factions__B_NASR__Soldier_Wheeled_Basic_M1025A2_Unarmed: rhsusf_m1025_w
+  {
+    displayName = "M1025A2 (Unarmed)";
+
+    scope = 2;
+    scopeCurator = 2;
+
+    side = 1;
+    faction = "BB_Factions__B_NASR";
+
+    editorCategory = "BB_Factions__B_NASR";
+    editorSubcategory = "BB_Factions_EdSubcat_Wheeled";
+
+    crew = "BB_Factions__B_NASR__Soldier_Infantry_Basic_Rifleman_M";
+  };
+  class BB_Factions__B_NASR__Soldier_Wheeled_Basic_M1097A2_Half: rhsusf_m998_w_2dr_halftop
+  {
+    displayName = "M1097A2 (Open bed)";
+
+    scope = 2;
+    scopeCurator = 2;
+
+    side = 1;
+    faction = "BB_Factions__B_NASR";
+
+    editorCategory = "BB_Factions__B_NASR";
+    editorSubcategory = "BB_Factions_EdSubcat_Wheeled";
+
+    crew = "BB_Factions__B_NASR__Soldier_Infantry_Basic_Rifleman_M";
+  };
+  class BB_Factions__B_NASR__Soldier_Wheeled_Basic_M1025A2_M2: rhsusf_m1025_w_m2
+  {
+    displayName = "M1025A2 (M2)";
+
+    scope = 2;
+    scopeCurator = 2;
+
+    side = 1;
+    faction = "BB_Factions__B_NASR";
+
+    editorCategory = "BB_Factions__B_NASR";
+    editorSubcategory = "BB_Factions_EdSubcat_Wheeled";
+
+    crew = "BB_Factions__B_NASR__Soldier_Infantry_Basic_Rifleman_M";
+  };
+  class BB_Factions__B_NASR__Soldier_Wheeled_Basic_M1045_TOW: rhsusf_m1045_w
+  {
+    displayName = "M1045A2 (M220A2)";
+
+    scope = 2;
+    scopeCurator = 2;
+
+    side = 1;
+    faction = "BB_Factions__B_NASR";
+
+    editorCategory = "BB_Factions__B_NASR";
+    editorSubcategory = "BB_Factions_EdSubcat_Wheeled";
+
+    crew = "BB_Factions__B_NASR__Soldier_Infantry_Basic_Rifleman_M";
+  };
   // ***
 };
 
@@ -2450,6 +3948,283 @@ class CfgGroups
     {
       name = "NASR";
 
+      class Motorized_Infantry
+      {
+        name = "Motorized Infantry";
+
+        class BB_Factions__B_NASR__Group_Platoon_HQ
+        {
+          name = "Platoon HQ";
+          side = 1;
+          faction = "BB_Factions__B_NASR";
+          icon = "A3\ui_f\data\map\markers\nato\b_hq.paa";
+
+          class Unit0
+          {
+            side = 1;
+            vehicle = "BB_Factions__B_NASR__Soldier_Infantry_Basic_Officer_M";
+            rank = "LIEUTENANT";
+            position[] = { 0, 0, 0 };
+          };
+          class Unit1
+          {
+            side = 1;
+            vehicle = "BB_Factions__B_NASR__Soldier_Infantry_Basic_SquadLeader_F";
+            rank = "SERGEANT";
+            position[] = { 0, -2, 0 };
+          };
+          class Unit2
+          {
+            side = 1;
+            vehicle = "BB_Factions__B_NASR__Soldier_Infantry_Basic_RTO_M";
+            rank = "CORPORAL";
+            position[] = { 0, -4, 0 };
+          };
+          class Unit3
+          {
+            side = 1;
+            vehicle = "BB_Factions__B_NASR__Soldier_Infantry_Basic_ForwardObserver_M";
+            rank = "SERGEANT";
+            position[] = { 0, -6, 0 };
+          };
+          class Unit4
+          {
+            side = 1;
+            vehicle = "BB_Factions__B_NASR__Soldier_Infantry_Basic_CombatMedic_F";
+            rank = "CORPORAL";
+            position[] = { 0, -8, 0 };
+          };
+        };
+        class BB_Factions__B_NASR__Group_Rifle_Squad
+        {
+          name = "Rifle Squad";
+          side = 1;
+          faction = "BB_Factions__B_NASR";
+          icon = "A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+
+          class Unit0
+          {
+            side = 1;
+            vehicle = "BB_Factions__B_NASR__Soldier_Infantry_Basic_SquadLeader_M";
+            rank = "SERGEANT";
+            position[] = { 1, 0, 0 };
+          };
+          class Unit1
+          {
+            side = 1;
+            vehicle = "BB_Factions__B_NASR__Soldier_Infantry_Basic_TeamLeader_M";
+            rank = "CORPORAL";
+            position[] = { 1, -2, 0 };
+          };
+          class Unit2
+          {
+            side = 1;
+            vehicle = "BB_Factions__B_NASR__Soldier_Infantry_Basic_Autorifleman_F";
+            rank = "PRIVATE";
+            position[] = { 1, -4, 0 };
+          };
+          class Unit3
+          {
+            side = 1;
+            vehicle = "BB_Factions__B_NASR__Soldier_Infantry_Basic_Grenadier_M";
+            rank = "PRIVATE";
+            position[] = { 1, -6, 0 };
+          };
+          class Unit4
+          {
+            side = 1;
+            vehicle = "BB_Factions__B_NASR__Soldier_Infantry_Basic_Rifleman_AT_F";
+            rank = "PRIVATE";
+            position[] = { 1, -8, 0 };
+          };
+          class Unit5
+          {
+            side = 1;
+            vehicle = "BB_Factions__B_NASR__Soldier_Infantry_Basic_TeamLeader_M";
+            rank = "CORPORAL";
+            position[] = { -1, -2, 0 };
+          };
+          class Unit6
+          {
+            side = 1;
+            vehicle = "BB_Factions__B_NASR__Soldier_Infantry_Basic_Autorifleman_M";
+            rank = "PRIVATE";
+            position[] = { -1, -4, 0 };
+          };
+          class Unit7
+          {
+            side = 1;
+            vehicle = "BB_Factions__B_NASR__Soldier_Infantry_Basic_Grenadier_M";
+            rank = "PRIVATE";
+            position[] = { -1, -6, 0 };
+          };
+          class Unit8
+          {
+            side = 1;
+            vehicle = "BB_Factions__B_NASR__Soldier_Infantry_Basic_Marksman_M";
+            rank = "PRIVATE";
+            position[] = { -1, -8, 0 };
+          };
+        };
+        class BB_Factions__B_NASR__Group_Rifle_Squad_Fireteam_AT
+        {
+          name = "Rifle Squad Fireteam (AT)";
+          side = 1;
+          faction = "BB_Factions__B_NASR";
+          icon = "A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+
+          class Unit0
+          {
+            side = 1;
+            vehicle = "BB_Factions__B_NASR__Soldier_Infantry_Basic_TeamLeader_M";
+            rank = "CORPORAL";
+            position[] = { 0, 0, 0 };
+          };
+          class Unit1
+          {
+            side = 1;
+            vehicle = "BB_Factions__B_NASR__Soldier_Infantry_Basic_Autorifleman_F";
+            rank = "PRIVATE";
+            position[] = { 0, -2, 0 };
+          };
+          class Unit2
+          {
+            side = 1;
+            vehicle = "BB_Factions__B_NASR__Soldier_Infantry_Basic_Grenadier_M";
+            rank = "PRIVATE";
+            position[] = { 0, -4, 0 };
+          };
+          class Unit3
+          {
+            side = 1;
+            vehicle = "BB_Factions__B_NASR__Soldier_Infantry_Basic_Rifleman_AT_F";
+            rank = "PRIVATE";
+            position[] = { 0, -6, 0 };
+          };
+        };
+        class BB_Factions__B_NASR__Group_Rifle_Squad_Fireteam_Marksman
+        {
+          name = "Rifle Squad Fireteam (Marksman)";
+          side = 1;
+          faction = "BB_Factions__B_NASR";
+          icon = "A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+
+          class Unit0
+          {
+            side = 1;
+            vehicle = "BB_Factions__B_NASR__Soldier_Infantry_Basic_TeamLeader_M";
+            rank = "CORPORAL";
+            position[] = { 0, 0, 0 };
+          };
+          class Unit1
+          {
+            side = 1;
+            vehicle = "BB_Factions__B_NASR__Soldier_Infantry_Basic_Autorifleman_M";
+            rank = "PRIVATE";
+            position[] = { 0, -2, 0 };
+          };
+          class Unit2
+          {
+            side = 1;
+            vehicle = "BB_Factions__B_NASR__Soldier_Infantry_Basic_Grenadier_M";
+            rank = "PRIVATE";
+            position[] = { 0, -4, 0 };
+          };
+          class Unit3
+          {
+            side = 1;
+            vehicle = "BB_Factions__B_NASR__Soldier_Infantry_Basic_Marksman_M";
+            rank = "PRIVATE";
+            position[] = { 0, -6, 0 };
+          };
+        };
+        class BB_Factions__B_NASR__Group_Weapons_Squad
+        {
+          name = "Weapons Squad";
+          side = 1;
+          faction = "BB_Factions__B_NASR";
+          icon = "A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+
+          class Unit0
+          {
+            side = 1;
+            vehicle = "BB_Factions__B_NASR__Soldier_Infantry_Basic_SquadLeader_F";
+            rank = "SERGEANT";
+            position[] = { 0, 0, 0 };
+          };
+          class Unit1
+          {
+            side = 1;
+            vehicle = "BB_Factions__B_NASR__Soldier_Infantry_Basic_MMGGunner_M";
+            rank = "CORPORAL";
+            position[] = { 1, -2, 0 };
+          };
+          class Unit2
+          {
+            side = 1;
+            vehicle = "BB_Factions__B_NASR__Soldier_Infantry_Basic_AsstMMGGunner_M";
+            rank = "PRIVATE";
+            position[] = { 1, -4, 0 };
+          };
+          class Unit3
+          {
+            side = 1;
+            vehicle = "BB_Factions__B_NASR__Soldier_Infantry_Basic_MMGAmmoBearer_F";
+            rank = "PRIVATE";
+            position[] = { 1, -6, 0 };
+          };
+          class Unit4
+          {
+            side = 1;
+            vehicle = "BB_Factions__B_NASR__Soldier_Infantry_Basic_MMGGunner_M";
+            rank = "CORPORAL";
+            position[] = { -1, -2, 0 };
+          };
+          class Unit5
+          {
+            side = 1;
+            vehicle = "BB_Factions__B_NASR__Soldier_Infantry_Basic_AsstMMGGunner_F";
+            rank = "PRIVATE";
+            position[] = { -1, -4, 0 };
+          };
+          class Unit6
+          {
+            side = 1;
+            vehicle = "BB_Factions__B_NASR__Soldier_Infantry_Basic_MMGAmmoBearer_M";
+            rank = "PRIVATE";
+            position[] = { -1, -6, 0 };
+          };
+        };
+        class BB_Factions__B_NASR__Group_MMG_Team
+        {
+          name = "MMG Team";
+          side = 1;
+          faction = "BB_Factions__B_NASR";
+          icon = "A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+
+          class Unit0
+          {
+            side = 1;
+            vehicle = "BB_Factions__B_NASR__Soldier_Infantry_Basic_MMGGunner_M";
+            rank = "CORPORAL";
+            position[] = { 0, 0, 0 };
+          };
+          class Unit1
+          {
+            side = 1;
+            vehicle = "BB_Factions__B_NASR__Soldier_Infantry_Basic_AsstMMGGunner_M";
+            rank = "PRIVATE";
+            position[] = { 0, -2, 0 };
+          };
+          class Unit2
+          {
+            side = 1;
+            vehicle = "BB_Factions__B_NASR__Soldier_Infantry_Basic_MMGAmmoBearer_F";
+            rank = "PRIVATE";
+            position[] = { 0, -4, 0 };
+          };
+        };
+      };
     };
   };
 };
